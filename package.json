@@ -15,6 +15,8 @@
     "gulp-html-replace": "^1.4.5",
     "gulp-inject": "^1.2.0",
     "gulp-less": "^3.0.2",
+    "gulp-markdown": "^1.0.0",
+    "gulp-markdown-to-json": "^0.2.1",
     "gulp-newer": "^0.5.0",
     "gulp-rename": "^1.2.2",
     "gulp.spritesmith": "^3.5.3"

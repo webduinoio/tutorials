@@ -6,7 +6,9 @@ var gulp 				= require('gulp'),
 		less 				= require('gulp-less'),
   	newer       = require('gulp-newer'),
     inject      = require('gulp-inject'),
-  	spritesmith = require('gulp.spritesmith');
+  	spritesmith = require('gulp.spritesmith'),
+    markdown    = require('gulp-markdown'),
+    pages       = require('gulp-markdown-to-json');
 
 gulp.task('css-clean', function () {
   return gulp.src(['app/style/css/**/*'], {read: true})
@@ -40,11 +42,11 @@ gulp.task('index-inject',['index-extend','copy-css'],function(){
   .pipe(gulp.dest('app'));
 });
 
+/* tutorials 合併 layout */
 gulp.task('tutorials-clean',function(){
   return gulp.src(['app/tutorials/**/*'], {read: true}).pipe(clean());
 });
 
-/* tutorials 合併 layout */
 gulp.task('tutorials-extend',['tutorials-clean'], function () {
   return gulp.src('app/tutorials-content/*.html')
   .pipe(extender({annotations:false,verbose:false}))
@@ -52,6 +54,29 @@ gulp.task('tutorials-extend',['tutorials-clean'], function () {
 });
 
 gulp.task('tutorials-inject',['tutorials-extend','copy-css'],function(){
+  return gulp.src('app/tutorials/*.html')
+  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
+  .pipe(gulp.dest('app/tutorials'));
+});
+
+/* markdown，需要手動修改把 id 拿掉 */
+gulp.task('md-clean',function(){
+  return gulp.src(['app/md/md2html/**/*'], {read: true}).pipe(clean());
+});
+
+gulp.task('md',['md-clean'], function () {
+    return gulp.src('app/md/**/*.md')
+        .pipe(markdown())
+        .pipe(gulp.dest('app/md/md2html/'));
+});
+
+gulp.task('md-extend',['md','tutorials-clean'], function () {
+  return gulp.src('app/md/md2html/*.html')
+  .pipe(extender({annotations:false,verbose:false}))
+  .pipe(gulp.dest('app/tutorials'));
+});
+
+gulp.task('tutorials-inject',['tutorials-extend','md-extend','copy-css'],function(){
   return gulp.src('app/tutorials/*.html')
   .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
   .pipe(gulp.dest('app/tutorials'));
