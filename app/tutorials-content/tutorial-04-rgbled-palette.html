@@ -1,0 +1,122 @@
+<!-- @@master  = ../_layout.html-->
+
+<!-- @@block  =  meta-->
+	<title>範例與教學 4：三色 LED 調色盤 :::: Webduino = Web + Arduino</title>
+<!-- @@close-->
+
+<!-- @@block  =  css-->
+<!-- @@close-->
+
+<!-- @@block  =  content-->
+	<div class="tutorials">
+		<div class="banner">
+			<img src="../img/tutorials/tutorial-04-01.jpg">
+		</div>
+		<h1>範例與教學 4：三色 LED 調色盤</h1>
+		<p><a href='tutorial-03-rgbled.html'>上一篇</a> 介紹過三色 LED 的原理，不過由於部分接腳受限於 PWM 的限制 ( 脈衝寬度調變，<b>Webduino 開發板的 6、9、10、11 才有 PWM</b> )，所以上一篇只能控制顏色的亮暗，這一篇將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。
+		</p>
+		<h2>範例影片展示</h2>
+		<p><iframe class="youtube" src="https://www.youtube.com/embed/QdzMDe0hIpQ" frameborder="0" allowfullscreen></iframe>
+		</p>
+		<h2>接線與實作</h2>
+		<ul>
+			<li>
+				<h3>1. 接上三色 LED</h3>
+				<span>由於 Webduino 具有 PWM 的腳位是 6、9、10、11，所以這裡就必須利用麵包板和電線，將腳位引出到麵包板上頭，按照下圖，三色 LED 的 V 接在 3.3v 的腳位，紅色 R 接在 6，藍色 B 接在 9，綠色 G 接在 10。</span>
+				<img src="../img/tutorials/tutorial-04-02.jpg" />
+			</li>
+			<li>
+				<h3>2. 完成後的實際長相</h3>
+				<img src="../img/tutorials/tutorial-04-03.jpg" />
+				<img src="../img/tutorials/tutorial-04-04.jpg" />
+			</li>
+		</ul>
+		<h2>範例解析 ( <a href="http://webduinoio.github.io/samples/content/rgbled-palette/index.html" target="_blank">快速體驗</a>、<a href="http://jsbin.com/dasufu/5/edit?html,css,js,output" target="_blank">jsbin 範例</a>、<a href="http://webduino.io/device.html" target="_blank">檢查連線狀態</a> )</h2>
+		<p>一開始要先引入相關的 js 與 WebComponents。
+		</p>
+		<pre><code>&lt;script src=&quot;http://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' /&gt;
+&lt;link rel='import' href='http://webduino.io/components/webduino/wa-rgbled.html'/&gt;
+</code></pre>
+		<p>在 body 裡頭利用 html5 的 input「range」類型，製作三個拉霸，並在拉霸的下方放一個名為 show 的 div，目的為了讓拉霸拉動的時候，不僅只有三色 LED 的顏色變化，連同畫面上的區塊顏色也會跟著改變，而拉霸的數值設定為 0 到 255，拉動的間隔為 5，預設值為 0。
+		</p>
+		<pre><code>&lt;div&gt;
+  &lt;label&gt;red:&lt;/label&gt;
+  &lt;input id='redBtn' type='range' min='0' max='255' step='5' value='0'&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;label&gt;green: &lt;/label&gt;
+  &lt;input id='greenBtn' type='range' min='0' max='255' step='5' value='0'&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;label&gt;blue: &lt;/label&gt;
+  &lt;input id='blueBtn' type='range' min='0' max='255' step='5' value='0'&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;show&quot;&gt;&lt;/div&gt;
+
+&lt;web-arduino id='board' device=&quot;你的 device 名稱&quot;&gt;
+  &lt;wa-rgbled id='rgb' red='6' blue='9' green='10'&gt;&lt;/wa-rgbled&gt;
+&lt;/web-arduino&gt;
+</code></pre>
+		<p>接著稍微寫一點點 CSS 定義一下顏色區域的大小。
+		</p>
+		<pre><code>#show{
+  width: 100%;
+  max-width: 250px;
+  height:100px;
+  border:1px solid #000;
+  background:#000;
+  margin-top: 15px;
+  margin-left: 5px;
+  }
+</code></pre>
+		<p>最後就是關鍵的 javascript，這裏其實沒有用到什麼太特別的技巧，就是把拉霸當下的數值，同時傳給背景色以三色 LED 的顏色使用 ( 利用監聽 change 的事件 )
+		</p>
+		<pre><code>window.addEventListener('WebComponentsReady', function () {
+  var board = document.getElementById('board');
+
+  board.on('ready',function() {
+    var redBtn = document.getElementById('redBtn'),
+      greenBtn = document.getElementById('greenBtn'),
+      blueBtn = document.getElementById('blueBtn'),
+      rgb = document.getElementById('rgb'),
+      show = document.getElementById('show'),
+      r = 0,
+      g = 0,
+      b = 0;
+
+    var handler = function(evt) {
+      var target = evt.target,
+        id = target.id;
+
+      switch (id) {
+        case 'redBtn':
+          r = target.value;
+          break;
+        case 'greenBtn':
+          g = target.value;
+          break;
+        case 'blueBtn':
+          b = target.value;
+          break;
+      }
+
+      show.style.backgroundColor = 'rgba(' + r + ',' + g + ',' + b + ',' + '255)';
+      rgb.setColor(r, g, b);
+    };
+
+    redBtn.addEventListener('change', handler, false);
+    greenBtn.addEventListener('change', handler, false);
+    blueBtn.addEventListener('change', handler, false);
+
+  });
+
+}, false);
+</code></pre> 
+  <p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/rgbled-palette/index.html" target="_blank">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始利用拉霸做調整顏色的動作，亦或是也可以參考這個 <a href="http://jsbin.com/dasufu/5/edit?html,css,js,output" target="_blank">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。
+  </p>
+	</div>
+<!-- @@close-->

@@ -1,0 +1,248 @@
+/* browser */
+/* main */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  width: 100%;
+  height: 55vw;
+  background: url(../../img/index/banner1.jpg) center top no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+.banner h1,
+.banner span {
+  display: block;
+}
+.banner h1 {
+  display: block;
+  font-size: 36px;
+  font-family: 'Arial black';
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 50px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+  text-align: center;
+}
+.banner h1 span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.intro,
+.tutorials,
+.fb-fans {
+  display: table;
+  width: 100%;
+}
+.intro h2,
+.tutorials h2,
+.fb-fans h2,
+.intro span,
+.tutorials span,
+.fb-fans span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.intro h2,
+.tutorials h2,
+.fb-fans h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Arial black';
+}
+.intro span,
+.tutorials span,
+.fb-fans span {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.intro .no,
+.tutorials .no,
+.fb-fans .no {
+  opacity: .3;
+}
+.intro {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 2px;
+  padding: 20px 0;
+}
+.intro .content {
+  width: 86%;
+  height: 100%;
+  margin: 0 auto;
+}
+.intro .content .in {
+  float: right;
+  width: 30%;
+  padding: 5px;
+}
+.intro .content .in img {
+  width: 100%;
+}
+.intro .content h3 {
+  margin: 10px 5px 5px;
+  font-size: 18px;
+}
+.intro .content span {
+  text-align: left;
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #999;
+  display: none;
+}
+.intro .content .in:first-child {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+.intro .content .in:first-child h3 {
+  margin: 15px 10px 5px;
+  font-size: 26px;
+}
+.intro .content .in:first-child span {
+  display: block;
+}
+.intro .content .in:first-child img {
+  height: auto;
+}
+.tutorials {
+  margin-bottom: 30px;
+}
+.tutorials .content {
+  width: 86%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tutorials .content div {
+  margin: -4px;
+  padding: 4px 3px;
+  display: inline-block;
+  width: 33%;
+}
+.tutorials .content div img {
+  width: 100%;
+}
+.fb-fans {
+  margin-bottom: 100px;
+}
+.fb-fans .content {
+  width: 86%;
+  margin: 0 auto;
+  text-align: center;
+}
+.fb-fans .content img {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+/* RWD */
+@media (max-width: 1000px) {
+  .banner {
+    height: 450px;
+  }
+  .banner h1 {
+    padding: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    height: 400px;
+  }
+  .banner h1 {
+    font-size: 30px;
+    padding: 15px;
+  }
+  .banner h1 span {
+    font-size: 14px;
+  }
+  .intro .content .in {
+    width: 50%;
+  }
+  .intro .content .in h3 {
+    margin: 10px 0 5px;
+  }
+  .intro .content .in span {
+    display: none;
+  }
+  .intro .content .in:first-child {
+    width: 50%;
+  }
+  .intro .content .in:first-child h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+  }
+  .intro .content .in:first-child span {
+    display: none;
+  }
+  .tutorials .content div {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .banner h1 span {
+    font-size: 14px;
+  }
+  .intro .content .in {
+    float: none;
+    width: 100%;
+  }
+  .intro .content .in:first-child {
+    float: none;
+    width: 100%;
+  }
+  .tutorials h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .banner h1 {
+    border-width: 1px 0;
+  }
+  .banner h1 span {
+    display: none;
+  }
+  .intro h2,
+  .tutorials h2,
+  .fb-fans h2 {
+    font-size: 22px;
+  }
+  .intro span,
+  .tutorials span,
+  .fb-fans span {
+    font-size: 15px;
+  }
+  .intro .content,
+  .tutorials .content,
+  .fb-fans .content {
+    margin-top: -20px;
+  }
+  .intro .content div,
+  .tutorials .content div,
+  .fb-fans .content div {
+    width: 100%;
+  }
+}

@@ -1,0 +1,268 @@
+/* browser */
+._bg-top-linear-gradient(@a,@b){
+	background-image:linear-gradient(top,@a,@b);
+	background-image:-webkit-linear-gradient(top,@a,@b);
+	background-image:-moz-linear-gradient(top,@a,@b);
+}
+._transition(@a){
+  transition:@a;
+  -webkit-transition:@a;
+  -moz-transition:@a;
+}
+._scale(@a){
+  transform:scale(@a);
+  -webkit-transform:scale(@a);
+  -moz-transform:scale(@a);
+}
+._rotate(@a){
+  transform:rotate(@a);
+  -webkit-transform:rotate(@a);
+  -moz-transform:rotate(@a);
+}
+
+/* main */
+.banner{
+  display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+  display:-webkit-flex;
+	-webkit-flex-direction:column;
+	-webkit-justify-content:center;
+	-webkit-align-items:center;
+	width:100%;
+	height:55vw;
+	background:url(../../img/index/banner1.jpg) center top no-repeat;
+	background-size:100% auto;
+	background-attachment: fixed;
+	h1,span{
+		display:block;
+	}
+	h1{
+		display:block;
+		font-size:36px;
+		font-family:'Arial black';
+		color:#fff;
+		background:rgba(0,0,0,.3);
+		padding:30px;
+		border:1px solid rgba(255,255,255,.6);
+		box-shadow:rgba(0,0,0,.3) 0 0 50px;
+		text-shadow:rgba(0,0,0,.4) 0 0 10px;
+		text-align:center;
+		span{
+		display:block;
+			text-align:center;
+			margin-top:10px;
+			font-size:20px;
+			font-weight:normal;
+		}
+	}
+}
+.intro,.tutorials,.fb-fans{
+	display:table;
+	width:100%;	
+	h2,span{
+		display:block;
+		width:100%;
+		text-align: center;
+	}
+	h2{
+		margin-top:30px;
+		margin-bottom:10px;
+		font-size:36px;
+		font-family:'Arial black';
+	}
+	span{
+		font-size:18px;
+		margin-bottom:40px;
+	}
+	.no{
+		opacity:.3;
+	}
+}
+.intro{
+	box-shadow: rgba(0,0,0,.1) 0 -2px 0 2px;
+	padding:20px 0;
+	.content{
+		width:86%;
+		height:100%;
+		margin:0 auto;
+		.in{
+			float:right;
+			width:30%;
+			padding:5px;
+			img{
+				width:100%;
+			}
+		}
+		h3{
+			margin:10px 5px 5px;
+			font-size:18px;
+		}
+		span{
+			text-align:left;
+			margin:0 10px 10px;
+			font-size:14px;
+			color:#999;
+			display:none;
+		}
+		.in:first-child{
+			float:left;
+			width:70%;
+			height:100%;
+			h3{
+			  margin:15px 10px 5px;
+				font-size:26px;
+			}
+			span{
+				display:block;
+			}
+			img{
+				height:auto;
+			}
+		}
+	}
+}
+.tutorials{
+	margin-bottom:30px;
+	.content{
+		width:86%;
+		height:100%;
+		margin:0 auto;
+		text-align: center;
+		div{
+			margin:-4px;
+			padding:4px 3px;
+			display:inline-block;
+			width:33%;
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+.fb-fans{
+	margin-bottom:100px;
+	.content{
+		width:86%;
+		margin:0 auto;
+		text-align: center;		
+		img{
+			width:100%;
+			max-width:750px;
+			margin:0 auto;
+		}
+	}
+}
+
+/* RWD */
+@media (max-width: 1000px){
+	.banner{
+		height:450px;
+		h1{
+			padding:25px;
+		}
+	}
+}
+@media (max-width: 800px){
+	.banner{
+		height:400px;
+		h1{
+			font-size:30px;
+			padding:15px;
+			span{
+				font-size:14px;
+			}
+		}
+	}
+
+	.intro{
+		.content{
+			.in{
+				width:50%;
+				h3{
+					margin:10px 0 5px;
+				}
+				span{
+					display:none;
+				}
+			}
+			.in:first-child{
+				width:50%;
+				h3{
+					font-size:20px;
+					margin:10px 0 5px;
+				}
+				span{
+					display:none;
+				}
+			}
+		}
+	}
+	.tutorials{
+		.content{
+			div{
+				width:50%;
+			}
+		}
+	}
+}
+@media (max-width: 600px){
+	.banner{
+		height:300px;
+		h1{
+			font-size:20px;
+			padding:10px;
+			span{
+				font-size:14px;
+			}
+		}
+	}
+
+	.intro{
+		.content{
+			.in{
+				float:none;
+				width:100%;			}
+			.in:first-child{
+				float:none;
+				width:100%;
+			}
+		}
+	}
+
+	.tutorials{
+		h2{
+			font-size:26px;
+		}
+	}
+}
+@media (max-width: 500px){
+	.banner{
+		height:200px;
+	}
+}
+@media (max-width: 400px){
+	.banner{
+		h1{
+			border-width:1px 0;
+			span{
+				display:none;
+			}
+		}
+	}
+	.intro,.tutorials,.fb-fans{
+		h2{
+			font-size:22px;
+		}
+		span{
+			font-size:15px;
+		}
+		.content{
+			margin-top:-20px;
+			div{
+				width:100%;
+			}
+		}
+	}
+}

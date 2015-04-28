@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+
+	<title>範例教學 7：超音波傳感器控制 LED 燈 :::: Webduino = Web + Arduino</title>
+
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+  <link rel="stylesheet" href="../style/css/layout.css">
+  <link rel="stylesheet" href="../style/css/tutorials.css">
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <script src="../js/lib/disqus.js"></script>
+  <script src="../js/lib/jquery.min.js"></script>
+  <script src="../js/lib/run_prettify.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/tutorials.js"></script>
+  <!-- endinject -->
+
+
+
+
+
+</head>
+<body>
+	<header>
+		<div class="icon-logo-s">
+			<a href="index.html"><i></i></a>
+			<a href="../index.html"><i></i></a>
+		</div>
+		<div class="menu">
+			<i></i>
+		</div>
+	</header>
+	<div class="slide-menu">
+		<div><a href="index.html">回首頁</a></div>
+		<div>
+			<div><a href="tutorials/webduino-01-introduction.html">基本介紹與設定</a></div>
+			<div><a href="tutorials/webduino-02-faq.html">常見問題處理</a></div>
+			<div class="none">基本電路學</div>
+		</div>
+		<div>
+			<div><a href="tutorials/tutorial-01-led.html">1. 單顆 LED 燈</a></div>
+			<div><a href="tutorials/tutorial-02-2led.html">2. 兩顆 LED 交互閃動</a></div>
+			<div><a href="tutorials/tutorial-03-rgbled.html">3. 三色 LED</a></div>
+			<div><a href="tutorials/tutorial-04-rgbled-palette.html">4. 三色 LED 調色盤</a></div>
+			<div><a href="tutorials/tutorial-05-ultrasonic.html">5. 超音波傳感器</a></div>
+			<div><a href="tutorials/tutorial-06-ultrasonic-imagesize.html">6. 超音波傳感器改變圖片大小</a></div>
+			<div><a href="tutorials/tutorial-07-ultrasonic-led.html">7. 超音波傳感器 + LED</a></div>
+			<div><a href="tutorials/tutorial-08-ultrasonic-rgbled.html">8. 超音波傳感器 + 三色 LED</a></div>
+			<div><a href="tutorials/tutorial-09-button-led.html">9. 按鈕 + LED</a></div>
+		</div>
+	</div>
+	<div class="slide-menu tutorials-slide-menu">
+		<div><a href="../index.html">回首頁</a></div>
+		<div>
+			<div><a href="webduino-01-introduction.html">基本介紹與設定</a></div>
+			<div><a href="webduino-02-faq.html">常見問題處理</a></div>
+			<div class="none">基本電路學</div>
+		</div>
+		<div>
+			<div><a href="tutorial-01-led.html">1. 控制單顆 LED 燈</a></div>
+			<div><a href="tutorial-02-2led.html">2. 兩顆 LED 交互閃動</a></div>
+			<div><a href="tutorial-03-rgbled.html">3. 控制三色 LED</a></div>
+			<div><a href="tutorial-04-rgbled-palette.html">4. 三色 LED 調色盤</a></div>
+			<div><a href="tutorial-05-ultrasonic.html">5. 控制超音波傳感器</a></div>
+			<div><a href="tutorial-06-ultrasonic-imagesize.html">6. 超音波傳感器改變圖片大小</a></div>
+			<div><a href="tutorial-07-ultrasonic-led.html">7. 超音波傳感器 + LED</a></div>
+			<div><a href="tutorial-08-ultrasonic-rgbled.html">8. 超音波傳感器 + 三色 LED</a></div>
+			<div><a href="tutorial-09-button-led.html">9. 按鈕 + LED</a></div>
+		</div>
+	</div>
+
+
+
+
+	<div class="tutorials">
+		<div class="banner">
+			<img src="../img/tutorials/tutorial-07-01.jpg">
+		</div>
+		<h1>範例教學 7：超音波傳感器控制 LED 燈</h1>
+		<p>對於直接寫 C/C++ 來控制 Arduino 的人來說，用超音波傳感器控制 LED 應該是小菜一碟，但對於要用 Web 技術來實現就沒那麼容易，不過在我們由前面幾個範例了解相關傳感器運作原理之後，就可以很輕鬆的做出來用超音波傳感器控制 LED 燈的實例，也因為是透過 Web 的方式，所以當行為觸發時，網頁端同時也可以收到動作的發生 ( 圖片也會改變 )，相當的方便。 
+		</p>
+		<h2>範例影片展示</h2>
+		<p><iframe class="youtube" src="https://www.youtube.com/embed/pRMjbzPXWvw" frameborder="0" allowfullscreen></iframe>
+		</p>
+		<h2>接線與實作</h2>
+		<ul>
+			<li>
+				<h3>1. 接上超音波傳感器與 LED 燈</h3>
+				<span>因為超音波傳感器與 LED 都必須用到 GND 的腳位，所以我們必須要用到麵包板和電線，同樣用電線引出腳位，把超音波傳感器的 VCC 接在 3.3v，Trig 接在 11，Echo 接在 10，GND 就接在 GND 的腳位，然後再用另外的電線將 LED 接在 9 的腳位上。</span>
+				<img src="../img/tutorials/tutorial-07-02.jpg" />
+			</li>
+			<li>
+				<h3>2. 完成後的實際長相</h3>
+				<span>因為超音波傳感器在實際的接線會朝外，所以實際的照片電線會有反轉的情形，不要接錯了。</span>
+				<img src="../img/tutorials/tutorial-07-03.jpg" />
+				<img src="../img/tutorials/tutorial-07-04.jpg" />
+			</li>
+		</ul>
+		<h2>範例解析 ( <a href="http://webduinoio.github.io/samples/content/ultrasonic-led/index.html" target="_blank">快速體驗</a>、<a href="http://jsbin.com/kucaru/5/edit?html,css,js,output" target="_blank">jsbin 範例</a>、<a href="http://webduino.io/device.html" target="_blank">檢查連線狀態</a> )</h2>
+		<p>一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到超音波傳感器和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：<kbd>wa-ultrasonic</kbd>、<kbd>wa-led</kbd>。
+		</p>
+		<pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel='import' href='//webduino.io/components/webduino/web-arduino.html' /&gt;
+&lt;link rel='import' href='//webduino.io/components/webduino/wa-ultrasonic.html' /&gt;
+&lt;link rel='import' href='//webduino.io/components/webduino/wa-led.html' /&gt;
+</code></pre>
+		<p>再來我們先在 body 裡頭放上一張燈泡的圖片，目的在於超音波傳感器讓 LED 燈亮起時，這張圖片也會變成發亮的圖片，然後從 HTML 的架構可以看出我們把超音波傳感器已及 LED 安插在 webduino 開發板上頭。
+		</p>
+		<pre><code>&lt;div id='light' class=&quot;off&quot;&gt;
+  &lt;img src='http://i.imgur.com/T5H4MHE.png'&gt;&lt;/img&gt;
+  &lt;img src='http://i.imgur.com/8qFj2Ou.png'&gt;&lt;/img&gt;
+&lt;/div&gt;
+
+&lt;web-arduino id='board' device=&quot;你的 device 名稱&quot;&gt;
+  &lt;wa-ultrasonic id='ultrasonic' trig='11' echo='10'&gt;&lt;/wa-ultrasonic&gt;
+  &lt;wa-led id='led' pin='9'&gt;&lt;/wa-led&gt;
+&lt;/web-arduino&gt;
+</code></pre>
+		<p>稍微寫點 CSS。
+		</p>
+		<pre><code>img {
+  width: 100%;
+  max-width: 480px;
+  }
+.off img:last-child, .on img:first-child {
+  display: none;
+  }
+</code></pre>
+		<p>javascript 裡頭要運用到兩個元件的 api，首先藉由超音波傳感器的 <kbd>ping</kbd> 回傳公分數值，接著判斷在 20 公分以內時，LED 燈就會熄滅，超過 20 公分 LED 燈就會亮起 ( 網頁裡頭的燈泡也會變化 )。
+		</p>
+		<pre><code>window.addEventListener('WebComponentsReady', function () {
+  var board = document.getElementById('board');
+
+  board.on('ready',function() {
+    var ultrasonic = document.getElementById('ultrasonic'),
+      led = document.getElementById('led'),
+      light = document.getElementById('light');
+
+    ultrasonic.ping(function (cm) {
+      if (cm &gt; 20) {
+        led.on();
+        light.className = &quot;on&quot;;
+      } else {
+        led.off();
+        light.className = &quot;off&quot;;
+      }
+    }, 1000);
+  });
+
+}, false);
+</code></pre>
+  <p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/ultrasonic-led/index.html" target="_blank">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始利用超音波傳感器讓 LED 發光囉，亦或是也可以參考這個 <a href="http://jsbin.com/kucaru/5/edit?html,css,js,output" target="_blank">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。
+  </p>
+	</div>
+
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+	    <div class="content">
+	    	<div class="logo">
+					<a href="index.html"><i></i></a>
+					<a href="../index.html"><i></i></a>
+	    	</div>
+<!-- 	    	<div class="social">
+	    		<i class="icon-social-facebook"></i>
+	    		<i class="icon-social-googleplus"></i>
+	    		<i class="icon-social-youtube"></i>
+	    		<i class="icon-social-kktix"></i>
+	    		<i class="icon-social-email"></i>
+	    	</div> -->
+	    	<h3></h3>
+	    	<span></span>
+	    </div>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; 
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing:border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* browser */
+._transition(@a){
+  transition:@a;
+  -webkit-transition:@a;
+  -moz-transition:@a;
+}
+._scale(@a){
+  transform:scale(@a);
+  -webkit-transform:scale(@a);
+  -moz-transform:scale(@a);
+}
+._rotate(@a){
+  transform:rotate(@a);
+  -webkit-transform:rotate(@a);
+  -moz-transform:rotate(@a);
+}
+
+/* main */
+html,body{
+  width:100%;
+  height:100%;
+}
+body{
+  font-family:'STHeiti','Microsoft JhengHei','Arial';
+  background:#fff;
+  overflow-x:hidden;
+  -webkit-transition:.3s;
+  &.menuopen{
+    margin-left:-240px;
+  }
+}
+h1,h2,h3,h4,h5{
+  font-weight:bold;
+}
+
+
+/* header */
+header{
+  user-select:none;
+  -webkit-user-select:none;
+  position:fixed;
+  z-index:3;
+  top:0;
+  left:0;
+  width:100%;
+  height:90px;
+  pointer-events: none;
+  .icon-logo-s{
+    pointer-events: fill;
+    cursor:pointer;
+    a{
+      display:none;
+    }
+    a:first-child{
+      display:block;
+    }
+    i{
+      position:absolute;
+      top:-10px;
+      left:-25px;
+      width: 165px;
+      height: 111px;
+      background-image: url(../../img/layout/layout-sprite.png);
+      background-position: 0 0;
+      ._scale(.4);
+    }
+  }
+  .menu{
+    position:absolute;
+    top:40px;
+    right:30px;
+    width:36px;
+    height:26px;
+    cursor:pointer;
+    pointer-events: fill;
+    cursor:pointer;
+    i,i:before,i:after{
+      display:block;
+      width:32px;
+      height:6px;
+      background:#000;
+      ._transition(.3s);
+    }
+    i{
+      position:relative;
+    }
+    i:before,i:after{
+      position:absolute;
+      content:'';
+      left:0;
+    }
+    i:before{
+      top:-10px;
+    }
+    i:after{
+      top:10px;
+    }
+    &.menuopen{
+      i,i:before,i:after{
+        background:#fff;
+      }
+      i{
+        ._rotate(45deg);
+      }
+      i:before{
+        top:0;
+      }
+      i:after{
+        top:0;
+        ._rotate(-90deg);
+      }
+      &:hover{
+        i,i:before,i:after{
+          background:#fa0;
+        }
+      }
+    }
+  }
+}
+
+.slide-menu{
+  position:fixed;
+  display:block;
+  z-index:2;
+  top:0;
+  right:-300px;
+  width:300px;
+  height:100%;
+  background:#000;
+  color:#fff;
+  font-size:20px;
+  padding:30px 0 20px;
+  overflow-y:auto;
+  transition:right .3s;
+  -webkit-transition:right .3s;
+  &.menuopen{
+    right:0;
+    box-shadow:rgba(0,0,0,.3) -3px 0 0 3px;
+  }
+  &::-webkit-scrollbar {
+  width:3px;
+  }
+  &::-webkit-scrollbar-track {
+    background:#333;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background:#555;
+    border-radius: 3px;
+  }
+  a{
+    &:link,&:active,&:visited{
+      color:#fff;
+      text-decoration:none;
+    }
+    &:hover{
+      color:#fa0;
+    }
+  }
+  >div{
+    margin:20px;
+    padding:0 10px 15px;
+    border-bottom:1px dashed #666;
+    div{
+      margin:20px 0;
+      font-size:18px;
+    }
+    div:last-child{
+      margin-bottom:10px;
+    }
+  }
+  .none{
+    color:#888;
+  }
+}
+.slide-menu.tutorials-slide-menu{
+  display:none;
+}
+
+/* disqus */
+.disqus{
+  display:none;
+}
+
+/* footer */
+footer{
+  width:100%;
+  height:150px;
+  background:#222;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  .content{
+    width:100%;
+    max-width:500px;
+  }
+  .logo{
+    width:100%;
+    padding:5px 5px 10px;
+    text-align:center;
+    a{
+      &:last-child{
+        display:none;
+      }
+      &:first-child{
+        display:inline;
+      }
+    }
+    i{
+    display:inline-block;
+    width: 215px;
+    height: 35px;
+    background-image: url(../../img/layout/layout-sprite.png);
+    background-position: -165px 0;
+    }
+  }
+}
+
+/* RWD */
+@media (max-width: 600px){
+  header{
+    .icon-logo-s{
+      display:none;
+      i{
+        top:-15px;
+        left:-30px;
+        transform:scale(.4);
+      }
+    }
+    .menu{
+      top:35px;
+      right:15px;
+    }
+  }
+  footer{
+    .content{
+      max-width:300px;
+    }
+    .logo{
+      width:100%;
+    }
+  }
+}
+
