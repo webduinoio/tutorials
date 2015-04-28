@@ -1,11 +1,10 @@
 ---
-
-src:tutorials-content/tutorial-01-led.html
-title:範例教學 1：控制單顆 LED 燈
-banner: ../img/tutorials/tutorial-01-01.jpg
+tag: webduino
+src: tutorial-01-led.html
+title: 範例教學 1：控制單顆 LED 燈
+banner: tutorial-01-01.jpg
 date: 20150211
-
-----
+---
 
 <!-- @@master  = ../../_layout.html-->
 
@@ -45,7 +44,7 @@ date: 20150211
 ##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led/)、[jsbin 範例](http://jsbin.com/raniwi/5/edit?html,output)、[檢查連線狀態](http://webduino.io/device.html))
 
 一開始先在 HTML 的 header 引入四個項目，第一個 webcomponents.js 的目的在讓瀏覽器可以支援 WebComponents (因為不是所有的瀏覽器都支援 )，web-arduino.html 是 Webduino 的 WebComponent，wa-led.html 則是這個範例會用到的 LED 元件的 WebComponent。
-   
+
 
 	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
 	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html' />
