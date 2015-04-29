@@ -8,7 +8,8 @@ var gulp 				= require('gulp'),
     inject      = require('gulp-inject'),
   	spritesmith = require('gulp.spritesmith'),
     markdown    = require('gulp-markdown'),
-    pages       = require('gulp-markdown-to-json');
+    gutil       = require('gulp-util'),
+    md2json     = require('gulp-markdown-to-json');
 
 gulp.task('css-clean', function () {
   return gulp.src(['app/style/css/**/*'], {read: true})
@@ -36,14 +37,20 @@ gulp.task('index-extend',function () {
   .pipe(gulp.dest('app'));
 });
 
-gulp.task('index-inject',['index-extend','copy-css'],function(){
+gulp.task('index-inject',['index-extend'],function(){
+  return gulp.src('app/index.html')
+  .pipe(inject(gulp.src(['app/js/lib/jquery.min.js','app/js/layout.js','app/style/css/layout.css'], {read: false}), {relative: true}))
+  .pipe(gulp.dest('app'));
+});
+
+gulp.task('index-inject-final',['index-extend','copy-css'],function(){
   return gulp.src('app/index.html')
   .pipe(inject(gulp.src(['app/js/lib/jquery.min.js','app/js/layout.js','app/style/css/layout.css'], {read: false}), {relative: true}))
   .pipe(gulp.dest('app'));
 });
 
 /* tutorials 合併 layout */
-gulp.task('tutorials-clean',function(){
+gulp.task('tutorials-clean',function(){ 
   return gulp.src(['app/tutorials/**/*'], {read: true}).pipe(clean());
 });
 
@@ -53,15 +60,9 @@ gulp.task('tutorials-extend',['tutorials-clean'], function () {
   .pipe(gulp.dest('app/tutorials'));
 });
 
-gulp.task('tutorials-inject',['tutorials-extend','copy-css'],function(){
-  return gulp.src('app/tutorials/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
-  .pipe(gulp.dest('app/tutorials'));
-});
-
-/* markdown，需要手動修改把 id 拿掉 */
+/* markdown，需要手動修改把 id 拿掉，markdown to json 必須把 data[path].body mark 起來 */
 gulp.task('md-clean',function(){
-  return gulp.src(['app/md/md2html/**/*'], {read: true}).pipe(clean());
+  return gulp.src(['app/md/md2html/**/*','app/json/**/*'], {read: true}).pipe(clean());
 });
 
 gulp.task('md',['md-clean'], function () {
@@ -70,17 +71,31 @@ gulp.task('md',['md-clean'], function () {
         .pipe(gulp.dest('app/md/md2html/'));
 });
 
+gulp.task('md2json',['md'], function(){
+  gulp.src('app/md/**/*.md')
+    .pipe(gutil.buffer())
+    .pipe(md2json('tutorials.json'))
+    .pipe(gulp.dest('app/json'))
+});
+
 gulp.task('md-extend',['md','tutorials-clean'], function () {
   return gulp.src('app/md/md2html/*.html')
   .pipe(extender({annotations:false,verbose:false}))
   .pipe(gulp.dest('app/tutorials'));
 });
 
-gulp.task('tutorials-inject',['tutorials-extend','md-extend','copy-css'],function(){
+gulp.task('tutorials-inject',['md-extend'],function(){
   return gulp.src('app/tutorials/*.html')
   .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
   .pipe(gulp.dest('app/tutorials'));
 });
+
+gulp.task('tutorials-inject-final',['md-extend','copy-css'],function(){
+  return gulp.src('app/tutorials/*.html')
+  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
+  .pipe(gulp.dest('app/tutorials'));
+});
+
 
 
 /* 圖片合併 */
@@ -93,10 +108,11 @@ gulp.task('layout-sprite', function () {
 });
 
 gulp.task('watch',function(){
+  gulp.watch('app/md/**/*.md',['tutorials-inject','md2json']);
 	gulp.watch('app/style/less/*.less',['copy-css']);
 	gulp.watch('app/_index.html',['index-inject']);
 	gulp.watch('app/_layout.html',['index-inject','tutorials-inject']);
-  gulp.watch('app/tutorials-content/*.html',['tutorials-inject']);
+  //gulp.watch('app/tutorials-content/*.html',['tutorials-inject']);
 });
 
 gulp.task('build-clean',function(){
@@ -114,4 +130,4 @@ gulp.task('build',['build-clean'],function(){
   gulp.src('app/robots.txt').pipe(gulp.dest('build'));
 });
 
-gulp.task('default',['index-inject','tutorials-inject','less','layout-sprite','watch']);
+gulp.task('default',['index-inject-final','tutorials-inject-final','md2json','less','layout-sprite','watch']);

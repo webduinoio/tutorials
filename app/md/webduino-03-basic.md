@@ -1,9 +1,9 @@
 ---
-tag: webduino
+tag: tutorial
 src: tutorial-01-led.html
 title: 範例教學 1：控制單顆 LED 燈
 banner: tutorial-01-01.jpg
-date: 20150211
+date: 20150425
 ---
 
 <!-- @@master  = ../../_layout.html-->
@@ -12,18 +12,13 @@ date: 20150211
 
 <title>範例教學 1：控制單顆 LED 燈 :::: Webduino = Web + Arduino</title>
 
-<meta content="前陣子因為需求的關係，需要以經緯度來轉換地址，幸好 Google map API 有提供 Geocoder 可以轉換大略地址的服務。使用方式非常簡單，我們這裡以立法院的經緯度 (25.04398..." property="og:description">
+<meta property="og:description" content="在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。">
 
 <!-- @@close-->
 
-<!-- @@block  =  css-->
-<!-- @@close-->
 
-<!-- @@block  =  content-->
-<div class="tutorials">
-<div class="banner">
-<img src="../img/tutorials/webduino-02-01.jpg">
-</div>
+
+<!-- @@block  =  tutorials-->
 #範例教學 1：控制單顆 LED 燈
 
 在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。

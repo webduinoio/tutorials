@@ -38,101 +38,104 @@
   font-size: 20px;
   font-weight: normal;
 }
-.intro,
-.tutorials,
+.intro-menu,
+.tutorials-menu,
 .fb-fans {
   display: table;
   width: 100%;
 }
-.intro h2,
-.tutorials h2,
+.intro-menu h2,
+.tutorials-menu h2,
 .fb-fans h2,
-.intro span,
-.tutorials span,
+.intro-menu span,
+.tutorials-menu span,
 .fb-fans span {
   display: block;
   width: 100%;
   text-align: center;
 }
-.intro h2,
-.tutorials h2,
+.intro-menu h2,
+.tutorials-menu h2,
 .fb-fans h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 36px;
   font-family: 'Arial black';
 }
-.intro span,
-.tutorials span,
+.intro-menu span,
+.tutorials-menu span,
 .fb-fans span {
   font-size: 18px;
   margin-bottom: 40px;
 }
-.intro .no,
-.tutorials .no,
+.intro-menu .no,
+.tutorials-menu .no,
 .fb-fans .no {
   opacity: .3;
 }
-.intro {
+.intro-menu {
   box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 2px;
   padding: 20px 0;
 }
-.intro .content {
+.intro-menu .content {
   width: 86%;
   height: 100%;
   margin: 0 auto;
 }
-.intro .content .in {
+.intro-menu .content .in {
   float: right;
   width: 30%;
   padding: 5px;
 }
-.intro .content .in img {
+.intro-menu .content .in img {
   width: 100%;
 }
-.intro .content h3 {
+.intro-menu .content h3 {
   margin: 10px 5px 5px;
   font-size: 18px;
 }
-.intro .content span {
+.intro-menu .content span {
   text-align: left;
   margin: 0 10px 10px;
   font-size: 14px;
   color: #999;
   display: none;
 }
-.intro .content .in:first-child {
+.intro-menu .content .in:first-child {
   float: left;
   width: 70%;
   height: 100%;
 }
-.intro .content .in:first-child h3 {
+.intro-menu .content .in:first-child h3 {
   margin: 15px 10px 5px;
   font-size: 26px;
 }
-.intro .content .in:first-child span {
+.intro-menu .content .in:first-child span {
   display: block;
 }
-.intro .content .in:first-child img {
+.intro-menu .content .in:first-child img {
   height: auto;
 }
-.tutorials {
+.tutorials-menu {
   margin-bottom: 30px;
 }
-.tutorials .content {
+.tutorials-menu .content {
   width: 86%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
 }
-.tutorials .content div {
+.tutorials-menu .content div {
   margin: -4px;
   padding: 4px 3px;
   display: inline-block;
   width: 33%;
 }
-.tutorials .content div img {
+.tutorials-menu .content div img {
   width: 100%;
+}
+.tutorials {
+  display: none;
 }
 .fb-fans {
   margin-bottom: 100px;
@@ -167,26 +170,26 @@
   .banner h1 span {
     font-size: 14px;
   }
-  .intro .content .in {
+  .intro-menu .content .in {
     width: 50%;
   }
-  .intro .content .in h3 {
+  .intro-menu .content .in h3 {
     margin: 10px 0 5px;
   }
-  .intro .content .in span {
+  .intro-menu .content .in span {
     display: none;
   }
-  .intro .content .in:first-child {
+  .intro-menu .content .in:first-child {
     width: 50%;
   }
-  .intro .content .in:first-child h3 {
+  .intro-menu .content .in:first-child h3 {
     font-size: 20px;
     margin: 10px 0 5px;
   }
-  .intro .content .in:first-child span {
+  .intro-menu .content .in:first-child span {
     display: none;
   }
-  .tutorials .content div {
+  .tutorials-menu .content div {
     width: 50%;
   }
 }
@@ -201,15 +204,15 @@
   .banner h1 span {
     font-size: 14px;
   }
-  .intro .content .in {
+  .intro-menu .content .in {
     float: none;
     width: 100%;
   }
-  .intro .content .in:first-child {
+  .intro-menu .content .in:first-child {
     float: none;
     width: 100%;
   }
-  .tutorials h2 {
+  .tutorials-menu h2 {
     font-size: 26px;
   }
 }
@@ -225,23 +228,23 @@
   .banner h1 span {
     display: none;
   }
-  .intro h2,
-  .tutorials h2,
+  .intro-menu h2,
+  .tutorials-menu h2,
   .fb-fans h2 {
     font-size: 22px;
   }
-  .intro span,
-  .tutorials span,
+  .intro-menu span,
+  .tutorials-menu span,
   .fb-fans span {
     font-size: 15px;
   }
-  .intro .content,
-  .tutorials .content,
+  .intro-menu .content,
+  .tutorials-menu .content,
   .fb-fans .content {
     margin-top: -20px;
   }
-  .intro .content div,
-  .tutorials .content div,
+  .intro-menu .content div,
+  .tutorials-menu .content div,
   .fb-fans .content div {
     width: 100%;
   }
