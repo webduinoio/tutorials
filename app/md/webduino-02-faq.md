@@ -1,7 +1,7 @@
 ---
 tag: webduino
 src: webduino-02-faq.html
-title: Webduino 的基本介紹與初始化設定
+title: 常見問題與處理
 banner: webduino-02-01.jpg
 date: 20150425
 ---
@@ -10,7 +10,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>Webduino 的基本介紹與初始化設定 :::: Webduino = Web + Arduino</title>
+<title>常見問題與處理 :::: Webduino = Web + Arduino</title>
 
 <meta property="og:description" content="在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 email 給我們。">
 

@@ -55,14 +55,9 @@ header{
 			color:#098;
 		}
 	}
-	b{
+	strong{
 		font-weight:bold;
 		color:#f60;
-	}
-	span{
-		text-align:justify;
-		font-size:17px;
-		line-height:26px;
 	}
 	p{
 		color:#555;
@@ -78,28 +73,33 @@ header{
 		li{
 			display:block;
 			padding:0 10px 20px;
-			span{
-				color:#555;
+			p{
+				width:100%;
 				display:block;
-				padding:0 22px;
-				word-wrap:break-word;
-				word-break: break-all;
-				white-space: pre-wrap;
-			}
-			&.list span{
-				padding:0 22px 0 45px;
-				text-indent:-25px;
+				padding:0 24px;
+				text-indent: -10px;
 			}
 			img{
-				margin:20px 20px 0;
+				margin:20px 0 0;
 				max-width:90%;
 			}
 			img:last-child{
-				margin:20px 20px 20px;
+				padding-bottom:20px;
 				max-width:90%;
 			}
-			&:last-child{
-				padding-bottom:40px;
+			ul{
+				margin-bottom:0;
+				padding:0 16px;
+				width:100%;
+				li{
+					word-wrap:break-word;
+					word-break: break-all;
+					white-space: pre-wrap;
+					padding:0 0 10px 36px;
+					text-indent: -28px;
+					line-height:26px;
+					font-size:17px;
+				}
 			}
 		}
 	}
@@ -140,9 +140,9 @@ header{
 			}
 		}
 	}
-	kbd{
+	code{
 		background:#ddd;
-		padding:2px 5px;
+		padding:2px 10px;
 		border-radius:3px;
 	}
 	pre.prettyprint{
@@ -152,13 +152,18 @@ header{
 		word-break: break-all;
 		white-space: pre-wrap;
 		overflow-y:auto;
-		margin:-10px auto 40px;
+		margin:15px auto 40px;
 		padding:20px;
 		font-weight:normal;
 		font-family:"verdana";
 		font-size:14px;
 		span{
 			font-size:14px;
+		}
+		code{
+			background:none;
+			padding:0;
+			border-radius:0;
 		}
 	}
 }

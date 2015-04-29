@@ -1,0 +1,92 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-08-ultrasonic-rgbled.html
+title: 超音波傳感器控制三色 LED 燈
+banner: tutorial-08-01.jpg</p>
+<h2>date: 20150425</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>範例教學 8：超音波傳感器控制三色 LED 燈 :::: Webduino = Web + Arduino</title>
+
+<meta property="og:description" content="當我們由上一個範例學會了用超音波傳感器控制 LED 燈之後，這個範例應該就輕鬆不少，這個範例最主要是希望能藉由三色 LED 燈顏色上的變化，對應距離的改變，如此一來我們就可以藉由燈號來判斷距離。">
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>範例教學 8：超音波傳感器控制三色 LED 燈</h1>
+<p>當我們由上一個範例學會了用超音波傳感器控制 LED 燈之後，這個範例應該就輕鬆不少，這個範例最主要是希望能藉由三色 LED 燈顏色上的變化，對應距離的改變，如此一來我們就可以藉由燈號來判斷距離。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/vV5e17Xc8CM" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上超音波傳感器與三色 LED 燈</h3>
+<p>  雖然超音波傳感器與三色 LED 可以分別用 webduino 的兩個排插來接，但因為體積的關係，所以我們必須要用到麵包板和電線，用電線引出腳位，把超音波傳感器的 VCC 接在 3.3v，Trig 接在 11，Echo 接在 10，GND 就接在 GND 的腳位，三色 LED 的 VCC 接在 VCC 的腳位，紅色 R 接 6，藍色 B 接 7，綠色 G 接 8。</p>
+<p>  <img src="../img/tutorials/tutorial-08-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 完成後的實際長相</h3>
+<p>  因為超音波傳感器和三色 LED 在實際的接線會朝外，所以實際的照片電線會有反轉的情形，不要接錯了。</p>
+<p>  <img src="../img/tutorials/tutorial-08-03.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-08-04.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-08-05.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/ultrasonic-rgbled/index.html">快速體驗</a>、<a href="http://jsbin.com/latexi/4/edit?html,css,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到超音波傳感器和三色 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：<code>wa-ultrasonic</code>、<code>wa-rgbled</code>。</p>
+<pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/web-arduino.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-ultrasonic.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-rgbled.html&#39; /&gt;
+</code></pre><p>HTML 裡頭放上一個文字說明現在幾公分，同時用一個 div 來顯示顏色，凸顯三色 LED 燈與網頁是顯示同樣的顏色。</p>
+<pre><code>&lt;p id=&#39;show&#39;&gt;&lt;/p&gt;
+&lt;div id=&quot;color&quot;&gt;&lt;/div&gt;
+
+&lt;web-arduino id=&#39;board&#39; device=&quot;你的 device 名稱&quot;&gt;
+  &lt;wa-ultrasonic id=&#39;ultrasonic&#39; trig=&#39;11&#39; echo=&#39;10&#39;&gt;&lt;/wa-ultrasonic&gt;
+  &lt;wa-rgbled id=&#39;rgb&#39; red=&#39;6&#39; blue=&#39;7&#39; green=&#39;8&#39;&gt;&lt;/wa-rgbled&gt;
+&lt;/web-arduino&gt;
+</code></pre><p>稍微調整一下 CSS。</p>
+<pre><code>#color {
+  width: 100%;
+  max-width: 250px;
+  height:100px;
+  border:1px solid #000;
+  background:#000;
+  margin-top: 15px;
+  margin-left: 5px;
+  }
+#show {
+  font-size: 30px;
+  }
+#show::before {
+  content: &#39;距離: &#39;;
+  }
+#show::after {
+  content: &#39; cm&#39;;
+  }
+</code></pre><p>和上一個範例「利用超音波傳感器控制 LED」燈一樣，在 javascript 裡頭加入判斷式，當距離在某個區間的時候，利用三色 LED 的 <code>setColor</code> api 來調整出特定的顏色，這個範例只秀出三種顏色，你也可以利用 <code>setColor</code>，做出各種不同距離對應的各種不同顏色喔！</p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function () {
+  var board = document.getElementById(&#39;board&#39;);
+
+  board.on(&#39;ready&#39;,function() {
+    var ultrasonic = document.getElementById(&#39;ultrasonic&#39;),
+      show = document.getElementById(&#39;show&#39;),
+      color = document.getElementById(&#39;color&#39;),
+      rgb = document.getElementById(&#39;rgb&#39;);
+
+    ultrasonic.ping(function (cm) {
+      show.innerHTML = cm;
+      if (cm &lt; 10) {
+        rgb.setColor(255, 0, 0); // red , green , blue
+        color.style.backgroundColor = &#39;rgba(255, 0, 0, 255)&#39;;
+      } else if (cm &gt; 10 &amp;&amp; cm &lt; 20) {
+        rgb.setColor(0, 255, 0); // red , green , blue
+        color.style.backgroundColor = &#39;rgba(0, 255, 0, 255)&#39;;
+      } else {
+        rgb.setColor(0, 0, 255); // red , green , blue
+        color.style.backgroundColor = &#39;rgba(0, 0, 255, 255)&#39;;
+      }
+    }, 1000);
+  });
+
+}, false);
+</code></pre><p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/ultrasonic-rgbled/index.html">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始利用超音波傳感器感測不同的距離，亮起不同顏色的光，亦或是也可以參考這個 <a href="http://jsbin.com/latexi/4/edit?html,css,js,output">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。</p>
+<!-- @@close-->

@@ -37,6 +37,8 @@ gulp.task('index-extend',function () {
   .pipe(gulp.dest('app'));
 });
 
+
+/* 置換為合適的 js 與 css */
 gulp.task('index-inject',['index-extend'],function(){
   return gulp.src('app/index.html')
   .pipe(inject(gulp.src(['app/js/lib/jquery.min.js','app/js/layout.js','app/style/css/layout.css'], {read: false}), {relative: true}))
@@ -54,11 +56,13 @@ gulp.task('tutorials-clean',function(){
   return gulp.src(['app/tutorials/**/*'], {read: true}).pipe(clean());
 });
 
+/*
 gulp.task('tutorials-extend',['tutorials-clean'], function () {
   return gulp.src('app/tutorials-content/*.html')
   .pipe(extender({annotations:false,verbose:false}))
   .pipe(gulp.dest('app/tutorials'));
 });
+*/
 
 /* markdown，需要手動修改把 id 拿掉，markdown to json 必須把 data[path].body mark 起來 */
 gulp.task('md-clean',function(){
@@ -83,6 +87,8 @@ gulp.task('md-extend',['md','tutorials-clean'], function () {
   .pipe(extender({annotations:false,verbose:false}))
   .pipe(gulp.dest('app/tutorials'));
 });
+
+/* 置換為合適的 js 與 css */
 
 gulp.task('tutorials-inject',['md-extend'],function(){
   return gulp.src('app/tutorials/*.html')

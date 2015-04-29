@@ -1,0 +1,86 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-09-button-led.html
+title: 利用按鈕控制 LED 燈
+banner: tutorial-09-01.jpg</p>
+<h2>date: 20150425</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>範例教學 9：利用按鈕控制 LED 燈 :::: Webduino = Web + Arduino</title>
+
+<meta property="og:description" content="之前的範例提到的都只是控制單一台的 Webduino，這個範例將會展示，如何藉由 Webduino 開發板 ( A 板 ) 的按鈕，去觸發另外一台 Webduino 開發板 ( B 板 ) 的 LED 燈，同時你也可以藉由網頁上的按鈕模擬實際按鈕的動作。">
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>範例教學 9：利用按鈕控制 LED 燈</h1>
+<p>之前的範例提到的都只是控制單一台的 Webduino，這個範例將會展示，如何藉由 Webduino 開發板 ( A 板 ) 的按鈕，去觸發另外一台 Webduino 開發板 ( B 板 ) 的 LED 燈，同時你也可以藉由網頁上的按鈕模擬實際按鈕的動作。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/56DFEZ3hVaA" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上按鈕與電阻</h3>
+<p>  按鈕是一個很常見的元件，當我們進行點壓的時候，按鈕上的四隻腳會呈現全部通路的情形，為了避免有短路的發生，所以我們要接一顆電阻進行保護，下圖是利用 webduino 開發板 ( A 板 ) 與麵包板所接出來的按鈕範例，這裏我們會用到腳位 3.3v、11 與 GND。</p>
+<p>  <img src="../img/tutorials/tutorial-09-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 接上 LED</h3>
+<p>  在另外一塊 webduino 開發板 ( B 板 ) 接上 LED，長腳接在 11，短腳接在 GND。</p>
+<p>  <img src="../img/tutorials/tutorial-09-03.jpg" alt=""></p>
+</li>
+<li><h3>3. 完成後的實際長相</h3>
+<p>  <img src="../img/tutorials/tutorial-09-04.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-09-05.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="[jsbin 範例](http://jsbin.com/latexi/4/edit?html,css,js,output">快速體驗</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到按鈕和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：<code>wa-ultrasonic</code>、<code>wa-rgbled</code>。</p>
+<pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/web-arduino.html&#39;&gt;&lt;/link&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-button.html&#39;&gt;&lt;/link&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-led.html&#39;&gt;&lt;/link&gt;
+</code></pre><p>因為我們有兩塊 webduino 開發板，所以必須要在 HTML 放入兩個 device，然後分別在一個 device 上插入按鈕，另外一個 device 裡頭插入 LED 燈，接著再放入一個網頁的按鈕，要讓這個網頁按鈕跟實體按鈕做一樣的事情。</p>
+<pre><code>&lt;!-- 放按鈕的 device --&gt;
+&lt;web-arduino id=&#39;board1&#39; device=&#39;你的 device 名稱&#39;&gt;
+ &lt;wa-button id=&#39;button&#39; pin=&#39;11&#39;&gt;&lt;/wa-button&gt;
+&lt;/web-arduino&gt;
+
+&lt;!-- 放 LED 燈的 device --&gt;
+&lt;web-arduino id=&#39;board2&#39; device=&#39;你的 device 名稱&#39;&gt;
+ &lt;wa-led id=&#39;led&#39; pin=&#39;11&#39;&gt;&lt;/wa-led&gt;
+&lt;/web-arduino&gt;
+
+&lt;button id=&#39;btn&#39;&gt;Click Me&lt;/button&gt;
+</code></pre><p>最後就是關鍵的 javascript 了，這裏一開始我們用了一個小技巧，就是判斷 board 是否 ready，因為我們接了兩個 webduino 開發板，所以必須要等待每個開發板都 ready 才可以正常運作，每個開發板都是一個 board ( 或 device )，每個 board ready 時數字就會加 1，當數字等於 2 的時候就表示 board ready 完成。
+此外，我們這裡也用到按鈕的 api：<code>on</code>，當按鈕點選的時候就會觸發 LED 的 api：<code>toggle()</code>，就會呈現點一下亮，點一下暗的效果。</p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function() {
+ var board1 = document.getElementById(&#39;board1&#39;),
+   board2 = document.getElementById(&#39;board2&#39;),
+   boards = 0;
+
+ board1.on(&#39;ready&#39;, function() {
+   if (++boards === 2) {
+     boardsReady();
+    }
+  });
+
+ board2.on(&#39;ready&#39;, function() {
+   if (++boards === 2) {
+     boardsReady();
+    }
+  });
+}, false);
+
+function boardsReady() {
+ var button = document.getElementById(&#39;button&#39;),
+   led = document.getElementById(&#39;led&#39;),
+   btn = document.getElementById(&#39;btn&#39;);
+
+ button.on(&#39;pressed&#39;, function() {
+   led.toggle();
+  });
+
+ btn.addEventListener(&#39;click&#39;, function() {
+   led.toggle();
+ }, false);
+}
+</code></pre><p>如果還有不清楚的，可以參考這個 <a href="http://jsbin.com/latexi/4/edit?html,css,js,output">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果</p>
+<!-- @@close-->

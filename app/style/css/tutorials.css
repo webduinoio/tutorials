@@ -58,14 +58,9 @@ header .icon-logo-s a:first-child {
 .tutorials a:hover {
   color: #098;
 }
-.tutorials b {
+.tutorials strong {
   font-weight: bold;
   color: #f60;
-}
-.tutorials span {
-  text-align: justify;
-  font-size: 17px;
-  line-height: 26px;
 }
 .tutorials p {
   color: #555;
@@ -83,28 +78,33 @@ header .icon-logo-s a:first-child {
   display: block;
   padding: 0 10px 20px;
 }
-.tutorials ul li span {
-  color: #555;
+.tutorials ul li p {
+  width: 100%;
   display: block;
-  padding: 0 22px;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: pre-wrap;
-}
-.tutorials ul li.list span {
-  padding: 0 22px 0 45px;
-  text-indent: -25px;
+  padding: 0 24px;
+  text-indent: -10px;
 }
 .tutorials ul li img {
-  margin: 20px 20px 0;
+  margin: 20px 0 0;
   max-width: 90%;
 }
 .tutorials ul li img:last-child {
-  margin: 20px 20px 20px;
+  padding-bottom: 20px;
   max-width: 90%;
 }
-.tutorials ul li:last-child {
-  padding-bottom: 40px;
+.tutorials ul li ul {
+  margin-bottom: 0;
+  padding: 0 16px;
+  width: 100%;
+}
+.tutorials ul li ul li {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  padding: 0 0 10px 36px;
+  text-indent: -28px;
+  line-height: 26px;
+  font-size: 17px;
 }
 .tutorials iframe {
   width: 100%;
@@ -144,9 +144,9 @@ header .icon-logo-s a:first-child {
 .tutorials table tr:first-child th:last-child {
   border-right-color: #000;
 }
-.tutorials kbd {
+.tutorials code {
   background: #ddd;
-  padding: 2px 5px;
+  padding: 2px 10px;
   border-radius: 3px;
 }
 .tutorials pre.prettyprint {
@@ -156,7 +156,7 @@ header .icon-logo-s a:first-child {
   word-break: break-all;
   white-space: pre-wrap;
   overflow-y: auto;
-  margin: -10px auto 40px;
+  margin: 15px auto 40px;
   padding: 20px;
   font-weight: normal;
   font-family: "verdana";
@@ -164,6 +164,11 @@ header .icon-logo-s a:first-child {
 }
 .tutorials pre.prettyprint span {
   font-size: 14px;
+}
+.tutorials pre.prettyprint code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
 }
 .slide-menu {
   display: none;
