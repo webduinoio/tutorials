@@ -1,7 +1,7 @@
 ---
 tag: webduino
 src: webduino-01-introduction.html
-title: Webduino 的基本介紹與初始化設定
+title: 基本介紹與設定
 banner: webduino-01-01.jpg
 date: 20150425
 ---

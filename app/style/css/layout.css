@@ -187,8 +187,8 @@ header .menu {
   right: 30px;
   width: 36px;
   height: 26px;
-  pointer-events: fill;
   cursor: pointer;
+  pointer-events: fill;
 }
 header .menu i,
 header .menu i:before,
@@ -294,9 +294,6 @@ header .menu.menuopen:hover i:after {
 }
 .slide-menu .none {
   color: #888;
-}
-.slide-menu.tutorials-slide-menu {
-  display: none;
 }
 /* disqus */
 .disqus {
