@@ -47,7 +47,7 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-09-05.jpg)
 
-##範例解析 ([快速體驗]([jsbin 範例](http://jsbin.com/latexi/4/edit?html,css,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗]([jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
 
 一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到按鈕和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-rgbled`。
 
@@ -105,6 +105,6 @@ date: 20150425
 	 }, false);
 	}
 
-如果還有不清楚的，可以參考這個 [jsbin 範例](http://jsbin.com/latexi/4/edit?html,css,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果
+如果還有不清楚的，可以參考這個 [jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果
 
 <!-- @@close-->
