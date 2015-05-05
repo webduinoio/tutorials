@@ -140,4 +140,4 @@ gulp.task('build',['build-clean'],function(){
   gulp.src('app/json/**/*').pipe(gulp.dest('build/json'));
 });
 
-gulp.task('default',['index-inject-final','tutorials-inject-final','md2json','less','layout-sprite','watch']);
+gulp.task('default',['index-inject-final','tutorials-inject-final','md2json','less','watch']);

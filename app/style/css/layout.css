@@ -156,7 +156,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 50px;
   pointer-events: none;
 }
 header .icon-logo-s {
@@ -171,8 +171,8 @@ header .icon-logo-s a:first-child {
 }
 header .icon-logo-s i {
   position: absolute;
-  top: -10px;
-  left: -25px;
+  top: -20px;
+  left: -35px;
   width: 165px;
   height: 111px;
   background-image: url(../../img/layout/layout-sprite.png);
@@ -183,12 +183,15 @@ header .icon-logo-s i {
 }
 header .menu {
   position: absolute;
-  top: 40px;
-  right: 30px;
-  width: 36px;
-  height: 26px;
+  top: 10px;
+  right: 10px;
+  width: 56px;
+  height: 56px;
   cursor: pointer;
   pointer-events: fill;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 header .menu i,
 header .menu i:before,
@@ -202,6 +205,7 @@ header .menu i:after {
   -moz-transition: 0.3s;
 }
 header .menu i {
+  margin: 26px auto 0;
   position: relative;
 }
 header .menu i:before,
@@ -216,28 +220,34 @@ header .menu i:before {
 header .menu i:after {
   top: 10px;
 }
-header .menu.menuopen i,
-header .menu.menuopen i:before,
-header .menu.menuopen i:after {
+header.menuopen .icon-logo-s {
+  /*display:none;*/
+}
+header.menuopen .menu {
+  background: rgba(255, 255, 255, 0);
+}
+header.menuopen .menu i,
+header.menuopen .menu i:before,
+header.menuopen .menu i:after {
   background: #fff;
 }
-header .menu.menuopen i {
+header.menuopen .menu i {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
 }
-header .menu.menuopen i:before {
+header.menuopen .menu i:before {
   top: 0;
 }
-header .menu.menuopen i:after {
+header.menuopen .menu i:after {
   top: 0;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
 }
-header .menu.menuopen:hover i,
-header .menu.menuopen:hover i:before,
-header .menu.menuopen:hover i:after {
+header.menuopen .menu:hover i,
+header.menuopen .menu:hover i:before,
+header.menuopen .menu:hover i:after {
   background: #fa0;
 }
 .slide-menu {
