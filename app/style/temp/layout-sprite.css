@@ -9,9 +9,63 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-logo-footer {
+.icon-icon01 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: -40px -220px;
+  width: 40px;
+  height: 40px;
+}
+.icon-icon02 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: 0px -220px;
+  width: 40px;
+  height: 40px;
+}
+.icon-icon03 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: -80px -220px;
+  width: 40px;
+  height: 40px;
+}
+.icon-icon04 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: -120px -220px;
+  width: 40px;
+  height: 40px;
+}
+.icon-icon05 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: -160px -220px;
+  width: 40px;
+  height: 40px;
+}
+.icon-icon06 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: -200px -220px;
+  width: 40px;
+  height: 40px;
+}
+.icon-logo-1 {
   background-image: url(../../../layout/layout-sprite.png);
   background-position: -165px 0px;
+  width: 165px;
+  height: 78px;
+}
+.icon-logo-2 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: 0px -111px;
+  width: 241px;
+  height: 37px;
+}
+.icon-logo-3 {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: 0px -148px;
+  width: 241px;
+  height: 37px;
+}
+.icon-logo-footer {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: 0px -185px;
   width: 250px;
   height: 35px;
 }

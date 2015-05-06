@@ -1,6 +1,7 @@
 $(function(){
 	var file = location.href.split('/'),
 			jsonURL,
+			$window = $(window),
 			$header = $('header'),
 			$menu = $('header .menu'),
 			$body = $('body'),
@@ -12,6 +13,14 @@ $(function(){
 	}else{
 		jsonURL='../json/tutorials.json'
 	}
+
+	$window.scroll(function(){
+		if($window.scrollTop() > 0){
+			$header.addClass('scroll');
+		}else{
+			$header.removeClass('scroll');
+		}
+	});
 
 	$slideMenu.append('<div></div><div></div><div></div>');
 

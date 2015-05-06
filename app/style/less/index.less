@@ -21,6 +21,17 @@
 }
 
 /* main */
+i{
+	&.icon{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		background-image: url(../../img/layout/layout-sprite.png);
+	}
+}
+.tutorials{
+	display:none;
+}
 .banner{
   display:flex;
 	flex-direction:column;
@@ -32,33 +43,81 @@
 	-webkit-align-items:center;
 	width:100%;
 	height:55vw;
-	background:url(../../img/index/banner1.jpg) center top no-repeat;
+	background:url(../../img/index/banner.jpg) center bottom no-repeat;
 	background-size:100% auto;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	h1,span{
 		display:block;
 	}
 	h1{
 		display:block;
-		font-size:36px;
+		font-size:80px;
 		font-family:'Arial black';
 		color:#fff;
-		background:rgba(0,0,0,.3);
-		padding:30px;
-		border:1px solid rgba(255,255,255,.6);
-		box-shadow:rgba(0,0,0,.3) 0 0 50px;
-		text-shadow:rgba(0,0,0,.4) 0 0 10px;
-		text-align:center;
-		span{
+		padding:0 60px;
+		width:100%;
+  	transform:scaleY(1.2);
+  	-webkit-transform:scaleY(1.2);
+  	-moz-transform:scaleY(1.2);
+  	text-shadow:rgba(0,0,0,.3) 0 2px 0;
+
+	}
+	h2{
 		display:block;
-			text-align:center;
-			margin-top:10px;
+		font-size:40px;
+		font-family:'Arial black';
+		color:#fff;
+		padding:10px 60px 0;
+		width:100%;
+  	text-shadow:rgba(0,0,0,.3) 0 2px 0;
+	}
+}
+.content{
+	margin:80px auto;
+	width:86%;
+	div{
+		vertical-align:top;
+		display:inline-block;
+		padding:30px 20px;
+		width:33%;
+		font-size:15px;
+		h2{
+			color:#000;
 			font-size:20px;
-			font-weight:normal;
+			margin:10px 0 15px;
+		}
+		span{
+			display:block;
+			margin-left:50px;
+			color:#666;
+			text-align:justify;
+			line-height:24px;
+		}
+		i{
+			float:left;
+			margin-right:10px;
+			&.icon-01{
+  			background-position: -40px -220px;
+			}
+			&.icon-02{
+  			background-position: 0px -220px;
+			}
+			&.icon-03{
+  			background-position: -80px -220px;
+			}
+			&.icon-04{
+  			background-position: -120px -220px;
+			}
+			&.icon-05{
+  			background-position: -160px -220px;
+			}
+			&.icon-06{
+  			background-position: -200px -220px;
+			}
 		}
 	}
 }
-.intro-menu,.tutorials-menu,.fb-fans{
+.tutorials-menu,.resources{
 	display:table;
 	width:100%;	
 	h2,span{
@@ -69,8 +128,8 @@
 	h2{
 		margin-top:30px;
 		margin-bottom:10px;
-		font-size:36px;
-		font-family:'Arial black';
+		font-size:30px;
+		font-family:'Arial';
 	}
 	span{
 		font-size:18px;
@@ -80,80 +139,170 @@
 		opacity:.3;
 	}
 }
-.intro-menu{
-	box-shadow: rgba(0,0,0,.1) 0 -2px 0 2px;
-	padding:20px 0;
-	.content{
-		width:86%;
-		height:100%;
-		margin:0 auto;
-		.in{
-			float:right;
-			width:30%;
-			padding:5px;
-			img{
-				width:100%;
-			}
-		}
-		h3{
-			margin:10px 5px 5px;
-			font-size:18px;
-		}
-		span{
-			text-align:left;
-			margin:0 10px 10px;
-			font-size:14px;
-			color:#999;
-			display:none;
-		}
-		.in:first-child{
-			float:left;
-			width:70%;
-			height:100%;
-			h3{
-			  margin:15px 10px 5px;
-				font-size:26px;
-			}
-			span{
-				display:block;
-			}
-			img{
-				height:auto;
-			}
-		}
-	}
-}
 .tutorials-menu{
-	margin-bottom:30px;
+	border-top:5px solid #ddd;
 	.content{
-		width:86%;
-		height:100%;
+		width:100%;
 		margin:0 auto;
 		text-align: center;
 		div{
-			margin:-4px;
-			padding:4px 3px;
+			z-index:2;
+			position:relative;
+			margin:0 -2px;
+			padding:0;
 			display:inline-block;
-			width:33%;
-			img{
+			width:25%;
+			overflow:hidden;
+			&:before{
+				z-index:3;
+				pointer-events: none;
+				content:attr(data-title);
+				position:absolute;
+				color:#fff;
 				width:100%;
+				height:50px;
+				line-height:50px;
+				font-size:15px;
+				bottom:-50px;
+				background:rgba(0,0,0,.8);
+				._transition(.3s);
+			}
+			&:after{
+				z-index:2;
+				pointer-events: none;
+				content:'';
+				position:absolute;
+				width:100%;
+				height:100%;
+				top:0;
+				left:0;
+				background:rgba(0,0,0,.2);
+				._transition(.3s);
+			}
+			img{
+				._transition(.3s);
+				width:100%;
+				height:100%;
+			}
+			&:hover{
+				z-index:3;
+				img{
+					margin-top:-2%;
+					margin-left:-2%;
+					height:104%;
+					width:104%;
+				}
+				&:after{
+					background:rgba(0,0,0,0);
+				}
+				&:before{
+					bottom:0px;
+				}
+			}
+		}
+	}
+	.goto-tutorials{
+		background:#6b58cd;
+		padding:50px;
+		box-shadow:inset rgba(0,0,0,.1) 0 5px 0 0;
+		border-bottom:5px solid #ccc;
+		h2{
+			margin:0 0 20px;
+			color:#fff;
+		}
+		a{
+			display:block;
+			font-size:20px;
+			margin:0 auto;
+			width:200px;
+			height:50px;
+			line-height:50px;
+			text-align:center;
+			border:1px solid #fff;
+			color:#fff;
+			._transition(.3s);
+			.fa{
+				opacity:0;
+				margin-left:-20px;
+			._transition(.3s);
+			}
+			&:link,&:active,&:visited,&:hover{
+				color:#fff;
+			}
+			&:hover{
+				background:rgba(255,255,255,.1);
+				.fa{
+					opacity:1;
+					margin-left:6px;
+				}
 			}
 		}
 	}
 }
-.tutorials{
-	display:none;
-}
-.fb-fans{
-	margin-bottom:100px;
-	.content{
-		width:86%;
-		margin:0 auto;
-		text-align: center;		
-		img{
-			width:100%;
-			max-width:750px;
+.resources{
+	padding:80px 0 50px;
+	text-align:center;
+	background:#f1f1f1;
+	h2{
+		margin-bottom:30px;
+	}
+	a{
+		display:inline-block;
+		width:21%;
+		padding:20px;
+		vertical-align:top;
+		&:link,&:active,&:visited,&:hover{
+			color:#555;
+		}
+		div{
+			position:relative;
+			width:90px;
+			height:90px;
+			line-height:90px;
+			border-radius:50%;
+			background:#e1e1e1;
 			margin:0 auto;
+			font-size:26px;
+			color:#555;
+			._transition(.3s);
+			&:before{
+				content:'';
+				position:absolute;
+				width:90px;
+				height:90px;
+				border-radius:50%;
+				border:1px solid #000;
+				top:0;
+				left:0;
+				opacity:0;
+				._transition(.2s);
+			}
+		}
+		h3{
+			font-weight:bold;
+			color:#000;
+			font-size:18px;
+			margin:30px 0 10px;
+		}
+		span{
+			text-align:left;
+			color:#888;
+			font-size:15px;
+			text-align:justify;
+			line-height:22px;
+		}
+		&:hover{
+			div{
+				background:#000;
+				color:#fff;
+				&:before{
+					width:102px;
+					height:102px;
+					top:-7px;
+					left:-7px;
+					opacity:1;
+				}
+			}
 		}
 	}
 }
@@ -178,30 +327,6 @@
 			}
 		}
 	}
-
-	.intro-menu{
-		.content{
-			.in{
-				width:50%;
-				h3{
-					margin:10px 0 5px;
-				}
-				span{
-					display:none;
-				}
-			}
-			.in:first-child{
-				width:50%;
-				h3{
-					font-size:20px;
-					margin:10px 0 5px;
-				}
-				span{
-					display:none;
-				}
-			}
-		}
-	}
 	.tutorials-menu{
 		.content{
 			div{
@@ -221,19 +346,6 @@
 			}
 		}
 	}
-
-	.intro-menu{
-		.content{
-			.in{
-				float:none;
-				width:100%;			}
-			.in:first-child{
-				float:none;
-				width:100%;
-			}
-		}
-	}
-
 	.tutorials-menu{
 		h2{
 			font-size:26px;
@@ -251,20 +363,6 @@
 			border-width:1px 0;
 			span{
 				display:none;
-			}
-		}
-	}
-	.intro-menu,.tutorials-menu,.fb-fans{
-		h2{
-			font-size:22px;
-		}
-		span{
-			font-size:15px;
-		}
-		.content{
-			margin-top:-20px;
-			div{
-				width:100%;
 			}
 		}
 	}

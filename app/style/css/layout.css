@@ -135,7 +135,9 @@ body {
   font-family: 'STHeiti', 'Microsoft JhengHei', 'Arial';
   background: #fff;
   overflow-x: hidden;
-  -webkit-transition: .3s;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 body.menuopen {
   margin-left: -240px;
@@ -147,163 +149,111 @@ h4,
 h5 {
   font-weight: bold;
 }
+a:link,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
 /* header */
 header {
-  user-select: none;
-  -webkit-user-select: none;
   position: fixed;
-  z-index: 3;
+  display: block;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
-  pointer-events: none;
+  height: 80px;
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background-position: 0 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
-header .icon-logo-s {
-  pointer-events: fill;
+header .logo {
   cursor: pointer;
 }
-header .icon-logo-s a {
-  display: none;
-}
-header .icon-logo-s a:first-child {
-  display: block;
-}
-header .icon-logo-s i {
+header .logo i {
   position: absolute;
-  top: -20px;
-  left: -35px;
-  width: 165px;
-  height: 111px;
+  top: 20px;
+  left: 30px;
   background-image: url(../../img/layout/layout-sprite.png);
-  background-position: 0 0;
-  transform: scale(0.4);
-  -webkit-transform: scale(0.4);
-  -moz-transform: scale(0.4);
+  background-position: 0px -111px;
+  width: 241px;
+  height: 37px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
 }
 header .menu {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 56px;
-  height: 56px;
-  cursor: pointer;
-  pointer-events: fill;
+  top: 30px;
+  right: 50px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-header .menu i,
-header .menu i:before,
-header .menu i:after {
-  display: block;
-  width: 32px;
-  height: 6px;
-  background: #000;
+header .menu a {
+  margin: 0 15px;
+  font-size: 16px;
+  text-shadow: rgba(0, 0, 0, 0.7) 0 0 6px;
+  opacity: 1;
+  color: #fff;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-header .menu i {
-  margin: 26px auto 0;
-  position: relative;
+header .menu a:hover {
+  color: #8df;
+  opacity: 1;
 }
-header .menu i:before,
-header .menu i:after {
-  position: absolute;
-  content: '';
-  left: 0;
+header .menu a.none {
+  opacity: .3;
 }
-header .menu i:before {
-  top: -10px;
+header .menu a.none:hover {
+  color: #fff;
 }
-header .menu i:after {
-  top: 10px;
-}
-header.menuopen .icon-logo-s {
-  /*display:none;*/
-}
-header.menuopen .menu {
-  background: rgba(255, 255, 255, 0);
-}
-header.menuopen .menu i,
-header.menuopen .menu i:before,
-header.menuopen .menu i:after {
+header.scroll {
+  height: 55px;
   background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
-header.menuopen .menu i {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
+header.scroll .logo i {
+  top: 8px;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
 }
-header.menuopen .menu i:before {
-  top: 0;
+header.scroll .menu {
+  top: 17px;
 }
-header.menuopen .menu i:after {
-  top: 0;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
+header.scroll .menu a {
+  font-size: 15px;
+  text-shadow: none;
 }
-header.menuopen .menu:hover i,
-header.menuopen .menu:hover i:before,
-header.menuopen .menu:hover i:after {
-  background: #fa0;
+header.scroll .menu a:link,
+header.scroll .menu a:active,
+header.scroll .menu a:visited {
+  color: #000;
 }
-.slide-menu {
-  position: fixed;
-  display: block;
-  z-index: 2;
-  top: 0;
-  right: -300px;
-  width: 300px;
-  height: 100%;
-  background: #000;
-  color: #fff;
-  font-size: 20px;
-  padding: 30px 0 20px;
-  overflow-y: auto;
-  transition: right .3s;
-  -webkit-transition: right .3s;
+header.scroll .menu a:hover {
+  color: #0ac;
 }
-.slide-menu.menuopen {
-  right: 0;
-  box-shadow: rgba(0, 0, 0, 0.3) -3px 0 0 3px;
+header.scroll .menu a.none {
+  color: #000;
+  opacity: .2;
 }
-.slide-menu::-webkit-scrollbar {
-  width: 3px;
+header.scroll .menu a.none:hover {
+  color: #000;
 }
-.slide-menu::-webkit-scrollbar-track {
-  background: #333;
-  border-radius: 3px;
-}
-.slide-menu::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 3px;
-}
-.slide-menu a:link,
-.slide-menu a:active,
-.slide-menu a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-.slide-menu a:hover {
-  color: #fa0;
-}
-.slide-menu > div {
-  margin: 20px;
-  padding: 0 10px 15px;
-  border-bottom: 1px dashed #666;
-}
-.slide-menu > div div {
-  margin: 20px 0;
-  font-size: 18px;
-}
-.slide-menu > div div:last-child {
-  margin-bottom: 10px;
-}
-.slide-menu .none {
-  color: #888;
+header.path-1 {
+  display: none;
 }
 /* disqus */
 .disqus {
@@ -314,18 +264,13 @@ footer {
   width: 100%;
   height: 150px;
   background: #222;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 footer .content {
   width: 100%;
-  max-width: 500px;
 }
 footer .logo {
   width: 100%;
-  padding: 5px 5px 10px;
+  padding: 40px 5px 10px;
   text-align: center;
 }
 footer .logo a:last-child {
@@ -336,10 +281,22 @@ footer .logo a:first-child {
 }
 footer .logo i {
   display: inline-block;
-  width: 215px;
-  height: 35px;
+  width: 241px;
+  height: 37px;
   background-image: url(../../img/layout/layout-sprite.png);
-  background-position: -165px 0;
+  background-position: 0px -148px;
+  opacity: .5;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+footer .logo i:hover {
+  opacity: 1;
+}
+footer h4 {
+  color: #555;
+  text-align: center;
+  font-size: 14px;
 }
 /* RWD */
 @media (max-width: 600px) {

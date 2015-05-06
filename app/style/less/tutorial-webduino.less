@@ -1,0 +1,73 @@
+/* browser */
+._bg-top-linear-gradient(@a,@b){
+	background-image:linear-gradient(top,@a,@b);
+	background-image:-webkit-linear-gradient(top,@a,@b);
+	background-image:-moz-linear-gradient(top,@a,@b);
+}
+._transition(@a){
+  transition:@a;
+  -webkit-transition:@a;
+  -moz-transition:@a;
+}
+._scale(@a){
+  transform:scale(@a);
+  -webkit-transform:scale(@a);
+  -moz-transform:scale(@a);
+}
+._rotate(@a){
+  transform:rotate(@a);
+  -webkit-transform:rotate(@a);
+  -moz-transform:rotate(@a);
+}
+
+header{
+	background:#fff;
+	color:#000;
+	border-bottom:1px solid #eee;
+	.menu{
+		a{
+			color:#000;
+      text-shadow:none;
+      &.none{
+        &:hover{
+          color:#000;
+        }
+      }
+		}
+	}
+}
+
+/* main */
+.tutorials{
+	display:none;
+}
+
+.content{
+	margin:120px auto 80px;
+	width:80%;
+	div{			
+		position:relative;
+		display:inline-block;
+		width:33%;
+		padding:12px;
+		overflow:hidden;
+		a{
+			h2{
+				font-size:18px;
+				margin:10px 0 0;
+				color:#000;
+			}
+			span{
+				color:#999;
+				font-size:12px;
+			}
+		}
+		img{
+			._transition(.3s);
+			width:100%;
+			height:100%;
+		}
+		&:hover{
+		}
+	}
+}

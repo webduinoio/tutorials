@@ -13,13 +13,14 @@
 <meta property="og:description" content="超音波傳感器顧名思義就是會發送超音波，藉由超音波碰撞到物體之後反射回來的時間差，就可以計算超音波傳感器與相對應物體之間的距離，在這個範例裡頭使用的超音波傳感器 HC-SR04 上頭有兩個類似喇叭的裝置，其中一個是 Trig，負責發送超音波，另外一個是 Echo，負責接收反射回來的超音波，最後會得到一個單位為「公分」的數值，就是超音波傳感器與待測物體之間的距離。">
 
 
-
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- inject:css -->
   <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
   <link rel="stylesheet" href="../style/css/layout.css">
   <link rel="stylesheet" href="../style/css/tutorials.css">
   <!-- endinject -->
 
+	
   <!-- inject:js -->
   <script src="../js/lib/disqus.js"></script>
   <script src="../js/lib/jquery.min.js"></script>
@@ -32,18 +33,33 @@
 
 
 
+
+
+
 </head>
 <body>
-	<header>
-		<div class="icon-logo-s">
+	<header class="path-0">
+		<div class="logo">
 			<a href="index.html"><i></i></a>
+		</div>
+		<div class="menu">
+			<a href="index.html">首頁</a>
+			<a href="webduino.html">教學實作</a>
+			<a class="none">線上購買</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<div class="logo">
 			<a href="../index.html"><i></i></a>
 		</div>
 		<div class="menu">
-			<i></i>
+			<a href="../index.html">首頁</a>
+			<a href="../webduino.html">教學實作</a>
+			<a class="none">線上購買</a>
+			<a class="none">關於我們</a>
 		</div>
 	</header>
-	<div class="slide-menu"></div>
 	  
 
 
@@ -109,21 +125,11 @@
   	<div id="disqus_thread"></div>
 	</div>
 	<footer>
-	    <div class="content">
-	    	<div class="logo">
-					<a href="index.html"><i></i></a>
-					<a href="../index.html"><i></i></a>
-	    	</div>
-<!-- 	    	<div class="social">
-	    		<i class="icon-social-facebook"></i>
-	    		<i class="icon-social-googleplus"></i>
-	    		<i class="icon-social-youtube"></i>
-	    		<i class="icon-social-kktix"></i>
-	    		<i class="icon-social-email"></i>
-	    	</div> -->
-	    	<h3></h3>
-	    	<span></span>
-	    </div>
+  	<div class="logo">
+			<a href="index.html"><i></i></a>
+			<a href="../index.html"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
 	</footer>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

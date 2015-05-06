@@ -1,0 +1,44 @@
+/* browser */
+header {
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+header .menu a {
+  color: #000;
+  text-shadow: none;
+}
+header .menu a.none:hover {
+  color: #000;
+}
+/* main */
+.tutorials {
+  display: none;
+}
+.content {
+  margin: 120px auto 80px;
+  width: 80%;
+}
+.content div {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  padding: 12px;
+  overflow: hidden;
+}
+.content div a h2 {
+  font-size: 18px;
+  margin: 10px 0 0;
+  color: #000;
+}
+.content div a span {
+  color: #999;
+  font-size: 12px;
+}
+.content div img {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}

@@ -1,13 +1,25 @@
-header .icon-logo-s a {
+header {
+  display: none;
+}
+header.path-1 {
   display: block;
 }
-header .icon-logo-s a:first-child {
-  display: none;
+header {
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+header .menu a {
+  color: #000;
+  text-shadow: none;
+}
+header .menu a.none:hover {
+  color: #000;
 }
 .tutorials {
   display: table;
   width: 100%;
-  margin: 0 0 30px;
+  margin: 60px 0 30px;
   padding-bottom: 30px;
   border-bottom: 1px dashed #ccc;
 }
