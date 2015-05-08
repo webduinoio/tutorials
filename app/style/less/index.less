@@ -141,7 +141,7 @@ i{
 }
 .tutorials-menu{
 	border-top:5px solid #ddd;
-	.content{
+	.menu-content{
 		width:100%;
 		margin:0 auto;
 		text-align: center;
@@ -150,6 +150,7 @@ i{
 			position:relative;
 			margin:0 -2px;
 			padding:0;
+			vertical-align:top;
 			display:inline-block;
 			width:25%;
 			overflow:hidden;
@@ -309,6 +310,14 @@ i{
 
 /* RWD */
 @media (max-width: 1000px){
+	.content{
+		width:90%;	
+		margin:30px auto;
+		div{
+			width:48%;
+			padding:20px;
+		}
+	}
 	.banner{
 		height:450px;
 		h1{
@@ -328,14 +337,27 @@ i{
 		}
 	}
 	.tutorials-menu{
-		.content{
+		.menu-content{
 			div{
 				width:50%;
 			}
 		}
 	}
+	.resources{
+		a{
+			width:45%;
+		}
+	}
 }
 @media (max-width: 600px){
+	.content{
+		width:90%;	
+		margin:30px auto;
+		div{
+			width:100%;
+			padding:10px 20px 20px 0px;
+		}
+	}
 	.banner{
 		height:300px;
 		h1{
@@ -351,6 +373,11 @@ i{
 			font-size:26px;
 		}
 	}
+	.resources{
+		a{
+			width:90%;
+		}
+	}
 }
 @media (max-width: 500px){
 	.banner{
@@ -363,6 +390,13 @@ i{
 			border-width:1px 0;
 			span{
 				display:none;
+			}
+		}
+	}
+	.tutorials-menu{
+		.menu-content{
+			div{
+				width:100%;
 			}
 		}
 	}

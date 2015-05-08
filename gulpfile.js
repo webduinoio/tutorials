@@ -216,6 +216,7 @@ gulp.task('build',['build-clean'],function(){
   gulp.src('app/robots.txt').pipe(gulp.dest('build'));
   gulp.src('app/md/**/*').pipe(gulp.dest('build/md'));
   gulp.src('app/json/**/*').pipe(gulp.dest('build/json'));
+  gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga'));
 });
 
 gulp.task('default',['content-inject-final','tutorials-inject-final','md2json','less','watch']);

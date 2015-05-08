@@ -4,8 +4,9 @@ $(function(){
 			$window = $(window),
 			$header = $('header'),
 			$menu = $('header .menu'),
+			$mobileMenu = $('header .mobile-menu'),
 			$body = $('body'),
-			$closeArea = $('div,footer').not('.slide-menu,.slide-menu div,header .menu'),
+			$closeArea = $('div,footer').not('.mobile-menu,.slide-menu div,header .menu'),
 			$slideMenu = $('.slide-menu');
 
 	if(file[file.length-1]=='index.html'){
@@ -21,6 +22,7 @@ $(function(){
 			$header.removeClass('scroll');
 		}
 	});
+
 
 	$slideMenu.append('<div></div><div></div><div></div>');
 
@@ -61,27 +63,17 @@ $(function(){
 		}
 	});
 
-	$menu.on('click',_menuToggle);
-	$closeArea.on('click',function(){
-		//$body.removeClass('menuopen');
-		$header.removeClass('menuopen');
-		$menu.removeClass('menuopen');
-		$slideMenu.removeClass('menuopen');
-	});
+	$mobileMenu.on('click',_menuToggle);
 
 	function _menuToggle(){
-		if(!$menu.hasClass('menuopen')){
-			//$body.addClass('menuopen');
-			$header.addClass('menuopen');
+		if(!$mobileMenu.hasClass('menuopen')){
 			$menu.addClass('menuopen');
-			$slideMenu.addClass('menuopen');
+			$mobileMenu.addClass('menuopen');
 
 		}
 		else{
-			//$body.removeClass('menuopen');
-			$header.removeClass('menuopen');
 			$menu.removeClass('menuopen');
-			$slideMenu.removeClass('menuopen');
+			$mobileMenu.removeClass('menuopen');
 		}
 	}
 

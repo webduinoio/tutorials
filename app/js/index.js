@@ -1,5 +1,5 @@
 $(function(){
-	var $box = $('.tutorials-menu .content div'),
+	var $box = $('.tutorials-menu .menu-content div'),
 			$window = $(window);
 
 	$box.css({

@@ -174,10 +174,8 @@ header {
   -moz-transition: 0.3s;
 }
 header .logo {
-  cursor: pointer;
-}
-header .logo i {
   position: absolute;
+  z-index: 3;
   top: 20px;
   left: 30px;
   background-image: url(../../img/layout/layout-sprite.png);
@@ -193,6 +191,7 @@ header .logo i {
 }
 header .menu {
   position: absolute;
+  z-index: 2;
   top: 30px;
   right: 50px;
   transition: 0.3s;
@@ -214,17 +213,17 @@ header .menu a:hover {
   opacity: 1;
 }
 header .menu a.none {
-  opacity: .3;
+  color: #666;
 }
 header .menu a.none:hover {
-  color: #fff;
+  color: #666;
 }
 header.scroll {
   height: 55px;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
-header.scroll .logo i {
+header.scroll .logo {
   top: 8px;
   transform: scale(0.7);
   -webkit-transform: scale(0.7);
@@ -236,24 +235,64 @@ header.scroll .menu {
 header.scroll .menu a {
   font-size: 15px;
   text-shadow: none;
-}
-header.scroll .menu a:link,
-header.scroll .menu a:active,
-header.scroll .menu a:visited {
   color: #000;
 }
 header.scroll .menu a:hover {
   color: #0ac;
 }
 header.scroll .menu a.none {
-  color: #000;
-  opacity: .2;
+  color: #aaa;
 }
 header.scroll .menu a.none:hover {
-  color: #000;
+  color: #aaa;
+}
+header.scroll .mobile-menu {
+  top: 15px;
+  background: #000;
+  background-clip: padding-box;
+}
+header.scroll .mobile-menu:before,
+header.scroll .mobile-menu:after {
+  background: #000;
 }
 header.path-1 {
   display: none;
+}
+header .mobile-menu {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 25px;
+  right: 26px;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  cursor: pointer;
+  border-width: 10px 0;
+  padding-bottom: 5px;
+  background-clip: padding-box;
+  border-style: solid;
+  border-color: transparent;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+header .mobile-menu:before,
+header .mobile-menu:after {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 5px;
+  background: #fff;
+}
+header .mobile-menu:before {
+  top: -10px;
+}
+header .mobile-menu:after {
+  top: 10px;
 }
 /* disqus */
 .disqus {
@@ -299,23 +338,113 @@ footer h4 {
   font-size: 14px;
 }
 /* RWD */
-@media (max-width: 600px) {
-  header .icon-logo-s {
-    display: none;
-  }
-  header .icon-logo-s i {
-    top: -15px;
-    left: -30px;
-    transform: scale(0.4);
+@media (max-width: 1000px) {
+  header .logo {
+    left: 0;
   }
   header .menu {
-    top: 35px;
+    right: 10px;
+  }
+}
+@media (max-width: 800px) {
+  header .mobile-menu {
+    display: block;
+  }
+  header .mobile-menu.menuopen {
+    padding: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+  }
+  header .mobile-menu.menuopen:before,
+  header .mobile-menu.menuopen:after {
+    background: #fa0;
+  }
+  header .mobile-menu.menuopen:before {
+    top: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+  header .mobile-menu.menuopen:after {
+    top: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+  header .menu {
+    top: -350px;
+    right: 0;
+    padding: 70px 20px 20px;
+    width: 100%;
+    height: 350px;
+    background: #000;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 0;
+  }
+  header .menu a {
+    font-size: 20px;
+    display: block;
+    padding: 15px 10px 15px;
+    border-bottom: 1px dashed #666;
+  }
+  header .menu.menuopen {
+    top: 0;
+  }
+  header.scroll .mobile-menu.menuopen {
+    top: 20px;
+  }
+  header.scroll .menu {
+    top: -350px;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    background: #000;
+  }
+  header.scroll .menu a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+  }
+  header.scroll .menu a.none {
+    color: #666;
+  }
+  header.scroll .menu a.none:hover {
+    color: #666;
+  }
+  header.scroll .menu.menuopen {
+    top: 0;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 70px;
+  }
+  header .logo {
+    top: 15px;
+    left: -20px;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
+  header .mobile-menu {
+    top: 20px;
     right: 15px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
   }
   footer .content {
     max-width: 300px;
   }
   footer .logo {
     width: 100%;
+  }
+  footer .logo i {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
+  footer .logo h4 {
+    font-size: 12px;
   }
 }

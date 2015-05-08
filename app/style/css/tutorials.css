@@ -2,6 +2,7 @@ header {
   display: none;
 }
 header.path-1 {
+  z-index: 99;
   display: block;
 }
 header {
@@ -13,8 +14,11 @@ header .menu a {
   color: #000;
   text-shadow: none;
 }
+header .menu a.none {
+  color: #aaa;
+}
 header .menu a.none:hover {
-  color: #000;
+  color: #aaa;
 }
 .tutorials {
   display: table;
@@ -211,6 +215,26 @@ footer .logo a:last-child {
   }
 }
 @media (max-width: 800px) {
+  header .menu {
+    top: -355px;
+  }
+  header .menu a {
+    color: #fff;
+  }
+  header .menu a.none {
+    color: #666;
+  }
+  header .menu a.none:hover {
+    color: #666;
+  }
+  header .mobile-menu {
+    background: #000;
+    background-clip: padding-box;
+  }
+  header .mobile-menu:before,
+  header .mobile-menu:after {
+    background: #000;
+  }
   .tutorials h1,
   .tutorials h2,
   .tutorials p,

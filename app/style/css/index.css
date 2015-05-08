@@ -126,21 +126,22 @@ i.icon {
 .tutorials-menu {
   border-top: 5px solid #ddd;
 }
-.tutorials-menu .content {
+.tutorials-menu .menu-content {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-.tutorials-menu .content div {
+.tutorials-menu .menu-content div {
   z-index: 2;
   position: relative;
   margin: 0 -2px;
   padding: 0;
+  vertical-align: top;
   display: inline-block;
   width: 25%;
   overflow: hidden;
 }
-.tutorials-menu .content div:before {
+.tutorials-menu .menu-content div:before {
   z-index: 3;
   pointer-events: none;
   content: attr(data-title);
@@ -156,7 +157,7 @@ i.icon {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-.tutorials-menu .content div:after {
+.tutorials-menu .menu-content div:after {
   z-index: 2;
   pointer-events: none;
   content: '';
@@ -170,26 +171,26 @@ i.icon {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-.tutorials-menu .content div img {
+.tutorials-menu .menu-content div img {
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   width: 100%;
   height: 100%;
 }
-.tutorials-menu .content div:hover {
+.tutorials-menu .menu-content div:hover {
   z-index: 3;
 }
-.tutorials-menu .content div:hover img {
+.tutorials-menu .menu-content div:hover img {
   margin-top: -2%;
   margin-left: -2%;
   height: 104%;
   width: 104%;
 }
-.tutorials-menu .content div:hover:after {
+.tutorials-menu .menu-content div:hover:after {
   background: rgba(0, 0, 0, 0);
 }
-.tutorials-menu .content div:hover:before {
+.tutorials-menu .menu-content div:hover:before {
   bottom: 0px;
 }
 .tutorials-menu .goto-tutorials {
@@ -310,6 +311,14 @@ i.icon {
 }
 /* RWD */
 @media (max-width: 1000px) {
+  .content {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .content div {
+    width: 48%;
+    padding: 20px;
+  }
   .banner {
     height: 450px;
   }
@@ -328,11 +337,22 @@ i.icon {
   .banner h1 span {
     font-size: 14px;
   }
-  .tutorials-menu .content div {
+  .tutorials-menu .menu-content div {
     width: 50%;
+  }
+  .resources a {
+    width: 45%;
   }
 }
 @media (max-width: 600px) {
+  .content {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .content div {
+    width: 100%;
+    padding: 10px 20px 20px 0px;
+  }
   .banner {
     height: 300px;
   }
@@ -346,6 +366,9 @@ i.icon {
   .tutorials-menu h2 {
     font-size: 26px;
   }
+  .resources a {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .banner {
@@ -358,5 +381,8 @@ i.icon {
   }
   .banner h1 span {
     display: none;
+  }
+  .tutorials-menu .menu-content div {
+    width: 100%;
   }
 }

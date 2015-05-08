@@ -29,8 +29,9 @@ header{
 			color:#000;
       text-shadow:none;
       &.none{
+      	color:#aaa;
         &:hover{
-          color:#000;
+      		color:#aaa;
         }
       }
 		}
@@ -45,6 +46,17 @@ header{
 .content{
 	margin:120px auto 80px;
 	width:80%;
+	text-align:center;
+	h1{
+		font-size:30px;
+		margin:30px 0 20px;
+		padding:30px 0 0;
+		border-top:#aaa dashed 1px;
+		&:first-child{
+			padding-top:0;
+			border:none;
+		}
+	}
 	div{			
 		position:relative;
 		display:inline-block;
@@ -53,11 +65,14 @@ header{
 		overflow:hidden;
 		a{
 			h2{
+				text-align:left;
 				font-size:18px;
-				margin:10px 0 0;
+				margin:10px 0 5px;
 				color:#000;
 			}
 			span{
+				display:block;
+				text-align:left;
 				color:#999;
 				font-size:12px;
 			}
@@ -71,3 +86,51 @@ header{
 		}
 	}
 }
+
+/* RWD */
+@media (max-width: 1000px){
+	.content{
+		width:90%;
+		div{
+			width:43%;
+		}
+	}
+}
+@media (max-width: 800px){
+	header{
+		.menu{
+			top:-355px;
+			a{
+				color:#fff;
+	      &.none{
+	      	color:#666;
+	        &:hover{
+	      		color:#666;
+	        }
+	      }
+			}
+		}
+    .mobile-menu{
+    	background:#000;
+      background-clip:padding-box;
+      &:before,&:after{
+        background:#000;
+      }
+    }
+	}
+	.content{
+		width:100%;
+		div{
+			width:43%;
+		}
+	}
+}
+@media (max-width: 500px){
+	.content{
+		div{
+			width:90%;
+		}
+	}
+}
+
+

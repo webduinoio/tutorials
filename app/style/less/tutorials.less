@@ -1,6 +1,7 @@
 header{
   display:none;
   &.path-1{
+  	z-index:99;
   	display:block;
   }
 }
@@ -14,8 +15,9 @@ header{
 			color:#000;
       text-shadow:none;
       &.none{
+      	color:#aaa;
         &:hover{
-          color:#000;
+      		color:#aaa;
         }
       }
 		}
@@ -215,6 +217,27 @@ footer{
 	}
 }
 @media (max-width: 800px){
+	header{
+		.menu{
+			top:-355px;
+			a{
+				color:#fff;
+	      &.none{
+	      	color:#666;
+	        &:hover{
+	      		color:#666;
+	        }
+	      }
+			}
+		}
+    .mobile-menu{
+    	background:#000;
+      background-clip:padding-box;
+      &:before,&:after{
+        background:#000;
+      }
+    }
+	}
 	.tutorials{
 		h1,h2,p,ul,table,pre{
 			width:80%;
