@@ -24,45 +24,6 @@ $(function(){
 	});
 
 
-	$slideMenu.append('<div></div><div></div><div></div>');
-
-	var	$slideMenuDiv1 = $('.slide-menu>div').eq(0),
-			$slideMenuDiv2 = $('.slide-menu>div').eq(1),
-			$slideMenuDiv3 = $('.slide-menu>div').eq(2);
-
-	$.getJSON(jsonURL,function(data){
-		var array = $.map(data, function(value, index) {
-    	return [value];
-		});
-		var l = array.length;
-		if(file[file.length-1]=='index.html'){
-			$slideMenuDiv1.append('<a href="index.html">回首頁</a>');
-			for(var i=(l-2); i<l; i++){
-				$slideMenuDiv2.append('<div>'+
-					'<a href="tutorials/'+array[i].src+'">'+array[i].title+'</a></div>'
-					);
-			}
-			for(var i=0; i<l-2; i++){
-				$slideMenuDiv3.append('<div>'+
-					'<a href="tutorials/'+array[i].src+'">'+array[i].title+'</a></div>'
-					);
-			}
-		}
-		else{
-			$slideMenuDiv1.append('<a href="../index.html">回首頁</a>');
-			for(var i=(l-2); i<l; i++){
-				$slideMenuDiv2.append('<div>'+
-					'<a href="'+array[i].src+'">'+array[i].title+'</a></div>'
-					);
-			}
-			for(var i=0; i<l-2; i++){
-				$slideMenuDiv3.append('<div>'+
-					'<a href="'+array[i].src+'">'+array[i].title+'</a></div>'
-					);
-			}
-		}
-	});
-
 	$mobileMenu.on('click',_menuToggle);
 
 	function _menuToggle(){

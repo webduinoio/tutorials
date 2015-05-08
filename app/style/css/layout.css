@@ -155,6 +155,10 @@ a:visited,
 a:hover {
   text-decoration: none;
 }
+div {
+  position: relative;
+  boz-sizing: border-box;
+}
 /* header */
 header {
   position: fixed;
@@ -176,12 +180,12 @@ header {
 header .logo {
   position: absolute;
   z-index: 3;
+  width: 241px;
+  height: 37px;
   top: 20px;
   left: 30px;
   background-image: url(../../img/layout/layout-sprite.png);
   background-position: 0px -111px;
-  width: 241px;
-  height: 37px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -245,15 +249,6 @@ header.scroll .menu a.none {
 }
 header.scroll .menu a.none:hover {
   color: #aaa;
-}
-header.scroll .mobile-menu {
-  top: 15px;
-  background: #000;
-  background-clip: padding-box;
-}
-header.scroll .mobile-menu:before,
-header.scroll .mobile-menu:after {
-  background: #000;
 }
 header.path-1 {
   display: none;
@@ -347,11 +342,37 @@ footer h4 {
   }
 }
 @media (max-width: 800px) {
+  header {
+    top: -5px;
+    height: 55px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  }
+  header .logo {
+    top: 10px;
+    left: -20px;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
   header .mobile-menu {
+    top: 18px;
+    right: 18px;
     display: block;
+    background: #000;
+    background-clip: padding-box;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  header .mobile-menu:before,
+  header .mobile-menu:after {
+    background: #000;
   }
   header .mobile-menu.menuopen {
     padding: 0;
+    right: 18px;
+    top: 25px;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -393,11 +414,14 @@ footer h4 {
   header.scroll .mobile-menu.menuopen {
     top: 20px;
   }
+  header.scroll .logo {
+    top: 10px;
+  }
   header.scroll .menu {
     top: -350px;
     right: 0;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background: #000;
   }
   header.scroll .menu a {
@@ -416,23 +440,6 @@ footer h4 {
   }
 }
 @media (max-width: 600px) {
-  header {
-    height: 70px;
-  }
-  header .logo {
-    top: 15px;
-    left: -20px;
-    transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-  }
-  header .mobile-menu {
-    top: 20px;
-    right: 15px;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-  }
   footer .content {
     max-width: 300px;
   }

@@ -81,14 +81,6 @@ header .menu a.none:hover {
   header .menu a.none:hover {
     color: #666;
   }
-  header .mobile-menu {
-    background: #000;
-    background-clip: padding-box;
-  }
-  header .mobile-menu:before,
-  header .mobile-menu:after {
-    background: #000;
-  }
   .content {
     width: 100%;
   }

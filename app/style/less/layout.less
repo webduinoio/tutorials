@@ -52,6 +52,11 @@ table {
   -webkit-transform:rotate(@a);
   -moz-transform:rotate(@a);
 }
+._linear-gradient(@a,@b,@c){
+  background-image:linear-gradient(@a,@b,@c);
+  background-image:-moz-linear-gradient(@a,@b,@c);
+  background-image:-webkit-linear-gradient(@a,@b,@c);
+}
 
 /* main */
 html,body{
@@ -75,7 +80,10 @@ a{
     text-decoration:none;
   }
 }
-
+div{
+  position:relative;
+  boz-sizing:border-box;
+}
 
 /* header */
 header{
@@ -86,21 +94,19 @@ header{
   left:0;
   width:100%;
   height:80px;
-  background-image:linear-gradient(top,rgba(0,0,0,.9),rgba(0,0,0,0));
-  background-image:-moz-linear-gradient(top,rgba(0,0,0,.9),rgba(0,0,0,0));
-  background-image:-webkit-linear-gradient(top,rgba(0,0,0,.9),rgba(0,0,0,0));
+  ._linear-gradient(top,rgba(0,0,0,.9),rgba(0,0,0,0));
   background-position:0 1px; 
   border-bottom:1px solid rgba(255,255,255,0);
   ._transition(.3s);
   .logo{
     position:absolute;
     z-index:3;
+    width: 241px;
+    height: 37px;
     top:20px;
     left:30px;
     background-image: url(../../img/layout/layout-sprite.png);
     background-position: 0px -111px;
-    width: 241px;
-    height: 37px;
     ._transition(.3s);
     ._scale(.8);
   }
@@ -152,14 +158,6 @@ header{
             color:#aaa;
           }
         }
-      }
-    }
-    .mobile-menu{
-      top:15px;
-      background:#000;
-      background-clip:padding-box;
-      &:before,&:after{
-        background:#000;
       }
     }
   }
@@ -258,10 +256,29 @@ footer{
 }
 @media (max-width: 800px){
   header{
+    top:-5px;
+    height:55px;
+    background:#fff;
+    box-shadow:rgba(0,0,0,.2) 0 0 20px;
+    .logo{
+      top:10px;
+      left:-20px;
+      ._scale(.7);
+    }
     .mobile-menu{
+      top:18px;
+      right:18px;
       display:block;
+      background:#000;
+      background-clip:padding-box;
+      ._scale(.8);
+      &:before,&:after{
+        background:#000;
+      }
       &.menuopen{
         padding:0;
+        right:18px;
+        top:25px;
         ._rotate(180deg);
         &:before,&:after{
           background:#fa0;
@@ -300,11 +317,14 @@ footer{
           top:20px;
         }
       }
+      .logo{
+        top:10px;
+      }
       .menu{
         top:-350px;
         right:0;
         width:100%;
-        height:300px;
+        height:350px;
         background:#000;
         a{
           font-size:20px;
@@ -325,19 +345,6 @@ footer{
   }
 }
 @media (max-width: 600px){
-  header{
-    height:70px;
-    .logo{
-      top:15px;
-      left:-20px;
-      ._scale(.7);
-    }
-    .mobile-menu{
-      top:20px;
-      right:15px;
-      ._scale(.8);
-    }
-  }
   footer{
     .content{
       max-width:300px;

@@ -20,7 +20,6 @@
   -moz-transform:rotate(@a);
 }
 
-/* main */
 i{
 	&.icon{
 		display:inline-block;
@@ -29,9 +28,12 @@ i{
 		background-image: url(../../img/layout/layout-sprite.png);
 	}
 }
+/* 預先隱藏 tutorials 區塊，因為在這個頁面用不到 */
 .tutorials{
 	display:none;
 }
+
+/* main */
 .banner{
   display:flex;
 	flex-direction:column;
@@ -45,56 +47,48 @@ i{
 	height:55vw;
 	background:url(../../img/index/banner.jpg) center bottom no-repeat;
 	background-size:100% auto;
-	/*background-attachment: fixed;*/
-	h1,span{
+	h1,h2,span{
 		display:block;
 	}
-	h1{
-		display:block;
-		font-size:80px;
+	h1,h2{
 		font-family:'Arial black';
 		color:#fff;
-		padding:0 60px;
 		width:100%;
+  	text-shadow:rgba(0,0,0,.3) 0 2px 0;
+	}
+	h1{
+		font-size:80px;
+		padding:0 60px;
   	transform:scaleY(1.2);
   	-webkit-transform:scaleY(1.2);
   	-moz-transform:scaleY(1.2);
-  	text-shadow:rgba(0,0,0,.3) 0 2px 0;
 	}
 	h2{
 		display:block;
 		font-size:40px;
-		font-family:'Arial black';
-		color:#fff;
 		padding:10px 60px 0;
-		width:100%;
-  	text-shadow:rgba(0,0,0,.3) 0 2px 0;
-	}
-	img{
-		text-align:left;
-		width:50%;
 	}
 }
 .content{
 	margin:80px auto;
 	width:86%;
 	div{
-		vertical-align:top;
 		display:inline-block;
-		padding:30px 20px;
 		width:33%;
+		padding:30px 20px;
+		vertical-align:top;
 		font-size:15px;
 		h2{
+			margin:10px 0 15px;
 			color:#000;
 			font-size:20px;
-			margin:10px 0 15px;
 		}
 		span{
 			display:block;
 			margin-left:50px;
 			color:#666;
-			text-align:justify;
 			line-height:24px;
+			text-align:justify;
 		}
 		i{
 			float:left;
@@ -135,8 +129,8 @@ i{
 		font-family:'Arial';
 	}
 	span{
-		font-size:18px;
 		margin-bottom:40px;
+		font-size:18px;
 	}
 	.no{
 		opacity:.3;
@@ -151,37 +145,36 @@ i{
 		div{
 			z-index:2;
 			position:relative;
+			display:inline-block;
+			overflow:hidden;
+			width:25%;
 			margin:0 -2px;
 			padding:0;
 			vertical-align:top;
-			display:inline-block;
-			width:25%;
-			overflow:hidden;
+			&:before,&:after{
+				position:absolute;
+				pointer-events: none;
+				width:100%;
+				._transition(.3s);
+			}
 			&:before{
 				z-index:3;
-				pointer-events: none;
 				content:attr(data-title);
 				position:absolute;
 				color:#fff;
-				width:100%;
 				height:50px;
 				line-height:50px;
 				font-size:15px;
 				bottom:-50px;
 				background:rgba(0,0,0,.8);
-				._transition(.3s);
 			}
 			&:after{
 				z-index:2;
-				pointer-events: none;
 				content:'';
-				position:absolute;
-				width:100%;
 				height:100%;
 				top:0;
 				left:0;
 				background:rgba(0,0,0,.2);
-				._transition(.3s);
 			}
 			img{
 				._transition(.3s);
@@ -200,14 +193,14 @@ i{
 					background:rgba(0,0,0,0);
 				}
 				&:before{
-					bottom:0px;
+					bottom:0;
 				}
 			}
 		}
 	}
 	.goto-tutorials{
-		background:#6b58cd;
 		padding:50px;
+		background:#6b58cd;
 		box-shadow:inset rgba(0,0,0,.1) 0 5px 0 0;
 		border-bottom:5px solid #ccc;
 		h2{
@@ -216,22 +209,19 @@ i{
 		}
 		a{
 			display:block;
-			font-size:20px;
-			margin:0 auto;
 			width:200px;
 			height:50px;
+			margin:0 auto;
+			color:#fff;
+			font-size:20px;
 			line-height:50px;
 			text-align:center;
 			border:1px solid #fff;
-			color:#fff;
 			._transition(.3s);
 			.fa{
 				opacity:0;
 				margin-left:-20px;
-			._transition(.3s);
-			}
-			&:link,&:active,&:visited,&:hover{
-				color:#fff;
+				._transition(.3s);
 			}
 			&:hover{
 				background:rgba(255,255,255,.1);
@@ -255,9 +245,7 @@ i{
 		width:21%;
 		padding:20px;
 		vertical-align:top;
-		&:link,&:active,&:visited,&:hover{
-			color:#555;
-		}
+		color:#555;
 		div{
 			position:relative;
 			width:90px;
@@ -324,7 +312,10 @@ i{
 	.banner{
 		height:450px;
 		h1{
-			padding:25px;
+			font-size:60px;
+		}
+		h2{
+			font-size:50px;
 		}
 	}
 }
@@ -332,17 +323,23 @@ i{
 	.banner{
 		height:400px;
 		h1{
-			font-size:30px;
-			padding:15px;
-			span{
-				font-size:14px;
-			}
+			font-size:50px;
+		}
+		h2{
+			font-size:40px;
 		}
 	}
 	.tutorials-menu{
 		.menu-content{
 			div{
 				width:50%;
+				&:before{
+					opacity:.8;
+					bottom:0;
+				}
+				&:after{
+					opacity:0;
+				}
 			}
 		}
 	}
@@ -364,11 +361,12 @@ i{
 	.banner{
 		height:300px;
 		h1{
-			font-size:20px;
-			padding:10px;
-			span{
-				font-size:14px;
-			}
+			text-align:center;
+			font-size:40px;
+		}
+		h2{
+			text-align:center;
+			font-size:30px;
 		}
 	}
 	.tutorials-menu{
@@ -385,17 +383,16 @@ i{
 @media (max-width: 500px){
 	.banner{
 		height:200px;
+		h1{
+			padding-top:30px;
+			font-size:30px;
+		}
+		h2{
+			font-size:20px;
+		}
 	}
 }
 @media (max-width: 400px){
-	.banner{
-		h1{
-			border-width:1px 0;
-			span{
-				display:none;
-			}
-		}
-	}
 	.tutorials-menu{
 		.menu-content{
 			div{
