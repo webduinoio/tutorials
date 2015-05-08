@@ -10,7 +10,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 2：兩顆 LED 交互閃爍 :::: Webduino = Web + Arduino</title>
+<title>範例教學 2：兩顆 LED 交互閃爍 :::: Webduino = Web × Arduino</title>
 
 <meta property="og:description" content="熟悉了第一個範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
 

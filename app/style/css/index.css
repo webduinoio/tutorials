@@ -49,6 +49,10 @@ i.icon {
   width: 100%;
   text-shadow: rgba(0, 0, 0, 0.3) 0 2px 0;
 }
+.banner img {
+  text-align: left;
+  width: 50%;
+}
 .content {
   margin: 80px auto;
   width: 86%;
