@@ -23,8 +23,8 @@ header .menu a.none:hover {
 .tutorials {
   display: table;
   width: 100%;
-  margin: 60px 0 30px;
-  padding-bottom: 30px;
+  margin: 60px 0 0;
+  padding-bottom: 0;
   border-bottom: 1px dashed #ccc;
 }
 .tutorials .banner {
@@ -43,7 +43,8 @@ header .menu a.none:hover {
 .tutorials p,
 .tutorials ul,
 .tutorials table,
-.tutorials pre {
+.tutorials pre,
+.tutorials .pre-next div {
   width: 60%;
   margin: 0 auto;
 }
@@ -188,6 +189,103 @@ header .menu a.none:hover {
   padding: 0;
   border-radius: 0;
 }
+.tutorials .pre-next {
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px dashed #ccc;
+  background: #f5f5f5;
+  display: table;
+  padding-bottom: 30px;
+}
+.tutorials .pre-next .pre,
+.tutorials .pre-next .next {
+  padding: 20px 0;
+  width: 48%;
+  line-height: 28px;
+  font-size: 18px;
+  color: #444;
+}
+.tutorials .pre-next .pre:hover,
+.tutorials .pre-next .next:hover {
+  color: #000;
+}
+.tutorials .pre-next .pre {
+  float: left;
+}
+.tutorials .pre-next .pre:hover i {
+  -webkit-animation: prei .6s infinite;
+  -moz-animation: prei .6s infinite;
+  animation: prei .6s infinite;
+}
+.tutorials .pre-next .next {
+  text-align: right;
+  float: right;
+}
+.tutorials .pre-next .next:hover i {
+  -webkit-animation: nexti .6s infinite;
+  -moz-animation: nexti .6s infinite;
+  animation: nexti .6s infinite;
+}
+@-webkit-keyframes prei {
+  0%,
+  100% {
+    margin: 0;
+  }
+  50% {
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+}
+@-webkit-keyframes nexti {
+  0%,
+  100% {
+    margin: 0;
+  }
+  50% {
+    margin-left: 5px;
+    margin-right: -5px;
+  }
+}
+@-moz-keyframes prei {
+  0%,
+  100% {
+    margin: 0;
+  }
+  50% {
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+}
+@-moz-keyframes nexti {
+  0%,
+  100% {
+    margin: 0;
+  }
+  50% {
+    margin-left: 5px;
+    margin-right: -5px;
+  }
+}
+@keyframes prei {
+  0%,
+  100% {
+    margin: 0;
+  }
+  50% {
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+}
+@keyframes nexti {
+  0%,
+  100% {
+    margin: 0;
+  }
+  50% {
+    margin-left: 5px;
+    margin-right: -5px;
+  }
+}
 /* footer */
 footer .logo a:first-child {
   display: none;
@@ -198,7 +296,7 @@ footer .logo a:last-child {
 /* disqus */
 .disqus {
   display: block;
-  margin: 0 auto 50px;
+  margin: 20px auto 50px;
   width: 60%;
 }
 /* RWD */
@@ -236,7 +334,8 @@ footer .logo a:last-child {
   .tutorials p,
   .tutorials ul,
   .tutorials table,
-  .tutorials pre {
+  .tutorials pre,
+  .tutorials .pre-next div {
     width: 80%;
   }
   .disqus {
@@ -249,7 +348,8 @@ footer .logo a:last-child {
   .tutorials p,
   .tutorials ul,
   .tutorials table,
-  .tutorials pre {
+  .tutorials pre,
+  .tutorials .pre-next div {
     width: 85%;
   }
   .tutorials table {
@@ -284,6 +384,17 @@ footer .logo a:last-child {
   }
   .tutorials pre span {
     font-size: 14px;
+  }
+  .tutorials .pre-next .pre,
+  .tutorials .pre-next .next {
+    clear: both;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .tutorials .pre-next .pre i,
+  .tutorials .pre-next .next i {
+    display: none;
   }
   .disqus {
     width: 85%;

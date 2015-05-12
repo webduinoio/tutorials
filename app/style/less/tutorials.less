@@ -26,8 +26,8 @@ header{
 .tutorials{
 	display:table;
 	width:100%;
-	margin:60px 0 30px;
-	padding-bottom:30px;
+	margin:60px 0 0;
+	padding-bottom:0;
 	border-bottom:1px dashed #ccc;
 	.banner{
 		display:table;
@@ -40,7 +40,7 @@ header{
 			width:100%;
 		}
 	}
-	h1,h2,p,ul,table,pre{
+	h1,h2,p,ul,table,pre,.pre-next div{
 		width:60%;
 		margin:0 auto;
 	}
@@ -183,6 +183,99 @@ header{
 			border-radius:0;
 		}
 	}
+	.pre-next{
+		width:100%;
+		margin-top:50px;
+		border-top:1px dashed #ccc;
+		background:#f5f5f5;
+		display:table;
+		padding-bottom:30px;
+		.pre,.next{
+			padding:20px 0;
+			width:48%;
+			line-height:28px;
+			font-size:18px;
+			color:#444;
+			&:hover{
+				color:#000;
+			}
+		}
+		.pre{
+			float:left;
+			&:hover{
+				i{
+					-webkit-animation:prei .6s infinite;
+					-moz-animation:prei .6s infinite;
+					animation:prei .6s infinite;
+				}
+			}
+		}
+		.next{
+			text-align:right;
+			float:right;
+			&:hover{
+				i{
+					-webkit-animation:nexti .6s infinite;
+					-moz-animation:nexti .6s infinite;
+					animation:nexti .6s infinite;
+				}
+			}
+		}
+	}
+}
+@-webkit-keyframes prei{
+	0%,100%{
+		margin:0;
+	}
+	50%{
+		margin-left:-5px;
+		margin-right:5px;
+	}
+}
+@-webkit-keyframes nexti{
+	0%,100%{
+		margin:0;
+	}
+	50%{
+		margin-left:5px;
+		margin-right:-5px;
+	}
+}
+@-moz-keyframes prei{
+	0%,100%{
+		margin:0;
+	}
+	50%{
+		margin-left:-5px;
+		margin-right:5px;
+	}
+}
+@-moz-keyframes nexti{
+	0%,100%{
+		margin:0;
+	}
+	50%{
+		margin-left:5px;
+		margin-right:-5px;
+	}
+}
+@keyframes prei{
+	0%,100%{
+		margin:0;
+	}
+	50%{
+		margin-left:-5px;
+		margin-right:5px;
+	}
+}
+@keyframes nexti{
+	0%,100%{
+		margin:0;
+	}
+	50%{
+		margin-left:5px;
+		margin-right:-5px;
+	}
 }
 
 /* footer */
@@ -202,7 +295,7 @@ footer{
 /* disqus */
 .disqus{
   display:block;
-  margin:0 auto 50px;
+  margin:20px auto 50px;
 	width:60%;
 }
 
@@ -235,7 +328,7 @@ footer{
 	}
 	.tutorials{
 		margin-top:40px;
-		h1,h2,p,ul,table,pre{
+		h1,h2,p,ul,table,pre,.pre-next div{
 			width:80%;
 		}
 	}
@@ -245,7 +338,7 @@ footer{
 }
 @media (max-width: 600px){
 	.tutorials{
-		h1,h2,p,ul,table,pre{
+		h1,h2,p,ul,table,pre,.pre-next div{
 			width:85%;
 		}
 		table{
@@ -280,6 +373,17 @@ footer{
 			font-size:14px;
 			span{
 			font-size:14px;
+			}
+		}
+		.pre-next{
+			.pre,.next{
+				clear:both;
+				text-align:left;
+				width:100%;
+				padding-bottom:0;
+				i{
+					display:none;
+				}
 			}
 		}
 	}

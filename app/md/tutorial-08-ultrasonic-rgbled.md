@@ -1,7 +1,7 @@
 ---
 tag: tutorial
 src: tutorial-08-ultrasonic-rgbled.html
-title: 8. 超音波傳感器 + 三色 LED
+title: 超音波傳感器控制三色 LED 燈
 banner: tutorial-08-01.jpg
 date: 20150425
 ---

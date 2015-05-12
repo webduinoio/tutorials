@@ -1,7 +1,7 @@
 ---
 tag: tutorial
 src: tutorial-02-2led.html
-title: 2.兩顆 LED 交互閃爍
+title: 兩顆 LED 交互閃爍
 banner: tutorial-02-01.jpg
 date: 20150425
 ---

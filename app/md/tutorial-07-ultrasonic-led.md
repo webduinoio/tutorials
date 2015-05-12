@@ -1,7 +1,7 @@
 ---
 tag: tutorial
 src: tutorial-07-ultrasonic-led.html
-title: 7. 超音波傳感器 + LED
+title: 超音波傳感器控制 LED 燈
 banner: tutorial-07-01.jpg
 date: 20150425
 ---

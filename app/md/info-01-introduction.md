@@ -1,8 +1,8 @@
 ---
 tag: webduino
-src: webduino-01-introduction.html
-title: 基本介紹
-banner: webduino-01-01.jpg
+src: info-01-introduction.html
+title: Webduino 的基本介紹
+banner: info-01-01.jpg
 date: 20150425
 ---
 
@@ -63,7 +63,7 @@ Webduino開發板是結合了 Arduino Pro Mini 和 WiFi 模組晶片，所開發
 
 <br/>
 
-![Webduino 的基本介紹 - 什麼是 Webduino 開發板？](../img/tutorials/webduino-01-02.jpg)
+![Webduino 的基本介紹 - 什麼是 Webduino 開發板？](../img/tutorials/info-02-02.jpg)
 
 <br/>
 
@@ -71,7 +71,7 @@ Webduino 開發板是一塊易學易用的物聯網開發板，不管是入門�
 
 <br/>
 
-![Webduino 的基本介紹 - 什麼是 Webduino 開發板？](../img/tutorials/webduino-01-09.gif)
+![Webduino 的基本介紹 - 什麼是 Webduino 開發板？](../img/tutorials/info-01-02.gif)
 
 ##Webduino 的開發方式
 

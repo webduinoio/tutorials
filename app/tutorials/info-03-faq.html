@@ -1,17 +1,72 @@
-<hr>
-<p>tag: webduino
-src: webduino-03-faq.html
-title: 常見問題與處理
-banner: webduino-03-01.jpg</p>
-<h2>date: 20150425</h2>
-<!-- @@master  = ../../_layout.html-->
-<!-- @@block  =  meta-->
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+
 <title>常見問題與處理 :::: Webduino = Web × Arduino</title>
 
 <meta property="og:description" content="在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 email 給我們。">
 
-<!-- @@close-->
-<!-- @@block  =  tutorials-->
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+  <link rel="stylesheet" href="../style/css/layout.css">
+  <link rel="stylesheet" href="../style/css/tutorials.css">
+  <!-- endinject -->
+
+	
+  <!-- inject:js -->
+  <script src="../js/lib/disqus.js"></script>
+  <script src="../js/lib/jquery.min.js"></script>
+  <script src="../js/lib/run_prettify.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/tutorials.js"></script>
+  <!-- endinject -->
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html">首頁</a>
+			<a href="webduino.html">教學實作</a>
+			<a class="none">線上購買</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<div class="mobile-menu"></div>
+		<a class="logo" href="../index.html"></a>
+		<div class="menu">
+			<a href="../index.html">首頁</a>
+			<a href="../webduino.html">教學實作</a>
+			<a class="none">線上購買</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials">
+		<div class="banner">
+		</div>  
+
 <h1>常見問題與處理</h1>
 <p>在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 <a href="mailto:service@webduino.io">email</a> 給我們，或是在最下面留言也可以。</p>
 <h2>初始化設定相關</h2>
@@ -27,7 +82,7 @@ banner: webduino-03-01.jpg</p>
 </li>
 <li><h3>3. 為什麼在 wifi 搜尋看不到 Webduino 開發板的 SSID？</h3>
 <ul>
-<li>(1) 可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「<a href="webduino-01-introduction.html">Webduino 的基本介紹與初始化設定</a>」。</li>
+<li>(1) 可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「<a href="info-01-introduction.html">Webduino 的基本介紹與初始化設定</a>」。</li>
 <li>(2) 可能是電池沒電了，建議更換電池或改用 usb 供電。</li>
 </ul>
 </li>
@@ -67,4 +122,27 @@ banner: webduino-03-01.jpg</p>
 </ul>
 </li>
 </ul>
-<!-- @@close-->
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html"><i></i></a>
+			<a href="../index.html"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

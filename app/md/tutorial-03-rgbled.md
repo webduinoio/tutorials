@@ -1,7 +1,7 @@
 ---
 tag: tutorial
 src: tutorial-03-rgbled.html
-title: 3. 三色 LED
+title: 控制 三色 LED
 banner: tutorial-03-01.jpg
 date: 20150425
 ---

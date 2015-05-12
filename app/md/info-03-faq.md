@@ -1,8 +1,8 @@
 ---
 tag: webduino
-src: webduino-03-faq.html
+src: info-03-faq.html
 title: 常見問題與處理
-banner: webduino-03-01.jpg
+banner: info-03-01.jpg
 date: 20150425
 ---
 
@@ -37,7 +37,7 @@ date: 20150425
 
 - ###3. 為什麼在 wifi 搜尋看不到 Webduino 開發板的 SSID？
 
-	- (1) 可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 的基本介紹與初始化設定](webduino-01-introduction.html)」。
+	- (1) 可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 的基本介紹與初始化設定](info-01-introduction.html)」。
 	- (2) 可能是電池沒電了，建議更換電池或改用 usb 供電。
 
 - ###4. 初始化之後，在 device 的網頁看不到對應的 Webduino 開發板名稱？
