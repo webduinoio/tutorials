@@ -24,7 +24,7 @@ gulp.task('less',['css-clean'],function(){
   });
 
 gulp.task('copy-css',['less'],function(){
-  return gulp.src('app/style/less/lib/*').pipe(gulp.dest('app/style/css/lib'));
+  return gulp.src('app/style/less/lib/**/*').pipe(gulp.dest('app/style/css/lib'));
 });
 
 /*                           .                               .o8  
@@ -142,13 +142,13 @@ gulp.task('md-extend',['md2json','tutorials-clean'], function () {
 
 gulp.task('tutorials-inject',['md-extend'],function(){
   return gulp.src('app/tutorials/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
+  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/tomorrow.css','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
   .pipe(gulp.dest('app/tutorials'));
 });
 
 gulp.task('tutorials-inject-final',['md-extend','copy-css'],function(){
   return gulp.src('app/tutorials/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/*','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
+  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/tomorrow.css','app/style/css/layout.css','app/style/css/tutorials.css'], {read: false}), {relative: true}))
   .pipe(gulp.dest('app/tutorials'));
 });
 

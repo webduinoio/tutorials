@@ -1,8 +1,8 @@
 ---
 tag: webduino
-src: webduino-02-faq.html
+src: webduino-03-faq.html
 title: 常見問題與處理
-banner: webduino-02-01.jpg
+banner: webduino-03-01.jpg
 date: 20150425
 ---
 
@@ -32,7 +32,7 @@ date: 20150425
 
 - ###2. Webduino 的 SSID 與家裡 wifi 的 SSID 差異？
 
-	- (1) 通常在初始化設定的時候，很容易把 Webduino 的 SSID 與家裡 wifi 的 SSID 搞混，**Webduino 的 SSID 是這塊開發板的名稱。** ( 通常是 wa + 數字，例如 wa101、wa999 )
+	- (1) 通常在初始化設定的時候，很容易把 Webduino 的 SSID 與家裡 wifi 的 SSID 搞混，**Webduino 的 SSID 是這塊開發板的名稱。** ( 通常是 wa + 數字，例如 wa101、wa999，並且會寫在裝置說明卡裡頭。 )
 	- (2) 當你連結 Webduino 開發板的 SSID，表示我們可以透過「192.168.4.1」連結上 Webduino 開發板，**連結上開發板之後，所看到的 SSID 與 PASSWORD，指的就是家裡、公司環境或行動裝置分享的 wifi SSID 與密碼**，千萬不要搞錯了。
 
 - ###3. 為什麼在 wifi 搜尋看不到 Webduino 開發板的 SSID？

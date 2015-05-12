@@ -20,14 +20,6 @@
   -moz-transform:rotate(@a);
 }
 
-i{
-	&.icon{
-		display:inline-block;
-		width:40px;
-		height:40px;
-		background-image: url(../../img/layout/layout-sprite.png);
-	}
-}
 /* 預先隱藏 tutorials 區塊，因為在這個頁面用不到 */
 .tutorials{
 	display:none;
@@ -89,28 +81,15 @@ i{
 			color:#666;
 			line-height:24px;
 			text-align:justify;
+			word-wrap:break-word;
+			word-break: break-all;
+			white-space: pre-wrap;
 		}
 		i{
 			float:left;
-			margin-right:10px;
-			&.icon-01{
-  			background-position: -40px -220px;
-			}
-			&.icon-02{
-  			background-position: 0px -220px;
-			}
-			&.icon-03{
-  			background-position: -80px -220px;
-			}
-			&.icon-04{
-  			background-position: -120px -220px;
-			}
-			&.icon-05{
-  			background-position: -160px -220px;
-			}
-			&.icon-06{
-  			background-position: -200px -220px;
-			}
+			margin-right:14px;
+			font-size:36px;
+			color:#24bde5;
 		}
 	}
 }

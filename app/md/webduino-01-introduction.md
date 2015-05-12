@@ -1,7 +1,7 @@
 ---
 tag: webduino
 src: webduino-01-introduction.html
-title: 基本介紹與設定
+title: 基本介紹
 banner: webduino-01-01.jpg
 date: 20150425
 ---
@@ -10,7 +10,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>Webduino 的基本介紹與初始化設定 :::: Webduino = Web × Arduino</title>
+<title>Webduino 的基本介紹 :::: Webduino = Web × Arduino</title>
 
 <meta property="og:description" content="Webduino 這個名稱的由來，就是 Web 與 Arduino 這兩個單字的結合，也正式宣告了可以用 Web 控制 Arduino 的時代來臨，雖然目前市面上也有一些類似的技術或解決方案，但千篇一律的都是寫 C/C++ 讓 Arduino 可以連上網，或是透過網路的方式將 C/C++ 寫入 Arduino，幾乎沒有能夠純粹利用 Web 技術去控制 Arduino 的方式。">
 
@@ -19,7 +19,7 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-#Webduino 的基本介紹與初始化設定
+#Webduino 的基本介紹
 
 Webduino 這個名稱的由來，就是 Web 與 Arduino 這兩個單字的結合，也正式宣告了可以用 Web 控制 Arduino 的時代來臨，雖然目前市面上也有一些類似的技術或解決方案，但千篇一律的都是寫 C/C++ 讓 Arduino 可以連上網，或是透過網路的方式將 C/C++ 寫入 Arduino，幾乎沒有能夠純粹利用 Web 技術去控制 Arduino 的方式。
 
@@ -57,49 +57,28 @@ Webduino 有別於傳統要寫 C 或 C++ 才能控制 Arduino 的傳感器，Web
 </tr>
 </table>
 
-##Webduino 初始化設定
+##什麼是 Webduino 開發板？
 
-- ###1. 組合 Webduino 開發板
+Webduino開發板是結合了 Arduino Pro Mini 和 WiFi 模組晶片，所開發出來的電路板，只要插電源就會自動連上雲端，方便開發者進行物聯網裝置的研發與應用。
 
-	將「Arduino Pro Mini 晶片」與「ESP8266 Wifi 晶片」組合至底板，就成為「Webduino 開發板」。
+<br/>
 
-	![](../img/tutorials/webduino-01-02.jpg)
+![Webduino 的基本介紹 - 什麼是 Webduino 開發板？](../img/tutorials/webduino-01-02.jpg)
 
-- ###2. 讓 Webduino 開發板連線網路基地台
+<br/>
 
-	接著要讓 Webduino 開發板可以自行連上家裡、公司場所或行動裝置分享的網路基地台，並自動連結上雲端的伺服器，如此一來我們就能透過 wifi 去控制 Webduino 開發板。
+Webduino 開發板是一塊易學易用的物聯網開發板，不管是入門使用者、進階開發者、資深研究者等，不需要理會硬體的煩雜技術，只需用 Web 技術，就可以控制 Arduino 相容的感應模組的神兵利器！如下圖示，任何前端開發工程師只要用 HTML 與 JavaScript ，就可以立即點亮 LED 燈。
 
-	![](../img/tutorials/webduino-01-05.jpg)
+<br/>
 
-- ###3. 接上 LED 開始進行初始化
+![Webduino 的基本介紹 - 什麼是 Webduino 開發板？](../img/tutorials/webduino-01-09.gif)
 
-	首先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，**當 LED 亮起，表示可以開始進行初始化**，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 4。
+##Webduino 的開發方式
 
-	![](../img/tutorials/webduino-01-03.jpg)
+Webduino 整合了最新的Web元件化技術 ( WebComponents )，開發者只要使用自訂 HTML 標籤，就可以完成 Webduino 開發板的連接與物聯網裝置的監控，每一片 Webduino 開發板都預設有一個專屬的雲端通道代碼，開發者只要撰寫 HTML 標籤，**在 device 屬性填入雲端通道代碼**，這個網頁就可以輕易完成和 Webduino 開發板的連線。
 
-- ###4. 使用 wifi 搜尋 Webduino 開發板
+##Webduino 在未來物聯網的發展趨勢
 
-	使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線。( 範例名稱為 wa101 )
-
-	![](../img/tutorials/webduino-01-04.jpg)
-
-
-- ###5. 連線 Webduino 開發板進行設定
-
-	打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b>http://192.168.4.1</b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( **此處的 SSID 為網路基地台的 SSID，並非 Webduino 開發板，且 SSID 與 PASSWORD 有限制 14 個字元，只能大小寫的英文字母與數字的組合**，要特別注意！ )
-
-	![](../img/tutorials/webduino-01-07.jpg)
-
-- ###6. 重啟 Webduino 開發板
-
-	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線，此時**移除 Webduino 開發板的電源以及 LED**，重新再接上電源即可進行重啟。( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )
-
-	![](../img/tutorials/webduino-01-08.jpg)
-
-- ###7. 確認連線是否成功
-
-	Webduino 開發板重啟後，可以連結 [http://webduino.io/device.html](http://webduino.io/device.html) 確認是否連線成功，**連線成功後即可開始玩轉 Webduino**。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )
-
-	![](../img/tutorials/webduino-01-06.jpg)
+未來的物聯網市場，可能是 IT 產業發展至今所遇到前所未有的發展契機，在廣大的使用者當中，包含了非常多樣化與異質化的使用族群，唯有更簡易、方面與跨平台的觀念和開發模式，可以滿足這些使用者的需求，並在未來的物聯網應用中，佔據不倒的地位，然而，憑藉著這樣概念發展出的 Webduino，是值得讓所有的 HTML/JavaScript 前端開發者，當成進攻物聯網市場的神兵利器！
 
 <!-- @@close-->

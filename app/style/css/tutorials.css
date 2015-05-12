@@ -87,6 +87,9 @@ header .menu a.none:hover {
   word-break: break-all;
   white-space: pre-wrap;
 }
+.tutorials p img {
+  max-width: 90%;
+}
 .tutorials ul {
   margin-bottom: 30px;
 }
@@ -102,11 +105,9 @@ header .menu a.none:hover {
 }
 .tutorials ul li img {
   margin: 20px 0 0;
-  max-width: 90%;
 }
 .tutorials ul li img:last-child {
   padding-bottom: 20px;
-  max-width: 90%;
 }
 .tutorials ul li ul {
   margin-bottom: 0;
@@ -263,6 +264,9 @@ footer .logo a:last-child {
   }
   .tutorials p {
     font-size: 16px;
+  }
+  .tutorials p img {
+    max-width: 100%;
   }
   .tutorials ul h3 {
     font-size: 18px;
