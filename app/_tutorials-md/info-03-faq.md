@@ -13,7 +13,16 @@ date: 20150425
 
 <title>常見問題與處理 :::: Webduino = Web × Arduino</title>
 
+<meta name="description" content="在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 email 給我們。">
+<meta itemprop="description" content="在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 email 給我們。">
 <meta property="og:description" content="在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 email 給我們。">
+
+
+<meta property="og:title" content="Webduino 常見問題與處理" >
+<meta property="og:url" content="http://webduino.io/tutorials/info-03-faq.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/info-03-01s.jpg">
+<meta itemprop="image" content="http://webduino.io/img/tutorials/info-03-01s.jpg">
 
 <!-- @@close-->
 

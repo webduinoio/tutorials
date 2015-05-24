@@ -13,7 +13,16 @@ date: 20150425
 
 <title>範例教學 4：三色 LED 調色盤 :::: Webduino = Web × Arduino</title>
 
-<meta property="og:description" content="這一篇將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。">
+<meta name="description" content="這一篇 Webduino 的範例，將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。">
+<meta itemprop="description" content="這一篇 Webduino 的範例，將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。">
+<meta property="og:description" content="這一篇 Webduino 的範例，將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。">
+
+
+<meta property="og:title" content="範例教學 4：三色 LED 調色盤" >
+<meta property="og:url" content="http://webduino.io/tutorials/tutorial-04-rgbled-palette.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-04-01s.jpg">
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-04-01s.jpg">
 
 <!-- @@close-->
 

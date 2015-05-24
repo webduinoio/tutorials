@@ -13,7 +13,16 @@ date: 20150425
 
 <title>範例教學 6：超音波傳感器改變圖片大小 :::: Webduino = Web × Arduino</title>
 
-<meta property="og:description" content="我們了解了超音波傳感器的運作原理，在這個範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。">
+<meta name="description" content="我們了解了超音波傳感器的運作原理，在這個 Webduino 的範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。">
+<meta itemprop="description" content="我們了解了超音波傳感器的運作原理，在這個 Webduino 的範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。">
+<meta property="og:description" content="我們了解了超音波傳感器的運作原理，在這個 Webduino 的範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。">
+
+
+<meta property="og:title" content="範例教學 6：超音波傳感器改變圖片大小" >
+<meta property="og:url" content="http://webduino.io/tutorials/tutorial-06-ultrasonic-imagesize.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-06-01s.jpg">
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-06-01s.jpg">
 
 <!-- @@close-->
 

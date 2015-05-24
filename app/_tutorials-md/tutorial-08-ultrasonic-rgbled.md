@@ -13,7 +13,16 @@ date: 20150425
 
 <title>範例教學 8：超音波傳感器控制三色 LED 燈 :::: Webduino = Web × Arduino</title>
 
-<meta property="og:description" content="當我們由上一個範例學會了用超音波傳感器控制 LED 燈之後，這個範例應該就輕鬆不少，這個範例最主要是希望能藉由三色 LED 燈顏色上的變化，對應距離的改變，如此一來我們就可以藉由燈號來判斷距離。">
+<meta name="description" content="當我們由上一個範例學會了用超音波傳感器控制 LED 燈之後，這個範例應該就輕鬆不少，這個 webduino 範例最主要是希望能藉由三色 LED 燈顏色上的變化，對應距離的改變，如此一來我們就可以藉由燈號來判斷距離。">
+<meta itemprop="description" content="當我們由上一個範例學會了用超音波傳感器控制 LED 燈之後，這個範例應該就輕鬆不少，這個 webduino 範例最主要是希望能藉由三色 LED 燈顏色上的變化，對應距離的改變，如此一來我們就可以藉由燈號來判斷距離。">
+<meta property="og:description" content="當我們由上一個範例學會了用超音波傳感器控制 LED 燈之後，這個範例應該就輕鬆不少，這個 webduino 範例最主要是希望能藉由三色 LED 燈顏色上的變化，對應距離的改變，如此一來我們就可以藉由燈號來判斷距離。">
+
+
+<meta property="og:title" content="範例教學 8：超音波傳感器控制三色 LED 燈" >
+<meta property="og:url" content="http://webduino.io/tutorials/tutorial-08-ultrasonic-rgbled.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-08-01s.jpg">
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-08-01s.jpg">
 
 <!-- @@close-->
 
