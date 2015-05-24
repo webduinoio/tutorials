@@ -20,11 +20,6 @@
   -moz-transform:rotate(@a);
 }
 
-/* 預先隱藏 tutorials 區塊，因為在這個頁面用不到 */
-.tutorials{
-	display:none;
-}
-
 /* main */
 .banner{
   display:flex;
@@ -63,7 +58,7 @@
 }
 .content{
 	margin:80px auto;
-	width:86%;
+	min-height:0;
 	div{
 		display:inline-block;
 		width:33%;
@@ -123,7 +118,6 @@
 		text-align: center;
 		div{
 			z-index:2;
-			position:relative;
 			display:inline-block;
 			overflow:hidden;
 			width:25%;
@@ -131,7 +125,6 @@
 			padding:0;
 			vertical-align:top;
 			&:before,&:after{
-				position:absolute;
 				pointer-events: none;
 				width:100%;
 				._transition(.3s);
@@ -139,7 +132,6 @@
 			&:before{
 				z-index:3;
 				content:attr(data-title);
-				position:absolute;
 				color:#fff;
 				height:50px;
 				line-height:50px;
@@ -149,7 +141,6 @@
 			}
 			&:after{
 				z-index:2;
-				content:'';
 				height:100%;
 				top:0;
 				left:0;
@@ -226,7 +217,6 @@
 		vertical-align:top;
 		color:#555;
 		div{
-			position:relative;
 			width:90px;
 			height:90px;
 			line-height:90px;
@@ -237,8 +227,6 @@
 			color:#555;
 			._transition(.3s);
 			&:before{
-				content:'';
-				position:absolute;
 				width:90px;
 				height:90px;
 				border-radius:50%;
@@ -250,7 +238,6 @@
 			}
 		}
 		h3{
-			font-weight:bold;
 			color:#000;
 			font-size:18px;
 			margin:30px 0 10px;
@@ -281,7 +268,6 @@
 /* RWD */
 @media (max-width: 1000px){
 	.content{
-		width:90%;	
 		margin:30px auto;
 		div{
 			width:48%;
@@ -330,8 +316,6 @@
 }
 @media (max-width: 600px){
 	.content{
-		width:90%;	
-		margin:30px auto;
 		div{
 			width:100%;
 			padding:10px 20px 20px 0px;
@@ -362,12 +346,8 @@
 @media (max-width: 500px){
 	.banner{
 		height:200px;
-		h1{
-			padding-top:30px;
-			font-size:30px;
-		}
-		h2{
-			font-size:20px;
+		h1,h2{
+			display:none;
 		}
 	}
 }

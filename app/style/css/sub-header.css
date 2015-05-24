@@ -1,0 +1,36 @@
+header {
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+header .menu a {
+  color: #000;
+  text-shadow: none;
+}
+header .menu a.none {
+  color: #aaa;
+}
+header .menu a.none:hover {
+  color: #aaa;
+}
+header .menu a.actived {
+  color: #f90;
+}
+header .menu a.actived:hover {
+  color: #f90;
+}
+/* RWD */
+@media (max-width: 800px) {
+  header .menu {
+    top: -355px;
+  }
+  header .menu a {
+    color: #fff;
+  }
+  header .menu a.none {
+    color: #666;
+  }
+  header .menu a.none:hover {
+    color: #666;
+  }
+}

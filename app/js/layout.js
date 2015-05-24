@@ -1,5 +1,6 @@
 $(function(){
 	var file = location.href.split('/'),
+			fileName = file[file.length-1].split('.'),
 			jsonURL,
 			$window = $(window),
 			$header = $('header'),
@@ -9,10 +10,13 @@ $(function(){
 			$closeArea = $('div,footer').not('.mobile-menu,.slide-menu div,header .menu'),
 			$slideMenu = $('.slide-menu');
 
-	if(file[file.length-1]=='index.html'){
-		jsonURL='json/tutorials.json'
+	$('header .menu a').removeClass('actived');
+	$('a.'+fileName).addClass('actived');
+
+	if(fileName[0]=='index'){
+		jsonURL='json/tutorials.json';
 	}else{
-		jsonURL='../json/tutorials.json'
+		jsonURL='../json/tutorials.json';
 	}
 
 	$window.scroll(function(){

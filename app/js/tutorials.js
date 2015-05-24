@@ -3,9 +3,11 @@ $(function(){
 			$window = $(window),
 			$pre = $('pre'),
 			$youtubeIframe = $('.youtube'),
-			$tutorials = $('.tutorials'),
-			$a = $('.tutorials a').not('.pre-next a'),
-			$banner = $('.tutorials .banner');
+			$tutorials = $('.tutorials-content'),
+			$a = $('.tutorials-content a').not('.pre-next a'),
+			$banner = $('.tutorials-content .banner');
+
+	$('a.tutorials').addClass('actived');
 
 	$tutorials.append('<div class="pre-next"><div>'+
 			'<div class="pre"></div>'+
@@ -24,7 +26,6 @@ $(function(){
 		for(var i=0; i<l; i++){
 			if(array[i].src==file){
 				$banner.append('<img src="../img/tutorials/'+array[i].banner+'">');
-				console.log(i);
 				if(i>0 && i<(l-1)){
 					$('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a href="'+array[i-1].src+'">'+array[i-1].title+'</a>');
 					$('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a href="'+array[i+1].src+'">'+array[i+1].title+'</a>');

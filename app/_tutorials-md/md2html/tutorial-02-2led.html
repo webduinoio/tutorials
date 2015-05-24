@@ -1,0 +1,92 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-02-2led.html
+title: 兩顆 LED 交互閃爍
+banner: tutorial-02-01.jpg
+img: tutorial-02-01s.jpg</p>
+<h2>date: 20150425</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>範例教學 2：兩顆 LED 交互閃爍 :::: Webduino = Web × Arduino</title>
+
+<meta property="og:description" content="熟悉了第一個範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>範例教學 2：兩顆 LED 交互閃爍</h1>
+<p>熟悉了 <a href="tutorial-01-led.html">第一個範例</a> 之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/DywZXJP20yk" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上 LED</h3>
+<p>  因為我們這次有使用到兩顆 LED 燈，所以必須要使用麵包板來進行，將黃色 LED 燈長腳接在 11，紅色 LED 燈長腳接在 10，兩顆 LED 燈共用一個 GND ( 地線 )。</p>
+<p>  <img src="../img/tutorials/tutorial-02-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 完成後的實際長相</h3>
+<p>  <img src="../img/tutorials/tutorial-02-03.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-02-04.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/led-two/index.html">快速體驗</a>、<a href="http://jsbin.com/raniwi/11/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>跟第一個範例一樣，一開始先引入相關的 js 以及 WebComponents。</p>
+<pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/web-arduino.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-led.html&#39; /&gt;
+</code></pre><p>接著我們只要用第一個範例來修改，多一顆 LED 燈接在 11 的腳位即可。</p>
+<pre><code>&lt;div id=&#39;light&#39; class=&quot;off&quot;&gt;
+  &lt;img src=&#39;http://i.imgur.com/T5H4MHE.png&#39;&gt;&lt;/img&gt;
+  &lt;img src=&#39;http://i.imgur.com/8qFj2Ou.png&#39;&gt;&lt;/img&gt;
+&lt;/div&gt;
+&lt;web-arduino id=&quot;board&quot; device=&#39;你的 device 名稱&#39;&gt;
+   &lt;wa-led id=&#39;led1&#39; pin=&#39;10&#39;&gt;&lt;/wa-led&gt;
+   &lt;wa-led id=&#39;led2&#39; pin=&#39;11&#39;&gt;&lt;/wa-led&gt;
+&lt;/web-arduino&gt;
+</code></pre><p>CSS 跟範例 1 比起來幾乎是沒已有變化，主要也只是負責圖片的切換而已。</p>
+<pre><code>#light{
+  width:80%;
+}
+img{
+  width:100%;
+  display:none;
+}
+.off img:first-child{
+  display:inline-block;
+}
+.on img:last-child{
+  display:inline-block;
+}
+</code></pre><p>關鍵仍舊是 javascript 的部分，這裏我們將範例 1 的程式進行改良，加入了兩個時間的元素，分別是 <code>setInterval</code> 以及 <code>setTimeout</code>，當我們點選燈泡圖片的時候，就利用這時間的切換讓 LED 燈交互閃爍，當再度點選圖片時，就讓計時器歸零 ( 清空計時器 <code>clearTimeout</code> )，同時將 LED 利用 <code>led.off()</code> 的 api 關起來。</p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function () {
+  var board = document.getElementById(&#39;board&#39;),
+      light = document.getElementById(&#39;light&#39;);
+
+  board.on(&#39;ready&#39;,function ready() {
+    var led1 = document.getElementById(&#39;led1&#39;),
+        led2 = document.getElementById(&#39;led2&#39;),
+        timer1,timer2;
+    light.addEventListener(&#39;click&#39;, function() {
+      if(light.className == &#39;on&#39;){
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        led1.off();   // 紅燈關起來
+        led2.off();   // 黃燈關起來
+        light.className = &#39;off&#39;;
+      }else{
+        timer1 = setInterval(function(){
+          led1.on();       // 紅燈打開
+          led2.off();       // 黃燈關起來
+          timer2 = setTimeout(function(){
+            led1.off();       // 紅燈關起來
+            led2.on();       // 黃燈打開
+          },300);     // 延遲 0.3 秒發生
+
+        },600);    //每 0.6 秒一次
+        light.className = &#39;on&#39;;
+      }
+    }, false);
+  });
+
+}, false);
+</code></pre><p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/led-two/index.html">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以點選圖片讓不同的 LED 亮起，亦或是也可以參考這個 <a href="http://jsbin.com/raniwi/11/edit?html,js,output">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。</p>
+<!-- @@close-->

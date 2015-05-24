@@ -1,0 +1,131 @@
+/* browser */
+._bg-top-linear-gradient(@a,@b){
+  background-image:linear-gradient(top,@a,@b);
+  background-image:-webkit-linear-gradient(top,@a,@b);
+  background-image:-moz-linear-gradient(top,@a,@b);
+}
+._transition(@a){
+  transition:@a;
+  -webkit-transition:@a;
+  -moz-transition:@a;
+}
+._scale(@a){
+  transform:scale(@a);
+  -webkit-transform:scale(@a);
+  -moz-transform:scale(@a);
+}
+._rotate(@a){
+  transform:rotate(@a);
+  -webkit-transform:rotate(@a);
+  -moz-transform:rotate(@a);
+}
+
+/*main*/
+.content{
+  margin:120px auto 80px;
+  h1{
+    font-size:30px;
+    margin:30px 0 20px;
+    padding:30px 0 0;
+    border-top:#aaa dashed 1px;
+    text-align:center;
+    &:first-child{
+      padding-top:0;
+      border:none;
+    }
+  }
+  >div{     
+    width:100%;
+    text-align:center;
+    >div{
+      display:inline-block;
+      width:33%;
+      padding:12px;
+      vertical-align:top;
+      a{
+        h2{
+          text-align:left;
+          font-size:18px;
+          margin:10px 0 5px;
+          color:#000;
+        }
+        h3{
+          text-align:left;
+          font-size:14px;
+          margin:10px 0 5px;
+          color:#000;
+          span{
+            text-decoration:underline;
+            color:#09b;
+          }
+        }
+        .description{
+          width:90%;
+          margin-top:10px;
+          display:block;
+          text-align:left; 
+          color:#999;
+          font-size:14px;
+          line-height:20px;
+        }
+        div{
+          overflow:hidden;
+          width:100%;
+          img{
+            ._transition(.3s);
+            width:100%;
+          }
+          &:after{
+            pointer-events: none;
+            content:'前往課程頁面';
+            width:100%;
+            height:50px;
+            line-height:50px;
+            color:#fff;
+            bottom:-50px;
+            left:0;
+            background:#000;
+            text-align:center;
+            ._transition(.3s);
+          }
+        }
+        &:hover{
+          img{
+            margin-top:-10px;
+            margin-bottom:10px;
+          }
+          div:after{
+            bottom:0;
+          }
+        }
+      }
+      &:hover{
+      }
+    }
+  }
+}
+
+/* RWD */
+@media (max-width: 1000px){
+  .content{
+    >div{
+      >div{
+        width:49%;
+      }
+    }
+  }
+}
+@media (max-width: 800px){
+  .content{
+    margin-top:80px;
+  }
+}
+@media (max-width: 500px){
+  .content{
+    >div{
+      >div{
+        width:100%;
+      }
+    }
+  }
+}

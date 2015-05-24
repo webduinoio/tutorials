@@ -14,12 +14,13 @@
 
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <!-- inject:css -->
   <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
   <link rel="stylesheet" href="../style/css/layout.css">
-  <link rel="stylesheet" href="../style/css/tutorials.css">
+  <link rel="stylesheet" href="../style/css/tutorials-content.css">
+  <link rel="stylesheet" href="../style/css/sub-header.css">
   <!-- endinject -->
-
 	
   <!-- inject:js -->
   <script src="../js/lib/disqus.js"></script>
@@ -42,19 +43,21 @@
 		<a class="logo" href="index.html"></a>
 		<div class="mobile-menu"></div>
 		<div class="menu">
-			<a href="index.html">首頁</a>
-			<a href="webduino.html">教學實作</a>
-			<a class="none">線上購買</a>
+			<a href="index.html" class="index">首頁</a>
+			<a href="tutorials.html" class="tutorials">教學實作</a>
+			<a href="buy.html" class="buy">產品總覽</a>
+			<a href="activity.html" class="activity">課程活動</a>
 			<a class="none">關於我們</a>
 		</div>
 	</header>
 	<header class="path-1">
-		<div class="mobile-menu"></div>
 		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
 		<div class="menu">
-			<a href="../index.html">首頁</a>
-			<a href="../webduino.html">教學實作</a>
-			<a class="none">線上購買</a>
+			<a href="../index.html" class="index">首頁</a>
+			<a href="../tutorials.html" class="tutorials">教學實作</a>
+			<a href="../buy.html" class="buy">產品總覽</a>
+			<a href="../activity.html" class="activity">課程活動</a>
 			<a class="none">關於我們</a>
 		</div>
 	</header>
@@ -63,7 +66,7 @@
 
 
 
-	<div class="tutorials">
+	<div class="tutorials-content">
 		<div class="banner">
 		</div>  
 
@@ -83,13 +86,13 @@
 <p>  <img src="../img/tutorials/info-02-03.jpg" alt="Webduino - 接上 LED 開始進行初始化"></p>
 </li>
 <li><h3>3. 使用 wifi 搜尋 Webduino 開發板</h3>
-<p>  使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，<strong>開發板的 SSID 與密碼會寫在裝置說明卡裡頭，通常為「wa」開頭</strong>。( 範例名稱為 wa101 )</p>
+<p>  使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，<strong>開發板的 SSID 與密碼會寫在「裝置說明卡」裡頭，通常為「wa」開頭</strong>。( 範例名稱為 wa101 )</p>
 <p>  <img src="../img/tutorials/info-02-04.jpg" alt="Webduino - 使用 wifi 搜尋 Webduino 開發板"></p>
 </li>
 </ul>
 <ul>
 <li><h3>4. 連線 Webduino 開發板進行設定</h3>
-<p>  打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b><a href="http://192.168.4.1">http://192.168.4.1</a></b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( <strong>此處的 SSID 為網路基地台的 SSID，並非 Webduino 開發板，不要填成裝置說明卡上頭的 SSID 與 PASSWORD</strong>，且 SSID 與 PASSWORD 有限制 14 個字元，只能大小寫的英文字母與數字的組合，要特別注意！ )</p>
+<p>  打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b><a href="http://192.168.4.1">http://192.168.4.1</a></b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( 此處的 SSID 為「網路基地台」的 SSID，並非 Webduino 開發板，<strong>不要填成裝置說明卡上頭的 SSID 與 PASSWORD</strong>，且 SSID 與 PASSWORD 有限制 14 個字元，只能大小寫的英文字母與數字的組合，要特別注意！ )</p>
 <p>  <img src="../img/tutorials/info-02-07.jpg" alt="Webduino - 連線 Webduino 開發板進行設定"></p>
 </li>
 <li><h3>5. 重啟 Webduino 開發板</h3>
@@ -97,7 +100,7 @@
 <p>  <img src="../img/tutorials/info-02-08.jpg" alt="Webduino - 重啟 Webduino 開發板"></p>
 </li>
 <li><h3>6. 確認連線是否成功</h3>
-<p>  Webduino 開發板重啟後，可以連結 <a href="http://webduino.io/device.html">http://webduino.io/device.html</a> 確認是否連線成功，<strong>連線成功後即可開始玩轉 Webduino</strong>。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )</p>
+<p>  Webduino 開發板重啟後，便可將電腦或行動裝置切回正常的網路連線，並連結 <a href="http://webduino.io/device.html">http://webduino.io/device.html</a> 確認是否連線成功，<strong>連線成功後即可開始玩轉 Webduino</strong>。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )</p>
 <p>  <img src="../img/tutorials/info-02-06.jpg" alt="Webduino - "></p>
 </li>
 <li><h3>7. Webduino 開發板已經可以連線網路基地台</h3>

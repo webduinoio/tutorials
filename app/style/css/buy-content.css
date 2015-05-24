@@ -1,0 +1,163 @@
+/* browser */
+/*main*/
+header {
+  display: none;
+}
+header.path-1 {
+  z-index: 99;
+  display: block;
+}
+.banner {
+  display: table;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+.banner img {
+  display: block;
+  margin: 0 0 -10px;
+  width: 100%;
+}
+.content {
+  display: table;
+  width: 100%;
+  margin: 60px 0 0;
+  padding-bottom: 0;
+  border-bottom: 1px dashed #ccc;
+}
+.content a:link,
+.content a:active,
+.content a:visited,
+.content a:hover {
+  color: #098;
+}
+.content h1,
+.content h2,
+.content h3,
+.content p,
+.content ul,
+.content .need-more {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.content h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 40px;
+}
+.content h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 40px;
+}
+.content h3 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+.content p {
+  color: #555;
+  text-align: justify;
+  line-height: 26px;
+  font-size: 17px;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.content p img {
+  max-width: 100%;
+}
+.content li {
+  margin: 10px 0;
+}
+.content strong {
+  font-weight: bold;
+  color: #f60;
+}
+.content .need-more {
+  padding: 20px 0;
+}
+.content .need-more h4 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 40px;
+}
+.content .need-more div {
+  margin: 10px 0;
+  font-size: 16px;
+}
+/* disqus */
+.disqus {
+  display: block;
+  margin: 20px auto 50px;
+  width: 60%;
+}
+/* RWD */
+@media (max-width: 1000px) {
+  .content h1,
+  .content h2,
+  .content h3,
+  .content p,
+  .content ul,
+  .content .need-more {
+    width: 70%;
+  }
+  .disqus {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  header .menu {
+    top: -355px;
+  }
+  header .menu a {
+    color: #fff;
+  }
+  header .menu a.none {
+    color: #666;
+  }
+  header .menu a.none:hover {
+    color: #666;
+  }
+  .content {
+    margin-top: 40px;
+  }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content p,
+  .content ul,
+  .content .need-more {
+    width: 80%;
+  }
+  .disqus {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .content h1,
+  .content h2,
+  .content h3,
+  .content p,
+  .content ul,
+  .content .need-more {
+    width: 85%;
+  }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4 {
+    font-size: 24px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .content p img {
+    max-width: 100%;
+  }
+  .disqus {
+    width: 85%;
+  }
+}
