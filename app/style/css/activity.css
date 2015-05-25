@@ -27,21 +27,11 @@
 .content > div > div a h2 {
   text-align: left;
   font-size: 18px;
-  margin: 10px 0 5px;
+  margin: 5px 0 5px;
   color: #000;
 }
-.content > div > div a h3 {
-  text-align: left;
-  font-size: 14px;
-  margin: 10px 0 5px;
-  color: #000;
-}
-.content > div > div a h3 span {
-  text-decoration: underline;
-  color: #09b;
-}
-.content > div > div a .description {
-  width: 90%;
+.content > div > div a .time {
+  width: 100%;
   margin-top: 10px;
   display: block;
   text-align: left;
@@ -80,6 +70,15 @@
 }
 .content > div > div a:hover div:after {
   bottom: 0;
+}
+.content > div.old > div {
+  opacity: .3;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+.content > div.old > div:hover {
+  opacity: .6;
 }
 /* RWD */
 @media (max-width: 1000px) {

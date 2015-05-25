@@ -13,16 +13,18 @@ date: 20150420
 
 <title>Webduino 初始化設定 :::: Webduino = Web × Arduino</title>
 
-
 <meta name="description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。">
+
 <meta itemprop="description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。">
+
 <meta property="og:description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。">
 
-
 <meta property="og:title" content="Webduino 初始化設定" >
+
 <meta property="og:url" content="http://webduino.io/tutorials/info-02-setup.html">
 
 <meta property="og:image" content="http://webduino.io/img/tutorials/info-02-01s.jpg">
+
 <meta itemprop="image" content="http://webduino.io/img/tutorials/info-02-01s.jpg">
 
 <!-- @@close-->

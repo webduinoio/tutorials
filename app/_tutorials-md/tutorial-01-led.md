@@ -14,14 +14,17 @@ date: 20150425
 <title>範例教學 1：控制單顆 LED 燈 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。">
+
 <meta itemprop="description" content="在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。">
+
 <meta property="og:description" content="在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。">
 
-
 <meta property="og:title" content="範例教學 1：控制單顆 LED 燈" >
+
 <meta property="og:url" content="http://webduino.io/tutorials/tutorial-01-led.html">
 
 <meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-01-01s.jpg">
+
 <meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-01-01s.jpg">
 
 <!-- @@close-->

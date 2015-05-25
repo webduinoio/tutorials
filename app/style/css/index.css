@@ -15,28 +15,8 @@
   background-size: 100% auto;
 }
 .banner h1,
-.banner h2,
-.banner span {
-  display: block;
-}
-.banner h1,
 .banner h2 {
-  font-family: 'Arial black';
-  color: #fff;
-  width: 100%;
-  text-shadow: rgba(0, 0, 0, 0.3) 0 2px 0;
-}
-.banner h1 {
-  font-size: 80px;
-  padding: 0 60px;
-  transform: scaleY(1.2);
-  -webkit-transform: scaleY(1.2);
-  -moz-transform: scaleY(1.2);
-}
-.banner h2 {
-  display: block;
-  font-size: 40px;
-  padding: 10px 60px 0;
+  margin-left: -10000px;
 }
 .content {
   margin: 80px auto;
@@ -287,12 +267,6 @@
   .banner {
     height: 400px;
   }
-  .banner h1 {
-    font-size: 50px;
-  }
-  .banner h2 {
-    font-size: 40px;
-  }
   .tutorials-menu .menu-content div {
     width: 50%;
   }
@@ -315,14 +289,6 @@
   .banner {
     height: 300px;
   }
-  .banner h1 {
-    text-align: center;
-    font-size: 40px;
-  }
-  .banner h2 {
-    text-align: center;
-    font-size: 30px;
-  }
   .tutorials-menu h2 {
     font-size: 26px;
   }
@@ -333,10 +299,6 @@
 @media (max-width: 500px) {
   .banner {
     height: 200px;
-  }
-  .banner h1,
-  .banner h2 {
-    display: none;
   }
 }
 @media (max-width: 400px) {

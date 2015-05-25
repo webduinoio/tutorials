@@ -10,13 +10,16 @@ $(function(){
 			$closeArea = $('div,footer').not('.mobile-menu,.slide-menu div,header .menu'),
 			$slideMenu = $('.slide-menu');
 
-	$('header .menu a').removeClass('actived');
-	$('a.'+fileName).addClass('actived');
+	
 
-	if(fileName[0]=='index'){
+	$('header .menu a').removeClass('actived');
+
+	if(fileName[0]=='index'||fileName[0]==''){
 		jsonURL='json/tutorials.json';
+		$('a.index').addClass('actived');
 	}else{
 		jsonURL='../json/tutorials.json';
+		$('a.'+fileName[0]).addClass('actived');
 	}
 
 	$window.scroll(function(){

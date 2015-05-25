@@ -10,7 +10,7 @@ var gulp 				= require('gulp'),
     markdown    = require('gulp-markdown'),
     gutil       = require('gulp-util'),
     md2json     = require('gulp-markdown-to-json'),
-    changed = require('gulp-changed');
+    sitemap     = require('gulp-sitemap');
 
 var tt;
 
@@ -104,15 +104,28 @@ o888o o888o o888o     888 `Y8bod8P' `Y8bod8P'   "888"
                   `Y888P                               */
 
 /* 置換為合適的 js 與 css */
+
+var contentInjectHtml = [
+  'app/index.html',
+  'app/buy.html',
+  'app/about.html',
+  'app/tutorials.html',
+  'app/activity.html'
+];
+var contentInjectArray = [
+  'app/js/lib/jquery.min.js',
+  'app/js/layout.js',
+  'app/style/css/layout.css'
+];
 gulp.task('content-inject',['index-extend','about-extend','buy-extend','tutorials-extend','activity-extend'],function(){
-  return gulp.src(['app/index.html','app/buy.html','app/about.html','app/tutorials.html','app/activity.html'])
-  .pipe(inject(gulp.src(['app/js/lib/jquery.min.js','app/js/layout.js','app/style/css/layout.css'], {read: false}), {relative: true}))
+  return gulp.src(contentInjectHtml)
+  .pipe(inject(gulp.src(contentInjectArray, {read: false}), {relative: true}))
   .pipe(gulp.dest('app'));
 });
 
 gulp.task('content-inject-final',['index-extend','about-extend','buy-extend','tutorials-extend','activity-extend','copy-css'],function(){
-  return gulp.src(['app/index.html','app/buy.html','app/about.html','app/tutorials.html','app/activity.html'])
-  .pipe(inject(gulp.src(['app/js/lib/jquery.min.js','app/js/layout.js','app/style/css/layout.css'], {read: false}), {relative: true}))
+  return gulp.src(contentInjectHtml)
+  .pipe(inject(gulp.src(contentInjectArray, {read: false}), {relative: true}))
   .pipe(gulp.dest('app'));
 });
 
@@ -157,15 +170,26 @@ gulp.task('md-extend',['md2json','tutorials-clean'], function () {
 
 /* tutorials 置換為合適的 js 與 css */
 
+var tutorialsInjectArray = [
+  'app/js/lib/jquery.min.js',
+  'app/js/lib/disqus.js',
+  'app/js/lib/run_prettify.js',
+  'app/js/layout.js',
+  'app/js/tutorials.js',
+  'app/style/css/lib/tomorrow.css',
+  'app/style/css/layout.css',
+  'app/style/css/tutorials-content.css',
+  'app/style/css/sub-header.css'
+];
 gulp.task('tutorials-inject',['md-extend'],function(){
   return gulp.src('app/tutorials/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/tomorrow.css','app/style/css/layout.css','app/style/css/tutorials-content.css','app/style/css/sub-header.css'], {read: false}), {relative: true}))
+  .pipe(inject(gulp.src(tutorialsInjectArray, {read: false}), {relative: true}))
   .pipe(gulp.dest('app/tutorials'));
 });
 
 gulp.task('tutorials-inject-final',['md-extend','copy-css'],function(){
   return gulp.src('app/tutorials/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/tutorials.js','app/style/css/lib/tomorrow.css','app/style/css/layout.css','app/style/css/tutorials-content.css','app/style/css/sub-header.css'], {read: false}), {relative: true}))
+  .pipe(inject(gulp.src(tutorialsInjectArray, {read: false}), {relative: true}))
   .pipe(gulp.dest('app/tutorials'));
 });
 
@@ -192,15 +216,26 @@ gulp.task('buy-content-extend',['buy-clean'], function () {
 
 /* buy 置換為合適的 js 與 css */
 
+var buyInjectArray = [
+  'app/js/lib/jquery.min.js',
+  'app/js/lib/disqus.js',
+  'app/js/lib/run_prettify.js',
+  'app/js/layout.js',
+  'app/js/buy.js',
+  'app/style/css/layout.css',
+  'app/style/css/sub-header.css',
+  'app/style/css/buy-content.css'
+];
 gulp.task('buy-inject',['buy-content-extend'],function(){
+
   return gulp.src('app/buy/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/buy.js','app/style/css/layout.css','app/style/css/sub-header.css','app/style/css/buy-content.css'], {read: false}), {relative: true}))
+  .pipe(inject(gulp.src(buyInjectArray, {read: false}), {relative: true}))
   .pipe(gulp.dest('app/buy'));
 });
 
 gulp.task('buy-inject-final',['buy-content-extend','copy-css'],function(){
   return gulp.src('app/buy/*.html')
-  .pipe(inject(gulp.src(['app/js/lib/*','app/js/layout.js','app/js/buy.js','app/style/css/layout.css','app/style/css/sub-header.css','app/style/css/buy-content.css'], {read: false}), {relative: true}))
+  .pipe(inject(gulp.src(buyInjectArray, {read: false}), {relative: true}))
   .pipe(gulp.dest('app/buy'));
 });
 
@@ -239,7 +274,7 @@ gulp.task('watch',function(){
   gulp.watch('app/_buy-content/*.html',['buy-inject']);
   gulp.watch('app/_tutorials-md/**/*.md',['tutorials-inject','md2json']);
 	gulp.watch('app/style/less/*.less',['copy-css']);
-	gulp.watch(['app/_index.html','app/_buy.html','app/_about.html','app/_webduino.html','app/_buy.html','app/_activity.html'],['content-inject']);
+	gulp.watch(['app/_index.html','app/_buy.html','app/_about.html','app/_tutorials.html','app/_buy.html','app/_activity.html'],['content-inject']);
 	gulp.watch('app/_layout.html',['content-inject','tutorials-inject','buy-inject']);
 });
 
@@ -270,9 +305,16 @@ gulp.task('build',['build-clean'],function(){
   gulp.src('app/buy/*').pipe(gulp.dest('build/buy'));
 	gulp.src(['app/index.html','app/tutorials.html','app/about.html','app/buy.html','app/activity.html']).pipe(gulp.dest('build'));
   gulp.src('app/robots.txt').pipe(gulp.dest('build'));
-  gulp.src('app/_tutorials-md/**/*').pipe(gulp.dest('build/_tutorials-md'));
   gulp.src('app/json/**/*').pipe(gulp.dest('build/json'));
   gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga'));
+});
+
+gulp.task('sitemap', function () {
+  return gulp.src('build/**/*.html')
+        .pipe(sitemap({
+            siteUrl: 'http://webduino.io'
+        }))
+        .pipe(gulp.dest('build'));
 });
 
 gulp.task('default',['content-inject-final','buy-inject-final','tutorials-inject-final','md2json','less','watch']);

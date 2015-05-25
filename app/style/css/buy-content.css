@@ -94,6 +94,13 @@ header.path-1 {
   margin: 20px auto 50px;
   width: 60%;
 }
+/* footer */
+footer .logo a:first-child {
+  display: none;
+}
+footer .logo a:last-child {
+  display: inline;
+}
 /* RWD */
 @media (max-width: 1000px) {
   .content h1,

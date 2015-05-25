@@ -20,6 +20,7 @@
     "gulp-markdown-to-json": "^0.2.1",
     "gulp-newer": "^0.5.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sitemap": "^2.1.1",
     "gulp-util": "^3.0.4",
     "gulp.spritesmith": "^3.5.3"
   }

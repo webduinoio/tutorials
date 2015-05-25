@@ -46,21 +46,11 @@
         h2{
           text-align:left;
           font-size:18px;
-          margin:10px 0 5px;
+          margin:5px 0 5px;
           color:#000;
         }
-        h3{
-          text-align:left;
-          font-size:14px;
-          margin:10px 0 5px;
-          color:#000;
-          span{
-            text-decoration:underline;
-            color:#09b;
-          }
-        }
-        .description{
-          width:90%;
+        .time{
+          width:100%;
           margin-top:10px;
           display:block;
           text-align:left; 
@@ -99,7 +89,14 @@
           }
         }
       }
-      &:hover{
+    }
+    &.old{
+      >div{
+        opacity:.3;
+        ._transition(.3s);
+        &:hover{
+          opacity:.6;
+        }
       }
     }
   }
