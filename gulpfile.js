@@ -14,7 +14,8 @@ var gulp 				= require('gulp'),
     merge       = require('merge-stream'),
     minifyHTML  = require('gulp-minify-html'),
     minifyCss   = require('gulp-minify-css'),
-    uglify      = require('gulp-uglify');
+    uglify      = require('gulp-uglify'),
+    include     = require('gulp-html-tag-include');
 
 gulp.task('css-clean', function () {
   return gulp.src(['app/style/css/*'], {read: true})
@@ -29,10 +30,6 @@ gulp.task('less',['css-clean'],function(){
   });
 
 gulp.task('copy-css',['less'],function(){
-  return gulp.src('app/style/less/lib/**/*').pipe(gulp.dest('app/style/css/lib'));
-});
-
-gulp.task('test',function(){
   return gulp.src('app/style/less/lib/**/*').pipe(gulp.dest('app/style/css/lib'));
 });
 
@@ -211,8 +208,9 @@ gulp.task('buy-clean',function(){
 });
 
 gulp.task('buy-content-extend',['buy-clean'], function () {
-  return gulp.src('app/_buy-content/*.html')
+  return gulp.src(['app/_buy-content/*.html','!app/_buy-content/_public.html'])
   .pipe(extender({annotations:false,verbose:false}))
+  .pipe(include())
   .pipe(gulp.dest('app/buy'));
 });
 

@@ -36,7 +36,8 @@ header.path-1 {
 .content h3,
 .content p,
 .content ul,
-.content .need-more {
+.content .need-more,
+.content .need-know {
   display: block;
   width: 60%;
   margin: 0 auto;
@@ -70,23 +71,63 @@ header.path-1 {
   max-width: 100%;
 }
 .content li {
-  margin: 10px 0;
+  margin: 0 0 10px;
 }
 .content strong {
   font-weight: bold;
   color: #f60;
 }
-.content .need-more {
-  padding: 20px 0;
+.content .btn-know {
+  color: #098;
+  cursor: pointer;
 }
-.content .need-more h4 {
+.content .need-more,
+.content .need-know {
+  padding: 20px 0;
+  color: #555;
+}
+.content .need-more h4,
+.content .need-know h4 {
+  color: #000;
   margin-bottom: 20px;
   font-size: 32px;
   line-height: 40px;
 }
-.content .need-more div {
+.content .need-more h5,
+.content .need-know h5 {
+  color: #000;
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 40px;
+}
+.content .need-more div,
+.content .need-know div {
   margin: 10px 0;
   font-size: 16px;
+  line-height: 24px;
+}
+.content .need-more ul,
+.content .need-know ul {
+  width: 100%;
+  display: none;
+  color: #000;
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content .need-more ul li,
+.content .need-know ul li {
+  padding-left: 18px;
+  text-indent: -18px;
+}
+.content .need-more {
+  padding-bottom: 50px;
+}
+.content .readmore {
+  display: block;
+  color: #098;
+  margin: 5px 0 10px;
+  cursor: pointer;
 }
 /* disqus */
 .disqus {
@@ -108,7 +149,8 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
-  .content .need-more {
+  .content .need-more,
+  .content .need-know {
     width: 70%;
   }
   .disqus {
@@ -136,7 +178,8 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
-  .content .need-more {
+  .content .need-more,
+  .content .need-know {
     width: 80%;
   }
   .disqus {
@@ -149,7 +192,8 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
-  .content .need-more {
+  .content .need-more,
+  .content .need-know {
     width: 85%;
   }
   .content h1,

@@ -5,11 +5,20 @@ $(function(){
 
 	$('a.buy').addClass('actived');
 
-	$content.append('<div class="need-more">'+
-		'<h4>瞭解更多產品方案：</h4>'+
-		'<div><a href="package-webduino-basic.html">Webduino 開發包 ( 基本款 )</a></div>'+
-		'<div><a href="package-webduino-plus.html">Webduino 開發包 ( 威力加強版 )</a></div>'+
-		'<div><a href="component-webduino-v1.html">Webduino 開發板 ( 馬克 1 號 )</a></div>'+
-		'</div>');
+	$('.readmore').on('click',function(){
+		if($(this).hasClass('open')){
+			$(this).text('閱讀相關內容 ( 點選展開 )').removeClass('open').next('ul').slideUp(300);
+		}
+		else{
+			$(this).text('閱讀相關內容 ( 點選關閉 )').addClass('open').next('ul').slideDown(300);
+		}
+	});
+
+	$('.btn-know').on('click',function(){
+		console.log('a');
+		$('html,body').not(':animated').animate({
+      'scrollTop': $('#need-know').offset().top - 60
+    }, 900);
+	});
 
 });

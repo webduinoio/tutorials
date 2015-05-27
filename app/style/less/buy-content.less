@@ -50,7 +50,7 @@ header{
       color:#098;
     }
   }
-  h1,h2,h3,p,ul,.need-more{
+  h1,h2,h3,p,ul,.need-more,.need-know{
     display:block;
     width:60%;
     margin:0 auto;
@@ -84,23 +84,57 @@ header{
     }
   }
   li{
-    margin:10px 0;
+    margin:0 0 10px;
   }
   strong{
     font-weight:bold;
     color:#f60;
   }
-  .need-more{
+  .btn-know{
+    color:#098;
+    cursor:pointer;
+  }
+  .need-more,.need-know{
     padding: 20px 0;
+    color:#555;
     h4{
+      color:#000;
       margin-bottom:20px;
       font-size:32px;
+      line-height:40px;
+    }
+    h5{
+      color:#000;
+      margin:10px 0;
+      font-size:20px;
       line-height:40px;
     }
     div{
       margin:10px 0;
       font-size:16px;
+      line-height:24px;
     }
+    ul{
+      width:100%;
+      display:none;
+      color:#000;
+      background:#eee;
+      padding:20px;
+      border-radius:10px;
+      li{
+        padding-left:18px;
+        text-indent:-18px;
+      }
+    }
+  }
+  .need-more{
+    padding-bottom:50px;
+  }
+  .readmore{
+    display:block;
+    color:#098;
+    margin:5px 0 10px;
+    cursor:pointer;
   }
 }
 /* disqus */
@@ -125,7 +159,7 @@ footer{
 /* RWD */
 @media (max-width: 1000px){
   .content{
-    h1,h2,h3,p,ul,.need-more{
+    h1,h2,h3,p,ul,.need-more,.need-know{
       width:70%;
     }
   }
@@ -151,7 +185,7 @@ footer{
   }
   .content{
     margin-top:40px;
-    h1,h2,h3,p,ul,.need-more{
+    h1,h2,h3,p,ul,.need-more,.need-know{
       width:80%;
     }
   }
@@ -161,7 +195,7 @@ footer{
 }
 @media (max-width: 600px){
   .content{
-    h1,h2,h3,p,ul,.need-more{
+    h1,h2,h3,p,ul,.need-more,.need-know{
       width:85%;
     }
     h1,h2,h3,h4{
