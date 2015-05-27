@@ -10,9 +10,11 @@ var gulp 				= require('gulp'),
     markdown    = require('gulp-markdown'),
     gutil       = require('gulp-util'),
     md2json     = require('gulp-markdown-to-json'),
-    sitemap     = require('gulp-sitemap');
-
-var tt;
+    sitemap     = require('gulp-sitemap'),
+    merge       = require('merge-stream'),
+    minifyHTML  = require('gulp-minify-html'),
+    minifyCss   = require('gulp-minify-css'),
+    uglify      = require('gulp-uglify');
 
 gulp.task('css-clean', function () {
   return gulp.src(['app/style/css/*'], {read: true})
@@ -274,7 +276,13 @@ gulp.task('watch',function(){
   gulp.watch('app/_buy-content/*.html',['buy-inject']);
   gulp.watch('app/_tutorials-md/**/*.md',['tutorials-inject','md2json']);
 	gulp.watch('app/style/less/*.less',['copy-css']);
-	gulp.watch(['app/_index.html','app/_buy.html','app/_about.html','app/_tutorials.html','app/_buy.html','app/_activity.html'],['content-inject']);
+	gulp.watch([
+    'app/_index.html',
+    'app/_buy.html',
+    'app/_about.html',
+    'app/_tutorials.html',
+    'app/_buy.html',
+    'app/_activity.html'],['content-inject']);
 	gulp.watch('app/_layout.html',['content-inject','tutorials-inject','buy-inject']);
 });
 
@@ -293,24 +301,46 @@ gulp.task('build-clean',function(){
   return gulp.src(['build/*'], {read: true}).pipe(clean());
 });
 
-gulp.task('build',['build-clean'],function(){
-	gulp.src('app/img/index/*').pipe(gulp.dest('build/img/index'));
-	gulp.src('app/img/layout/*').pipe(gulp.dest('build/img/layout'));
-  gulp.src('app/img/tutorials/*').pipe(gulp.dest('build/img/tutorials'));
-  gulp.src('app/img/buy/*').pipe(gulp.dest('build/img/buy'));
-  gulp.src('app/img/activity/*').pipe(gulp.dest('build/img/activity'));
-	gulp.src('app/js/**/*').pipe(gulp.dest('build/js'));
-	gulp.src('app/style/css/**/*').pipe(gulp.dest('build/style/css'));
-	gulp.src('app/tutorials/*').pipe(gulp.dest('build/tutorials'));
-  gulp.src('app/buy/*').pipe(gulp.dest('build/buy'));
-	gulp.src(['app/index.html','app/tutorials.html','app/about.html','app/buy.html','app/activity.html']).pipe(gulp.dest('build'));
-  gulp.src('app/robots.txt').pipe(gulp.dest('build'));
-  gulp.src('app/json/**/*').pipe(gulp.dest('build/json'));
-  gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga'));
+gulp.task('move',['build-clean'],function(){
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+	var a1 = gulp.src('app/img/index/*').pipe(gulp.dest('build/img/index')),
+	    a2 = gulp.src('app/img/layout/*').pipe(gulp.dest('build/img/layout')),
+      a3 = gulp.src('app/img/tutorials/*').pipe(gulp.dest('build/img/tutorials')),
+      a4 = gulp.src('app/img/buy/*').pipe(gulp.dest('build/img/buy')),
+      a5 = gulp.src('app/img/activity/*').pipe(gulp.dest('build/img/activity')),
+      a6 = gulp.src('app/js/lib/*').pipe(gulp.dest('build/js/lib')),
+      a7 = gulp.src('app/style/css/lib/*').pipe(gulp.dest('build/style/css/lib')),
+      a8 = gulp.src('app/robots.txt').pipe(gulp.dest('build')),
+      a9 = gulp.src('app/json/**/*').pipe(gulp.dest('build/json')),
+      a10 = gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga')),
+	    a11 = gulp.src('app/js/*.js')
+          .pipe(uglify())
+          .pipe(gulp.dest('build/js')),
+	    a12 = gulp.src('app/style/css/*.css')
+          .pipe(minifyCss())
+          .pipe(gulp.dest('build/style/css')),
+	    a13 = gulp.src('app/tutorials/*.html')
+            .pipe(minifyHTML(opts))
+            .pipe(gulp.dest('build/tutorials')),
+      a14 = gulp.src('app/buy/*')
+            .pipe(minifyHTML(opts))
+            .pipe(gulp.dest('build/buy')),
+	    a15 = gulp.src([
+              'app/index.html',
+              'app/tutorials.html',
+              'app/about.html',
+              'app/buy.html',
+              'app/activity.html'])
+            .pipe(minifyHTML(opts))
+            .pipe(gulp.dest('build'));
+  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15);
 });
 
-gulp.task('sitemap', function () {
-  return gulp.src('build/**/*.html')
+gulp.task('build',['move'], function () {
+  return gulp.src(['build/**/*.html','!build/ga/*.html'])
         .pipe(sitemap({
             siteUrl: 'http://webduino.io'
         }))

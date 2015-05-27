@@ -49,11 +49,15 @@ date: 20150420
 
 	![Webduino - 組合 Webduino 開發板](../img/tutorials/info-02-02.jpg)
 
-- ###2. 接上 LED 開始進行初始化
+- ###2. 開始進行初始化
 
-	首先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，**當 LED 亮起，表示可以開始進行初始化**，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 4。
+	如果是使用封測版的 Webduino 開發板 ( 底板為淺褐色，並有孔洞 )，必須先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，**當 LED 亮起，表示可以開始進行初始化**，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 3。
 
-	![Webduino - 接上 LED 開始進行初始化](../img/tutorials/info-02-03.jpg)
+	![Webduino - 開始進行初始化](../img/tutorials/info-02-03.jpg)
+
+	如果是使用 Webduino 開發板馬克一號 ( 底板為紅色 PCB 板 )，上面會有一顆可以左右扳動的小案鈕，將按鈕扳動至下圖的位置 ( 左側 )，就可以開始進行初始化設定。
+
+	![Webduino - 開始進行初始化](../img/tutorials/info-02-09.jpg)
 
 - ###3. 使用 wifi 搜尋 Webduino 開發板
 
@@ -70,15 +74,23 @@ date: 20150420
 
 - ###5. 重啟 Webduino 開發板
 
-	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線，此時**移除 Webduino 開發板的電源以及 LED**，重新再接上電源即可進行重啟。( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )
+	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線 ( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )，此時如果是使用封測版的 Webduino 開發板，**移除 Webduino 開發板的電源以及 LED**，重新再接上電源即可進行重啟。
 
 	![Webduino - 重啟 Webduino 開發板](../img/tutorials/info-02-08.jpg)
+
+	如果是使用 Webduino 開發板馬克一號，則先移除開發板電源，再將按鈕扳至右側，重新接上電源即可進行重啟。
+
+	![Webduino - 重啟 Webduino 開發板](../img/tutorials/info-02-10.jpg)
 
 - ###6. 確認連線是否成功
 
 	Webduino 開發板重啟後，便可將電腦或行動裝置切回正常的網路連線，並連結 [http://webduino.io/device.html](http://webduino.io/device.html) 確認是否連線成功，**連線成功後即可開始玩轉 Webduino**。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )
 
-	![Webduino - ](../img/tutorials/info-02-06.jpg)
+	![Webduino - 確認連線是否成功](../img/tutorials/info-02-06.jpg)
+
+	如果是使用 Webduino 開發板馬克一號還有一個更簡單的判斷方式，在板子上有一個紅色的小 LED 燈，正在連線的時候紅色 LED 會發亮，**連線成功後就會熄滅**，若 LED 燈持續閃爍，表示沒有連線成功，這時請重啟 Webduino 開發板，或返回步驟 3 重新初始化設定。
+
+	![Webduino - 確認連線是否成功](../img/tutorials/info-02-11.jpg)
 
 - ###7. Webduino 開發板已經可以連線網路基地台
 
