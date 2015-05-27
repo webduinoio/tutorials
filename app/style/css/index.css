@@ -19,8 +19,9 @@
   margin-left: -10000px;
 }
 .content {
-  margin: 80px auto;
+  margin: 70px auto;
   min-height: 0;
+  width: 85%;
 }
 .content div {
   display: inline-block;

@@ -171,10 +171,10 @@ gulp.task('md-extend',['md2json','tutorials-clean'], function () {
 
 var tutorialsInjectArray = [
   'app/js/lib/jquery.min.js',
-  'app/js/lib/disqus.js',
   'app/js/lib/run_prettify.js',
   'app/js/layout.js',
   'app/js/tutorials.js',
+  'app/js/lib/disqus.js',
   'app/style/css/lib/tomorrow.css',
   'app/style/css/layout.css',
   'app/style/css/tutorials-content.css',
@@ -218,10 +218,10 @@ gulp.task('buy-content-extend',['buy-clean'], function () {
 
 var buyInjectArray = [
   'app/js/lib/jquery.min.js',
-  'app/js/lib/disqus.js',
   'app/js/lib/run_prettify.js',
   'app/js/layout.js',
   'app/js/buy.js',
+  'app/js/lib/disqus.js',
   'app/style/css/layout.css',
   'app/style/css/sub-header.css',
   'app/style/css/buy-content.css'

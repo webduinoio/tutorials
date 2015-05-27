@@ -50,7 +50,7 @@ date: 20150425
 
 - ###3. 為什麼在 wifi 搜尋看不到 Webduino 開發板的 SSID？
 
-	- (1) Webduino 先行者板：可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
+	- (1) Webduino 先行者號：可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
 	- (2) Webduino 馬克一號：可能開關處在「初始化設定模式」，將開關扳至另外一則再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
 	- (3) 可能是電池沒電了，建議更換電池或改用 usb 供電。
 
@@ -65,11 +65,15 @@ date: 20150425
 
 - ###1. 要如何購買 Webduino？
 
-	- (1) 報名 Webduino 990 元以上的付費課程，隨課程會附贈有基本的開發材料包。
+	- (1) 報名 Webduino 課程，部分基礎課程會附贈有基本的開發材料包。
 	- (2) Webduino 課程結束後於現場購買，現場繳費，請先來信通知欲購買之數量與購買人聯絡方式，以便我們準備材料包。
-	- (3) 來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關購買事宜。
+	- (3) 我們使用歐付寶的支付機制，請來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關購買事宜。
 
-- ###2. Webduino 教育暨企業合作方案
+- ###2. Webduino 開發板的差異？
+
+	隨著時間的演進，Webduino 也會進化，目前共有兩種 Webduino 開發板，第一種為先行者號，底版為淺褐色的洞洞板，第二種是馬克一號，是紅色的底板，**先行者號可以支援基本開發包所有的傳感器，而馬克一號可以支援到威力加強版的開發包**。
+
+- ###3. Webduino 教育暨企業合作方案
 
 	Webduino 提供教育與企業的合作方案，會包含更豐富的教材與內容，以專題和解決方案的實際課程，提供教師、學生或企業用戶最完整的學習體驗，若您有相關的需求，可直接來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關合作方式。
 
