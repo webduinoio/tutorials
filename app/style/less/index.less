@@ -96,15 +96,16 @@
 .tutorials-menu{
 	border-top:5px solid #ddd;
 	.menu-content{
+		display:table;
 		width:100%;
 		margin:0 auto;
 		text-align: center;
 		div{
 			z-index:2;
-			display:inline-block;
+			float:left;
 			overflow:hidden;
 			width:25%;
-			margin:0 -2px;
+			margin:0;
 			padding:0;
 			vertical-align:top;
 			&:before,&:after{
@@ -316,8 +317,6 @@
 	.banner{
 		height:200px;
 	}
-}
-@media (max-width: 400px){
 	.tutorials-menu{
 		.menu-content{
 			div{

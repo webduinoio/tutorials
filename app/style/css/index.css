@@ -84,16 +84,17 @@
   border-top: 5px solid #ddd;
 }
 .tutorials-menu .menu-content {
+  display: table;
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 .tutorials-menu .menu-content div {
   z-index: 2;
-  display: inline-block;
+  float: left;
   overflow: hidden;
   width: 25%;
-  margin: 0 -2px;
+  margin: 0;
   padding: 0;
   vertical-align: top;
 }
@@ -301,8 +302,6 @@
   .banner {
     height: 200px;
   }
-}
-@media (max-width: 400px) {
   .tutorials-menu .menu-content div {
     width: 100%;
   }

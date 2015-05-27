@@ -154,7 +154,7 @@ a:hover {
 }
 div {
   position: relative;
-  boz-sizing: border-box;
+  box-sizing: border-box;
 }
 div:after,
 div:before {
