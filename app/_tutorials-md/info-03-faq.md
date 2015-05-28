@@ -27,6 +27,8 @@ date: 20150425
 
 <meta itemprop="image" content="http://webduino.io/img/tutorials/info-03-01s.jpg">
 
+<include src="../_include-tutorials.html"></include>
+
 <!-- @@close-->
 
 
@@ -50,7 +52,7 @@ date: 20150425
 
 - ###3. 為什麼在 wifi 搜尋看不到 Webduino 開發板的 SSID？
 
-	- (1) Webduino 先行者號：可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
+	- (1) Webduino  基礎教育版：可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
 	- (2) Webduino 馬克一號：可能開關處在「初始化設定模式」，將開關扳至另外一則再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
 	- (3) 可能是電池沒電了，建議更換電池或改用 usb 供電。
 
@@ -71,7 +73,7 @@ date: 20150425
 
 - ###2. Webduino 開發板的差異？
 
-	隨著時間的演進，Webduino 也會進化，目前共有兩種 Webduino 開發板，第一種為先行者號，底版為淺褐色的洞洞板，第二種是馬克一號，是紅色的底板，**先行者號可以支援基本開發包所有的傳感器，而馬克一號可以支援到威力加強版的開發包**。
+	隨著時間的演進，Webduino 也會進化，目前共有兩種 Webduino 開發板，第一種為 基礎教育版，底版為淺褐色的洞洞板，第二種是馬克一號，是紅色的底板，** 基礎教育版可以支援基本開發包所有的傳感器，而馬克一號可以支援到威力加強版的開發包**。
 
 - ###3. Webduino 教育暨企業合作方案
 

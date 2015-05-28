@@ -27,6 +27,8 @@ date: 20150425
 
 <meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-01-01s.jpg">
 
+<include src="../_include-tutorials.html"></include>
+
 <!-- @@close-->
 
 

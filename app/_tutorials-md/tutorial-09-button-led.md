@@ -27,6 +27,8 @@ date: 20150425
 
 <meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-09-01s.jpg">
 
+<include src="../_include-tutorials.html"></include>
+
 <!-- @@close-->
 
 
@@ -60,7 +62,7 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-09-05.jpg)
 
-##範例解析 ([快速體驗]([jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ( [jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html) )
 
 一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到按鈕和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-rgbled`。
 

@@ -27,6 +27,8 @@ date: 20150420
 
 <meta itemprop="image" content="http://webduino.io/img/tutorials/info-02-01s.jpg">
 
+<include src="../_include-tutorials.html"></include>
+
 <!-- @@close-->
 
 
@@ -51,7 +53,7 @@ date: 20150420
 
 - ###2. 開始進行初始化
 
-	如果是使用 Webduino 開發板先行者號 ( 底板為淺褐色，並有孔洞 )，必須先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，**當 LED 亮起，表示可以開始進行初始化**，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 3。
+	如果是使用 Webduino 開發板基礎教育版 ( 底板為淺褐色，並有孔洞 )，必須先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，**當 LED 亮起，表示可以開始進行初始化**，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 3。
 
 	![Webduino - 開始進行初始化](../img/tutorials/info-02-03.jpg)
 
@@ -74,7 +76,7 @@ date: 20150420
 
 - ###5. 重啟 Webduino 開發板
 
-	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線 ( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )，如果是使用 Webduino 開發板先行者號，**移除 Webduino 開發板的電源以及 LED**，重新再接上電源即可進行重啟。
+	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線 ( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )，如果是使用 Webduino 開發板基礎教育版，**移除 Webduino 開發板的電源以及 LED**，重新再接上電源即可進行重啟。
 
 	![Webduino - 重啟 Webduino 開發板](../img/tutorials/info-02-08.jpg)
 
