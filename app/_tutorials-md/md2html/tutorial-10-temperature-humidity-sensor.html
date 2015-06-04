@@ -1,0 +1,73 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-10-temperature-humidity-sensor.html
+title: 溫濕度傳感器
+banner: tutorial-10-01.jpg
+img: tutorial-10-01s.jpg</p>
+<h2>date: 20150601</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>範例教學 10：溫濕度傳感器 :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。">
+
+<meta itemprop="description" content="溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。">
+
+<meta property="og:description" content="溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。">
+
+<meta property="og:title" content="範例教學 10：溫濕度傳感器" >
+
+<meta property="og:url" content="http://webduino.io/tutorials/tutorial-10-temperature-humidity-sensor.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-10-01s.jpg">
+
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-10-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>範例教學 10：溫濕度傳感器</h1>
+<p>溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/k4uvbTb8ih8" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上溫濕度傳感器</h3>
+<p>  溫濕度傳感器適用的開發板為「<a href="../buy/component-webduino-v1.html">Webduino 開發板馬克 1 號</a>」，如果是使用<a href="../buy/component-webduino-o.html">基礎教育版的 Webduino 開發板</a>可能會無法使用，溫濕度傳感器有四隻針腳，第一隻針腳為 v ( 接 3.3V )，第二隻為 data ( 接 10 )，第三隻沒有作用，為 N/C，第四隻為 GND，利用麵包板進行接線。</p>
+<p>  <img src="../img/tutorials/tutorial-10-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 完成後的實際長相</h3>
+<p>  <img src="../img/tutorials/tutorial-10-03.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-10-04.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-10-05.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/dht/index.html">快速體驗</a>、<a href="http://jsbin.com/nomovi/7/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>在 head 的地方先引入相關的 js 以及 WebComponent，溫濕度傳感器的 WebComponent 為：<code>wa-dht.html</code>。</p>
+<pre><code>&lt;script src=&quot;http://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/web-arduino.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/wa-dht.html&#39; /&gt;
+</code></pre><p>接著在 body 區域裡頭放入一個 id 為 show 的 div 負責顯示溫濕度傳感器的數值，然後也是要放上 board 和溫濕度傳感器的 HTML 程式碼，而溫濕度傳感器的 pin 設定為 10。</p>
+<pre><code>&lt;div id=&quot;show&quot;&gt;&lt;/div&gt;
+
+&lt;web-arduino id=&#39;board&#39; device=&quot;你的 device 名稱&quot;&gt;
+    &lt;wa-dht id=&#39;dht&#39; pin=&#39;10&#39;&gt;&lt;/wa-dht&gt;
+&lt;/web-arduino&gt;
+</code></pre><p>寫完 HTML 之後就是要來寫 javascript，這邊我們先使用<code>read</code>這個 API，這個 API 和<code>setTimeout</code>很像，後面會接一個時間的數值，數值為 1000 代表 1 秒，也就是每秒會接收一次數值，接著再用 innerHTML 的方式，把接收到的數值顯示在 show 裡頭，這邊也有用到另外兩個 API，分別是<code>temperature</code>和<code>humidity</code>，<code>temperature</code>回傳的是溫度 ( 攝氏 )，<code>humidity</code>回傳的是溼度 ( 百分比 )。  </p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function () {
+  var board = document.getElementById(&#39;board&#39;);
+
+  board.on(&#39;ready&#39;,function ready() {
+    var dht = document.getElementById(&#39;dht&#39;),
+      show = document.getElementById(&#39;show&#39;);
+
+    dht.read(function (evt) {
+      show.innerHTML = new Date().toLocaleString() + &quot;&lt;br&gt;溫度:&quot; + evt.temperature + &quot; ℃&lt;br&gt; 溼度:&quot; + evt.humidity + &quot; %&quot;;
+    }, 1000);
+
+    }, false);
+
+}, false);
+</code></pre><p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/dht/index.html">快速體驗</a> 範例，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 Complete， 就會看到溫濕度的數值囉！有了這些數值之後，其實可以再加上一些變換，例如增加幾個 div 與 CSS，就可以做出有趣的長條圖，不會只有純粹的數字顯示，也會更有特色。</p>
+<!-- @@close-->

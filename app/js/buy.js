@@ -1,7 +1,8 @@
 $(function(){
 	var file = location.href.split('/').pop(),
 			$window = $(window),
-			$content = $('.content');
+			$content = $('.content'),
+			$youtubeIframe = $('.youtube');
 
 	$('a.buy').addClass('actived');
 
@@ -19,6 +20,14 @@ $(function(){
 		$('html,body').not(':animated').animate({
       'scrollTop': $('#need-know').offset().top - 60
     }, 900);
+	});
+
+	var youtubeWidth = $youtubeIframe.width();
+	$youtubeIframe.css({'height':(youtubeWidth*9/16)+'px'});
+
+	$window.resize(function(){
+			youtubeWidth = $youtubeIframe.width();
+			$youtubeIframe.css({'height':(youtubeWidth*9/16)+'px'});
 	});
 
 });

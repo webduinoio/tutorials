@@ -42,8 +42,17 @@ date: 20150420
 
 以下的步驟將會介紹如何進行設定，閱讀過程請注意**橘黃色**的文字，這些文字描述了大家在設定的時候，比較容易犯的錯誤。
 
-<br/>
-<br/>
+##Webduino 初始化影片介紹
+
+Webduino 開發板 ( 基礎教育版 )：
+
+<iframe class="youtube" src="https://www.youtube.com/embed/EdYJiG8TWXk" frameborder="0" allowfullscreen></iframe>
+
+Webduino 開發板 ( 馬克一號 )：
+
+<iframe class="youtube" src="https://www.youtube.com/embed/cwzpAK_0f2I" frameborder="0" allowfullscreen></iframe>
+
+##Webduino 初始化步驟說明
 
 - ###1. 組合 Webduino 開發板
 

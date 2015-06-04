@@ -1,0 +1,81 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-11-shock-button.html
+title: 震動開關改變網頁數值
+banner: tutorial-11-01.jpg
+img: tutorial-11-01s.jpg</p>
+<h2>date: 20150602</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>範例教學 11：震動開關改變網頁數值 :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="震動開關裡頭有一個金屬導電彈簧以及金屬導電腳，金屬彈簧延伸到塑膠外殼外部是一條比較細的金屬線，因此在晃動的時候，內部互相接觸進而短路導電，原理和之前所提到的按鈕類似，只是震動開關利用震動的方式，控制電路的開或關。">
+
+<meta itemprop="description" content="震動開關裡頭有一個金屬導電彈簧以及金屬導電腳，金屬彈簧延伸到塑膠外殼外部是一條比較細的金屬線，因此在晃動的時候，內部互相接觸進而短路導電，原理和之前所提到的按鈕類似，只是震動開關利用震動的方式，控制電路的開或關。">
+
+<meta property="og:description" content="震動開關裡頭有一個金屬導電彈簧以及金屬導電腳，金屬彈簧延伸到塑膠外殼外部是一條比較細的金屬線，因此在晃動的時候，內部互相接觸進而短路導電，原理和之前所提到的按鈕類似，只是震動開關利用震動的方式，控制電路的開或關。">
+
+<meta property="og:title" content="範例教學 11：震動開關改變網頁數值" >
+
+<meta property="og:url" content="http://webduino.io/tutorials/ttutorial-11-shock-button.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-11-01s.jpg">
+
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-11-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>範例教學 11：震動開關改變網頁數值</h1>
+<p>震動開關的結構如下圖所示，裡頭有一個金屬導電彈簧以及金屬導電腳，金屬彈簧延伸到塑膠外殼外部是一條比較細的金屬線，因此在晃動的時候，內部互相接觸進而短路導電，原理和之前所提到的按鈕類似，只是震動開關利用震動的方式，控制電路的開或關。</p>
+<p><img src="../img/tutorials/tutorial-11-07.jpg" alt=""></p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/poVfvirqHY8" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上溫濕度傳感器</h3>
+<p>  溫濕度傳感器適用的開發板為「<a href="../buy/component-webduino-v1.html">Webduino 開發板馬克 1 號</a>」，如果是使用<a href="../buy/component-webduino-o.html">基礎教育版的 Webduino 開發板</a>可能會無法使用，震動開關有一粗一細的針腳，粗的針腳接 11，細的針腳接 3.3V，為了避免開關開的時候瞬間短路，在電路裡頭加上一個電阻，按照下圖的接法與 GND 相連。</p>
+<p>  <img src="../img/tutorials/tutorial-11-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 完成後的實際長相</h3>
+<p>  <img src="../img/tutorials/tutorial-11-03.jpg" alt=""></p>
+<p>  在把震動開關放上麵包板時，可以清楚地看到一粗一細的針腳，不用擔心細的針腳無法感應，與粗的針腳同樣安插進入麵包板內即可。</p>
+<p>  <img src="../img/tutorials/tutorial-11-04.jpg" alt=""></p>
+<p>  為了避免短路，安插上電阻進行保護的動作。</p>
+<p>  <img src="../img/tutorials/tutorial-11-05.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/shock-button/index.html">快速體驗</a>、<a href="http://jsbin.com/pagoyi/8/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>一開始我們只要在 head 引入震動開關的 WebComponents：<code>webduino/wa-shock.html</code>。</p>
+<pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/web-arduino.html&#39;&gt;&lt;/link&gt;
+&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-shock.html&#39;&gt;&lt;/link&gt;
+</code></pre><p>接著在 body 的地方放上 webduino 開發板，內容放上<code>wa-shock</code>的元件，下方並放入一個 id 為 show 的區域，作為顯示數值使用。</p>
+<pre><code>&lt;web-arduino id=&#39;board&#39; device=&#39;你的 device 名稱&#39;&gt;
+  &lt;wa-shock id=&#39;shock&#39; pin=&#39;11&#39;&gt;&lt;/wa-shock&gt;
+&lt;/web-arduino&gt;
+&lt;div id=&quot;show&quot;&gt;&lt;/div&gt;
+</code></pre><p>完成之後就來寫 javascript，一如往常的先宣告 board，比較特別的是加上一個變數 a，利用震動開關的 API <code>on</code> 來判斷 high 還是 low ( 高電位或低電位 )，如果是 high 就讓 a 加 1，low 就維持不變，接著只要再把 a 用 show 顯示出來即可。</p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function() {
+    var board = document.getElementById(&#39;board&#39;);
+
+    board.on(&#39;ready&#39;, function() {
+        boardsReady();
+    });
+  }, false);
+
+function boardsReady() {
+    var shock = document.getElementById(&#39;shock&#39;),
+        a=0;
+document.getElementById(&#39;show&#39;).innerHTML=a;
+    shock.on(&#39;high&#39;, function() {
+      a=a+1; document.getElementById(&#39;show&#39;).innerHTML=a;
+    });
+    shock.on(&#39;low&#39;, function() {
+      a=a; document.getElementById(&#39;show&#39;).innerHTML=a;
+    });
+
+}
+</code></pre><p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/shock-button/index.html">快速體驗</a>，輸入 device 號碼，搖搖看震動開關，就會發現數字跟著變化囉。</p>
+<!-- @@close-->
