@@ -46,7 +46,7 @@ date: 20150601
 
 - ###1. 接上溫濕度傳感器
 
-	溫濕度傳感器適用的開發板為「[Webduino 開發板馬克 1 號](../buy/component-webduino-v1.html)」，如果是使用[基礎教育版的 Webduino 開發板](../buy/component-webduino-o.html)可能會無法使用，溫濕度傳感器有四隻針腳，第一隻針腳為 v ( 接 3.3V )，第二隻為 data ( 接 10 )，第三隻沒有作用，為 N/C，第四隻為 GND，利用麵包板進行接線。
+	溫濕度傳感器有四隻針腳，第一隻針腳為 v ( 接 3.3V )，第二隻為 data ( 接 10 )，第三隻沒有作用，為 N/C，第四隻為 GND，利用麵包板進行接線。
 
 	![](../img/tutorials/tutorial-10-02.jpg)
 

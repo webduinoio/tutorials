@@ -1,0 +1,100 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-15-pir-led.html
+title: 人體紅外線偵測控制 LED
+banner: tutorial-15-01.jpg
+img: tutorial-15-01s.jpg</p>
+<h2>date: 20150604</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>範例教學 15：人體紅外線偵測控制 LED :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
+
+<meta itemprop="description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
+
+<meta property="og:description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
+
+<meta property="og:title" content="範例教學 15：人體紅外線偵測控制 LED" >
+
+<meta property="og:url" content="http://webduino.io/tutorials/tutorial-15-pir-led.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-15-01s.jpg">
+
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-15-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>範例教學 15：人體紅外線偵測控制 LED</h1>
+<p>人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/3z5tNTgeVxc" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上人體紅外線傳感器與 LED</h3>
+<p>  我們將人體紅外線偵測傳感器的 VCC 接在 Webduino 開發板 VCC 的位置，注意不要接在 3.3V 的腳位，避免電壓不足 ( VCC 腳位提供 5V 電壓，3.3V 腳位提供 3.3V 電壓 )，GND 接在 GND 的位置，訊號源接在 10 號腳位，LED 燈與人體紅外線偵測傳感器共用 GND，長腳則接在 9 的位置。</p>
+<p>  <br/></p>
+<p>  <img src="../img/tutorials/tutorial-15-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 完成後的實際長相</h3>
+<p>  <img src="../img/tutorials/tutorial-15-03.jpg" alt=""></p>
+<p>  LED 和傳感器共用 GND ( 共地 )。</p>
+<p>  <img src="../img/tutorials/tutorial-15-04.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-15-05.jpg" alt=""></p>
+<p>  人體紅外線偵測傳感器上頭有兩顆旋鈕，SX 是靈敏度，TX 是偵測到訊號後延遲的時間，可用十字螺絲起子進行調整。</p>
+<p>  <img src="../img/tutorials/tutorial-15-06.jpg" alt=""></p>
+<p>  <img src="../img/tutorials/tutorial-15-07.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/pir-led/index.html">快速體驗</a>、<a href="http://bin.webduino.io/hor/9/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>在 head 的地方引入相關的 WebComponents，主要是要引入人體紅外線偵測的 WebComponent：<code>wa-pir.html</code>。</p>
+<pre><code>&lt;script src=&quot;http://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/web-arduino.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/wa-led.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/wa-pir.html&#39; /&gt;
+</code></pre><p>body 放入 Webduino 開發板，裡頭放入繼電器和 LED 燈，當然還有網頁圖片。</p>
+<pre><code>&lt;div id=&#39;light&#39; class=&quot;off&quot;&gt;
+  &lt;img src=&#39;http://i.imgur.com/T5H4MHE.png&#39;&gt;&lt;/img&gt;
+  &lt;img src=&#39;http://i.imgur.com/8qFj2Ou.png&#39;&gt;&lt;/img&gt;
+&lt;/div&gt;
+&lt;web-arduino id=&quot;board&quot; device=&#39;你的 device 名稱&#39;&gt;
+  &lt;wa-pir id=&#39;pir&#39; pin=&#39;10&#39;&gt;&lt;/wa-pir&gt;
+  &lt;wa-led id=&#39;led&#39; pin=&#39;9&#39;&gt;&lt;/wa-led&gt;
+&lt;/web-arduino&gt;
+</code></pre><p>再來寫寫 CSS ，作用是來控制電燈明暗，電燈亮表示有偵測到人體紅外線。</p>
+<pre><code>#light img{
+  width:100%;
+  display:none;
+}
+#light.off img:first-child{
+  display:inline-block;
+}
+#light.on img:last-child{
+  display:inline-block;
+}
+</code></pre><p>javascript 主要用到兩個人體紅外線偵測的 API：<code>detected</code>、<code>ended</code>，分別表示偵測到紅外線以及結束偵測，內容放上對應的事件即可。</p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function () {
+  var board = document.getElementById(&#39;board&#39;),
+      light = document.getElementById(&#39;light&#39;);
+
+  board.on(&#39;ready&#39;,function ready() {
+    var pir = document.getElementById(&#39;pir&#39;),
+      led = document.getElementById(&#39;led&#39;),
+      light = document.getElementById(&#39;light&#39;);
+
+      pir.on(&#39;detected&#39;, function () {
+        led.on();
+        light.className = &quot;on&quot;;
+      });
+
+      pir.on(&#39;ended&#39;, function () {
+        led.off();
+        light.className = &quot;off&quot;;
+      });
+  });
+
+}, false);
+</code></pre><p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/pir-led/index.html">快速體驗</a>，輸入 device 號碼，就可以偵測人體紅外線讓 LED 燈發光囉！</p>
+<!-- @@close-->

@@ -51,10 +51,6 @@ date: 20150603
 
 - ###1. 聲音偵測傳感器與 LED 燈
 
-	溫濕度傳感器適用的開發板為「[Webduino 開發板馬克 1 號](../buy/component-webduino-v1.html)」，如果是使用[基礎教育版的 Webduino 開發板](../buy/component-webduino-o.html)可能會無法使用。
-
-	<br/>
-
 	首先把聲音偵測傳感器和 LED 燈接在麵包板上，聲音偵測傳感器的 +5V 接在開發板的 VCC，GND 接在 GND，Out 則接在 10 的腳位，然後再用電線將 GND 引出給 LED 的短腳使用，LED 的長腳接在 9 的腳位。
 
 	![](../img/tutorials/tutorial-12-02.jpg)
