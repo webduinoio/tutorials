@@ -10,7 +10,7 @@ $(function(){
 			$closeArea = $('div,footer').not('.mobile-menu,.slide-menu div,header .menu'),
 			$slideMenu = $('.slide-menu');
 
-	
+	console.log('被我發現你在偷看我的原始碼喔~ 啾咪~ ╭(′▽`)╭(′▽`)╯');
 
 	$('header .menu a').removeClass('actived');
 

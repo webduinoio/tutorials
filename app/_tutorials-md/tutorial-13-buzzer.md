@@ -37,6 +37,8 @@ date: 20150604
 
 蜂鳴器是一個可以產生聲音信號的裝置，使用直流電供電，接通訊號源之後，音訊信號電流通過電磁線圈，使電磁線圈產生磁場，造成 振動膜片週期性地振動發聲，而 Webduino 更可以藉由 HTML5 Attribute 來填入音符代碼，每個代碼都會對應到一個數值，這個數值相對應蜂鳴器聲音的頻率，因此藉由純粹的 HTML5 或 javascript 就可以編輯音樂，透過蜂鳴器發聲。
 
+( 蜂鳴器並不適合「[基礎教育版的開發板](../buy/component-webduino-o.html)」，必須使用「[馬克一號開發板](../buy/component-webduino-v1.html) 」進行實作 )
+
 ##範例影片展示 ( 請開聲音 )
 
 <iframe class="youtube" src="https://www.youtube.com/embed/jB3GvT4q0k4" frameborder="0" allowfullscreen></iframe>

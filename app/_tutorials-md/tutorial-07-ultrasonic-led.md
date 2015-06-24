@@ -40,7 +40,7 @@ date: 20150425
 
 ##範例影片展示
 
-<iframe class="youtube" src="https://www.youtube.com/embed/7ED9YSy7EjA" frameborder="0" allowfullscreen></iframe>
+<iframe class="youtube" src="https://www.youtube.com/embed/pRMjbzPXWvw" frameborder="0" allowfullscreen></iframe>
 
 ##接線與實作
 
