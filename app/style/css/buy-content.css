@@ -36,6 +36,7 @@ header.path-1 {
 .content h3,
 .content p,
 .content ul,
+.content .airpay,
 .content .need-more,
 .content .need-know {
   display: block;
@@ -137,6 +138,29 @@ header.path-1 {
   margin: 5px 0 10px;
   cursor: pointer;
 }
+.content .airpay {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.content .airpay select {
+  height: 50px;
+  background: #f5f5f5;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  outline: none;
+}
+.content .airpay button {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #eee;
+  border: 1px solid #bbb;
+  outline: none;
+}
+.content .airpay button:active {
+  background: #ddd;
+}
 /* disqus */
 .disqus {
   display: block;
@@ -157,6 +181,7 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
+  .content div,
   .content .need-more,
   .content .need-know {
     width: 70%;
@@ -186,6 +211,7 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
+  .content .airpay,
   .content .need-more,
   .content .need-know {
     width: 80%;
@@ -200,6 +226,7 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
+  .content .airpay,
   .content .need-more,
   .content .need-know {
     width: 85%;

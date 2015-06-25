@@ -38,6 +38,8 @@ date: 20150601
 
 溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。
 
+( 溫濕度傳感器並不適合「[基礎教育版的開發板](../buy/component-webduino-o.html)」，必須使用「[馬克一號開發板](../buy/component-webduino-v1.html) 」進行實作 )
+
 ##範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/k4uvbTb8ih8" frameborder="0" allowfullscreen></iframe>

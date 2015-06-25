@@ -50,7 +50,7 @@ header{
       color:#098;
     }
   }
-  h1,h2,h3,p,ul,.need-more,.need-know{
+  h1,h2,h3,p,ul,.airpay,.need-more,.need-know{
     display:block;
     width:60%;
     margin:0 auto;
@@ -144,6 +144,29 @@ header{
     margin:5px 0 10px;
     cursor:pointer;
   }
+  .airpay{
+    margin-top:10px;
+    margin-bottom:50px;
+    select{
+      height:50px;
+      background:#f5f5f5;
+      font-size:16px;
+      border:1px solid #bbb;
+      outline:none;
+    }
+    button{
+      width:100px;
+      height:50px;
+      font-size:16px;
+      border-radius:5px;
+      background:#eee;
+      border:1px solid #bbb;
+      outline:none;
+    }
+    button:active {
+      background:#ddd;
+    }
+  }
 }
 /* disqus */
 .disqus{
@@ -167,7 +190,7 @@ footer{
 /* RWD */
 @media (max-width: 1000px){
   .content{
-    h1,h2,h3,p,ul,.need-more,.need-know{
+    h1,h2,h3,p,ul,div,.need-more,.need-know{
       width:70%;
     }
   }
@@ -193,7 +216,7 @@ footer{
   }
   .content{
     margin-top:40px;
-    h1,h2,h3,p,ul,.need-more,.need-know{
+    h1,h2,h3,p,ul,.airpay,.need-more,.need-know{
       width:80%;
     }
   }
@@ -203,7 +226,7 @@ footer{
 }
 @media (max-width: 600px){
   .content{
-    h1,h2,h3,p,ul,.need-more,.need-know{
+    h1,h2,h3,p,ul,.airpay,.need-more,.need-know{
       width:85%;
     }
     h1,h2,h3,h4{

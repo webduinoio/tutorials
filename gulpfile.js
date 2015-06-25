@@ -250,7 +250,8 @@ gulp.task('build-clean',function(){
 gulp.task('move',['build-clean'],function(){
   var opts = {
     conditionals: true,
-    spare:true
+    spare:true,
+    loose: true
   };
 	var a1 = gulp.src('app/img/index/*').pipe(gulp.dest('build/img/index')),
 	    a2 = gulp.src('app/img/layout/*').pipe(gulp.dest('build/img/layout')),

@@ -52,4 +52,9 @@ $(function(){
 			$youtubeIframe.css({'height':(youtubeWidth*9/16)+'px'});
 	});
 
+	$('.tutorials-content a').on('click',function(){
+		var linkurl = $(this).attr('href');
+		ga('send', 'event', 'tutorials', 'a click', linkurl, 4);
+	});
+
 });

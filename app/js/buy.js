@@ -2,7 +2,10 @@ $(function(){
 	var file = location.href.split('/').pop(),
 			$window = $(window),
 			$content = $('.content'),
-			$youtubeIframe = $('.youtube');
+			$youtubeIframe = $('.youtube'),
+			$airpaySelect = $('.airpay select'),
+			$airpayBtn = $('.airpay button'),
+			linkToAirpay;
 
 	$('a.buy').addClass('actived');
 
@@ -29,5 +32,16 @@ $(function(){
 			youtubeWidth = $youtubeIframe.width();
 			$youtubeIframe.css({'height':(youtubeWidth*9/16)+'px'});
 	});
+
+	
+	linkToAirpay = $airpaySelect.find('option:selected').attr('val');
+	$airpaySelect.on('change',function(){
+		linkToAirpay = $airpaySelect.find('option:selected').attr('val');
+	});
+	$airpayBtn.on('click',function(){
+		window.open(linkToAirpay,'_blank');
+		ga('send', 'event', 'AirPay Btn', 'Button Click', linkToAirpay, 4);
+	});
+
 
 });
