@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+
+<title>範例教學 16：控制伺服馬達轉動角度 :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
+
+<meta itemprop="description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
+
+<meta property="og:description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
+
+<meta property="og:title" content="範例教學 16：控制伺服馬達轉動角度" >
+
+<meta property="og:url" content="http://webduino.io/tutorials/tutorial-16-servo.html">
+
+<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-16-01s.jpg">
+
+<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-16-01s.jpg">
+
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/run_prettify.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/tutorials.js"></script>
+<script src="../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../style/css/layout.css">
+<link rel="stylesheet" href="../style/css/sub-header.css">
+<link rel="stylesheet" href="../style/css/tutorials-content.css">
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index">首頁</a>
+			<a href="tutorials.html" class="tutorials">教學實作</a>
+			<a href="buy.html" class="buy">產品總覽</a>
+			<a href="activity.html" class="activity">課程活動</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index">首頁</a>
+			<a href="../tutorials.html" class="tutorials">教學實作</a>
+			<a href="../buy.html" class="buy">產品總覽</a>
+			<a href="../activity.html" class="activity">課程活動</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div>  
+
+<h1>範例教學 16：控制伺服馬達轉動角度</h1>
+<p>伺服馬達之所以叫做「伺服」馬達，是因為「伺服 servo」表示馬達會依照指示命令動作，由程式要馬達轉幾度，馬達就會轉幾度，但伺服馬達有機械結構上的限制，旋轉的角度是 180 度，但並非完全的 180 度，可能是 1 度到 180 度，或是 -2 度到 177 度都有可能，不過這些誤差都不影響這個範例的實作，這個範例將會介紹如何用 HTML 與 javascript 去控制伺服馬達。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/_M1_T8hs74k" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<ul>
+<li><h3>1. 接上伺服馬達</h3>
+<p>  由於伺服馬達需要的電流量較大，因此我們必須採用獨立電源，才能供應伺服馬達足夠的電流量 ( 其實也可以用電晶體的方式，但還是用獨立電源比較容易上手 )，伺服馬達具有三條電線。紅色的為正電，深咖啡色是接地 GND，橘色的則是訊號線，我們利用麵包板，將獨立電源、Webduino 開發板和伺服馬達共地 ( GND 接在一起 )，伺服馬達的訊號源接在 11 的腳位即可。</p>
+<p>  <br/></p>
+<p>  <img src="../img/tutorials/tutorial-16-02.jpg" alt=""></p>
+</li>
+<li><h3>2. 完成後的實際長相</h3>
+<p>  <img src="../img/tutorials/tutorial-16-03.jpg" alt=""></p>
+<p>  獨立電源、Webduino 開發板和伺服馬達共地。</p>
+<p>  <img src="../img/tutorials/tutorial-16-04.jpg" alt=""></p>
+<p>  紅色的為正電，深咖啡色是接地 GND，橘色的則是訊號線。</p>
+<p>  <img src="../img/tutorials/tutorial-16-05.jpg" alt=""></p>
+</li>
+</ul>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/servo/index.html">快速體驗</a>、<a href="http://jsbin.com/lecahi/4/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<p>在 head 的地方引入相關的 WebComponents，主要是要引入伺服馬達的 WebComponent：<code>wa-servo.html</code>。</p>
+<pre><code>&lt;script src=&quot;http://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/web-arduino.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/wa-servo.html&#39; /&gt;
+</code></pre><p>body 放入 range 以及一個 id 為 show 的 div 來呈現轉動的角度，當然不要忘記放入<code>web-arduino</code>和<code>wa-servo</code>，而 range 的最小值和最大值分別設定 -80 到 80，目的在於避免一些伺服馬達本身無法旋轉到 90 度的誤差，間距設為 10，預設值為 0。</p>
+<pre><code>&lt;div id=&quot;show&quot;&gt;&lt;/div&gt;
+&lt;input id=&quot;r&quot; type=&quot;range&quot;  min=&#39;-80&#39; max=&#39;80&#39; step=&#39;10&#39; value=&#39;0&#39;&gt;&lt;/input&gt; 
+  &lt;web-arduino id=&quot;board&quot; device=&#39;你的 device 名稱&#39;&gt;
+  &lt;wa-servo id=&#39;servo&#39; pin=&#39;11&#39;&gt;&lt;/wa-servo&gt;
+&lt;/web-arduino&gt;
+</code></pre><p>javascript 主要用到伺服馬達的 API：<code>angle</code>，顧名思義就是角度，設定多少馬達就會旋轉多少，但因為 angle 的數值為 0 到 180，range 只設定 -80 到 80 是為了讓左邊為負右邊為正，所以程式上要做點轉換，也就是傳送給伺服馬達的角度會先把數值變成負的，再加 90 就可以。</p>
+<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function () {
+  var board = document.getElementById(&#39;board&#39;),
+      r = document.getElementById(&#39;r&#39;),
+      show = document.getElementById(&#39;show&#39;);
+
+  board.on(&#39;ready&#39;,function ready() {
+    var servo = document.getElementById(&#39;servo&#39;),
+        a = 0;
+
+    servo.angle= -a + 90;  // 讓 angle 不會有負的
+    show.innerText = a;
+
+    r.addEventListener(&#39;change&#39;,function(e){
+      var t = e.target;
+      a = t.value;
+      servo.angle= -a + 90;  //     讓 angle 不會有負的
+      show.innerText = a;
+
+    });   
+
+  },false);
+
+}, false);
+</code></pre><p>按照上述的步驟進行，應該就可以讓馬達輕鬆轉動，如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/servo/index.html">快速體驗</a>，輸入 device 號碼，就可以用 ragne 控制伺服馬達了！</p>
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html"><i></i></a>
+			<a href="../index.html"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
