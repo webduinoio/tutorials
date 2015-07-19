@@ -61,7 +61,7 @@ date: 20150603
 
 	![](../img/tutorials/tutorial-12-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/sound-led/index.html)、[jsbin 範例](http://jsbin.com/yohuho/11/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/sound-led/index.html)、[jsbin 範例](http://bin.webduino.io/baka/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的位置引入相對應的 javascript 以及 WebComponents，這裏我們用到了兩個元件的 WebComponents，分別是 `wa-sound.html` 和 `wa-led.html`。
 

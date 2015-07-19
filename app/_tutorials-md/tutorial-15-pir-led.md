@@ -68,7 +68,7 @@ date: 20150604
 	![](../img/tutorials/tutorial-15-07.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/pir-led/index.html)、[jsbin 範例](http://bin.webduino.io/hor/9/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/pir-led/index.html)、[jsbin 範例](http://bin.webduino.io/poti/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入人體紅外線偵測的 WebComponent：`wa-pir.html`。
 

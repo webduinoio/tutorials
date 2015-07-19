@@ -58,7 +58,7 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-07-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-led/index.html)、[jsbin 範例](http://jsbin.com/kucaru/5/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-led/index.html)、[jsbin 範例](http://bin.webduino.io/titu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到超音波傳感器和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-led`。
 
@@ -112,6 +112,6 @@ javascript 裡頭要運用到兩個元件的 api，首先藉由超音波傳感�
 
 	}, false);
 
-如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/ultrasonic-led/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始利用超音波傳感器讓 LED 發光囉，亦或是也可以參考這個 [jsbin 範例](http://jsbin.com/kucaru/5/edit?html,css,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
+如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/ultrasonic-led/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始利用超音波傳感器讓 LED 發光囉，亦或是也可以參考這個 [jsbin 範例](http://bin.webduino.io/titu/edit?html,css,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
 
 <!-- @@close-->

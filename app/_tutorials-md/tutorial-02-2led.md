@@ -57,7 +57,7 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-02-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led-two/index.html)、[jsbin 範例](http://jsbin.com/raniwi/11/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led-two/index.html)、[jsbin 範例](http://bin.webduino.io/nodi/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 跟第一個範例一樣，一開始先引入相關的 js 以及 WebComponents。
 
@@ -126,7 +126,7 @@ CSS 跟範例 1 比起來幾乎是沒已有變化，主要也只是負責圖片�
 
 	}, false);
 
-如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/led-two/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以點選圖片讓不同的 LED 亮起，亦或是也可以參考這個 [jsbin 範例](http://jsbin.com/raniwi/11/edit?html,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
+如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/led-two/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以點選圖片讓不同的 LED 亮起，亦或是也可以參考這個 [jsbin 範例](http://bin.webduino.io/nodi/edit?html,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
 
 
 <!-- @@close-->

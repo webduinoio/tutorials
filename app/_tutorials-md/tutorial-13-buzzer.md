@@ -58,7 +58,7 @@ date: 20150604
 	![](../img/tutorials/tutorial-13-04.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/buzzer/index.html)、[jsbin 範例](http://bin.webduino.io/hud/5/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/buzzer/index.html)、[jsbin 範例](http://bin.webduino.io/beze/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入蜂鳴器的 WebComponent：`wa-buzzer.html`。
 
@@ -75,7 +75,7 @@ date: 20150604
 	<button id="play">play</button>
 
 
-上面的 HTML 是只填寫 notes 而已，下面的範例是有填寫 tempos，基本上 notes 長度多少 tempos 長度也要設為多少，下面的 HTML 可以展示不同聲音長度的效果。( [jsbin 範例](http://bin.webduino.io/qiq/4/edit?html,js,output) )
+上面的 HTML 是只填寫 notes 而已，下面的範例是有填寫 tempos，基本上 notes 長度多少 tempos 長度也要設為多少，下面的 HTML 可以展示不同聲音長度的效果。( [jsbin 範例](http://bin.webduino.io/deni/edit?html,js,output) )
 
 	<web-arduino id='board' device='你的 device 名稱'>
 	  <wa-buzzer id='buzzer' pin='11' notes='c4,d4,e4,f4,g4,a4,b4,c5' tempos='1,2,3,4,5,6,7,8' ></wa-buzzer>

@@ -55,7 +55,7 @@ date: 20150425
 	![](../img/tutorials/tutorial-03-03.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled/index.html)、[jsbin 範例](http://jsbin.com/ridifi/6/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled/index.html)、[jsbin 範例](http://bin.webduino.io/ber/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 與 LED 範例比較不同的地方，在於我們這裡要引入另外一個名為「rgbled」的 WebComponent，不過寫法和引入的位置仍然是相同的是在 header 裡頭。
 
@@ -106,7 +106,7 @@ HTML 寫好之後就來寫 javascript，裡頭最重要的是我們運用了 `se
 
 	}, false);
 
-如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/rgbled/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以讓不同顏色的光亮起，亦或是也可以參考這個 [jsbin 範例](http://jsbin.com/ridifi/6/edit?html,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
+如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/rgbled/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以讓不同顏色的光亮起，亦或是也可以參考這個 [jsbin 範例](http://bin.webduino.io/ber/edit?html,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
 
 
 

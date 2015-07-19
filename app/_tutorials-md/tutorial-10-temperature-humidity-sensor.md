@@ -60,7 +60,7 @@ date: 20150601
 
 	![](../img/tutorials/tutorial-10-05.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/dht/index.html)、[jsbin 範例](http://jsbin.com/nomovi/7/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/dht/index.html)、[jsbin 範例](http://bin.webduino.io/xaxe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方先引入相關的 js 以及 WebComponent，溫濕度傳感器的 WebComponent 為：`wa-dht.html`。
 

@@ -66,7 +66,7 @@ date: 20150604
 	![](../img/tutorials/tutorial-14-06.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/relay/index.html)、[jsbin 範例](http://bin.webduino.io/vih/7/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/relay/index.html)、[jsbin 範例](http://bin.webduino.io/qab/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入繼電器的 WebComponent：`wa-relay.html`。
 

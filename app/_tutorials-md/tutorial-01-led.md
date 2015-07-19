@@ -55,7 +55,7 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-01-03.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led/)、[jsbin 範例](http://jsbin.com/raniwi/5/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led/)、[jsbin 範例](http://bin.webduino.io/duso/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始先在 HTML 的 header 引入四個項目，第一個 webcomponents.js 的目的在讓瀏覽器可以支援 WebComponents (因為不是所有的瀏覽器都支援 )，web-arduino.html 是 Webduino 的 WebComponent，wa-led.html 則是這個範例會用到的 LED 元件的 WebComponent。
 

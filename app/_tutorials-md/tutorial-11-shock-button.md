@@ -64,7 +64,7 @@ date: 20150602
 
 	![](../img/tutorials/tutorial-11-05.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/shock-button/index.html)、[jsbin 範例](http://jsbin.com/pagoyi/8/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/shock-button/index.html)、[jsbin 範例](http://bin.webduino.io/semi/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始我們只要在 head 引入震動開關的 WebComponents：`webduino/wa-shock.html`。
 

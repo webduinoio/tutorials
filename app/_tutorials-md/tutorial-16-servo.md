@@ -64,7 +64,7 @@ date: 20150625
 	![](../img/tutorials/tutorial-16-05.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/servo/index.html)、[jsbin 範例](http://jsbin.com/lecahi/4/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/servo/index.html)、[jsbin 範例](http://bin.webduino.io/luhe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入伺服馬達的 WebComponent：`wa-servo.html`。
 
