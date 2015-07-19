@@ -21,11 +21,11 @@ date: 20150604
 
 <meta property="og:title" content="範例教學 14：繼電器控制風扇旋轉" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-14-relay.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-14-relay.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-14-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-14-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-14-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-14-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -66,13 +66,13 @@ date: 20150604
 	![](../img/tutorials/tutorial-14-06.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/relay/index.html)、[jsbin 範例](http://bin.webduino.io/vih/7/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/relay/index.html)、[jsbin 範例](http://bin.webduino.io/vih/7/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入繼電器的 WebComponent：`wa-relay.html`。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html'></link>
-	<link rel='import' href='http://webduino.io/components/webduino/wa-relay.html'></link>
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html'></link>
+	<link rel='import' href='https://webduino.io/components/webduino/wa-relay.html'></link>
 
 body 的部分就滿簡單的，先放入 Webduino 開發板，裡頭放入繼電器。
 

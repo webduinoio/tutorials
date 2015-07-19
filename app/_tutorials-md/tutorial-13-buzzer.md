@@ -21,11 +21,11 @@ date: 20150604
 
 <meta property="og:title" content="範例教學 13：蜂鳴器播放自製音樂" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-13-buzzer.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-13-buzzer.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-13-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-13-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-13-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-13-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -58,13 +58,13 @@ date: 20150604
 	![](../img/tutorials/tutorial-13-04.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/buzzer/index.html)、[jsbin 範例](http://bin.webduino.io/hud/5/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/buzzer/index.html)、[jsbin 範例](http://bin.webduino.io/hud/5/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入蜂鳴器的 WebComponent：`wa-buzzer.html`。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html'></link>
-	<link rel='import' href='http://webduino.io/components/webduino/wa-buzzer.html'></link>
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html'></link>
+	<link rel='import' href='https://webduino.io/components/webduino/wa-buzzer.html'></link>
 
 蜂鳴器的重點在 HTML 的部分，在 body 部分先放入蜂鳴器，接著就是要撰寫相關的 HTML5 Attribute，這裏最重要的屬性有兩個：`notes` 和 `tempos`，notes 是要填入對應的音符陣列 ( 可參考這篇[介紹文章](http://wiki.micropython.org/Play-Tone) )，而 tempos 是填入每個音符的時間數值陣列，如果填寫 1 則是 1/1 秒，填入 10 則是 1/10 秒，如果都不填寫的話則會預設 1/10 秒。此外，也可以填入 `autoplay` 的屬性，只要頁面載入之後就會自動播放。
 

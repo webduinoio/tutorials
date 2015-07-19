@@ -19,11 +19,11 @@
 
 <meta property="og:title" content="範例教學 3：控制 三色 LED" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-03-rgbled.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-03-rgbled.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-03-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-03-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-03-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-03-01s.jpg">
 
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/lib/run_prettify.js"></script>
@@ -92,11 +92,11 @@
 <p>  <img src="../img/tutorials/tutorial-03-03.jpg" alt=""></p>
 </li>
 </ul>
-<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/rgbled/index.html">快速體驗</a>、<a href="http://jsbin.com/ridifi/6/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/rgbled/index.html">快速體驗</a>、<a href="http://jsbin.com/ridifi/6/edit?html,js,output">jsbin 範例</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a>)</h2>
 <p>與 LED 範例比較不同的地方，在於我們這裡要引入另外一個名為「rgbled」的 WebComponent，不過寫法和引入的位置仍然是相同的是在 header 裡頭。</p>
-<pre><code>&lt;script src=&quot;http://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/web-arduino.html&#39; /&gt;
-&lt;link rel=&#39;import&#39; href=&#39;http://webduino.io/components/webduino/wa-rgbled.html&#39;/&gt;
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;https://webduino.io/components/webduino/web-arduino.html&#39; /&gt;
+&lt;link rel=&#39;import&#39; href=&#39;https://webduino.io/components/webduino/wa-rgbled.html&#39;/&gt;
 </code></pre><p>然後在 body 裡頭放入四個按鈕，分別是紅色 (redBtn)、藍色 (blueBtn)、綠色 (greenBtn) 以及清除 (cleanBtn)，按鈕後方就一樣是先放入 <code>web-arduino</code>，裡頭插上三色 LED 燈 <code>wa-rgbled</code>，device 要換成你手上的 Webduino 開發板 device 名稱。</p>
 <pre><code>&lt;button id=&#39;redBtn&#39;&gt;red&lt;/button&gt;
 &lt;button id=&#39;greenBtn&#39;&gt;green&lt;/button&gt;

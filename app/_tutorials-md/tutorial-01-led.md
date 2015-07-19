@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 1：控制單顆 LED 燈" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-01-led.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-01-led.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-01-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-01-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-01-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-01-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -55,14 +55,14 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-01-03.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led/)、[jsbin 範例](http://jsbin.com/raniwi/5/edit?html,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led/)、[jsbin 範例](http://jsbin.com/raniwi/5/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始先在 HTML 的 header 引入四個項目，第一個 webcomponents.js 的目的在讓瀏覽器可以支援 WebComponents (因為不是所有的瀏覽器都支援 )，web-arduino.html 是 Webduino 的 WebComponent，wa-led.html 則是這個範例會用到的 LED 元件的 WebComponent。
 
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-led.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
 
 接著看到 HTML 的 body 裡頭，放入一個 id 為 light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡，再來最重要的是 web-arduino，這表示我們要在裡面使用 Webduino 的 WebComponent ( 可以把這個 tag 想像成實體的 Webduino 開發板 )，然後在裡面放入 web-led 這個 LED 的 WebComponent ( 在 Webduino 開發板上頭插上 LED 燈 )，web-arduino 的 device 填入您的開發板 device 名稱 ( 大小寫英文字母與數字組合 )，並在 web-led 填入對應的 pin 腳 ( LED 長腳接在哪邊，就填哪個數字 )。
 

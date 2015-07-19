@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="Webduino 的基本介紹" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/info-01-introduction.html">
+<meta property="og:url" content="https://webduino.io/tutorials/info-01-introduction.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/info-01-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/info-01-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/info-01-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/info-01-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 

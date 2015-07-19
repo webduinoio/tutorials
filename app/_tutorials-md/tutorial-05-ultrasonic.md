@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 5：控制超音波傳感器" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-05-ultrasonic.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-05-ultrasonic.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-05-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-05-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-05-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-05-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -55,13 +55,13 @@ date: 20150425
 	![](../img/tutorials/tutorial-05-03.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic/index.html)、[jsbin 範例](http://jsbin.com/cagora/4/edit?html,css,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic/index.html)、[jsbin 範例](http://jsbin.com/cagora/4/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始要先引入相關的 js 與 WebComponents，特別是超音波傳感器的 WebComponent：`wa-ultrasonic.html`。
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-ultrasonic.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-ultrasonic.html' />
 
 接著在畫面上放上一個名為 show 的區域，目的只是在顯示數值，然後再放入 `web-arduino`，裡頭擺上超音波傳感器 `wa-ultrasonic`。
 

@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 8：超音波傳感器控制三色 LED 燈" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-08-ultrasonic-rgbled.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-08-ultrasonic-rgbled.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-08-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-08-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-08-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-08-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -60,14 +60,14 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-08-05.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-rgbled/index.html)、[jsbin 範例](http://jsbin.com/latexi/4/edit?html,css,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-rgbled/index.html)、[jsbin 範例](http://jsbin.com/latexi/4/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到超音波傳感器和三色 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-rgbled`。
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-ultrasonic.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-rgbled.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-ultrasonic.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-rgbled.html' />
 
 HTML 裡頭放上一個文字說明現在幾公分，同時用一個 div 來顯示顏色，凸顯三色 LED 燈與網頁是顯示同樣的顏色。
 

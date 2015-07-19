@@ -21,11 +21,11 @@ date: 20150602
 
 <meta property="og:title" content="範例教學 11：震動開關改變網頁數值" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/ttutorial-11-shock-button.html">
+<meta property="og:url" content="https://webduino.io/tutorials/ttutorial-11-shock-button.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-11-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-11-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-11-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-11-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -64,13 +64,13 @@ date: 20150602
 
 	![](../img/tutorials/tutorial-11-05.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/shock-button/index.html)、[jsbin 範例](http://jsbin.com/pagoyi/8/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/shock-button/index.html)、[jsbin 範例](http://jsbin.com/pagoyi/8/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始我們只要在 head 引入震動開關的 WebComponents：`webduino/wa-shock.html`。
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html'></link>
-	<link rel='import' href='//webduino.io/components/webduino/wa-shock.html'></link>
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html'></link>
+	<link rel='import' href='https://webduino.io/components/webduino/wa-shock.html'></link>
 
 接著在 body 的地方放上 webduino 開發板，內容放上`wa-shock`的元件，下方並放入一個 id 為 show 的區域，作為顯示數值使用。
 

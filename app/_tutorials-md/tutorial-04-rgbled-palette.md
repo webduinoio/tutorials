@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 4：三色 LED 調色盤" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-04-rgbled-palette.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-04-rgbled-palette.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-04-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-04-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-04-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-04-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -56,13 +56,13 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-04-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled-palette/index.html)、[jsbin 範例](http://jsbin.com/dasufu/5/edit?html,css,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled-palette/index.html)、[jsbin 範例](http://jsbin.com/dasufu/5/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始要先引入相關的 js 與 WebComponents。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-rgbled.html'/>
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-rgbled.html'/>
 
 在 body 裡頭利用 html5 的 input「range」類型，製作三個拉霸，並在拉霸的下方放一個名為 show 的 div，目的為了讓拉霸拉動的時候，不僅只有三色 LED 的顏色變化，連同畫面上的區塊顏色也會跟著改變，而拉霸的數值設定為 0 到 255，拉動的間隔為 5，預設值為 0。
 

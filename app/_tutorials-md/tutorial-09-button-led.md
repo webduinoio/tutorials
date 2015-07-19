@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 9：利用按鈕控制 LED 燈" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-09-button-led.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-09-button-led.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-09-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-09-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-09-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-09-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -62,14 +62,14 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-09-05.jpg)
 
-##範例解析 ( [jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html) )
+##範例解析 ( [jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到按鈕和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-rgbled`。
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html'></link>
-	<link rel='import' href='//webduino.io/components/webduino/wa-button.html'></link>
-	<link rel='import' href='//webduino.io/components/webduino/wa-led.html'></link>
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html'></link>
+	<link rel='import' href='https://webduino.io/components/webduino/wa-button.html'></link>
+	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html'></link>
 
 因為我們有兩塊 webduino 開發板，所以必須要在 HTML 放入兩個 device，然後分別在一個 device 上插入按鈕，另外一個 device 裡頭插入 LED 燈，接著再放入一個網頁的按鈕，要讓這個網頁按鈕跟實體按鈕做一樣的事情。
 

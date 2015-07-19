@@ -21,11 +21,11 @@ date: 20150625
 
 <meta property="og:title" content="範例教學 16：控制伺服馬達轉動角度" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-16-servo.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-16-servo.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-16-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-16-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-16-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-16-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -64,13 +64,13 @@ date: 20150625
 	![](../img/tutorials/tutorial-16-05.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/servo/index.html)、[jsbin 範例](http://jsbin.com/lecahi/4/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/servo/index.html)、[jsbin 範例](http://jsbin.com/lecahi/4/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入伺服馬達的 WebComponent：`wa-servo.html`。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-servo.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-servo.html' />
 
 body 放入 range 以及一個 id 為 show 的 div 來呈現轉動的角度，當然不要忘記放入`web-arduino`和`wa-servo`，而 range 的最小值和最大值分別設定 -80 到 80，目的在於避免一些伺服馬達本身無法旋轉到 90 度的誤差，間距設為 10，預設值為 0。
 

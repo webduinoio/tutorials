@@ -21,11 +21,11 @@ date: 20150420
 
 <meta property="og:title" content="Webduino 初始化設定" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/info-02-setup.html">
+<meta property="og:url" content="https://webduino.io/tutorials/info-02-setup.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/info-02-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/info-02-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/info-02-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/info-02-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -95,7 +95,7 @@ Webduino 開發板 ( 馬克一號 )：
 
 - ###6. 確認連線是否成功
 
-	Webduino 開發板重啟後，便可將電腦或行動裝置切回正常的網路連線，並連結 [http://webduino.io/device.html](http://webduino.io/device.html) ，輸入對應的 device 名稱確認是否連線成功，如果連線成功則會出現 OK 的顯示，**連線成功後即可開始玩轉 Webduino**。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )
+	Webduino 開發板重啟後，便可將電腦或行動裝置切回正常的網路連線，並連結 [https://webduino.io/device.html](https://webduino.io/device.html) ，輸入對應的 device 名稱確認是否連線成功，如果連線成功則會出現 OK 的顯示，**連線成功後即可開始玩轉 Webduino**。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )
 
 	![Webduino - 確認連線是否成功](../img/tutorials/info-02-06.jpg)
 

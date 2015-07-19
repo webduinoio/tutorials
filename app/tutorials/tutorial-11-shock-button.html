@@ -19,11 +19,11 @@
 
 <meta property="og:title" content="範例教學 11：震動開關改變網頁數值" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/ttutorial-11-shock-button.html">
+<meta property="og:url" content="https://webduino.io/tutorials/ttutorial-11-shock-button.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-11-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-11-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-11-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-11-01s.jpg">
 
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/lib/run_prettify.js"></script>
@@ -97,11 +97,11 @@
 <p>  <img src="../img/tutorials/tutorial-11-05.jpg" alt=""></p>
 </li>
 </ul>
-<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/shock-button/index.html">快速體驗</a>、<a href="http://jsbin.com/pagoyi/8/edit?html,js,output">jsbin 範例</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/shock-button/index.html">快速體驗</a>、<a href="http://jsbin.com/pagoyi/8/edit?html,js,output">jsbin 範例</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a>)</h2>
 <p>一開始我們只要在 head 引入震動開關的 WebComponents：<code>webduino/wa-shock.html</code>。</p>
-<pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/web-arduino.html&#39;&gt;&lt;/link&gt;
-&lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/wa-shock.html&#39;&gt;&lt;/link&gt;
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&#39;import&#39; href=&#39;https://webduino.io/components/webduino/web-arduino.html&#39;&gt;&lt;/link&gt;
+&lt;link rel=&#39;import&#39; href=&#39;https://webduino.io/components/webduino/wa-shock.html&#39;&gt;&lt;/link&gt;
 </code></pre><p>接著在 body 的地方放上 webduino 開發板，內容放上<code>wa-shock</code>的元件，下方並放入一個 id 為 show 的區域，作為顯示數值使用。</p>
 <pre><code>&lt;web-arduino id=&#39;board&#39; device=&#39;你的 device 名稱&#39;&gt;
   &lt;wa-shock id=&#39;shock&#39; pin=&#39;11&#39;&gt;&lt;/wa-shock&gt;

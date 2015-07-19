@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 7：超音波傳感器控制 LED 燈" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-07-ultrasonic-led.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-07-ultrasonic-led.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-07-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-07-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-07-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-07-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -58,14 +58,14 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-07-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-led/index.html)、[jsbin 範例](http://jsbin.com/kucaru/5/edit?html,css,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-led/index.html)、[jsbin 範例](http://jsbin.com/kucaru/5/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到超音波傳感器和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-led`。
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-ultrasonic.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-led.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-ultrasonic.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
 
 再來我們先在 body 裡頭放上一張燈泡的圖片，目的在於超音波傳感器讓 LED 燈亮起時，這張圖片也會變成發亮的圖片，然後從 HTML 的架構可以看出我們把超音波傳感器已及 LED 安插在 webduino 開發板上頭。
 

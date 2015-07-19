@@ -21,11 +21,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 3：控制 三色 LED" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-03-rgbled.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-03-rgbled.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-03-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-03-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-03-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-03-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -55,13 +55,13 @@ date: 20150425
 	![](../img/tutorials/tutorial-03-03.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled/index.html)、[jsbin 範例](http://jsbin.com/ridifi/6/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled/index.html)、[jsbin 範例](http://jsbin.com/ridifi/6/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 與 LED 範例比較不同的地方，在於我們這裡要引入另外一個名為「rgbled」的 WebComponent，不過寫法和引入的位置仍然是相同的是在 header 裡頭。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-rgbled.html'/>
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-rgbled.html'/>
 
 然後在 body 裡頭放入四個按鈕，分別是紅色 (redBtn)、藍色 (blueBtn)、綠色 (greenBtn) 以及清除 (cleanBtn)，按鈕後方就一樣是先放入 `web-arduino`，裡頭插上三色 LED 燈 `wa-rgbled`，device 要換成你手上的 Webduino 開發板 device 名稱。
 

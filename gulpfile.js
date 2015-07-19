@@ -288,7 +288,7 @@ gulp.task('move',['build-clean'],function(){
 gulp.task('build',['move'], function () {
   return gulp.src(['build/**/*.html','!build/ga/*.html'])
         .pipe(sitemap({
-            siteUrl: 'http://webduino.io'
+            siteUrl: 'https://webduino.io'
         }))
         .pipe(gulp.dest('build'));
 });

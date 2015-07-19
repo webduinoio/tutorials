@@ -22,11 +22,11 @@ date: 20150425
 
 <meta property="og:title" content="範例教學 2：兩顆 LED 交互閃爍" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-02-2led.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-02-2led.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-02-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-02-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-02-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-02-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -57,13 +57,13 @@ date: 20150425
 
 	![](../img/tutorials/tutorial-02-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led-two/index.html)、[jsbin 範例](http://jsbin.com/raniwi/11/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led-two/index.html)、[jsbin 範例](http://jsbin.com/raniwi/11/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 跟第一個範例一樣，一開始先引入相關的 js 以及 WebComponents。
 
-	<script src="//webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='//webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='//webduino.io/components/webduino/wa-led.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
 
 接著我們只要用第一個範例來修改，多一顆 LED 燈接在 11 的腳位即可。
 

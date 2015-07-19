@@ -21,11 +21,11 @@ date: 20150601
 
 <meta property="og:title" content="範例教學 10：溫濕度傳感器" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-10-temperature-humidity-sensor.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-10-temperature-humidity-sensor.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-10-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-10-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-10-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-10-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -60,13 +60,13 @@ date: 20150601
 
 	![](../img/tutorials/tutorial-10-05.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/dht/index.html)、[jsbin 範例](http://jsbin.com/nomovi/7/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/dht/index.html)、[jsbin 範例](http://jsbin.com/nomovi/7/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方先引入相關的 js 以及 WebComponent，溫濕度傳感器的 WebComponent 為：`wa-dht.html`。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-dht.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-dht.html' />
 
 接著在 body 區域裡頭放入一個 id 為 show 的 div 負責顯示溫濕度傳感器的數值，然後也是要放上 board 和溫濕度傳感器的 HTML 程式碼，而溫濕度傳感器的 pin 設定為 10。
 

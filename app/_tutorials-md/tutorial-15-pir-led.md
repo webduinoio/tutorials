@@ -21,11 +21,11 @@ date: 20150604
 
 <meta property="og:title" content="範例教學 15：人體紅外線偵測控制 LED" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-15-pir-led.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-15-pir-led.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-15-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-15-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-15-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-15-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -68,14 +68,14 @@ date: 20150604
 	![](../img/tutorials/tutorial-15-07.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/pir-led/index.html)、[jsbin 範例](http://bin.webduino.io/hor/9/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/pir-led/index.html)、[jsbin 範例](http://bin.webduino.io/hor/9/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的地方引入相關的 WebComponents，主要是要引入人體紅外線偵測的 WebComponent：`wa-pir.html`。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-led.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-pir.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-pir.html' />
 
 body 放入 Webduino 開發板，裡頭放入繼電器和 LED 燈，當然還有網頁圖片。
 

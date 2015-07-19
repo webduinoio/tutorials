@@ -21,11 +21,11 @@ date: 20150603
 
 <meta property="og:title" content="範例教學 12：聲音偵測點亮 LED 與網頁燈泡" >
 
-<meta property="og:url" content="http://webduino.io/tutorials/tutorial-12-sound-sensor.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-12-sound-sensor.html">
 
-<meta property="og:image" content="http://webduino.io/img/tutorials/tutorial-12-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-12-01s.jpg">
 
-<meta itemprop="image" content="http://webduino.io/img/tutorials/tutorial-12-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-12-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
@@ -61,14 +61,14 @@ date: 20150603
 
 	![](../img/tutorials/tutorial-12-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/sound-led/index.html)、[jsbin 範例](http://jsbin.com/yohuho/11/edit?html,js,output)、[檢查連線狀態](http://webduino.io/device.html))
+##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/sound-led/index.html)、[jsbin 範例](http://jsbin.com/yohuho/11/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 在 head 的位置引入相對應的 javascript 以及 WebComponents，這裏我們用到了兩個元件的 WebComponents，分別是 `wa-sound.html` 和 `wa-led.html`。
 
-	<script src="http://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-sound.html' />
-	<link rel='import' href='http://webduino.io/components/webduino/wa-led.html' />
+	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
+	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-sound.html' />
+	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
 
 接著就是在 body 裡頭放入必要的元素，除了 board 之外，多放上一個燈泡的區域，裡頭有兩張燈泡明暗的圖片，在聲音傳感器偵測到聲音觸發時，就會進行燈泡明暗的切換。
 
