@@ -40,7 +40,7 @@ date: 20151124
 
 ## 初始化步驟說明
 
-- ###1. 組合 Webduino 開發板
+- ### 1. 組合 Webduino 開發板
 
 	將「Arduino UNO 雲端擴充板」與「Arduino UNO」組合，就成為「Webduino UNO 開發板」。
 
@@ -48,26 +48,26 @@ date: 20151124
 
 	![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-04-03.jpg)
 
-- ###2. 開始進行初始化
+- ### 2. 開始進行初始化
 
 	在 UNO 雲端擴充板上面會有一顆可以左右扳動的小案鈕，將按鈕扳動至 STA 模式，就可以開始進行初始化設定。
 
 	![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-04-04.jpg)
 
-- ###3. 使用 wifi 搜尋 Webduino 開發板
+- ### 3. 使用 wifi 搜尋 Webduino 開發板
 
 	使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，**開發板的 SSID 與密碼會寫在「裝置說明卡」裡頭，通常為「wa」開頭**。( 範例名稱為 wa101 )
 
 	![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-04-05.jpg)
 
 
-- ###4. 連線 Webduino 開發板進行設定
+- ### 4. 連線 Webduino 開發板進行設定
 
 	打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b>http://192.168.4.1</b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( 此處的 SSID 為「網路基地台」的 SSID，並非 Webduino 開發板，**不要填成裝置說明卡上頭的 SSID 與 PASSWORD**，且 SSID 與 PASSWORD 有限制 14 個字元，只能大小寫的英文字母與數字的組合，要特別注意！ )
 
 	![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-04-06.jpg)
 
-- ###5. 重啟 Webduino UNO 開發板
+- ### 5. 重啟 Webduino UNO 開發板
 
 	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線 ( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 2 重新開始 )
 
@@ -77,7 +77,7 @@ date: 20151124
 
 	![Webduino - 重啟 Webduino 開發板](../img/tutorials/info-04-08.jpg)
 
-- ###6. 確認連線是否成功
+- ### 6. 確認連線是否成功
 
 	Webduino 開發板重啟後，便可將電腦或行動裝置切回正常的網路連線，並連結 [https://webduino.io/device.html](https://webduino.io/device.html) ，輸入對應的 device 名稱確認是否連線成功，如果連線成功則會出現 OK 的顯示，**連線成功後即可開始玩轉 Webduino**。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 2 重新初始化設定 )
 
@@ -87,9 +87,17 @@ date: 20151124
 
 	![Webduino - 確認連線是否成功](../img/tutorials/info-04-10.jpg)
 
-- ###7. Webduino 開發板已經可以連線網路基地台
+- ### 7. Webduino 開發板已經可以連線網路基地台
 
 	進行到此步驟，表示 Webduino 開發板已經可以自行連上家裡、公司場所或行動裝置分享的網路基地台，並自動連結上雲端的伺服器，我們就可以開始透過 wifi 去控制 Webduino 開發板囉！ ( 立刻用第 [第一個範例](tutorial-01-led.html) 體驗看看吧 )
+
+- ### 8. 注意事項
+
+	由於要使用 JavaScript 操控 Arduino 開發板，因此要走 Arduino Firmata 的通訊協定，Arduino 本身**要燒錄具有 Firmata 通訊協定的韌體**，建議可使用 Arduino 官方提供的範例燒錄，便可做基本的應用。( Arduino IDE > 範例 > Firmata > StandardFirmata )
+
+	![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-05-08.jpg)
+
+
 
 
 <!-- @@close-->
