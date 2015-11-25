@@ -13,6 +13,10 @@ $(function(){
 	console.log('被我發現你在偷看我的原始碼喔~ 啾咪~ ╭(′▽`)╭(′▽`)╯');
 
 	$('header .menu a').removeClass('actived');
+	
+	if($('img.lazy')){
+		$('img.lazy').lazyload();
+	}
 
 	if(fileName[0]=='index'||fileName[0]==''){
 		jsonURL='json/tutorials.json';
