@@ -30,7 +30,12 @@
 	<link rel="stylesheet" href="style/css/sub-header.css">
 
 
-
+	<script src="js/lib/jquery.lazyload.min.js"></script>
+	<script>
+		$(function(){
+			$('img.lazy').lazyload();
+		});
+	</script>
 
 
 	<link rel="stylesheet" href="style/css/buy.css">
@@ -69,7 +74,7 @@
 			<div>
 				<a href="buy/package-webduino-basic.html">
 					<div>
-						<img src="img/buy/package-01-01s.jpg" />
+						<img class="lazy" data-original="img/buy/package-01-01s.jpg" />
 					</div>
 					<h2>Webduino 開發包 ( 基本款 )</h2>
 					<h3>價格 : <span>NT$ 1,365</span></h3>
@@ -79,7 +84,7 @@
 			<div>
 				<a href="buy/package-webduino-plus.html">
 					<div>
-						<img src="img/buy/package-02-01s.jpg" />
+						<img class="lazy" data-original="img/buy/package-02-01s.jpg" />
 					</div>
 					<h2>Webduino 開發包 ( 威力加強版 )</h2>
 					<h3>價格 : <span>NT$ 1,890</span></h3>
@@ -93,7 +98,7 @@
 			<div>
 				<a href="buy/component-webduino-v1.html">
 					<div>
-						<img src="img/buy/webduino-01-01s.jpg" />
+						<img class="lazy" data-original="img/buy/webduino-01-01s.jpg" />
 					</div>
 					<h2>Webduino 開發板 ( 馬克 1 號 )</h2>
 					<h3>價格 : <span>NT$ 840</span></h3>
@@ -103,7 +108,7 @@
 			<div>
 				<a href="buy/component-webduino-o.html">
 					<div>
-						<img src="img/buy/webduino-02-01s.jpg" />
+						<img class="lazy" data-original="img/buy/webduino-02-01s.jpg" />
 					</div>
 					<h2>Webduino 開發板 ( 基礎教育版 )</h2>
 					<h3>價格 : <span>NT$ 840</span> ( 已售罄，缺貨中 )</h3>

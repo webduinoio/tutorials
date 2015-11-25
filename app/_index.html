@@ -20,6 +20,12 @@
   <script src="js/lib/jquery.min.js"></script>
 	<script src="js/layout.js"></script>
   <script src="js/index.js"></script>
+	<script src="js/lib/jquery.lazyload.min.js"></script>
+	<script>
+		$(function(){
+			$('img.lazy').lazyload();
+		});
+	</script>
 <!-- @@close-->
 
 <!-- @@block  =  css-->	
@@ -75,14 +81,14 @@
 	</div>
 	<div class="tutorials-menu">
 		<div class="menu-content">
-			<div data-title="單顆 LED 燈"><a href="tutorials/tutorial-01-led.html"><img src="img/tutorials/tutorial-01-01s.jpg" /></a></div>
-			<div data-title="兩顆 LED 燈交互閃爍"><a href="tutorials/tutorial-02-2led.html"><img src="img/tutorials/tutorial-02-01s.jpg" /></a></div>
-			<div data-title="三色 LED 燈"><a href="tutorials/tutorial-03-rgbled.html"><img src="img/tutorials/tutorial-03-01s.jpg" /></a></div>
-			<div data-title="三色 LED 燈調色盤"><a href="tutorials/tutorial-04-rgbled-palette.html"><img src="img/tutorials/tutorial-04-01s.jpg" /></a></div>
-			<div data-title="超音波傳感器"><a href="tutorials/tutorial-05-ultrasonic.html"><img src="img/tutorials/tutorial-05-01s.jpg" /></a></div>
-			<div data-title="超音波傳感器改變圖片大小"><a href="tutorials/tutorial-06-ultrasonic-imagesize.html"><img src="img/tutorials/tutorial-06-01s.jpg" /></a></div>
-			<div data-title="超音波傳感器 + LED 燈"><a href="tutorials/tutorial-07-ultrasonic-led.html"><img src="img/tutorials/tutorial-07-01s.jpg" /></a></div>
-			<div data-title="超音波傳感器 + 三色 LED 燈"><a href="tutorials/tutorial-08-ultrasonic-rgbled.html"><img src="img/tutorials/tutorial-08-01s.jpg" /></a></div>
+			<div data-title="單顆 LED 燈"><a href="tutorials/tutorial-01-led.html"><img class="lazy" data-original="img/tutorials/tutorial-01-01s.jpg" /></a></div>
+			<div data-title="兩顆 LED 燈交互閃爍"><a href="tutorials/tutorial-02-2led.html"><img class="lazy" data-original="img/tutorials/tutorial-02-01s.jpg" /></a></div>
+			<div data-title="三色 LED 燈"><a href="tutorials/tutorial-03-rgbled.html"><img class="lazy" data-original="img/tutorials/tutorial-03-01s.jpg" /></a></div>
+			<div data-title="三色 LED 燈調色盤"><a href="tutorials/tutorial-04-rgbled-palette.html"><img class="lazy" data-original="img/tutorials/tutorial-04-01s.jpg" /></a></div>
+			<div data-title="超音波傳感器"><a href="tutorials/tutorial-05-ultrasonic.html"><img class="lazy" data-original="img/tutorials/tutorial-05-01s.jpg" /></a></div>
+			<div data-title="超音波傳感器改變圖片大小"><a href="tutorials/tutorial-06-ultrasonic-imagesize.html"><img class="lazy" data-original="img/tutorials/tutorial-06-01s.jpg" /></a></div>
+			<div data-title="超音波傳感器 + LED 燈"><a href="tutorials/tutorial-07-ultrasonic-led.html"><img class="lazy" data-original="img/tutorials/tutorial-07-01s.jpg" /></a></div>
+			<div data-title="超音波傳感器 + 三色 LED 燈"><a href="tutorials/tutorial-08-ultrasonic-rgbled.html"><img class="lazy" data-original="img/tutorials/tutorial-08-01s.jpg" /></a></div>
 		</div>
 		<div class="goto-tutorials">
 			<h2>想瞭解更多 Webduino 的有趣應用嗎？</h2>
