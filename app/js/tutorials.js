@@ -16,8 +16,6 @@ $(function(){
 		'<div class="others">'+
 		'</div>');
 
-
-
 	$.getJSON('../json/tutorials.json',function(data){
 		var array = $.map(data, function(value, index) {
     	return [value];
