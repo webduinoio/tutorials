@@ -65,6 +65,9 @@
   text-align: center;
   font-size: 30px;
 }
+.blockly h3 {
+  color: #fff;
+}
 .blockly span {
   display: inline-block;
   padding: 0 0 30px;
