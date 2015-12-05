@@ -395,6 +395,7 @@
 }
 @media (max-width: 500px) {
   .banner {
+    margin-top: 40px;
     height: 200px;
   }
   .tutorials-menu .menu-content div {

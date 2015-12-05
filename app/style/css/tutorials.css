@@ -20,19 +20,63 @@
 .content > div > div {
   display: inline-block;
   width: 33%;
-  padding: 15px 15px 35px;
+  padding: 15px 15px;
   vertical-align: top;
+}
+.content > div > div > i {
+  top: 13px;
+  right: 13px;
+  position: absolute;
+  z-index: 2;
+  border-width: 25px;
+  border-style: solid;
+}
+.content > div > div > i:after {
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  background-image: -webkit-linear-gradient(bottom left, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 49%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 51%);
+  background-image: -moz-linear-gradient(bottom left, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 49%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 51%);
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 49%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 51%);
+}
+.content > div > div > i:before {
+  position: absolute;
+  color: #fff;
+  font-size: 13px;
+  top: -13px;
+  left: -7px;
+  width: 30px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.content > div > div > i.important {
+  border-color: #f00 #f00 transparent transparent;
+}
+.content > div > div > i.important:before {
+  content: "重要";
+}
+.content > div > div > i.new {
+  border-color: #f80 #f80 transparent transparent;
+}
+.content > div > div > i.new:before {
+  content: "NEW";
 }
 .content > div > div a h2 {
   text-align: left;
   font-size: 19px;
   margin: 15px 10px 10px;
   color: #000;
+  line-height: 24px;
 }
 .content > div > div a h3 {
   text-align: left;
   font-size: 13px;
-  margin: 10px 10px 10px;
+  margin: 10px;
   color: #000;
   font-weight: normal;
   opacity: .8;
@@ -53,7 +97,7 @@
   text-align: left;
   color: #555;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
   opacity: .6;
   margin-left: 10px;
   transition: 0.3s;
