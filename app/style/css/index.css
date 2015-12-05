@@ -61,36 +61,39 @@
 .blockly h2 {
   color: #fff;
   margin: 0 auto;
-  padding: 60px 0 20px;
+  padding: 20px 0 0;
   text-align: center;
-  font-size: 30px;
-}
-.blockly h3 {
-  color: #fff;
+  font-size: 36px;
 }
 .blockly span {
   display: inline-block;
-  padding: 0 0 30px;
-  color: #fff;
+  padding: 5px 0;
   font-size: 18px;
-  opacity: .8;
+  color: #aaa;
+}
+.blockly span:first-child {
+  padding-top: 50px;
+}
+.blockly span i {
+  color: #ccc;
+  text-decoration: underline;
 }
 .blockly a.button {
   display: inline-block;
   color: #fff;
   outline: none;
   font-size: 22px;
-  background-image: linear-gradient(top, #0099cc, #00ccff);
-  background-image: -moz-linear-gradient(top, #0099cc, #00ccff);
-  background-image: -webkit-linear-gradient(top, #0099cc, #00ccff);
+  background-image: linear-gradient(top, #ff3300, #ff9900);
+  background-image: -moz-linear-gradient(top, #ff3300, #ff9900);
+  background-image: -webkit-linear-gradient(top, #ff3300, #ff9900);
   border: none;
-  width: 360px;
+  width: 200px;
   height: 50px;
   border-radius: 5px;
   line-height: 50px;
-  text-shadow: #036 0 0 10px;
-  box-shadow: inset #069 0 0 10px;
-  margin: 0 auto 30px;
+  box-shadow: inset #f90 0 0 10px;
+  text-shadow: #a30 0 0 10px;
+  margin: 0 auto 50px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -103,6 +106,14 @@
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
+}
+.blockly a.button.b2 {
+  margin-left: 10px;
+  background-image: -webkit-linear-gradient(#0099cc, #00ccff);
+  background-image: -o-linear-gradient(#0099cc, #00ccff);
+  background-image: linear-gradient(#0099cc, #00ccff);
+  text-shadow: #036 0 0 10px;
+  box-shadow: inset #069 0 0 10px;
 }
 .blockly a.button:hover i {
   margin-left: 10px;
@@ -372,6 +383,11 @@
     margin-top: 10px;
     width: 300px;
     font-size: 18px;
+    margin: 0 auto 10px;
+  }
+  .blockly a.button.b2 {
+    margin-left: 0;
+    margin: 0 auto 30px;
   }
   .resources a {
     width: 90%;
