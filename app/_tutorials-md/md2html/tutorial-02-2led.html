@@ -7,16 +7,16 @@ img: tutorial-02-01s.jpg</p>
 <h2>date: 20150425</h2>
 <!-- @@master  = ../../_layout.html-->
 <!-- @@block  =  meta-->
-<title>範例教學 2：兩顆 LED 交互閃爍 :::: Webduino = Web × Arduino</title>
+<title>教學範例 2：兩顆 LED 交互閃爍 :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="熟悉了第一個 webduino 的範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
+<meta name="description" content="熟悉了第一個 webduino 的範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用點選燈泡圖片，操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
 
-<meta itemprop="description" content="熟悉了第一個 webduino 的範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
+<meta itemprop="description" content="熟悉了第一個 webduino 的範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用點選燈泡圖片，操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
 
-<meta property="og:description" content="熟悉了第一個 webduino 的範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
+<meta property="og:description" content="熟悉了第一個 webduino 的範例之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用點選燈泡圖片，操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。">
 
 
-<meta property="og:title" content="範例教學 2：兩顆 LED 交互閃爍" >
+<meta property="og:title" content="教學範例 2：兩顆 LED 交互閃爍" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-02-2led.html">
 
@@ -28,80 +28,100 @@ img: tutorial-02-01s.jpg</p>
 
 <!-- @@close-->
 <!-- @@block  =  tutorials-->
-<h1>範例教學 2：兩顆 LED 交互閃爍</h1>
-<p>熟悉了 <a href="tutorial-01-led.html">第一個範例</a> 之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用按鈕的方式，同時操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。</p>
-<h2>範例影片展示</h2>
-<p><iframe class="youtube" src="https://www.youtube.com/embed/DywZXJP20yk" frameborder="0" allowfullscreen></iframe></p>
+<h1>教學範例 2：兩顆 LED 交互閃爍</h1>
+<p>熟悉了 <a href="tutorial-01-led.html">第一個範例</a> 之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用點選燈泡圖片，操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。</p>
+<h2>教學影片</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/X3s_WoOVyxk" frameborder="0" allowfullscreen></iframe></p>
 <h2>接線與實作</h2>
-<ul>
-<li><h3>1. 接上 LED</h3>
-<p>  因為我們這次有使用到兩顆 LED 燈，所以必須要使用麵包板來進行，將黃色 LED 燈長腳接在 11，紅色 LED 燈長腳接在 10，兩顆 LED 燈共用一個 GND ( 地線 )。</p>
-<p>  <img src="../img/tutorials/tutorial-02-02.jpg" alt=""></p>
-</li>
-<li><h3>2. 完成後的實際長相</h3>
-<p>  <img src="../img/tutorials/tutorial-02-03.jpg" alt=""></p>
-<p>  <img src="../img/tutorials/tutorial-02-04.jpg" alt=""></p>
-</li>
-</ul>
-<h2>範例解析 (<a href="http://webduinoio.github.io/samples/content/led-two/index.html">快速體驗</a>、<a href="http://bin.webduino.io/nodi/edit?html,js,output">jsbin 範例</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a>)</h2>
-<p>跟第一個範例一樣，一開始先引入相關的 js 以及 WebComponents。</p>
-<pre><code>&lt;script src=&quot;https://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&#39;import&#39; href=&#39;https://webduino.io/components/webduino/web-arduino.html&#39; /&gt;
-&lt;link rel=&#39;import&#39; href=&#39;https://webduino.io/components/webduino/wa-led.html&#39; /&gt;
-</code></pre><p>接著我們只要用第一個範例來修改，多一顆 LED 燈接在 11 的腳位即可。</p>
-<pre><code>&lt;div id=&#39;light&#39; class=&quot;off&quot;&gt;
-  &lt;img src=&#39;http://i.imgur.com/T5H4MHE.png&#39;&gt;&lt;/img&gt;
-  &lt;img src=&#39;http://i.imgur.com/8qFj2Ou.png&#39;&gt;&lt;/img&gt;
+<p>因為我們這次有使用到兩顆 LED 燈，所以必須要使用麵包板來進行，將一顆 LED 燈長腳接在 11，另外一顆 LED 燈長腳接在 10，兩顆 LED 燈共用一個 GND ( 地線 )。</p>
+<p>接線示意圖：</p>
+<p><img src="../img/tutorials/tutorial-02-02.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>實際接線照片：</p>
+<p><img src="../img/tutorials/tutorial-02-03.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<h2>Webduino Blockly 操作解析</h2>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例也會點選網頁「燈泡圖案」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。</p>
+<p><img src="../img/tutorials/tutorial-02-04.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>在編輯畫面放入開發板，在開發板內放入兩個 LED，分別設定 10 與 11 腳位，也分別設定名稱為 led1 和 led2，完成後接著擺上「點擊燈泡就執行」的積木。</p>
+<p><img src="../img/tutorials/tutorial-02-05.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>和 <a href="tutorial-01-led.html">第一個範例</a> 的作法類似，點下燈泡圖片之後，就要進行邏輯的判斷，所以這裡我們就先把邏輯積木放進去，並且判斷「如果燈泡是 off」，就把燈泡 on，反之就把燈泡 off 起來。</p>
+<p><img src="../img/tutorials/tutorial-02-06.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>再來先看到打開燈泡時要做什麼事情，這裏將用到「進階功能」裡的「重複」積木，重複的積木除了可以指定重複次數，更可以設定一個變數來做「不斷重複」，同時可以停止這個變數的不斷重複。</p>
+<p><img src="../img/tutorials/tutorial-02-07.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>把不斷重複的積木放進畫面中，計時器的名稱就用預設的 timer，在第一個狀態內放入 led1 on 和 led2 off 的積木，第二個狀態內放入 led1 off 和 led2 on 的積木，時間都設定為 0.5 秒，如此一來當燈泡圖片亮起，兩顆 LED 燈就會交互閃爍。( 如果需要更多狀態，就可以點選藍色小齒輪新增，做法和邏輯的積木類似 )</p>
+<p><img src="../img/tutorials/tutorial-02-08.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>既然有開始就一定會有停止，所以當燈泡圖片熄滅時，就把計時器 timer 停止，同時把 led1 和 led2 的狀態都設為 off。</p>
+<p><img src="../img/tutorials/tutorial-02-09.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以開始。</p>
+<p><img src="../img/tutorials/tutorial-02-10.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
+<p>點擊內嵌網頁裡的燈泡圖片，就可以讓兩顆 LED 交互閃爍或是停止，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
+( 解答：<a href="http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW">http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW</a> )</p>
+<h2>程式碼解析 ( <a href="http://bin.webduino.io/nodi/edit?html,js,output">看完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
+<p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。</p>
+<pre><code>&lt;div id=&quot;demo-area-02-light&quot; class=&quot;off&quot;&gt;
+  &lt;img src=&quot;http://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
+  &lt;img src=&quot;http://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
 &lt;/div&gt;
-&lt;web-arduino id=&quot;board&quot; device=&#39;你的 device 名稱&#39;&gt;
-   &lt;wa-led id=&#39;led1&#39; pin=&#39;10&#39;&gt;&lt;/wa-led&gt;
-   &lt;wa-led id=&#39;led2&#39; pin=&#39;11&#39;&gt;&lt;/wa-led&gt;
-&lt;/web-arduino&gt;
-</code></pre><p>CSS 跟範例 1 比起來幾乎是沒已有變化，主要也只是負責圖片的切換而已。</p>
-<pre><code>#light{
-  width:80%;
-}
-img{
-  width:100%;
+</code></pre><p>控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 <code>display:none;</code> 來達到相關效果，下面是 CSS 的程式碼。</p>
+<pre><code>#demo-area-02-light img{
+  height:200px;
   display:none;
 }
-.off img:first-child{
+#demo-area-02-light.on #demo-area-02-on{
   display:inline-block;
 }
-.on img:last-child{
+#demo-area-02-light.off #demo-area-02-off{
   display:inline-block;
 }
-</code></pre><p>關鍵仍舊是 javascript 的部分，這裏我們將範例 1 的程式進行改良，加入了兩個時間的元素，分別是 <code>setInterval</code> 以及 <code>setTimeout</code>，當我們點選燈泡圖片的時候，就利用這時間的切換讓 LED 燈交互閃爍，當再度點選圖片時，就讓計時器歸零 ( 清空計時器 <code>clearTimeout</code> )，同時將 LED 利用 <code>led.off()</code> 的 api 關起來。</p>
-<pre><code>window.addEventListener(&#39;WebComponentsReady&#39;, function () {
-  var board = document.getElementById(&#39;board&#39;),
-      light = document.getElementById(&#39;light&#39;);
+</code></pre><p>重點看到 javascript 的部分，因為有兩顆 LED 燈，所以分別用 led1 和 led2 兩個變數來表示，然後計時器的變數為 timer，燈泡是 light，比較特別的是這裡使用了 JS6 的 <code>Promise</code>來作為計時器使用，這可以幫助我們確認當該狀態確定完成後，才會繼續執行，此外裏頭又用了 <code>setTimeout</code> 這個延遲執行的方法，做成一個不斷循環重複的指令，而停止的時候，只需要用 <code>clearTimeout</code> 就可以停下來了。</p>
+<pre><code>var led1;
+var led2;
+var timer;
+var light;
 
-  board.on(&#39;ready&#39;,function ready() {
-    var led1 = document.getElementById(&#39;led1&#39;),
-        led2 = document.getElementById(&#39;led2&#39;),
-        timer1,timer2;
-    light.addEventListener(&#39;click&#39;, function() {
-      if(light.className == &#39;on&#39;){
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-        led1.off();   // 紅燈關起來
-        led2.off();   // 黃燈關起來
-        light.className = &#39;off&#39;;
-      }else{
-        timer1 = setInterval(function(){
-          led1.on();       // 紅燈打開
-          led2.off();       // 黃燈關起來
-          timer2 = setTimeout(function(){
-            led1.off();       // 紅燈關起來
-            led2.on();       // 黃燈打開
-          },300);     // 延遲 0.3 秒發生
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  led1 = getLed(board, 10);
+  led2 = getLed(board, 11);
+  light = document.getElementById(&quot;demo-area-02-light&quot;);
 
-        },600);    //每 0.6 秒一次
-        light.className = &#39;on&#39;;
-      }
-    }, false);
+  light.addEventListener(&quot;click&quot;,function(){
+    if (light.className == &quot;off&quot;) {
+      light.className = &quot;on&quot;;
+      var repeat = function(){
+        var time;
+        var repeatDelay = function(time){
+          return new Promise(function(resolve){
+            timer = setTimeout(resolve,time);
+          });
+        };
+        var repeatPromise = function(){
+          repeatDelay(1).then(function(){
+              led1.on();
+        led2.off();
+            return repeatDelay(500);
+          }).then(function(){
+              led1.off();
+        led2.on();
+            return repeatDelay(500);
+          }).then(function(){
+              repeatPromise();
+          });
+        };
+        repeatPromise();
+      };
+      repeat();
+    } else {
+      light.className = &quot;off&quot;;
+      clearTimeout(timer);
+      led1.off();
+      led2.off();
+    }
   });
-
-}, false);
-</code></pre><p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/led-two/index.html">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以點選圖片讓不同的 LED 亮起，亦或是也可以參考這個 <a href="http://bin.webduino.io/nodi/edit?html,js,output">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。</p>
+});
+</code></pre><p>以上就是點選圖片控制兩顆 LED 燈交互閃爍的範例。<br>完整程式碼：<a href="http://bin.webduino.io/nodi/edit?html,js,output">http://bin.webduino.io/nodi/edit?html,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW">http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW</a></p>
+<h2>兩顆 LED 的相關教學：</h2>
+<p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr">Webduino Blockly 課程 1-3：控制兩顆 LED 燈</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm">Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍</a></p>
 <!-- @@close-->

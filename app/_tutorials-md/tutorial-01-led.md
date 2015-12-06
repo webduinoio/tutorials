@@ -57,7 +57,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7) )，在第一個範例裡頭，我們將會點選網頁「燈泡圖案」來控制 LED 燈的切換，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，在第一個範例裡頭，我們將會點選網頁「燈泡圖案」來控制 LED 燈的切換，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。
 
 ![](../img/tutorials/tutorial-01-04.jpg)
 
@@ -82,12 +82,16 @@ date: 20150425
 
 ![](../img/tutorials/tutorial-01-09.jpg)
 
-完成後點擊內嵌網頁裡的燈泡圖片，就可以輕鬆地控制 LED 燈的明暗，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始。
+
+![](../img/tutorials/tutorial-01-10.jpg)
+
+點擊內嵌網頁裡的燈泡圖片，就可以輕鬆地控制 LED 燈的明暗，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
 ( 解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7) )
 
 
 
-## 程式碼解析 ([看完整程式碼](http://bin.webduino.io/duso/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html))
+## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/duso/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 一開始先在 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -101,7 +105,7 @@ date: 20150425
 	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
 
-控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 `display:none;` 來達到相關效果。
+控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 `display:none;` 來達到相關效果，下面是 CSS 的程式碼。
 
 	#demo-area-02-light img{
 	  height:200px;
@@ -152,12 +156,13 @@ date: 20150425
 	  });
 	});
 
-以上就是點選圖片控制 LED 燈的基本範例。
-完整的範例：[http://bin.webduino.io/duso/edit?html,output](http://bin.webduino.io/duso/edit?html,output)
+以上就是點選圖片控制 LED 燈的基本範例。  
+完整程式碼：[http://bin.webduino.io/duso/edit?html,output](http://bin.webduino.io/duso/edit?html,output)  
 解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7)
 
-## 更多 LED 的教學範例：
-[Webduino Blockly 課程 1-1：點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-1#-Jvaz_tuEFYtNaVBi0i2)
+## LED 的相關教學：
+
+[Webduino Blockly 課程 1-1：點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-1#-Jvaz_tuEFYtNaVBi0i2)  
 [Webduino Blockly 課程 1-2：點選圖片控制 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-2#-Jvb-r0TiTHKsL-rMGw9)
 
 
