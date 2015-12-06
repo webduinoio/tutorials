@@ -86,7 +86,7 @@ date: 20150425
 
 ![](../img/tutorials/tutorial-01-10.jpg)
 
-點擊內嵌網頁裡的燈泡圖片，就可以輕鬆地控制 LED 燈的明暗，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
+點擊內嵌網頁裡的燈泡圖片，就可以輕鬆地控制 LED 燈的明暗，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！  
 ( 解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7) )
 
 
