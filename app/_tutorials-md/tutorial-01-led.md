@@ -11,7 +11,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 1：控制單顆 LED 燈 :::: Webduino = Web × Arduino</title>
+<title>教學範例 1：控制單顆 LED 燈 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。">
 
@@ -19,7 +19,7 @@ date: 20150425
 
 <meta property="og:description" content="在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。">
 
-<meta property="og:title" content="範例教學 1：控制單顆 LED 燈" >
+<meta property="og:title" content="教學範例 1：控制單顆 LED 燈" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-01-led.html">
 
@@ -35,82 +35,130 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-#範例教學 1：控制單顆 LED 燈
+# 教學範例 1：控制單顆 LED 燈
 
 在基本的 Arduino 傳感器控制範例裡頭，控制單顆 LED 燈通常都是作為第一個範例使用，為什麼呢？因為這個範例最容易上手，也最容易藉由 LED 的明暗來測試程式是否有寫錯，因此進入了 Webduino 的世界之後，同樣也使用 LED 來作為第一個範例，而撰寫的程式也更為簡單，就像控制一張網頁圖片切換一樣的容易。
 
-##範例影片展示
+## 教學影片
 
-<iframe class="youtube" src="https://www.youtube.com/embed/AIGx_sUx1IU" frameborder="0" allowfullscreen></iframe>
+<iframe class="youtube" src="https://www.youtube.com/embed/8k6Lqu-aqVM" frameborder="0" allowfullscreen></iframe>
 
-##接線與實作
+## 接線與實作
 
-- ###1. 接上 LED
+只有一顆 LED 燈的接線方式很簡單，首先，LED 燈有「長短腳」之分，長腳接「高電位」( 帶有數字的腳位 )，短腳接「低電位」( GND、接地 )，因此我們只要直接將 LED 插到腳位上即可，或使用麵包板與麵包線外接出來，在這裡**長腳接 10，短腳接 GND**。
 
-	將 LED 的長腳接在 10 的位置，短腳接在 GND 的位置，接完 LED 之後接上電源。
+接線示意圖：
 
-	![](../img/tutorials/tutorial-01-02.jpg)
+![](../img/tutorials/tutorial-01-02.jpg)
 
-- ###2. 完成後的實際長相
+實際接線照片：
 
-	![](../img/tutorials/tutorial-01-03.jpg)
+![](../img/tutorials/tutorial-01-03.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/led/)、[jsbin 範例](http://bin.webduino.io/duso/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html))
+## Webduino Blockly 操作解析
 
-一開始先在 HTML 的 header 引入四個項目，第一個 webcomponents.js 的目的在讓瀏覽器可以支援 WebComponents (因為不是所有的瀏覽器都支援 )，web-arduino.html 是 Webduino 的 WebComponent，wa-led.html 則是這個範例會用到的 LED 元件的 WebComponent。
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7) )，在第一個範例裡頭，我們將會點選網頁「燈泡圖案」來控制 LED 燈的切換，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。
+
+![](../img/tutorials/tutorial-01-04.jpg)
+
+從編輯工具左側的積木選單中選擇「開發板」，將開發板放到畫面當中，填入對應的 Webduino 開發板名稱 ( Device 名稱，不要勾選串連 )，接著選擇「LED 燈」的積木，將 LED 燈的積木放到開發板積木的缺口內，腳位設定為 10 ( 因為剛剛把長腳接在 10 號腳 )。
+
+![](../img/tutorials/tutorial-01-05.jpg)
+
+因為要和網頁互動，所以我們要從積木選單的最下方「網頁互動」，點選「點擊燈泡」，就會看到很多點擊網頁燈泡圖片互動的選項。
+
+![](../img/tutorials/tutorial-01-06.jpg)
 
 
-	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
+把「點擊燈泡執行」的積木放到編輯畫面裡，代表點擊燈泡時要做些什麼事情。
 
-接著看到 HTML 的 body 裡頭，放入一個 id 為 light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡，再來最重要的是 web-arduino，這表示我們要在裡面使用 Webduino 的 WebComponent ( 可以把這個 tag 想像成實體的 Webduino 開發板 )，然後在裡面放入 web-led 這個 LED 的 WebComponent ( 在 Webduino 開發板上頭插上 LED 燈 )，web-arduino 的 device 填入您的開發板 device 名稱 ( 大小寫英文字母與數字組合 )，並在 web-led 填入對應的 pin 腳 ( LED 長腳接在哪邊，就填哪個數字 )。
+![](../img/tutorials/tutorial-01-07.jpg)
 
-	<div id='light' class="off">
-	  <img src='http://i.imgur.com/T5H4MHE.png'></img>
-	  <img src='http://i.imgur.com/8qFj2Ou.png'></img>
+在執行的內容放入「邏輯」的積木，判斷點擊燈泡時，依據當時的狀態做出相對的反應，而我們也可以利用邏輯積木上面「藍色小齒輪」，添增邏輯選項。
+
+![](../img/tutorials/tutorial-01-08.jpg)
+
+根據邏輯，判斷「當燈泡是 on」的話，點擊燈泡就會變成「off」，反之就是「on」。
+
+![](../img/tutorials/tutorial-01-09.jpg)
+
+完成後點擊內嵌網頁裡的燈泡圖片，就可以輕鬆地控制 LED 燈的明暗，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
+( 解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7) )
+
+
+
+## 程式碼解析 ([看完整程式碼](http://bin.webduino.io/duso/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html))
+
+一開始先在 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
+
+	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
+	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+
+接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。
+
+	<div id="demo-area-02-light" class="off">
+	  <img src="http://blockly.webduino.io/media/off.png" id="demo-area-02-off">
+	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
-	<web-arduino id="board" device='你的 device 名稱'>
-	  <wa-led id='led' pin='10'></wa-led>
-	</web-arduino>
 
-看完 HTML，要來稍微寫一點 CSS，目的在於要讓圖片能有亮暗的顯示。
+控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 `display:none;` 來達到相關效果。
 
-	#light img{
-	  width:100%;
+	#demo-area-02-light img{
+	  height:200px;
 	  display:none;
 	}
-	#light.off img:first-child{
+	#demo-area-02-light.on #demo-area-02-on{
 	  display:inline-block;
 	}
-	#light.on img:last-child{
+	#demo-area-02-light.off #demo-area-02-off{
 	  display:inline-block;
 	}
 
-再來就是最重點的 javascript 部分，下面的範例程式開始先要確認「WebComponentsReady」，確定 WebComponents 都 ready 之後就可以開始進行動作，執行的方式也簡單，利用點選圖片，配合 LED 燈的 api：`led.on();` 、 `led.off();`，就可以輕鬆做出讓 LED 燈亮滅的效果。
+再來就是最重點的 javascript 部分，下面的範例程式開始先要確認開發板上線 ( 使用 `boardReady` ) 之後就可以開始進行動作，執行的方式也簡單，先設定一個名為 led 的變數，使用 `getLed` 設定腳位為 10，然後綁定圖片的點擊事件，再使用 LED 的 API 來操作。
 
-	window.addEventListener('WebComponentsReady', function () {
-	  var board = document.getElementById('board'),
-	      light = document.getElementById('light');
+	var led;
 
-	  board.on('ready',function ready() {
-	    var led = document.getElementById('led');
-
-	    light.addEventListener('click', function() {
-	      if(light.className == 'on'){
-	        led.off();     // 讓 LED 熄滅
-	        light.className = 'off';
-	      }else{
-	        led.on();     // 讓 LED 亮起
-	        light.className = 'on';
-	      }
-	    }, false);
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  led = getLed(board, 10);
+	  document.getElementById("demo-area-02-light").addEventListener("click",function(){
+	    if (document.getElementById("demo-area-02-light").className == "on") {
+	      document.getElementById("demo-area-02-light").className = "off";
+	      led.off();
+	    } else {
+	      document.getElementById("demo-area-02-light").className = "on";
+	      led.on();
+	    }
 	  });
+	});
 
-	}, false);
+因為程式碼由 Blockly 自動生成，可能會有一些重複或累贅的程式碼，我們可以將上面這段程式碼簡化成下面這樣，目的只是把重複的 `document.getElementById("demo-area-02-light")` 變成一個變數 light 而已，就會乾淨許多。
 
-如果還有不清楚的，不妨利用這個 快速體驗範例，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話 LED 燈就會亮起，如果要讓點選會有亮滅的效果，可以參考這個 jsbin 範例，實際在上面填入 device 名稱並且修改體驗相關效果。
+	var led;
+	var light;
 
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  led = getLed(board, 10);
+		light = document.getElementById("demo-area-02-light");
+	  light.addEventListener("click",function(){
+	    if (light.className == "on") {
+	      light.className = "off";
+	      led.off();
+	    } else {
+	      light.className = "on";
+	      led.on();
+	    }
+	  });
+	});
+
+以上就是點選圖片控制 LED 燈的基本範例。
+完整的範例：[http://bin.webduino.io/duso/edit?html,output](http://bin.webduino.io/duso/edit?html,output)
+解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7)
+
+## 更多 LED 的教學範例：
+[Webduino Blockly 課程 1-1：點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-1#-Jvaz_tuEFYtNaVBi0i2)
+[Webduino Blockly 課程 1-2：點選圖片控制 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-2#-Jvb-r0TiTHKsL-rMGw9)
 
 
 

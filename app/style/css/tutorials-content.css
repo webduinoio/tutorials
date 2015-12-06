@@ -42,8 +42,10 @@ header.path-1 {
   line-height: 40px;
 }
 .tutorials-content h2 {
+  border-top: 1px dashed #aaa;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-top: 30px;
   font-size: 30px;
   line-height: 40px;
 }
@@ -63,6 +65,9 @@ header.path-1 {
 .tutorials-content a:hover {
   color: #098;
 }
+.tutorials-content a:hover {
+  text-decoration: underline;
+}
 .tutorials-content strong {
   font-weight: bold;
   color: #f60;
@@ -75,9 +80,11 @@ header.path-1 {
   word-wrap: break-word;
   word-break: break-all;
   white-space: pre-wrap;
+  margin-bottom: 20px;
 }
 .tutorials-content p img {
   max-width: 90%;
+  margin-bottom: 10px;
 }
 .tutorials-content ul {
   margin-bottom: 30px;
@@ -93,7 +100,7 @@ header.path-1 {
   text-indent: -10px;
 }
 .tutorials-content ul li img {
-  margin: 20px 0 0;
+  margin: 0;
 }
 .tutorials-content ul li img:last-child {
   padding-bottom: 20px;

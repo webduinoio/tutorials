@@ -35,8 +35,10 @@ header{
 		line-height:40px;
 	}
 	h2{
+		border-top:1px dashed #aaa;
 		margin-top:30px;
 		margin-bottom:30px;
+		padding-top:30px;
 		font-size:30px;
 		line-height:40px;
 		a{
@@ -54,6 +56,9 @@ header{
 		&:link,&:active,&:visited,&:hover{
 			color:#098;
 		}
+		&:hover{
+			text-decoration:underline;
+		}
 	}
 	strong{
 		font-weight:bold;
@@ -67,8 +72,10 @@ header{
 		word-wrap:break-word;
 		word-break: break-all;
 		white-space: pre-wrap;
+		margin-bottom:20px;
 		img{
 			max-width:90%;
+			margin-bottom:10px;
 		}
 	}
 	ul{
@@ -83,7 +90,7 @@ header{
 				text-indent: -10px;
 			}
 			img{
-				margin:20px 0 0;
+				margin:0;
 			}
 			img:last-child{
 				padding-bottom:20px;
