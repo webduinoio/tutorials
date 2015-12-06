@@ -1,3 +1,5 @@
+/* browser */
+/* main */
 .tutorials-content {
   display: block;
 }
@@ -221,6 +223,31 @@ header.path-1 {
   -webkit-animation: nexti .6s infinite;
   -moz-animation: nexti .6s infinite;
   animation: nexti .6s infinite;
+}
+.tutorials-content .arrow {
+  display: none;
+  position: fixed;
+  top: 40%;
+  z-index: 2;
+  background-image: url(../../../img/layout/layout-sprite.png);
+  width: 30px;
+  height: 80px;
+  opacity: .1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  cursor: pointer;
+}
+.tutorials-content .arrow.arrow-r {
+  right: 30px;
+  background-position: 0px -220px;
+}
+.tutorials-content .arrow.arrow-l {
+  left: 30px;
+  background-position: -30px -220px;
+}
+.tutorials-content .arrow:hover {
+  opacity: .3;
 }
 @-webkit-keyframes prei {
   0%,

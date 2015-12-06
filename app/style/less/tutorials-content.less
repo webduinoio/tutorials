@@ -1,3 +1,27 @@
+/* browser */
+._transition(@a){
+  transition:@a;
+  -webkit-transition:@a;
+  -moz-transition:@a;
+}
+._scale(@a){
+  transform:scale(@a);
+  -webkit-transform:scale(@a);
+  -moz-transform:scale(@a);
+}
+._rotate(@a){
+  transform:rotate(@a);
+  -webkit-transform:rotate(@a);
+  -moz-transform:rotate(@a);
+}
+._linear-gradient(@a,@b,@c){
+  background-image:linear-gradient(@a,@b,@c);
+  background-image:-moz-linear-gradient(@a,@b,@c);
+  background-image:-webkit-linear-gradient(@a,@b,@c);
+}
+
+/* main */
+
 .tutorials-content{
   display:block;
 }
@@ -214,6 +238,29 @@ header{
 				}
 			}
 		}
+	}
+	.arrow{
+		display:none;
+		position:fixed;
+		top:40%;
+		z-index:2;
+	  background-image: url(../../../img/layout/layout-sprite.png);
+	  width: 30px;
+	  height: 80px;
+	  opacity:.1;
+	  ._transition(.3s);
+	  cursor:pointer;
+	  &.arrow-r{
+			right:30px;
+	  	background-position: 0px -220px;
+	  }
+	  &.arrow-l{
+			left:30px;
+	  	background-position: -30px -220px;
+	  }
+	  &:hover{
+	  	opacity:.3;
+	  }
 	}
 }
 @-webkit-keyframes prei{

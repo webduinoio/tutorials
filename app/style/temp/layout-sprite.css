@@ -9,6 +9,12 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
+.icon-arrow {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: 0px -220px;
+  width: 60px;
+  height: 80px;
+}
 .icon-logo-1 {
   background-image: url(../../../layout/layout-sprite.png);
   background-position: -165px 0px;
