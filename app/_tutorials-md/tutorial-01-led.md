@@ -162,7 +162,7 @@ date: 20150425
 完整程式碼：[http://bin.webduino.io/duso/edit?html,output](http://bin.webduino.io/duso/edit?html,output)  
 解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7)
 
-## LED 的相關教學：
+## LED 的延伸教學：
 
 [Webduino Blockly 課程 1-1：點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-1#-Jvaz_tuEFYtNaVBi0i2)  
 [Webduino Blockly 課程 1-2：點選圖片控制 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-2#-Jvb-r0TiTHKsL-rMGw9)

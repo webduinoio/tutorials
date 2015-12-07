@@ -107,7 +107,7 @@ JavaScript 在這裏就是把選取顏色當下的色彩數值，傳給區域背
 完整程式碼：[http://bin.webduino.io/zubu/edit?html,css,js,output](http://bin.webduino.io/zubu/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn](http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn)
 
-## 三色 LED 的相關教學：
+## 三色 LED 的延伸教學：
 
 [Webduino Blockly 課程 2-3：三色 LED 燈調色盤](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-3#-JvMsJupKMuIUdAJs_RK)  
 [Webduino Blockly 課程 2-4：轉吧七彩霓虹燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-4#-JvMswgK2Q1h4GjAPx7u)

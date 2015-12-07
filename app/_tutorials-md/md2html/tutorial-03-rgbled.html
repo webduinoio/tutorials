@@ -30,7 +30,7 @@ img: tutorial-03-01s.jpg</p>
 <h1>教學範例 3：控制三色 LED</h1>
 <p>三色 LED 是由紅、綠、藍，三種不同顏色的 LED 所組成，因此可以發出最少三種顏色的光，也由於三色 LED 內部含有三顆 LED 燈，所以它具有 VCC、R、B、G 四支針腳，我們也可以分別控制個個顏色的強弱，進一步達到混合顏色的效果。這個範例主要介紹如何設定與使用三色 LED，下一個章節會繼續介紹如何利用三色 LED 做調色盤。</p>
 <h2>教學影片</h2>
-<p>影片對應範例：<a href="http://blockly.webduino.io/?&amp;page=tutorials/rgbled-2">http://blockly.webduino.io/?&amp;page=tutorials/rgbled-2</a>  </p>
+<p>影片對應範例：<a href="http://blockly.webduino.io/?page=tutorials/rgbled-2">http://blockly.webduino.io/?page=tutorials/rgbled-2</a>  </p>
 <p><iframe class="youtube" src="https://www.youtube.com/embed/VN4sKngbiGI" frameborder="0" allowfullscreen></iframe></p>
 <h2>接線與實作</h2>
 <p>要控制三色 LED 燈，我們必須要使用 PWM 的腳位 ( Pulse Width Modulation，脈衝寬度調變 )，這是一種將類比信號轉換為波段並且輸出的腳位，可以改變輸出的信號大小，透過輸出信號的強弱，我們就可以做出各種不同顏色的混合，然而在 Webduino 裏，可以用的 PWM 腳位是 3、5、6、9、10、11 這幾個腳位，但因為開發板的不同，我們可以選擇對應的腳位來使用 ( 基本上在 Arduino 的開發板，有「~」記號的就是 PWM 腳位 )。</p>
@@ -83,6 +83,6 @@ boardReady(&#39;&#39;, function (board) {
   });
 });
 </code></pre><p>以上就是點選不同的按鈕，由三色 LED 呈現不同顏色的範例。<br>完整程式碼：<a href="http://bin.webduino.io/ber/edit?html,js,output">http://bin.webduino.io/ber/edit?html,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT">http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT</a></p>
-<h2>三色 LED 的相關教學：</h2>
+<h2>三色 LED 的延伸教學：</h2>
 <p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rgbled-1#-JvMrEKwwqW2P607oFz2">Webduino Blockly 課程 2-1：三色 LED 燈</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rgbled-2#-JvMroBFx1XYaMemJmOm">Webduino Blockly 課程 2-2：三色 LED 燈切換顏色</a></p>
 <!-- @@close-->

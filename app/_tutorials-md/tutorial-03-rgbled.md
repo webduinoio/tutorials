@@ -40,7 +40,7 @@ date: 20150425
 
 ## 教學影片
 
-影片對應範例：[http://blockly.webduino.io/?&page=tutorials/rgbled-2](http://blockly.webduino.io/?&page=tutorials/rgbled-2)  
+影片對應範例：[http://blockly.webduino.io/?page=tutorials/rgbled-2](http://blockly.webduino.io/?page=tutorials/rgbled-2)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/VN4sKngbiGI" frameborder="0" allowfullscreen></iframe>
 
@@ -124,7 +124,7 @@ HTML 的 body 裡頭有五個按鈕，名字就是按鈕 1 到 5，各自都有�
 完整程式碼：[http://bin.webduino.io/ber/edit?html,js,output](http://bin.webduino.io/ber/edit?html,js,output)  
 解答：[http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT)
 
-## 三色 LED 的相關教學：
+## 三色 LED 的延伸教學：
 
 [Webduino Blockly 課程 2-1：三色 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-1#-JvMrEKwwqW2P607oFz2)  
 [Webduino Blockly 課程 2-2：三色 LED 燈切換顏色](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-2#-JvMroBFx1XYaMemJmOm)

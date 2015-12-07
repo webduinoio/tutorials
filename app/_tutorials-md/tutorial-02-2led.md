@@ -170,7 +170,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 完整程式碼：[http://bin.webduino.io/nodi/edit?html,js,output](http://bin.webduino.io/nodi/edit?html,js,output)  
 解答：[http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW)
 
-## 兩顆 LED 的相關教學：
+## 兩顆 LED 的延伸教學：
 
 [Webduino Blockly 課程 1-3：控制兩顆 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr)  
 [Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm)
