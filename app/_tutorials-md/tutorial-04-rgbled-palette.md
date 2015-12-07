@@ -11,7 +11,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 4：三色 LED 調色盤 :::: Webduino = Web × Arduino</title>
+<title>教學範例 4：三色 LED 調色盤 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="這一篇 Webduino 的範例，將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。">
 
@@ -19,7 +19,7 @@ date: 20150425
 
 <meta property="og:description" content="這一篇 Webduino 的範例，將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。">
 
-<meta property="og:title" content="範例教學 4：三色 LED 調色盤" >
+<meta property="og:title" content="教學範例 4：三色 LED 調色盤" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-04-rgbled-palette.html">
 
@@ -34,115 +34,83 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-#範例教學 4：三色 LED 調色盤
+# 教學範例 4：三色 LED 調色盤
 
-[上一篇](tutorial-03-rgbled.html) 介紹過三色 LED 的原理，不過由於部分接腳受限於 PWM 的限制 ( 脈衝寬度調變，**Webduino 開發板的 6、9、10、11 才有 PWM** )，所以上一篇只能控制顏色的亮暗，這一篇將要來更換部分接腳，並利用 Web 裡頭常見的 slider range ( 拉霸 )，來控制三色 LED 燈的顏色強弱，同時在網頁裡頭對應相同的色彩。
+[上一篇](tutorial-03-rgbled.html) 介紹過三色 LED 的原理，這篇將利用 HTML5 裏頭新的 input 類型「color」，來控制三色 LED 燈的顏色變換，同時在網頁裡頭對應相同的色彩。( 影片中則是展示使用 input 的「range」類型來切換顏色 )
 
-##範例影片展示
+## 範例影片展示
 
-<iframe class="youtube" src="https://www.youtube.com/embed/QdzMDe0hIpQ" frameborder="0" allowfullscreen></iframe>
+影片對應範例：[http://blockly.webduino.io/?&page=tutorials/rgbled-3](http://blockly.webduino.io/?&page=tutorials/rgbled-3) 
 
-##接線與實作
+<iframe class="youtube" src="https://www.youtube.com/embed/uSfBbvd4ViE" frameborder="0" allowfullscreen></iframe>
 
-- ###1. 接上三色 LED
+## 接線與實作
 
-	由於 Webduino 具有 PWM 的腳位是 6、9、10、11，所以這裡就必須利用麵包板和電線，將腳位引出到麵包板上頭，按照下圖，三色 LED 的 V 接在 3.3v 的腳位，紅色 R 接在 6，藍色 B 接在 9，綠色 G 接在 10。
+接線的方式和上一個範例相同，就是將三色 LED 燈接上杜邦線 ( 一公一母 ) ，把 v 接在 3.3v 的位置 ( 避免電壓過高，造成三色 LED 燈會發出微弱的光線 )，R ( 紅色 ) 接在 10，B ( 藍色 ) 接在 6，G ( 綠色 ) 接在 9，如果沒有這些腳位，可以選擇其他有 PWM 的腳位來接 ( 3、5、11 )。
 
-	![](../img/tutorials/tutorial-04-02.jpg)
+接線示意圖：
 
-- ###2. 完成後的實際長相
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-02.jpg)
 
-	![](../img/tutorials/tutorial-04-03.jpg)
+實際接線照片：
 
-	![](../img/tutorials/tutorial-04-04.jpg)
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-04.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/rgbled-palette/index.html)、[jsbin 範例](http://bin.webduino.io/zubu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-03.jpg)
 
-一開始要先引入相關的 js 與 WebComponents。
+## Webduino Blockly 操作解析
 
-	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='https://webduino.io/components/webduino/wa-rgbled.html'/>
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例也會點選網頁「顏色調整」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顏色調整」，就會出現有一個可以選擇顏色的按鈕，和一個顯示顏色的區域，我們待會除了讓三色 LED 燈呈現我們選擇的顏色外，也會把顏色顯示在網頁上。
 
-在 body 裡頭利用 html5 的 input「range」類型，製作三個拉霸，並在拉霸的下方放一個名為 show 的 div，目的為了讓拉霸拉動的時候，不僅只有三色 LED 的顏色變化，連同畫面上的區塊顏色也會跟著改變，而拉霸的數值設定為 0 到 255，拉動的間隔為 5，預設值為 0。
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-05.jpg)
 
-	<div>
-	  <label>red:</label>
-	  <input id='redBtn' type='range' min='0' max='255' step='5' value='0'>
-	</div>
+左側選單同樣選擇「顏色調整」的程式積木，利用這些積木來完成我們要做的行為。
 
-	<div>
-	  <label>green: </label>
-	  <input id='greenBtn' type='range' min='0' max='255' step='5' value='0'>
-	</div>
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-06.jpg)
 
-	<div>
-	  <label>blue: </label>
-	  <input id='blueBtn' type='range' min='0' max='255' step='5' value='0'>
-	</div>
+首先把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入三色 LED 的積木，名稱設定為 rgbled，腳位設定為紅色 10，綠色 9，藍色 6，接著放入「選擇顏色後執行」的積木，在裡頭就可以設定區域的顏色，還有三色 LED 燈的顏色。
 
-	<div id="show"></div>
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-07.jpg)
 
-	<web-arduino id='board' device="你的 device 名稱">
-	  <wa-rgbled id='rgb' red='6' blue='9' green='10'></wa-rgbled>
-	</web-arduino>
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以利用顏色選取工具，來改變三色 LED 燈的顏色了。
 
-接著稍微寫一點點 CSS 定義一下顏色區域的大小。
+![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-08.jpg)
 
-	#show{
-	  width: 100%;
-	  max-width: 250px;
-	  height:100px;
-	  border:1px solid #000;
-	  background:#000;
-	  margin-top: 15px;
-	  margin-left: 5px;
-	  }
 
-最後就是關鍵的 javascript，這裏其實沒有用到什麼太特別的技巧，就是把拉霸當下的數值，同時傳給背景色以三色 LED 的顏色使用 ( 利用監聽 change 的事件 )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/zubu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
-	window.addEventListener('WebComponentsReady', function () {
-	  var board = document.getElementById('board');
+HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
-	  board.on('ready',function() {
-	    var redBtn = document.getElementById('redBtn'),
-	      greenBtn = document.getElementById('greenBtn'),
-	      blueBtn = document.getElementById('blueBtn'),
-	      rgb = document.getElementById('rgb'),
-	      show = document.getElementById('show'),
-	      r = 0,
-	      g = 0,
-	      b = 0;
+	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
+	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-	    var handler = function(evt) {
-	      var target = evt.target,
-	        id = target.id;
+HTML 的 body 裡頭只有兩個東西，一個是 input 標籤，type 設定為 color，另外一個是呈現顏色的 div。
 
-	      switch (id) {
-	        case 'redBtn':
-	          r = target.value;
-	          break;
-	        case 'greenBtn':
-	          g = target.value;
-	          break;
-	        case 'blueBtn':
-	          b = target.value;
-	          break;
-	      }
+	選擇顏色：<input id="demo-area-04-color" type="color">
+	<div id="demo-area-04-area"></div>
 
-	      show.style.backgroundColor = 'rgba(' + r + ',' + g + ',' + b + ',' + '255)';
-	      rgb.setColor(r, g, b);
-	    };
+JavaScript 在這裏就是把選取顏色當下的色彩數值，傳給區域背景色，以及三色 LED 的顏色使用 ( 利用 oninput 的事件行為 )
 
-	    redBtn.addEventListener('change', handler, false);
-	    greenBtn.addEventListener('change', handler, false);
-	    blueBtn.addEventListener('change', handler, false);
+	var rgbled;
 
-	  });
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  rgbled = getRGBLed(board, 10, 9, 6);
+	  document.getElementById("demo-area-04-color").oninput = function(_color){
+	  _color = this.value;
+	    document.getElementById("demo-area-04-area").style.background = _color;
+	    rgbled.setColor(_color);
+	  };
+	});
 
-	}, false);
+以上就是利用顏色工具，由三色 LED 以及網頁區域，呈現不同顏色的範例。  
+完整程式碼：[http://bin.webduino.io/zubu/edit?html,css,js,output](http://bin.webduino.io/zubu/edit?html,css,js,output)  
+解答：[http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn](http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn)
 
-如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/rgbled-palette/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始利用拉霸做調整顏色的動作，亦或是也可以參考這個 [jsbin 範例](http://bin.webduino.io/zubu/edit?html,css,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
+## 三色 LED 的相關教學：
+
+[Webduino Blockly 課程 2-3：三色 LED 燈調色盤](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-3#-JvMsJupKMuIUdAJs_RK)  
+[Webduino Blockly 課程 2-4：轉吧七彩霓虹燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-4#-JvMswgK2Q1h4GjAPx7u)
 
 
 <!-- @@close-->

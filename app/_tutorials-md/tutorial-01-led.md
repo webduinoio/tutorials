@@ -41,6 +41,8 @@ date: 20150425
 
 ## 教學影片
 
+影片對應範例：[http://blockly.webduino.io/?&page=tutorials/led-2](http://blockly.webduino.io/?&page=tutorials/led-2)  
+
 <iframe class="youtube" src="https://www.youtube.com/embed/8k6Lqu-aqVM" frameborder="0" allowfullscreen></iframe>
 
 ## 接線與實作
