@@ -93,7 +93,12 @@ header.path-1 {
 }
 .tutorials-content ul li {
   display: block;
-  padding: 0 10px 20px;
+  padding: 0 0 10px 30px;
+  line-height: 26px;
+  text-indent: -25px;
+}
+.tutorials-content ul li h3 {
+  margin-top: 20px;
 }
 .tutorials-content ul li p {
   width: 100%;
@@ -396,7 +401,6 @@ footer .logo a:last-child {
   }
   .tutorials-content ul li {
     display: block;
-    padding: 0 0 20px;
   }
   .tutorials-content ul li span {
     font-size: 16px;

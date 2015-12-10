@@ -29,25 +29,25 @@ img: info-07-01s.jpg</p>
 <!-- @@block  =  tutorials-->
 <h1>Arduino 韌體下載與燒錄</h1>
 <p>因為 Webduino 要使用 JavaScript 操控 Arduino 開發板，因此要走 Arduino Firmata 的通訊協定，所以必須「<strong>要燒錄具有 Firmata 通訊協定的韌體</strong>」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。</p>
+<p>如果對於 Webduino UNO 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：</p>
+<p>(1) <a href="https://webduino.io/tutorials/info-04-uno-setup.html">Webduino UNO 雲端擴充板初始化設定</a><br>(2) <a href="https://webduino.io/tutorials/info-05-chrome-api-proxy.html">Chrome API Proxy 使用說明</a></p>
 <h2>下載韌體與程式庫</h2>
-<p>我們已經把要燒錄在 Arduino 裡的韌體程式碼以及要引入的程式庫，公開於 Github 上頭，你可以直接 clone ，或是 fork 我們的這個開源專案：</p>
-<p><a href="https://github.com/webduinoio/wafirmata">https://github.com/webduinoio/wafirmata</a></p>
-<p>對於不會使用 Github 的朋友，可以直接點選右邊的「Download Zip」的按鈕，或直接由這個網址下載：</p>
-<p><a href="https://github.com/webduinoio/wafirmata/archive/master.zip">https://github.com/webduinoio/wafirmata/archive/master.zip</a></p>
+<p>我們已經把要燒錄在 Arduino 裡的韌體程式碼以及要引入的程式庫，公開於 Github 上頭，你可以直接 clone ，或是 fork 我們的這個開源專案，對於不會使用 Github 的朋友，可以直接點選右邊的「Download Zip」的按鈕，或直接由這個下面的網址下載。</p>
+<p>Github：<a href="https://github.com/webduinoio/wafirmata">https://github.com/webduinoio/wafirmata</a><br>Download：<a href="https://github.com/webduinoio/wafirmata/archive/master.zip">https://github.com/webduinoio/wafirmata/archive/master.zip</a></p>
 <p><img src="../img/tutorials/info-07-02.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <p>下載之後解壓縮檔案，就會看到待會會引入的程式庫和要燒錄的韌體檔。</p>
 <p><img src="../img/tutorials/info-07-03.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <h2>引入程式庫 ( Include Library )</h2>
-<p>如果 Arduino 官方的程式庫沒有我們想要的元件，我們就必須要引入外部的程式庫，因為要燒錄 Arduino 韌體，所以要先安裝 Arduino 的 IDE ( 可以從 Arduino <a href="https://www.arduino.cc/">官方網站</a>下載 )，打開 Arduino IDE，從上方選單選擇「草稿碼」，接著選擇「Include Library」，選擇「Add .ZIP library」。</p>
+<p>如果 Arduino 官方的程式庫沒有我們想要的元件，我們就必須要引入外部的程式庫，因為要燒錄 Arduino 韌體，所以要先安裝 Arduino 的 IDE ( 可以從 Arduino <a href="https://www.arduino.cc/">官方網站</a>下載 )，打開 Arduino IDE，從上方選單選擇「草稿碼」，接著選擇「Include Library」，選擇「<strong>Add .ZIP library</strong>」。</p>
 <p><img src="../img/tutorials/info-07-04.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <p>選擇剛剛解壓縮檔案內，把 Library 資料夾裡頭的 zip 檔案一一引入。</p>
 <p><img src="../img/tutorials/info-07-05.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <p>這些程式庫壓縮檔案分別是：</p>
 <ul>
-<li>1) DHT.zip：溫濕度傳感器</li>
-<li>2) Joypad.zip：搖桿</li>
-<li>3) MaxMatrix.zip：LED 點矩陣</li>
-<li>4) MFRC522.zip：RFID</li>
+<li>(1) DHT.zip：溫濕度傳感器</li>
+<li>(2) Joypad.zip：搖桿</li>
+<li>(3) MaxMatrix.zip：LED 點矩陣</li>
+<li>(4) MFRC522.zip：RFID</li>
 </ul>
 <h2>燒錄韌體</h2>
 <p>有了這些程式庫之後，我們就可以打開 .ino 的韌體檔案來燒錄，直接在 .ino 檔案上頭點兩下就可以打開，通常第一次打開的時候會詢問你「必須位於...的草稿碼資料夾中...」，直接選擇「好」或「確認」即可。</p>
@@ -61,11 +61,11 @@ img: info-07-01s.jpg</p>
 <h2>韌體清單簡介</h2>
 <p>這是目前 Webduino 已經公開釋出的 Arduino 韌體，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！</p>
 <ul>
-<li>1) buzzer_ultrasonic.ino：蜂鳴器、超音波傳感器</li>
-<li>2) buzzer_ultrasonic_MaxMatrix.ino：蜂鳴器、超音波傳感器、 LED 點矩陣</li>
-<li>3) buzzer_ultrasonic_dht.ino：蜂鳴器、溫濕度傳感器</li>
-<li>4) buzzer_ultrasonic_dht_MaxMatrix：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣</li>
-<li>5) buzzer_ultrasonic_dht_MaxMatrix_MFRC522：超音波傳感器、溫濕度傳感器、LED 點矩陣、RFID</li>
-<li>6) buzzer_ultrasonic_dht_MaxMatrix_MFRC522_Joypad：超音波傳感器、溫濕度傳感器、LED 點矩陣、搖桿</li>
+<li>(1) buzzer_ultrasonic：蜂鳴器、超音波傳感器</li>
+<li>(2) buzzer_ultrasonic_MaxMatrix：蜂鳴器、超音波傳感器、 LED 點矩陣</li>
+<li>(3) buzzer_ultrasonic_dht：蜂鳴器、超音波傳感器、溫濕度傳感器</li>
+<li>(4) buzzer_ultrasonic_dht_MaxMatrix：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣</li>
+<li>(5) buzzer_ultrasonic_dht_MaxMatrix_MFRC522：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、RFID</li>
+<li>(6) buzzer_ultrasonic_dht_MaxMatrix_MFRC522_Joypad：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、搖桿</li>
 </ul>
 <!-- @@close-->
