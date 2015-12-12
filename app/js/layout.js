@@ -29,6 +29,7 @@ $(function(){
 	$window.scroll(function(){
 		if($window.scrollTop() > 0){
 			$header.addClass('scroll');
+			
 		}else{
 			$header.removeClass('scroll');
 		}
@@ -48,5 +49,9 @@ $(function(){
 			$mobileMenu.removeClass('menuopen');
 		}
 	}
+
+  function _track(e,d) {
+    ga('send', 'event', e, d);
+  }
 
 });

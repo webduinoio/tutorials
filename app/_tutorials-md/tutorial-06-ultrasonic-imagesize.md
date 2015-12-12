@@ -11,7 +11,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 6：超音波傳感器改變圖片大小 :::: Webduino = Web × Arduino</title>
+<title>教學範例 6：超音波傳感器改變圖片大小 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="我們了解了超音波傳感器的運作原理，在這個 Webduino 的範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。">
 
@@ -19,7 +19,7 @@ date: 20150425
 
 <meta property="og:description" content="我們了解了超音波傳感器的運作原理，在這個 Webduino 的範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。">
 
-<meta property="og:title" content="範例教學 6：超音波傳感器改變圖片大小" >
+<meta property="og:title" content="教學範例 6：超音波傳感器改變圖片大小" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-06-ultrasonic-imagesize.html">
 
@@ -34,69 +34,109 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-#範例教學 6：超音波傳感器改變圖片大小
+# 教學範例 6：超音波傳感器改變圖片大小
 
 在 [上一個範例](tutorial-05-ultrasonic.html) 我們了解了超音波傳感器的運作原理，在這個範例就來做點應用，藉由超音波傳感器回傳的公分數值，對應到網頁裡頭圖片的寬度，就可以非常輕鬆地做出一個利用超音波傳感器控制圖片大小的實例囉。
 
-##範例影片展示
+## 範例影片展示
 
-<iframe class="youtube" src="https://www.youtube.com/embed/7ED9YSy7EjA" frameborder="0" allowfullscreen></iframe>
+影片對應範例：[http://blockly.webduino.io/?page=tutorials/ultrasonic-2](http://blockly.webduino.io/?page=tutorials/ultrasonic-2)  
 
-##接線與實作
+<iframe class="youtube" src="https://www.youtube.com/embed/NXJ3xmqHm8o" frameborder="0" allowfullscreen></iframe>
 
-- ###1. 接上超音波傳感器
+## 接線與實作
 
-	和上一個範例完全一樣，只要把超音波傳感器的 VCC 接在 3.3v，Trig 接在 11，Echo 接在 10，GND 就接在 GND 的腳位，你可以用麵包板接出來，也可以直接就把超音波傳感器跟 Webduino 開發板組合即可。
+和上一個範例完全一樣，只要把超音波傳感器的 VCC 接在 3.3v，Trig 接在 11，Echo 接在 10，GND 就接在 GND 的腳位，你可以用麵包板接出來，也可以直接就把超音波傳感器跟 Webduino 開發板組合即可。
 
-	![](../img/tutorials/tutorial-05-02.jpg)
+接線示意圖：
 
-- ###2. 完成後的實際長相
+![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-02.jpg)
 
-	![](../img/tutorials/tutorial-05-03.jpg)
+實際接線照片：
+
+![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-03.jpg)
 
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/ultrasonic-picture/index.html)、[jsbin 範例](http://bin.webduino.io/pano/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+## Webduino Blockly 操作解析
 
-一開始要先引入相關的 js 與 WebComponents。
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「控制圖片」來對圖片做放大縮小或旋轉的控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。
 
-	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='https://webduino.io/components/webduino/wa-ultrasonic.html' />
+![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-04.jpg)
 
-和上個範例不同的地方，在於這個範例我們將 show 換成了一張圖，並給這張圖一個 id 方便我們去控制。
+把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入超音波積木，名稱設定為 ultrasonic，腳位設定為 Trig 11，Echi 10，接著放入每 500 毫秒偵測一次的積木，接著把左側網頁互動裡，控制圖片角度的積木擺放進去，讓圖片旋轉的角度就是超音波偵測到的距離。( 可以把原本的數值 0 刪除，放入偵測到的距離 )
 
-	<img id='img' src='//www.hua.com/flower_picture/meiguihua/images/r17.jpg'></img>
+![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-05.jpg)
 
-	<web-arduino id='board' device="你的 device 名稱">
-	  <wa-ultrasonic id='ultrasonic' trig='11' echo='10'></wa-ultrasonic>
-	</web-arduino>
+或是你也可以用超音波的數值設定為圖片的長寬。
 
-CSS 的地方給予這張圖片一個最大的寬度 ( 不給也可以，不過應該會超出畫面很多 )，然後加上 `transition` 的漸變時間單位，讓圖片的尺寸變化有更滑順的感覺。
+![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-06.jpg)
 
-	#img {
-	  width: 100%;
-	  max-width: 1024px;
-	  transition:.3s;
-	  }
+如果不想按照 1:1 的比例，也可以用數學式來計算長寬。
 
-javascript 寫起來還滿容易的，就只是把 `ping` 所回傳的公分數，轉換為圖片的大小，比較特別是的要稍微轉換一下 ( 乘以 20 )，避免距離只有一公分的時候，圖片變成了 1 像素，當乘以 20 之後，就可以比較明顯的觀察到圖片的變化。
+![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-07.jpg)
 
-	window.addEventListener('WebComponentsReady', function () {
-	  var board = document.getElementById('board');
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到圖片開始旋轉或是大小開始改變了。
+( 解答：[http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4](http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4) )
 
-	  board.on('ready',function() {
-	    var ultrasonic = document.getElementById('ultrasonic'),
-	      img = document.getElementById('img');
+## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/pano/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
-	    ultrasonic.ping(function(cm) {
-	      img.style.width = cm*20 + 'px';
-	      img.style.height = cm*20 + 'px';
-	    }, 1000);
-	  });
+HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
-	}, false);
+	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
+	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-如果還有不清楚的，不妨利用這個 [快速體驗範例](http://webduinoio.github.io/samples/content/ultrasonic-picture/index.html)，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以開始看到圖片大小不斷在變動，亦或是也可以參考這個 [jsbin 範例](http://bin.webduino.io/pano/edit?html,css,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果。
+HTML 裡就是一張圖片，放在一個 div 裡頭，圖片和 div 分別都有 id 方便我們去控制。
+
+	<div id="demo-area-03-container">
+	  <img src="http://blockly.webduino.io/media/webduino-logo.jpg" id="demo-area-03-image">
+	</div>
+
+CSS 在外面的 div 設定了長寬，比較需要注意的是 `position: relative;`，當我們這樣設定，內部的圖片位置設定為 `position: absolute`，就可以由 div 的位置出發，透過 `top` 和 `left` 來設定圖片位置，然後這裏也用了 `transform-origin` 來定義圖片的中心點，並且加上 `transition` 來設定圖片漸變的時間，這裏設定為 0.3 秒。
+
+	#demo-area-03-container {
+	  position: relative;
+	  width: 150px;
+	  height: 150px;
+	}
+
+	#demo-area-03-image {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 150px;
+	  height: 150px;
+	  transition: .3s;
+	  -webkit-transition: .3s;
+	  -moz-transition: .3s;
+	  transform-origin: 75px 75px;
+	  -webkit-transform-origin: 75px 75px;
+	  -moz-transform-origin: 75px 75px;
+	}
+
+javascript 寫起來還滿容易的，就只是把 `ping` 所回傳的公分數，轉換為圖片的大小，純粹就是一些格式大小的運算，如果要將其簡化。
+
+	var ultrasonic;
+
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  ultrasonic = getUltrasonic(board, 11, 10);
+	  ultrasonic.ping(function(cm){
+	    console.log(ultrasonic.distance);
+	    var imageWidth = ultrasonic.distance;
+	    var imageHeight = (ultrasonic.distance * 1.5);
+	    document.getElementById("demo-area-03-image").style.width = imageWidth+"px";
+	    document.getElementById("demo-area-03-image").style.height = imageHeight+"px";
+	  }, 500);
+	});
+
+以上就是利用超音波傳感器，偵測並用距離來改變圖片大小或角度的範例。  
+完整程式碼：[http://bin.webduino.io/pano/edit?html,css,js,output](http://bin.webduino.io/pano/edit?html,css,js,output)  
+解答：[http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4](http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4)
+
+## 超音波傳感器的延伸教學：
+
+[Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP)  
+[Webduino Blockly 課程 3-3：超音波傳感器改變音量大小](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO) 
 
 
 
