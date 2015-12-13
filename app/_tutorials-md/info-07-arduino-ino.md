@@ -72,6 +72,7 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 - (2) Joypad.zip：搖桿
 - (3) MaxMatrix.zip：LED 點矩陣
 - (4) MFRC522.zip：RFID
+- (5) IRremote.zip：紅外線發射/接收
 
 ## 燒錄韌體
 
@@ -102,6 +103,7 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 - (4) buzzer_ultrasonic_dht_MaxMatrix：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣
 - (5) buzzer_ultrasonic_dht_MaxMatrix_MFRC522：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、RFID
 - (6) buzzer_ultrasonic_dht_MaxMatrix_MFRC522_Joypad：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、搖桿
+- (7) buzzer_ultrasonic_dht_MaxMatrix_MFRC522_IR：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、RFID、紅外線發射/接收
 
 
 <!-- @@close-->
