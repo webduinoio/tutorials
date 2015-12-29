@@ -13,11 +13,11 @@ date: 20150420
 
 <title>Webduino 初始化設定 :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。">
+<meta name="description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 Wi-Fi，才能夠讓手機連結家裡的 Wi-Fi 上網，Webduino 開發板也是如此。">
 
-<meta itemprop="description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。">
+<meta itemprop="description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 Wi-Fi，才能夠讓手機連結家裡的 Wi-Fi 上網，Webduino 開發板也是如此。">
 
-<meta property="og:description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。">
+<meta property="og:description" content="實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 Wi-Fi，才能夠讓手機連結家裡的 Wi-Fi 上網，Webduino 開發板也是如此。">
 
 <meta property="og:title" content="Webduino 初始化設定" >
 
@@ -36,17 +36,11 @@ date: 20150420
 <!-- @@block  =  tutorials-->
 #Webduino 初始化設定
 
-實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。
-
-<br/>
+實作 Webduino 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網，就如同我們買了一支手機回家，要設定手機的 Wi-Fi，才能夠讓手機連結家裡的 Wi-Fi 上網，Webduino 開發板也是如此。
 
 以下的步驟將會介紹如何進行設定，閱讀過程請注意**橘黃色**的文字，這些文字描述了大家在設定的時候，比較容易犯的錯誤。
 
 ##Webduino 初始化影片介紹
-
-Webduino 開發板 ( 基礎教育版 )：
-
-<iframe class="youtube" src="https://www.youtube.com/embed/EdYJiG8TWXk" frameborder="0" allowfullscreen></iframe>
 
 Webduino 開發板 ( 馬克一號 )：
 
@@ -56,25 +50,21 @@ Webduino 開發板 ( 馬克一號 )：
 
 - ###1. 組合 Webduino 開發板
 
-	將「Arduino Pro Mini 晶片」與「ESP8266 Wifi 晶片」組合至底板，就成為「Webduino 開發板」。
+	將「Arduino Pro Mini 晶片」與「ESP8266 Wi-Fi 晶片」組合至底板，就成為「Webduino 開發板」。
 
 	![Webduino - 組合 Webduino 開發板](../img/tutorials/info-02-02.jpg)
 
 - ###2. 開始進行初始化
 
-	如果是使用 Webduino 開發板基礎教育版 ( 底板為淺褐色，並有孔洞 )，必須先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，**當 LED 亮起，表示可以開始進行初始化**，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 3。( **特別注意，請使用 5~6V，1~2A 以內的電源，避免開發板損毀** )
-
-	![Webduino - 開始進行初始化](../img/tutorials/info-02-03.jpg)
-
-	如果是使用 Webduino 開發板馬克一號 ( 底板為紅色 PCB 板 )，上面會有一顆可以左右扳動的小案鈕，將按鈕扳動至下圖的位置 ( 左側 )，就可以開始進行初始化設定。
+	Webduino 開發板馬克一號，上面有一顆可以左右扳動的小開關，將按鈕扳動至下圖的位置 ( 左側，STA 模式 )，接上電源，就可以開始進行初始化設定。
 
 	![Webduino - 開始進行初始化](../img/tutorials/info-02-09.jpg)
 
-- ###3. 使用 wifi 搜尋 Webduino 開發板
+- ###3. 使用 Wi-Fi 搜尋 Webduino 開發板
 
-	使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，**開發板的 SSID 與密碼會寫在「裝置說明卡」裡頭，通常為「wa」開頭**。( 範例名稱為 wa101 )
+	使用電腦或行動裝置，打開 Wi-Fi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，**開發板的 SSID 與密碼會寫在「裝置說明卡」裡頭，通常為「wa」開頭**。( 範例名稱為 wa101 )
 
-	![Webduino - 使用 wifi 搜尋 Webduino 開發板](../img/tutorials/info-02-04.jpg)
+	![Webduino - 使用 Wi-Fi 搜尋 Webduino 開發板](../img/tutorials/info-02-04.jpg)
 
 
 - ###4. 連線 Webduino 開發板進行設定
@@ -85,11 +75,7 @@ Webduino 開發板 ( 馬克一號 )：
 
 - ###5. 重啟 Webduino 開發板
 
-	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線 ( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )，如果是使用 Webduino 開發板基礎教育版，**移除 Webduino 開發板的電源以及 LED**，重新再接上電源即可進行重啟。
-
-	![Webduino - 重啟 Webduino 開發板](../img/tutorials/info-02-08.jpg)
-
-	如果是使用 Webduino 開發板馬克一號，則先移除開發板電源，再將按鈕扳至右側，重新接上電源即可進行重啟。
+	輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線 ( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )，完成後先移除開發板電源，再將按開關至右側 ( AP 模式 )，重新接上電源即可進行重啟。
 
 	![Webduino - 重啟 Webduino 開發板](../img/tutorials/info-02-10.jpg)
 
@@ -105,7 +91,7 @@ Webduino 開發板 ( 馬克一號 )：
 
 - ###7. Webduino 開發板已經可以連線網路基地台
 
-	進行到此步驟，表示 Webduino 開發板已經可以自行連上家裡、公司場所或行動裝置分享的網路基地台，並自動連結上雲端的伺服器，我們就可以開始透過 wifi 去控制 Webduino 開發板囉！ (  立刻用第 [第一個範例](tutorial-01-led.html) 體驗看看吧 )
+	進行到此步驟，表示 Webduino 開發板已經可以自行連上家裡、公司場所或行動裝置分享的網路基地台，並自動連結上雲端的伺服器，我們就可以開始透過 Wi-Fi 去控制 Webduino 開發板囉！ (  立刻用第 [第一個範例](tutorial-01-led.html) 體驗看看吧 )
 
 	![Webduino - Webduino 開發板已經可以連線網路基地台](../img/tutorials/info-02-05.jpg)
 
