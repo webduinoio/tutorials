@@ -280,7 +280,8 @@ gulp.task('move',['build-clean'],function(){
               'app/index.html',
               'app/tutorials.html',
               'app/buy.html',
-              'app/activity.html'])
+              'app/activity.html',
+              'app/ruten.html'])
             .pipe(minifyHTML(opts))
             .pipe(gulp.dest('build'));
   return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15);

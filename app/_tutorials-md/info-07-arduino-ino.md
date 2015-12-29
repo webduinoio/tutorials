@@ -36,7 +36,7 @@ date: 20151210
 <!-- @@block  =  tutorials-->
 # Arduino 韌體下載與燒錄
 
-因為 Webduino 要使用 JavaScript 操控 Arduino 開發板，因此要走 Arduino Firmata 的通訊協定，所以必須「**要燒錄具有 Firmata 通訊協定的韌體**」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。
+因為 Webduino 要走 Arduino Firmata 的通訊協定，所以必須「**要燒錄具有 Firmata 通訊協定的韌體**」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。
 
 如果對於 Webduino UNO 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：
 
@@ -68,11 +68,11 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 
 這些程式庫壓縮檔案分別是：
 
-- (1) DHT.zip：溫濕度傳感器
-- (2) Joypad.zip：搖桿
-- (3) MaxMatrix.zip：LED 點矩陣
-- (4) MFRC522.zip：RFID
-- (5) IRremote.zip：紅外線發射/接收
+(1) DHT.zip：溫濕度傳感器  
+(2) Joypad.zip：搖桿  
+(3) MaxMatrix.zip：LED 點矩陣  
+(4) MFRC522.zip：RFID  
+(5) IRremote.zip：紅外線發射/接收
 
 ## 燒錄韌體
 
@@ -95,15 +95,15 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 
 ## 韌體清單簡介
 
-這是目前 Webduino 已經公開釋出的 Arduino 韌體，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！
+這是目前 Webduino 已經公開釋出的 Arduino 韌體 ( 只要檔名有包含，就是具有這個傳感器或電子零件，舉例來說：buzzer_ultrasonic 就包含蜂鳴器和超音波傳感器 )，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！
 
-- (1) buzzer_ultrasonic：蜂鳴器、超音波傳感器
-- (2) buzzer_ultrasonic_MaxMatrix：蜂鳴器、超音波傳感器、 LED 點矩陣
-- (3) buzzer_ultrasonic_dht：蜂鳴器、超音波傳感器、溫濕度傳感器
-- (4) buzzer_ultrasonic_dht_MaxMatrix：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣
-- (5) buzzer_ultrasonic_dht_MaxMatrix_MFRC522：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、RFID
-- (6) buzzer_ultrasonic_dht_MaxMatrix_MFRC522_Joypad：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、搖桿
-- (7) buzzer_ultrasonic_dht_MaxMatrix_MFRC522_IR：蜂鳴器、超音波傳感器、溫濕度傳感器、LED 點矩陣、RFID、紅外線發射/接收
+(1) buzzer：蜂鳴器  
+(2) ultrasonic：超音波傳感器  
+(3) MaxMatrix：LED 點矩陣  
+(4) dht：溫濕度傳感器  
+(5) MFRC522：RFID  
+(6) Joypad：搖桿  
+(7) IR：紅外線發射/接收
 
 
 <!-- @@close-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正在前往商品頁面...</title>
+</head>
+<body>
+	<img src="img/buy/ruten-loading.gif" style="position:absolute; left:calc(50% - 65px); top:calc(50% - 150px); display:block;">
+	<iframe id="frame" src="http://www.ruten.com.tw" style="display:none"></iframe>
+	<script>
+		document.querySelector('#frame').onload = function() {
+		  var show = window.location.hash;
+		  if (show.length > 1) {
+		    window.top.location.href = 'http://goods.ruten.com.tw/item/show?' + show.substring(1);
+
+		  }
+		};
+	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62202920-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
