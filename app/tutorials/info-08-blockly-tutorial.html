@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+
+<title>Webduino Blockly 教學 :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="因為 Webduino 要使用 JavaScript 操控 Arduino 開發板，因此要走 Arduino Firmata 的通訊協定，所以必須「要燒錄具有 Firmata 通訊協定的韌體」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。">
+
+<meta itemprop="description" content="因為 Webduino 要使用 JavaScript 操控 Arduino 開發板，因此要走 Arduino Firmata 的通訊協定，所以必須「要燒錄具有 Firmata 通訊協定的韌體」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。">
+
+<meta property="og:description" content="因為 Webduino 要使用 JavaScript 操控 Arduino 開發板，因此要走 Arduino Firmata 的通訊協定，所以必須「要燒錄具有 Firmata 通訊協定的韌體」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。">
+
+<meta property="og:title" content="Webduino Blockly 教學" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/info-08-blockly-tutorial.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/info-08-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/info-08-01s.jpg">
+
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/jquery.lazyload.min.js"></script>
+<script src="../js/lib/run_prettify.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/tutorials.js"></script>
+<script src="../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../style/css/layout.css">
+<link rel="stylesheet" href="../style/css/sub-header.css">
+<link rel="stylesheet" href="../style/css/tutorials-content.css">
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index">首頁</a>
+			<a href="tutorials.html" class="tutorials">教學範例</a>
+			<a href="buy.html" class="buy">產品總覽</a>
+			<a href="activity.html" class="activity">課程活動</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index">首頁</a>
+			<a href="../tutorials.html" class="tutorials">教學範例</a>
+			<a href="../buy.html" class="buy">產品總覽</a>
+			<a href="../activity.html" class="activity">課程活動</a>
+			<a class="none">關於我們</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>Webduino Blockly 線上編輯工具教學</h1>
+<p>Webduino Blockly 線上編輯工具是 Webduino 所研發出來的圖像化編輯工具，採用 Google Blockly 設計而成，讓一些對於網頁程式語言比較陌生，或者希望快速實現效果的朋友，可以利用 Webduino Blockly 線上編輯工具極速的實現各式各樣的創意。</p>
+<p>以下將會介紹 Webduino Blockly 的基本操作，如果已經熟悉相關介面或開發模式，可以直接點選「<a href="http://blockly.webduino.io/index-tutorials.html">Webduino Blockly 實作範例</a>」，練習六十個以上的精彩應用。</p>
+<h2>介面介紹</h2>
+<h2>認識程式積木</h2>
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html"><i></i></a>
+			<a href="../index.html"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>80661 高雄市前鎮區復興四路 20 號 1 樓 / 886-7-3388511</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

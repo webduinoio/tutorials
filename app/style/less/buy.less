@@ -25,48 +25,55 @@
   margin:120px auto 80px;
   h1{
     font-size:30px;
-    margin:30px 0 20px;
-    padding:30px 0 0;
-    border-top:#aaa dashed 1px;
+    margin:30px auto 20px;
+    padding:30px 0;
     text-align:center;
-    &:first-child{
-      padding-top:0;
-      border:none;
-    }
+    border-top:#aaa dashed 1px;
+    border-bottom:#aaa dashed 1px;
+
+    background-image:-webkit-linear-gradient(0deg,#fff,#f5f5f5,#fff);
   }
   >div{     
     width:100%;
     text-align:center;
+    padding-bottom:50px;
     >div{
       display:inline-block;
-      width:49%;
+      width:33%;
       padding:12px;
       vertical-align:top;
       a{
         h2{
-          text-align:left;
+          text-align:center;
           font-size:18px;
           margin:10px 0 5px;
           color:#000;
+          overflow:hidden;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+          ._transition(.3s);
         }
         h3{
-          text-align:left;
+          text-align:center;
           font-size:18px;
           margin:10px 0 5px;
           color:#000;
+          ._transition(.3s);
           span{
-            text-decoration:underline;
             color:#09b;
+            ._transition(.3s);
           }
         }
         .description{
-          width:100%;
-          margin-top:10px;
+          width:90%;
+          margin:10px auto 0;
           display:block;
           text-align:left; 
           color:#999;
           font-size:14px;
-          line-height:20px;
+          line-height:22px;
+          padding-top:10px;
+          border-top:1px dashed #ccc;
         }
         div{
           overflow:hidden;
@@ -90,12 +97,12 @@
           }
         }
         &:hover{
+          h2,h3 span{
+            color:#f60;
+          }
           img{
             margin-top:-10px;
             margin-bottom:10px;
-          }
-          div:after{
-            bottom:0;
           }
         }
       }
@@ -122,6 +129,9 @@
 }
 @media (max-width: 500px){
   .content{
+    h1{
+      font-size:24px;
+    }
     >div{
       >div{
         width:100%;

@@ -1,4 +1,4 @@
-/* browser */
+/* browser */ 
 ._bg-top-linear-gradient(@a,@b){
 	background-image:linear-gradient(top,@a,@b);
 	background-image:-webkit-linear-gradient(top,@a,@b);
@@ -49,27 +49,30 @@ header{
     &:link,&:active,&:visited,&:hover{
       color:#098;
     }
+    &:hover{
+      text-decoration:underline;
+    }
   }
-  h1,h2,h3,p,ul,.airpay,.need-more,.need-know{
+  h1,h2,h3,p,ul,.ruten,.need-more,.need-know{
     display:block;
     width:60%;
     margin:0 auto;
   }
   h1{
     margin-bottom:20px;
-    font-size:32px;
+    font-size:30px;
     line-height:40px;
   }
   h2{
-    margin-top:30px;
+    margin-top:40px;
     margin-bottom:15px;
-    font-size:30px;
+    font-size:26px;
     line-height:40px;
   }
   h3{
     margin-top:50px;
     margin-bottom:0;
-    font-size:30px;
+    font-size:26px;
   }
   p{
     color:#555;
@@ -103,22 +106,22 @@ header{
     cursor:pointer;
   }
   .need-more,.need-know{
-    padding: 20px 0;
+    margin-top:40px;
+    padding: 10px 0 0;
     color:#555;
     h4{
       color:#000;
-      margin-bottom:20px;
-      font-size:32px;
-      line-height:40px;
+      font-size:26px;
+      line-height:30px;
     }
     h5{
       color:#000;
-      margin:10px 0;
+      margin:10px 0 0;
       font-size:20px;
       line-height:40px;
     }
     div{
-      margin:10px 0;
+      margin:10px 0 0;
       font-size:17px;
       line-height:24px;
     }
@@ -144,27 +147,23 @@ header{
     margin:5px 0 10px;
     cursor:pointer;
   }
-  .airpay{
-    margin-top:10px;
-    margin-bottom:50px;
-    select{
-      height:50px;
-      background:#f5f5f5;
-      font-size:16px;
-      border:1px solid #bbb;
-      outline:none;
+  .ruten{
+    margin-top:30px;
+    margin-bottom:30px;
+    a{
+      color:#000;
+      border-radius:15px;
+      font-size:24px;
+      padding:15px 50px;
+      ._bg-top-linear-gradient(#fc0,#fd0);
+      cursor:pointer;
+      ._transition(.3s);
+      box-shadow:#c90 0 3px 0;
     }
-    button{
-      width:100px;
-      height:50px;
-      font-size:16px;
-      border-radius:5px;
-      background:#eee;
-      border:1px solid #bbb;
-      outline:none;
-    }
-    button:active {
-      background:#ddd;
+    a:hover{
+      color:#000;
+      ._bg-top-linear-gradient(#fd0,#fe0);
+      text-decoration:none;
     }
   }
 }

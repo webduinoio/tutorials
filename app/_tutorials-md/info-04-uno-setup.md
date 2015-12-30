@@ -93,7 +93,7 @@ date: 20151124
 
 - ### 8. 注意事項
 
-	由於 Webduino 要走 Arduino Firmata 的通訊協定，Arduino 本身**要燒錄具有 Firmata 通訊協定的韌體**，建議可使用 Arduino 官方提供的範例燒錄，便可做基本的應用。( Arduino IDE > 範例 > Firmata > StandardFirmata )
+	由於 Webduino 要走 Arduino Firmata 的通訊協定，Arduino 本身**要燒錄具有 Firmata 通訊協定的韌體**，建議可使用 Arduino 官方提供的範例燒錄，便可做基本的應用。( Arduino IDE > 範例 > Firmata > StandardFirmata ) 
 
 	![Webduino Fly 初始化設定](../img/tutorials/info-05-08.jpg)
 

@@ -5,49 +5,61 @@
 }
 .content h1 {
   font-size: 30px;
-  margin: 30px 0 20px;
-  padding: 30px 0 0;
-  border-top: #aaa dashed 1px;
+  margin: 30px auto 20px;
+  padding: 30px 0;
   text-align: center;
-}
-.content h1:first-child {
-  padding-top: 0;
-  border: none;
+  border-top: #aaa dashed 1px;
+  border-bottom: #aaa dashed 1px;
+  background-image: -webkit-linear-gradient(0deg, #ffffff, #f5f5f5, #ffffff);
 }
 .content > div {
   width: 100%;
   text-align: center;
+  padding-bottom: 50px;
 }
 .content > div > div {
   display: inline-block;
-  width: 49%;
+  width: 33%;
   padding: 12px;
   vertical-align: top;
 }
 .content > div > div a h2 {
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   margin: 10px 0 5px;
   color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 .content > div > div a h3 {
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   margin: 10px 0 5px;
   color: #000;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 .content > div > div a h3 span {
-  text-decoration: underline;
   color: #09b;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 .content > div > div a .description {
-  width: 100%;
-  margin-top: 10px;
+  width: 90%;
+  margin: 10px auto 0;
   display: block;
   text-align: left;
   color: #999;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
+  padding-top: 10px;
+  border-top: 1px dashed #ccc;
 }
 .content > div > div a div {
   overflow: hidden;
@@ -74,12 +86,13 @@
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
+.content > div > div a:hover h2,
+.content > div > div a:hover h3 span {
+  color: #f60;
+}
 .content > div > div a:hover img {
   margin-top: -10px;
   margin-bottom: 10px;
-}
-.content > div > div a:hover div:after {
-  bottom: 0;
 }
 /* RWD */
 @media (max-width: 1000px) {
@@ -93,6 +106,9 @@
   }
 }
 @media (max-width: 500px) {
+  .content h1 {
+    font-size: 24px;
+  }
   .content > div > div {
     width: 100%;
   }

@@ -31,12 +31,15 @@ header.path-1 {
 .content a:hover {
   color: #098;
 }
+.content a:hover {
+  text-decoration: underline;
+}
 .content h1,
 .content h2,
 .content h3,
 .content p,
 .content ul,
-.content .airpay,
+.content .ruten,
 .content .need-more,
 .content .need-know {
   display: block;
@@ -45,19 +48,19 @@ header.path-1 {
 }
 .content h1 {
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 40px;
 }
 .content h2 {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 40px;
 }
 .content h3 {
   margin-top: 50px;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 26px;
 }
 .content p {
   color: #555;
@@ -92,26 +95,26 @@ header.path-1 {
 }
 .content .need-more,
 .content .need-know {
-  padding: 20px 0;
+  margin-top: 40px;
+  padding: 10px 0 0;
   color: #555;
 }
 .content .need-more h4,
 .content .need-know h4 {
   color: #000;
-  margin-bottom: 20px;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 30px;
 }
 .content .need-more h5,
 .content .need-know h5 {
   color: #000;
-  margin: 10px 0;
+  margin: 10px 0 0;
   font-size: 20px;
   line-height: 40px;
 }
 .content .need-more div,
 .content .need-know div {
-  margin: 10px 0;
+  margin: 10px 0 0;
   font-size: 17px;
   line-height: 24px;
 }
@@ -138,28 +141,30 @@ header.path-1 {
   margin: 5px 0 10px;
   cursor: pointer;
 }
-.content .airpay {
-  margin-top: 10px;
-  margin-bottom: 50px;
+.content .ruten {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.content .airpay select {
-  height: 50px;
-  background: #f5f5f5;
-  font-size: 16px;
-  border: 1px solid #bbb;
-  outline: none;
+.content .ruten a {
+  color: #000;
+  border-radius: 15px;
+  font-size: 24px;
+  padding: 15px 50px;
+  background-image: linear-gradient(top, #ffcc00, #ffdd00);
+  background-image: -webkit-linear-gradient(top, #ffcc00, #ffdd00);
+  background-image: -moz-linear-gradient(top, #ffcc00, #ffdd00);
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  box-shadow: #c90 0 3px 0;
 }
-.content .airpay button {
-  width: 100px;
-  height: 50px;
-  font-size: 16px;
-  border-radius: 5px;
-  background: #eee;
-  border: 1px solid #bbb;
-  outline: none;
-}
-.content .airpay button:active {
-  background: #ddd;
+.content .ruten a:hover {
+  color: #000;
+  background-image: linear-gradient(top, #ffdd00, #ffee00);
+  background-image: -webkit-linear-gradient(top, #ffdd00, #ffee00);
+  background-image: -moz-linear-gradient(top, #ffdd00, #ffee00);
+  text-decoration: none;
 }
 /* disqus */
 .disqus {
