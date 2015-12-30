@@ -36,7 +36,7 @@ date: 20151124
 <!-- @@block  =  tutorials-->
 # Webduino Fly 初始化設定
 
-使用 Webduino Fly ( NUO 雲端擴充板 )，可以讓你手邊的 Arduino UNO 變成 Webduino，具備完整的 Webduino 功能，然而使用 UNO 雲端擴充板之前，最重要的就是進行初始化設定，初始化設定的目的在於讓Webduino UNO 雲端擴充板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。
+使用 Webduino Fly ( UNO 雲端擴充板 )，可以讓你手邊的 Arduino UNO 變成 Webduino，具備完整的 Webduino 功能，然而使用 UNO 雲端擴充板之前，最重要的就是進行初始化設定，初始化設定的目的在於讓Webduino UNO 雲端擴充板可以自動上網，就如同我們買了一支手機回家，要設定手機的 wifi，才能夠讓手機連結家裡的 Wifi 上網，Webduino 開發板也是如此。
 
 ## 初始化步驟說明
 
