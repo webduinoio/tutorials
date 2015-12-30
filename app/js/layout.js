@@ -40,12 +40,12 @@ $(function(){
 
 	$a.on('click',function(){
 		var url = $(this).attr('href');
-		_gaTrack('a.onClick',url);
+		_gaTrack('a.onClick'+' - '+file[file.length-1],url);
 	});
 
 	$a.hover(function(){
 		var url = $(this).attr('href');
-		_gaTrack('a.hover',url);
+		_gaTrack('a.hover'+' - '+file[file.length-1],url);
 	});
 
 	function _menuToggle(){
