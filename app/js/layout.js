@@ -9,6 +9,7 @@ $(function(){
 			$body = $('body'),
 			$closeArea = $('div,footer').not('.mobile-menu,.slide-menu div,header .menu'),
 			$slideMenu = $('.slide-menu');
+			$a = $('a');
 
 	console.log('被我發現你在偷看我的原始碼喔~ 啾咪~ ╭(′▽`)╭(′▽`)╯');
 
@@ -35,8 +36,17 @@ $(function(){
 		}
 	});
 
-
 	$mobileMenu.on('click',_menuToggle);
+
+	$a.on('click',function(){
+		var url = $(this).attr('href');
+		_gaTrack('a.onClick',url);
+	});
+
+	$a.hover(function(){
+		var url = $(this).attr('href');
+		_gaTrack('a.hover',url);
+	});
 
 	function _menuToggle(){
 		if(!$mobileMenu.hasClass('menuopen')){
@@ -50,7 +60,7 @@ $(function(){
 		}
 	}
 
-  function _track(e,d) {
+  function _gaTrack(e,d) {
     ga('send', 'event', e, d);
   }
 

@@ -81,9 +81,9 @@ header{
     font-size:17px;
     word-wrap:break-word;
     word-break: break-all;
-    white-space: pre-wrap;
+    /*white-space: pre-wrap;*/
     img{
-      max-width:100%;
+      width:100%;
     }
   }
   iframe{
@@ -189,7 +189,7 @@ footer{
 /* RWD */
 @media (max-width: 1000px){
   .content{
-    h1,h2,h3,p,ul,div,.need-more,.need-know{
+    h1,h2,h3,p,ul,div,.ruten,.need-more,.need-know{
       width:70%;
     }
   }
@@ -215,7 +215,7 @@ footer{
   }
   .content{
     margin-top:40px;
-    h1,h2,h3,p,ul,.airpay,.need-more,.need-know{
+    h1,h2,h3,p,ul,.ruten,.need-more,.need-know{
       width:80%;
     }
   }
@@ -225,7 +225,7 @@ footer{
 }
 @media (max-width: 600px){
   .content{
-    h1,h2,h3,p,ul,.airpay,.need-more,.need-know{
+    h1,h2,h3,p,ul,.ruten,.need-more,.need-know{
       width:85%;
     }
     h1,h2,h3,h4{
@@ -236,6 +236,10 @@ footer{
       img{
         max-width:100%;
       }
+    }
+    .ruten a{
+      padding:10px 20px;
+      font-size:20px;
     }
   }
   .disqus{

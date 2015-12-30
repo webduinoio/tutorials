@@ -69,10 +69,10 @@ header.path-1 {
   font-size: 17px;
   word-wrap: break-word;
   word-break: break-all;
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
 }
 .content p img {
-  max-width: 100%;
+  width: 100%;
 }
 .content iframe {
   width: 100%;
@@ -187,6 +187,7 @@ footer .logo a:last-child {
   .content p,
   .content ul,
   .content div,
+  .content .ruten,
   .content .need-more,
   .content .need-know {
     width: 70%;
@@ -216,7 +217,7 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
-  .content .airpay,
+  .content .ruten,
   .content .need-more,
   .content .need-know {
     width: 80%;
@@ -231,7 +232,7 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
-  .content .airpay,
+  .content .ruten,
   .content .need-more,
   .content .need-know {
     width: 85%;
@@ -247,6 +248,10 @@ footer .logo a:last-child {
   }
   .content p img {
     max-width: 100%;
+  }
+  .content .ruten a {
+    padding: 10px 20px;
+    font-size: 20px;
   }
   .disqus {
     width: 85%;
