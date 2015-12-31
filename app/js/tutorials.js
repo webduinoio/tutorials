@@ -11,8 +11,8 @@ $(function(){
 	$('a.tutorials').addClass('actived');
 
 	$tutorials.append(
-			'<a class="arrow arrow-r"></a>'+
-			'<a class="arrow arrow-l"></a>'+
+			'<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>'+
+			'<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>'+
 			'<div class="pre-next"><div>'+
 			'<div class="pre"></div>'+
 			'<div class="next"></div>'+
@@ -40,23 +40,43 @@ $(function(){
 			if(array[i].src==file){
 				$banner.append('<img src="../img/tutorials/'+array[i].banner+'">');
 				if(i>0 && i<(l-1)){
-					$('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a href="'+array[i-1].src+'">'+array[i-1].title+'</a>');
-					$('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a href="'+array[i+1].src+'">'+array[i+1].title+'</a>');
+					$('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a class="pre-next-button" data-name="pre-next-button" href="'+array[i-1].src+'">'+array[i-1].title+'</a>');
+					$('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a class="pre-next-button" data-name="pre-next-button" href="'+array[i+1].src+'">'+array[i+1].title+'</a>');
 					$ar.attr('href',array[i+1].src).attr('title','下一篇：'+array[i+1].title);
 					$al.attr('href',array[i-1].src).attr('title','上一篇：'+array[i-1].title);
 				}
 				else if(i==0){
-					$('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a href="'+array[1].src+'">'+array[1].title+'</a>');
+					$('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a class="pre-next-button" data-name="pre-next-button" href="'+array[1].src+'">'+array[1].title+'</a>');
 					$al.css({'left':'-100px'});
 					$ar.attr('href',array[1].src).attr('title','下一篇：'+array[i+1].title);
 				}
 				else{
-					$('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a href="'+array[i-1].src+'">'+array[i-1].title+'</a>');
+					$('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a class="pre-next-button" data-name="pre-next-button" href="'+array[i-1].src+'">'+array[i-1].title+'</a>');
 					$al.attr('href',array[i-1].src).attr('title','上一篇：'+array[i-1].title);
 					$ar.css({'right':'-100px'});
 				}
 			}
 		}
+
+		var $pnBtn = $('.pre-next-button');
+		$pnBtn.on('click',function(){
+			var linkUrl = $(this).attr('href');
+			var name = $(this).attr('data-name');
+			 if(name==''||!name){
+			 	name = file[file.length-1];
+			 }
+			_gaTrack(name,'a click',linkUrl);
+		});
+
+		$pnBtn.on('mouseenter',function(){
+			var linkUrl = $(this).attr('href');
+			var name = $(this).attr('data-name');
+			if(name==''||!name){
+			 	name = file[file.length-1];
+			}
+			_gaTrack(name,'a hover',linkUrl);
+		});
+
 	});
 
 	$pre.addClass('prettyprint');
@@ -76,10 +96,11 @@ $(function(){
 		}
 	});
 
-	$('.tutorials-content a').on('click',function(){
-		var linkurl = $(this).attr('href');
-		ga('send', 'event', 'tutorials', 'a click', linkurl, 4);
-	});
+
+	// $('.tutorials-content a').on('click',function(){
+	// 	var linkurl = $(this).attr('href');
+	// 	ga('send', 'event', 'tutorials', 'a click', linkurl, 4);
+	// });
 
 	function _arrow_appear(){
 		if($window.scrollTop() > $banner.height() && $window.scrollTop() < ($document.height()-$window.height()-600)){
@@ -88,5 +109,9 @@ $(function(){
 			$arrow.hide();
 		}
 	}
+
+	function _gaTrack(e,d,l) {
+    ga('send', 'event', e, d ,l);
+  }
 
 });

@@ -39,13 +39,21 @@ $(function(){
 	$mobileMenu.on('click',_menuToggle);
 
 	$a.on('click',function(){
-		var url = $(this).attr('href');
-		_gaTrack('a.onClick'+' - '+file[file.length-1],url);
+		var linkUrl = $(this).attr('href');
+		var name = $(this).attr('data-name');
+		 if(name==''||!name){
+		 	name = file[file.length-1];
+		 }
+		_gaTrack(name,'a click',linkUrl);
 	});
 
-	$a.hover(function(){
-		var url = $(this).attr('href');
-		_gaTrack('a.hover'+' - '+file[file.length-1],url);
+	$a.on('mouseenter',function(){
+		var linkUrl = $(this).attr('href');
+		var name = $(this).attr('data-name');
+		if(name==''||!name){
+		 	name = file[file.length-1];
+		}
+		_gaTrack(name,'a hover',linkUrl);
 	});
 
 	function _menuToggle(){
@@ -60,8 +68,8 @@ $(function(){
 		}
 	}
 
-  function _gaTrack(e,d) {
-    ga('send', 'event', e, d);
+  function _gaTrack(e,d,l) {
+    ga('send', 'event', e, d ,l);
   }
 
 });
