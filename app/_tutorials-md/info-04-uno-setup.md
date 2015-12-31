@@ -97,6 +97,22 @@ date: 20151124
 
 	![Webduino Fly 初始化設定](../img/tutorials/info-05-08.jpg)
 
+## Arduino IDE 1.6.7 編譯錯誤
+
+最近發現某些使用者在使用 Arduino IDE 1.6.7 的版本會編譯錯誤，是因為升級後的 Arduino 並沒有提供向下相容，導致 Firmata 2.4.4 和 2.5.1 不相容而產生錯誤，解決的方法除了安裝回 1.6.6 或 1.6.5 的版本之外 ( 載點：[https://www.arduino.cc/en/Main/OldSoftwareReleases#previous](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) )，還可以使用以下的解決方式，**把 Firmata 的版本轉回 2.4.4 或 2.4.3**。
+
+第一步，打開 Library Manager ( 草稿碼 -> include Library -> Library Manager )
+
+![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-07-10.jpg)
+
+第二步，搜尋 firmata，看看你的版本是不是跑到 2.5.1 了。
+
+![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-07-12.jpg)
+
+第三步，選擇** 2.4.4 或 2.4.3 **的 firmata 版本，按下 install，把 Firmata 裝回 2.4.4 的版本，如此一來，應該又可以順利的進行燒錄的動作了！
+
+![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-07-13.jpg)
+
 
 
 
