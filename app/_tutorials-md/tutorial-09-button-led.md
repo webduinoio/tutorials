@@ -11,7 +11,7 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 9：按鈕開關 :::: Webduino = Web × Arduino</title>
+<title>教學範例 9：按鈕開關 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。">
 
@@ -19,7 +19,7 @@ date: 20150425
 
 <meta property="og:description" content="開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。">
 
-<meta property="og:title" content="範例教學 9：按鈕開關" >
+<meta property="og:title" content="教學範例 9：按鈕開關" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-09-button-led.html">
 
@@ -34,7 +34,7 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-# 範例教學 9：按鈕開關
+# 教學範例 9：按鈕開關
 
 開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。
 

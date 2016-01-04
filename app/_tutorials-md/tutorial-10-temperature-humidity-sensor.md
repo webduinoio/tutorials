@@ -11,7 +11,7 @@ date: 20150601
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 10：溫濕度傳感器 :::: Webduino = Web × Arduino</title>
+<title>教學範例 10：溫濕度傳感器 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。">
 
@@ -19,7 +19,7 @@ date: 20150601
 
 <meta property="og:description" content="溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。">
 
-<meta property="og:title" content="範例教學 10：溫濕度傳感器" >
+<meta property="og:title" content="教學範例 10：溫濕度傳感器" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-10-temperature-humidity-sensor.html">
 
@@ -34,7 +34,7 @@ date: 20150601
 
 
 <!-- @@block  =  tutorials-->
-# 範例教學 10：溫濕度傳感器
+# 教學範例 10：溫濕度傳感器
 
 溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。
 
