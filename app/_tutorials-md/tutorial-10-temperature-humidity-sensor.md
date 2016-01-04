@@ -85,7 +85,7 @@ date: 20150601
 ![](../img/tutorials/tutorial-10-10.jpg)
 
 
-## 範例解析 ( [jsbin 範例](http://bin.webduino.io/xaxe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/xaxe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
