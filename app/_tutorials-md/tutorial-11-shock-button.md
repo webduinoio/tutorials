@@ -111,11 +111,11 @@ JavaScript 和按鈕開關類似，都是使用 `on` 的方法，只是裡面如
 	  });
 	});
 
-以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。  
+以上就是利用震動開關，來增加數值並顯示在網頁上。  
 完整程式碼：[http://bin.webduino.io/semi/edit?html,js,output](http://bin.webduino.io/semi/edit?html,js,output)  
 解答：[http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz)
 
-## 超音波傳感器的延伸教學：
+## 震動開關的延伸教學：
 
 [Webduino Blockly 課程 10-2：震動按鈕開關改變圖片位置](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/shock-2#-Jw1KUKUyvZIS_b4pQJ9)
 

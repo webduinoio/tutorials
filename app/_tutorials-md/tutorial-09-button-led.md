@@ -111,7 +111,7 @@ JavaScript 可以看到 button 具有一個 on 的事件，裡面第一個參數
 完整程式碼：[http://bin.webduino.io/helo/edit?html,js,output](http://bin.webduino.io/helo/edit?html,js,output)  
 解答：[http://blockly.webduino.io/#-K79XnHbOMzTkCJg0bZ4](http://blockly.webduino.io/#-K79XnHbOMzTkCJg0bZ4)
 
-## 超音波傳感器的延伸教學：
+## 按鈕開關的延伸教學：
 
 [Webduino Blockly 課程 4-2：點擊按鈕開關增加數字](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-2#-JvWu7mS_OoeRvE-m6mD)  
 [Webduino Blockly 課程 4-3：點擊按鈕開關改變圖片位置](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-3#-JvWuaeLK-rrGi66lVIM)  

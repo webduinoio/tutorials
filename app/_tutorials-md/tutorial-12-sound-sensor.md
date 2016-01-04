@@ -129,11 +129,11 @@ JavaScript 使用 on 這個方法來偵測，當第一個參數是 `detected` �
 	  });
 	});
 
-以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。  
+以上就是利用聲音偵測傳感器，來偵測有無聲音變化並且點亮 LED 燈。  
 完整程式碼：[http://bin.webduino.io/baka/edit?html,js,output](http://bin.webduino.io/baka/edit?html,js,output)  
 解答：[http://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS](http://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS)
 
-## 超音波傳感器的延伸教學：
+## 聲音偵測傳感器的延伸教學：
 
 [Webduino Blockly 課程 7-1：偵測聲音](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/sound-1#-JvxeaQ60xcOYLuXKCke)
 

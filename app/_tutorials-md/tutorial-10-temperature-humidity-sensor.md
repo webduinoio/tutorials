@@ -114,7 +114,7 @@ JavaScript 用了一個 `read` 的方法來讀取溫濕度，`read` 的第一個
 完整程式碼：[http://bin.webduino.io/xaxe/edit?html,js,output](http://bin.webduino.io/xaxe/edit?html,js,output)  
 解答：[http://blockly.webduino.io/#-K79kCuHvGneUStvVcye](http://blockly.webduino.io/#-K79kCuHvGneUStvVcye)
 
-## 超音波傳感器的延伸教學：
+## 溫濕度傳感器的延伸教學：
 
 [Webduino Blockly 課程 5-2：繪製溫濕度圖表](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N)  
 [Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4)
