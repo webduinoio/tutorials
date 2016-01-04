@@ -11,7 +11,7 @@ date: 20150604
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 15：人體紅外線偵測控制 LED :::: Webduino = Web × Arduino</title>
+<title>教學範例 15：人體紅外線偵測控制 LED :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
 
@@ -19,7 +19,7 @@ date: 20150604
 
 <meta property="og:description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
 
-<meta property="og:title" content="範例教學 15：人體紅外線偵測控制 LED" >
+<meta property="og:title" content="教學範例 15：人體紅外線偵測控制 LED" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-15-pir-led.html">
 
@@ -33,99 +33,103 @@ date: 20150604
 
 <!-- @@block  =  tutorials-->
 
-#範例教學 15：人體紅外線偵測控制 LED
+# 教學範例 15：人體紅外線偵測控制 LED
 
 人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。
 
-##範例影片展示
+## 範例影片展示
 
-<iframe class="youtube" src="https://www.youtube.com/embed/3z5tNTgeVxc" frameborder="0" allowfullscreen></iframe>
+影片對應範例：[http://blockly.webduino.io/?page=tutorials/pir-2](http://blockly.webduino.io/?page=tutorials/pir-2) 
 
-##接線與實作
+<iframe class="youtube" src="https://www.youtube.com/embed/3873nza-ywo" frameborder="0" allowfullscreen></iframe>
 
-- ###1. 接上人體紅外線傳感器與 LED
+## 接線與實作
 
-	我們將人體紅外線偵測傳感器的 VCC 接在 Webduino 開發板 VCC 的位置，注意不要接在 3.3V 的腳位，避免電壓不足 ( VCC 腳位提供 5V 電壓，3.3V 腳位提供 3.3V 電壓 )，GND 接在 GND 的位置，訊號源接在 10 號腳位，LED 燈與人體紅外線偵測傳感器共用 GND，長腳則接在 9 的位置。
+我們將人體紅外線偵測傳感器的 VCC 接在 Webduino 開發板 VCC 的位置，GND 接在 GND 的位置，訊號源接在 11 號腳位，LED 燈與人體紅外線偵測傳感器共用 GND，長腳則接在 10 的位置，人體紅外線偵測傳感器上頭有兩顆旋鈕，SX 是靈敏度，TX 是偵測到訊號後延遲的時間，可用十字螺絲起子或用手指進行調整。
 
-	<br/>
+![](../img/tutorials/tutorial-15-02.jpg)
 
-	![](../img/tutorials/tutorial-15-02.jpg)
+實際接線照片：
 
-- ###2. 完成後的實際長相
+![](../img/tutorials/tutorial-15-03.jpg)
 
-	![](../img/tutorials/tutorial-15-03.jpg)
+![](../img/tutorials/tutorial-15-04.jpg)
 
-	LED 和傳感器共用 GND ( 共地 )。
+![](../img/tutorials/tutorial-15-05.jpg)
 
-	![](../img/tutorials/tutorial-15-04.jpg)
+![](../img/tutorials/tutorial-15-06.jpg)
 
-	![](../img/tutorials/tutorial-15-05.jpg)
+## Webduino Blockly 操作解析
 
-	人體紅外線偵測傳感器上頭有兩顆旋鈕，SX 是靈敏度，TX 是偵測到訊號後延遲的時間，可用十字螺絲起子進行調整。
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」來跟 LED 燈互相搭配，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」。
 
-	![](../img/tutorials/tutorial-15-06.jpg)
+![](../img/tutorials/tutorial-15-07.jpg)
 
-	![](../img/tutorials/tutorial-15-07.jpg)
+把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入人體紅外線偵測積木，名稱設定為 pir，腳位設定為 11，LED 的積木名稱設定為 led，腳位設定 10。
 
+![](../img/tutorials/tutorial-15-08.jpg)
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/pir-led/index.html)、[jsbin 範例](http://bin.webduino.io/poti/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+接著放入「有」偵測到人體紅外線的積木，裡面放入點亮 LED 和燈泡的積木，反之「沒有」偵測到人體紅外線的積木，就是熄滅 LED 燈和燈泡圖案。
 
-在 head 的地方引入相關的 WebComponents，主要是要引入人體紅外線偵測的 WebComponent：`wa-pir.html`。
+![](../img/tutorials/tutorial-15-09.jpg)
 
-	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html' />
-	<link rel='import' href='https://webduino.io/components/webduino/wa-pir.html' />
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用遮蔽物遮住人體紅外線傳感器，把遮蔽物移開並用手在傳感器前面晃呀晃，就可以看到 LED 燈和燈泡圖片被點亮。
 
-body 放入 Webduino 開發板，裡頭放入繼電器和 LED 燈，當然還有網頁圖片。
+## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/poti/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
-	<div id='light' class="off">
-	  <img src='http://i.imgur.com/T5H4MHE.png'></img>
-	  <img src='http://i.imgur.com/8qFj2Ou.png'></img>
+HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
+
+	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
+	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+
+接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。
+
+	<div id="demo-area-02-light" class="off">
+	  <img src="http://blockly.webduino.io/media/off.png" id="demo-area-02-off">
+	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
-	<web-arduino id="board" device='你的 device 名稱'>
-	  <wa-pir id='pir' pin='10'></wa-pir>
-	  <wa-led id='led' pin='9'></wa-led>
-	</web-arduino>
 
-再來寫寫 CSS ，作用是來控制電燈明暗，電燈亮表示有偵測到人體紅外線。
+控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 display:none; 來達到相關效果，下面是 CSS 的程式碼。
 
-	#light img{
-	  width:100%;
+	#demo-area-02-light img{
+	  height:200px;
 	  display:none;
 	}
-	#light.off img:first-child{
+	#demo-area-02-light.on #demo-area-02-on{
 	  display:inline-block;
 	}
-	#light.on img:last-child{
+	#demo-area-02-light.off #demo-area-02-off{
 	  display:inline-block;
 	}
 
-javascript 主要用到兩個人體紅外線偵測的 API：`detected`、`ended`，分別表示偵測到紅外線以及結束偵測，內容放上對應的事件即可。
+JavaScript 主要用到兩個人體紅外線偵測的 API：`detected`、`ended`，分別表示偵測到紅外線以及結束偵測，內容放上對應的事件即可。
 
-	window.addEventListener('WebComponentsReady', function () {
-	  var board = document.getElementById('board'),
-	      light = document.getElementById('light');
-	  
-	  board.on('ready',function ready() {
-	    var pir = document.getElementById('pir'),
-	      led = document.getElementById('led'),
-	      light = document.getElementById('light');
+	var pir;
+	var led;
 
-	      pir.on('detected', function () {
-	        led.on();
-	        light.className = "on";
-	      });
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  pir = getPir(board, 11);
+	  led = getLed(board, 10);
+	  pir.on("detected",function(){
+	    led.on();
+	    document.getElementById("demo-area-02-light").className = "on";
 
-	      pir.on('ended', function () {
-	        led.off();
-	        light.className = "off";
-	      });
 	  });
-	   
-	}, false);
+	  pir.on("ended",function(){
+	    led.off();
+	    document.getElementById("demo-area-02-light").className = "off";
 
-如果還有不清楚的，不妨利用這個 [快速體驗](http://webduinoio.github.io/samples/content/pir-led/index.html)，輸入 device 號碼，就可以偵測人體紅外線讓 LED 燈發光囉！
+	  });
+	});
+
+以上就是利用人體紅外線偵測傳感器，來偵測有無人體紅外線變化並且點亮 LED 燈。   
+完整程式碼：[http://bin.webduino.io/poti/edit?html,js,output](http://bin.webduino.io/poti/edit?html,js,output)  
+解答：[http://blockly.webduino.io/#-K7AzpcgHb2gua5SK_N8](http://blockly.webduino.io/#-K7AzpcgHb2gua5SK_N8)
+
+## 人體紅外線偵測傳感器的延伸教學：
+
+[Webduino Blockly 課程 6-1：偵測人體紅外線](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/pir-1#-JvxRwAXj4ccyigeuI8o)  
 
 
 <!-- @@close-->
