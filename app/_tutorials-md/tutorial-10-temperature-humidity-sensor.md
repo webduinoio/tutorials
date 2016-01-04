@@ -34,65 +34,89 @@ date: 20150601
 
 
 <!-- @@block  =  tutorials-->
-#範例教學 10：溫濕度傳感器
+# 範例教學 10：溫濕度傳感器
 
 溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。
 
-( 溫濕度傳感器並不適合「[基礎教育版的開發板](../buy/component-webduino-o.html)」，必須使用「[馬克一號開發板](../buy/component-webduino-v1.html) 」進行實作 )
+## 範例影片展示
 
-##範例影片展示
+影片對應範例：[http://blockly.webduino.io/?page=tutorials/dht-1](http://blockly.webduino.io/?page=tutorials/dht-1) 
 
-<iframe class="youtube" src="https://www.youtube.com/embed/k4uvbTb8ih8" frameborder="0" allowfullscreen></iframe>
+<iframe class="youtube" src="https://www.youtube.com/embed/T8sZL-UaUP0" frameborder="0" allowfullscreen></iframe>
 
-##接線與實作
+## 接線與實作
 
-- ###1. 接上溫濕度傳感器
+溫濕度傳感器有四隻針腳，第一隻針腳為 v ( 接 3.3V )，第二隻為 data ( 接 10 )，第三隻沒有作用，為 N/C，第四隻為 GND。
 
-	溫濕度傳感器有四隻針腳，第一隻針腳為 v ( 接 3.3V )，第二隻為 data ( 接 10 )，第三隻沒有作用，為 N/C，第四隻為 GND，利用麵包板進行接線。
+![](../img/tutorials/tutorial-10-02.jpg)
 
-	![](../img/tutorials/tutorial-10-02.jpg)
+可以直接將溫濕度傳感器接在馬克 1 號上，或利用麵包板接線出來。
 
-- ###2. 完成後的實際長相
+![](../img/tutorials/tutorial-10-03.jpg)
 
-	![](../img/tutorials/tutorial-10-03.jpg)
+實際接線照片：
 
-	![](../img/tutorials/tutorial-10-04.jpg)
+![](../img/tutorials/tutorial-10-04.jpg)
 
-	![](../img/tutorials/tutorial-10-05.jpg)
+## Webduino Blockly 操作解析
 
-##範例解析 ([快速體驗](http://webduinoio.github.io/samples/content/dht/index.html)、[jsbin 範例](http://bin.webduino.io/xaxe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
-在 head 的地方先引入相關的 js 以及 WebComponent，溫濕度傳感器的 WebComponent 為：`wa-dht.html`。
+![](../img/tutorials/tutorial-10-05.jpg)
 
-	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html' />
-	<link rel='import' href='https://webduino.io/components/webduino/wa-dht.html' />
+把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入溫濕度積木，名稱設定為 dht，腳位設定為 11，接著放入每多久偵測一次溫濕度的積木，時間設定為 1000 毫秒 ( 1 秒 )。
 
-接著在 body 區域裡頭放入一個 id 為 show 的 div 負責顯示溫濕度傳感器的數值，然後也是要放上 board 和溫濕度傳感器的 HTML 程式碼，而溫濕度傳感器的 pin 設定為 10。
+![](../img/tutorials/tutorial-10-06.jpg)
 
-	<div id="show"></div>
+因為顯示文字只有一個，要同時顯示溫濕度的話就要使用「建立字串」的積木，建立字串積木預設只有一個缺口，我們可以點選藍色小齒輪，增加缺口的數量。
 
-	<web-arduino id='board' device="你的 device 名稱">
-		<wa-dht id='dht' pin='10'></wa-dht>
-	</web-arduino>
+![](../img/tutorials/tutorial-10-07.jpg)
 
-寫完 HTML 之後就是要來寫 javascript，這邊我們先使用`read`這個 API，這個 API 和`setTimeout`很像，後面會接一個時間的數值，數值為 1000 代表 1 秒，也就是每秒會接收一次數值，接著再用 innerHTML 的方式，把接收到的數值顯示在 show 裡頭，這邊也有用到另外兩個 API，分別是`temperature`和`humidity`，`temperature`回傳的是溫度 ( 攝氏 )，`humidity`回傳的是溼度 ( 百分比 )。  
+口了缺口後，在缺口內填入對應的文字以及偵測到的溫濕度。
 
-	window.addEventListener('WebComponentsReady', function () {
-	  var board = document.getElementById('board');
-	  
-	  board.on('ready',function ready() {
-	    var dht = document.getElementById('dht'),
-	      show = document.getElementById('show');
+![](../img/tutorials/tutorial-10-08.jpg)
 
-	    dht.read(function (evt) {
-	      show.innerHTML = new Date().toLocaleString() + "<br>溫度:" + evt.temperature + " ℃<br> 溼度:" + evt.humidity + " %";
-	    }, 1000);
-	    
-	    }, false);
-	    
-	}, false);
+如果顯示出來的文字太大，或者行高太窄，我們也可以利用文字樣式的積木來調整，這裏將文字和行高都設為 20。
 
-如果還有不清楚的，不妨利用這個 [快速體驗](http://webduinoio.github.io/samples/content/dht/index.html) 範例，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 Complete， 就會看到溫濕度的數值囉！有了這些數值之後，其實可以再加上一些變換，例如增加幾個 div 與 CSS，就可以做出有趣的長條圖，不會只有純粹的數字顯示，也會更有特色。
+![](../img/tutorials/tutorial-10-09.jpg)
+
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到當下的溫濕度，如果用吹風機或嘴呼氣，就會看到溫濕度的變化了。
+
+![](../img/tutorials/tutorial-10-10.jpg)
+
+
+## 範例解析 ( [jsbin 範例](http://bin.webduino.io/xaxe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+
+HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
+
+	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
+	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+
+HTML 裡頭有一個 span，負責顯示文字。
+
+	<span id="demo-area-01-show">123</span>
+
+JavaScript 用了一個 `read` 的方法來讀取溫濕度，`read` 的第一個參數是做動作的函式，第二個參數是時間，可以看到這裡時間設定為 1000 ( 毫秒 )，然後顯示文字使用了 innerHTML 來呈現，字體大小與行高則是用 `style` 來修改。  
+
+	var dht;
+
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  dht = getDht(board, 11);
+	  document.getElementById("demo-area-01-show").style.fontSize = 20+"px";
+	  document.getElementById("demo-area-01-show").style.lineHeight = 20+"px";
+	  dht.read(function(evt){
+	    document.getElementById("demo-area-01-show").innerHTML = (['溫度：',dht.temperature,'度，','濕度：',dht.humidity,'%'].join(''));
+	  }, 1000);
+	});
+
+以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。  
+完整程式碼：[http://bin.webduino.io/xaxe/edit?html,js,output](http://bin.webduino.io/xaxe/edit?html,js,output)  
+解答：[http://blockly.webduino.io/#-K79kCuHvGneUStvVcye](http://blockly.webduino.io/#-K79kCuHvGneUStvVcye)
+
+## 超音波傳感器的延伸教學：
+
+[Webduino Blockly 課程 5-2：繪製溫濕度圖表](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N)  
+[Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4)
 
 <!-- @@close-->
