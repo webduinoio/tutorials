@@ -1,7 +1,7 @@
 ---
 tag: tutorial
 src: tutorial-09-button-led.html
-title: 利用按鈕控制 LED 燈
+title: 按鈕開關
 banner: tutorial-09-01.jpg
 img: tutorial-09-01s.jpg
 date: 20150425
@@ -11,15 +11,15 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>範例教學 9：利用按鈕控制 LED 燈 :::: Webduino = Web × Arduino</title>
+<title>範例教學 9：按鈕開關 :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="之前的範例提到的都只是控制單一台的 Webduino，這個範例將會展示，如何藉由 Webduino 開發板 ( A 板 ) 的按鈕，去觸發另外一台 Webduino 開發板 ( B 板 ) 的 LED 燈，同時你也可以藉由網頁上的按鈕模擬實際按鈕的動作。">
+<meta name="description" content="開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。">
 
-<meta itemprop="description" content="之前的範例提到的都只是控制單一台的 Webduino，這個範例將會展示，如何藉由 Webduino 開發板 ( A 板 ) 的按鈕，去觸發另外一台 Webduino 開發板 ( B 板 ) 的 LED 燈，同時你也可以藉由網頁上的按鈕模擬實際按鈕的動作。">
+<meta itemprop="description" content="開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。">
 
-<meta property="og:description" content="之前的範例提到的都只是控制單一台的 Webduino，這個範例將會展示，如何藉由 Webduino 開發板 ( A 板 ) 的按鈕，去觸發另外一台 Webduino 開發板 ( B 板 ) 的 LED 燈，同時你也可以藉由網頁上的按鈕模擬實際按鈕的動作。">
+<meta property="og:description" content="開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。">
 
-<meta property="og:title" content="範例教學 9：利用按鈕控制 LED 燈" >
+<meta property="og:title" content="範例教學 9：按鈕開關" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-09-button-led.html">
 
@@ -34,92 +34,89 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-#範例教學 9：利用按鈕控制 LED 燈
+# 範例教學 9：按鈕開關
 
-之前的範例提到的都只是控制單一台的 Webduino，這個範例將會展示，如何藉由 Webduino 開發板 ( A 板 ) 的按鈕，去觸發另外一台 Webduino 開發板 ( B 板 ) 的 LED 燈，同時你也可以藉由網頁上的按鈕模擬實際按鈕的動作。
+開關是日常生活中很常見的電子零件，藉由開和關的訊號，可以控制各種不同的家電，這個範例將會展示，如何藉由獲得按鈕開關的訊號，並且進一步由訊號來控制網頁裡的圖片或 LED 燈的明暗。
 
-##範例影片展示
+## 範例影片展示
 
-<iframe class="youtube" src="https://www.youtube.com/embed/56DFEZ3hVaA" frameborder="0" allowfullscreen></iframe>
+影片對應範例：[http://blockly.webduino.io/?page=tutorials/button-1](http://blockly.webduino.io/?page=tutorials/button-1) 
 
-##接線與實作
+<iframe class="youtube" src="https://www.youtube.com/embed/Y2I42DsAov8" frameborder="0" allowfullscreen></iframe>
 
-- ###1. 接上按鈕與電阻
+## 接線與實作
 
-	按鈕是一個很常見的元件，當我們進行點壓的時候，按鈕上的四隻腳會呈現全部通路的情形，為了避免有短路的發生，所以我們要接一顆電阻進行保護，下圖是利用 webduino 開發板 ( A 板 ) 與麵包板所接出來的按鈕範例，這裏我們會用到腳位 3.3v、11 與 GND。
+按鈕開關是一個很常見的元件，當我們進行點壓的時候，按鈕上的四隻腳會呈現全部通路的情形，為了避免有短路的發生，所以我們要接一顆電阻進行保護，下圖是按鈕開關的原理圖。
 
-	![](../img/tutorials/tutorial-09-02.jpg)
+![](../img/tutorials/tutorial-09-02.jpg)
 
-- ###2. 接上 LED
+按鈕開關的接法剛好利用麵包板中間斷路的設計，將四隻腳兩兩成對橫跨兩邊，如此一來按下開關就會四隻腳通路，然後在接 GND 的一側用電阻連接 ( 這種方式稱作下拉電阻，如果接在正電的一側稱之上拉電組 )
 
-	在另外一塊 webduino 開發板 ( B 板 ) 接上 LED，長腳接在 11，短腳接在 GND。
+![](../img/tutorials/tutorial-09-03.jpg)
 
-	![](../img/tutorials/tutorial-09-03.jpg)
+實際接線照片：
 
-- ###3. 完成後的實際長相
+![](../img/tutorials/tutorial-09-04.jpg)
 
-	![](../img/tutorials/tutorial-09-04.jpg)
+![](../img/tutorials/tutorial-09-05.jpg)
 
-	![](../img/tutorials/tutorial-09-05.jpg)
+## Webduino Blockly 操作解析
 
-##範例解析 ( [jsbin 範例](http://bin.webduino.io/helo/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來根據開關的狀態，顯示不同的文字，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
-一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到按鈕和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：`wa-ultrasonic`、`wa-rgbled`。
+![](../img/tutorials/tutorial-09-06.jpg)
 
-	<script src="https://webduino.io/components/webcomponentsjs/webcomponents.js"></script>
-	<link rel='import' href='https://webduino.io/components/webduino/web-arduino.html'></link>
-	<link rel='import' href='https://webduino.io/components/webduino/wa-button.html'></link>
-	<link rel='import' href='https://webduino.io/components/webduino/wa-led.html'></link>
+把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入按鈕積木，名稱設定為 button，腳位設定為 11，接著放入三個按鈕的動作，分別是按下、放開和長按，並且讓不同的動作會顯示不同的文字。
 
-因為我們有兩塊 webduino 開發板，所以必須要在 HTML 放入兩個 device，然後分別在一個 device 上插入按鈕，另外一個 device 裡頭插入 LED 燈，接著再放入一個網頁的按鈕，要讓這個網頁按鈕跟實體按鈕做一樣的事情。
+![](../img/tutorials/tutorial-09-07.jpg)
 
-	<!-- 放按鈕的 device -->
-	<web-arduino id='board1' device='你的 device 名稱'>
-	 <wa-button id='button' pin='11'></wa-button>
-	</web-arduino>
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕就可以按按看按鈕開關，就會看到顯示文字顯示出對應的文字了。
 
-	<!-- 放 LED 燈的 device -->
-	<web-arduino id='board2' device='你的 device 名稱'>
-	 <wa-led id='led' pin='11'></wa-led>
-	</web-arduino>
+![](../img/tutorials/tutorial-09-08.jpg)
 
-	<button id='btn'>Click Me</button>
 
-最後就是關鍵的 javascript 了，這裏一開始我們用了一個小技巧，就是判斷 board 是否 ready，因為我們接了兩個 webduino 開發板，所以必須要等待每個開發板都 ready 才可以正常運作，每個開發板都是一個 board ( 或 device )，每個 board ready 時數字就會加 1，當數字等於 2 的時候就表示 board ready 完成。
-此外，我們這裡也用到按鈕的 api：`on`，當按鈕點選的時候就會觸發 LED 的 api：`toggle()`，就會呈現點一下亮，點一下暗的效果。
+## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/helo/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
-	window.addEventListener('WebComponentsReady', function() {
-	 var board1 = document.getElementById('board1'),
-	   board2 = document.getElementById('board2'),
-	   boards = 0;
+HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
-	 board1.on('ready', function() {
-	   if (++boards === 2) {
-	     boardsReady();
-	    }
+	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
+	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+
+HTML 裡頭有一個 span，負責顯示文字。
+
+	<span id="demo-area-01-show">123</span>
+
+JavaScript 可以看到 button 具有一個 on 的事件，裡面第一個參數就是按鈕開關的動作，pressed 是按下，released 是放開，longPress 則是長按，第二個參數是回呼函式，把要做什麼事情寫在這邊就可以。
+
+	var button;
+
+	boardReady('', function (board) {
+	  board.samplingInterval = 20;
+	  button = getButton(board, 11);
+	  button.on("pressed",function(){
+	    console.log("pressed");
+	      window.alert('AAA');
 	  });
-
-	 board2.on('ready', function() {
-	   if (++boards === 2) {
-	     boardsReady();
-	    }
+	  button.on("released",function(){
+	    console.log("released");
+	      window.alert('BBB');
 	  });
-	}, false);
-
-	function boardsReady() {
-	 var button = document.getElementById('button'),
-	   led = document.getElementById('led'),
-	   btn = document.getElementById('btn');
-
-	 button.on('pressed', function() {
-	   led.toggle();
+	  button.on("longPress",function(){
+	    console.log("longPress");
+	      window.alert('CCC');
 	  });
+	});
 
-	 btn.addEventListener('click', function() {
-	   led.toggle();
-	 }, false);
-	}
+以上就是利用按鈕開關的按下、放開與長按，來改變網頁裡面的顯示文字。  
+完整程式碼：[http://bin.webduino.io/helo/edit?html,js,output](http://bin.webduino.io/helo/edit?html,js,output)  
+解答：[http://blockly.webduino.io/#-K79XnHbOMzTkCJg0bZ4](http://blockly.webduino.io/#-K79XnHbOMzTkCJg0bZ4)
 
-如果還有不清楚的，可以參考這個 [jsbin 範例](http://bin.webduino.io/helo/edit?html,js,output)，實際在上面填入 device 名稱並且修改體驗相關效果
+## 超音波傳感器的延伸教學：
+
+[Webduino Blockly 課程 4-2：點擊按鈕開關增加數字](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-2#-JvWu7mS_OoeRvE-m6mD)  
+[Webduino Blockly 課程 4-3：點擊按鈕開關改變圖片位置](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-3#-JvWuaeLK-rrGi66lVIM)  
+[Webduino Blockly 課程 4-4：點擊按鈕開關玩賽跑小遊戲](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-4#-JvY90I0qUoJR2yi34lj)  
+[Webduino Blockly 課程 4-4：點擊按鈕開關玩賽跑小遊戲](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-4#-JvY90I0qUoJR2yi34lj) 
+[Webduino Blockly 課程 4-5：點擊按鈕開關控制 Youtube](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-5#-JxJpqetsCxULbi4Iier) 
 
 <!-- @@close-->
