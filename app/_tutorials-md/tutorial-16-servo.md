@@ -71,9 +71,9 @@ date: 20150625
 
 ![](../img/tutorials/tutorial-16-08.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用滑鼠拖動拉霸滑桿，就會看到伺服馬達的旋轉角度跟著變化。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用滑鼠拖動拉霸滑桿，就會看到伺服馬達的旋轉角度跟著變化。( 解答：[http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk](http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk )
 
-##範例解析 ( [jsbin 範例](http://bin.webduino.io/luhe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+##範例解析 ( [完整程式碼](http://bin.webduino.io/xisa/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -104,7 +104,7 @@ JavaScript 利用`oninput`把拉霸改變的的數值 value 輸入給n伺服馬�
 	});
 
 以上就是利用網頁拉霸滑桿，來控制伺服馬達的旋轉角度。   
-完整程式碼：[http://bin.webduino.io/luhe/edit?html,js,output](http://bin.webduino.io/luhe/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/xisa/edit?html,css,js,output](http://bin.webduino.io/xisa/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk](http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk)
 
 ## 人體紅外線偵測傳感器的延伸教學：

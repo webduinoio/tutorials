@@ -81,11 +81,12 @@ date: 20150601
 ![](../img/tutorials/tutorial-10-09.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到當下的溫濕度，如果用吹風機或嘴呼氣，就會看到溫濕度的變化了。
+( 解答：[http://blockly.webduino.io/#-K79kCuHvGneUStvVcye](http://blockly.webduino.io/#-K79kCuHvGneUStvVcye) )
 
 ![](../img/tutorials/tutorial-10-10.jpg)
 
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/xaxe/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/coca/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -111,7 +112,7 @@ JavaScript 用了一個 `read` 的方法來讀取溫濕度，`read` 的第一個
 	});
 
 以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。  
-完整程式碼：[http://bin.webduino.io/xaxe/edit?html,js,output](http://bin.webduino.io/xaxe/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/coca/edit?html,css,js,output](http://bin.webduino.io/coca/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K79kCuHvGneUStvVcye](http://blockly.webduino.io/#-K79kCuHvGneUStvVcye)
 
 ## 溫濕度傳感器的延伸教學：

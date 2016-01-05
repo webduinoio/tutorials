@@ -72,12 +72,13 @@ date: 20150425
 
 ![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-07.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以利用顏色選取工具，來改變三色 LED 燈的顏色了。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以利用顏色選取工具，來改變三色 LED 燈的顏色了。 
+( 解答：[http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn](http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn) )
 
 ![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-08.jpg)
 
 
-## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/zubu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/xajar/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -104,7 +105,7 @@ JavaScript 在這裏就是把選取顏色當下的色彩數值，傳給區域背
 	});
 
 以上就是利用顏色工具，由三色 LED 以及網頁區域，呈現不同顏色的範例。  
-完整程式碼：[http://bin.webduino.io/zubu/edit?html,css,js,output](http://bin.webduino.io/zubu/edit?html,css,js,output)  
+完整程式碼：[http://bin.webduino.io/xajar/edit?html,css,js,output](http://bin.webduino.io/xajar/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn](http://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn)
 
 ## 三色 LED 的延伸教學：

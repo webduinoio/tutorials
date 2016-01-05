@@ -75,7 +75,7 @@ date: 20150425
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到 LED 燈被點亮了。
 ( 解答：[http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj](http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj) )
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/titu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/nofi/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -127,7 +127,7 @@ JavaScript 主要在 `ping` 的函示內，寫入 `if` 和 `else` 的判斷，�
 	});
 
 以上就是利用超音波傳感器，偵測距離當在某距離範圍內時，LED 燈會亮起。  
-完整程式碼：[http://bin.webduino.io/titu/edit?html,css,js,output](http://bin.webduino.io/titu/edit?html,css,js,output)  
+完整程式碼：[http://bin.webduino.io/nofi/edit?html,css,js,output](http://bin.webduino.io/nofi/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj](http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj)
 
 ## 超音波傳感器的延伸教學：

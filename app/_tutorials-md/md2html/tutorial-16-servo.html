@@ -46,8 +46,8 @@ img: tutorial-16-01s.jpg</p>
 <p><img src="../img/tutorials/tutorial-16-07.jpg" alt=""></p>
 <p>接著放入「拉霸設定」的積木，裡面可以設定最小值、最大值、每次拖拉的間距以及預設值，因為伺服馬達最多不會超過 180 度，所以最大值和最小值就用 0 到 180 度，設定完成後就放入「顯示數值」以及「伺服馬達旋轉角度」的積木。</p>
 <p><img src="../img/tutorials/tutorial-16-08.jpg" alt=""></p>
-<p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，用滑鼠拖動拉霸滑桿，就會看到伺服馬達的旋轉角度跟著變化。</p>
-<h2>範例解析 ( <a href="http://bin.webduino.io/luhe/edit?html,js,output">jsbin 範例</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
+<p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，用滑鼠拖動拉霸滑桿，就會看到伺服馬達的旋轉角度跟著變化。( 解答：<a href="http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk">http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk</a></p>
+<h2>範例解析 ( <a href="http://bin.webduino.io/xisa/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
@@ -70,7 +70,7 @@ boardReady(&#39;&#39;, function (board) {
     servo.angle = _value;
   };
 });
-</code></pre><p>以上就是利用網頁拉霸滑桿，來控制伺服馬達的旋轉角度。<br>完整程式碼：<a href="http://bin.webduino.io/luhe/edit?html,js,output">http://bin.webduino.io/luhe/edit?html,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk">http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk</a></p>
+</code></pre><p>以上就是利用網頁拉霸滑桿，來控制伺服馬達的旋轉角度。<br>完整程式碼：<a href="http://bin.webduino.io/xisa/edit?html,css,js,output">http://bin.webduino.io/xisa/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk">http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk</a></p>
 <h2>人體紅外線偵測傳感器的延伸教學：</h2>
 <p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/servo-2#-Jw01xYLefgu_1IvUaVM">Webduino Blockly 課程 8-2：使用按鈕開關控制伺服馬達</a>  </p>
 <!-- @@close-->

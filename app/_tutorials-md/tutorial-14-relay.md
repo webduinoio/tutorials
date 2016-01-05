@@ -85,9 +85,9 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-14-12.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用網頁上的燈泡作為繼電器的開關，控制風扇的運轉了。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用網頁上的燈泡作為繼電器的開關，控制風扇的運轉了。( 解答：[http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW](http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW) )
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/qab/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/tecig/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -133,7 +133,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	});
 
 以上就是利用網頁的燈泡圖片，來控制繼電器的開關，進一步控制電器。  
-完整程式碼：[http://bin.webduino.io/qab/edit?html,js,output](http://bin.webduino.io/qab/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/tecig/edit?html,css,js,output](http://bin.webduino.io/tecig/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW](http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW)
 
 ## 繼電器的延伸教學：

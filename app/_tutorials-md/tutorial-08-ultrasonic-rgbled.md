@@ -85,7 +85,7 @@ date: 20150425
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到在不同的距離，三色 LED 燈出現不同的顏色。
 ( 解答：[http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ](http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ) )
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/kud/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/coqub/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -132,7 +132,7 @@ JavaScript 用了許多的 `if`、`elseif` 和 `else`，「且」這個積木在
 	});
 
 以上就是利用超音波傳感器，偵測並用距離來同時改變三色 LED 燈以及網頁區域的顏色。  
-完整程式碼：[http://bin.webduino.io/kud/edit?html,css,js,output](http://bin.webduino.io/kud/edit?html,css,js,output)  
+完整程式碼：[http://bin.webduino.io/coqub/edit?html,css,js,output](http://bin.webduino.io/coqub/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ](http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ)
 
 ## 超音波傳感器的延伸教學：

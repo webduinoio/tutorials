@@ -102,7 +102,7 @@
 <p>最後就是把點選哪個按鈕會出現哪種顏色的行為設定好，如果設定「黑色」，三色 LED 燈就會沒有顏色 ( 也就是關起來的意思 )</p>
 <p><img src="../img/tutorials/tutorial-03-08.jpg" alt="教學範例 3：控制三色 LED"></p>
 <p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕後，選網頁裡不同的按鈕，就會看到三色 LED 出現不同的顏色。，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！<br>( 解答：<a href="http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT">http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT</a> )</p>
-<h2>程式碼解析 ( <a href="http://bin.webduino.io/ber/edit?html,js,output">看完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
+<h2>程式碼解析 ( <a href="http://bin.webduino.io/rugu/edit?html,css,js,output">看完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
@@ -134,7 +134,7 @@ boardReady(&#39;&#39;, function (board) {
     rgbled.setColor(&#39;#000000&#39;);
   });
 });
-</code></pre><p>以上就是點選不同的按鈕，由三色 LED 呈現不同顏色的範例。<br>完整程式碼：<a href="http://bin.webduino.io/ber/edit?html,js,output">http://bin.webduino.io/ber/edit?html,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT">http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT</a></p>
+</code></pre><p>以上就是點選不同的按鈕，由三色 LED 呈現不同顏色的範例。<br>完整程式碼：<a href="http://bin.webduino.io/rugu/edit?html,css,js,output">http://bin.webduino.io/rugu/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT">http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT</a></p>
 <h2>三色 LED 的延伸教學：</h2>
 <p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rgbled-1#-JvMrEKwwqW2P607oFz2">Webduino Blockly 課程 2-1：三色 LED 燈</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rgbled-2#-JvMroBFx1XYaMemJmOm">Webduino Blockly 課程 2-2：三色 LED 燈切換顏色</a></p>
 

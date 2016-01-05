@@ -89,9 +89,9 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-13-12.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，分別按下不同按鈕，就會聽到蜂鳴器播放出不同的音樂。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，分別按下不同按鈕，就會聽到蜂鳴器播放出不同的音樂。( 解答：[http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs) )
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/beze/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/zolor/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -159,7 +159,7 @@ JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，�
 	});
 
 以上就是利用蜂鳴器和網頁的按鈕，來製作與播放音樂。  
-完整程式碼：[http://bin.webduino.io/beze/edit?html,js,output](http://bin.webduino.io/beze/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/zolor/edit?html,css,js,output](http://bin.webduino.io/zolor/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs)
 
 ## 蜂鳴器的延伸教學：

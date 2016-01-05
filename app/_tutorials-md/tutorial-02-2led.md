@@ -91,7 +91,7 @@ date: 20150425
 ( 解答：[http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW) )
 
 
-## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/nodi/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/harol/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -167,7 +167,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	});
 
 以上就是點選圖片控制兩顆 LED 燈交互閃爍的範例。  
-完整程式碼：[http://bin.webduino.io/nodi/edit?html,js,output](http://bin.webduino.io/nodi/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/harol/edit?html,css,js,output](http://bin.webduino.io/harol/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW)
 
 ## 兩顆 LED 的延伸教學：

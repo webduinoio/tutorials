@@ -76,13 +76,13 @@ date: 20150602
 
 ![](../img/tutorials/tutorial-11-10.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，輕觸震動開關，就會看到數字往上開始累加上去了。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，輕觸震動開關，就會看到數字往上開始累加上去了。( 解答：[http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz) )
 
 ![](../img/tutorials/tutorial-11-11.jpg)
 
 
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/semi/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/suyam/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -112,7 +112,7 @@ JavaScript 和按鈕開關類似，都是使用 `on` 的方法，只是裡面如
 	});
 
 以上就是利用震動開關，來增加數值並顯示在網頁上。  
-完整程式碼：[http://bin.webduino.io/semi/edit?html,js,output](http://bin.webduino.io/semi/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/suyam/edit?html,css,js,output](http://bin.webduino.io/suyam/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz)
 
 ## 震動開關的延伸教學：

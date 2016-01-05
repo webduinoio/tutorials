@@ -78,11 +78,11 @@ date: 20150425
 
 ![教學範例 5：控制超音波傳感器](../img/tutorials/tutorial-05-08.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到右側的網頁開始有數值的變化。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到右側的網頁文字變成距離數值而且會變色了。
 ( 解答：[http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem](http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem) )
 
 
-## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/pewuj/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/sane/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -132,7 +132,7 @@ JavaScript 的部分使用了 `ping` 這個超音波傳感器的偵測方法，�
 	});
 
 以上就是利用超音波傳感器，偵測並顯示距離的範例。  
-完整程式碼：[http://bin.webduino.io/pewuj/edit?html,css,js,output](http://bin.webduino.io/pewuj/edit?html,css,js,output)  
+完整程式碼：[http://bin.webduino.io/sane/edit?html,css,js,output](http://bin.webduino.io/sane/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem](http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem)
 
 ## 超音波傳感器的延伸教學：

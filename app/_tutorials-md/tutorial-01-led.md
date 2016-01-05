@@ -93,7 +93,7 @@ date: 20150425
 
 
 
-## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/duso/edit?html,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/tetig/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 一開始先在 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -159,7 +159,7 @@ date: 20150425
 	});
 
 以上就是點選圖片控制 LED 燈的基本範例。  
-完整程式碼：[http://bin.webduino.io/duso/edit?html,output](http://bin.webduino.io/duso/edit?html,output)  
+完整程式碼：[http://bin.webduino.io/tetig/edit?html,css,js,output](http://bin.webduino.io/tetig/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](http://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7)
 
 ## LED 的延伸教學：

@@ -81,7 +81,7 @@ date: 20150425
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕後，選網頁裡不同的按鈕，就會看到三色 LED 出現不同的顏色。，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！  
 ( 解答：[http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT) )
 
-## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/ber/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/rugu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -121,7 +121,7 @@ HTML 的 body 裡頭有五個按鈕，名字就是按鈕 1 到 5，各自都有�
 	});
 
 以上就是點選不同的按鈕，由三色 LED 呈現不同顏色的範例。  
-完整程式碼：[http://bin.webduino.io/ber/edit?html,js,output](http://bin.webduino.io/ber/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/rugu/edit?html,css,js,output](http://bin.webduino.io/rugu/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT)
 
 ## 三色 LED 的延伸教學：

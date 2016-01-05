@@ -73,9 +73,9 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-15-09.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用遮蔽物遮住人體紅外線傳感器，把遮蔽物移開並用手在傳感器前面晃呀晃，就可以看到 LED 燈和燈泡圖片被點亮。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用遮蔽物遮住人體紅外線傳感器，把遮蔽物移開並用手在傳感器前面晃呀晃，就可以看到 LED 燈和燈泡圖片被點亮。( 解答：[http://blockly.webduino.io/#-K7AzpcgHb2gua5SK_N8](http://blockly.webduino.io/#-K7AzpcgHb2gua5SK_N8 )
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/poti/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/labu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -124,7 +124,7 @@ JavaScript 主要用到兩個人體紅外線偵測的 API：`detected`、`ended`
 	});
 
 以上就是利用人體紅外線偵測傳感器，來偵測有無人體紅外線變化並且點亮 LED 燈。   
-完整程式碼：[http://bin.webduino.io/poti/edit?html,js,output](http://bin.webduino.io/poti/edit?html,js,output)  
+完整程式碼：[http://bin.webduino.io/labu/edit?html,css,js,output](http://bin.webduino.io/labu/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7AzpcgHb2gua5SK_N8](http://blockly.webduino.io/#-K7AzpcgHb2gua5SK_N8)
 
 ## 人體紅外線偵測傳感器的延伸教學：

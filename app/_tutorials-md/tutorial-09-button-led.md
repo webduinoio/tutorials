@@ -71,11 +71,12 @@ date: 20150425
 ![](../img/tutorials/tutorial-09-07.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕就可以按按看按鈕開關，就會看到顯示文字顯示出對應的文字了。
+( 解答：[http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t](http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t) )
 
 ![](../img/tutorials/tutorial-09-08.jpg)
 
 
-## 程式碼解析 ( [jsbin 範例](http://bin.webduino.io/helo/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/vaku/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -108,8 +109,8 @@ JavaScript 可以看到 button 具有一個 on 的事件，裡面第一個參數
 	});
 
 以上就是利用按鈕開關的按下、放開與長按，來改變網頁裡面的顯示文字。  
-完整程式碼：[http://bin.webduino.io/helo/edit?html,js,output](http://bin.webduino.io/helo/edit?html,js,output)  
-解答：[http://blockly.webduino.io/#-K79XnHbOMzTkCJg0bZ4](http://blockly.webduino.io/#-K79XnHbOMzTkCJg0bZ4)
+完整程式碼：[http://bin.webduino.io/vaku/edit?html,css,js,output](http://bin.webduino.io/vaku/edit?html,css,js,output)  
+解答：[http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t](http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t)
 
 ## 按鈕開關的延伸教學：
 
