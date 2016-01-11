@@ -133,8 +133,12 @@ $(function() {
   			_gaTrack('show note','show',file);
   		}
 			$('.note-close-btn').on('click',function(){
-  			_gaTrack('show note','close',file);
-				$('.others, .note-chicken').addClass('note-close');
+	  		if($('.others, .note-chicken').hasClass('note-close')){
+
+	  		}else{
+	  			_gaTrack('show note','close',file);
+					$('.others, .note-chicken').addClass('note-close');
+				}
 			});
   	}
   }
