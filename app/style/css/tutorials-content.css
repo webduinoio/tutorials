@@ -254,6 +254,190 @@ header.path-1 {
 .tutorials-content .arrow:hover {
   opacity: .3;
 }
+.tutorials-content .others {
+  position: fixed;
+  padding: 10px 20px;
+  width: 0px;
+  height: 0px;
+  background: #fffadd;
+  border-radius: 3px;
+  box-shadow: rgba(50, 40, 30, 0.5) 2px 2px 25px;
+  bottom: -300px;
+  right: 15px;
+  z-index: 99;
+  opacity: 0;
+}
+.tutorials-content .others > i {
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 20px;
+  top: 10px;
+  right: 10px;
+  color: #666;
+  border: 3px solid #666;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  z-index: 2;
+}
+.tutorials-content .others > i:hover {
+  color: #000;
+  border: 3px solid #000;
+}
+.tutorials-content .others a {
+  color: #f60;
+}
+.tutorials-content .others a i {
+  font-size: 14px;
+}
+.tutorials-content .others .others-link-div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tutorials-content .others h5 {
+  margin: 10px 0;
+}
+.tutorials-content .others .others-link {
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.tutorials-content .others .others-link:last-child {
+  margin-bottom: 0;
+}
+.tutorials-content .others.note-open {
+  -webkit-animation: shownote 0.5s 0.8s ease-in-out;
+  -moz-animation: shownote 0.5s 0.8s ease-in-out;
+  animation: shownote 0.5s 0.8s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.tutorials-content .others.note-open.note-close {
+  -webkit-animation: closenote 0.5s ease-in-out;
+  -moz-animation: closenote 0.5s ease-in-out;
+  animation: closenote 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.tutorials-content .note-chicken {
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  background-image: url(../../../img/layout/layout-sprite.png);
+  background-position: -60px -220px;
+  width: 40px;
+  height: 45px;
+  z-index: 100;
+}
+.tutorials-content .note-chicken.note-open {
+  -webkit-animation: shownote-chicken 1s ease-in-out;
+  -moz-animation: shownote-chicken 1s ease-in-out;
+  animation: shownote-chicken 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.tutorials-content .note-chicken.note-open.note-close {
+  bottom: 0px;
+  -webkit-animation: closenote-chicken 0.5s 0.2s ease-in-out;
+  -moz-animation: closenote-chicken 0.5s 0.2s ease-in-out;
+  animation: closenote-chicken 0.5s 0.2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes closenote {
+  0% {
+    bottom: 15px;
+    width: 450px;
+    height: 210px;
+    opacity: 1;
+  }
+  80% {
+    bottom: 15px;
+    width: 460px;
+    height: 220px;
+    opacity: 1;
+  }
+  99.9% {
+    bottom: 15px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: -300px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes closenote-chicken {
+  0% {
+    bottom: 0px;
+  }
+  80% {
+    bottom: 5px;
+  }
+  100% {
+    bottom: -50px;
+  }
+}
+@-webkit-keyframes shownote {
+  0% {
+    bottom: 15px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  60% {
+    bottom: 15px;
+    width: 455px;
+    height: 215px;
+    opacity: 1;
+  }
+  80% {
+    bottom: 15px;
+    width: 445px;
+    height: 205px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 15px;
+    width: 450px;
+    height: 210px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shownote-chicken {
+  0% {
+    bottom: -50px;
+  }
+  30% {
+    bottom: -25px;
+  }
+  70% {
+    bottom: -25px;
+  }
+  80% {
+    bottom: 5px;
+  }
+  90% {
+    bottom: -5px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
 @-webkit-keyframes prei {
   0%,
   100% {

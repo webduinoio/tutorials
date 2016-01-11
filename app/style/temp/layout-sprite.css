@@ -45,3 +45,9 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 165px;
   height: 111px;
 }
+.icon-note-chicken {
+  background-image: url(../../../layout/layout-sprite.png);
+  background-position: -60px -220px;
+  width: 40px;
+  height: 45px;
+}
