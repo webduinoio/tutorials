@@ -256,10 +256,10 @@ header.path-1 {
 }
 .tutorials-content .others {
   position: fixed;
-  padding: 10px 20px;
+  padding: 0;
   width: 0px;
   height: 0px;
-  background: #fffadd;
+  background: #fff;
   border-radius: 3px;
   box-shadow: rgba(50, 40, 30, 0.5) 2px 2px 25px;
   bottom: -300px;
@@ -270,15 +270,15 @@ header.path-1 {
 .tutorials-content .others > i {
   position: absolute;
   display: block;
-  font-size: 16px;
-  width: 26px;
-  height: 26px;
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
   text-align: center;
-  line-height: 20px;
-  top: 10px;
-  right: 10px;
-  color: #666;
-  border: 3px solid #666;
+  line-height: 15px;
+  top: 12px;
+  right: 12px;
+  color: #999;
+  border: 3px solid #999;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
@@ -287,8 +287,8 @@ header.path-1 {
   z-index: 2;
 }
 .tutorials-content .others > i:hover {
-  color: #000;
-  border: 3px solid #000;
+  color: #fff;
+  border: 3px solid #fff;
 }
 .tutorials-content .others a {
   color: #f60;
@@ -302,12 +302,14 @@ header.path-1 {
   overflow: hidden;
 }
 .tutorials-content .others h5 {
-  margin: 10px 0;
+  margin: 0;
+  padding: 15px 20px;
+  background: #333;
+  color: #fff;
 }
 .tutorials-content .others .others-link {
-  line-height: 24px;
-  margin-bottom: 20px;
-  padding-left: 10px;
+  line-height: 25px;
+  padding: 15px 20px;
 }
 .tutorials-content .others .others-link:last-child {
   margin-bottom: 0;
@@ -321,9 +323,9 @@ header.path-1 {
   animation-fill-mode: forwards;
 }
 .tutorials-content .others.note-open.note-close {
-  -webkit-animation: closenote 0.5s ease-in-out;
-  -moz-animation: closenote 0.5s ease-in-out;
-  animation: closenote 0.5s ease-in-out;
+  -webkit-animation: closenote 0.6s ease-in-out;
+  -moz-animation: closenote 0.6s ease-in-out;
+  animation: closenote 0.6s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -348,9 +350,9 @@ header.path-1 {
 }
 .tutorials-content .note-chicken.note-open.note-close {
   bottom: 0px;
-  -webkit-animation: closenote-chicken 0.5s 0.2s ease-in-out;
-  -moz-animation: closenote-chicken 0.5s 0.2s ease-in-out;
-  animation: closenote-chicken 0.5s 0.2s ease-in-out;
+  -webkit-animation: closenote-chicken 0.5s 0.3s ease-in-out;
+  -moz-animation: closenote-chicken 0.5s 0.3s ease-in-out;
+  animation: closenote-chicken 0.5s 0.3s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -358,14 +360,14 @@ header.path-1 {
 @-webkit-keyframes closenote {
   0% {
     bottom: 15px;
-    width: 450px;
-    height: 210px;
+    width: 500px;
+    height: 180px;
     opacity: 1;
   }
   80% {
     bottom: 15px;
-    width: 460px;
-    height: 220px;
+    width: 510px;
+    height: 190px;
     opacity: 1;
   }
   99.9% {
@@ -401,20 +403,20 @@ header.path-1 {
   }
   60% {
     bottom: 15px;
-    width: 455px;
-    height: 215px;
+    width: 510px;
+    height: 185px;
     opacity: 1;
   }
   80% {
     bottom: 15px;
-    width: 445px;
-    height: 205px;
+    width: 490px;
+    height: 175px;
     opacity: 1;
   }
   100% {
     bottom: 15px;
-    width: 450px;
-    height: 210px;
+    width: 500px;
+    height: 180px;
     opacity: 1;
   }
 }

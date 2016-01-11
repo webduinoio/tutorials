@@ -22,15 +22,12 @@ $(function() {
     '<div class="others">' +
     '		<i class="fa fa-times note-close-btn"></i>'+
     '		<div class="others-link-div">'+
-    '			<h5>如果您想了解更多，可以參考：</h5>'+
+    '			<h5>如果您還想了解更多，可以參考：</h5>'+
     '			<div class="others-link otehrs-read">'+
-    '				1. 完整教學範例：<a href="https://webduino.io/tutorials.html" data-name="noteLink">webduino.io/tutorials.html</a><br/>'+
-    '				2. Blockly 教學：<a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>'+
-    '			</div>'+
-    '			<h5>如果您想認識 Webduino 產品，可以參考：</h5>'+
-    '			<div class="others-link otehrs-buy">'+
-    '				1. 產品總覽：<a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">webduino.io/buy.html <i class="fa fa-share-square-o"></i></a><br/>'+
-    '				2. 露天賣場：<a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>'+
+    '				1. 完整教學範例：<a href="https://webduino.io/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a><br/>'+
+    '				2. Blockly 教學：<a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a><br/>'+
+    '				3. 產品總覽：<a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a><br/>'+
+    '				4. 露天賣場：<a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>'+
     '			</div>'+
     '		</div>'+
     '</div>');
@@ -125,7 +122,7 @@ $(function() {
   });
 
   function _showNote(){
-  	if($window.scrollTop()>(sh-$window.height()-200)){
+  	if($window.scrollTop()>(sh-$window.height()-300)){
   		if($('.others, .note-chicken').hasClass('note-open')){
 
   		}else{
