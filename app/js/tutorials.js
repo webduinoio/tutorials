@@ -125,9 +125,13 @@ $(function() {
   });
 
   function _showNote(){
-  	_gaTrack('show note','show',file);
   	if($window.scrollTop()>(sh-$window.height()-200)){
-  		$('.others, .note-chicken').addClass('note-open');
+  		if($('.others, .note-chicken').hasClass('note-open')){
+
+  		}else{
+  			$('.others, .note-chicken').addClass('note-open');
+  			_gaTrack('show note','show',file);
+  		}
 			$('.note-close-btn').on('click',function(){
   			_gaTrack('show note','close',file);
 				$('.others, .note-chicken').addClass('note-close');
