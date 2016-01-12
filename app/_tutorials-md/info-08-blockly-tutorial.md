@@ -132,6 +132,12 @@ Webduino Blockly 擁有各式各樣功能的程式積木，這些積木也都預
 
 ![Webduino Blockly 線上編輯工具教學](../img/tutorials/info-08-17.jpg)
 
+## 儲存檔案
+
+當我們編輯完之後，可以點選 Webduino Blockly 右上方的「連結」圖示，會產生一組連結網址，這組連結網址代表的是當前畫面，只要把這組網址記到瀏覽器的「我的最愛」或「書籤」內，下次再打開就會出現一模一樣的畫面了。
+
+![Webduino Blockly 線上編輯工具教學](../img/tutorials/info-08-18.jpg)
+
 ## 開始玩轉 Webduino Blockly 吧！
 
 到這個步驟，應該大致上對 Webduino Blockly 的操作都有了基礎的認識，接下來就可以利用一系列的教學，熟悉 Webduino 的操控方式，正式踏入物聯網的領域囉！
