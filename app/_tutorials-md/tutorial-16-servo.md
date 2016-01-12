@@ -31,6 +31,12 @@ date: 20150625
 
 <!-- @@close-->
 
+<!-- @@block  =  preAndNext-->
+
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+
 <!-- @@block  =  tutorials-->
 
 # 教學範例 16：控制伺服馬達轉動角度

@@ -31,6 +31,11 @@ date: 20150425
 
 <!-- @@close-->
 
+<!-- @@block  =  preAndNext-->
+
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
 
 
 <!-- @@block  =  tutorials-->

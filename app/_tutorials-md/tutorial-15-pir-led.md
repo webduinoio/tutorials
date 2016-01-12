@@ -31,6 +31,12 @@ date: 20150604
 
 <!-- @@close-->
 
+<!-- @@block  =  preAndNext-->
+
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+
 <!-- @@block  =  tutorials-->
 
 # 教學範例 15：人體紅外線偵測控制 LED

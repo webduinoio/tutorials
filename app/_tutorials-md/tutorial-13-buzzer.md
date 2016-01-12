@@ -31,6 +31,12 @@ date: 20150604
 
 <!-- @@close-->
 
+<!-- @@block  =  preAndNext-->
+
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+
 <!-- @@block  =  tutorials-->
 
 # 教學範例 13：蜂鳴器播放自製音樂
