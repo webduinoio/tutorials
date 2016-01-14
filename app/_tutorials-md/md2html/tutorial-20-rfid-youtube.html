@@ -1,0 +1,118 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-20-rfid-youtube.html
+title: RFID 控制 Youtube 
+banner: tutorial-20-01.jpg
+img: tutorial-20-01s.jpg</p>
+<h2>date: 20160113</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>教學範例 20：RFID 控制 Youtube :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="上一篇我們介紹過 RFID 的基本原理還有可以根據不同的磁卡或磁扣切換顏色，這一篇範例要來實作更進階的 RFID：控制 Youtube，利用不同的磁卡或磁扣，來切換不同的 Youtube 影片。">
+
+<meta itemprop="description" content="上一篇我們介紹過 RFID 的基本原理還有可以根據不同的磁卡或磁扣切換顏色，這一篇範例要來實作更進階的 RFID：控制 Youtube，利用不同的磁卡或磁扣，來切換不同的 Youtube 影片。">
+
+<meta property="og:description" content="上一篇我們介紹過 RFID 的基本原理還有可以根據不同的磁卡或磁扣切換顏色，這一篇範例要來實作更進階的 RFID：控制 Youtube，利用不同的磁卡或磁扣，來切換不同的 Youtube 影片。">
+
+<meta property="og:title" content="教學範例 20：RFID 控制 Youtube" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-20-rfid-youtube.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-20-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-20-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>教學範例 20：RFID 控制 Youtube</h1>
+<p>上一篇我們介紹過 RFID 的基本原理還有可以根據不同的磁卡或磁扣切換顏色，這一篇範例要來實作更進階的 RFID：控制 Youtube，利用不同的磁卡或磁扣，來切換不同的 Youtube 影片。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/RrCAOgtPHdo" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<p>接線方式和上一篇範例一模一樣，將 SDA 接 10，SCK 接 13，MOSI 接 11，MISO 接 12，GND 接在 GND，VCC 接在 3.3V 的位置，此外因為腳位限制，所以在這個範例<strong>必須使用 Arudino UNO 和 Webduino UNO 雲端擴充板搭配進行</strong>。</p>
+<p><img src="../img/tutorials/tutorial-20-02.jpg" alt=""></p>
+<p>實際接線照片：</p>
+<p><img src="../img/tutorials/tutorial-20-03.jpg" alt=""></p>
+<h2>Webduino Blockly 操作解析</h2>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會「先」用網頁「顯示文字」來顯示 RFID 磁卡或磁扣的識別碼，記下識別碼之後，就要使用「Youtube」來播放，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，待會會用到「Youtube」。</p>
+<p><img src="../img/tutorials/tutorial-20-04.jpg" alt=""></p>
+<p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入 RFID 的積木，名稱設定為 rfid，腳位設定為 10、13、11、12，因為腳位限定，所以下拉選單也無法改變腳位，放入「偵測訊號」的積木，在我們拿 RFID 磁卡或磁扣去感應讀卡器的時候，右邊的網頁就會顯示對應的識別碼。</p>
+<p><img src="../img/tutorials/tutorial-20-05.jpg" alt=""></p>
+<p>這邊完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，用不同的磁卡或磁扣去感應讀卡器，就會出現識別碼，這時我們先把這些對應的代碼記下來，待會就要用這些代碼來判斷。</p>
+<p><img src="../img/tutorials/tutorial-20-06.jpg" alt=""></p>
+<p>Youtube 的積木都在左邊網頁互動裡面，一開始我們要先載入 Youtube 模組，<strong>注意！模組只需要載入一次</strong>，因此該積木不要放到 RFID 偵測到訊號的肚子裡，不然會變成每次偵測都會載入一次模組，就會出錯了。</p>
+<p><img src="../img/tutorials/tutorial-20-07.jpg" alt=""></p>
+<p>影片的 id 只要打開 Youtube，從網址列就可以看到這段 id，複製下來貼進去就可以。</p>
+<p><img src="../img/tutorials/tutorial-20-08.jpg" alt=""></p>
+<p>如果說我們想要利用磁扣切換播放的影片，只要放入「更換 Youtube 影片 id」的積木，把要更換的 id 填進去就可以切換。</p>
+<p><img src="../img/tutorials/tutorial-20-09.jpg" alt=""></p>
+<p>如果不是想要切換影片，想要更改音量大小或是播放速度，只要選擇對應的 Youtube 積木就可以完成。</p>
+<p><img src="../img/tutorials/tutorial-20-10.jpg" alt=""></p>
+<p>做好之後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，用不同的磁卡或磁扣去感應讀卡器，就會看到 Youtube 的影片開始切換，或是音量、播放速度的變化了。( 解答：<a href="http://blockly.webduino.io/#-K7zgePAA41wamJK4U-w">http://blockly.webduino.io/#-K7zgePAA41wamJK4U-w</a> )</p>
+<p><img src="../img/tutorials/tutorial-20-11.jpg" alt=""></p>
+<h2>範例解析 ( <a href="http://bin.webduino.io/tihah/edit?html,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
+<p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>，比較特別的是因為要控制 Youtube ，所以要額外載入<code>iframe_api</code>這支程式。</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://www.youtube.com/iframe_api&quot;&gt;&lt;/script&gt;
+</code></pre><p>HTML 裏頭只有一個 div，也就是 Youtube 影片會顯示的區域。</p>
+<pre><code>&lt;div id=&quot;player&quot;&gt;&lt;/div&gt;
+</code></pre><p>JavaScript 雖然比較長，但是大部分都是 Youtube 的程式 ( 如果看不懂可以先不用理它，或是到 Youtube API 的網站閱讀詳細文件：<a href="https://www.youtube.com/yt/dev/zh-TW/api-resources.html">https://www.youtube.com/yt/dev/zh-TW/api-resources.html</a> )，除此之外，RFID 的控制方式純粹用<code>on</code>來開始偵測，然後判斷磁卡或磁扣的識別碼，接著再呼叫 Youtube 的程式就可以了。</p>
+<pre><code>var rfid;
+var youtube;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 500;
+  rfid = getRFID(board);
+  var checkYoutubeLoad=0;
+  onYouTubeIframeAPIReady();
+  function onYouTubeIframeAPIReady() {
+    youtube = new YT.Player(&quot;player&quot;, {
+      height: &quot;240&quot;,
+      width: &quot;96%&quot;,
+      videoId: &quot;YLoRXX2jMkc&quot;,
+      playerVars: {
+        &quot;autoplay&quot;: 1,
+        &quot;controls&quot;: 1},
+      events: {
+        &quot;onReady&quot;: onPlayerReady,
+        &quot;onStateChange&quot;: onPlayerStateChange
+      }
+    });
+  }
+  function onPlayerReady(event) {
+    event.target.playVideo();
+    checkYoutubeLoad=1;
+  }
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING &amp;&amp; !done) {
+      done = true;
+    }
+  }
+  function stopVideo() {
+    youtube.stopVideo();
+  }
+  rfid.read();
+  rfid.on(&quot;enter&quot;,function(_uid){
+    rfid._uid = _uid;
+    document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = rfid._uid;
+    if(rfid._uid == &#39;679D4F55&#39;){
+      youtube.loadVideoById(&#39;PIZ3p8LTDaA&#39;);
+    }
+    if(rfid._uid == &#39;B4AE2E00&#39;){
+      youtube.loadVideoById(&#39;YLoRXX2jMkc&#39;);
+    }
+  });
+});
+</code></pre><p>以上就是利用 RFID-RC522 來讀取 RFID 磁卡或磁扣，進一步控制 Youtube 的播放。<br>完整程式碼：<a href="http://bin.webduino.io/tihah/edit?html,js,output">http://bin.webduino.io/tihah/edit?html,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K7zgePAA41wamJK4U-w">http://blockly.webduino.io/#-K7zgePAA41wamJK4U-w</a></p>
+<h2>RFID 的延伸教學：</h2>
+<p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rfid-1#-K45oDB4TmzOFSNMPGGG">Webduino Blockly 課程 16-1：偵測 RFID</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rfid-2#-K45qdjcmCYGz9YaNcUp">Webduino Blockly 課程 16-2：RFID 紅綠燈</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/rfid-3#-K462IpY3cfK91yLDK3M">Webduino Blockly 課程 16-3：RFID 控制 Youtube</a>     </p>
+<!-- @@close-->
