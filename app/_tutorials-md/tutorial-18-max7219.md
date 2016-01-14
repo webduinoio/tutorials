@@ -148,7 +148,7 @@ JavaScript 的部分，停止動畫的方法是`animateStop()`，顯示圖案的
 完整程式碼：[http://bin.webduino.io/xoma/7/edit?html,css,js,output](http://bin.webduino.io/xoma/7/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR](http://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR)
 
-## 人光敏電阻的延伸教學：
+## LED 點矩陣的延伸教學：
 
 [Webduino Blockly 課程 13-1：點矩陣顯示圖形](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-1#-K0opTxaF_E2ncQkc6JC)  
 [Webduino Blockly 課程 13-2：點矩陣製作動畫](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-2#-K0os-k9zK8b2uN9iOMK)  

@@ -135,7 +135,7 @@ JavaScript 裡面可以看到光敏電阻具有`on`的方法，表示開始偵�
 完整程式碼：[http://bin.webduino.io/maqun/5/edit?html,css,js,output](http://bin.webduino.io/maqun/5/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO](http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO)
 
-## 人光敏電阻的延伸教學：
+## 光敏電阻的延伸教學：
 
 [Webduino Blockly 課程 12-1：控制光敏電阻](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-1#-K0oVQzwFXfXTj5xmlrU)  
 [Webduino Blockly 課程 12-2：使用光敏電阻點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-2#-K0objWF2mEVwsHYux8W)  
