@@ -65,7 +65,7 @@ date: 20160113
 
 ![](../img/tutorials/tutorial-17-05.jpg)
 
-把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入光敏電阻積木，名稱設定為 servo，腳位設定為 A3。
+把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入光敏電阻積木，名稱設定為 photocell，腳位設定為 A3。
 
 ![](../img/tutorials/tutorial-17-06.jpg)
 
