@@ -5,7 +5,7 @@ $(function() {
     $pre = $('pre'),
     $youtubeIframe = $('.youtube'),
     $tutorials = $('.tutorials-content'),
-    $a = $('.tutorials-content a').not('.pre-next a'),
+    $a = $('.tutorials-content a').not('.pre-next a, .arrow'),
     $banner = $('.tutorials-content .banner'),
     sh;
 
