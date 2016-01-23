@@ -50,7 +50,7 @@ Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看
 
 這篇範例會使用到 LED 以及超音波傳感器，相關教學可以參考以下兩篇文章：
 
-1) [教學範例 1：控制單顆 LED 燈](https://webduino.io/tutorials/tutorial-01-led.html)
+1) [教學範例 1：控制單顆 LED 燈](https://webduino.io/tutorials/tutorial-01-led.html)  
 2) [教學範例 5：控制超音波傳感器](https://webduino.io/tutorials/tutorial-05-ultrasonic.html)
 
 ## 步驟教學
