@@ -21,11 +21,11 @@ date: 20160123
 
 <meta property="og:title" content="教學範例 22：語音聲控 LED 燈" >
 
-<meta property="og:url" content="https://webduino.io/tutorials/tutorial-21-toycar.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-22-speech-led.html">
 
-<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-21-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-22-01s.jpg">
 
-<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-21-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-22-01s.jpg">
 
 <include src="../_include-tutorials.html"></include>
 
