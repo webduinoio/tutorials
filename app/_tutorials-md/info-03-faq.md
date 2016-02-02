@@ -45,60 +45,101 @@ date: 20150425
 
 在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 [email](mailto:service@webduino.io) 給我們，或是在最下面留言也可以。
 
-##初始化設定相關
-
-- ###1. 為什麼要初始化設定？
-
-	因為 Webduino 開發板是透過網路連線控制，因此必須要透過初始化設定，讓 Webduino 可以自動連上網路。
-
-- ###2. Webduino 的 SSID 與家裡 wifi 的 SSID 差異？
-
-	- (1) 通常在初始化設定的時候，很容易把 Webduino 的 SSID 與家裡 wifi 的 SSID 搞混，**Webduino 的 SSID 是這塊開發板的名稱。** ( 通常是 wa + 數字，例如 wa101、wa999，並且會寫在裝置說明卡裡頭。 )
-	- (2) 當你連結 Webduino 開發板的 SSID，表示我們可以透過「192.168.4.1」連結上 Webduino 開發板，**連結上開發板之後，所看到的 SSID 與 PASSWORD，指的就是家裡、公司環境或行動裝置分享的 wifi SSID 與密碼**，千萬不要搞錯了。
-
-- ###3. 為什麼在 wifi 搜尋看不到 Webduino 開發板的 SSID？
-
-	- (1) Webduino  基礎教育版：可能是沒有接上 LED 燈，所以您必須在腳位 3.3v 與 11 的位置接上 LED 燈 ( 長腳接 3.3v )，若 LED 燈沒有亮起，可改接 1k 歐姆電阻再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
-	- (2) Webduino 馬克一號：可能開關處在「初始化設定模式」，將開關扳至另外一則再試一次，可以參考「[Webduino 初始化設定](info-02-setup.html)」。
-	- (3) 可能是電池沒電了，建議更換電池或改用 usb 供電。
-
-- ###4. 初始化之後，在 device 的網頁看不到對應的 Webduino 開發板名稱？
-
-	- (1) 可能是您沒有輸入正確的 wifi SSID 與 PASSWORD。
-	- (2) 可能是 wifi 的 SSID 與 PASSWORD 內含特殊字元或長度太長。 ( **只接受大小寫 14 個字元的英文字母與數字的組合** )
-	- (3) 可能是電池沒電了，建議更換電池或改用 usb 供電。
-
+<br/>
 
 ##購買 Webduino 相關
 
 - ###1. 要如何購買 Webduino？
 
-	- (1) 報名 Webduino 課程，部分基礎課程會附贈有基本的開發材料包。
-	- (2) Webduino 課程結束後於現場購買，現場繳費，請先來信通知欲購買之數量與購買人聯絡方式，以便我們準備材料包。
-	- (3) 我們使用歐付寶的支付機制，請來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關購買事宜。
+	- (1) 報名 Webduino 課程，部分課程會附贈有基本的開發材料包。
+	- (2) 我們使用露天購物平台，可以直接在 [https://webduino.io/buy.html](https://webduino.io/buy.html) 找到我們所有的商品。
 
-- ###2. Webduino 開發板的差異？
-
-	隨著時間的演進，Webduino 也會進化，目前共有兩種 Webduino 開發板，第一種為 基礎教育版，底版為淺褐色的洞洞板，第二種是馬克一號，是紅色的底板，** 基礎教育版可以支援基本開發包所有的傳感器，而馬克一號可以支援到威力加強版的開發包**。
-
-- ###3. Webduino 教育暨企業合作方案
+- ###2. Webduino 教育暨企業合作方案
 
 	Webduino 提供教育與企業的合作方案，會包含更豐富的教材與內容，以專題和解決方案的實際課程，提供教師、學生或企業用戶最完整的學習體驗，若您有相關的需求，可直接來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關合作方式。
 
+<br/>
+
+##Webduino 初始化設定相關
+
+- ###1. 為什麼要初始化設定？
+
+	因為 Webduino 開發板是透過網路連線控制，因此必須要透過初始化設定，讓 Webduino 可以自動連上網路。
+
+- ###2. 我的網路需要認證，可以使用 Webduino 嗎？
+
+	Webduino 開發板目前僅支援 WPA 認證 ( 只需 SSID 與 Password )，不支援其他認證模式 ( 身分證、教職員證...等 )。。
+
+- ###3. Webduino 的 SSID 與家裡 Wi-Fi 的 SSID 差異？
+
+	- (1) 通常在初始化設定的時候，很容易把 Webduino 的 SSID 與家裡 Wi-Fi 的 SSID 搞混，**Webduino 的 SSID 是這塊開發板的名稱。** ( 通常是 wa + 數字，例如 wa101、wa999，並且會寫在裝置說明卡裡頭。 )
+	- (2) 當你連結 Webduino 開發板的 SSID，表示我們可以透過「192.168.4.1」連結上 Webduino 開發板，**連結上開發板之後，所看到的 SSID 與 PASSWORD，指的就是家裡、公司環境或行動裝置分享的 Wi-Fi SSID 與密碼**，千萬不要搞錯了。
+
+- ###4. 為什麼在 Wi-Fi 搜尋看不到 Webduino 開發板的 SSID？
+
+	- (1) 可能開關處在 AP 模式，將開關扳至 STA 模式再試一次，馬克 1 號可以參考「[Webduino 初始化設定](info-02-setup.html)」，Webduino Fly 可以參考「[Webduino Fly 初始化設定](info-04-uno-setup.html)」。
+	- (2) 可能是電池沒電了，建議更換電池或改用 usb 供電。
+
+- ###5. 為什麼 Wi-Fi 看到 Webduino 開發板，但連線卻出現錯誤
+
+	因為部分 Android 行動裝置或 Windows 電腦，認為 Webduino 開發板不具備無線網路基地台的功能 ( Webduino 開發板原本就不是網路基地台 )，所以會強制進行斷線的指令，此時的處理方法如下：
+
+	- (1) Step.1：**忘記**原本已連線的網路設定 ( 公司、環境或家用 Wi-Fi )
+	- (2) Step.2：**忘記** Webduino 的連線設定 ( 如果你已經有嘗試連線過但出現錯誤 )
+	- (3) Step.3：重新用 Wi-Fi 搜尋並連結 Webduino 開發板
+
+- ###6. 初始化之後，在 device 的網頁看不到對應的 Webduino 開發板名稱？
+
+	- (1) 可能是您沒有輸入正確的 Wi-Fi SSID 與 PASSWORD。
+	- (2) 可能是 Wi-Fi 的 SSID 與 PASSWORD 內含特殊字元或長度太長。 ( **只接受大小寫 14 個字元的英文字母與數字的組合** )
+	- (3) Webduino 不支援 5G 網路連線，可以先換另外一個無線網路嘗試連線 ( 可先使用手機熱點、另外一台無線網路...等進行確認 )。
+
+<br/>
+
+##Webduino 操作相關
+
+- ###1. 為什麼 Webduino 開發板已經確認上線，但卻不能控制？
+
+	- (1) 可能腳位接錯，請重新確認腳位。
+	- (2) 可能是程式碼寫錯，請確認程式碼是否報錯。
+	- (3) **可能沒有燒錄對應的韌體**，請參考 [Arduino 韌體下載與燒錄](info-07-arduino-ino.html)。
+
+- ###2. 為什麼在 Blockly 的教學範例，有些積木在編輯工具看不到？
+
+	在 Blockly 的一步步教學範例裡頭 ( [連結](https://blockly.webduino.io/index-tutorials.html) )，使用的積木較單純，目的是讓新手或學生，可以熟悉每個程式積木的用法，部分「教學積木」已經經過封裝，較為單純，然而在 Blockly 編輯工具的程式積木是實際會用到的積木，所以會有一些差別。
+
+- ###3. Webduino 可以使用藍芽或序列埠控制嗎？
+
+	可以！在 Webduino Blockly 的開發板積木也可以選擇「Wi-Fi」、「藍芽」或「序列埠」，但 Chrome 必須先安裝兩隻 APP，請參考 [Chrome API Proxy 使用說明](info-05-chrome-api-proxy.html)，有完整教學。
+
+<br/>
+
 ##Webduino 服務相關
 
-- ###1. Webduino 的程式碼是否有 Open Source？
+- ###1. 可以請 Webduino 來授課或教育訓練嗎？
 
-	Webduino 有全面 Open Source 的規劃，目前分為三個階段執行，**第一階段是 Open 網頁前端所有 Source Code 並放到 Github**，第二階段將 Open 後端 Server 程式碼，第三階段才是 Arduino上韌體程式的 Open Source。目前是第一階段，第二階段與第三階段尚未開始。
+	我們北中南已經辦過超過三十場的課程、進行過十幾場的研習活動，**若公司行號、政府機關或教育單位有教育訓練或教育研習的需求，都可以委請我們進行授課**，相關合作方式，可直接來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關合作方式。。
 
-- ###2. 是否可以架設自己的伺服器？
+- ###2. 如果使用上有問題要怎麼辦？
+
+	- (1) 從 Webduino 粉絲團發訊息詢問 ( [前往粉絲團](https://www.facebook.com/webduino/) )。
+	- (2) 加入 Webduino 技術討論社團進行討論 ( [前往技術討論社團](https://www.facebook.com/groups/797598203642584) )。
+	- (3) 寫信給我們 ( [service@webduino.io](mailto:service@webduino.io) )。
+	- (4) 打電話給我們 ( 07-3388511 )。
+
+- ###3. Webduino 的程式碼是否有 Open Source？
+
+	Webduino 有全面 Open Source 的規劃，目前分為三個階段執行，**第一階段是 Open 網頁前端所有 Source Code 並放到 Github**，第二階段將 Open 後端 Server 程式碼，第三階段才是 Arduino上韌體程式的 Open Source。目前是第一階段，第二階段與第三階段尚未開始，目前已經 Open Source 的檔案均放在 Github 裡 ( 網址：[https://github.com/webduinoio](https://github.com/webduinoio) )。
+
+- ###4. 是否可以架設自己的伺服器？
 
 	Webduino 的伺服器方案，目前僅提供大量購買、學校或企業使用，若您有架設後端伺服器的需求，請來信 [service@webduino.io](mailto:service@webduino.io) 洽詢相關合作方式。
 
-- ###3. 範例裡頭沒有我想要的傳感器或元件
+- ###5. 範例裡頭沒有我想要的傳感器或元件怎麼辦？
 
 	- (1) 我們正在努力趕工相關傳感器對應的 WebComponent，有最新的消息都會在粉絲團與網站上公告。
-	- (2) 您可以由我們的 Github 閱讀相關傳感器或元件的 Source Code，您也可以自行開發相關傳感器或元件的 WebComponent。
+	- (2) 您可以由我們的 Github 閱讀相關傳感器或元件的 Source Code，您也可以自行開發相關傳感器或元件的 WebComponent ( 網址：[https://github.com/webduinoio](https://github.com/webduinoio) )。
+	- (3) 到[粉絲團](https://www.facebook.com/webduino/)發訊息，或[技術討論社團](https://www.facebook.com/groups/797598203642584)討論，如果有很多人跟你有一樣的需求，我們可能就會立即排入工作項。
 
 
 
