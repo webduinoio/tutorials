@@ -109,8 +109,6 @@ Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬
 
 做好之後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始用鍵盤操控自走車了。( 解答：[http://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](http://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ) )
 
-![](../img/tutorials/tutorial-20-11.jpg)
-
 ##範例解析 ( [完整程式碼](http://bin.webduino.io/pufa/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
