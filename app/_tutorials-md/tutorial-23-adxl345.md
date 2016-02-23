@@ -69,7 +69,7 @@ VCC 接在 3.3V 的位置 ( 電壓高於 3.6V 會導致晶片燒毀 )，GND 接 
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示三軸加速度計的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄三軸加速度計的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html) )
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示三軸加速度計的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄三軸加速度計的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 GY291 或 ADXL 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-23-06.jpg)
 
@@ -81,7 +81,7 @@ VCC 接在 3.3V 的位置 ( 電壓高於 3.6V 會導致晶片燒毀 )，GND 接 
 
 ![](../img/tutorials/tutorial-23-08.jpg)
 
-因為三軸加速度計會回傳五個數值 ( X、Y、Z、Roll、Pitch )，但文字顯示欄位只有一個，為了可以一次將所有數值顯示出來，這裏我們**使用「建立字串」的積木**，利用藍色小齒輪，增壓五個缺口，這樣就可以一次顯示五個數值。
+因為三軸加速度計會回傳五個數值 ( X、Y、Z、Roll、Pitch )，但文字顯示欄位只有一個，為了可以一次將所有數值顯示出來，這裏我們**使用「建立字串」的積木**，利用藍色小齒輪，增加五個缺口，這樣就可以一次顯示五個數值。
 
 ![](../img/tutorials/tutorial-23-09.jpg)
 

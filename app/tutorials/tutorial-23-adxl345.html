@@ -94,13 +94,13 @@
 <p><img src="../img/tutorials/tutorial-23-04.jpg" alt=""></p>
 <p><img src="../img/tutorials/tutorial-23-05.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會「先」用網頁「顯示文字」來顯示三軸加速度計的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄三軸加速度計的韌體檔喔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a> )</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會「先」用網頁「顯示文字」來顯示三軸加速度計的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄三軸加速度計的韌體檔喔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a>，選擇有 GY291 或 ADXL 檔名的韌體 )</p>
 <p><img src="../img/tutorials/tutorial-23-06.jpg" alt=""></p>
 <p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入三軸加速度計的積木，名稱設定為 adxl345，SDA 腳位設定 A4，SCL 腳位設定 A5。</p>
 <p><img src="../img/tutorials/tutorial-23-07.jpg" alt=""></p>
 <p>放入「開始偵測」以及「顯示」的積木，在偵測的時候將數值顯示在網頁裡。</p>
 <p><img src="../img/tutorials/tutorial-23-08.jpg" alt=""></p>
-<p>因為三軸加速度計會回傳五個數值 ( X、Y、Z、Roll、Pitch )，但文字顯示欄位只有一個，為了可以一次將所有數值顯示出來，這裏我們<strong>使用「建立字串」的積木</strong>，利用藍色小齒輪，增壓五個缺口，這樣就可以一次顯示五個數值。</p>
+<p>因為三軸加速度計會回傳五個數值 ( X、Y、Z、Roll、Pitch )，但文字顯示欄位只有一個，為了可以一次將所有數值顯示出來，這裏我們<strong>使用「建立字串」的積木</strong>，利用藍色小齒輪，增加五個缺口，這樣就可以一次顯示五個數值。</p>
 <p><img src="../img/tutorials/tutorial-23-09.jpg" alt=""></p>
 <p>當然只有數值不夠，還要標示這個數值代表什麼，所以這邊要用到二層的「建立字串」積木，裡面放入數值名稱，以及三軸加速度計所偵測到的數值，至於要取出何種數值，可以透過下拉選單選擇。</p>
 <p><img src="../img/tutorials/tutorial-23-10.jpg" alt=""></p>

@@ -61,7 +61,7 @@ MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS 
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用讓我們點擊網頁「按鈕」來用 LED 點矩陣顯示不同的圖案或動畫，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」。
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用讓我們點擊網頁「按鈕」來用 LED 點矩陣顯示不同的圖案或動畫，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」。 ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 MaxMatrix 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-18-05.jpg)
 

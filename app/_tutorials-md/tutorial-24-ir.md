@@ -71,7 +71,7 @@ date: 20160221
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html) )
+打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 IR 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-24-06.jpg)
 
@@ -113,7 +113,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	<button id="demo-area-05-btn4" class="db5">按鈕 4</button>
 	<button id="demo-area-05-btn5" class="db5">按鈕 5</button>
 
-紅外線接收器的 JavaScript 最主要用了`on`這個方法，裡面會有一個函式，帶有一個參數，這五個參數就是紅外線接收器接收到的訊號數值，利用`innerHTML`與字串的相加，我們就可以把這個數值，顯示在 span 裏頭了。
+紅外線接收器的 JavaScript 最主要用了`on`這個方法，裡面會有一個函式，帶有一個參數，這個參數就是紅外線接收器接收到的訊號數值，利用`innerHTML`與字串的相加，我們就可以把這個數值，顯示在 span 裏頭了。
 
 	var irrecv;
 

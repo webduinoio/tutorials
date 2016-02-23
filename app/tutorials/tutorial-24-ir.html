@@ -95,7 +95,7 @@
 <p>紅外線發射器，接線示意圖：</p>
 <p><img src="../img/tutorials/tutorial-24-05.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a> )</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a>，選擇有 IR 檔名的韌體 )</p>
 <p><img src="../img/tutorials/tutorial-24-06.jpg" alt=""></p>
 <p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入紅外線接收器的積木，名稱設定為 irrecv，腳位設定為 10。</p>
 <p><img src="../img/tutorials/tutorial-24-07.jpg" alt=""></p>
@@ -118,7 +118,7 @@
 &lt;button id=&quot;demo-area-05-btn3&quot; class=&quot;db5&quot;&gt;按鈕 3&lt;/button&gt;
 &lt;button id=&quot;demo-area-05-btn4&quot; class=&quot;db5&quot;&gt;按鈕 4&lt;/button&gt;
 &lt;button id=&quot;demo-area-05-btn5&quot; class=&quot;db5&quot;&gt;按鈕 5&lt;/button&gt;
-</code></pre><p>紅外線接收器的 JavaScript 最主要用了<code>on</code>這個方法，裡面會有一個函式，帶有一個參數，這五個參數就是紅外線接收器接收到的訊號數值，利用<code>innerHTML</code>與字串的相加，我們就可以把這個數值，顯示在 span 裏頭了。</p>
+</code></pre><p>紅外線接收器的 JavaScript 最主要用了<code>on</code>這個方法，裡面會有一個函式，帶有一個參數，這個參數就是紅外線接收器接收到的訊號數值，利用<code>innerHTML</code>與字串的相加，我們就可以把這個數值，顯示在 span 裏頭了。</p>
 <pre><code>var irrecv;
 
 boardReady(&#39;&#39;, function (board) {
