@@ -41,16 +41,17 @@
   color: #F90;
 }
 .filter.scroll {
-  height: 80px;
+  height: 60px;
   top: 55px;
   border-top: 0 solid #eee;
-  border-bottom: 3px solid #eee;
   box-shadow: rgba(0, 0, 0, 0.3) 0 3px 15px;
 }
 .filter.scroll div {
+  height: 30px;
+  line-height: 30px;
   padding: 0 18px;
-  font-size: 16px;
-  margin: 20px 0;
+  font-size: 15px;
+  margin: 15px -2px;
 }
 .content {
   margin: 180px auto 80px;
@@ -216,6 +217,8 @@
     padding-top: 10px;
   }
   .filter.scroll div {
+    height: 40px;
+    line-height: 40px;
     margin: 0 -3px;
     border: none;
     font-size: 16px;
