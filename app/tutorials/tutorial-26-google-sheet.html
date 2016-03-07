@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+
+<title>教學範例 26：使用 Google 試算表控制 LED :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，除了試算表功能一應俱全，更可以和 Google 表單搭配，變成一個簡單的問卷統計資料庫，在這個範例中，我們會填寫 Google 問卷，接著把問卷的統計數字平均並四捨五入成整數，再讓平均的分數透過 LED 的數量顯示出來。">
+
+<meta itemprop="description" content="Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，除了試算表功能一應俱全，更可以和 Google 表單搭配，變成一個簡單的問卷統計資料庫，在這個範例中，我們會填寫 Google 問卷，接著把問卷的統計數字平均並四捨五入成整數，再讓平均的分數透過 LED 的數量顯示出來。">
+
+<meta property="og:description" content="Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，除了試算表功能一應俱全，更可以和 Google 表單搭配，變成一個簡單的問卷統計資料庫，在這個範例中，我們會填寫 Google 問卷，接著把問卷的統計數字平均並四捨五入成整數，再讓平均的分數透過 LED 的數量顯示出來。">
+
+<meta property="og:title" content="教學範例 26：使用 Google 試算表控制 LED" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-26-google-sheet.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-26-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-26-01s.jpg">
+
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/jquery.lazyload.min.js"></script>
+<script src="../js/lib/run_prettify.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/tutorials.js"></script>
+<script src="../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../style/css/layout.css">
+<link rel="stylesheet" href="../style/css/sub-header.css">
+<link rel="stylesheet" href="../style/css/tutorials-content.css">
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html" data-name="layout-header-logo"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index" data-name="layout-mobile-menu">首頁</a>
+			<a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">教學範例</a>
+			<a href="buy.html" class="buy" data-name="layout-mobile-menu">產品總覽</a>
+			<a href="activity.html" class="activity" data-name="layout-mobile-menu">課程活動</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">連絡我們</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index" data-name="layout-menu">首頁</a>
+			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">教學範例</a>
+			<a href="../buy.html" class="buy" data-name="layout-menu">產品總覽</a>
+			<a href="../activity.html" class="activity" data-name="layout-menu">課程活動</a>
+			<a class="none" data-name="layout-menu">關於我們</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>教學範例 26：使用 Google 試算表控制 LED</h1>
+<p>Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，除了試算表功能一應俱全，更可以和 Google 表單搭配，變成一個簡單的問卷統計資料庫，在這個範例中，我們會填寫 Google 問卷，接著把問卷的統計數字平均並四捨五入成整數，再讓平均的分數透過 LED 的數量顯示出來。</p>
+<h2>範例影片展示</h2>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/mpwSAFwlL_0" frameborder="0" allowfullscreen></iframe></p>
+<h2>接線與實作</h2>
+<p>這個範例只會用到 LED 燈，但因為評比分數有七分，所以會接到 7 顆 LED 燈，將 LED 燈利用麵包板與單心線，長腳分別接到 7、8、9、10、11、12、13，然後短腳和 GND 連接。</p>
+<p>接線示意圖：</p>
+<p><img src="../img/tutorials/tutorial-26-02.jpg" alt=""></p>
+<p>實際接線照片：</p>
+<p><img src="../img/tutorials/tutorial-26-03.jpg" alt=""></p>
+<p><img src="../img/tutorials/tutorial-26-04.jpg" alt=""></p>
+<p><img src="../img/tutorials/tutorial-26-05.jpg" alt=""></p>
+<h2>操作解析</h2>
+<p>因為要使用 Google 表單，所以要先註冊 Google 的帳號，開啟雲端硬碟的功能，在裡面就可以開啟新資料夾，或者直接在根目錄新增「Google 表單」。( 範例中建立了一個名為 test 的資料夾 )</p>
+<p><img src="../img/tutorials/tutorial-26-06.jpg" alt=""></p>
+<p>打開表單，輸入表單名稱，這個名稱將會對應到同樣名稱的試算表，完成後選擇「回覆」標籤，點選「在 Google 試算表中查看回應」，就會自動幫我們建立一份對應的 Google 試算表。</p>
+<p><img src="../img/tutorials/tutorial-26-07.jpg" alt=""></p>
+<p>完成後切回「問題」標籤，在這邊可以新增一些問卷的問題，我們新增一個「線性刻度」的單選題，設定 1 到 7 分，在使用者填妥送出後，Google 試算表內就會記錄該使用者對應的分數。</p>
+<p><img src="../img/tutorials/tutorial-26-08.jpg" alt=""></p>
+<p>點選右上角眼睛形狀的圖示「預覽」，就可以打開這份表單，我們可以先嘗試填寫，先選擇七分，然後按下「提交」送出。</p>
+<p><img src="../img/tutorials/tutorial-26-09.jpg" alt=""></p>
+<p>送出之後，回到 Google 雲端硬碟，也就是剛剛建立表單的資料夾，把對應的 Google 試算表打開。</p>
+<p><img src="../img/tutorials/tutorial-26-10.jpg" alt=""></p>
+<p>打開後會看到第一列是「時間戳記」，表示使用者填寫表單的時間，第二列是分數。</p>
+<p><img src="../img/tutorials/tutorial-26-11.jpg" alt=""></p>
+<p>為了要計算平均，我們在第三列的第一欄 ( C1 ) 寫上「平均」，將平均數計算在第四列第一欄 ( D1 )。</p>
+<p><img src="../img/tutorials/tutorial-26-12.jpg" alt=""></p>
+<p>計算的公式如下：</p>
+<pre><code>=IF(TYPE(ROUND(AVERAGE(B:B)))=16,0,ROUND(AVERAGE(B:B)))
+</code></pre><p>接著我們會把開發板對應的 Device 填寫在第五列第一欄 ( E1 ) 的地方，這樣就可以讓對應的開發板進行燈號顯示。</p>
+<p><img src="../img/tutorials/tutorial-26-13.jpg" alt=""></p>
+<p>前面這些步驟完成後，再來就是<strong>最重要</strong>的部分，選擇「工具」，選擇「指令碼編輯器」，就會打開一份屬於這個試算表的指令碼工具，我們在中間編輯區域，輸入以下這段程式碼，這段程式碼表示開發板會依據平均值數字，讓對應數量的 LED 燈亮起來。</p>
+<p><img src="../img/tutorials/tutorial-26-14.jpg" alt=""></p>
+<pre><code>function myFunction() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var device = sheet.getRange(&#39;E1&#39;).getValue();
+  var a = sheet.getRange(&#39;D1&#39;).getValue();
+  led(device,a);
+}
+
+function led(d,r){
+  for(var i=7; i&lt;=13; i++){
+    setPin(d,i,0);
+    if(i==13){
+      for(var j=0; j&lt;r; j++){
+        setPin(d,13-j,1);
+      }
+    }
+  }
+}
+
+function setPin(id,pin,state){
+   var response = UrlFetchApp.fetch(&quot;http://webduino.tw/iot/&quot;+id+&quot;/set/&quot;+pin+&quot;/&quot;+state);
+}
+</code></pre><p>輸入完成後，點選「資源」，選擇「您所有的觸發程序」，這邊會要求要先輸入新的專案名稱，就輸入並按下確定。(過程中如果遇到需要「授權」，按下確定授權就可以 ) 接著點選「尚未建立觸發程序，按一下這裡來新增觸發程序」。</p>
+<p><img src="../img/tutorials/tutorial-26-15.jpg" alt=""></p>
+<p>這邊可以選擇讓我們的程式，在試算表在「變更時」觸發，以及在「提交表單時」觸發，如此一來，當使用者填寫完表單送出後，就會觸發程式。</p>
+<p><img src="../img/tutorials/tutorial-26-16.jpg" alt=""></p>
+<p>進行到這一步，在第五列第一欄 ( E1 ) 的地方填入開發板的 device 名稱，確認開發板上線之後 ( 可透過 <a href="https://webduino.io/device.html">https://webduino.io/device.html</a> )，填寫表單並送出，就會看到對應數量的 LED 亮起了。</p>
+
+
+<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
+<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>
+<div class="pre-next">
+  <div>
+    <div class="pre"></div>
+    <div class="next"></div>
+  </div>
+</div>
+<div class="note-chicken"></div>
+<div class="others">
+  <i class="fa fa-times note-close-btn"></i>
+  <h5>如果您還想了解更多，可以參考：</h5>
+  <div class="others-link otehrs-read">
+    1. 完整教學範例：<a href="https://webduino.io/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a>
+    <br/> 2. Blockly 教學：<a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>
+    <br/> 3. 產品總覽：<a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a>
+    <br/> 4. 露天賣場：<a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html" data-name="layout-footer-logo"><i></i></a>
+			<a href="../index.html" data-name="layout-footer-logo"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>80661 高雄市前鎮區復興四路 20 號 1 樓 / 886-7-3388511</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
