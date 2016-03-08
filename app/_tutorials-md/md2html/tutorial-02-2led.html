@@ -35,7 +35,7 @@ img: tutorial-02-01s.jpg</p>
 <h1>教學範例 2：兩顆 LED 交互閃爍</h1>
 <p>熟悉了 <a href="tutorial-01-led.html">第一個範例</a> 之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用點選燈泡圖片，操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。</p>
 <h2>教學影片</h2>
-<p>影片對應範例：<a href="http://blockly.webduino.io/?&amp;page=tutorials/led-4">http://blockly.webduino.io/?&amp;page=tutorials/led-4</a>  </p>
+<p>影片對應範例：<a href="https://blockly.webduino.io/?&amp;page=tutorials/led-4">https://blockly.webduino.io/?&amp;page=tutorials/led-4</a>  </p>
 <p><iframe class="youtube" src="https://www.youtube.com/embed/X3s_WoOVyxk" frameborder="0" allowfullscreen></iframe></p>
 <h2>接線與實作</h2>
 <p>因為我們這次有使用到兩顆 LED 燈，所以必須要使用麵包板來進行，將一顆 LED 燈長腳接在 11，另外一顆 LED 燈長腳接在 10，兩顆 LED 燈共用一個 GND ( 地線 )。</p>
@@ -44,7 +44,7 @@ img: tutorial-02-01s.jpg</p>
 <p>實際接線照片：</p>
 <p><img src="../img/tutorials/tutorial-02-03.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例也會點選網頁「燈泡圖案」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例也會點選網頁「燈泡圖案」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。</p>
 <p><img src="../img/tutorials/tutorial-02-04.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
 <p>在編輯畫面放入開發板，填入對應的 Webduino 開發板名稱，在開發板內放入兩個 LED，分別設定 10 與 11 腳位，也分別設定名稱為 led1 和 led2，完成後接著擺上「點擊燈泡就執行」的積木。</p>
 <p><img src="../img/tutorials/tutorial-02-05.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
@@ -59,15 +59,15 @@ img: tutorial-02-01s.jpg</p>
 <p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以開始。</p>
 <p><img src="../img/tutorials/tutorial-02-10.jpg" alt="教學範例 2：兩顆 LED 交互閃爍"></p>
 <p>點擊內嵌網頁裡的燈泡圖片，就可以讓兩顆 LED 交互閃爍或是停止，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
-( 解答：<a href="http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW">http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW</a> )</p>
+( 解答：<a href="https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW">https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW</a> )</p>
 <h2>程式碼解析 ( <a href="http://bin.webduino.io/harol/edit?html,css,js,output">看完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。</p>
 <pre><code>&lt;div id=&quot;demo-area-02-light&quot; class=&quot;off&quot;&gt;
-  &lt;img src=&quot;http://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
-  &lt;img src=&quot;http://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
 &lt;/div&gt;
 </code></pre><p>控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 <code>display:none;</code> 來達到相關效果，下面是 CSS 的程式碼。</p>
 <pre><code>#demo-area-02-light img{
@@ -126,7 +126,7 @@ boardReady(&#39;&#39;, function (board) {
     }
   });
 });
-</code></pre><p>以上就是點選圖片控制兩顆 LED 燈交互閃爍的範例。<br>完整程式碼：<a href="http://bin.webduino.io/harol/edit?html,css,js,output">http://bin.webduino.io/harol/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW">http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW</a></p>
+</code></pre><p>以上就是點選圖片控制兩顆 LED 燈交互閃爍的範例。<br>完整程式碼：<a href="http://bin.webduino.io/harol/edit?html,css,js,output">http://bin.webduino.io/harol/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW">https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW</a></p>
 <h2>兩顆 LED 的延伸教學：</h2>
-<p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr">Webduino Blockly 課程 1-3：控制兩顆 LED 燈</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm">Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍</a></p>
+<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr">Webduino Blockly 課程 1-3：控制兩顆 LED 燈</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm">Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍</a></p>
 <!-- @@close-->

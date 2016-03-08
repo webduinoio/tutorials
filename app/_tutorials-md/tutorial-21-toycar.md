@@ -79,7 +79,7 @@ Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用「玩具應用」裡的「自走車(2)」來對自走車進行操控。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用「玩具應用」裡的「自走車(2)」來對自走車進行操控。
 
 ![](../img/tutorials/tutorial-21-09.jpg)
 
@@ -107,7 +107,7 @@ Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬
 
 ![](../img/tutorials/tutorial-21-15.jpg)
 
-做好之後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始用鍵盤操控自走車了。( 解答：[http://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](http://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ) )
+做好之後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始用鍵盤操控自走車了。( 解答：[https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ) )
 
 ##範例解析 ( [完整程式碼](http://bin.webduino.io/pufa/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -228,13 +228,13 @@ JavaScript 因為比較長，所以這邊我們分成三個部分來看，先看
 
 以上就是利用鍵盤來控制自走車的 Blockly 和程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/pufa/edit?html,js,output](http://bin.webduino.io/pufa/edit?html,js,output)  
-解答：[http://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](http://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ)
+解答：[https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ)
 
 ## RFID 的延伸教學：
 
-[Webduino Blockly 課程：操控自走車](http://blockly.webduino.io/?lang=zh-hant#-JzjA7kAmAKmiCjWgxAu)  
-[Webduino Blockly 課程：超音波避障自走車](http://blockly.webduino.io/?lang=zh-hant#-JzjArZQxBWPbq7wpuCM)  
-[Webduino Blockly 課程：語音聲控自走車](http://blockly.webduino.io/?lang=zh-hant#-JzjAQjf2HuWFSrg4ocj)     
+[Webduino Blockly 課程：操控自走車](https://blockly.webduino.io/?lang=zh-hant#-JzjA7kAmAKmiCjWgxAu)  
+[Webduino Blockly 課程：超音波避障自走車](https://blockly.webduino.io/?lang=zh-hant#-JzjArZQxBWPbq7wpuCM)  
+[Webduino Blockly 課程：語音聲控自走車](https://blockly.webduino.io/?lang=zh-hant#-JzjAQjf2HuWFSrg4ocj)     
 
 
 <!-- @@close-->

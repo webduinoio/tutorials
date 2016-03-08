@@ -43,22 +43,22 @@ img: tutorial-07-01s.jpg</p>
 <p><img src="../img/tutorials/tutorial-07-03.jpg" alt=""></p>
 <p><img src="../img/tutorials/tutorial-07-04.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會用網頁「點擊燈泡」，在 LED 燈亮起時，同時網頁燈泡也會亮起，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例會用網頁「點擊燈泡」，在 LED 燈亮起時，同時網頁燈泡也會亮起，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。</p>
 <p><img src="../img/tutorials/tutorial-07-05.jpg" alt=""></p>
 <p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入超音波積木，名稱設定為 ultrasonic，腳位設定為 Trig 11，Echi 10，然後放入 LED 燈的積木，名稱設定 led，腳位設定為 9。</p>
 <p><img src="../img/tutorials/tutorial-07-06.jpg" alt=""></p>
 <p>然後我們每 500 毫秒擷取一次距離，利用「邏輯」來判斷，當距離小於 15 公分時，同時點亮 LED 燈以及右側的燈泡圖片，反之距離大於 15 公分時，就熄滅 LED 燈還有右側燈泡圖片。</p>
 <p><img src="../img/tutorials/tutorial-07-07.jpg" alt=""></p>
 <p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到 LED 燈被點亮了。
-( 解答：<a href="http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj">http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj</a> )</p>
+( 解答：<a href="https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj">https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj</a> )</p>
 <h2>程式碼解析 ( <a href="http://bin.webduino.io/nofi/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>HTML 裡就是兩張一明一暗的燈泡圖片，利用 CSS 來控制哪張出現。</p>
 <pre><code>&lt;div id=&quot;demo-area-02-light&quot; class=&quot;off&quot;&gt;
-  &lt;img src=&quot;http://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
-  &lt;img src=&quot;http://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
 &lt;/div&gt;
 </code></pre><p>CSS 就是設定 on 的時候燈泡圖片亮起，off 的時候燈泡圖片熄滅。</p>
 <pre><code>#demo-area-02-light img {
@@ -92,7 +92,7 @@ boardReady(&#39;&#39;, function (board) {
     }
   }, 500);
 });
-</code></pre><p>以上就是利用超音波傳感器，偵測距離當在某距離範圍內時，LED 燈會亮起。<br>完整程式碼：<a href="http://bin.webduino.io/nofi/edit?html,css,js,output">http://bin.webduino.io/nofi/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj">http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj</a></p>
+</code></pre><p>以上就是利用超音波傳感器，偵測距離當在某距離範圍內時，LED 燈會亮起。<br>完整程式碼：<a href="http://bin.webduino.io/nofi/edit?html,css,js,output">http://bin.webduino.io/nofi/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj">https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj</a></p>
 <h2>超音波傳感器的延伸教學：</h2>
-<p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP">Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO">Webduino Blockly 課程 3-3：超音波傳感器改變音量大小</a> </p>
+<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP">Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO">Webduino Blockly 課程 3-3：超音波傳感器改變音量大小</a> </p>
 <!-- @@close-->

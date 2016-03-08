@@ -69,7 +69,7 @@ IRQ 是中斷的腳位，RST 是重置的腳位，因為在本範例中不會用
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示 RFID 磁卡或磁扣的識別碼，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄 RFID 的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 MFRC522 檔名的韌體 )
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示 RFID 磁卡或磁扣的識別碼，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄 RFID 的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 MFRC522 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-19-07.jpg)
 
@@ -81,7 +81,7 @@ IRQ 是中斷的腳位，RST 是重置的腳位，因為在本範例中不會用
 
 ![](../img/tutorials/tutorial-19-09.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用不同的磁卡或磁扣去感應讀卡器，就會出現識別碼，如果你發現某些磁卡或磁扣無法出現識別碼，最大的可能性是頻率和 RFID-RC522 讀卡器不同所導致的。( 解答：[http://blockly.webduino.io/#-K7zNrV4FojmGdLfbhmM](http://blockly.webduino.io/#-K7zNrV4FojmGdLfbhmM)
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用不同的磁卡或磁扣去感應讀卡器，就會出現識別碼，如果你發現某些磁卡或磁扣無法出現識別碼，最大的可能性是頻率和 RFID-RC522 讀卡器不同所導致的。( 解答：[https://blockly.webduino.io/#-K7zNrV4FojmGdLfbhmM](https://blockly.webduino.io/#-K7zNrV4FojmGdLfbhmM)
 
 ![](../img/tutorials/tutorial-19-10.jpg)
 
@@ -93,7 +93,7 @@ IRQ 是中斷的腳位，RST 是重置的腳位，因為在本範例中不會用
 
 ![](../img/tutorials/tutorial-19-12.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用不同的磁卡或磁扣去感應讀卡器，就會看到文字呈現對應的顏色了。( 解答：[http://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96](http://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96)
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用不同的磁卡或磁扣去感應讀卡器，就會看到文字呈現對應的顏色了。( 解答：[https://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96](https://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96)
 
 ![](../img/tutorials/tutorial-19-13.jpg)
 
@@ -132,13 +132,13 @@ JavaScript 使用`on`的方法，回呼函式裡面會有一個變數，回傳�
 
 以上就是利用 RFID-RC522 來讀取 RFID 磁卡或磁扣，並將識別碼顯示在網頁裡，而且還會根據不同的磁卡或磁扣變色。   
 完整程式碼：[http://bin.webduino.io/xoma/7/edit?html,css,js,output](http://bin.webduino.io/xoma/7/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96](http://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96)
+解答：[https://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96](https://blockly.webduino.io/#-K7zPzNNag4ggJ_7qp96)
 
 ## RFID 的延伸教學：
 
-[Webduino Blockly 課程 16-1：偵測 RFID](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rfid-1#-K45oDB4TmzOFSNMPGGG)  
-[Webduino Blockly 課程 16-2：RFID 紅綠燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rfid-2#-K45qdjcmCYGz9YaNcUp)  
-[Webduino Blockly 課程 16-3：RFID 控制 Youtube](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rfid-3#-K462IpY3cfK91yLDK3M)     
+[Webduino Blockly 課程 16-1：偵測 RFID](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rfid-1#-K45oDB4TmzOFSNMPGGG)  
+[Webduino Blockly 課程 16-2：RFID 紅綠燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rfid-2#-K45qdjcmCYGz9YaNcUp)  
+[Webduino Blockly 課程 16-3：RFID 控制 Youtube](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rfid-3#-K462IpY3cfK91yLDK3M)     
 
 
 <!-- @@close-->

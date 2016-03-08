@@ -44,7 +44,7 @@ date: 20160120
 
 Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。
 
-以下將會使用 Webduino Blockly 來進行操作，操作網址：[http://blockly.webduino.io/](http://blockly.webduino.io/)。
+以下將會使用 Webduino Blockly 來進行操作，操作網址：[https://blockly.webduino.io/](https://blockly.webduino.io/)。
 
 ## 電子零件與傳感器教學參考：
 
@@ -71,7 +71,7 @@ Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看
 
 ![連動多塊 Webduino 開發板](../img/tutorials/info-09-05.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到兩塊板子的 LED 開始閃爍 ( 解答：[http://blockly.webduino.io/#-K8T4D5zQG4k89bumBM6](http://blockly.webduino.io/#-K8T4D5zQG4k89bumBM6) )。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到兩塊板子的 LED 開始閃爍 ( 解答：[https://blockly.webduino.io/#-K8T4D5zQG4k89bumBM6](https://blockly.webduino.io/#-K8T4D5zQG4k89bumBM6) )。
 
 ![連動多塊 Webduino 開發板](../img/tutorials/info-09-06.jpg)
 
@@ -83,7 +83,7 @@ Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看
 
 ![連動多塊 Webduino 開發板](../img/tutorials/info-09-08.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用手或紙板去遮蔽超音波傳感器，當遮蔽的距離小於 10 公分，LED 就會亮起，如此一來輕輕鬆鬆就完成了開發板連動的程式了。 ( 解答：[http://blockly.webduino.io/#-K8T5iPk4z7mHPqM0-Wh](http://blockly.webduino.io/#-K8T5iPk4z7mHPqM0-Wh) )。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用手或紙板去遮蔽超音波傳感器，當遮蔽的距離小於 10 公分，LED 就會亮起，如此一來輕輕鬆鬆就完成了開發板連動的程式了。 ( 解答：[https://blockly.webduino.io/#-K8T5iPk4z7mHPqM0-Wh](https://blockly.webduino.io/#-K8T5iPk4z7mHPqM0-Wh) )。
 
 
 

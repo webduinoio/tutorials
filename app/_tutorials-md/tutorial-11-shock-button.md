@@ -48,7 +48,7 @@ date: 20150602
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/shock-1](http://blockly.webduino.io/?page=tutorials/shock-1) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/shock-1](https://blockly.webduino.io/?page=tutorials/shock-1) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/Xv85frAw4uI" frameborder="0" allowfullscreen></iframe>
 
@@ -66,7 +66,7 @@ date: 20150602
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示按鈕開關當下數字，增加以後的數字也會不斷累加出來，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示按鈕開關當下數字，增加以後的數字也會不斷累加出來，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
 ![](../img/tutorials/tutorial-11-09.jpg)
 
@@ -82,7 +82,7 @@ date: 20150602
 
 ![](../img/tutorials/tutorial-11-10.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，輕觸震動開關，就會看到數字往上開始累加上去了。( 解答：[http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz) )
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，輕觸震動開關，就會看到數字往上開始累加上去了。( 解答：[https://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](https://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz) )
 
 ![](../img/tutorials/tutorial-11-11.jpg)
 
@@ -119,10 +119,10 @@ JavaScript 和按鈕開關類似，都是使用 `on` 的方法，只是裡面如
 
 以上就是利用震動開關，來增加數值並顯示在網頁上。  
 完整程式碼：[http://bin.webduino.io/suyam/edit?html,css,js,output](http://bin.webduino.io/suyam/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](http://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz)
+解答：[https://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz](https://blockly.webduino.io/#-K7A61JY3A5XBRan10Kz)
 
 ## 震動開關的延伸教學：
 
-[Webduino Blockly 課程 10-2：震動按鈕開關改變圖片位置](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/shock-2#-Jw1KUKUyvZIS_b4pQJ9)
+[Webduino Blockly 課程 10-2：震動按鈕開關改變圖片位置](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/shock-2#-Jw1KUKUyvZIS_b4pQJ9)
 
 <!-- @@close-->

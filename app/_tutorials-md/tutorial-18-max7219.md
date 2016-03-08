@@ -61,7 +61,7 @@ MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS 
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用讓我們點擊網頁「按鈕」來用 LED 點矩陣顯示不同的圖案或動畫，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」。 ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 MaxMatrix 檔名的韌體 )
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用讓我們點擊網頁「按鈕」來用 LED 點矩陣顯示不同的圖案或動畫，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」。 ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 MaxMatrix 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-18-05.jpg)
 
@@ -89,7 +89,7 @@ MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS 
 
 ![](../img/tutorials/tutorial-18-11.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，點擊不同的按鈕，LED 點矩陣就會出現不同的圖案或動畫了。( 解答：[http://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR](http://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR)
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，點擊不同的按鈕，LED 點矩陣就會出現不同的圖案或動畫了。( 解答：[https://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR](https://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR)
 
 
 ##範例解析 ( [完整程式碼](http://bin.webduino.io/xoma/7/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
@@ -146,15 +146,15 @@ JavaScript 的部分，停止動畫的方法是`animateStop()`，顯示圖案的
 
 以上就是利用 LED 點矩陣，點擊不同的網頁按鈕，顯示圖形或是動畫。   
 完整程式碼：[http://bin.webduino.io/xoma/7/edit?html,css,js,output](http://bin.webduino.io/xoma/7/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR](http://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR)
+解答：[https://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR](https://blockly.webduino.io/#-K7z4OcyEOftPgFGh5PR)
 
 ## LED 點矩陣的延伸教學：
 
-[Webduino Blockly 課程 13-1：點矩陣顯示圖形](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-1#-K0opTxaF_E2ncQkc6JC)  
-[Webduino Blockly 課程 13-2：點矩陣製作動畫](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-2#-K0os-k9zK8b2uN9iOMK)  
-[Webduino Blockly 課程 13-3：點矩陣跑馬燈效果](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-3#-K0ou2rmQYkM46jiooWV)    
-[Webduino Blockly 課程 13-4：點選按鈕切換點矩陣效果](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-4#-K0p0BGifwqYvndb35GK)    
-[Webduino Blockly 課程 13-5：利用超音波傳感器改變點矩陣圖形](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-5#-K0p4uO2W-zcVOU7FF0A)  
+[Webduino Blockly 課程 13-1：點矩陣顯示圖形](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-1#-K0opTxaF_E2ncQkc6JC)  
+[Webduino Blockly 課程 13-2：點矩陣製作動畫](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-2#-K0os-k9zK8b2uN9iOMK)  
+[Webduino Blockly 課程 13-3：點矩陣跑馬燈效果](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-3#-K0ou2rmQYkM46jiooWV)    
+[Webduino Blockly 課程 13-4：點選按鈕切換點矩陣效果](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-4#-K0p0BGifwqYvndb35GK)    
+[Webduino Blockly 課程 13-5：利用超音波傳感器改變點矩陣圖形](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/max7219-5#-K0p4uO2W-zcVOU7FF0A)  
 
 
 <!-- @@close-->

@@ -61,7 +61,7 @@ date: 20160113
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示光敏電阻數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示光敏電阻數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
 ![](../img/tutorials/tutorial-17-05.jpg)
 
@@ -77,7 +77,7 @@ date: 20160113
 
 ![](../img/tutorials/tutorial-17-08.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，用手去遮蔽光敏電阻更可以看出數值變化。( 解答：[http://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0](http://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0)
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，用手去遮蔽光敏電阻更可以看出數值變化。( 解答：[https://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0](https://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0)
 
 ![](../img/tutorials/tutorial-17-09.jpg)
 
@@ -89,7 +89,7 @@ date: 20160113
 
 ![](../img/tutorials/tutorial-17-11.jpg)
 
-完成後，同樣的，確認開發板上線後 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，這些數字也已經經過轉換，是 0 到 100 之間小數點兩位的數字囉。( 解答：[http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO](http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO)
+完成後，同樣的，確認開發板上線後 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，這些數字也已經經過轉換，是 0 到 100 之間小數點兩位的數字囉。( 解答：[https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO](https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO)
 
 ![](../img/tutorials/tutorial-17-12.jpg)
 
@@ -133,13 +133,13 @@ JavaScript 裡面可以看到光敏電阻具有`on`的方法，表示開始偵�
 
 以上就是利用光敏電阻，將光源強度轉換成數值，進一步做數值的轉換。   
 完整程式碼：[http://bin.webduino.io/maqun/5/edit?html,css,js,output](http://bin.webduino.io/maqun/5/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO](http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO)
+解答：[https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO](https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO)
 
 ## 光敏電阻的延伸教學：
 
-[Webduino Blockly 課程 12-1：控制光敏電阻](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-1#-K0oVQzwFXfXTj5xmlrU)  
-[Webduino Blockly 課程 12-2：使用光敏電阻點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-2#-K0objWF2mEVwsHYux8W)  
-[Webduino Blockly 課程 12-3：轉換光敏 ( 可變 ) 電阻數值](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-3#-K2kvxmwFHNiGl0P-_7S)  
+[Webduino Blockly 課程 12-1：控制光敏電阻](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-1#-K0oVQzwFXfXTj5xmlrU)  
+[Webduino Blockly 課程 12-2：使用光敏電阻點亮 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-2#-K0objWF2mEVwsHYux8W)  
+[Webduino Blockly 課程 12-3：轉換光敏 ( 可變 ) 電阻數值](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-3#-K2kvxmwFHNiGl0P-_7S)  
 
 
 <!-- @@close-->

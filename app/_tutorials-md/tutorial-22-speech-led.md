@@ -61,7 +61,7 @@ date: 20160123
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示我們語音辨識出來的文字，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示我們語音辨識出來的文字，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
 ![](../img/tutorials/tutorial-22-04.jpg)
 
@@ -97,7 +97,7 @@ date: 20160123
 
 ![](../img/tutorials/tutorial-22-12.jpg)
 
-接著就可以開始講話，用語音聲控 LED 燈了。( 解答：[http://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN](http://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN) )
+接著就可以開始講話，用語音聲控 LED 燈了。( 解答：[https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN](https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN) )
 
 ![](../img/tutorials/tutorial-22-13.jpg)
 
@@ -164,7 +164,7 @@ JavaScript 最主要用了`webkitSpeechRecognition()`這個 Chrome 內建語音�
 
 以上就是利用鍵盤來控制自走車的 Blockly 和程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/fexic/edit?html,js,output](http://bin.webduino.io/fexic/edit?html,js,output)  
-解答：[http://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN](http://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN)
+解答：[https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN](https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN)
 
 
 <!-- @@close-->

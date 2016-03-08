@@ -45,7 +45,7 @@ date: 20150604
  
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/buzzer-1](http://blockly.webduino.io/?page=tutorials/buzzer-1) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/buzzer-1](https://blockly.webduino.io/?page=tutorials/buzzer-1) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/StNG2NHS240" frameborder="0" allowfullscreen></iframe>
 
@@ -63,7 +63,7 @@ date: 20150604
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「網頁按鈕」來點選不同按鈕播放不同音樂，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」，這邊的按鈕跟實體的按鈕開關是不一樣的，這邊的按鈕指的是網頁上面的按鈕。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「網頁按鈕」來點選不同按鈕播放不同音樂，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」，這邊的按鈕跟實體的按鈕開關是不一樣的，這邊的按鈕指的是網頁上面的按鈕。
 
 ![](../img/tutorials/tutorial-13-05.jpg)
 
@@ -95,7 +95,7 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-13-12.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，分別按下不同按鈕，就會聽到蜂鳴器播放出不同的音樂。( 解答：[http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs) )
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，分別按下不同按鈕，就會聽到蜂鳴器播放出不同的音樂。( 解答：[https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs) )
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/zolor/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -166,13 +166,13 @@ JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，�
 
 以上就是利用蜂鳴器和網頁的按鈕，來製作與播放音樂。  
 完整程式碼：[http://bin.webduino.io/zolor/edit?html,css,js,output](http://bin.webduino.io/zolor/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](http://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs)
+解答：[https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs)
 
 ## 蜂鳴器的延伸教學：
 
-[Webduino Blockly 課程 9-2：蜂鳴器播放音樂](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-2#-Jw0aEoyT2sxCaftUdTD)  
-[Webduino Blockly 課程 9-3：切換音樂，用蜂鳴器播放](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-3#-Jw13yiSFLrZJEVyJ2Ej)  
-[Webduino Blockly 課程 9-4：蜂鳴器的播放、暫停、停止 ( 按鈕開關控制 ) ](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-4#-Jw17HU-K0zaz6OVpCd2)
+[Webduino Blockly 課程 9-2：蜂鳴器播放音樂](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-2#-Jw0aEoyT2sxCaftUdTD)  
+[Webduino Blockly 課程 9-3：切換音樂，用蜂鳴器播放](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-3#-Jw13yiSFLrZJEVyJ2Ej)  
+[Webduino Blockly 課程 9-4：蜂鳴器的播放、暫停、停止 ( 按鈕開關控制 ) ](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-4#-Jw17HU-K0zaz6OVpCd2)
 
 
 <!-- @@close-->

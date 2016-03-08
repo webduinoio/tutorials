@@ -46,7 +46,7 @@ date: 20150425
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/ultrasonic-4](http://blockly.webduino.io/?page=tutorials/ultrasonic-4) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/ultrasonic-4](https://blockly.webduino.io/?page=tutorials/ultrasonic-4) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/8lDL6_2io1Y" frameborder="0" allowfullscreen></iframe>
 
@@ -68,7 +68,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顏色調整」來將超音波不同距離的顏色顯示在出來，同時三色 LED 燈也會跟著變色，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顏色調整」，就會出現個顏色區域，我們會將超音波所測得的距離來顯示不同顏色在上面。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顏色調整」來將超音波不同距離的顏色顯示在出來，同時三色 LED 燈也會跟著變色，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顏色調整」，就會出現個顏色區域，我們會將超音波所測得的距離來顯示不同顏色在上面。
 
 ![教學範例 8：超音波傳感器控制三色 LED 燈](../img/tutorials/tutorial-08-06.jpg)
 
@@ -89,7 +89,7 @@ date: 20150425
 ![教學範例 8：超音波傳感器控制三色 LED 燈](../img/tutorials/tutorial-08-10.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到在不同的距離，三色 LED 燈出現不同的顏色。
-( 解答：[http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ](http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ) )
+( 解答：[https://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ](https://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ) )
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/coqub/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -139,13 +139,13 @@ JavaScript 用了許多的 `if`、`elseif` 和 `else`，「且」這個積木在
 
 以上就是利用超音波傳感器，偵測並用距離來同時改變三色 LED 燈以及網頁區域的顏色。  
 完整程式碼：[http://bin.webduino.io/coqub/edit?html,css,js,output](http://bin.webduino.io/coqub/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ](http://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ)
+解答：[https://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ](https://blockly.webduino.io/#-K5Lw1ZXmFnLvA971IbJ)
 
 ## 超音波傳感器的延伸教學：
 
-[Webduino Blockly 課程 3-4：超音波傳感器控制三色 LED 燈顏色](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-4#-JvS1HjBSLU7wbtmLxKB)  
-[Webduino Blockly 課程 3-6：超音波傳感器控制 Youtube 播放速度](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-6#-JxEs_Z0dmBi0nu3Pylw)  
-[Webduino Blockly 課程 3-5：超音波傳感器控制 youtube 的音量](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-5#-JwgqGd0PtGFPC8GNcfY) 
+[Webduino Blockly 課程 3-4：超音波傳感器控制三色 LED 燈顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-4#-JvS1HjBSLU7wbtmLxKB)  
+[Webduino Blockly 課程 3-6：超音波傳感器控制 Youtube 播放速度](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-6#-JxEs_Z0dmBi0nu3Pylw)  
+[Webduino Blockly 課程 3-5：超音波傳感器控制 youtube 的音量](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-5#-JwgqGd0PtGFPC8GNcfY) 
 
 
 

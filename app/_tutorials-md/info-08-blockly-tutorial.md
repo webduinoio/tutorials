@@ -44,7 +44,7 @@ date: 20151230
 
 Webduino Blockly 線上編輯工具是 Webduino 所研發出來的圖像化編輯工具，採用 Google Blockly 設計而成，讓一些對於網頁程式語言比較陌生，或者希望快速實現效果的朋友，可以利用 Webduino Blockly 線上編輯工具極速的實現各式各樣的創意。
 
-以下將會介紹 Webduino Blockly 的基本操作，如果已經熟悉相關介面或開發模式，可以直接點選「[Webduino Blockly 實作範例](http://blockly.webduino.io/index-tutorials.html)」，練習六十個以上的精彩應用。
+以下將會介紹 Webduino Blockly 的基本操作，如果已經熟悉相關介面或開發模式，可以直接點選「[Webduino Blockly 實作範例](https://blockly.webduino.io/index-tutorials.html)」，練習六十個以上的精彩應用。
 
 ## 工具介面說明
 
@@ -149,7 +149,7 @@ Webduino Blockly 擁有各式各樣功能的程式積木，這些積木也都預
 到這個步驟，應該大致上對 Webduino Blockly 的操作都有了基礎的認識，接下來就可以利用一系列的教學，熟悉 Webduino 的操控方式，正式踏入物聯網的領域囉！
 
 官方網站教學範例：https://webduino.io/tutorials.html  
-Blockly 實作範例：http://blockly.webduino.io/index-tutorials.html
+Blockly 實作範例：https://blockly.webduino.io/index-tutorials.html
 
 
 

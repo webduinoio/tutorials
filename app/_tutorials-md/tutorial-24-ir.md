@@ -45,7 +45,7 @@ date: 20160221
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?&page=tutorials/irrecv-1](http://blockly.webduino.io/?&page=tutorials/irrecv-1)  
+影片對應範例：[https://blockly.webduino.io/?&page=tutorials/irrecv-1](https://blockly.webduino.io/?&page=tutorials/irrecv-1)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/lfN0D4198CM" frameborder="0" allowfullscreen></iframe>
 
@@ -71,7 +71,7 @@ date: 20160221
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 IR 檔名的韌體 )
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 IR 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-24-06.jpg)
 
@@ -92,7 +92,7 @@ date: 20160221
 ![](../img/tutorials/tutorial-24-10.jpg)
 
 確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始接收紅外線訊號，或是開始發送紅外線訊號了。  
-( 解答：[http://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn](http://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn) )
+( 解答：[https://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn](https://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn) )
 
 ##範例解析 ( [完整程式碼](http://bin.webduino.io/jiguh/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -152,13 +152,13 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是控制紅外線發射器與接收器和程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/jiguh/edit?html,css,js,output](http://bin.webduino.io/jiguh/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn](http://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn)
+解答：[https://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn](https://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn)
 
 ## 紅外線發射與接收的延伸教學：
 
-[Webduino Blockly 課程 15-1：接收紅外線訊號](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-1#-K0qf8JH7bENOyJgc25r)  
-[Webduino Blockly 課程 15-2：接收紅外線訊號改變區域顏色](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-2#-K0qhamTHkjMc9nZg4rc)  
-[Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4)  
+[Webduino Blockly 課程 15-1：接收紅外線訊號](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-1#-K0qf8JH7bENOyJgc25r)  
+[Webduino Blockly 課程 15-2：接收紅外線訊號改變區域顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-2#-K0qhamTHkjMc9nZg4rc)  
+[Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4)  
 
 
 <!-- @@close-->

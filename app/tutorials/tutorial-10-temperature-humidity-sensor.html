@@ -82,7 +82,7 @@
 <h1>教學範例 10：溫濕度傳感器</h1>
 <p>溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。</p>
 <h2>範例影片展示</h2>
-<p>影片對應範例：<a href="http://blockly.webduino.io/?page=tutorials/dht-1">http://blockly.webduino.io/?page=tutorials/dht-1</a> </p>
+<p>影片對應範例：<a href="https://blockly.webduino.io/?page=tutorials/dht-1">https://blockly.webduino.io/?page=tutorials/dht-1</a> </p>
 <p><iframe class="youtube" src="https://www.youtube.com/embed/T8sZL-UaUP0" frameborder="0" allowfullscreen></iframe></p>
 <h2>接線與實作</h2>
 <p>溫濕度傳感器有四隻針腳，第一隻針腳為 v ( 接 3.3V )，第二隻為 data ( 接 10 )，第三隻沒有作用，為 N/C，第四隻為 GND。</p>
@@ -92,7 +92,7 @@
 <p>實際接線照片：</p>
 <p><img src="../img/tutorials/tutorial-10-04.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。</p>
 <p><img src="../img/tutorials/tutorial-10-05.jpg" alt=""></p>
 <p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入溫濕度積木，名稱設定為 dht，腳位設定為 11，接著放入每多久偵測一次溫濕度的積木，時間設定為 1000 毫秒 ( 1 秒 )。</p>
 <p><img src="../img/tutorials/tutorial-10-06.jpg" alt=""></p>
@@ -103,7 +103,7 @@
 <p>如果顯示出來的文字太大，或者行高太窄，我們也可以利用文字樣式的積木來調整，這裏將文字和行高都設為 20。</p>
 <p><img src="../img/tutorials/tutorial-10-09.jpg" alt=""></p>
 <p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以看到當下的溫濕度，如果用吹風機或嘴呼氣，就會看到溫濕度的變化了。
-( 解答：<a href="http://blockly.webduino.io/#-K79kCuHvGneUStvVcye">http://blockly.webduino.io/#-K79kCuHvGneUStvVcye</a> )</p>
+( 解答：<a href="https://blockly.webduino.io/#-K79kCuHvGneUStvVcye">https://blockly.webduino.io/#-K79kCuHvGneUStvVcye</a> )</p>
 <p><img src="../img/tutorials/tutorial-10-10.jpg" alt=""></p>
 <h2>程式碼解析 ( <a href="http://bin.webduino.io/coca/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
@@ -123,9 +123,9 @@ boardReady(&#39;&#39;, function (board) {
     document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = ([&#39;溫度：&#39;,dht.temperature,&#39;度，&#39;,&#39;濕度：&#39;,dht.humidity,&#39;%&#39;].join(&#39;&#39;));
   }, 1000);
 });
-</code></pre><p>以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。<br>完整程式碼：<a href="http://bin.webduino.io/coca/edit?html,css,js,output">http://bin.webduino.io/coca/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K79kCuHvGneUStvVcye">http://blockly.webduino.io/#-K79kCuHvGneUStvVcye</a></p>
+</code></pre><p>以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。<br>完整程式碼：<a href="http://bin.webduino.io/coca/edit?html,css,js,output">http://bin.webduino.io/coca/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-K79kCuHvGneUStvVcye">https://blockly.webduino.io/#-K79kCuHvGneUStvVcye</a></p>
 <h2>溫濕度傳感器的延伸教學：</h2>
-<p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N">Webduino Blockly 課程 5-2：繪製溫濕度圖表</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4">Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值</a></p>
+<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N">Webduino Blockly 課程 5-2：繪製溫濕度圖表</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4">Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值</a></p>
 
 
 <a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>

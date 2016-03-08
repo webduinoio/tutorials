@@ -47,7 +47,7 @@ date: 20150425
 
 ## 教學影片
 
-影片對應範例：[http://blockly.webduino.io/?&page=tutorials/led-4](http://blockly.webduino.io/?&page=tutorials/led-4)  
+影片對應範例：[https://blockly.webduino.io/?&page=tutorials/led-4](https://blockly.webduino.io/?&page=tutorials/led-4)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/X3s_WoOVyxk" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例也會點選網頁「燈泡圖案」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例也會點選網頁「燈泡圖案」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」，就會出現讓我們可以點選燈泡的網頁。
 
 ![教學範例 2：兩顆 LED 交互閃爍](../img/tutorials/tutorial-02-04.jpg)
 
@@ -94,7 +94,7 @@ date: 20150425
 ![教學範例 2：兩顆 LED 交互閃爍](../img/tutorials/tutorial-02-10.jpg)
 
 點擊內嵌網頁裡的燈泡圖片，就可以讓兩顆 LED 交互閃爍或是停止，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！
-( 解答：[http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW) )
+( 解答：[https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW) )
 
 
 ## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/harol/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
@@ -107,8 +107,8 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。
 
 	<div id="demo-area-02-light" class="off">
-	  <img src="http://blockly.webduino.io/media/off.png" id="demo-area-02-off">
-	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
+	  <img src="https://blockly.webduino.io/media/off.png" id="demo-area-02-off">
+	  <img src="https://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
 
 控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 `display:none;` 來達到相關效果，下面是 CSS 的程式碼。
@@ -174,12 +174,12 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是點選圖片控制兩顆 LED 燈交互閃爍的範例。  
 完整程式碼：[http://bin.webduino.io/harol/edit?html,css,js,output](http://bin.webduino.io/harol/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](http://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW)
+解答：[https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW](https://blockly.webduino.io/#-K4q6FT6L5mx8WZ5NuJW)
 
 ## 兩顆 LED 的延伸教學：
 
-[Webduino Blockly 課程 1-3：控制兩顆 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr)  
-[Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm)
+[Webduino Blockly 課程 1-3：控制兩顆 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr)  
+[Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm)
 
 
 <!-- @@close-->

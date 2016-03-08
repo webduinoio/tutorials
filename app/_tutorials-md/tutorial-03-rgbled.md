@@ -46,7 +46,7 @@ date: 20150425
 
 ## 教學影片
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/rgbled-2](http://blockly.webduino.io/?page=tutorials/rgbled-2)  
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/rgbled-2](https://blockly.webduino.io/?page=tutorials/rgbled-2)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/VN4sKngbiGI" frameborder="0" allowfullscreen></iframe>
 
@@ -68,7 +68,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例也會點選網頁「按鈕行為」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」，就會出現有五顆按鈕的網頁，我們就可以分別點擊這五顆按鈕，產生五種不同顏色。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例也會點選網頁「按鈕行為」來控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」，就會出現有五顆按鈕的網頁，我們就可以分別點擊這五顆按鈕，產生五種不同顏色。
 
 ![教學範例 3：控制三色 LED](../img/tutorials/tutorial-03-05.jpg)
 
@@ -85,7 +85,7 @@ date: 20150425
 ![教學範例 3：控制三色 LED](../img/tutorials/tutorial-03-08.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕後，選網頁裡不同的按鈕，就會看到三色 LED 出現不同的顏色。，然而我們也可以點選「JavaScript 頁籤」，就可以看到完整的程式碼邏輯，同時也可以複製這些代碼，貼到自己的網頁原始碼當中，就可以在自己的網頁裡實現一模一樣的行為囉！  
-( 解答：[http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT) )
+( 解答：[https://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](https://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT) )
 
 ## 程式碼解析 ( [看完整程式碼](http://bin.webduino.io/rugu/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -128,12 +128,12 @@ HTML 的 body 裡頭有五個按鈕，名字就是按鈕 1 到 5，各自都有�
 
 以上就是點選不同的按鈕，由三色 LED 呈現不同顏色的範例。  
 完整程式碼：[http://bin.webduino.io/rugu/edit?html,css,js,output](http://bin.webduino.io/rugu/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](http://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT)
+解答：[https://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT](https://blockly.webduino.io/#-K4rh2jD43Y9VSEAC8fT)
 
 ## 三色 LED 的延伸教學：
 
-[Webduino Blockly 課程 2-1：三色 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-1#-JvMrEKwwqW2P607oFz2)  
-[Webduino Blockly 課程 2-2：三色 LED 燈切換顏色](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-2#-JvMroBFx1XYaMemJmOm)
+[Webduino Blockly 課程 2-1：三色 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-1#-JvMrEKwwqW2P607oFz2)  
+[Webduino Blockly 課程 2-2：三色 LED 燈切換顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-2#-JvMroBFx1XYaMemJmOm)
 
 
 

@@ -47,7 +47,7 @@ date: 20150603
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/sound-2](http://blockly.webduino.io/?page=tutorials/sound-2) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/sound-2](https://blockly.webduino.io/?page=tutorials/sound-2) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/0NFEsS-FvMw" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ date: 20150603
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」來跟 LED 燈互相搭配，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」來跟 LED 燈互相搭配，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」。
 
 ![](../img/tutorials/tutorial-12-06.jpg)
 
@@ -81,7 +81,7 @@ date: 20150603
 
 ![](../img/tutorials/tutorial-12-09.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，對著聲音偵測傳感器拍手或發出聲音，就會看到 LED 燈和燈泡圖片亮起。( 解答：[http://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS](http://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS) )
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，對著聲音偵測傳感器拍手或發出聲音，就會看到 LED 燈和燈泡圖片亮起。( 解答：[https://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS](https://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS) )
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/padab/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -93,8 +93,8 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。
 
 	<div id="demo-area-02-light" class="off">
-	  <img src="http://blockly.webduino.io/media/off.png" id="demo-area-02-off">
-	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
+	  <img src="https://blockly.webduino.io/media/off.png" id="demo-area-02-off">
+	  <img src="https://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
 
 控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 display:none; 來達到相關效果，下面是 CSS 的程式碼。
@@ -137,11 +137,11 @@ JavaScript 使用 on 這個方法來偵測，當第一個參數是 `detected` �
 
 以上就是利用聲音偵測傳感器，來偵測有無聲音變化並且點亮 LED 燈。  
 完整程式碼：[http://bin.webduino.io/padab/edit?html,css,js,output](http://bin.webduino.io/padab/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS](http://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS)
+解答：[https://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS](https://blockly.webduino.io/#-K7ACr4VwFNkORu2-3fS)
 
 ## 聲音偵測傳感器的延伸教學：
 
-[Webduino Blockly 課程 7-1：偵測聲音](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/sound-1#-JvxeaQ60xcOYLuXKCke)
+[Webduino Blockly 課程 7-1：偵測聲音](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/sound-1#-JvxeaQ60xcOYLuXKCke)
 
 
 <!-- @@close-->

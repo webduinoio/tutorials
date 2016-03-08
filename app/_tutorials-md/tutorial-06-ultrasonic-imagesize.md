@@ -46,7 +46,7 @@ date: 20150425
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/ultrasonic-2](http://blockly.webduino.io/?page=tutorials/ultrasonic-2)  
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/ultrasonic-2](https://blockly.webduino.io/?page=tutorials/ultrasonic-2)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/NXJ3xmqHm8o" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「控制圖片」來對圖片做放大縮小或旋轉的控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「控制圖片」來對圖片做放大縮小或旋轉的控制，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。
 
 ![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-04.jpg)
 
@@ -82,7 +82,7 @@ date: 20150425
 ![教學範例 6：超音波傳感器改變圖片大小](../img/tutorials/tutorial-06-07.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到圖片開始旋轉或是大小開始改變了。
-( 解答：[http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4](http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4) )
+( 解答：[https://blockly.webduino.io/#-K5LUv3-l1992A51-gX4](https://blockly.webduino.io/#-K5LUv3-l1992A51-gX4) )
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/jufiq/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -94,7 +94,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 HTML 裡就是一張圖片，放在一個 div 裡頭，圖片和 div 分別都有 id 方便我們去控制。
 
 	<div id="demo-area-03-container">
-	  <img src="http://blockly.webduino.io/media/webduino-logo.jpg" id="demo-area-03-image">
+	  <img src="https://blockly.webduino.io/media/webduino-logo.jpg" id="demo-area-03-image">
 	</div>
 
 CSS 在外面的 div 設定了長寬，比較需要注意的是 `position: relative;`，當我們這樣設定，內部的圖片位置設定為 `position: absolute`，就可以由 div 的位置出發，透過 `top` 和 `left` 來設定圖片位置，然後這裏也用了 `transform-origin` 來定義圖片的中心點，並且加上 `transition` 來設定圖片漸變的時間，這裏設定為 0.3 秒。
@@ -137,12 +137,12 @@ javascript 寫起來還滿容易的，就只是把 `ping` 所回傳的公分數�
 
 以上就是利用超音波傳感器，偵測並用距離來改變圖片大小或角度的範例。  
 完整程式碼：[http://bin.webduino.io/jufiq/edit?html,css,js,output](http://bin.webduino.io/jufiq/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4](http://blockly.webduino.io/#-K5LUv3-l1992A51-gX4)
+解答：[https://blockly.webduino.io/#-K5LUv3-l1992A51-gX4](https://blockly.webduino.io/#-K5LUv3-l1992A51-gX4)
 
 ## 超音波傳感器的延伸教學：
 
-[Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP)  
-[Webduino Blockly 課程 3-3：超音波傳感器改變音量大小](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO) 
+[Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP)  
+[Webduino Blockly 課程 3-3：超音波傳感器改變音量大小](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO) 
 
 
 

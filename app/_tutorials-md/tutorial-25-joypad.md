@@ -67,7 +67,7 @@ date: 20160222
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示搖桿傳回的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄搖桿的韌體檔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 joypad 檔名的韌體 )
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示搖桿傳回的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄搖桿的韌體檔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 joypad 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-25-07.jpg)
 
@@ -88,7 +88,7 @@ date: 20160222
 ![](../img/tutorials/tutorial-25-11.jpg)
 
 確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，轉動或按壓搖桿，就會看見數值的變化。  
-( 解答：[http://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8](http://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8) )
+( 解答：[https://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8](https://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8) )
 
 ![](../img/tutorials/tutorial-25-12.jpg)
 
@@ -97,7 +97,7 @@ date: 20160222
 ![](../img/tutorials/tutorial-25-13.jpg)
 
 確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，轉動或按壓搖桿，就會看見數值的變化。  
-( 解答：[http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56](http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56) )
+( 解答：[https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56](https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56) )
 
 ##範例解析 ( [完整程式碼](http://bin.webduino.io/wifak/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -130,7 +130,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是控制搖桿的程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/wifak/edit?html,css,js,output](http://bin.webduino.io/wifak/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56](http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56)
+解答：[https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56](https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56)
 
 
 

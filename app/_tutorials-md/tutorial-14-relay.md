@@ -75,7 +75,7 @@ date: 20150604
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」來作為繼電器的開關，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」來作為繼電器的開關，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「點擊燈泡」。
 
 ![](../img/tutorials/tutorial-14-09.jpg)
 
@@ -91,7 +91,7 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-14-12.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用網頁上的燈泡作為繼電器的開關，控制風扇的運轉了。( 解答：[http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW](http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW) )
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以用網頁上的燈泡作為繼電器的開關，控制風扇的運轉了。( 解答：[https://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW](https://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW) )
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/tecig/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -103,8 +103,8 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 接著看到 HTML 的 body 裡頭，放入一個 id 為 demo-area-02-light 的圖片區域，裡面含有兩張分別是亮起的燈泡與不亮的燈泡圖片，目的在於點選的時候，圖片也會從不亮的燈泡轉變為亮起的燈泡。
 
 	<div id="demo-area-02-light" class="off">
-	  <img src="http://blockly.webduino.io/media/off.png" id="demo-area-02-off">
-	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
+	  <img src="https://blockly.webduino.io/media/off.png" id="demo-area-02-off">
+	  <img src="https://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
 
 控制燈泡圖片亮暗的是使用 CSS 的方式，用圖片顯示的切換 display:none; 來達到相關效果，下面是 CSS 的程式碼。
@@ -140,11 +140,11 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是利用網頁的燈泡圖片，來控制繼電器的開關，進一步控制電器。  
 完整程式碼：[http://bin.webduino.io/tecig/edit?html,css,js,output](http://bin.webduino.io/tecig/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW](http://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW)
+解答：[https://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW](https://blockly.webduino.io/#-K7AhYxEGXf0cAfMTzqW)
 
 ## 繼電器的延伸教學：
 
-[Webduino Blockly 課程 11-1：控制繼電器](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/relay-1#-K-WQYB34rMa4f2GgSam)  
+[Webduino Blockly 課程 11-1：控制繼電器](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/relay-1#-K-WQYB34rMa4f2GgSam)  
 
 
 <!-- @@close-->

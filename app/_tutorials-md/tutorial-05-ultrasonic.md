@@ -46,7 +46,7 @@ date: 20150425
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/ultrasonic-1](http://blockly.webduino.io/?page=tutorials/ultrasonic-1)  
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/ultrasonic-1](https://blockly.webduino.io/?page=tutorials/ultrasonic-1)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/e6gbwMUzSZ8" frameborder="0" allowfullscreen></iframe>
 
@@ -64,7 +64,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例也會點選網頁「顯示文字」來顯示超音波傳感器偵測到的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，就會出現一個文字區域，我們也會將超音波所測得的距離顯示在這邊。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例也會點選網頁「顯示文字」來顯示超音波傳感器偵測到的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，就會出現一個文字區域，我們也會將超音波所測得的距離顯示在這邊。
 
 ![教學範例 5：控制超音波傳感器](../img/tutorials/tutorial-05-04.jpg)
 
@@ -85,7 +85,7 @@ date: 20150425
 ![教學範例 5：控制超音波傳感器](../img/tutorials/tutorial-05-08.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到右側的網頁文字變成距離數值而且會變色了。
-( 解答：[http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem](http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem) )
+( 解答：[https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem](https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem) )
 
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/sane/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html))
@@ -139,11 +139,11 @@ JavaScript 的部分使用了 `ping` 這個超音波傳感器的偵測方法，�
 
 以上就是利用超音波傳感器，偵測並顯示距離的範例。  
 完整程式碼：[http://bin.webduino.io/sane/edit?html,css,js,output](http://bin.webduino.io/sane/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem](http://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem)
+解答：[https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem](https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem)
 
 ## 超音波傳感器的延伸教學：
 
-[Webduino Blockly 課程 3-1：超音波傳感器](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-1#-JvS-HS4kdS5Mn9tlXmD) 
+[Webduino Blockly 課程 3-1：超音波傳感器](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-1#-JvS-HS4kdS5Mn9tlXmD) 
 
 
 <!-- @@close-->

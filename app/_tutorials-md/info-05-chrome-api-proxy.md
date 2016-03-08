@@ -92,7 +92,7 @@ date: 20151124
 
 <br/>
 
-如果是序列埠，在 Webduino Blockly ( http://blockly.webduino.io/ )編輯工具的開發板程式積木，選擇「序列埠」，將路徑貼在後方，如果是藍芽，程式積木選擇「藍芽」，將位址貼在後方。
+如果是序列埠，在 Webduino Blockly ( https://blockly.webduino.io/ )編輯工具的開發板程式積木，選擇「序列埠」，將路徑貼在後方，如果是藍芽，程式積木選擇「藍芽」，將位址貼在後方。
 
 <br/>
 

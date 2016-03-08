@@ -42,7 +42,7 @@ img: tutorial-17-01s.jpg</p>
 <p><img src="../img/tutorials/tutorial-17-03.jpg" alt=""></p>
 <p><img src="../img/tutorials/tutorial-17-04.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會用網頁「顯示文字」來顯示光敏電阻數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例會用網頁「顯示文字」來顯示光敏電阻數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。</p>
 <p><img src="../img/tutorials/tutorial-17-05.jpg" alt=""></p>
 <p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入光敏電阻積木，名稱設定為 photocell，腳位設定為 A3。</p>
 <p><img src="../img/tutorials/tutorial-17-06.jpg" alt=""></p>
@@ -50,13 +50,13 @@ img: tutorial-17-01s.jpg</p>
 <p><img src="../img/tutorials/tutorial-17-07.jpg" alt=""></p>
 <p>偵測的速率決定在開發板的類比取樣速度 ( 每塊開發板只會有一個類比取樣速率 )，我們可以從開發板的下拉選單中進行設定，這裏設定為 100ms ( 0.1 秒 )。</p>
 <p><img src="../img/tutorials/tutorial-17-08.jpg" alt=""></p>
-<p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，用手去遮蔽光敏電阻更可以看出數值變化。( 解答：<a href="http://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0">http://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0</a></p>
+<p>完成後，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，用手去遮蔽光敏電阻更可以看出數值變化。( 解答：<a href="https://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0">https://blockly.webduino.io/#-K7yYM3Gz3ZilYYbG2E0</a></p>
 <p><img src="../img/tutorials/tutorial-17-09.jpg" alt=""></p>
 <p>不過純粹的類比取出來的數值會有很多小數點，區間也可能不是我們要的區間 ( 例如我可能想要 0 到 100 之間的數值 )，這時候就要用到「進階功能」積木的「數值轉換」，它可以幫助我們做四捨五入以及轉換區間。</p>
 <p><img src="../img/tutorials/tutorial-17-10.jpg" alt=""></p>
 <p>把剛剛我們從有光到無光的數值大概記下來，填入「原始」的最大值與最小值，加上四捨五入，就可以得到相當漂亮的數字。</p>
 <p><img src="../img/tutorials/tutorial-17-11.jpg" alt=""></p>
-<p>完成後，同樣的，確認開發板上線後 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，這些數字也已經經過轉換，是 0 到 100 之間小數點兩位的數字囉。( 解答：<a href="http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO">http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO</a></p>
+<p>完成後，同樣的，確認開發板上線後 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，就可以看到光源強度已經轉換成數字呈現，這些數字也已經經過轉換，是 0 到 100 之間小數點兩位的數字囉。( 解答：<a href="https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO">https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO</a></p>
 <p><img src="../img/tutorials/tutorial-17-12.jpg" alt=""></p>
 <h2>範例解析 ( <a href="http://bin.webduino.io/maqun/5/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
@@ -86,7 +86,7 @@ boardReady(&#39;&#39;, function (board) {
     document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = Math.round(((photocell.detectedVal - (0.007)) * (1/((0.1407)-(0.007)))) * ((100)-(0)) + (0));
   });
 });
-</code></pre><p>以上就是利用光敏電阻，將光源強度轉換成數值，進一步做數值的轉換。<br>完整程式碼：<a href="http://bin.webduino.io/maqun/5/edit?html,css,js,output">http://bin.webduino.io/maqun/5/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO">http://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO</a></p>
+</code></pre><p>以上就是利用光敏電阻，將光源強度轉換成數值，進一步做數值的轉換。<br>完整程式碼：<a href="http://bin.webduino.io/maqun/5/edit?html,css,js,output">http://bin.webduino.io/maqun/5/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO">https://blockly.webduino.io/#-K7yYHx909mnp_IAlGpO</a></p>
 <h2>光敏電阻的延伸教學：</h2>
-<p><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/photocell-1#-K0oVQzwFXfXTj5xmlrU">Webduino Blockly 課程 12-1：控制光敏電阻</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/photocell-2#-K0objWF2mEVwsHYux8W">Webduino Blockly 課程 12-2：使用光敏電阻點亮 LED 燈</a><br><a href="http://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/photocell-3#-K2kvxmwFHNiGl0P-_7S">Webduino Blockly 課程 12-3：轉換光敏 ( 可變 ) 電阻數值</a>  </p>
+<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/photocell-1#-K0oVQzwFXfXTj5xmlrU">Webduino Blockly 課程 12-1：控制光敏電阻</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/photocell-2#-K0objWF2mEVwsHYux8W">Webduino Blockly 課程 12-2：使用光敏電阻點亮 LED 燈</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/photocell-3#-K2kvxmwFHNiGl0P-_7S">Webduino Blockly 課程 12-3：轉換光敏 ( 可變 ) 電阻數值</a>  </p>
 <!-- @@close-->

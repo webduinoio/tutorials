@@ -46,7 +46,7 @@ date: 20150601
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/dht-1](http://blockly.webduino.io/?page=tutorials/dht-1) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/dht-1](https://blockly.webduino.io/?page=tutorials/dht-1) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/T8sZL-UaUP0" frameborder="0" allowfullscreen></iframe>
 
@@ -66,7 +66,7 @@ date: 20150601
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
 ![](../img/tutorials/tutorial-10-05.jpg)
 
@@ -87,7 +87,7 @@ date: 20150601
 ![](../img/tutorials/tutorial-10-09.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到當下的溫濕度，如果用吹風機或嘴呼氣，就會看到溫濕度的變化了。
-( 解答：[http://blockly.webduino.io/#-K79kCuHvGneUStvVcye](http://blockly.webduino.io/#-K79kCuHvGneUStvVcye) )
+( 解答：[https://blockly.webduino.io/#-K79kCuHvGneUStvVcye](https://blockly.webduino.io/#-K79kCuHvGneUStvVcye) )
 
 ![](../img/tutorials/tutorial-10-10.jpg)
 
@@ -119,11 +119,11 @@ JavaScript 用了一個 `read` 的方法來讀取溫濕度，`read` 的第一個
 
 以上就是利用溫濕度傳感器，來偵測環境溫濕度的教學範例。  
 完整程式碼：[http://bin.webduino.io/coca/edit?html,css,js,output](http://bin.webduino.io/coca/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K79kCuHvGneUStvVcye](http://blockly.webduino.io/#-K79kCuHvGneUStvVcye)
+解答：[https://blockly.webduino.io/#-K79kCuHvGneUStvVcye](https://blockly.webduino.io/#-K79kCuHvGneUStvVcye)
 
 ## 溫濕度傳感器的延伸教學：
 
-[Webduino Blockly 課程 5-2：繪製溫濕度圖表](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N)  
-[Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4)
+[Webduino Blockly 課程 5-2：繪製溫濕度圖表](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N)  
+[Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4)
 
 <!-- @@close-->

@@ -46,7 +46,7 @@ date: 20150425
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/button-1](http://blockly.webduino.io/?page=tutorials/button-1) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/button-1](https://blockly.webduino.io/?page=tutorials/button-1) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/Y2I42DsAov8" frameborder="0" allowfullscreen></iframe>
 
@@ -68,7 +68,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來根據開關的狀態，顯示不同的文字，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「顯示文字」來根據開關的狀態，顯示不同的文字，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
 
 ![](../img/tutorials/tutorial-09-06.jpg)
 
@@ -77,7 +77,7 @@ date: 20150425
 ![](../img/tutorials/tutorial-09-07.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕就可以按按看按鈕開關，就會看到顯示文字顯示出對應的文字了。
-( 解答：[http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t](http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t) )
+( 解答：[https://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t](https://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t) )
 
 ![](../img/tutorials/tutorial-09-08.jpg)
 
@@ -116,14 +116,14 @@ JavaScript 可以看到 button 具有一個 on 的事件，裡面第一個參數
 
 以上就是利用按鈕開關的按下、放開與長按，來改變網頁裡面的顯示文字。  
 完整程式碼：[http://bin.webduino.io/vaku/edit?html,css,js,output](http://bin.webduino.io/vaku/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t](http://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t)
+解答：[https://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t](https://blockly.webduino.io/#-K7EhniKOnrgyWt18E4t)
 
 ## 按鈕開關的延伸教學：
 
-[Webduino Blockly 課程 4-2：點擊按鈕開關增加數字](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-2#-JvWu7mS_OoeRvE-m6mD)  
-[Webduino Blockly 課程 4-3：點擊按鈕開關改變圖片位置](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-3#-JvWuaeLK-rrGi66lVIM)  
-[Webduino Blockly 課程 4-4：點擊按鈕開關玩賽跑小遊戲](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-4#-JvY90I0qUoJR2yi34lj)  
-[Webduino Blockly 課程 4-4：點擊按鈕開關玩賽跑小遊戲](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-4#-JvY90I0qUoJR2yi34lj) 
-[Webduino Blockly 課程 4-5：點擊按鈕開關控制 Youtube](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-5#-JxJpqetsCxULbi4Iier) 
+[Webduino Blockly 課程 4-2：點擊按鈕開關增加數字](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-2#-JvWu7mS_OoeRvE-m6mD)  
+[Webduino Blockly 課程 4-3：點擊按鈕開關改變圖片位置](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-3#-JvWuaeLK-rrGi66lVIM)  
+[Webduino Blockly 課程 4-4：點擊按鈕開關玩賽跑小遊戲](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-4#-JvY90I0qUoJR2yi34lj)  
+[Webduino Blockly 課程 4-4：點擊按鈕開關玩賽跑小遊戲](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-4#-JvY90I0qUoJR2yi34lj) 
+[Webduino Blockly 課程 4-5：點擊按鈕開關控制 Youtube](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/button-5#-JxJpqetsCxULbi4Iier) 
 
 <!-- @@close-->

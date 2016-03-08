@@ -66,7 +66,7 @@ date: 20150425
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」，在 LED 燈亮起時，同時網頁燈泡也會亮起，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「點擊燈泡」，在 LED 燈亮起時，同時網頁燈泡也會亮起，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「控制圖片」，就會出現一張圖片，我們會將超音波所測得的距離來控制這張圖片。
 
 ![](../img/tutorials/tutorial-07-05.jpg)
 
@@ -79,7 +79,7 @@ date: 20150425
 ![](../img/tutorials/tutorial-07-07.jpg)
 
 完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用手或是遮蔽物在超音波傳感器前後晃動，就會看到 LED 燈被點亮了。
-( 解答：[http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj](http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj) )
+( 解答：[https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj](https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj) )
 
 ## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/nofi/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -92,8 +92,8 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 HTML 裡就是兩張一明一暗的燈泡圖片，利用 CSS 來控制哪張出現。
 
 	<div id="demo-area-02-light" class="off">
-	  <img src="http://blockly.webduino.io/media/off.png" id="demo-area-02-off">
-	  <img src="http://blockly.webduino.io/media/on.png" id="demo-area-02-on">
+	  <img src="https://blockly.webduino.io/media/off.png" id="demo-area-02-off">
+	  <img src="https://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
 
 CSS 就是設定 on 的時候燈泡圖片亮起，off 的時候燈泡圖片熄滅。
@@ -134,11 +134,11 @@ JavaScript 主要在 `ping` 的函示內，寫入 `if` 和 `else` 的判斷，�
 
 以上就是利用超音波傳感器，偵測距離當在某距離範圍內時，LED 燈會亮起。  
 完整程式碼：[http://bin.webduino.io/nofi/edit?html,css,js,output](http://bin.webduino.io/nofi/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj](http://blockly.webduino.io/#-K5LaeMqraW0_friFzcj)
+解答：[https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj](https://blockly.webduino.io/#-K5LaeMqraW0_friFzcj)
 
 ## 超音波傳感器的延伸教學：
 
-[Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP)  
-[Webduino Blockly 課程 3-3：超音波傳感器改變音量大小](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO) 
+[Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP)  
+[Webduino Blockly 課程 3-3：超音波傳感器改變音量大小](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO) 
 
 <!-- @@close-->

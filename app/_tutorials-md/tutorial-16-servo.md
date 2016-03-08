@@ -45,7 +45,7 @@ date: 20150625
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?page=tutorials/servo-1](http://blockly.webduino.io/?page=tutorials/servo-1) 
+影片對應範例：[https://blockly.webduino.io/?page=tutorials/servo-1](https://blockly.webduino.io/?page=tutorials/servo-1) 
 
 <iframe class="youtube" src="https://www.youtube.com/embed/Dar2pSWCSL8" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ date: 20150625
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會用網頁「拉霸滑桿」來控制伺服馬達旋轉角度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「拉霸操作」。
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會用網頁「拉霸滑桿」來控制伺服馬達旋轉角度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「拉霸操作」。
 
 ![](../img/tutorials/tutorial-16-06.jpg)
 
@@ -77,7 +77,7 @@ date: 20150625
 
 ![](../img/tutorials/tutorial-16-08.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用滑鼠拖動拉霸滑桿，就會看到伺服馬達的旋轉角度跟著變化。( 解答：[http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk](http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk )
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，用滑鼠拖動拉霸滑桿，就會看到伺服馬達的旋轉角度跟著變化。( 解答：[https://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk](https://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk )
 
 ##範例解析 ( [完整程式碼](http://bin.webduino.io/xisa/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
@@ -111,11 +111,11 @@ JavaScript 利用`oninput`把拉霸改變的的數值 value 輸入給n伺服馬�
 
 以上就是利用網頁拉霸滑桿，來控制伺服馬達的旋轉角度。   
 完整程式碼：[http://bin.webduino.io/xisa/edit?html,css,js,output](http://bin.webduino.io/xisa/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk](http://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk)
+解答：[https://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk](https://blockly.webduino.io/#-K7B3_Wn1LxGIYcrhejk)
 
 ## 人體紅外線偵測傳感器的延伸教學：
 
-[Webduino Blockly 課程 8-2：使用按鈕開關控制伺服馬達](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/servo-2#-Jw01xYLefgu_1IvUaVM)  
+[Webduino Blockly 課程 8-2：使用按鈕開關控制伺服馬達](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/servo-2#-Jw01xYLefgu_1IvUaVM)  
 
 
 <!-- @@close-->

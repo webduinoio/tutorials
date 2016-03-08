@@ -45,7 +45,7 @@ date: 20160218
 
 ## 範例影片展示
 
-影片對應範例：[http://blockly.webduino.io/?&page=tutorials/adxl345-1](http://blockly.webduino.io/?&page=tutorials/adxl345-1)  
+影片對應範例：[https://blockly.webduino.io/?&page=tutorials/adxl345-1](https://blockly.webduino.io/?&page=tutorials/adxl345-1)  
 
 <iframe class="youtube" src="https://www.youtube.com/embed/SH4-Z7E1DZc" frameborder="0" allowfullscreen></iframe>
 
@@ -69,7 +69,7 @@ VCC 接在 3.3V 的位置 ( 電壓高於 3.6V 會導致晶片燒毀 )，GND 接 
 
 ## Webduino Blockly 操作解析
 
-打開 Webduino Blockly 編輯工具 ( [http://blockly.webduino.io](http://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示三軸加速度計的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄三軸加速度計的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 GY291 或 ADXL 檔名的韌體 )
+打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例會「先」用網頁「顯示文字」來顯示三軸加速度計的數值，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄三軸加速度計的韌體檔喔！ ( 請參考：[韌體檔案燒錄教學](https://webduino.io/tutorials/info-07-arduino-ino.html)，選擇有 GY291 或 ADXL 檔名的韌體 )
 
 ![](../img/tutorials/tutorial-23-06.jpg)
 
@@ -94,7 +94,7 @@ VCC 接在 3.3V 的位置 ( 電壓高於 3.6V 會導致晶片燒毀 )，GND 接 
 ![](../img/tutorials/tutorial-23-11.jpg)
 
 確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，轉動三軸加速度計，就可以看到數值出現在右側的網頁裡。  
-( 解答：[http://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1](http://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1) )
+( 解答：[https://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1](https://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1) )
 
 ![](../img/tutorials/tutorial-23-12.jpg)
 
@@ -131,14 +131,14 @@ JavaScript 最主要用了`on`這個方法，裡面會有一個函式，帶有�
 
 以上就是控制三軸加速度計 ADXL345 和程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/lizuv/edit?html,css,js,output](http://bin.webduino.io/lizuv/edit?html,css,js,output)  
-解答：[http://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1](http://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1)
+解答：[https://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1](https://blockly.webduino.io/#-KAxVJzMEpjTODr4q4k1)
 
 ## 三軸加速度計的延伸教學：
 
-[Webduino Blockly 課程 14-1：控制三軸加速度計](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-1#-K0pl9rB2TohBuBnorit)  
-[Webduino Blockly 課程 14-2：旋轉角度旋轉圖片](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-2#-K0q9iZQIPc-9eLg9k2f)  
-[Webduino Blockly 課程 14-3：旋轉角度點亮 LED 燈](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-3#-K0qEX3wukvZgtnn817T)  
-[Webduino Blockly 課程 14-4：旋轉角度改變點矩陣圖形](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-4#-K0qKebEHBdfd19FzAvZ)
+[Webduino Blockly 課程 14-1：控制三軸加速度計](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-1#-K0pl9rB2TohBuBnorit)  
+[Webduino Blockly 課程 14-2：旋轉角度旋轉圖片](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-2#-K0q9iZQIPc-9eLg9k2f)  
+[Webduino Blockly 課程 14-3：旋轉角度點亮 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-3#-K0qEX3wukvZgtnn817T)  
+[Webduino Blockly 課程 14-4：旋轉角度改變點矩陣圖形](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-4#-K0qKebEHBdfd19FzAvZ)
 
 
 <!-- @@close-->

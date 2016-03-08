@@ -93,7 +93,7 @@
 <p><img src="../img/tutorials/tutorial-25-05.jpg" alt=""></p>
 <p><img src="../img/tutorials/tutorial-25-06.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="http://blockly.webduino.io">http://blockly.webduino.io</a> )，因為這個範例會用網頁「顯示文字」來顯示搖桿傳回的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄搖桿的韌體檔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a>，選擇有 joypad 檔名的韌體 )</p>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例會用網頁「顯示文字」來顯示搖桿傳回的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄搖桿的韌體檔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a>，選擇有 joypad 檔名的韌體 )</p>
 <p><img src="../img/tutorials/tutorial-25-07.jpg" alt=""></p>
 <p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放搖桿的積木，名稱設定為 joystick，腳位 X 設定為 A4、Y 設定為 A5、SW 設定為 10。</p>
 <p><img src="../img/tutorials/tutorial-25-08.jpg" alt=""></p>
@@ -103,11 +103,11 @@
 <p><img src="../img/tutorials/tutorial-25-10.jpg" alt=""></p>
 <p>當然只有數值不夠，還要標示這個數值代表什麼，所以這邊要用到二層的「建立字串」積木，裡面放入搖桿數值名稱，至於要取出何種數值，可以透過下拉選單選擇 ( 如果覺得字體太大，可以設定文字大小，這裏設定為 20 )。</p>
 <p><img src="../img/tutorials/tutorial-25-11.jpg" alt=""></p>
-<p>確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，轉動或按壓搖桿，就會看見數值的變化。<br>( 解答：<a href="http://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8">http://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8</a> )</p>
+<p>確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，轉動或按壓搖桿，就會看見數值的變化。<br>( 解答：<a href="https://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8">https://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8</a> )</p>
 <p><img src="../img/tutorials/tutorial-25-12.jpg" alt=""></p>
 <p>如果覺得一堆小數點不好看，也可以利用「進階功能」裡頭「數值轉換」的積木，就可以設定只到小數點第一位。</p>
 <p><img src="../img/tutorials/tutorial-25-13.jpg" alt=""></p>
-<p>確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，轉動或按壓搖桿，就會看見數值的變化。<br>( 解答：<a href="http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56">http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56</a> )</p>
+<p>確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選紅色的執行按鈕，轉動或按壓搖桿，就會看見數值的變化。<br>( 解答：<a href="https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56">https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56</a> )</p>
 <h2>範例解析 ( <a href="http://bin.webduino.io/wifak/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
@@ -129,7 +129,7 @@ boardReady(&#39;&#39;, function (board) {
     document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = ([String(&#39;X=&#39;) + String((Math.round((joystick._x)*10))/10),String(&#39;, Y=&#39;) + String((Math.round((joystick._y)*10))/10),String(&#39;, SW=&#39;) + String((Math.round((joystick._z)*10))/10)].join(&#39;&#39;));
   }
 });
-</code></pre><p>以上就是控制搖桿的程式碼簡介。<br>完整程式碼：<a href="http://bin.webduino.io/wifak/edit?html,css,js,output">http://bin.webduino.io/wifak/edit?html,css,js,output</a><br>解答：<a href="http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56">http://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56</a></p>
+</code></pre><p>以上就是控制搖桿的程式碼簡介。<br>完整程式碼：<a href="http://bin.webduino.io/wifak/edit?html,css,js,output">http://bin.webduino.io/wifak/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56">https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56</a></p>
 
 
 <a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
