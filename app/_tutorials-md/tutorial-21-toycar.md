@@ -114,7 +114,7 @@ Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
-	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
 JavaScript 因為比較長，所以這邊我們分成三個部分來看，先看到最外層`boardReady`的部分，這是指開發板上線之後要做的事情，下面會繼續介紹寫在裡面的程式碼。
 

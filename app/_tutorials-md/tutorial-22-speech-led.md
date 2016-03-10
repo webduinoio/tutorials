@@ -106,7 +106,7 @@ date: 20160123
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
-	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
 HTML 裏頭只有一個 span，用來顯示 RFID 磁卡或磁扣的識別碼。
 
@@ -162,7 +162,7 @@ JavaScript 最主要用了`webkitSpeechRecognition()`這個 Chrome 內建語音�
 	  speechRecognition();
 	});
 
-以上就是利用鍵盤來控制自走車的 Blockly 和程式碼簡介。   
+以上就是語音聲控的 Blockly 和程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/fexic/edit?html,js,output](http://bin.webduino.io/fexic/edit?html,js,output)  
 解答：[https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN](https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN)
 

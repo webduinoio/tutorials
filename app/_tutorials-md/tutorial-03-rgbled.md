@@ -92,7 +92,7 @@ date: 20150425
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
-	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
 HTML 的 body 裡頭有五個按鈕，名字就是按鈕 1 到 5，各自都有對應一個 HTML 標籤的 id，這樣我們才可以在 JavaScript 裡經由 id 來控制按鈕行為，class 則是讓這些按鈕有固定的樣式，當然如果要用預設的樣式也可以，就不需要設定 CSS。
 

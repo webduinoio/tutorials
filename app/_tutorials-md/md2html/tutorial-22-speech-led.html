@@ -65,7 +65,7 @@ img: tutorial-22-01s.jpg</p>
 <h2>範例解析 ( <a href="http://bin.webduino.io/fexic/edit?html,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>HTML 裏頭只有一個 span，用來顯示 RFID 磁卡或磁扣的識別碼。</p>
 <pre><code>&lt;span id=&quot;demo-area-01-show&quot;&gt;123&lt;/span&gt;
 </code></pre><p>JavaScript 最主要用了<code>webkitSpeechRecognition()</code>這個 Chrome 內建語音辨識的物件，根據不同的屬性，例如<code>continuous</code>、<code>interimResults</code>和<code>lang</code>就可以針對語音辨識做一些設定，而語音辨識會回傳一個<code>onresult</code>的屬性，裡面就會有辨識出來的文字，而我們便將判斷式寫在裡頭，判斷如果有我們的指令文字，就會執行某些動作。</p>
@@ -116,5 +116,5 @@ boardReady(&#39;&#39;, function (board) {
   }
   speechRecognition();
 });
-</code></pre><p>以上就是利用鍵盤來控制自走車的 Blockly 和程式碼簡介。<br>完整程式碼：<a href="http://bin.webduino.io/fexic/edit?html,js,output">http://bin.webduino.io/fexic/edit?html,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN">https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN</a></p>
+</code></pre><p>以上就是語音聲控的 Blockly 和程式碼簡介。<br>完整程式碼：<a href="http://bin.webduino.io/fexic/edit?html,js,output">http://bin.webduino.io/fexic/edit?html,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN">https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN</a></p>
 <!-- @@close-->

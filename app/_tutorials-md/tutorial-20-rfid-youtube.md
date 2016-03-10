@@ -97,7 +97,7 @@ Youtube 的積木都在左邊網頁互動裡面，一開始我們要先載入 Yo
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`，比較特別的是因為要控制 Youtube ，所以要額外載入`iframe_api`這支程式。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
-	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 	<script src="https://www.youtube.com/iframe_api"></script>
 
 HTML 裏頭只有一個 div，也就是 Youtube 影片會顯示的區域。

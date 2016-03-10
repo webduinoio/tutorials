@@ -97,7 +97,7 @@ MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
-	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
 HTML 裏頭放了五顆按鈕，大小樣式大家就可以自行去做設定。
 

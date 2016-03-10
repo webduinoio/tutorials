@@ -67,7 +67,7 @@
 			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">教學範例</a>
 			<a href="../buy.html" class="buy" data-name="layout-menu">產品總覽</a>
 			<a href="../activity.html" class="activity" data-name="layout-menu">課程活動</a>
-			<a class="none" data-name="layout-menu">關於我們</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">連絡我們</a>
 		</div>
 	</header>
 	  
@@ -108,7 +108,7 @@
 <h2>程式碼解析 ( <a href="http://bin.webduino.io/coca/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>HTML 裡頭有一個 span，負責顯示文字。</p>
 <pre><code>&lt;span id=&quot;demo-area-01-show&quot;&gt;123&lt;/span&gt;
 </code></pre><p>JavaScript 用了一個 <code>read</code> 的方法來讀取溫濕度，<code>read</code> 的第一個參數是做動作的函式，第二個參數是時間，可以看到這裡時間設定為 1000 ( 毫秒 )，然後顯示文字使用了 innerHTML 來呈現，字體大小與行高則是用 <code>style</code> 來修改。  </p>

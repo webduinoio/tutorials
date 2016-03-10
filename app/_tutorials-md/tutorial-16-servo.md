@@ -84,7 +84,7 @@ date: 20150625
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
-	<script src="http://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
+	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
 HTML 放入一個 span 來顯示當前角度，並放入一個 type 為 range 的 input，這也就是我們的拉霸滑桿，裡面可以設定最大值 max、最小值 min、間距 step 和預設值 value。
 

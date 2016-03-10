@@ -69,7 +69,7 @@ img: tutorial-21-01s.jpg</p>
 <h2>範例解析 ( <a href="http://bin.webduino.io/pufa/edit?html,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>JavaScript 因為比較長，所以這邊我們分成三個部分來看，先看到最外層<code>boardReady</code>的部分，這是指開發板上線之後要做的事情，下面會繼續介紹寫在裡面的程式碼。</p>
 <pre><code>var car;
 

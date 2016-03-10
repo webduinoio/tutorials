@@ -56,7 +56,7 @@ img: tutorial-06-01s.jpg</p>
 <h2>程式碼解析 ( <a href="http://bin.webduino.io/jufiq/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>HTML 裡就是一張圖片，放在一個 div 裡頭，圖片和 div 分別都有 id 方便我們去控制。</p>
 <pre><code>&lt;div id=&quot;demo-area-03-container&quot;&gt;
   &lt;img src=&quot;https://blockly.webduino.io/media/webduino-logo.jpg&quot; id=&quot;demo-area-03-image&quot;&gt;

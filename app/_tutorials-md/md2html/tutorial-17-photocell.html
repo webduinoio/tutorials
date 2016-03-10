@@ -61,7 +61,7 @@ img: tutorial-17-01s.jpg</p>
 <h2>範例解析 ( <a href="http://bin.webduino.io/maqun/5/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>HTML 只需要一個 span 來顯示光敏電阻的數值。</p>
 <pre><code>&lt;span id=&quot;demo-area-01-show&quot;&gt;123&lt;/span&gt;
 </code></pre><p>JavaScript 裡面可以看到光敏電阻具有<code>on</code>的方法，表示開始偵測，偵測後在裡面回呼的函式有個 val 的數值就是光敏電阻接收到的值，再利用<code>innerHTML</code>顯示出來。</p>
