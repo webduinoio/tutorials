@@ -71,7 +71,7 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-13-06.jpg)
 
-再來建立我們的第一首音樂，放入「建立音樂」的積木，名稱命名為 m1，裏頭擺入音符與節奏，音符與節奏積木的「音調」有「無聲、C、CS、D、DS、E、F、FS、G、GS、A、AS、B」，可以想像成鋼琴的黑鍵與白鍵，有 S 的就是黑鍵，「音高」就是有幾個八度音，這裏可以設定七個八度音，數字越大聲越高，「節奏」就是幾分之一秒，最少可以到 1/10 秒。
+再來建立我們的第一首音樂，放入「建立音樂」的積木，名稱命名為 m1，裏頭擺入音符與節奏，「音符」第一個下拉選單有「無聲、C、CS、D、DS、E、F、FS、G、GS、A、AS、B」，可以想像成鋼琴的黑鍵與白鍵，有 S 的就是黑鍵，第二個下拉選單就是有幾個八度音，這裏可以設定七個八度音，數字越大聲越高，「節奏」就是幾分之一秒，最少可以到 1/10 秒。
 
 ![](../img/tutorials/tutorial-13-07.jpg)
 
@@ -79,11 +79,11 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-13-08.jpg)
 
-如果要用另外一種製作音樂的方式，可以選擇「快速建立音樂」的積木，這裏就只是把剛剛的音符與節奏，合併成兩個欄位，如果節奏沒有按照音符數量填寫 ( 如果節奏比較少 )，則多出來的音符會預設用 1/8 秒的節奏播放，用這種方式做的第二首音樂 m2，點選按鈕 2 來播放。
+除了一個個放入音符和節奏外，也可以直接用輸入的方式，這裏就只是把剛剛的音符與節奏，合併成兩個欄位，如果節奏沒有按照音符數量填寫 ( 如果節奏比較少 )，則多出來的音符就會用最後一個節奏的時間去播放，用這種方式做的第二首音樂 m2，點選按鈕 2 來播放。
 
 ![](../img/tutorials/tutorial-13-09.jpg)
 
-接著按下按鈕 3 的事件，就直接播放一首系統預設的超級馬力音樂即可。
+接著按下按鈕 3 的事件，這裏就用同樣做音樂的方法作首 m3 的音樂，內容就直接選一首資料庫的音樂放入。
 
 ![](../img/tutorials/tutorial-13-10.jpg)
 
@@ -95,9 +95,9 @@ date: 20150604
 
 ![](../img/tutorials/tutorial-13-12.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，分別按下不同按鈕，就會聽到蜂鳴器播放出不同的音樂。( 解答：[https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs) )
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，分別按下不同按鈕，就會聽到蜂鳴器播放出不同的音樂。( 解答：[https://blockly.webduino.io/#-KDEaW-S-kRRaEkkyRGH](https://blockly.webduino.io/#-KDEaW-S-kRRaEkkyRGH) )
 
-## 程式碼解析 ( [完整程式碼](http://bin.webduino.io/zolor/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+## 程式碼解析 ( [完整程式碼](https://bin.webduino.io/lihov/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
@@ -112,52 +112,58 @@ HTML 裡有五個按鈕，分別有各自的 id，屆時就可以由 id 來判�
 	<button id="demo-area-05-btn4" class="db5">按鈕 4</button>
 	<button id="demo-area-05-btn5" class="db5">按鈕 5</button>
 
-JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，其實就是建立兩個陣列 ( notes 和 tempos )，然後把音符和節奏分別拋到這兩個陣列裡，如果是 m2 的話就更單純，直接就可以看到兩個陣列的長相，至於直接播放系統預設的超級馬力，就可以看到一大串的超級馬力音樂數值在陣列裡，然後只要設定按鈕的 click 事件來播放就可以了。
+JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，其實就是建立兩個陣列 ( notes 和 tempos )，然後把音符和節奏分別拋到這兩個陣列裡，一開始的程式就是音樂播放的主程式，可以清楚地看到裡面放入了兩個物件，分別是 notes 和 tempos，而這兩個物件內容都是陣列。
 
 	var buzzer;
 	var m1;
 	var m2;
+	var m3;
+
+	function buzzer_music(m) {
+	  var musicNotes = {};
+	  musicNotes.notes = [];
+	  musicNotes.tempos = [];
+	  if(m.length>1){
+	    for(var i=0; i<m.length; i++){
+	      if(Array.isArray(m[i].notes)){
+	        var cn = musicNotes.notes.concat(m[i].notes);
+	        musicNotes.notes = cn;
+	      }else{
+	        musicNotes.notes.push(m[i].notes);
+	      }
+	      if(Array.isArray(m[i].tempos)){
+	        var ct = musicNotes.tempos.concat(m[i].tempos);
+	        musicNotes.tempos = ct;
+	      }else{
+	        musicNotes.tempos.push(m[i].tempos);
+	      }
+	    }
+	  }else{
+	    musicNotes.notes = [m[0].notes];
+	    musicNotes.tempos = [m[0].tempos];
+	  }
+	  return musicNotes;
+	}
+
+接著看到開發板的程式，可以看到我們建立的音樂，就是把一串陣列丟給這首音樂的 notes 和 tempos 物件，如此一來蜂鳴器就會按照這些音符節奏播放。
 
 	boardReady('', function (board) {
 	  board.samplingInterval = 20;
 	  buzzer = getBuzzer(board, 11);
-	  var m1={};
-	  (function(){
-	    var musicNotes = {};
-	    musicNotes.notes = [];
-	    musicNotes.tempos = [];
-	    musicNotes.notes.push("C6");
-	    musicNotes.tempos.push("6");
-	    musicNotes.notes.push("D6");
-	    musicNotes.tempos.push("7");
-	    musicNotes.notes.push("E6");
-	    musicNotes.tempos.push("8");
-	    musicNotes.notes.push("F6");
-	    musicNotes.tempos.push("6");
-	    musicNotes.notes.push("G6");
-	    musicNotes.tempos.push("7");
-	    musicNotes.notes.push("A6");
-	    musicNotes.tempos.push("8");
-
-	    m1.notes = musicNotes.notes;
-	    m1.tempos = musicNotes.tempos;
-	  })();
+	  m1 = buzzer_music([  {notes:"C6",tempos:"3"},{notes:"D6",tempos:"7"},{notes:"E6",tempos:"3"},{notes:"F6",tempos:"7"}]);
 	  document.getElementById("demo-area-05-btn1").addEventListener("click",function(){
 	    buzzer.stop();
 	    buzzer.play(m1.notes, m1.tempos);
 	  });
-	  var m2={};
-	  (function(){
-	    m2.notes = ['C6','D6','E6','F6','G6','A6','B6'];
-	    m2.tempos = ['8'];
-	  })();
+	  m2 = buzzer_music([  {notes : ["C6","D6","E6","F6","G6","A6","B6"] , tempos : ["8","8","8","8","8","8","8"] }]);
 	  document.getElementById("demo-area-05-btn2").addEventListener("click",function(){
 	    buzzer.stop();
 	    buzzer.play(m2.notes, m2.tempos);
 	  });
+	  m3 = buzzer_music([  {notes:["E7","E7","0","E7","0","C7","E7","0","G7","0","0","0","G6","0","0","0","C7","0","0","G6","0","0","E6","0","0","A6","0","B6","0","AS6","A6","0","G6","E7","0","G7","A7","0","F7","G7","0","E7","0","C7","D7","B6","0","0","C7","0","0","G6","0","0","E6","0","0","A6","0","B6","0","AS6","A6","0","G6","E7","0","G7","A7","0","F7","G7","0","E7","0","C7","D7","B6","0","0"] , tempos:["8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"]}]);
 	  document.getElementById("demo-area-05-btn3").addEventListener("click",function(){
 	    buzzer.stop();
-	    buzzer.play(["E7","E7","0","E7","0","C7","E7","0","G7","0","0","0","G6","0","0","0","C7","0","0","G6","0","0","E6","0","0","A6","0","B6","0","AS6","A6","0","G6","E7","0","G7","A7","0","F7","G7","0","E7","0","C7","D7","B6","0","0","C7","0","0","G6","0","0","E6","0","0","A6","0","B6","0","AS6","A6","0","G6","E7","0","G7","A7","0","F7","G7","0","E7","0","C7","D7","B6","0","0"],["8"].notes, ["E7","E7","0","E7","0","C7","E7","0","G7","0","0","0","G6","0","0","0","C7","0","0","G6","0","0","E6","0","0","A6","0","B6","0","AS6","A6","0","G6","E7","0","G7","A7","0","F7","G7","0","E7","0","C7","D7","B6","0","0","C7","0","0","G6","0","0","E6","0","0","A6","0","B6","0","AS6","A6","0","G6","E7","0","G7","A7","0","F7","G7","0","E7","0","C7","D7","B6","0","0"],["8"].tempos);
+	    buzzer.play(m3.notes, m3.tempos);
 	  });
 	  document.getElementById("demo-area-05-btn4").addEventListener("click",function(){
 	    buzzer.stop();
@@ -165,14 +171,14 @@ JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，�
 	});
 
 以上就是利用蜂鳴器和網頁的按鈕，來製作與播放音樂。  
-完整程式碼：[http://bin.webduino.io/zolor/edit?html,css,js,output](http://bin.webduino.io/zolor/edit?html,css,js,output)  
-解答：[https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs](https://blockly.webduino.io/#-K7AbLdWpQrrSWJ8kIPs)
+完整程式碼：[https://bin.webduino.io/lihov/edit?html,css,js,output](https://bin.webduino.io/lihov/edit?html,css,js,output)  
+解答：[https://blockly.webduino.io/#-KDEaW-S-kRRaEkkyRGH](https://blockly.webduino.io/#-KDEaW-S-kRRaEkkyRGH)
 
 ## 蜂鳴器的延伸教學：
 
-[Webduino Blockly 課程 9-2：蜂鳴器播放音樂](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-2#-Jw0aEoyT2sxCaftUdTD)  
-[Webduino Blockly 課程 9-3：切換音樂，用蜂鳴器播放](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-3#-Jw13yiSFLrZJEVyJ2Ej)  
-[Webduino Blockly 課程 9-4：蜂鳴器的播放、暫停、停止 ( 按鈕開關控制 ) ](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-4#-Jw17HU-K0zaz6OVpCd2)
+[Webduino Blockly 課程 9-2：蜂鳴器播放音樂](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-2#-KDCNtS1o_l57m9Aq46h)  
+[Webduino Blockly 課程 9-3：切換音樂，用蜂鳴器播放](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-3#-KDCOHhM5eAHX6GbAkw8)  
+[Webduino Blockly 課程 9-4：蜂鳴器的播放、暫停、停止 ( 按鈕開關控制 ) ](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-4#-KDCOxfqbxJmc3MaY_rg)
 
 
 <!-- @@close-->
