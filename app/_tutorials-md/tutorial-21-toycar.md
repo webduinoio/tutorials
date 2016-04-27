@@ -107,134 +107,68 @@ Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬
 
 ![](../img/tutorials/tutorial-21-15.jpg)
 
-做好之後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始用鍵盤操控自走車了。( 解答：[https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ) )
+做好之後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以開始用鍵盤操控自走車了。( 解答：[https://blockly.webduino.io/#-KGMmOLh3VCSem3MK95f](https://blockly.webduino.io/#-KGMmOLh3VCSem3MK95f) )
 
-##範例解析 ( [完整程式碼](http://bin.webduino.io/pufa/edit?html,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
+##範例解析 ( [完整程式碼](https://bin.webduino.io/pehev/1/edit?html,css,js,output)、[檢查連線狀態](https://webduino.io/device.html) )
 
 HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 `webduino-blockly.js`。
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-JavaScript 因為比較長，所以這邊我們分成三個部分來看，先看到最外層`boardReady`的部分，這是指開發板上線之後要做的事情，下面會繼續介紹寫在裡面的程式碼。
+JavaScript 最主要是鍵盤行為的操控，每個鍵盤按鍵，在 JavaScript 裡面都有對應的`keyCode`，利用`switch`就可以判斷不同的`keyCode`就做不同的事情，不過在右側有數字鍵和右側沒有數字鍵的鍵盤、或 Mac 作業系統裡，部分 KeyCode 會不同 ( 例如上下左右 )，不過如果是字母，基本上都會是相同的，所以建議先從字母鍵盤著手。
 
 	var car;
 
-	boardReady('', function (board) {
+	boardReady('', async function (board) {
+	  board.systemReset();
 	  board.samplingInterval = 20;
-	  //待會要執行的事情會寫在這邊
+	  car = getToyCar(board,6,7,8,9);
+	  document.onkeydown = async function(e){
+	    console.log(e.keyCode);
+	    switch(e.keyCode){
+	      case 87:
+	        car.goFront();
+	      break;
+	      case 83:
+	        car.goBack();
+	      break;
+	      case 65:
+	        car.turnLeft();
+	      break;
+	      case 68:
+	        car.turnRight();
+	      break;
+	    }
+	  };
+	  document.onkeyup = async function(e2){
+	    console.log(e2.keyCode);
+	    switch(e2.keyCode){
+	      case 87:
+	        car.stop();
+	      break;
+	      case 83:
+	        car.stop();
+	      break;
+	      case 65:
+	        car.stop();
+	      break;
+	      case 68:
+	        car.stop();
+	      break;
+	    }
+	  };
 	});
 
-第一部分是車子的行為操控，很有趣的地方是這裏用了`getLed`的方式來控制腳位，為什麼跟 LED 有關係呢？因為對於車子來說，例如 6 號腳是高電位右邊馬達會正轉，7 號腳高電位右邊馬達會反轉，如果左右馬達同時正轉，車子就會往前走，左右馬達同時反轉，車子就會往後走，當左右馬達轉向相反，車子就會原地自轉，依此類推，所以這裡就設定了很多組車子的動作，例如：`goFront`、`goBack`...等。
-
-	car = {};
-
-	car.rightFront_ = getLed(board, 6);
-	car.rightBack_ = getLed(board, 7);
-	car.leftFront_ = getLed(board, 8);
-	car.leftBack_ = getLed(board, 9);
-
-	car.goFront_ = function(){
-	  car.rightFront_.on();
-	  car.rightBack_.off();
-	  car.leftFront_.on();
-	  car.leftBack_.off();
-	};
-	car.goBack_ = function(){
-	  car.rightFront_.off();
-	  car.rightBack_.on();
-	  car.leftFront_.off();
-	  car.leftBack_.on();
-	};
-	car.goRight_ = function(){
-	  car.rightFront_.on();
-	  car.rightBack_.off();
-	  car.leftFront_.off();
-	  car.leftBack_.off();
-	};
-	car.goLeft_ = function(){
-	  car.rightFront_.off();
-	  car.rightBack_.off();
-	  car.leftFront_.on();
-	  car.leftBack_.off();
-	};
-	car.turnRight_ = function(){
-	  car.rightFront_.off();
-	  car.rightBack_.on();
-	  car.leftFront_.on();
-	  car.leftBack_.off();
-	};
-	car.turnLeft_ = function(){
-	  car.rightFront_.on();
-	  car.rightBack_.off();
-	  car.leftFront_.off();
-	  car.leftBack_.on();
-	};
-	car.backLeft_ = function(){
-	  car.rightFront_.off();
-	  car.rightBack_.off();
-	  car.leftFront_.off();
-	  car.leftBack_.on();
-	};
-	car.backRight_ = function(){
-	  car.rightFront_.off();
-	  car.rightBack_.on();
-	  car.leftFront_.off();
-	  car.leftBack_.off();
-	};
-	car.stop_ = function(){
-	  car.rightFront_.off();
-	  car.rightBack_.off();
-	  car.leftFront_.off();
-	  car.leftBack_.off();
-	};
-
-再來的這一段是鍵盤行為的操控，每個鍵盤按鍵，在 JavaScript 裡面都有對應的`keyCode`，利用`switch`就可以判斷不同的`keyCode`就做不同的事情，不過在右側有數字鍵和右側沒有數字鍵的鍵盤、或 Mac 作業系統裡，部分 KeyCode 會不同 ( 例如上下左右 )，不過如果是字母，基本上都會是相同的，所以建議先從字母鍵盤著手。
-
-	document.onkeydown = function(e){
-	  console.log(e.keyCode);
-	  switch(e.keyCode){
-	    case 87:
-	      car.goFront_();
-	    break;
-	    case 83:
-	      car.goBack_();
-	    break;
-	    case 65:
-	      car.turnLeft_();
-	    break;
-	    case 68:
-	      car.turnRight_();
-	    break;
-	  }
-	};
-	document.onkeyup = function(e2){
-	  console.log(e2.keyCode);
-	  switch(e2.keyCode){
-	    case 87:
-	      car.stop_();
-	    break;
-	    case 83:
-	      car.stop_();
-	    break;
-	    case 65:
-	      car.stop_();
-	    break;
-	    case 68:
-	      car.stop_();
-	    break;
-	  }
-	};
-
 以上就是利用鍵盤來控制自走車的 Blockly 和程式碼簡介。   
-完整程式碼：[http://bin.webduino.io/pufa/edit?html,js,output](http://bin.webduino.io/pufa/edit?html,js,output)  
-解答：[https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ](https://blockly.webduino.io/#-K83d4dTF91eCJ6NZ0rQ)
+完整程式碼：[https://bin.webduino.io/pehev/1/edit?html,css,js,output](https://bin.webduino.io/pehev/1/edit?html,css,js,output)  
+解答：[https://blockly.webduino.io/#-KGMmOLh3VCSem3MK95f](https://blockly.webduino.io/#-KGMmOLh3VCSem3MK95f)
 
-## RFID 的延伸教學：
+## 自走車的延伸教學：
 
-[Webduino Blockly 課程：操控自走車](https://blockly.webduino.io/?lang=zh-hant#-JzjA7kAmAKmiCjWgxAu)  
-[Webduino Blockly 課程：超音波避障自走車](https://blockly.webduino.io/?lang=zh-hant#-JzjArZQxBWPbq7wpuCM)  
-[Webduino Blockly 課程：語音聲控自走車](https://blockly.webduino.io/?lang=zh-hant#-JzjAQjf2HuWFSrg4ocj)     
+[Webduino Blockly 課程：操控自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMmvTNDxkWIiIklD7I)  
+[Webduino Blockly 課程：超音波避障自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMn222ejGP0edhX-KL)  
+[Webduino Blockly 課程：語音聲控自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMn7k6rIv8_1om2-xa)     
 
 
 <!-- @@close-->
