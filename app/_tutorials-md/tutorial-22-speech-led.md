@@ -108,7 +108,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-HTML 裏頭只有一個 span，用來顯示 RFID 磁卡或磁扣的識別碼。
+HTML 裏頭只有一個 span，用來顯示語音辨識出來的文字。
 
 	<span id="demo-area-01-show">123</span>
 
