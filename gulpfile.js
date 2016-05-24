@@ -51,6 +51,15 @@ gulp.task('index',function () {
           .pipe(gulp.dest('app'));
 });
 
+gulp.task('indexEN',function () {
+  return gulp.src('app/en/_index.html')
+          .pipe(extender({annotations:false,verbose:false}))
+          .pipe(rename(function (path) {
+              path.basename = "index";
+          }))
+          .pipe(gulp.dest('app/en'));
+});
+
 /*                           .                               .o8  
                         .o8                              "888  
  .ooooo.  oooo    ooo .o888oo  .ooooo.  ooo. .oo.    .oooo888  
@@ -85,7 +94,13 @@ gulp.task('extend',function () {
               path.basename = "activity";
           }))
           .pipe(gulp.dest('app'));
-  return merge(a1, a2, a3, a4);
+  var b1 = gulp.src('app/en/_tutorials.html')
+          .pipe(extender({annotations:false,verbose:false}))
+          .pipe(rename(function (path) {
+              path.basename = "tutorials";
+          }))
+          .pipe(gulp.dest('app/en'));
+  return merge(a1, a2, a3, a4, b1);
 });
 
 /*
@@ -102,7 +117,7 @@ o888o o888o o888o `Y8bod8P' o888o  `V88V"V8P' `Y8bod88P" `Y8bod8P'*/
 var contentInjectHtml = [
   'app/buy.html',
   'app/tutorials.html',
-  'app/activity.html'
+  'app/activity.html',
 ];
 gulp.task('include',['extend'],function(){
   return gulp.src(contentInjectHtml)
@@ -114,6 +129,21 @@ gulp.task('include-final',['extend','copy-css'],function(){
   return gulp.src(contentInjectHtml)
   .pipe(include())
   .pipe(gulp.dest('app'));
+});
+
+var contentInjectENHtml = [
+  'app/en/tutorials.html'
+];
+gulp.task('include-en',['extend'],function(){
+  return gulp.src(contentInjectENHtml)
+  .pipe(include())
+  .pipe(gulp.dest('app/en'));
+});
+
+gulp.task('include-en-final',['extend','copy-css'],function(){
+  return gulp.src(contentInjectENHtml)
+  .pipe(include())
+  .pipe(gulp.dest('app/en'));
 });
 
 
@@ -169,6 +199,59 @@ gulp.task('tutorials-include-final',['md-extend','copy-css'],function(){
   .pipe(gulp.dest('app/tutorials'));
 });
 
+/*
+d88888b d8b   db        d888888b db    db d888888b  .d88b.  d8888b. d888888b  .d8b.  db      
+88'     888o  88        `~~88~~' 88    88 `~~88~~' .8P  Y8. 88  `8D   `88'   d8' `8b 88      
+88ooooo 88V8o 88           88    88    88    88    88    88 88oobY'    88    88ooo88 88      
+88~~~~~ 88 V8o88 C8888D    88    88    88    88    88    88 88`8b      88    88~~~88 88      
+88.     88  V888           88    88b  d88    88    `8b  d8' 88 `88.   .88.   88   88 88booo. 
+Y88888P VP   V8P           YP    ~Y8888P'    YP     `Y88P'  88   YD Y888888P YP   YP Y88888P 
+*/
+
+/* tutorials 合併 layout */
+gulp.task('tutorials-en-clean',function(){ 
+  return gulp.src(['app/en/tutorials/**/*'], {read: true}).pipe(clean());
+});
+
+/* markdown，需要手動修改把 id 拿掉，markdown to json 必須把 data[path].body mark 起來 */
+gulp.task('md-en-clean',function(){
+  return gulp.src(['app/en/_tutorials-md/md2html/**/*','app/en/json/**/*'], {read: true}).pipe(clean());
+});
+
+gulp.task('md-en',['md-en-clean'], function () {
+  return gulp.src(['app/en/_tutorials-md/**/*.md','!app/en/_tutorials-md/**/temp.md'])
+      .pipe(markdown())
+      .pipe(gulp.dest('app/en/_tutorials-md/md2html/'));
+});
+
+gulp.task('md2json-en',['md-en'], function(){
+  return gulp.src(['app/en/_tutorials-md/**/*.md','!app/en/_tutorials-md/**/temp.md'])
+    .pipe(gutil.buffer())
+    .pipe(md2json('tutorials-en.json'))
+    .pipe(gulp.dest('app/en/json'))
+});
+
+gulp.task('md-en-extend',['md2json-en','tutorials-en-clean'], function () {
+  return gulp.src('app/en/_tutorials-md/md2html/*.html')
+  .pipe(extender({annotations:false,verbose:false}))
+  .pipe(gulp.dest('app/en/tutorials'));
+});
+
+/* tutorials 置換為合適的 js 與 css */
+
+gulp.task('tutorials-en-include',['md-en-extend'],function(){
+  return gulp.src('app/en/tutorials/*.html')
+  .pipe(include())
+  .pipe(gulp.dest('app/en/tutorials'));
+});
+
+gulp.task('tutorials-en-include-final',['tutorials-en-include'],function(){
+  return gulp.src('app/en/tutorials/*.html')
+  .pipe(include())
+  .pipe(gulp.dest('app/en/tutorials'));
+});
+
+
 
 /*
  .o8                               
@@ -223,13 +306,18 @@ gulp.task('watch',function(){
   gulp.watch(['app/_buy-content/*.html','_include-buy.html'],['buy-include']);
   gulp.watch('app/_tutorials-md/**/*.md',['tutorials-include','md2json']);
   gulp.watch('app/_include-tutorials.html',['tutorials-include']);
+  gulp.watch('app/en/_tutorials-md/**/*.md',['tutorials-en-include','md2json-en']);
+  gulp.watch('app/en/_include-tutorials.html',['tutorials-en-include']);
 	gulp.watch('app/style/less/*.less',['copy-css']);
   gulp.watch('app/_index.html',['index']);
+  gulp.watch('app/en/_index.html',['indexEN']);
 	gulp.watch([
     'app/_buy.html',
     'app/_tutorials.html',
-    'app/_activity.html'],['include']);
+    'app/_activity.html',
+    'app/en/_tutorials.html'],['include']);
 	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include']);
+  gulp.watch('app/en/_layout.html',['indexEN']);
 });
 
 
@@ -282,8 +370,17 @@ gulp.task('move',['build-clean'],function(){
               'app/buy.html',
               'app/activity.html'])
             .pipe(minifyHTML(opts))
-            .pipe(gulp.dest('build'));
-  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15);
+            .pipe(gulp.dest('build')),
+      b1 = gulp.src('app/en/json/**/*').pipe(gulp.dest('build/en/json')),
+      b2 = gulp.src('app/en/tutorials/*.html')
+            .pipe(minifyHTML(opts))
+            .pipe(gulp.dest('build/en/tutorials')),
+      b3 = gulp.src([
+              'app/en/index.html',
+              'app/en/tutorials.html'])
+            .pipe(minifyHTML(opts))
+            .pipe(gulp.dest('build/en'));
+  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, b1, b2, b3);
 });
 
 gulp.task('build',['move'], function () {
@@ -294,4 +391,4 @@ gulp.task('build',['move'], function () {
         .pipe(gulp.dest('build'));
 });
 
-gulp.task('default',['index','include-final','buy-include','tutorials-include-final','md2json','less','watch']);
+gulp.task('default',['index','indexEN','include-final','buy-include','tutorials-include-final','md2json','include-en-final','tutorials-en-include-final','md2json-en','less','watch']);
