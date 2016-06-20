@@ -41,6 +41,16 @@
       width:33%;
       padding:12px;
       vertical-align:top;
+      i.new{
+        position:absolute;
+        width:100px;
+        height:100px;
+        top:10px;
+        left:10px;
+        background-image:url(../../img/buy/icon-new.png);
+        background-size:cover;
+        z-index:2;
+      }
       a{
         h2{
           text-align:center;
@@ -62,6 +72,13 @@
             color:#09b;
             ._transition(.3s);
           }
+        }
+        .price{
+          text-decoration:line-through; 
+          font-size:12px;
+        }
+        .price-sale{
+          color:#f00;
         }
         .description{
           width:90%;

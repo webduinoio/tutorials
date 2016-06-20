@@ -23,6 +23,16 @@
   padding: 12px;
   vertical-align: top;
 }
+.content > div > div i.new {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 10px;
+  background-image: url(../../img/buy/icon-new.png);
+  background-size: cover;
+  z-index: 2;
+}
 .content > div > div a h2 {
   text-align: center;
   font-size: 18px;
@@ -49,6 +59,13 @@
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
+}
+.content > div > div a .price {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.content > div > div a .price-sale {
+  color: #f00;
 }
 .content > div > div a .description {
   width: 90%;
