@@ -43,6 +43,11 @@ date: 20160114
 
 Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬克 1 號開發板控制，不僅可以設定行進的模式，更可以接上超音波傳感器讓車子自動閃避障礙物，在這個範例我們會實作設定電腦的鍵盤行為，透過敲打鍵盤讓車子移動。
 
+<div class="buy-this">
+	<span>自走車相關套件：<a href="https://webduino.io/buy/webduino-package-toycar.html" target="_blank">Webduino 公仔自走車 ( 電子材料包 )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/0JT1KAHkMsk" frameborder="0" allowfullscreen></iframe>
@@ -76,6 +81,11 @@ Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬
 最終長相：
 
 ![](../img/tutorials/tutorial-21-08.jpg)
+
+<div class="buy-this">
+	<span>自走車相關套件：<a href="https://webduino.io/buy/webduino-package-toycar.html" target="_blank">Webduino 公仔自走車 ( 電子材料包 )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -169,6 +179,11 @@ JavaScript 最主要是鍵盤行為的操控，每個鍵盤按鍵，在 JavaScri
 [Webduino Blockly 課程：操控自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMmvTNDxkWIiIklD7I)  
 [Webduino Blockly 課程：超音波避障自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMn222ejGP0edhX-KL)  
 [Webduino Blockly 課程：語音聲控自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMn7k6rIv8_1om2-xa)     
+
+<div class="buy-this">
+	<span>自走車相關套件：<a href="https://webduino.io/buy/webduino-package-toycar.html" target="_blank">Webduino 公仔自走車 ( 電子材料包 )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a></span>
+</div>
 
 
 <!-- @@close-->

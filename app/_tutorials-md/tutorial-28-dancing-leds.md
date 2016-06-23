@@ -43,6 +43,11 @@ date: 20160330
 
 在程式邏輯的世界裡，「迴圈」是很重要也是必備的程式之一，在這個範例中，我們將會用迴圈的方式，讓 12 顆 LED 燈交互閃爍，同時也可以控制交互閃爍的速度，實際做出一個超酷的霹靂燈效果。
 
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/wwnmfd5Mc-Y" frameborder="0" allowfullscreen></iframe>
@@ -59,6 +64,11 @@ date: 20160330
 ![](../img/tutorials/tutorial-28-04.jpg)
 
 ![](../img/tutorials/tutorial-28-05.jpg)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -149,6 +159,11 @@ JavaScript 使用了 while 和 for 迴圈來進行剛剛的同步迴圈處理，
 以上就是用拉霸控制 12 顆 LED 產生的霹靂燈效果。   
 完整程式碼：[https://bin.webduino.io/mibim/1/edit?html,css,js,output](https://bin.webduino.io/mibim/1/edit?html,css,js,output)  
 解答：[http://blockly.webduino.io/#-KE6wtNh5PXDjosOGkwU](http://blockly.webduino.io/#-KE6wtNh5PXDjosOGkwU)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

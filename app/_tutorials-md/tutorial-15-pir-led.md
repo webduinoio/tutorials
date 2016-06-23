@@ -43,6 +43,11 @@ date: 20150604
 
 人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。
 
+<div class="buy-this">
+	<span>人體紅外線偵測相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?page=tutorials/pir-2](https://blockly.webduino.io/?page=tutorials/pir-2) 
@@ -64,6 +69,11 @@ date: 20150604
 ![](../img/tutorials/tutorial-15-05.jpg)
 
 ![](../img/tutorials/tutorial-15-06.jpg)
+
+<div class="buy-this">
+	<span>人體紅外線偵測相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -135,7 +145,12 @@ JavaScript 主要用到兩個人體紅外線偵測的 API：`detected`、`ended`
 
 ## 人體紅外線偵測傳感器的延伸教學：
 
-[Webduino Blockly 課程 6-1：偵測人體紅外線](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/pir-1#-JvxRwAXj4ccyigeuI8o)  
+[Webduino Blockly 課程 6-1：偵測人體紅外線](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/pir-1#-JvxRwAXj4ccyigeuI8o) 
+
+<div class="buy-this">
+	<span>人體紅外線偵測相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
 
 
 <!-- @@close-->

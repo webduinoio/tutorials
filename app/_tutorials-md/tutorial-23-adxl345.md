@@ -43,6 +43,11 @@ date: 20160218
 
 三軸加速度感應器是利用三個軸向移動的加速度，來算出旋轉的角度，在這個篇教學將使用 Webduino 來控制 ADXL345 這個型號的三軸加速度感應器，ADXL345 可以選擇使用 I2C 或 SPI 協定來傳遞資料，而 Arduino 的類比腳使用 I2C，所以這裏我們會使用到的腳位是 GND、VCC、CS、SDA 和 SCL。
 
+<div class="buy-this">
+	<span>三軸加速度計相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?&page=tutorials/adxl345-1](https://blockly.webduino.io/?&page=tutorials/adxl345-1)  
@@ -66,6 +71,11 @@ VCC 接在 3.3V 的位置 ( 電壓高於 3.6V 會導致晶片燒毀 )，GND 接 
 ![](../img/tutorials/tutorial-23-04.jpg)
 
 ![](../img/tutorials/tutorial-23-05.jpg)
+
+<div class="buy-this">
+	<span>三軸加速度計相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -139,6 +149,11 @@ JavaScript 最主要用了`on`這個方法，裡面會有一個函式，帶有�
 [Webduino Blockly 課程 14-2：旋轉角度旋轉圖片](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-2#-K0q9iZQIPc-9eLg9k2f)  
 [Webduino Blockly 課程 14-3：旋轉角度點亮 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-3#-K0qEX3wukvZgtnn817T)  
 [Webduino Blockly 課程 14-4：旋轉角度改變點矩陣圖形](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/adxl345-4#-K0qKebEHBdfd19FzAvZ)
+
+<div class="buy-this">
+	<span>三軸加速度計相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

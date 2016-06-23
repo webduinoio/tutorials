@@ -43,6 +43,11 @@ date: 20160307
 
 Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，除了試算表功能一應俱全，更可以和 Google 表單搭配，變成一個簡單的問卷統計資料庫，在這個範例中，我們會填寫 Google 問卷，接著把問卷的統計數字平均並四捨五入成整數，再讓平均的分數透過 LED 的數量顯示出來。
 
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/mpwSAFwlL_0" frameborder="0" allowfullscreen></iframe>
@@ -62,6 +67,11 @@ Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，�
 ![](../img/tutorials/tutorial-26-04.jpg)
 
 ![](../img/tutorials/tutorial-26-05.jpg)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## 操作解析
 
@@ -136,6 +146,11 @@ Google 試算表 ( Google Spreadsheet ) 是目前最方便的線上試算表，�
 ![](../img/tutorials/tutorial-26-16.jpg)
 
 進行到這一步，在第五列第一欄 ( E1 ) 的地方填入開發板的 device 名稱，確認開發板上線之後 ( 可透過 https://webduino.io/device.html )，填寫表單並送出，就會看到對應數量的 LED 亮起了。
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

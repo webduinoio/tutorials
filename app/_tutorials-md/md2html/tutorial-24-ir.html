@@ -33,6 +33,11 @@ img: tutorial-24-01s.jpg</p>
 <!-- @@block  =  tutorials-->
 <h1>教學範例 24：紅外線發射與接收</h1>
 <p>紅外線發射與接收，常見於我們日常生活的電器用品，舉凡電視機、冷氣機、遙控電風扇、玩具...等，只要有「遙控器」的電器，大多都是利用紅外線發射與接收的原理，這篇教學將會介紹如何透過 Webduino，時做出可以偵測遙控器紅外線訊號，以及發送紅外線訊號的實際案例。</p>
+<div class="buy-this">
+    <span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
+
 <h2>範例影片展示</h2>
 <p>影片對應範例：<a href="https://blockly.webduino.io/?&amp;page=tutorials/irrecv-1">https://blockly.webduino.io/?&amp;page=tutorials/irrecv-1</a>  </p>
 <p><iframe class="youtube" src="https://www.youtube.com/embed/lfN0D4198CM" frameborder="0" allowfullscreen></iframe></p>
@@ -46,6 +51,11 @@ img: tutorial-24-01s.jpg</p>
 <p>紅外線發射器的長相就很類似一個大顆的 LED 燈，不注意的話還會用錯，如果我們使用<strong>紅外線發射器，一定得使用 9 號腳位</strong>，因為該腳位就是具備振盪器功能的腳位，才能發出紅外線訊號使用的方波，接別的腳位是無效的，所以這裡將長腳接在 9 號，短腳接在 GND。</p>
 <p>紅外線發射器，接線示意圖：</p>
 <p><img src="../img/tutorials/tutorial-24-05.jpg" alt=""></p>
+<div class="buy-this">
+    <span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
+
 <h2>Webduino Blockly 操作解析</h2>
 <p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例會「先」用網頁「顯示文字」來顯示紅外線接收器接收到的訊號，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」，此外，記得要先燒錄紅外線發射與接收的韌體檔喔！ ( 請參考：<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">韌體檔案燒錄教學</a>，選擇有 IR 檔名的韌體 )</p>
 <p><img src="../img/tutorials/tutorial-24-06.jpg" alt=""></p>
@@ -105,5 +115,11 @@ boardReady(&#39;&#39;, function (board) {
 });
 </code></pre><p>以上就是控制紅外線發射器與接收器和程式碼簡介。<br>完整程式碼：<a href="http://bin.webduino.io/jiguh/edit?html,css,js,output">http://bin.webduino.io/jiguh/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn">https://blockly.webduino.io/#-KB1oJMYKqVBeKrMmQGn</a></p>
 <h2>紅外線發射與接收的延伸教學：</h2>
-<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/irrecv-1#-K0qf8JH7bENOyJgc25r">Webduino Blockly 課程 15-1：接收紅外線訊號</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/irrecv-2#-K0qhamTHkjMc9nZg4rc">Webduino Blockly 課程 15-2：接收紅外線訊號改變區域顏色</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4">Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放</a>  </p>
+<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/irrecv-1#-K0qf8JH7bENOyJgc25r">Webduino Blockly 課程 15-1：接收紅外線訊號</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/irrecv-2#-K0qhamTHkjMc9nZg4rc">Webduino Blockly 課程 15-2：接收紅外線訊號改變區域顏色</a><br><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4">Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放</a> </p>
+<div class="buy-this">
+    <span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
+
+
 <!-- @@close-->

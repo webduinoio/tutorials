@@ -43,6 +43,11 @@ date: 20160221
 
 紅外線發射與接收，常見於我們日常生活的電器用品，舉凡電視機、冷氣機、遙控電風扇、玩具...等，只要有「遙控器」的電器，大多都是利用紅外線發射與接收的原理，這篇教學將會介紹如何透過 Webduino，時做出可以偵測遙控器紅外線訊號，以及發送紅外線訊號的實際案例。
 
+<div class="buy-this">
+	<span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?&page=tutorials/irrecv-1](https://blockly.webduino.io/?&page=tutorials/irrecv-1)  
@@ -68,6 +73,11 @@ date: 20160221
 紅外線發射器，接線示意圖：
 
 ![](../img/tutorials/tutorial-24-05.jpg)
+
+<div class="buy-this">
+	<span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
 
 ## Webduino Blockly 操作解析
 
@@ -158,7 +168,12 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 [Webduino Blockly 課程 15-1：接收紅外線訊號](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-1#-K0qf8JH7bENOyJgc25r)  
 [Webduino Blockly 課程 15-2：接收紅外線訊號改變區域顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-2#-K0qhamTHkjMc9nZg4rc)  
-[Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4)  
+[Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4) 
+
+<div class="buy-this">
+	<span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
 
 
 <!-- @@close-->

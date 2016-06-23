@@ -43,6 +43,11 @@ date: 20160222
 
 在許多遊戲機裡，搖桿是標準的遊戲機配件，一個搖桿可以發出三種訊號，分別是左右、前後以及按下去的時候，我們可以透過 Webduino 來偵測搖桿的訊號，進一步就可以用搖桿控制車子、機器人或一些實體裝置，做出許多有趣的應用。
 
+<div class="buy-this">
+	<span>搖桿相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/CwWwQmuvL28" frameborder="0" allowfullscreen></iframe>
@@ -64,6 +69,11 @@ date: 20160222
 ![](../img/tutorials/tutorial-25-05.jpg)
 
 ![](../img/tutorials/tutorial-25-06.jpg)
+
+<div class="buy-this">
+	<span>搖桿相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -131,6 +141,11 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 以上就是控制搖桿的程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/wifak/edit?html,css,js,output](http://bin.webduino.io/wifak/edit?html,css,js,output)  
 解答：[https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56](https://blockly.webduino.io/#-KB6zxyhUzw1sJ2RvY56)
+
+<div class="buy-this">
+	<span>搖桿相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 

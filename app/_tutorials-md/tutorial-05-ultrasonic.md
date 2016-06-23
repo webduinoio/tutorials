@@ -44,6 +44,11 @@ date: 20150425
 
 超音波傳感器顧名思義就是會發送超音波，藉由超音波碰撞到物體之後反射回來的時間差，就可以計算超音波傳感器與相對應物體之間的距離，在這個範例裡頭使用的超音波傳感器 HC-SR04 上頭有兩個類似喇叭的裝置，其中一個是 Trig，負責發送超音波，另外一個是 Echo，負責接收反射回來的超音波，最後會得到一個單位為「公分」的數值，就是超音波傳感器與待測物體之間的距離，不過因為超音波有指向性，如果今天受測的物體是傾斜的，超音波可能就會被反彈到別的地方，或是今天待測物會吸收聲波，可能測出來的距離就會有不準確的情形發生。
 
+<div class="buy-this">
+	<span>超音波傳感器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?page=tutorials/ultrasonic-1](https://blockly.webduino.io/?page=tutorials/ultrasonic-1)  
@@ -61,6 +66,11 @@ date: 20150425
 實際接線照片：
 
 ![教學範例 5：控制超音波傳感器](../img/tutorials/tutorial-05-03.jpg)
+
+<div class="buy-this">
+	<span>超音波傳感器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -144,6 +154,11 @@ JavaScript 的部分使用了 `ping` 這個超音波傳感器的偵測方法，�
 ## 超音波傳感器的延伸教學：
 
 [Webduino Blockly 課程 3-1：超音波傳感器](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-1#-JvS-HS4kdS5Mn9tlXmD) 
+
+<div class="buy-this">
+	<span>超音波傳感器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

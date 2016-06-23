@@ -43,6 +43,11 @@ date: 20160113
 
 光敏電阻常見於小夜燈裡面，光敏電阻主要是利用光電導效應的一種特殊的電阻，當有光線照射時，電阻內原本處於穩定狀態的電子受到激發，成為自由電子。所以光線越強，產生的自由電子也就越多，電阻就會越小，透過會變化的電阻值，進一步產生輸出強弱訊號。
 
+<div class="buy-this">
+	<span>光敏電阻相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/jSarWRDj7Gk" frameborder="0" allowfullscreen></iframe>
@@ -58,6 +63,11 @@ date: 20160113
 ![](../img/tutorials/tutorial-17-03.jpg)
 
 ![](../img/tutorials/tutorial-17-04.jpg)
+
+<div class="buy-this">
+	<span>光敏電阻相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -140,6 +150,11 @@ JavaScript 裡面可以看到光敏電阻具有`on`的方法，表示開始偵�
 [Webduino Blockly 課程 12-1：控制光敏電阻](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-1#-K0oVQzwFXfXTj5xmlrU)  
 [Webduino Blockly 課程 12-2：使用光敏電阻點亮 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-2#-K0objWF2mEVwsHYux8W)  
 [Webduino Blockly 課程 12-3：轉換光敏 ( 可變 ) 電阻數值](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/photocell-3#-K2kvxmwFHNiGl0P-_7S)  
+
+<div class="buy-this">
+	<span>光敏電阻相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

@@ -42,6 +42,11 @@ date: 20150604
 # 教學範例 13：蜂鳴器播放自製音樂
 
 蜂鳴器是一個可以產生聲音信號的裝置，使用直流電供電，接通訊號源之後，音訊信號電流通過電磁線圈，使電磁線圈產生磁場，造成 振動膜片週期性地振動發聲，而 Webduino 更可以藉由 HTML5 Attribute 來填入音符代碼，每個代碼都會對應到一個數值，這個數值相對應蜂鳴器聲音的頻率，因此藉由純粹的 HTML5 或 javascript 就可以編輯音樂，透過蜂鳴器發聲。
+
+<div class="buy-this">
+	<span>蜂鳴器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
  
 ## 範例影片展示
 
@@ -60,6 +65,11 @@ date: 20150604
 ![](../img/tutorials/tutorial-13-03.jpg)
 
 ![](../img/tutorials/tutorial-13-04.jpg)
+
+<div class="buy-this">
+	<span>蜂鳴器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -179,6 +189,11 @@ JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，�
 [Webduino Blockly 課程 9-2：蜂鳴器播放音樂](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-2#-KDCNtS1o_l57m9Aq46h)  
 [Webduino Blockly 課程 9-3：切換音樂，用蜂鳴器播放](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-3#-KDCOHhM5eAHX6GbAkw8)  
 [Webduino Blockly 課程 9-4：蜂鳴器的播放、暫停、停止 ( 按鈕開關控制 ) ](http://blockly.webduino.io/?lang=zh-hant&page=tutorials/buzzer-4#-KDCOxfqbxJmc3MaY_rg)
+
+<div class="buy-this">
+	<span>蜂鳴器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

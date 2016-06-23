@@ -43,6 +43,11 @@ date: 20160308
 
 隨著瀏覽器的效能越來越強大，我們開始可以透過許多的網頁技術，實現我們長久以來的想像，在這個範例中，將會使用網路攝影機，進行人臉追蹤，根據人臉的位置，來點亮 LED 燈。
 
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/GxOh2Gv9GJA" frameborder="0" allowfullscreen></iframe>
@@ -58,6 +63,11 @@ date: 20160308
 實際接線照片：
 
 ![](../img/tutorials/tutorial-27-03.jpg)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -196,6 +206,11 @@ JavaScript 比較多一些，主要是使用 tracking 相關的方法，當中�
 以上就是人臉影像追蹤的 Blockly 和程式碼簡介。   
 完整程式碼：[https://bin.webduino.io/famar/1/edit?html,css,js,output](https://bin.webduino.io/famar/1/edit?html,css,js,output)  
 解答：[https://blockly.webduino.io/#-KCTXIwqV8sEumJODx8D](https://blockly.webduino.io/#-KCTXIwqV8sEumJODx8D)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

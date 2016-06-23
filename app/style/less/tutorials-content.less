@@ -49,7 +49,7 @@ header{
 			width:100%;
 		}
 	}
-	h1,h2,p,ul,table,pre,.pre-next div{
+	h1,h2,p,ul,table,pre,.pre-next div, .buy-this{
 		width:60%;
 		margin:0 auto;
 	}
@@ -100,6 +100,33 @@ header{
 		img{
 			max-width:90%;
 			margin-bottom:10px;
+		}
+	}
+	.buy-this{
+		font-size:17px;
+		background:#fed;
+		padding:20px 20px 10px;
+		line-height:24px;
+		border-radius:5px;
+		transition:.3s;
+		&:hover{
+			background:#ffe8d7;
+		border-radius:25px;
+		}
+		i{
+			margin-right:5px;
+		}
+		span{
+			display:block;
+			margin-bottom:10px;
+			font-weight:bold;
+		}
+		a{
+			color:#840;
+			text-decoration:underline;
+		}
+		a:hover{
+			color:#d50;
 		}
 	}
 	ul{
@@ -531,7 +558,7 @@ footer{
 /* RWD */
 @media (max-width: 1000px){
 	.tutorials-content{
-		h1,h2,p,ul,table,pre{
+		h1,h2,p,ul,table,pre, .buy-this{
 			width:70%;
 		}
 	}
@@ -557,7 +584,7 @@ footer{
 	}
 	.tutorials-content{
 		margin-top:40px;
-		h1,h2,p,ul,table,pre,.pre-next div{
+		h1,h2,p,ul,table,pre,.pre-next div, .buy-this{
 			width:80%;
 		}
 	}
@@ -567,7 +594,7 @@ footer{
 }
 @media (max-width: 600px){
 	.tutorials-content{
-		h1,h2,p,ul,table,pre,.pre-next div{
+		h1,h2,p,ul,table,pre,.pre-next div, .buy-this{
 			width:85%;
 		}
 		table{

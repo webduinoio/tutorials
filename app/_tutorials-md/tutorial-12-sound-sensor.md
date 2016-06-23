@@ -45,6 +45,11 @@ date: 20150603
 
 聲音偵測傳感器類似一個微型的麥克風，不過它的功能並不如麥克風一般的強大，主要作用為偵測是否有聲音，在聲音偵測傳感器上頭有一個小型的十字旋鈕，可以用螺絲起子旋轉調整零敏度，靈敏度如果太高，可能連同一些風吹草動的聲音都會偵測到，靈敏度過低可能拍手拍得再大聲都偵測不到，而且由於聲音傳感器本身有傳輸的時間差，因此在接收到聲音後也會有些微的延遲現象。這個範例將會利用聲音偵測傳感器，當偵測到有聲音，就自動點亮 LED 燈，同時也會點亮網頁裡頭的燈泡。
 
+<div class="buy-this">
+	<span>聲音偵測相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?page=tutorials/sound-2](https://blockly.webduino.io/?page=tutorials/sound-2) 
@@ -62,6 +67,11 @@ date: 20150603
 ![](../img/tutorials/tutorial-12-03.jpg)
 
 ![](../img/tutorials/tutorial-12-04.jpg)
+
+<div class="buy-this">
+	<span>聲音偵測相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -142,6 +152,11 @@ JavaScript 使用 on 這個方法來偵測，當第一個參數是 `detected` �
 ## 聲音偵測傳感器的延伸教學：
 
 [Webduino Blockly 課程 7-1：偵測聲音](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/sound-1#-JvxeaQ60xcOYLuXKCke)
+
+<div class="buy-this">
+	<span>聲音偵測相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

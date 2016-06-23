@@ -44,6 +44,11 @@ date: 20150425
 
 [上一篇](tutorial-03-rgbled.html) 介紹過三色 LED 的原理，這篇將利用 HTML5 裏頭新的 input 類型「color」，來控制三色 LED 燈的顏色變換，同時在網頁裡頭對應相同的色彩。( 影片中則是展示使用 input 的「range」類型來切換顏色 )
 
+<div class="buy-this">
+	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?&page=tutorials/rgbled-3](https://blockly.webduino.io/?&page=tutorials/rgbled-3) 
@@ -63,6 +68,11 @@ date: 20150425
 ![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-04.jpg)
 
 ![教學範例 4：三色 LED 調色盤](../img/tutorials/tutorial-04-03.jpg)
+
+<div class="buy-this">
+	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -118,6 +128,11 @@ JavaScript 在這裏就是把選取顏色當下的色彩數值，傳給區域背
 
 [Webduino Blockly 課程 2-3：三色 LED 燈調色盤](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-3#-JvMsJupKMuIUdAJs_RK)  
 [Webduino Blockly 課程 2-4：轉吧七彩霓虹燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-4#-JvMswgK2Q1h4GjAPx7u)
+
+<div class="buy-this">
+	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

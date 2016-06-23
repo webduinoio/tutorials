@@ -44,6 +44,11 @@ date: 20150601
 
 溫濕度傳感器是接收外界環境變數最基本的傳感器，透過溫濕度傳感器，可以準確的偵測溫度與溼度的即時變化，若再搭配一些樣式表 ( CSS )、圖表工具 ( D3.js、Google Chart ) 或後端資料庫，就可以整合成為非常有用的數據收集應用。
 
+<div class="buy-this">
+	<span>溫濕度傳感器相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 影片對應範例：[https://blockly.webduino.io/?page=tutorials/dht-1](https://blockly.webduino.io/?page=tutorials/dht-1) 
@@ -63,6 +68,11 @@ date: 20150601
 實際接線照片：
 
 ![](../img/tutorials/tutorial-10-04.jpg)
+
+<div class="buy-this">
+	<span>溫濕度傳感器相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -125,5 +135,10 @@ JavaScript 用了一個 `read` 的方法來讀取溫濕度，`read` 的第一個
 
 [Webduino Blockly 課程 5-2：繪製溫濕度圖表](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-2#-Jvwiwd_Lr9F5j5Oz4-N)  
 [Webduino Blockly 課程 5-3：使用 Firebase 紀錄溫濕度數值](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/dht-3#-JxAbDN7TNVwWDlh85y4)
+
+<div class="buy-this">
+	<span>溫濕度傳感器相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 <!-- @@close-->

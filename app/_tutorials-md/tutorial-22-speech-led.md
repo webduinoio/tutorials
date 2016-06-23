@@ -43,6 +43,11 @@ date: 20160123
 
 因為 Webduino 可以使用瀏覽器 Chrome 來操控各種電子零件，因此 Chrome 具備的功能也都能夠順利成章的使用，在這個範例裡面我們將會使用 Chrome 內建的 Speech API，透過 Google 的語音辨識功能，輕鬆實現語音聲控 LED 燈的效果 ( 同樣的方式也可以應用在繼電器上，就可以變成語音聲控電燈泡、門鎖或家電 )。
 
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 範例影片展示
 
 <iframe class="youtube" src="https://www.youtube.com/embed/FXoe5k6_iQo" frameborder="0" allowfullscreen></iframe>
@@ -58,6 +63,11 @@ date: 20160123
 實際接線照片：
 
 ![](../img/tutorials/tutorial-22-03.jpg)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -165,6 +175,11 @@ JavaScript 最主要用了`webkitSpeechRecognition()`這個 Chrome 內建語音�
 以上就是語音聲控的 Blockly 和程式碼簡介。   
 完整程式碼：[http://bin.webduino.io/fexic/edit?html,js,output](http://bin.webduino.io/fexic/edit?html,js,output)  
 解答：[https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN](https://blockly.webduino.io/#-K8jMTLqExEaa7YlqKCN)
+
+<div class="buy-this">
+	<span>LED 相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->

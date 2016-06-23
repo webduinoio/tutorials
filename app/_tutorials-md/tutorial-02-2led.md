@@ -45,6 +45,11 @@ date: 20150425
 
 熟悉了 [第一個範例](tutorial-01-led.html) 之後，接下來就要做點延伸的應用，在這個範例裡頭，將會利用點選燈泡圖片，操控兩顆 LED 燈，做出兩顆 LED 燈交互閃動的效果。
 
+<div class="buy-this">
+	<span>LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+
 ## 教學影片
 
 影片對應範例：[https://blockly.webduino.io/?&page=tutorials/led-4](https://blockly.webduino.io/?&page=tutorials/led-4)  
@@ -62,6 +67,11 @@ date: 20150425
 實際接線照片：
 
 ![教學範例 2：兩顆 LED 交互閃爍](../img/tutorials/tutorial-02-03.jpg)
+
+<div class="buy-this">
+	<span>LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 ## Webduino Blockly 操作解析
 
@@ -180,6 +190,11 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 [Webduino Blockly 課程 1-3：控制兩顆 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-3#-JvMuD8cPViCJFD4VRSr)  
 [Webduino Blockly 課程 1-4：兩顆 LED 燈交互閃爍](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-4#-JvMuhwaEGs7oMUz-bpm)
+
+<div class="buy-this">
+	<span>LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
 
 
 <!-- @@close-->
