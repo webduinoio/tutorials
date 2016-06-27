@@ -9,7 +9,7 @@
   <meta itemprop="name" content="webduino.io">
   <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
 
-<title>教學範例 31：偵測土壤濕度並由 LED 點矩陣顯示 :::: Webduino = Web × Arduino</title>
+<title>教學範例 32：智慧插座 DIY :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="我們可以利用土壤濕度計插入土中偵測土壤濕度，原理其實是偵測兩塊金屬片的導電度換算成濕度，在這個例子裡，我們透過 LED 點矩陣來顯示偵測到的濕度數值，當濕度高達 100 的時候就會播放動畫。 ">
 
@@ -17,13 +17,13 @@
 
 <meta property="og:description" content="我們可以利用土壤濕度計插入土中偵測土壤濕度，原理其實是偵測兩塊金屬片的導電度換算成濕度，在這個例子裡，我們透過 LED 點矩陣來顯示偵測到的濕度數值，當濕度高達 100 的時候就會播放動畫。 ">
 
-<meta property="og:title" content="教學範例 31：偵測土壤濕度並由 LED 點矩陣顯示" >
+<meta property="og:title" content="教學範例 32：智慧插座 DIY" >
 
-<meta property="og:url" content="https://webduino.io/tutorials/tutorial-31-soil-max7219.html">
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-32-smart-socket.html">
 
-<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-31-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-32-01s.jpg">
 
-<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-31-01s.jpg">
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-32-01s.jpg">
 
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/lib/jquery.lazyload.min.js"></script>
@@ -79,70 +79,73 @@
 		<div class="banner">
 		</div> 
 
-<h1>教學範例 31：偵測土壤濕度並由 LED 點矩陣顯示</h1>
-<p>我們可以利用土壤濕度計插入土中偵測土壤濕度，原理其實是偵測兩塊金屬片的導電度換算成濕度，在這個例子裡，我們透過 LED 點矩陣來顯示偵測到的濕度數值，當濕度高達 100 的時候就會播放動畫。 </p>
+<h1>教學範例 32：智慧插座 DIY</h1>
+<p>之前在「<a href="https://webduino.io/tutorials/tutorial-14-relay.html">教學範例 14：繼電器控制風扇旋轉</a>」有介紹過繼電器的應用，如果我們將繼電器和日常生活中的插座結合，就可以利用 Wi-Fi 來操控，將平凡無奇的插座升級成為可以光感、聲控、遠端遙控的智慧插座囉！ </p>
 <div class="buy-this">
-    <span>土壤濕度偵測模組：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
-    <span>LED 點矩陣：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus  ( 支援馬克 1 號、Fly )</a></span>
+    <span>智慧插座套件：<a href="http://localhost:3000/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
 <h2>範例影片展示</h2>
-<p><iframe class="youtube" src="https://www.youtube.com/embed/ppweeGJD0nw" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe class="youtube" src="https://www.youtube.com/embed/nFEY_k_2zxQ" frameborder="0" allowfullscreen></iframe></p>
 <h2>接線與實作</h2>
 <p>「土壤濕度偵測模組」有三支針腳，分別是訊號腳、GND 和 VCC，由於我們還要利用 LED 點矩陣來顯示數值，LED 點矩陣也需要用到 GND 與 VCC，所以我們利用麵包板外接出來，VCC 接在開發板的 VCC，GND 接 GND，土壤濕度偵測模組的訊號腳接在 A3，LED 點矩陣的 DIN 接 7，CS 接 8，CLK 接 9。</p>
-<p><img src="../img/tutorials/tutorial-31-02.jpg" alt=""></p>
-<p>實際接線照片：</p>
-<p><img src="../img/tutorials/tutorial-31-03.jpg" alt=""></p>
-<p><img src="../img/tutorials/tutorial-31-04.jpg" alt=""></p>
-<p><img src="../img/tutorials/tutorial-31-05.jpg" alt=""></p>
-<p><img src="../img/tutorials/tutorial-31-06.jpg" alt=""></p>
+<p><img src="../img/tutorials/tutorial-32-02.jpg" alt=""></p>
+<p>所需材料列表：</p>
+<p><img src="../img/tutorials/tutorial-32-03.jpg" alt=""></p>
+<p>一開始先把插座和插座背板結合，插座有卡榫，直接裝上去就可以。</p>
+<p><img src="../img/tutorials/tutorial-32-04.jpg" alt=""></p>
+<p>中間的空間剛好可以放入繼電器，可以直接卡進去或是用熱熔膠固定，插座則看照片放入五根單心線，單心線很硬，直接塞進去插座的接孔內就可以 ( 內有金屬夾片會自動卡住 )</p>
+<p><img src="../img/tutorials/tutorial-32-05.jpg" alt=""></p>
+<p>組合插頭與電線，直接把電線的頭去皮，分別鎖到插頭上即可。</p>
+<p><img src="../img/tutorials/tutorial-32-07.jpg" alt=""></p>
+<p>把單心線和電線，用快速街頭連接，同時也把單心線接到繼電器上面 ( 公共與常開 )。</p>
+<p><img src="../img/tutorials/tutorial-32-06.jpg" alt=""></p>
+<p>繼電器的另一側用杜邦線接出來。</p>
+<p><img src="../img/tutorials/tutorial-32-08.jpg" alt=""></p>
+<p>組合外殼。</p>
+<p><img src="../img/tutorials/tutorial-32-09.jpg" alt=""></p>
+<p>和開發板連線就完成囉！插座上有兩個插孔，一個是固定供電給開發板，透過 Wi-Fi 來控制另外一個插孔有沒有電。</p>
+<p><img src="../img/tutorials/tutorial-32-10.jpg" alt=""></p>
 <div class="buy-this">
-    <span>土壤濕度偵測模組：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
-    <span>LED 點矩陣：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus  ( 支援馬克 1 號、Fly )</a></span>
+    <span>智慧插座套件：<a href="http://localhost:3000/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
 <h2>Webduino Blockly 操作解析</h2>
-<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，然後放入土壤濕度偵測以及 LED 點矩陣的積木，並選擇對應的腳位。</p>
-<p><img src="../img/tutorials/tutorial-31-07.jpg" alt=""></p>
-<p>放入開始偵測的積木，這裏先用一個變數來裝載偵測到的數值，同時我們也對這個數值做四捨五入到小數點零位 ( 因為待會會重複用到這個數值，用一個變數才會修改的時候要修改太多地方，然後四捨五入是因為 LED 點矩陣待會只會顯示整數 )。</p>
-<p><img src="../img/tutorials/tutorial-31-08.jpg" alt=""></p>
-<p>放入「顯示」的積木，讓偵測到的數值同步顯示在「網頁互動區」裡頭，接著使用「邏輯」的積木，讓小於某個數值的時候，點矩陣會顯示當前數字，大於某的數值的時候會播放動畫 ( 這裏設定為大於等於 100 的時候 )。</p>
-<p><img src="../img/tutorials/tutorial-31-09.jpg" alt=""></p>
-<p>到這邊就已經完成了，確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選右上方紅色按鈕執行，裝一杯水，把土壤濕度偵測模組插到水中，就會看到數值的變化。
-( 解答：<a href="https://blockly.webduino.io/#-KKrc9v9vLO_zy7j075S">https://blockly.webduino.io/#-KKrc9v9vLO_zy7j075S</a> )</p>
-<p>注意，因為不同的感測器數值會有不同，而且如果把 VCC 改接 3.3V，偵測到的最大值也會不同，如果需要進行數值尺度的轉換，可以使用「數值轉換的積木」。</p>
-<p><img src="../img/tutorials/tutorial-31-10.jpg" alt=""></p>
-<p><img src="../img/tutorials/tutorial-31-11.jpg" alt=""></p>
-<h2>範例解析 ( <a href="https://bin.webduino.io/fijuw/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
+<p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，然後放入繼電器或是 LED 的積木 ( 這裏我們使用 LED 的積木 )，按照上面的接線圖是接開發板的 10 號腳，這裏腳位我們設定為 10。</p>
+<p><img src="../img/tutorials/tutorial-32-11.jpg" alt=""></p>
+<p>這裏我們要來使用網頁互動測試區域裡的燈泡控制插座供電與否，一開始先放入設定燈泡裝態 off 以及 LED 狀態 off 的積木，讓兩者狀態一致，接著放入點擊燈泡的積木，點擊時候的行為就是切換 on 與 off 的狀態。</p>
+<p><img src="../img/tutorials/tutorial-32-12.jpg" alt=""></p>
+<p>確認開發板上線 ( 點選「<a href="https://webduino.io/device.html">檢查連線狀態</a>」查詢 )，點選右上方紅色按鈕執行，在智慧插座上接個電燈或電扇，電燈或電扇的開關先打開 ( 此時是不會亮或不會動的 )，點選網頁的燈泡，就會看到可以透過網頁控制了。</p>
+<p>( 解答：<a href="https://blockly.webduino.io/#-KLFXif-dpr6cgel5YHi">https://blockly.webduino.io/#-KLFXif-dpr6cgel5YHi</a> )</p>
+<p>既然已經可以用網頁透過 Wi-Fi 操控，我們就可以來做個聲控智慧插座，將剛剛燈泡的積木換成語音辨識的積木，辨識開燈關燈的文字，聲控電燈就完成了。</p>
+<p><img src="../img/tutorials/tutorial-32-13.jpg" alt=""></p>
+<h2>範例解析 ( <a href="https://bin.webduino.io/basop/edit?html,css,js,output">完整程式碼</a>、<a href="https://webduino.io/device.html">檢查連線狀態</a> )</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
-</code></pre><p>JavaScript 裏頭上半部是 LED 點矩陣顯示圖案的程式，下半部就是偵測的程式，最主要我們使用了<code>on</code>的方法來偵測，回傳的<code>val</code>就是數值。    </p>
-<pre><code>boardReady(&#39;&#39;, function (board) {
+</code></pre><p>JavaScript 基本上就是 LED 的控制程式，非常的簡單 ( 可參考 <a href="https://webduino.io/tutorials/tutorial-01-led.html">教學範例 1：控制單顆 LED 燈</a> )。    </p>
+<pre><code>var led;
+
+boardReady(&#39;&#39;, function (board) {
   board.systemReset();
   board.samplingInterval = 250;
-  soil = getSoil(board, 3);
-  matrix = getMax7219(board, 7, 8, 9);
-  soil.on(function(val){
-    soil.detectedVal = val;
-    a = Math.round(soil.detectedVal);
-    document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = a;
-    if (a &lt; 100) {
-      matrix.animateStop();
-      matrix.on(&quot;0000000000000000&quot;);
-      matrix.on((max7219_number(a)));
+  led = getLed(board, 10);
+  document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;off&quot;;
+  led.off();
+  document.getElementById(&quot;demo-area-02-light&quot;).addEventListener(&quot;click&quot;, function(){
+    if (document.getElementById(&quot;demo-area-02-light&quot;).className == &quot;on&quot;) {
+       document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;off&quot;;
     } else {
-      matrix.animateStop();
-      matrix.animate(max7219_horse(&quot;left&quot;,&quot;0c1e3e7c3e1e0c00&quot;),100);
+      document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;on&quot;;
     }
+    led.toggle();
   });
 });
-</code></pre><p>以上就是偵測土壤濕度並由 LED 點矩陣顯示。<br>完整程式碼：<a href="https://bin.webduino.io/fijuw/edit?html,css,js,output">https://bin.webduino.io/fijuw/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-KKrc9v9vLO_zy7j075S">https://blockly.webduino.io/#-KKrc9v9vLO_zy7j075S</a></p>
+</code></pre><p>以上就是智慧插座 DIY 以及相關的控制方式。<br>完整程式碼：<a href="https://bin.webduino.io/basop/edit?html,css,js,output">https://bin.webduino.io/basop/edit?html,css,js,output</a><br>解答：<a href="https://blockly.webduino.io/#-KLFXif-dpr6cgel5YHi">https://blockly.webduino.io/#-KLFXif-dpr6cgel5YHi</a></p>
 <div class="buy-this">
-    <span>土壤濕度偵測模組：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
-    <span>LED 點矩陣：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus  ( 支援馬克 1 號、Fly )</a></span>
+    <span>智慧插座套件：<a href="http://localhost:3000/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
