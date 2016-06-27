@@ -68,10 +68,13 @@
   border: none;
 }
 .content > div {
-  display: inline-block;
   width: 33%;
   padding: 15px 15px;
   vertical-align: top;
+  display: none;
+}
+.content > div.filter-new {
+  display: inline-block;
 }
 .content > div > i {
   top: 13px;

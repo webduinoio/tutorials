@@ -29,37 +29,37 @@ $(function(){
   });
 
   $btnAll.on('click',function(){
-  	$div.show();
+  	$div.css({'display':'inline-block'});
   	_lazyLoadRefresh();
   });
 
   $btnNew.on('click',function(){
   	$div.hide();
-  	$new.show();
+  	$new.css({'display':'inline-block'});
   	_lazyLoadRefresh();
   });
 
   $btnInfo.on('click',function(){
   	$div.hide();
-  	$info.show();
+  	$info.css({'display':'inline-block'});
   	_lazyLoadRefresh();
   });
 
   $btnComponent.on('click',function(){
   	$div.hide();
-  	$component.show();
+  	$component.css({'display':'inline-block'});
   	_lazyLoadRefresh();
   });
 
   $btnSensor.on('click',function(){
   	$div.hide();
-  	$sensor.show();
+  	$sensor.css({'display':'inline-block'});
   	_lazyLoadRefresh();
   });
 
   $btnExample.on('click',function(){
   	$div.hide();
-  	$example.show();
+  	$example.css({'display':'inline-block'});
   	_lazyLoadRefresh();
   });
 
