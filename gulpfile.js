@@ -349,6 +349,7 @@ gulp.task('move',['build-clean'],function(){
       a5 = gulp.src('app/img/activity/*').pipe(gulp.dest('build/img/activity')),
       a6 = gulp.src('app/js/lib/*').pipe(gulp.dest('build/js/lib')),
       a7 = gulp.src('app/style/css/lib/*').pipe(gulp.dest('build/style/css/lib')),
+      a7 = gulp.src('app/style/css/lib/fonts/*').pipe(gulp.dest('build/style/css/lib/fonts')),
       a8 = gulp.src('app/robots.txt').pipe(gulp.dest('build')),
       a9 = gulp.src('app/json/**/*').pipe(gulp.dest('build/json')),
       a10 = gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga')),
