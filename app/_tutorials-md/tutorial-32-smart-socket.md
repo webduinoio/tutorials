@@ -44,7 +44,7 @@ date: 20160627
 之前在「[教學範例 14：繼電器控制風扇旋轉](https://webduino.io/tutorials/tutorial-14-relay.html)」有介紹過繼電器的應用，如果我們將繼電器和日常生活中的插座結合，就可以利用 Wi-Fi 來操控，將平凡無奇的插座升級成為可以光感、聲控、遠端遙控的智慧插座囉！ 
 
 <div class="buy-this">
-	<span>智慧插座套件：<a href="http://localhost:3000/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
+	<span>智慧插座套件：<a href="https://webduino.io/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
 	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
@@ -91,7 +91,7 @@ date: 20160627
 ![](../img/tutorials/tutorial-32-10.jpg)
 
 <div class="buy-this">
-	<span>智慧插座套件：<a href="http://localhost:3000/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
+	<span>智慧插座套件：<a href="https://webduino.io/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
 	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
@@ -145,7 +145,7 @@ JavaScript 基本上就是 LED 的控制程式，非常的簡單 ( 可參考 [�
 解答：[https://blockly.webduino.io/#-KLFXif-dpr6cgel5YHi](https://blockly.webduino.io/#-KLFXif-dpr6cgel5YHi)
 
 <div class="buy-this">
-	<span>智慧插座套件：<a href="http://localhost:3000/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
+	<span>智慧插座套件：<a href="https://webduino.io/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
 	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
