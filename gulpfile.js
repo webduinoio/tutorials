@@ -314,9 +314,9 @@ gulp.task('watch',function(){
 	gulp.watch([
     'app/_buy.html',
     'app/_tutorials.html',
-    'app/_activity.html',
-    'app/en/_tutorials.html'],['include']);
-	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include']);
+    'app/_activity.html'],['include']);
+  gulp.watch(['app/en/_tutorials.html'],['include-en']);
+	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include'],['include-en']);
   gulp.watch('app/en/_layout.html',['indexEN']);
 });
 

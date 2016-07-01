@@ -10,11 +10,11 @@
   <link rel="icon" href="../../img/layout/favicon.ico" type="image/x-icon">
 
   <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
-	<title>Webduino 教學範例 ::: Webduino = Web × Arduino</title>
+	<title>Tutorials ::: Webduino = Web × Arduino</title>
 
-  <meta name="description" content="Webduino 的網站提供了非常豐富的教學範例，透過詳細的操作解說，這些範例將由淺入深的帶領開發者進入 Web 控制 Arduino 的領域，從電子電路的接線，一直到 Javascript 的撰寫都有非常完整詳盡的說明。">
-  <meta itemprop="description" content="Webduino 的網站提供了非常豐富的教學範例，透過詳細的操作解說，這些範例將由淺入深的帶領開發者進入 Web 控制 Arduino 的領域，從電子電路的接線，一直到 Javascript 的撰寫都有非常完整詳盡的說明。">
-  <meta property="og:description" content="Webduino 的網站提供了非常豐富的教學範例，透過詳細的操作解說，這些範例將由淺入深的帶領開發者進入 Web 控制 Arduino 的領域，從電子電路的接線，一直到 Javascript 的撰寫都有非常完整詳盡的說明。">
+  <meta name="description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of "Web control Arduino", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
+  <meta itemprop="description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of "Web control Arduino", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
+  <meta property="og:description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of "Web control Arduino", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
  
 
   <meta property="og:title" content="Webduino = Web × Arduino" >
@@ -23,47 +23,15 @@
   <meta property="og:image" content="https://webduino.io/../img/tutorials/tutorials-s.jpg">
   <meta itemprop="image" content="https://webduino.io/../img/tutorials/tutorials-s.jpg">
   
-	<script src="../js/lib/jquery.min.js"></script>
-	<script src="../js/lib/jquery.lazyload.min.js"></script>
-	<script src="../js/layout.js"></script>
-
-	<link rel="stylesheet" href="../style/css/layout.css">
-	<link rel="stylesheet" href="../style/css/sub-header.css">
+	<include src="_include.html"></include>
 
 
   <script src="../js/tutorials-filter.js"></script>
 
 
-	<link rel="stylesheet" href="../style/css/tutorials.css">
-	<style>
-	html,body{
-		height:calc(100% - 100px);
-	}
-	.content{
-		margin-top:100px;
-		margin-bottom:0;
-		min-height:calc(100% - 50px);
-	}
-	.content > div a div:after{
-		content:'read more';
-	}
-	</style>
+	<link rel="stylesheet" href="../style/css/tutorials-en.css">
+	<link rel="stylesheet" href="../style/css/lib/font-awesome.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<style>
-	.content div h2{
-		margin-top:0;
-		line-height:24px;
-		padding-left:50px;
-	}
-		.content div span{
-			word-wrap: normal;
-			word-break: normal;
-		}
-		.resources a span{
-			text-align:center;
-		}
-	</style>
 
 </head>
 <body>
@@ -89,10 +57,18 @@
 	</header>
 	  
 
+	<div class="filter">
+		<div class="btn-new click">New </div>
+		<div class="btn-all">All</div>
+		<div class="btn-info">Setup</div>
+		<div class="btn-component">Components</div>
+		<div class="btn-sensor">Sensors</div>
+		<div class="btn-example">Useful</div>
+	</div>
 	<div class="content"> 
 
 		<!--  info -->
-			<div class="filter-info">
+			<div class="filter-info filter-new">
 				<a href="tutorials/info-01-introduction.html">
 					<div>
 						<img class="lazy" data-original="../img/tutorials/info-01-01s.jpg" />
@@ -101,7 +77,7 @@
 					<span>Webduino is the combination of Web and Arduino.  It proclaims a new era of Web-controlled Arduino has come.</span>
 				</a>
 			</div>
-			<div class="filter-info ">
+			<div class="filter-info filter-new">
 				<a href="tutorials/info-02-setup.html">
 					<div>
 						<img class="lazy" data-original="../img/tutorials/info-02-01s.jpg" />
@@ -110,7 +86,7 @@
 					<span>There is a switch on Webduino development board. Switch to STA pattern, Turn the power on and start initialization set-up.</span>
 				</a>
 			</div>
-			<div class="filter-component">
+			<div class="filter-component filter-new">
 				<a href="tutorials/tutorial-01-led.html">
 					<div>
 						<img class="lazy" data-original="../img/tutorials/tutorial-01-01s.jpg" />
