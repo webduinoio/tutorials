@@ -79,6 +79,8 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 (3) MaxMatrix.zip：LED 點矩陣  
 (4) MFRC522.zip：RFID  
 (5) IRremote.zip：紅外線發射/接收
+(6) G3.zip：空氣懸浮粒子 pm2.5
+(7) wa_GY291.zip：三軸
 
 ## 燒錄韌體
 
@@ -110,6 +112,9 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 (5) MFRC522：RFID  
 (6) Joypad：搖桿  
 (7) IR：紅外線發射/接收
+(8) GPS：GPS
+(9) GY291：三軸偵測
+(10) G3：空氣 PM2.5 偵測
 
 ## Arduino IDE 1.6.7 編譯錯誤
 

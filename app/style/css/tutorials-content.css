@@ -128,6 +128,22 @@ header.path-1 {
 .tutorials-content ul li h3 {
   margin-top: 20px;
 }
+.tutorials-content ul li blockquote {
+  border-left: 5px solid #eee;
+  margin-left: 13px;
+  margin-right: -13px;
+  margin-top: 15px;
+}
+.tutorials-content ul li blockquote p {
+  text-indent: 0;
+  padding-left: 16px;
+}
+.tutorials-content ul li blockquote ul {
+  margin-bottom: 20px;
+}
+.tutorials-content ul li blockquote ul li {
+  padding-left: 25px;
+}
 .tutorials-content ul li p {
   width: 100%;
   display: block;

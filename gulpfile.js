@@ -118,6 +118,7 @@ var contentInjectHtml = [
   'app/buy.html',
   'app/tutorials.html',
   'app/activity.html',
+  'app/about.html'
 ];
 gulp.task('include',['extend'],function(){
   return gulp.src(contentInjectHtml)
@@ -314,7 +315,8 @@ gulp.task('watch',function(){
 	gulp.watch([
     'app/_buy.html',
     'app/_tutorials.html',
-    'app/_activity.html'],['include']);
+    'app/_activity.html',
+    'app/_about.html'],['include']);
   gulp.watch(['app/en/_tutorials.html'],['include-en']);
 	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include'],['include-en']);
   gulp.watch('app/en/_layout.html',['indexEN']);
@@ -347,6 +349,7 @@ gulp.task('move',['build-clean'],function(){
       a3 = gulp.src('app/img/tutorials/*').pipe(gulp.dest('build/img/tutorials')),
       a4 = gulp.src('app/img/buy/*').pipe(gulp.dest('build/img/buy')),
       a5 = gulp.src('app/img/activity/*').pipe(gulp.dest('build/img/activity')),
+      a5 = gulp.src('app/img/about/*').pipe(gulp.dest('build/img/about')),
       a6 = gulp.src('app/js/lib/*').pipe(gulp.dest('build/js/lib')),
       a7 = gulp.src('app/style/css/lib/*').pipe(gulp.dest('build/style/css/lib')),
       a7 = gulp.src('app/style/css/lib/fonts/*').pipe(gulp.dest('build/style/css/lib/fonts')),
@@ -369,6 +372,7 @@ gulp.task('move',['build-clean'],function(){
               'app/index.html',
               'app/tutorials.html',
               'app/buy.html',
+              'app/about.html',
               'app/activity.html'])
             .pipe(minifyHTML(opts))
             .pipe(gulp.dest('build')),

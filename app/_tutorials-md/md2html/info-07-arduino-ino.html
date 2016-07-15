@@ -47,7 +47,9 @@ img: info-07-01s.jpg</p>
 <p>選擇剛剛解壓縮檔案內，把 Library 資料夾裡頭的 zip 檔案一一引入。</p>
 <p><img src="../img/tutorials/info-07-05.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <p>這些程式庫壓縮檔案分別是：</p>
-<p>(1) DHT.zip：溫濕度傳感器<br>(2) Joypad.zip：搖桿<br>(3) MaxMatrix.zip：LED 點矩陣<br>(4) MFRC522.zip：RFID<br>(5) IRremote.zip：紅外線發射/接收</p>
+<p>(1) DHT.zip：溫濕度傳感器<br>(2) Joypad.zip：搖桿<br>(3) MaxMatrix.zip：LED 點矩陣<br>(4) MFRC522.zip：RFID<br>(5) IRremote.zip：紅外線發射/接收
+(6) G3.zip：空氣懸浮粒子 pm2.5
+(7) wa_GY291.zip：三軸</p>
 <h2>燒錄韌體</h2>
 <p>有了這些程式庫之後，我們就可以打開 .ino 的韌體檔案來燒錄，直接在 .ino 檔案上頭點兩下就可以打開，通常第一次打開的時候會詢問你「必須位於...的草稿碼資料夾中...」，直接選擇「好」或「確認」即可。</p>
 <p><img src="../img/tutorials/info-07-06.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
@@ -59,7 +61,10 @@ img: info-07-01s.jpg</p>
 <p><img src="../img/tutorials/info-07-09.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <h2>韌體清單簡介</h2>
 <p>這是目前 Webduino 已經公開釋出的 Arduino 韌體 ( 只要檔名有包含，就是具有這個傳感器或電子零件，舉例來說：buzzer_ultrasonic 就包含蜂鳴器和超音波傳感器 )，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！</p>
-<p>(1) buzzer：蜂鳴器<br>(2) ultrasonic：超音波傳感器<br>(3) MaxMatrix：LED 點矩陣<br>(4) dht：溫濕度傳感器<br>(5) MFRC522：RFID<br>(6) Joypad：搖桿<br>(7) IR：紅外線發射/接收</p>
+<p>(1) buzzer：蜂鳴器<br>(2) ultrasonic：超音波傳感器<br>(3) MaxMatrix：LED 點矩陣<br>(4) dht：溫濕度傳感器<br>(5) MFRC522：RFID<br>(6) Joypad：搖桿<br>(7) IR：紅外線發射/接收
+(8) GPS：GPS
+(9) GY291：三軸偵測
+(10) G3：空氣 PM2.5 偵測</p>
 <h2>Arduino IDE 1.6.7 編譯錯誤</h2>
 <p>最近發現某些使用者在使用 Arduino IDE 1.6.7 的版本會編譯錯誤，是因為升級後的 Arduino 並沒有提供向下相容，導致 Firmata 2.4.4 和 2.5.1 不相容而產生錯誤，解決的方法除了安裝回 1.6.6 或 1.6.5 的版本之外 ( 載點：<a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">https://www.arduino.cc/en/Main/OldSoftwareReleases#previous</a> )，還可以使用以下的解決方式，<strong>把 Firmata 的版本轉回 2.4.4 或 2.4.3</strong>。</p>
 <p>第一步，打開 Library Manager ( 草稿碼 -&gt; include Library -&gt; Library Manager )</p>

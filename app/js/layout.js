@@ -11,7 +11,7 @@ $(function(){
 			$slideMenu = $('.slide-menu');
 			$a = $('a');
 
-	console.log('被我發現你在偷看我的原始碼喔~ 啾咪~ ╭(′▽`)╭(′▽`)╯');
+	console.log('%c【 歡迎加入 Webduino Facebook 粉絲團，獲得更多精彩資訊與限時優惠！ 】\n【 粉絲團：https://www.facebook.com/webduino/ 】','color:#f00; font-size:20px;');
 
 	$('header .menu a').removeClass('actived');
 	

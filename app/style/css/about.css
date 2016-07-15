@@ -1,0 +1,171 @@
+/* browser */
+/*main*/
+.content {
+  margin: 60px auto 0;
+  width: 100%;
+}
+.content .banner {
+  display: table;
+  width: 100%;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.content .banner img {
+  display: block;
+  margin: 0 0 -10px;
+  width: 100%;
+}
+.content h1 {
+  font-size: 32px;
+  padding: 50px 0 30px;
+  text-align: center;
+}
+.content a:link,
+.content a:active,
+.content a:visited,
+.content a:hover {
+  color: #098;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+.content p {
+  margin: 0 auto;
+  width: 60%;
+  color: #555;
+  text-align: justify;
+  line-height: 26px;
+  font-size: 17px;
+  padding-bottom: 50px;
+  border-bottom: 1px dashed #aaa;
+}
+.content p img {
+  display: block;
+  text-align: center;
+  margin: 50px auto -51px;
+  width: 90%;
+}
+.content b {
+  color: #f80;
+}
+.content .contact {
+  margin: 0 auto;
+  width: 60%;
+  line-height: 26px;
+  font-size: 17px;
+  text-align: center;
+}
+.content .contact li {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0 20px;
+  width: 30%;
+  vertical-align: top;
+}
+.content .contact li a:link {
+  color: #000;
+  text-decoration: underline;
+}
+.content .contact li a:hover {
+  color: #f80;
+}
+.content .contact li i {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 20px;
+}
+.content .contact li i.fa-envelope {
+  color: #ffa912;
+}
+.content .contact li i.fa-phone {
+  color: #008267;
+}
+.content .contact li i.fa-fax {
+  color: #a15ea4;
+}
+.content .contact li i.fa-facebook {
+  color: #3360a0;
+}
+.content .contact li i.fa-wrench {
+  color: #00acec;
+}
+.content .contact li i.fa-map-marker {
+  color: #eb4720;
+}
+.content .job {
+  margin: 0 auto;
+  width: 60%;
+}
+.content .job li {
+  margin: 30px 0;
+  line-height: 24px;
+}
+.content .job li h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.content iframe {
+  display: block;
+  margin: 20px auto 0 ;
+  width: 60%;
+  height: 500px;
+}
+.content .conf {
+  margin: 0 auto;
+  width: 60%;
+  line-height: 26px;
+  font-size: 17px;
+  text-align: center;
+}
+.content .conf li {
+  width: 24%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0 30px;
+}
+.content .conf img {
+  width: 80%;
+}
+/* RWD */
+@media (max-width: 1000px) {
+  .content {
+    margin-top: 80px;
+  }
+  .content .banner {
+    margin-bottom: 0;
+  }
+  .content p,
+  .content .contact,
+  .content .job,
+  .content .conf,
+  .content iframe {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .content {
+    margin-top: 40px;
+  }
+  .content .conf li,
+  .content .contact li {
+    width: 48%;
+  }
+  .content .job li h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .content h1 {
+    font-size: 26px;
+  }
+  .content .conf li,
+  .content .contact li {
+    width: 100%;
+  }
+  .content .conf img {
+    width: 60%;
+  }
+  .content iframe {
+    display: none;
+  }
+}
