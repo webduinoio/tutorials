@@ -107,6 +107,18 @@
 <p><img src="../img/tutorials/tutorial-29-06.jpg" alt=""></p>
 <p>點選 Manage App 就可以進入專案查看與設定，Firebase 都是使用 JSON 的格式儲存資料，這裏我們只要先了解資料會儲存在裡面，如果對於 Firebase 想瞭解更多，可以參考 Firebase 的教學 ( <a href="https://www.firebase.com/docs/web/api/">https://www.firebase.com/docs/web/api/</a> )，在這裡我們只需要記下資料庫的網址，就可以開始記錄溫濕度囉！</p>
 <p><img src="../img/tutorials/tutorial-29-07.jpg" alt=""></p>
+<p>由於 Firebase 改版的緣故，預設的存取權限是需要帳號的，但存取權我們可以透過簡單的方式修改，如果你是新版的 Firebase，第一步先選擇左邊選單的 database。</p>
+<p><img src="../img/tutorials/tutorial-29-13.jpg" alt=""></p>
+<p>選擇「規則」的頁籤，可以看到裡面預設的帳號規則是「不能為 null」。</p>
+<p><img src="../img/tutorials/tutorial-29-14.jpg" alt=""></p>
+<p>我們只要把這段規則改成下面這樣就可以了。</p>
+<pre><code>{
+    &quot;rules&quot;: {
+        &quot;.read&quot;: true,
+        &quot;.write&quot;: true
+    }
+}
+</code></pre><p><img src="../img/tutorials/tutorial-29-15.jpg" alt=""></p>
 <h2>Webduino Blockly 操作解析</h2>
 <p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，因為這個範例除了用 Firebase 記錄溫濕度之外，還會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。</p>
 <p><img src="../img/tutorials/tutorial-29-08.jpg" alt=""></p>

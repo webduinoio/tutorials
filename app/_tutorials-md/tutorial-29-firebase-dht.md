@@ -85,6 +85,26 @@ date: 20160330
 
 ![](../img/tutorials/tutorial-29-07.jpg)
 
+由於 Firebase 改版的緣故，預設的存取權限是需要帳號的，但存取權我們可以透過簡單的方式修改，如果你是新版的 Firebase，第一步先選擇左邊選單的 database。
+
+![](../img/tutorials/tutorial-29-13.jpg)
+
+選擇「規則」的頁籤，可以看到裡面預設的帳號規則是「不能為 null」。
+
+![](../img/tutorials/tutorial-29-14.jpg)
+
+我們只要把這段規則改成下面這樣就可以了。
+
+	{
+		"rules": {
+			".read": true,
+			".write": true
+		}
+	}
+
+![](../img/tutorials/tutorial-29-15.jpg)
+
+
 ## Webduino Blockly 操作解析
 
 打開 Webduino Blockly 編輯工具 ( [https://blockly.webduino.io](https://blockly.webduino.io) )，因為這個範例除了用 Firebase 記錄溫濕度之外，還會用網頁「顯示文字」來顯示溫度或濕度，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「顯示文字」。
