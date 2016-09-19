@@ -58,7 +58,7 @@ img: tutorial-31-01s.jpg</p>
 <h2>Webduino Blockly 操作解析</h2>
 <p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，然後放入土壤濕度偵測以及 LED 點矩陣的積木，並選擇對應的腳位。</p>
 <p><img src="../img/tutorials/tutorial-31-07.jpg" alt=""></p>
-<p>放入開始偵測的積木，這裏先用一個變數來裝載偵測到的數值，同時我們也對這個數值做四捨五入到小數點零位 ( 因為待會會重複用到這個數值，用一個變數才會修改的時候要修改太多地方，然後四捨五入是因為 LED 點矩陣待會只會顯示整數 )。</p>
+<p>放入開始偵測的積木，這裏先用一個變數來裝載偵測到的數值，同時我們也對這個數值做四捨五入到小數點零位 ( 因為待會會重複用到這個數值，用一個變數才不會修改的時候要修改太多地方，然後四捨五入是因為 LED 點矩陣待會只會顯示整數 )。</p>
 <p><img src="../img/tutorials/tutorial-31-08.jpg" alt=""></p>
 <p>放入「顯示」的積木，讓偵測到的數值同步顯示在「網頁互動區」裡頭，接著使用「邏輯」的積木，讓小於某個數值的時候，點矩陣會顯示當前數字，大於某的數值的時候會播放動畫 ( 這裏設定為大於等於 100 的時候 )。</p>
 <p><img src="../img/tutorials/tutorial-31-09.jpg" alt=""></p>

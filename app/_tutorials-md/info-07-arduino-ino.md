@@ -49,6 +49,12 @@ date: 20151210
 (1) [Webduino UNO 雲端擴充板初始化設定](https://webduino.io/tutorials/info-04-uno-setup.html)  
 (2) [Chrome API Proxy 使用說明](https://webduino.io/tutorials/info-05-chrome-api-proxy.html)
 
+## 燒錄注意事項
+
+如果您燒錄時，UNO 上面有和 Webduino Fly 結合，**請務必將 Webduino Fly 切換至 STA 模式**，避免燒錄時出現無法燒錄的錯誤，如果您只有使用 Arduino UNO，直接透過 USB 現燒錄即可。
+
+![Webduino Fly 初始化設定](../img/tutorials/info-04-04.jpg)
+
 ## 下載韌體與程式庫
 
 我們已經把要燒錄在 Arduino 裡的韌體程式碼以及要引入的程式庫，公開於 Github 上頭，你可以直接 clone ，或是 fork 我們的這個開源專案，對於不會使用 Github 的朋友，可以直接點選右邊的「Download Zip」的按鈕，或直接由這個下面的網址下載。

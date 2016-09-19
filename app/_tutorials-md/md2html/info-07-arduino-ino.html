@@ -35,6 +35,9 @@ img: info-07-01s.jpg</p>
 <p>因為 Webduino 要走 Arduino Firmata 的通訊協定，所以必須「<strong>要燒錄具有 Firmata 通訊協定的韌體</strong>」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。</p>
 <p>如果對於 Webduino UNO 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：</p>
 <p>(1) <a href="https://webduino.io/tutorials/info-04-uno-setup.html">Webduino UNO 雲端擴充板初始化設定</a><br>(2) <a href="https://webduino.io/tutorials/info-05-chrome-api-proxy.html">Chrome API Proxy 使用說明</a></p>
+<h2>燒錄注意事項</h2>
+<p>如果您燒錄時，UNO 上面有和 Webduino Fly 結合，<strong>請務必將 Webduino Fly 切換至 STA 模式</strong>，避免燒錄時出現無法燒錄的錯誤，如果您只有使用 Arduino UNO，直接透過 USB 現燒錄即可。</p>
+<p><img src="../img/tutorials/info-04-04.jpg" alt="Webduino Fly 初始化設定"></p>
 <h2>下載韌體與程式庫</h2>
 <p>我們已經把要燒錄在 Arduino 裡的韌體程式碼以及要引入的程式庫，公開於 Github 上頭，你可以直接 clone ，或是 fork 我們的這個開源專案，對於不會使用 Github 的朋友，可以直接點選右邊的「Download Zip」的按鈕，或直接由這個下面的網址下載。</p>
 <p>Github：<a href="https://github.com/webduinoio/wafirmata">https://github.com/webduinoio/wafirmata</a><br>Download：<a href="https://github.com/webduinoio/wafirmata/archive/master.zip">https://github.com/webduinoio/wafirmata/archive/master.zip</a></p>
