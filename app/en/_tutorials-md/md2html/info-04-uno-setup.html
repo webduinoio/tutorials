@@ -1,0 +1,88 @@
+<hr>
+<p>tag: info
+src: info-04-uno-setup.html
+title: Webduino Fly Initialization Setup
+banner: info-04-01.jpg
+img: info-04-01s.jpg</p>
+<h2>date: 20160918</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Webduino Fly Initialization Setup :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="Before you start using Webduino Fly(Uno Extension Board), the most critical step is the initialization setup. Uno Extension Board equips your Arduino UNO with wifi, facilitating the complete Webduino functions. This initialization setup is the same logic as mobile wifi settings. Every device requires a setup process before connecting to the wifi, so do Webduino boards.
+">
+
+<meta itemprop="description" content="Before you start using Webduino Fly(Uno Extension Board), the most critical step is the initialization setup. Uno Extension Board equips your Arduino UNO with wifi, facilitating the complete Webduino functions. This initialization setup is the same logic as mobile wifi settings. Every device requires a setup process before connecting to the wifi, so do Webduino boards.
+">
+
+<meta property="og:description" content="Before you start using Webduino Fly(Uno Extension Board), the most critical step is the initialization setup. Uno Extension Board equips your Arduino UNO with wifi, facilitating the complete Webduino functions. This initialization setup is the same logic as mobile wifi settings. Every device requires a setup process before connecting to the wifi, so do Webduino boards.
+">
+
+<meta property="og:title" content="Webduino Fly Initialization Setup" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/info-04-uno-setup.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/info-04-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/info-04-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Webduino Fly Initialization Setup</h1>
+<p>Before you start using Webduino Fly(Uno Extension Board), the most critical step is the initialization setup. Uno Extension Board equips your Arduino UNO with wifi, facilitating the complete Webduino functions. This initialization setup is the same logic as mobile wifi settings. Every device requires a setup process before connecting to the wifi, so do Webduino boards.</p>
+<h2>Webduino Fly Initialization Step by step </h2>
+<ul>
+<li><h3>1. Assemble two boards, “Wedduino Fly” and “Arduino UNO”</h3>
+<p>  Assemble two boards, “Wedduino Fly” and “Arduino UNO”, creating your “Webduino UNO”.</p>
+<p>  <img src="../../img/tutorials/info-04-02.jpg" alt="Webduino Fly Initialization Setup"></p>
+<p>  <img src="../../img/tutorials/info-04-03.jpg" alt="Webduino Fly Initialization Setup"></p>
+</li>
+<li><h3>2. Start Initialization</h3>
+<p>  There is a switch on Webduino Fly board. Switch to STA pattern, Turn the power on and start initialization set-up.</p>
+<p>  <img src="../../img/tutorials/info-04-04.jpg" alt="Webduino Fly Initialization Setup"></p>
+</li>
+<li><h3>3. Search for Webduino Board by Using wifi</h3>
+<p>  Search the SSID name of Webduino board on a computer or mobile device by using wifi network. After key-in the password ( default is 12345678 ), this computer or mobile device can connect to Webduino board. <strong>The SSID of Webduino board is used to be [wa...].</strong> ( such as wa101 )</p>
+<p>  <img src="../../img/tutorials/info-04-05.jpg" alt="Webduino Fly Initialization Setup"></p>
+</li>
+</ul>
+<ul>
+<li><h3>4. Connect to Webduino board to setup</h3>
+<p>  Open a window of Google Chrome or Safari and type-in web address &quot;<b><a href="http://192.168.4.1">http://192.168.4.1</a></b>&quot; Then you will be directed to the set-up page. Type-in the SSID and PASSWORD of Wi-Fi at home, in office, or shared by a mobile device. ( Note that, SSID here is referring to the SSID of wifi <strong>not the SSID name of Webduino board</strong>. The maximum SSID and PASSWORD length is 14 characters, this one allows letters and numbers only. )</p>
+<p>  <img src="../../img/tutorials/info-04-06.jpg" alt="Webduino Fly Initialization Setup"></p>
+</li>
+<li><h3>5. Reboot Webduino UNO board</h3>
+<p>  After type-in SSID and PASSWORD, press “send”. Webduino is initialized and can be connected to the Wi-Fi at home, in office or on portable device if  “OK” shows on screen. (If no “OK” shows on screen, please go back to Step 2 and start over the setup.)</p>
+<p>  <img src="../../img/tutorials/info-04-07.jpg" alt="Webduino - Reboot Webduino board"></p>
+<p>  When “OK” shows on screen, <strong>remove power on Webdiono board and switch to AP.</strong> Then connect power and reboot.</p>
+<p>  <img src="../../img/tutorials/info-04-08.jpg" alt="Webduino - Reboot Webduino board"></p>
+</li>
+<li><h3>6. Confirm the connection</h3>
+<p>  Reboot Webduino board, then, switch to normal Internet connection on a computer or mobile device. Open the page of <a href="https://webduino.io/device.html">https://webduino.io/device.html</a> and then type-in the name of device to check the connection. <strong>When seeing “OK” on the screen, you can start using Webduino.</strong> ( If there is no response from Webduino board, you need to reboot Webduino board or set up from step2. )</p>
+<p>  <img src="../../img/tutorials/info-04-09.jpg" alt="Webduino - Confirm the connection"></p>
+<p>  Check LED red light on the board is easier to determine whether the initialization is successful or not. <strong>The light will be off when connecting successfully.</strong> However, the light will keep blinking when connecting unsuccessfully. In this case, please reboot Webduino board or reconnect power and start setting up from step2.</p>
+<p>  <img src="../../img/tutorials/info-04-10.jpg" alt="Webduino - Confirm the connection"></p>
+</li>
+<li><h3>7. Connect Webduino Board to Wi-Fi Successfully</h3>
+<p>  Webduino can connect to Wi-Fi at home, in office or on a mobile device, and also connect to cloud server automatically. Now, let&#39;s start to try Webduino via Wi-Fi.  ( Check our <a href="tutorial-01-led.html">first Tutorial</a> )</p>
+</li>
+<li><h3>8. Announcement</h3>
+<p>  Webduino follows the protocol of Arduino Firmata, meaning that Ariduino itself <strong>has to burn Firmata firmwares</strong>. We recommend you to check the lists from Arduino Official Website. (Arduino IDE &gt; File &gt;Examples &gt; Firmata&gt;StandardFirmata) </p>
+<p>  <img src="../../img/tutorials/info-05-08.jpg" alt="Webduino Fly Initialization Setup"></p>
+</li>
+</ul>
+<h2>Compiling errors of Arduino IDE 1.6.7</h2>
+<p>Some users met compiling errors when using Arduino IDE 1.6.7, because of incompatibilities between different versions. In this case, there are incompatibilities between Firmata 2.4.4 and 2.5.1. You can reinstall the version 1.6.6 or 1.6.5, ( Download here: <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">https://www.arduino.cc/en/Main/OldSoftwareReleases#previous</a> ) or <strong>reinstall Firmata 2.4.4 or 2.4.3 though the following steps</strong>.</p>
+<p>Step 1: Open Library Manager (Sketch&gt;Include Library&gt;Manage Libraries)</p>
+<p><img src="../../img/tutorials/info-07-10.jpg" alt="Webduino UNO Extension Board Initialization Setup"></p>
+<p>Step 2: Search ”Firmata”, check if your version is 2.5.1.</p>
+<p><img src="../../img/tutorials/info-07-12.jpg" alt="Webduino UNO Extension Board Initialization Setup"></p>
+<p>Step 3: Choose Firmata version 2.4.4 or 2.4.3, and the press “Install”. Now you reinstall the older version, and can process burning firmwares!</p>
+<p><img src="../../img/tutorials/info-07-13.jpg" alt="Webduino UNO Extension Board Initialization Setup"></p>
+<!-- @@close-->
