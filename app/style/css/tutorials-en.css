@@ -15,7 +15,8 @@
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-.filter div {
+.filter a {
+  color: #000;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -28,16 +29,16 @@
   border-left: 1px solid #ccc;
   cursor: pointer;
 }
-.filter div:first-child {
+.filter a:first-child {
   border-left: none;
 }
-.filter div:hover {
+.filter a:hover {
   color: #0bf;
 }
-.filter div.click {
+.filter a.click {
   color: #F90;
 }
-.filter div.click:hover {
+.filter a.click:hover {
   color: #F90;
 }
 .filter.scroll {
@@ -46,7 +47,7 @@
   border-top: 0 solid #eee;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 20px;
 }
-.filter.scroll div {
+.filter.scroll a {
   height: 30px;
   line-height: 30px;
   padding: 0 18px;
@@ -238,7 +239,7 @@
   .filter.scroll {
     height: 140px;
   }
-  .filter div {
+  .filter a {
     padding: 0;
     width: 40%;
   }
