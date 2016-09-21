@@ -9,17 +9,19 @@ $(function() {
 
   function hash() {
     $filterTag = location.href.split('#')[1];
-    if ($filterTag && $filterTag != '' && $filterTag != 'all') {
-      $btn.removeClass('click');
-      $('.btn-' + $filterTag).addClass('click');
-      $div.hide();
-      $('.filter-' + $filterTag).css({
+    if (!$filterTag) {
+      $filterTag = 'new';
+    }
+    console.log($filterTag);
+    $btn.removeClass('click');
+    $('.btn-' + $filterTag).addClass('click');
+    if ($filterTag == 'all') {
+      $div.css({
         'display': 'inline-block'
       });
-    } else if ($filterTag == 'all') {
-      $btn.removeClass('click');
-      $('.btn-' + $filterTag).addClass('click');
-      $div.css({
+    } else {
+      $div.hide();
+      $('.filter-' + $filterTag).css({
         'display': 'inline-block'
       });
     }

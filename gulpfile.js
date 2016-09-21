@@ -308,7 +308,7 @@ gulp.task('watch',function(){
   gulp.watch('app/_tutorials-md/**/*.md',['tutorials-include','md2json']);
   gulp.watch('app/_include-tutorials.html',['tutorials-include']);
   gulp.watch('app/en/_tutorials-md/**/*.md',['tutorials-en-include','md2json-en']);
-  gulp.watch('app/en/_include-tutorials.html',['tutorials-en-include']);
+  gulp.watch(['app/en/_include-tutorials.html','app/en/_include-tutorials-content.html'],['tutorials-en-include']);
 	gulp.watch('app/style/less/*.less',['copy-css']);
   gulp.watch('app/_index.html',['index']);
   gulp.watch('app/en/_index.html',['indexEN']);
