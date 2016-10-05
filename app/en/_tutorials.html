@@ -1,80 +1,104 @@
 <!-- @@master  = _layout.html-->
-
 <!-- @@block  =  meta-->
-  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
-	<title>Tutorials ::: Webduino = Web × Arduino</title>
-
-  <meta name="description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of "Web control Arduino", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
-  <meta itemprop="description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of "Web control Arduino", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
-  <meta property="og:description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of "Web control Arduino", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
- 
-
-  <meta property="og:title" content="Webduino = Web × Arduino" >
-  <meta property="og:url" content="https://webduino.io/tutorials.html">
-
-  <meta property="og:image" content="https://webduino.io/../img/tutorials/tutorials-s.jpg">
-  <meta itemprop="image" content="https://webduino.io/../img/tutorials/tutorials-s.jpg">
-  
-	<include src="_include.html"></include>
+<link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+<title>Tutorials ::: Webduino = Web × Arduino</title>
+<meta name="description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of " Web control Arduino ", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
+<meta itemprop="description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of " Web control Arduino ", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
+<meta property="og:description" content="Webduino's website offers a lot of examples of tutorial,these examples will lead developers go into a field of " Web control Arduino ", from an electronic circuit wiring, has been to writing Javascript language, Webduino will give you very detail instructions ">
+<meta property="og:title" content="Webduino = Web × Arduino">
+<meta property="og:url" content="https://webduino.io/tutorials.html">
+<meta property="og:image" content="https://webduino.io/../img/tutorials/tutorials-s.jpg">
+<meta itemprop="image" content="https://webduino.io/../img/tutorials/tutorials-s.jpg">
+<include src="_include.html"></include>
 <!-- @@close-->
- 
 <!-- @@block  =  js-->
-  <script src="../js/tutorials-filter.js"></script>
+<script src="../js/tutorials-filter.js"></script>
 <!-- @@close-->
-
 <!-- @@block  =  css-->
-	<link rel="stylesheet" href="../style/css/tutorials-en.css">
-	<link rel="stylesheet" href="../style/css/lib/font-awesome.css">
+<link rel="stylesheet" href="../style/css/tutorials-en.css">
+<link rel="stylesheet" href="../style/css/lib/font-awesome.css">
 <!-- @@close-->
-
 <!-- @@block  =  content-->
-	<div class="filter">
-		<a class="btn-new click" href="#new">New </a>
-		<a class="btn-all" href="#all">All</a>
-		<a class="btn-info" href="#info">Setup</a>
-		<a class="btn-component" href="#component">Components</a>
-		<a class="btn-sensor" href="#sensor">Sensors</a>
-		<a class="btn-example" href="#example">Useful</a>
-	</div>
-	<div class="content"> 
-
-		<!--  info -->
-			<div class="filter-info filter-new">
-				<a href="tutorials/info-01-introduction.html">
-					<div>
-						<img class="lazy" data-original="../img/tutorials/info-01-01s.jpg" />
-					</div>
-					<h2>Introduction of Webduino</h2>
-					<span>Webduino is the combination of Web and Arduino.  It proclaims a new era of Web-controlled Arduino has come.</span>
-				</a>
-			</div>
-			<div class="filter-info filter-new">
-				<a href="tutorials/info-02-setup.html">
-					<div>
-						<img class="lazy" data-original="../img/tutorials/info-02-01s.jpg" />
-					</div>
-					<h2>Webduino Initialization Step by Step</h2>
-					<span>There is a switch on Webduino development board. Switch to STA pattern, Turn the power on and start initialization set-up.</span>
-				</a>
-			</div>
-			<div class="filter-component filter-new">
-				<a href="tutorials/tutorial-01-led.html">
-					<div>
-						<img class="lazy" data-original="../img/tutorials/tutorial-01-01s.jpg" />
-					</div>
-					<h2>Control single LED light</h2>
-					<span>Regarding the basic case about Arduino controlled sensor, how to control a single LED light has been used as the first example.</span>
-				</a>
-			</div>
-			<div class="filter-info filter-new">
-				<a href="tutorials/info-04-uno-setup.html">
-					<div>
-						<img class="lazy" data-original="../img/tutorials/info-04-01s.jpg" />
-					</div>
-					<h2>Webduino Fly Initialization Setup ( You should read before first use )</h2>
-					<span>Uno Extension Board equips your Arduino UNO with wifi, facilitating the complete Webduino functions.</span>
-				</a>
-			</div>
-		
-	</div>
+<div class="filter">
+  <a class="btn-new click" href="#new">New </a>
+  <a class="btn-all" href="#all">All</a>
+  <a class="btn-info" href="#info">Setup</a>
+  <a class="btn-component" href="#component">Components</a>
+  <a class="btn-sensor" href="#sensor">Sensors</a>
+  <a class="btn-example" href="#example">Useful</a>
+</div>
+<div class="content">
+  <div class="filter-info">
+    <a href="tutorials/info-01-introduction.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/info-01-01s.jpg" />
+      </div>
+      <h2>Introduction of Webduino</h2>
+      <span>Webduino is the combination of Web and Arduino. It proclaims a new era of Web-controlled Arduino has come.</span>
+    </a>
+  </div>
+  <div class="filter-info filter-new">
+    <a href="tutorials/info-02-setup.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/info-02-01s.jpg" />
+      </div>
+      <h2>Webduino Initialization Setup</h2>
+      <span>The most important thing before you begin using the Webduino is doing an initialization setup.</span>
+    </a>
+  </div>
+  <div class="filter-info filter-new">
+    <a href="tutorials/info-04-uno-setup.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/info-04-01s.jpg" />
+      </div>
+      <h2>Webduino Fly Initialization Setup</h2>
+      <span>Uno Extension Board equips your Arduino UNO with wifi, facilitating the complete Webduino functions.</span>
+    </a>
+  </div>
+  <div class="filter-info">
+    <a href="tutorials/info-08-blockly-tutorial.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/info-08-01s.jpg">
+      </div>
+      <h2>Webduino Blockly Basic Guide</h2>
+      <span>Webduino Blockly is a visual programming editor, adopting the Google Blockly system.</span>
+    </a>
+  </div>
+  <div class="filter-info">
+    <a href="tutorials/info-11-feature.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/info-11-01s.jpg" />
+      </div>
+      <h2>The 10 Most Useful Features of Webduino Blockly</h2>
+      <span>We are introducing the most useful features that we have yet to mention in the tutorials.</span>
+    </a>
+  </div>
+  <div class="filter-component filter-new">
+    <a href="tutorials/tutorial-01-led.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/tutorial-01-01s.jpg" />
+      </div>
+      <h2>Control single LED light</h2>
+      <span>Regarding the basic case about Arduino controlled sensor, how to control a single LED light has been used as the first example.</span>
+    </a>
+  </div>
+  <div class="filter-sensor">
+    <a href="tutorials/tutorial-05-ultrasonic.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/tutorial-05-01s.jpg" />
+      </div>
+      <h2>Use An Ultrasonic Sensor</h2>
+      <span>A HC-SR04 sensor emits an ultrasonic sound that travels through the air and will bounce off the nearest object and travel back to the module.</span>
+    </a>
+  </div>
+  <div class="filter-sensor">
+    <a href="tutorials/tutorial-10-temperature-humidity-sensor.html">
+      <div>
+        <img class="lazy" data-original="../img/tutorials/tutorial-10-01s.jpg">
+      </div>
+      <h2>Discover the Usage of A DHT Sensor</h2>
+      <span>The DHT sensor is a basic digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and generates a digital signal.</span>
+      </a>
+  </div>
+</div>
 <!-- @@close-->

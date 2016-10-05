@@ -1,4 +1,4 @@
-	---
+---
 tag: info
 src: info-02-setup.html
 title: Webduino Initialization Setup

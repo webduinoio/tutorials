@@ -346,7 +346,7 @@ gulp.task('move',['build-clean'],function(){
   };
 	var a1 = gulp.src('app/img/index/*').pipe(gulp.dest('build/img/index')),
 	    a2 = gulp.src('app/img/layout/*').pipe(gulp.dest('build/img/layout')),
-      a3 = gulp.src('app/img/tutorials/*').pipe(gulp.dest('build/img/tutorials')),
+      a3 = gulp.src('app/img/tutorials/**/*').pipe(gulp.dest('build/img/tutorials')),
       a4 = gulp.src('app/img/buy/*').pipe(gulp.dest('build/img/buy')),
       a5 = gulp.src('app/img/activity/*').pipe(gulp.dest('build/img/activity')),
       a5 = gulp.src('app/img/about/*').pipe(gulp.dest('build/img/about')),
