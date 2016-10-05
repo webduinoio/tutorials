@@ -1,4 +1,4 @@
----
+	---
 tag: info
 src: info-02-setup.html
 title: Webduino Initialization Setup
@@ -13,11 +13,11 @@ date: 20150420
 
 <title>Webduino Initialization Setup :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="The most important thing before execute Webduino is doing initialization set-up.  The purpose of initialization is making Webduino development kit connect to internet automatically.  The same as what we do on a new mobile phone, we need to setup Wi-Fi on the phone to browse internet via home Wi-Fi. ">
+<meta name="description" content="The most important thing before you begin using the Webduino is doing an initialization setup. The purpose of the initialization is to make the Webduino Development Kit connect to the internet automatically. It's the same thing we do for a new mobile phone, the phone needs to be set up to browse the internet via Wi-Fi.">
 
-<meta itemprop="description" content="The most important thing before execute Webduino is doing initialization set-up.  The purpose of initialization is making Webduino development kit connect to internet automatically.  The same as what we do on a new mobile phone, we need to setup Wi-Fi on the phone to browse internet via home Wi-Fi. ">
+<meta itemprop="description" content="The most important thing before you begin using the Webduino is doing an initialization setup. The purpose of the initialization is to make the Webduino Development Kit connect to the internet automatically. It's the same thing we do for a new mobile phone, the phone needs to be set up to browse the internet via Wi-Fi.">
 
-<meta property="og:description" content="The most important thing before execute Webduino is doing initialization set-up.  The purpose of initialization is making Webduino development kit connect to internet automatically.  The same as what we do on a new mobile phone, we need to setup Wi-Fi on the phone to browse internet via home Wi-Fi. ">
+<meta property="og:description" content="The most important thing before you begin using the Webduino is doing an initialization setup. The purpose of the initialization is to make the Webduino Development Kit connect to the internet automatically. It's the same thing we do for a new mobile phone, the phone needs to be set up to browse the internet via Wi-Fi.">
 
 <meta property="og:title" content="Webduino Initialization Setup" >
 
@@ -42,48 +42,48 @@ date: 20150420
 <!-- @@block  =  tutorials-->
 #Webduino Initialization Setup
 
-The most important thing before execute Webduino is doing initialization set-up.  The purpose of initialization is making Webduino development kit connect to internet automatically.  The same as what we do on a new mobile phone, we need to setup Wi-Fi on the phone to browse internet via home Wi-Fi. 
+The most important thing before you begin using the Webduino is doing an initialization setup. The purpose of the initialization is to make the Webduino Development Kit connect to the internet automatically. It's the same thing we do for a new mobile phone, the phone needs to be set up to browse the internet via Wi-Fi. 
 
 ##Webduino Initialization Step by Step
 
 - ###1. Start Initialization
 
-	There is a switch on Webduino development board. Switch to STA pattern, Turn the power on and start initialization set-up.
+	There is a switch on the Webduino development board. Switch it to STA pattern, Turn the power on and start the initialization setup.
 
-	![Webduino - 開始進行初始化](../../img/tutorials/info-02-09.jpg)
+	![Webduino - Start Initialization](../../img/tutorials/en/info-02-09.jpg)
 
 - ###2. Search Webduino Development Kit
 
-	Use Wi-Fi on a computer or a portable device to search the SSID name of Webduino Development Kit and key-in password (default is 12345678).  Then, this computer or portable device can connect to Webduino.  The SSID of Webduino Development Kit is used to be [wa...] (such as wa101).
+	Use Wi-Fi on your computer or portable device search for the Webduino Development Kit's SSID and key in the password (the default is 12345678). The SSID of Webduino Development Kit will start with "wa…" (such as wa101). Then, your computer or portable device will be able to connect to the Webduino.
 
-	![Webduino - 使用 Wi-Fi 搜尋 Webduino 開發板](../../img/tutorials/info-02-04.jpg)
+	![Webduino -  Search Webduino Development Kit](../../img/tutorials/en/info-02-04.jpg)
 
-- ###3. Connect to Webduino Development Kit to setup
+- ###3. Connect and Set Up the Webduino Development Kit
 
-	Use browser Chrome or Safari and type-in web address http://192.168.4.1, you can open the set-up page of Webduino Development Kit.  Type-in the SSID and PASSWORD of your shared Wi-Fi base station at home, in office or on a portable device. (SSID for Wi-Fi base station has a max. length of 14 characters,  letters and numbers)
+	Use Chrome or Safari internet browsers to type in the web address http://192.168.4.1. there you will see the setup page for the Webduino Development Kit. Type in the SSID and PASSWORD of your Wi-Fi router or portable device. (the SSID for the Wi-Fi router has a max length of 14 characters, letters and numbers)
 
-	![Webduino - 連線 Webduino 開發板進行設定](../../img/tutorials/info-02-07.jpg)
+	![Webduino - Connect and Set Up the Webduino Development Kit](../../img/tutorials/info-02-07.jpg)
 
 
-- ###4. Reboot Webduino Development Kit
+- ###4. Reboot the Webduino Development Kit
 
-	After type-in SSID and PASSWORD, press ‘sending’. When ‘OK’ shows, Webduino is initialized and can be connect to the Wi-Fi based station shared at home, in office or on portable device.  Remove power on the Development Kit and switch to AP pattern.  Then connect power and reboot.  If no ‘OK’ shows, remove power and set up again from step2.  
+	After type-in SSID and PASSWORD, press "sending". When "OK" shows, Webduino is initialized and can be connect to the Wi-Fi based station shared at home, in office or on portable device. Remove power on the Development Kit and switch to AP pattern. Then connect power and reboot. If no "OK" shows, remove power and set up again from step2.  
 
-	![Webduino - 重啟 Webduino 開發板](../../img/tutorials/info-02-10.jpg)
+	![Webduino - Reboot the Webduino Development Kit](../../img/tutorials/en/info-02-10.jpg)
 
-- ###5. Connection Confirm
+- ###5. Confirm the Connection 
 
-	Reboot Webduino Development Kit, then, switch to normal internet connection on computer or portable device.  Connect to https://webduino.io/device.html and type-in the name of device to check the connection.  If connection works successful, it’ll show ‘OK’.  When ‘OK’ shows, you can start playing Webduino.  If there is no correspondent Webduino Development Kit, you need to reboot Webduino Development Kit or remove power and then set up from step2.
+	Once you reboot the Webduino Development Kit and your screen shows "OK", switch your computer or portable device to your regular internet connection. Connect to the page https://webduino.io/device.html and type in the name of your Webduino to check the connection. If the connection is successful, it'll show "OK".  If "OK" shows, you can start working with the Webduino. If no "OK" shows, you need to reboot the Webduino Development Kit again or   restart the setup from Step 2.
 
-	![Webduino - 確認連線是否成功](../../img/tutorials/info-02-06.jpg)
+	![Webduino - Confirm the Connection](../../img/tutorials/info-02-06.jpg)
 
-	There is another easier way to evaluate that a small red LED on the Kit will be extinguished when connection is successful.  However, while this red LED keeps blinking, connection is failed.  Reboot Webduino or reconnect power and start setting up from step2.
+	Another way to know if your connection is successful is the small red LED on the  Webduino will not be lit up. However, if the LED is blinking, the connection failed. Reboot the Webduino and/or start the setup again from Step 2.
 	
-	![Webduino - 確認連線是否成功](../../img/tutorials/info-02-11.jpg)
+	![Webduino - Confirm the Connection](../../img/tutorials/en/info-02-11.jpg)
 
 
-- ###6. Webduino Development Kit can connect to Wi-Fi based station
+- ###6. Connect the Webduino Development Kit  to Wi-Fi Router
 
-	Webduino can connect to a shared Wi-Fi station at home, in office or on a portable device, and connect to cloud server automatically.  Now, let’s try to control Webduino via Wi-Fi.
+	Webduino can connect to a shared Wi-Fi router or on a portable device. It will connect to cloud servers automatically. Now, let's try to control the Webduino via Wi-Fi.
 
 <!-- @@close-->
