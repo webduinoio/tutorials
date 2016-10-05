@@ -51,7 +51,7 @@ Webduino Smart 開發板有內建了一個微型三色 LED 燈 ( 共陰 )，預�
 
 ## Webduino Blockly 操作解析
 
-首先我們放入開發板的積木，下拉選單選擇 WebSocket ( 注意，使用 WebSocket 的工具網址必須是 http 開頭 )，填入開發板的 ip 位址 ( 如果不清楚 ip 位址是什麼，請看 [Webduino Smart 初始化設定](smart-02-setup.html) ) 
+首先我們放入開發板的積木，下拉選單選擇 WebSocket ( **注意，使用 WebSocket 的工具網址必須是 http 開頭** )，填入開發板的 ip 位址 ( 如果不清楚 ip 位址是什麼，請看 [Webduino Smart 初始化設定](smart-02-setup.html) ) 
 
 ![](../img/tutorials/smart-03-02.jpg)
 
