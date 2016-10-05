@@ -1,0 +1,90 @@
+<hr>
+<p>tag: info
+src: info-08-blockly-tutorial.html
+title: Webduino Blockly Basic Guide
+banner: info-08-01.jpg
+img: info-08-01s.jpg</p>
+<h2>date: 20161003</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Webduino Blockly Basic Guide :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="Webduino Blockly is a visual programming editor, adopting the Google Blockly system. Webduino Blockly will help developers who are not familiar with Web programming language or those who wish to realize the ideas quickly.">
+
+<meta itemprop="description" content="Webduino Blockly is a visual programming editor, adopting the Google Blockly system. Webduino Blockly will help developers who are not familiar with Web programming language or those who wish to realize the ideas quickly.">
+
+<meta property="og:description" content="Webduino Blockly is a visual programming editor, adopting the Google Blockly system. Webduino Blockly will help developers who are not familiar with Web programming language or those who wish to realize the ideas quickly.">
+
+<meta property="og:title" content="Webduino Blockly Basic Guide" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/info-08-blockly-tutorial.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/info-08-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/info-08-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Webduino Blockly Basic Guide</h1>
+<p>Webduino Blockly is a visual programming editor, adopting the Google Blockly system. Webduino Blockly will help developers who are not familiar with Web programming language or those who wish to realize the ideas quickly. </p>
+<p>The following instructions are the basic functions you need while using the Webduino, if you are familiar with the interface and features, please check our practical online tutorials, &quot;<a href="https://blockly.webduino.io/index-tutorials.html">Webduino Blockly Project Examples</a>&quot;.</p>
+<h2>Introduction to the Interface</h2>
+<p>Webduino Blockly has 3 main parts: The Block and Javascript tabs, which includes &quot;Blocks&quot; and the &quot;Code Generator&quot;. The buttons on the upper right of the workspace include the &quot;Open Code Editor&quot;, &quot;Check Device Status&quot;, &quot;Web Demo Area&quot;, &quot;Discard All Blocks&quot;, and &quot;Run Blocks&quot; buttons. Finally, the Side Menu consists all the &quot;Blocks&quot;, and the white space in the middle is the &quot;Workspace&quot;.</p>
+<p><img src="../../img/tutorials/en/info-08-02.jpg" alt="Webduino Blockly Introduction to the Interface"></p>
+<h2>Webduino Blocks</h2>
+<p>Webduino Blockly uses a variety of Blocks. All of the Blocks are located in the Side Menu on the left-hand side of the workspace. Here are the categories:</p>
+<p><strong>Variables</strong>: Variables are commonly used in programming. You can name and use the variables. 
+<strong>Functions</strong>: A function is a group of statements that is given a name, and which can be called. 
+<strong>Standard</strong>: Standard blocks include Logic, Loops, Math, Text, Lists, and Color blocks.<br><strong>Advanced</strong>: Advanced blocks include Console, Delay, Math Conversion, Repeat, Keyboard, Voice Control, Speech, and Mobile Device blocks.<br><strong>Board</strong>: You can use these blocks in the Webdino Private Cloud to detect the pins and status of Webduino Boards.<br><strong>Components</strong>: These are blocks for electronic components, e.g. LED, Buzzer, Relay, Servo Motor… and so on. 
+<strong>Sensors</strong>: Blocks for different sensors, e.g Ultra Sonic, DHT, PIR Detection, Sound Detection, Photocells… and so on. 
+<strong>Gadgets</strong>: Blocks for Gadgets. 
+<strong>Database</strong>: Blocks for connecting with Firebase.
+<strong>Web Demo</strong>: Blocks for interacting with the Web Demo Area.  </p>
+<p><img src="../../img/tutorials/en/info-08-03.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Create a Pop-up Window on Screen</h2>
+<p>Click &quot;Text&quot; under &quot;Basic Function&quot;. Combine the &quot;Print&quot; and &quot;[blank text]&quot; blocks in the workspace. Then type in &quot;Hello World&quot; in the &quot;[blank text]&quot; block.</p>
+<p><img src="../../img/tutorials/en/info-08-04.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>Press &quot;Run Blocks&quot; button on the upper right-hand side, and you will see a window popup showing &quot;Hello World&quot;.</p>
+<p><img src="../../img/tutorials/en/info-08-05.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Show Text in the Web Demo Area</h2>
+<p>Now we are going to practice how to interact with the web browser, so that you can use this function to control electronic components and sensors through a web browser in other examples. Go to &quot;Web Demo&quot; on the side menu, click on &quot;Show Text&quot;, drag the &quot;Show&quot; block to the workspace, and then drag a &quot;Text&quot; block to the workspace and type in something in the block.</p>
+<p><img src="../../img/tutorials/en/info-08-06.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>Open &quot;Wed Demo Area&quot; on the upper right-hand menu, and press &quot;Run Blocks&quot;. Then you will see the text you entered on the “Web Demo Area”.</p>
+<p><img src="../../img/tutorials/en/info-08-07.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Use &quot;Click Button&quot; is the Web Demo to Create a Pop-Up a Window</h2>
+<p>We can combine the functions mentioned above, interacting with the Web Demo Area in order to create a pop-up a window of text. First, from the &quot;Web Demo&quot; menu drag a &quot;Click Button&quot; block, a &quot;Print&quot; block, and a &quot;[blank text]&quot;&quot; block to the workspace. Type in some text in the &quot;[blank text]&quot;&quot; block and choose the button as shown in figure.</p>
+<p><img src="../../img/tutorials/en/info-08-08.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>Click &quot;Run Blocks&quot;, and a window of text will pop-up on screen.</p>
+<p><img src="../../img/tutorials/en/info-08-09.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Control the Webduino Board</h2>
+<p>Finally, we get to use the Webduino board. Drag a &quot;Board&quot; block to the workspace. You can choose to connect by WiFi, serial port, or Bluetooth. Note that, if you wish to connect by serial port or Bluetooth, you must first install the Chrome Proxy API. (Check the &quot;<a href="https://webduino.io/tutorials/info-05-chrome-api-proxy.html">Chrome API Proxy Guide</a>&quot; and &quot;<a href="https://webduino.io/tutorials/info-07-arduino-ino.html">Download &amp; Burn Arduino Firmware</a>&quot;)</p>
+<p><img src="../../img/tutorials/en/info-08-10.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>If you wish to connect to your board with WiFi. type in the name of your board then, click the tab &quot;Check Device Status&quot;. You should only use your board when the status shows a green light.</p>
+<p><img src="../../img/tutorials/en/info-08-11.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>Drag any of the Sensors or Electronic Components blocks to the workspace to combine them with the &quot;Board&quot; block. Now you can check out any of the other project examples using the Webduino board to learn about sensors and the electronic components and how they interact with each other. (<a href="https://webduino.io/tutorials.html">Tutorials</a>)</p>
+<p><img src="../../img/tutorials/en/info-08-12.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Coder Generator</h2>
+<p>You can export all the blocks to JavaScript by clicking the &quot;JavaScript&quot; tab. (The output might fail, if the blocks are in the wrong order.)</p>
+<p><img src="../../img/tutorials/en/info-08-13.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>Click &quot;Copy to Clipboard&quot;, and you can use the codes in other editors.</p>
+<p><img src="../../img/tutorials/en/info-08-14.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Open Code Editor</h2>
+<p>If you don&#39;t have a code editor, you can use the default editor. The editor button is located in the upper right-hand side of Webduino Blockly. Once clicked, you will be taken to the Webduino Bin, which is a custom, open source code editor from JSBin. </p>
+<p><img src="../../img/tutorials/info-08-15.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>Once you open the code editor, you would find that all the codes are imported automatically in the JavaScript tab. Now you can do all of your editing in JavaScript.  </p>
+<p><img src="../../img/tutorials/info-08-16.jpg" alt="Webduino Blockly Basic Guide"></p>
+<p>The Webduino Bin editor offers you a convenient way to edit codes, so even the figures will be imported automatically.</p>
+<p><img src="../../img/tutorials/info-08-17.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Save File</h2>
+<p>Never worry about losing your files. No matter if you are finished or not, just click the tab &quot;Save and Link to Blocks&quot; and then save the link to your bookmarks/favorite folder. You would see the saved page next time you open your browser. </p>
+<p><img src="../../img/tutorials/info-08-18.jpg" alt="Webduino Blockly Basic Guide"></p>
+<h2>Now you can start playing with your Webduino Blockly!</h2>
+<p>Practice these steps with your Webduino  and it will help you develop your knowledge of the Internet of Things!</p>
+<p>Tutorials on Webduino’s Official Website: <a href="https://webduino.io/tutorials.html">https://webduino.io/tutorials.html</a><br>Project Examples for the Webduino Blockly: <a href="https://blockly.webduino.io/index-tutorials.html">https://blockly.webduino.io/index-tutorials.html</a></p>
+<!-- @@close-->
