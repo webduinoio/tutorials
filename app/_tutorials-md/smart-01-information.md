@@ -70,11 +70,192 @@ Webduino Smart 是一塊長 3 公分寬 2.5 公分的開發板，重量約 85 �
 
 <br/>
 
-## Webdino 系列產品照片
+## Webdino 開發板差異對照表
 
-從左邊數來分別是 Webduino Smart、Webduino 馬克 1 號、Webduino Fly。
+<style>
+.tutorials-content table.chart{
+  border-collapse:collapse;
+  border:5px solid #000;
+  font-size:16px;
+}
+.tutorials-content table.chart tr th{
+  padding:20px 10px;
+  margin:0;
+  max-width:200px;
+  border-width:0 1px 1px;
+  border-style:solid;
+  border-color:#666;
+  font-weight:bold;
+  background:#333;
+  color:#fff;
+}
+.tutorials-content table.chart tr td{
+  padding:15px 10px;
+  margin:0;
+  max-width:200px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#ccc;
+  line-height:22px;
+  text-align:center;
+  background:#fff;
+  color:#000;
+}
+.tutorials-content table.chart tr td img{
+  width:100%;
+}
+@media (max-width: 400px) {
+  
+  .tutorials-content table.chart tr th{
+    padding:4px 1px;
+    font-size:12px;
+  }
+  .tutorials-content table.chart tr td{
+    font-size:12px;
+    padding:4px 1px;
+  line-height:18px;
+  }
+}
+</style>
 
-![](../img/tutorials/smart-01-06.jpg)
+<table class="chart">
+    <tr>
+      <th></th>
+      <th>Smart</th>
+      <th>馬克 1</th>
+      <th>Fly</th>
+  </tr>
+    <tr>
+      <td>照片</td>
+      <td><img src="../img/tutorials/smart-01-07-smart.jpg"></td>
+      <td><img src="../img/tutorials/smart-01-07-mark1.jpg"></td>
+      <td><img src="../img/tutorials/smart-01-07-fly.jpg"></td>
+  </tr>
+    <tr>
+      <td>體積</td>
+      <td>小</td>
+      <td>略小</td>
+      <td>中</td>
+  </tr>
+    <tr>
+      <td>尺寸</td>
+      <td>3cm x 2.5cm x 1cm</td>
+      <td>4.5cm x 4cm x 2cm</td>
+      <td>6.5cm x 5cm x 2cm</td>
+  </tr>
+    <tr>
+      <td>價格</td>
+      <td>預計小於 NT$ 300</td>
+      <td>NT$ 840</td>
+      <td>NT$ 840</td>
+  </tr>
+    <tr>
+      <td>獨立運行</td>
+      <td>O</td>
+      <td>O</td>
+      <td>需搭配<br/>
+Arduino UNO</td>
+  </tr>
+    <tr>
+      <td>Webduino Blockly</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>雲端 ( 遠端 ) 更新</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>Internet</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>WebSocket</td>
+      <td>O</td>
+      <td>遠端更新後支援</td>
+      <td>遠端更新後支援</td>
+  </tr>
+    <tr>
+      <td>藍芽</td>
+      <td>遠端更新後支援</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>序列埠</td>
+      <td>X</td>
+      <td>X</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>韌體 OpenSource</td>
+      <td>X</td>
+      <td>Arduino 端</td>
+      <td>Arduino 端</td>
+  </tr>
+    <tr>
+      <td>內建元件</td>
+      <td>三色 LED ( 共陰 )<br/>
+光敏電阻<br/>
+微型按鈕開關</td>
+      <td>X</td>
+      <td>X</td>
+  </tr>
+    <tr>
+      <td>LED<br/>
+三色 LED<br/>
+繼電器<br/>
+光敏電阻<br/>
+按鈕開關<br/>
+震動開關</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>溫濕度<br/>
+LED 點矩陣<br/>
+伺服馬達<br/>
+人體紅外線偵測<br/>
+聲音偵測<br/>
+超音波距離偵測<br/>
+蜂鳴器</td>
+      <td>遠端更新後支援</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>紅外線發射接收</td>
+      <td>遠端更新後支援</td>
+      <td>遠端更新後支援</td>
+      <td>遠端更新後支援</td>
+  </tr>
+    <tr>
+      <td>RFID<br/>
+三軸加速度計</td>
+      <td>遠端更新後支援</td>
+      <td>X</td>
+      <td>遠端更新後支援</td>
+  </tr>
+    <tr>
+      <td>土壤偵測<br/>
+可變電阻</td>
+      <td>X</td>
+      <td>O</td>
+      <td>O</td>
+  </tr>
+    <tr>
+      <td>搖桿</td>
+      <td>X</td>
+      <td>X</td>
+      <td>遠端更新後支援</td>
+  </tr>
+  </table>
 
 
 
