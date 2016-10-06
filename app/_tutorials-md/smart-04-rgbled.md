@@ -23,7 +23,7 @@ date: 20161005
 
 <meta property="og:url" content="https://webduino.io/tutorials/smart-04-rgbled.html">
 
-<meta property="og:image" content="https://webduino.io/img/tutorials/smart-04-rgbled-s">
+<meta property="og:image" content="https://webduino.io/img/tutorials/smart-04-rgbled-s.jpg">
 
 <meta itemprop="image" content="https://webduino.io/img/tutorials/smart-04-rgbled-s.jpg">
 
