@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../../img/layout/favicon.ico" type="image/x-icon">
+
+<title>Project Example 20: Switch Youtube Videos with RFID Keys :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="In the previous project tutorial, we introduced the basic theory of RFIDs. In this tutorial, we will demonstrate an advaced use for the RFID sensor - switching Youtube videos with RFID keys.">
+
+<meta itemprop="description" content="In the previous project tutorial, we introduced the basic theory of RFIDs. In this tutorial, we will demonstrate an advaced use for the RFID sensor - switching Youtube videos with RFID keys.">
+
+<meta property="og:description" content="In the previous project tutorial, we introduced the basic theory of RFIDs. In this tutorial, we will demonstrate an advaced use for the RFID sensor - switching Youtube videos with RFID keys.">
+
+<meta property="og:title" content="Project Example 20: Switch Youtube Videos with RFID Keys" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-20-rfid-youtube.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-20-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-20-01s.jpg">
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="../../js/lib/jquery.lazyload.min.js"></script>
+<script src="../../js/lib/run_prettify.js"></script>
+<script src="../../js/layout.js"></script>
+<script src="../../js/tutorials-en.js"></script>
+<script src="../../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../../style/css/layout.css">
+<link rel="stylesheet" href="../../style/css/sub-header.css">
+<link rel="stylesheet" href="../../style/css/tutorials-content.css">
+<link rel="stylesheet" href="../../style/css/tutorials-en-content.css">
+<link rel="stylesheet" href="../../style/css/lib/font-awesome.css">
+<style>
+.tutorials-content p{
+	word-wrap:normal;
+	word-break:normal;
+}
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html" data-name="layout-header-logo"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index" data-name="layout-mobile-menu">Home</a>
+			<a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-mobile-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index" data-name="layout-menu">Home</a>
+			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>Project Example 20: Switch Youtube Videos with RFID Keys</h1>
+<p>In the previous project tutorial, we introduced the basic theory of RFIDs. In this tutorial, we will demonstrate an advaced use for the RFID sensor - switching Youtube videos with RFID keys.</p>
+<!-- <div class="buy-this">
+    <span>RFID 相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video Tutorial:</h2>
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/RrCAOgtPHdo" frameborder="0" allowfullscreen></iframe></p>
+<h2>The Circuit</h2>
+<p>The circuit is exactly the same as in previous project tutorial. Connect SDA to 10, SCK to 13, MOSI to 11, MISO to 12, GND to GND, and VCC to 3.3V. Due to the limitation of pins, <strong>you will have to use the Arduino UNO along with the Webduino Fly in this exercise</strong>.</p>
+<p>Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-20-02.jpg" alt=""></p>
+<p>Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-20-03.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>RFID 相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Open Webduino Blockly by typing the address: <a href="https://blockly.webduino.io/?lang=en">https://blockly.webduino.io/?lang=en</a> into your browser. You will need to use &quot;Show Text&quot; in the Web Demo Area to show the UIDs of RFID keys, and will need to use &quot;Youtube&quot; afterwards.</p>
+<p><img src="../../img/tutorials/en/tutorial-20-04.jpg" alt=""></p>
+<p>Drag a &quot;Board&quot; block in the workspace, and fill in the name of your Webduino board. Add a &quot;RFID&quot; block, which is under &quot;Sensors&quot;, and set the name &quot;RFID&quot;, SDA to 10, SCK to 13, MOSI to 11, and MISO to 12. Note that all of the pins are set to their default values, which are not able to be changed. Finally, add a &quot;RFID starts detecting...&quot; block, and combine a &quot;Show Text&quot; block and a &quot;RFID&#39;s UID&quot; block to place inside.</p>
+<p><img src="../../img/tutorials/en/tutorial-20-05.jpg" alt=""></p>
+<p>Once you&#39;ve finished, check your <a href="https://webduino.io/device.html">device&#39;s status</a> and press &quot;Run Blocks&quot;. When you bring your RFID key in front of the sensor, a UID will generate. Note down all the UIDs. You will use them in the following steps. </p>
+<p><img src="../../img/tutorials/en/tutorial-20-06.jpg" alt=""></p>
+<p>Find the &quot;Set Youtube&quot; block in the drop-down menu under &quot;Youtube&quot; and drag it to the workspace. <strong>Never place this block in the blank connection of the RFID detetion block.</strong> Otherwise, there will be an error every time the RFID starts detecting. </p>
+<p><img src="../../img/tutorials/en/tutorial-20-07.jpg" alt=""></p>
+<p>Open a video on Youtube, and copy the video ID in the address bar. Then, input the ID into the &quot;Set Youtube&quot; block.</p>
+<p><img src="../../img/tutorials/tutorial-20-08.jpg" alt=""></p>
+<p>If you wish to switch between multiple videos, you have to add a &quot;If RFID&#39;s UID is...&quot; block with a &quot;Change Youtube replace ID:&quot; block connected to the setup to determine the next video. Then key in the video&#39;s ID as well.</p>
+<p><img src="../../img/tutorials/en/tutorial-20-09.jpg" alt=""></p>
+<p>You can control the volume and speed of the videos by combining blocks, as well.</p>
+<p><img src="../../img/tutorials/en/tutorial-20-10.jpg" alt=""></p>
+<p>After you finish creating the block stack, check your <a href="https://webduino.io/device.html">device&#39;s status</a> before you run all the blocks. Then you can switch Youtube videos with RFID keys! Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KTNvQXw5Q_x2YVR35Re">https://blockly.webduino.io/?lang=en#-KTNvQXw5Q_x2YVR35Re</a></p>
+<p><img src="../../img/tutorials/en/tutorial-20-11.jpg" alt=""></p>
+<h2>Code Explanation (<a href="http://bin.webduino.io/tihah/edit?html,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files. However, you have to include <code>iframe_api</code> in this project to access Youtube.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://www.youtube.com/iframe_api&quot;&gt;&lt;/script&gt;
+</code></pre><p>There is a div tag in the html, where we will show our YouTube video in.</p>
+<pre><code>&lt;div id=&quot;player&quot;&gt;&lt;/div&gt;
+</code></pre><p>The lengthy parts are JavaScript code to embed a YouTube video in html. We suggest you read this document: <a href="https://www.youtube.com/yt/dev/zh-TW/api-resources.html">https://www.youtube.com/yt/dev/zh-TW/api-resources.html</a> to have full control of the video. We use the method <code>on()</code> to start reading RFID tags. After we get the tag ID, we call the YouTube function that is mentioned above in accordance with this ID.</p>
+<pre><code>var rfid;
+var youtube;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 500;
+  rfid = getRFID(board);
+  var checkYoutubeLoad=0;
+  onYouTubeIframeAPIReady();
+  function onYouTubeIframeAPIReady() {
+    youtube = new YT.Player(&quot;player&quot;, {
+      height: &quot;240&quot;,
+      width: &quot;96%&quot;,
+      videoId: &quot;YLoRXX2jMkc&quot;,
+      playerVars: {
+        &quot;autoplay&quot;: 1,
+        &quot;controls&quot;: 1},
+      events: {
+        &quot;onReady&quot;: onPlayerReady,
+        &quot;onStateChange&quot;: onPlayerStateChange
+      }
+    });
+  }
+  function onPlayerReady(event) {
+    event.target.playVideo();
+    checkYoutubeLoad=1;
+  }
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING &amp;&amp; !done) {
+      done = true;
+    }
+  }
+  function stopVideo() {
+    youtube.stopVideo();
+  }
+  rfid.read();
+  rfid.on(&quot;enter&quot;,function(_uid){
+    rfid._uid = _uid;
+    document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = rfid._uid;
+    if(rfid._uid == &#39;679D4F55&#39;){
+      youtube.loadVideoById(&#39;PIZ3p8LTDaA&#39;);
+    }
+    if(rfid._uid == &#39;B4AE2E00&#39;){
+      youtube.loadVideoById(&#39;YLoRXX2jMkc&#39;);
+    }
+  });
+});
+</code></pre><p>This was an example of how to use RFID-RC522 to read RFID keys and to control Youtube videos. We hope you enjoyed it!<br>Webduino Bin: <a href="http://bin.webduino.io/tihah/edit?html,js,output">http://bin.webduino.io/tihah/edit?html,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/#-K7zgePAA41wamJK4U-w">https://blockly.webduino.io/#-K7zgePAA41wamJK4U-w</a></p>
+<!-- ## TuTorial Extension of RFID:
+
+[Webduino Blockly Chapter 16-1: RFID](https://blockly.webduino.io/?lang=en&page=tutorials/rfid-1#-KTOFSXys4BxAwvxrcpr)  
+[Webduino Blockly Chapter 16-2: RFID and RGB LED](https://blockly.webduino.io/?lang=en&page=tutorials/rfid-2#-KTOFyGDNYv1SWMpMKLN)  
+[Webduino Blockly Chapter 16-3: RFID and Youtube](https://blockly.webduino.io/?lang=en&page=tutorials/rfid-3#-KTOG5IsDTu4uuCyigqn)   -->
+<!-- <div class="buy-this">
+    <span>RFID 相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>  -->  
+
+
+<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
+<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>
+<div class="pre-next">
+  <div>
+    <div class="pre"></div>
+    <div class="next"></div>
+  </div>
+</div>
+<div class="note-chicken"></div>
+<div class="others">
+  <i class="fa fa-times note-close-btn"></i>
+  <h5>More information : </h5>
+  <div class="others-link otehrs-read">
+    1. Tutorials : <a href="https://webduino.io/en/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a>
+    <br/> 2. Blockly : <a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>
+    <br/> 3. Products : <a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a>
+    <br/> 4. Store : <a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html" data-name="layout-footer-logo"><i></i></a>
+			<a href="../index.html" data-name="layout-footer-logo"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>1F., No.20, Fuxing 4th Rd., Qianzhen Dist., Kaohsiung City 806, Taiwan (R.O.C.) / 886-7-3388511</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

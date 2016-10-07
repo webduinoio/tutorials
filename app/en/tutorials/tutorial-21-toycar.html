@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../../img/layout/favicon.ico" type="image/x-icon">
+
+<title>Project Example 21: Control a Robot Car :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="The Webduino Robot Car is a self-driving robotic car designed by the Webduino Team. The Webduino Mark 1 is the brain for this gadget, enabling it to autonomously navigate and avoid obstacles using the ultrasonic sensor. In this tutorial, you will learn how to use keyboard controls to run the Robot Car.">
+
+<meta itemprop="description" content="The Webduino Robot Car is a self-driving robotic car designed by the Webduino Team. The Webduino Mark 1 is the brain for this gadget, enabling it to autonomously navigate and avoid obstacles using the ultrasonic sensor. In this tutorial, you will learn how to use keyboard controls to run the Robot Car.">
+
+<meta property="og:description" content="The Webduino Robot Car is a self-driving robotic car designed by the Webduino Team. The Webduino Mark 1 is the brain for this gadget, enabling it to autonomously navigate and avoid obstacles using the ultrasonic sensor. In this tutorial, you will learn how to use keyboard controls to run the Robot Car.">
+
+<meta property="og:title" content="Project Example 21: Control a Robot Car" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-21-toycar.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-21-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-21-01s.jpg">
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="../../js/lib/jquery.lazyload.min.js"></script>
+<script src="../../js/lib/run_prettify.js"></script>
+<script src="../../js/layout.js"></script>
+<script src="../../js/tutorials-en.js"></script>
+<script src="../../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../../style/css/layout.css">
+<link rel="stylesheet" href="../../style/css/sub-header.css">
+<link rel="stylesheet" href="../../style/css/tutorials-content.css">
+<link rel="stylesheet" href="../../style/css/tutorials-en-content.css">
+<link rel="stylesheet" href="../../style/css/lib/font-awesome.css">
+<style>
+.tutorials-content p{
+	word-wrap:normal;
+	word-break:normal;
+}
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html" data-name="layout-header-logo"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index" data-name="layout-mobile-menu">Home</a>
+			<a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-mobile-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index" data-name="layout-menu">Home</a>
+			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>Project Example 21: Control a Robot Car</h1>
+<p>The &quot;Webduino Robot Car&quot; is a self-driving robotic car designed by the Webduino Team. The Webduino Mark 1 is the brain for this gadget, enabling it to autonomously navigate and avoid obstacles using the ultrasonic sensor. In this tutorial, you will learn how to use keyboard controls to run the Robot Car.</p>
+<!-- <div class="buy-this">
+    <span>自走車相關套件：<a href="https://webduino.io/buy/webduino-package-toycar.html" target="_blank">Webduino 公仔自走車 ( 電子材料包 )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a></span>
+</div> -->
+<h2>Video Tutorial</h2>
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/0JT1KAHkMsk" frameborder="0" allowfullscreen></iframe></p>
+<h2>The Circuit</h2>
+<p>We will begin by unboxing the pieces of the Robot Car. The package includes 1 3D printed motor shield, 2 wheels, 1 switch, 1 battery case, 1 motor driver board, 1 ultrasonic sensor, and Webduino Mark 1. The assemble is simple, just follow the instructions below.</p>
+<p>First, insert 4 AA batteries into the case and place the case on the Robot Car.</p>
+<p><img src="../../img/tutorials/tutorial-21-02.jpg" alt=""></p>
+<p>Next, insert the Webduino Mark 1 into the front slot.</p>
+<p><img src="../../img/tutorials/tutorial-21-03.jpg" alt=""></p>
+<p>Then, insert the ultrasonic sensor into the left port on the Webduino Mark 1. Make sure Trig is connected to pin 11 and Echo to pin 10.</p>
+<p><img src="../../img/tutorials/tutorial-21-04.jpg" alt=""></p>
+<p>Finally, insert the motor driver board into the right port. Except with the 3.3V, you will see that the motor board has an extra pin soldered on. It has been soldered with a line, so it can be connected to the board.</p>
+<p><img src="../../img/tutorials/tutorial-21-05.jpg" alt=""></p>
+<p><img src="../../img/tutorials/en/tutorial-21-06.jpg" alt=""></p>
+<p>Once you place the micro switch in it&#39;s position the assembly is finished. Now use the micro switch to turn it on and you can start start using your Robot Car!</p>
+<p><img src="../../img/tutorials/tutorial-21-07.jpg" alt=""></p>
+<p>Final look:</p>
+<p><img src="../../img/tutorials/tutorial-21-08.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>自走車相關套件：<a href="https://webduino.io/buy/webduino-package-toycar.html" target="_blank">Webduino 公仔自走車 ( 電子材料包 )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a></span>
+</div> -->
+<h2>Instruction of Webduino Blockly</h2>
+<p>Open the Webduino Blockly page by typing the address: <a href="https://blockly.webduino.io/?lang=en">https://blockly.webduino.io/?lang=en</a> into your web browser. Now we can start using Webduino Blockly to control your Robot Car.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-09.jpg" alt=""></p>
+<p>Drag a &quot;Board&quot; block onto the workspace, and type in the name of your board. Find the &quot;Car&quot; block under &quot;Gadgets&quot;, and combine it with the board. Then, make sure the name is set to &quot;Car&quot; and the pins are set to 6, 7, 8, and 9, respectively.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-10.jpg" alt=""></p>
+<p>In the side menu, under &quot;Advanced&quot; you will find the &quot;Keyboard&quot; blocks.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-11.jpg" alt=""></p>
+<p>If you want to comand your Robot Car to move, you will need to combine 3 blocks. First, combine the &quot;Start keyboard event&quot; and &quot;Key..., do&quot; blocks to the stack. Set the start keyboard event to &quot;Down&quot;, and &quot;key W, do&quot;. Finally, place the &quot;Car&quot; block &quot;Car, Action …:&quot; and set it to &quot;go front&quot;. So now, when you press W on your keyboard, the Robot Car will go forwards.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-12.jpg" alt=""></p>
+<p>Using the same logic, you can comand the car to go multiple different dirrections by adding more blocks in the same manner.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-13.jpg" alt=""></p>
+<p>It is important that the Robot Car stops, as well. So, right-click the &quot;Start keyboard event&quot; block stack, and select &quot;Duplicate&quot;. A copy of those blocks will appear. Place the copied blocks under the first section.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-14.jpg" alt=""></p>
+<p>Finally, set the start keyboard event to &quot;Up&quot; and the car action to &quot;Stop&quot;. Now the Robot Car will stop when you stop pressing a key.</p>
+<p><img src="../../img/tutorials/en/tutorial-21-15.jpg" alt=""></p>
+<p>After you finish creating the block stack, check your &quot;<a href="https://webduino.io/device.html">device&#39;s status</a>&quot; before you &quot;Run&quot; all of the blocks. Then you can start using your Robot Car!
+Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KTOU3TF1GtBhb0kfhv-">https://blockly.webduino.io/?lang=en#-KTOU3TF1GtBhb0kfhv-</a></p>
+<h2>Code Explanation (<a href="https://bin.webduino.io/pehev/1/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a></h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>The code is mainly for using the keyboard. Every key on the keyboard generates a corresponding <code>keyCode</code> when it is pressed. <strong>We use a switch statement to do different things according to the keyCodes.</strong> In most cases, keyCodes remain consistent for all alphabets, however, they may vary for keyboards with or without a numeric pad, or on Mac operating systems.</p>
+<pre><code>var car;
+
+boardReady(&#39;&#39;, async function (board) {
+  board.systemReset();
+  board.samplingInterval = 20;
+  car = getToyCar(board,6,7,8,9);
+  document.onkeydown = async function(e){
+    console.log(e.keyCode);
+    switch(e.keyCode){
+      case 87:
+        car.goFront();
+      break;
+      case 83:
+        car.goBack();
+      break;
+      case 65:
+        car.turnLeft();
+      break;
+      case 68:
+        car.turnRight();
+      break;
+    }
+  };
+  document.onkeyup = async function(e2){
+    console.log(e2.keyCode);
+    switch(e2.keyCode){
+      case 87:
+        car.stop();
+      break;
+      case 83:
+        car.stop();
+      break;
+      case 65:
+        car.stop();
+      break;
+      case 68:
+        car.stop();
+      break;
+    }
+  };
+});
+</code></pre><p>This was the example of how to use keyboard keys to control your Robot Car, we hope you enjoyed it!<br>Webduino Bin: <a href="https://bin.webduino.io/pehev/1/edit?html,css,js,output">https://bin.webduino.io/pehev/1/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KTOTUox9NoWndV__mj_">https://blockly.webduino.io/?lang=en#-KTOTUox9NoWndV<em>_mj</em></a></p>
+<!-- ## 自走車的延伸教學：
+
+[Webduino Blockly 課程：操控自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMmvTNDxkWIiIklD7I)  
+[Webduino Blockly 課程：超音波避障自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMn222ejGP0edhX-KL)  
+[Webduino Blockly 課程：語音聲控自走車](https://blockly.webduino.io/?lang=zh-hant#-KGMn7k6rIv8_1om2-xa)  -->    
+<!-- <div class="buy-this">
+    <span>自走車相關套件：<a href="https://webduino.io/buy/webduino-package-toycar.html" target="_blank">Webduino 公仔自走車 ( 電子材料包 )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克 1 號</a></span>
+</div> -->
+
+
+<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
+<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>
+<div class="pre-next">
+  <div>
+    <div class="pre"></div>
+    <div class="next"></div>
+  </div>
+</div>
+<div class="note-chicken"></div>
+<div class="others">
+  <i class="fa fa-times note-close-btn"></i>
+  <h5>More information : </h5>
+  <div class="others-link otehrs-read">
+    1. Tutorials : <a href="https://webduino.io/en/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a>
+    <br/> 2. Blockly : <a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>
+    <br/> 3. Products : <a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a>
+    <br/> 4. Store : <a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html" data-name="layout-footer-logo"><i></i></a>
+			<a href="../index.html" data-name="layout-footer-logo"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>1F., No.20, Fuxing 4th Rd., Qianzhen Dist., Kaohsiung City 806, Taiwan (R.O.C.) / 886-7-3388511</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

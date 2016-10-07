@@ -1,0 +1,67 @@
+<hr>
+<p>tag: smart
+src: smart-02-setup.html
+title: Webduino Smart Wi-Fi Setup
+banner: smart-02-setup.jpg
+img: smart-02-setup-s.jpg</p>
+<h2>date: 20161001</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Webduino Smart Wi-Fi Setup :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="Before you start using your Webduino Smart, you must set up your WiFi. The main purpose of this setup is to enable Webduino Smart to connect to the Internet or WebSocket. Using this setup, you can define the board's name and password, and update it through the Internet.">
+
+<meta itemprop="description" content="Before you start using your Webduino Smart, you must set up your WiFi. The main purpose of this setup is to enable Webduino Smart to connect to the Internet or WebSocket. Using this setup, you can define the board's name and password, and update it through the Internet.">
+
+<meta property="og:description" content="Before you start using your Webduino Smart, you must set up your WiFi. The main purpose of this setup is to enable Webduino Smart to connect to the Internet or WebSocket. Using this setup, you can define the board's name and password, and update it through the Internet.">
+
+<meta property="og:title" content="Webduino Smart Wi-Fi Setup" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/smart-02-setup.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/smart-02-setup-s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/smart-02-setup-s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Webduino Smart Wi-Fi Setup</h1>
+<p>Before you start using your Webduino Smart, you must set up your WiFi. The main purpose of this setup is to enable Webduino Smart to connect to the Internet or WebSocket. Using this setup, you can define the board&#39;s name and password, and update it through the Internet.</p>
+<h2>Step 1: Plug In, and Enter the SSID &amp; Password</h2>
+<p>Like the Webduino Mark 1 &amp; Webduino Fly, Webduino Smart has to connect to Wi-Fi by setting up a SSID &amp; password. However, Webduino Smart can be used in both Internet Protocol and WebSocket Protocol, which means that the devices can be used with LAN.</p>
+<p>Provide power to your Webduino Smart so the board can be found on your PC, laptop, or mobile device. (At first the red light on the board will blink, then it will stay on once it is ready.)</p>
+<p><img src="../../img/tutorials/en/smart-02-02.jpg" alt=""></p>
+<p>Connect to &quot;Smart&quot; by Wi-Fi, and type in the <strong>default password of 12345678</strong>. Now the board will be connected. </p>
+<p><img src="../../img/tutorials/en/smart-02-03.jpg" alt=""></p>
+<p><br/></p>
+<h2>Step 2: Set Up SSID &amp; Password for Wi-Fi, and Device ID</h2>
+<p>Open your internet browser (we recomend you use Chrome) and <strong>type 192.168.4.1 into the address bar</strong>. You will be directed to the setup page for the Webduino Smart. Fill in the Wi-Fi information and router ID. <strong>Here the SSID &amp; PW is referring to your AP&#39;s Wi-Fi.</strong></p>
+<p><img src="../../img/tutorials/en/smart-02-04.jpg" alt=""></p>
+<p>Press the &quot;Submit&quot; button, and the setup is successful when &quot;Save OK&quot; is showed on the screen.</p>
+<p><img src="../../img/tutorials/smart-02-05.jpg" alt=""></p>
+<p><br/></p>
+<h2>Step 3: Connect to LAN</h2>
+<p>After you have a successfully competed Steps 1 &amp; 2 and Wi-Fi is setup, remove the power to your Webduino Smart, then plug it in again. The red light on your board will not stop blinking until your board has connected to LAN. Once it connects to LAN, the green light will flash. Now you can find <strong>Smart_your device ID_192.168.XXX.XXX</strong> under your Wi-Fi access points. Please take note of the IP address, which is the IP you need to use WebSocket. If the red light does not stop blinking, you need to restart the setup from Step 1.</p>
+<p><img src="../../img/tutorials/en/smart-02-06.jpg" alt=""></p>
+<p><br/></p>
+<h2>Step 4: Test Webduino Blockly</h2>
+<p>Open the page <a href="http://webduino.io">http://webduino.io</a> to access Webduino Blockly. Drag a board block onto the workspace, choose &quot;WebSocket&quot; in the drop down list, and type in your IP. WebSocket has some limitions when using &quot;https&quot;; therefore, <strong>you have to link to &quot;http&quot; instead</strong>. </p>
+<p><img src="../../img/tutorials/en/smart-02-07.jpg" alt=""></p>
+<p>Next, combine a RGB LED <strong>(CATHODE)</strong> block, located under &quot;Components&quot;, set the red pin to 15, the green pin to 12, and blue pin to 13. Finally, set the RGB LED color to &quot;Red&quot;.</p>
+<p><img src="../../img/tutorials/en/smart-02-08.jpg" alt=""></p>
+<p>Press &quot;Run Blocks&quot; and then the LED will light on in red. 
+Check your stack setup with this example here: <a href="https://goo.gl/y3TgqI">https://goo.gl/y3TgqI</a></p>
+<p><img src="../../img/tutorials/smart-02-09.gif" alt=""></p>
+<p><br/></p>
+<h2>Step 5: Update Firmware Through the Internet</h2>
+<p>Once you&#39;ve successfully completed Step 3, which means your Webduino Smart is able to connect to Internet, you can easily update the firmware on your Webduino Smart. While connected to power, <strong>PRESS and HOLD the Micro Switch button until the blue light comes on.</strong> This will update the firmware.</p>
+<p><img src="../../img/tutorials/en/smart-02-10.jpg" alt=""></p>
+<p>After finishing the update, the blue light will turn off and the red light will blink, showing that it is connecting. Finally, a burst of green light means you can start using your Webduino Smart with updated firmware.</p>
+<p><img src="../../img/tutorials/smart-02-11.jpg" alt=""></p>
+<!-- @@close-->
