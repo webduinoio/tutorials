@@ -54,39 +54,39 @@ Webduino has been popular and widely enjoyed by all users since it's launch. The
 Note, if you are using a Mac operating system, you should replace Ctrl with Command.
 
 
-![](../../img/tutorials/info-11-02.jpg)
+![](../../img/tutorials/en/info-11-02.jpg)
 
-![](../../img/tutorials/info-11-03.jpg)
+![](../../img/tutorials/en/info-11-03.jpg)
 
 ## 2. Pause Blocks
 
 You can pause some of the blocks on the current page without deleting them. While in development sometimes you need to delete blocks before testing. However, you can choose not to delete them but to right-click them and select "**Disable Block**". Just right-click and select "Enable block" to resume the block's function.
 
-![](../../img/tutorials/info-11-04.jpg)
+![](../../img/tutorials/en/info-11-04.jpg)
 
 ## 3. Save and Share File
 
 Click the tab "Save and Link to Blocks" on the up-right hand side of the workspace and **the site URL will generate automatically**. Save the link to your bookmarks/favorite folder or share it with others. You will see the current page next time you open the browser. 
 
-![](../../img/tutorials/info-11-05.jpg)
+![](../../img/tutorials/en/info-11-05.jpg)
 
 ## 4. Convert Blocks to .PNG
 
 You can **convert blocks to .PNG** by right-clicking in the workspace and choose "Download Image".
 
-![](../../img/tutorials/info-11-06.jpg)
+![](../../img/tutorials/en/info-11-06.jpg)
 
 ## 5. Copy All Codes 
 
 You can **export all of your blocks to JavaScript** by clicking the tab "JavaScript". This is one of the most practical features of Webduino Blockly. And if you wish to edit codes in other editors, click "Copy to Clipboard". It is that easy to transport your work.
 
-![](../../img/tutorials/info-11-07.jpg)
+![](../../img/tutorials/en/info-11-07.jpg)
 
 ## 6. Web Demo Features 
 
-Click "**Web Demo Area**"" on the up-right hand side of the workspace, and you can interact with your web browser. Each feature in the "Web Demo Area" drop-down list refers to a distinct block on the side menu. You can also find other examples for using remotes in the "Web Demo Area".
+Click "**Web Demo Area**" on the up-right hand side of the workspace, and you can interact with your web browser. Each feature in the "Web Demo Area" drop-down list refers to a distinct block on the side menu. You can also find other examples for using remotes in the "Web Demo Area".
 
-![](../../img/tutorials/info-11-08.jpg)
+![](../../img/tutorials/en/info-11-08.jpg)
 
 ## 7. Check Device Status
 
@@ -98,7 +98,7 @@ There is a simple way to check the status of your device. Type in the name of yo
 
 Click "Open Code Editor" on the upper right-hand side of the workspace, and you can edit the code directly in the default code editor. This feature benefits advanced developers for editing codes easily.
 
-![](../../img/tutorials/info-11-10.jpg)
+![](../../img/tutorials/en/info-11-10.jpg)
 
 ![](../../img/tutorials/info-11-11.jpg)
 
@@ -106,7 +106,7 @@ Click "Open Code Editor" on the upper right-hand side of the workspace, and you 
 
 Open the code editor, click "Share" on the upper left-hand side of the workspace, and choose "Output". (If you can't see "Share" on the menu, press Ctrl+S to make it appear.) Then scan the QRcode with your mobile device, and your device will become a remote control.
 
-![](../../img/tutorials/info-11-12.jpg)
+![](../../img/tutorials/en/info-11-12.jpg)
 
 ![](../../img/tutorials/info-11-13.jpg)
 

@@ -1,7 +1,7 @@
 ---
 tag: tutorial
 src: tutorial-01-led.html
-title: Tutorial Example 1 Control single LED light
+title: Control a Single LED
 banner: tutorial-01-01.jpg
 img: tutorial-01-01s.jpg
 date: 20150425
@@ -11,15 +11,15 @@ date: 20150425
 
 <!-- @@block  =  meta-->
 
-<title>Tutorial Example 1: Control single LED light :::: Webduino = Web × Arduino</title>
+<title>Project Example 1: Control a Single LED :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="Regarding the basic case about Arduino controlled sensor, how to control a single LED light has been used as the first example.  It’s easy for practice and also for observing any programming mistake via LED lighting situation.  Therefore, we take LED as the first Webduino practice case. ">
+<meta name="description" content="Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial.">
 
-<meta itemprop="description" content="Regarding the basic case about Arduino controlled sensor, how to control a single LED light has been used as the first example.  It’s easy for practice and also for observing any programming mistake via LED lighting situation.  Therefore, we take LED as the first Webduino practice case. ">
+<meta itemprop="description" content="Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial.">
 
-<meta property="og:description" content="Regarding the basic case about Arduino controlled sensor, how to control a single LED light has been used as the first example.  It’s easy for practice and also for observing any programming mistake via LED lighting situation.  Therefore, we take LED as the first Webduino practice case. ">
+<meta property="og:description" content="Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial.">
 
-<meta property="og:title" content="Tutorial Example 1: Control single LED light" >
+<meta property="og:title" content="Project Example 1: Control a Single LED" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-01-led.html">
 
@@ -41,74 +41,77 @@ date: 20150425
 
 
 <!-- @@block  =  tutorials-->
-# Tutorial Example 1: Control single LED light
+# Project Example 1: Control a Single LED
 
-Regarding the basic case about Arduino controlled sensor, how to control a single LED light has been used as the first example.  It’s easy for practice and also for observing any programming mistake via LED lighting situation.  Therefore, we take LED as the first Webduino practice case. 
+Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial. 
 
-## Video
+## Video Tutorial
 
-Example：[https://blockly.webduino.io/?&page=tutorials/led-2](https://blockly.webduino.io/?&page=tutorials/led-2)  
+<!-- Open the Webduino Blockly for exclusive use of Project Example: [Webduino Blockly Chapter 1-2 : Click the image control LED](https://blockly.webduino.io/?lang=en&&page=tutorials/led-2#-KTOLwx9N81L7ng_37l4)   -->
 
+Watch the video tutorial here:
 <iframe class="youtube" src="https://www.youtube.com/embed/8k6Lqu-aqVM" frameborder="0" allowfullscreen></iframe>
 
 ## Wiring and Practice
 
-There are long and short legs on an LED.  Long leg should be connect to ‘high potential’ (a position with a number) and short leg should be connect to ‘low potential’ (GND, Ground).  Moreover, we only need to plug LED legs onto its position or wiring legs with breadboard and breadline. Here long leg goes to 10 and short leg goes to GND.
+There are long and short legs on an LED. The long leg should be connected to a "high potential" (a position with a number) and the short leg should be connect to a "low potential" (the GND or Ground). The only setup needed is to plug the LED legs into their positions on the Webduino board or with a breadboard or breadline. **Here the long leg goes into 10 and the short leg goes into GND.**
+
+Circuit diagram:
 
 ![](../../img/tutorials/tutorial-01-02.jpg)
 
+Reference image:
+
 ![](../../img/tutorials/tutorial-01-03.jpg)
 
-## Webduino Blockly Operation Steps
+## Instructions for using the Webduino Blockly
 
-Open Webdunio Blockly Edit Tool ( [https://blockly.webduino.io](https://blockly.webduino.io) ).  In this case, we use a picture of a light bulb to control LED light.  Firstly, click the button of “webpage interaction test” on the upper right side of the webpage.  Then, select “click light bulb” from the drop-down menu.  A webpage with choices of light bulbs will show.
+Open Webdunio Blockly: [https://blockly.webduino.io/?lang=en](https://blockly.webduino.io/?lang=en) For this tutorial, we will use a picture of a light bulb to control the LED. First, click the "Web Demo Area" button on the upper right side of the workspace. Then, select "Click Bulb" from the drop-down menu. A webpage with choices of light bulbs will appear.
 
-![](../../img/tutorials/tutorial-01-04.jpg)
+![](../../img/tutorials/en/tutorial-01-04.jpg)
 
-Select a “development kit” from the brick menu on the left side of edit tool.  Then, drag your  “development kit” to the screen and type-in the correspondent name of Webduino Development Kit  (a Device name, don’t select series).  Afterward, select the brick of “LED Light” and drag the brick into a gap on the brick of “developmet kit”.  Setup position to pin10 (because long leg was connected to pin 10)  
+Drag a "Board" block from the side menu into the workspace. Then type in the name of your Webduino board. Next, find the "Set LED" block under the "Components" menu and drop the block into the blank connection of "Board" block. Then set the "pin" to 10 (because the LED's long leg was connected to pin 10)  
 
-![](../../img/tutorials/tutorial-01-05.jpg)
+![](../../img/tutorials/en/tutorial-01-05.jpg)
 
-It has to have interaction with webpage so we have to select “Click Light Bulb” at the bottom of the brick menu. After that, many options of light bulbs will show up.
+The LED has to interact with a web page, so select "Click Bulb" under the "Web Demo Area" menu in the sidebar and drag the "Click Bulb", do block to the workspace. This is so you can switch the LED light on and off when you click the picture of the light bulb.
 
-![](../../img/tutorials/tutorial-01-06.jpg)
+![](../../img/tutorials/en/tutorial-01-06.jpg)
 
-Drag the brick named “Click Light Bulb, Execute” to edit screen.  It means to do something when a user click the “Light Bulb”.
+![](../../img/tutorials/en/tutorial-01-07.jpg)
 
-![](../../img/tutorials/tutorial-01-07.jpg)
+Now, find an "If / Do" logic block under the "Standard" menu and add it to the stack. This will create an "If / then" action for when the "Light Bulb" is clicked. You can edit the "Logic" options clicking the blue gear on the "If / Do" logic block.
 
-Put a brick of “Logic” into the content of execution to setup a relative response while someone clicks the “Light Bulb”. Meanwhile, developers can edit options of “Logic” by using a blue gear on the brick of “Logic”.
+![](../../img/tutorials/en/tutorial-01-08.jpg)
 
-![](../../img/tutorials/tutorial-01-08.jpg)
+If you use the setup shown below, when the "Bulb" is "on", the "Click Bulb" will turn off. When the "Bulb" is off, the "Click Bulb" will turn on. 
 
-According to logic, when “Light Bulb” is “on”, “Click Light Bulb” will turn “off”; on the other hand; when “Light Bulb” is off “Click Light Bulb” will be “on”.
+![](../../img/tutorials/en/tutorial-01-09.jpg)
 
-![](../../img/tutorials/tutorial-01-09.jpg)
-
-After finishing above procedures, confirm the development kit is on-line (select “[check on-line status]((https://webduino.io/device.html)” to confirm) and then click red button of execution to start it.
+After you finish creating the block stack, check your device's status (Check [device's Status](https://webduino.io/device.html)) before you press the button "Run Blocks" on the upper right hand side.
 
 ![](../../img/tutorials/tutorial-01-10.jpg)
 
-Click pictures of light bulbs on the embedded webpage, developers can easily control the intensity of and LED.  However, developers can select the tab of “JavaScript” to review complete codes.  Developers can copy the code and paste it to their own webpage source code to have exactly the same behavior on their webpage. 
-( Answer: [https://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](https://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7) )
+You can easily control the intensity of the LED by clicking the picture of the light bulb in the "Web Demo Area". You can also select the "JavaScript" tab to review the original codes. Copy the codes and paste them to your own code editor and you can do the same exercise. 
+Check your stack setup with this example here: [https://blockly.webduino.io/?lang=en#-KTONX73Xz695wEu03DI](https://blockly.webduino.io/?lang=en#-KTONX73Xz695wEu03DI)
 
 
 
-## Code ( [Code](http://bin.webduino.io/tetig/edit?html,css,js,output)、[Check](https://webduino.io/device.html) )
+## Code Explanation ([Check Webduino Bin](http://bin.webduino.io/tetig/edit?html,css,js,output), [Check Device Status](https://webduino.io/device.html))
 
-In the beginning, in traduce webduino­all.min.js to the header on HTML.  It’ll make browser support WebComponents and all components of Webduino.  If code is produced from Blockly edit tool, webduino­blockly.js needs to be introduced.
+Include `webduino-all.min.js` in the header of your html files in order to support all of the Webduino's components. If the codes are generated by Webduino Blockly, you also have to include `webduino-blockly.js` in your files.
 
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-Secondly, in the body of HTML, drag an id for the picture area of demo­area­02­light.  There should be 2 pictures of light bulbs; one is bright and the other is dark.  When someone select, the dark light bulb will turn into bright.
+In the body of HTML, insert a div for placing images with the ID: "demo-area-02-light". In order to show the light bulb changing, there are 2 images of light bulbs; one with the light on and the other on with the light off.
 
 	<div id="demo-area-02-light" class="off">
 	  <img src="https://blockly.webduino.io/media/off.png" id="demo-area-02-off">
 	  <img src="https://blockly.webduino.io/media/on.png" id="demo-area-02-on">
 	</div>
 
-CSS method is applied to control light-on and light-off.  Developers gain different results by switch pictures and display:none.  Below are CSS code.
+We use the CSS rule `display:none` to control the light-on and light-off images. Below are the CSS codes.
 
 	#demo-area-02-light img{
 	  height:200px;
@@ -121,7 +124,7 @@ CSS method is applied to control light-on and light-off.  Developers gain differ
 	  display:inline-block;
 	}
 
-The most important part is javascript.  First of all, developers have to confirm the development kit is on-line (after using BoardReady).  Then setup a variable named led and use getLed to set up the position at 10.  Moreover, set up the event of clicking pictures and use API of LED to execute it.
+For the most critical JavaScript step we start by using `boardReady()`. The callback function will be executed when the board goes on-line. Then, you must set up a variable named led and use `getLed()` to set the pin number to 10. Finally, bind the event by clicking the images to control the LED with its API.
 
 	var led;
 
@@ -139,7 +142,7 @@ The most important part is javascript.  First of all, developers have to confirm
 	  });
 	});
 
-Because code is automatically produced by Blockly, there might be some repeated and superfluous code.  Developers can simplify above code by changing document.getElementById("demo­area­02­light") to be a variable “light”. Just a small change can make it much clear.
+Because codes are automatically generated by Webduino Blockly, there might be some duplicated and superfluous codes. To simplify the codes, we replaced `document.getElementById("demo­area­02­light")` with one single variable: light.
 
 	var led;
 	var light;
@@ -159,13 +162,14 @@ Because code is automatically produced by Blockly, there might be some repeated 
 	  });
 	});
 
-Code：[http://bin.webduino.io/tetig/edit?html,css,js,output](http://bin.webduino.io/tetig/edit?html,css,js,output)  
-Answer：[https://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7](https://blockly.webduino.io/#-K4pR8RaEF6IkiWdAYk7)
+This was the example of how to control a LED by clicking the picture of a light bulb. We hope you enjoyed it!
+Webduino Bin: [http://bin.webduino.io/tetig/edit?html,css,js,output](http://bin.webduino.io/tetig/edit?html,css,js,output)  
+Stack setup: [https://blockly.webduino.io/?lang=en#-KTOMwa9xRlCNapn4VUe](https://blockly.webduino.io/?lang=en#-KTOMwa9xRlCNapn4VUe)
 
-## More：
+<!-- ## Extension Tutorials of LED
 
-[Webduino Blockly 1-1 : LED](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-1#-Jvaz_tuEFYtNaVBi0i2)  
-[Webduino Blockly 1-2 : LED and Image](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/led-2#-Jvb-r0TiTHKsL-rMGw9)
+[Webduino Blockly Chapter 1-1: LED ON](https://blockly.webduino.io/?lang=en&page=tutorials/led-1#-KTOMd8SXBiiJ21hoifg)  
+[Webduino Blockly Chapter 1-2: Click the image control LED](https://blockly.webduino.io/?lang=en&page=tutorials/led-2#-KTOMnwjhojfCNNtlYue) -->
 
 
 

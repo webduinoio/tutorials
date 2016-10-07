@@ -1,7 +1,7 @@
 <hr>
 <p>tag: tutorial
 src: tutorial-05-ultrasonic.html
-title: 控制超音波傳感器
+title: Use An Ultrasonic Sensor
 banner: tutorial-05-01.jpg
 img: tutorial-05-01s.jpg</p>
 <h2>date: 20150425</h2>
@@ -9,11 +9,11 @@ img: tutorial-05-01s.jpg</p>
 <!-- @@block  =  meta-->
 <title>Project Example 5: Use An Ultrasonic Sensor :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object.">
+<meta name="description" content="In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object. There is a possibility of some inaccuracy, which occurs if the sound is bounced in other directions or it is partially absorbed by the object.">
 
-<meta itemprop="description" content="In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object.">
+<meta itemprop="description" content="In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object. There is a possibility of some inaccuracy, which occurs if the sound is bounced in other directions or it is partially absorbed by the object.">
 
-<meta property="og:description" content="In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object.">
+<meta property="og:description" content="In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object. There is a possibility of some inaccuracy, which occurs if the sound is bounced in other directions or it is partially absorbed by the object.">
 
 <meta property="og:title" content="Project Example 5: Use An Ultrasonic Sensor" >
 
@@ -33,41 +33,40 @@ img: tutorial-05-01s.jpg</p>
 <!-- @@block  =  tutorials-->
 <h1>Project Example 5: Use An Ultrasonic Sensor</h1>
 <p>In this example, we will use a HC-SR04 ultrasonic sensor. A HC-SR04 sensor emits an ultrasonic sound that travels through the air and  will bounce off the nearest object and travel back to the module. If you calculate the travel time and the speed of the sound you can calculate the distance of the object. HC-SR04 has 4 pins, GND, VCC, Trig, and Echo. Using the Tirg pin will send out a sonic burst which will then be received by the Echo pin. The Echo pin will output a value in centimeters for the distance of the object. There is a possibility of some inaccuracy, which occurs if the  sound is bounced in other directions or it is partially absorbed by the object. </p>
-<div class="buy-this">
+<!-- <div class="buy-this">
     <span>超音波傳感器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
-</div>
-
+</div> -->
 <h2>Video Tutorial</h2>
 <p>You can watch the video tutorial for more information. Next will give you step by step instructions for setting up and using the HC-SR04.
-Watch the video tutorial here: <a href="https://blockly.webduino.io/?page=tutorials/ultrasonic-1">https://blockly.webduino.io/?page=tutorials/ultrasonic-1</a>  </p>
-<p><iframe class="youtube" src="https://www.youtube.com/embed/e6gbwMUzSZ8" frameborder="0" allowfullscreen></iframe></p>
+<!-- Open the Webduino Blockly for exclusive use of Project Example Use An Ultrasonic Sensor [Webduino Blockly Chapter 3-1: UltraSonic](https://blockly.webduino.io/?lang=en&page=tutorials/ultrasonic-1#-KTO8RBnea4ru18uOmVD)   --></p>
+<p>Watch the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/e6gbwMUzSZ8" frameborder="0" allowfullscreen></iframe></p>
 <h2>The Circuit</h2>
 <p>The HC-SR04 Ultrasonic Module has 4 pins, GND, VCC, Trig and Echo. The VCC pin needs to be connected to the 3.3v or VCC pins on the Webduino board.The GND pin needs to be connected to its corresponding postition. The Tri and Echo pins can be connected to any I/O on the Webduino board. (Here we connect Trig and Echo pins to 11 and 10 respectively.)</p>
-<p>Schematic circuit wiring diagram:</p>
+<p>Circuit diagram:</p>
 <p><img src="../../img/tutorials/tutorial-05-02.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
 <p>Reference image:</p>
 <p><img src="../../img/tutorials/tutorial-05-03.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
-<div class="buy-this">
+<!-- <div class="buy-this">
     <span>超音波傳感器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
-</div>
-
+</div> -->
 <h2>Instructions for using the Webduino Blockly</h2>
-<p>Open the Webduino Blockly page by typing the address: <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> into your web browser. First, you will need to use the &quot;Web Demo Area&quot; to show the distance of the object. So click &quot;Web Demo Area&quot; and choose &quot;Show Text&quot; in the drop-down list.</p>
-<p><img src="../../img/tutorials/tutorial-05-04.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
+<p>Open the Webduino Blockly page by typing the address: <a href="https://blockly.webduino.io/?lang=en">https://blockly.webduino.io/?lang=en</a> into your web browser. First, you will need to use the &quot;Web Demo Area&quot; to show the distance of the object. So click &quot;Web Demo Area&quot; and choose &quot;Show Text&quot; in the drop-down list.</p>
+<p><img src="../../img/tutorials/en/tutorial-05-04.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
 <p>You can also drag the blocks from the side menu, to adjust the text size, line height, and color in the web demo area.</p>
-<p><img src="../../img/tutorials/tutorial-05-05.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
+<p><img src="../../img/tutorials/en/tutorial-05-05.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
 <p>Next, drag a &quot;Board&quot; block to the workspace and type in the name of your Webduino board. Click &quot;Sensors&quot; and combine the first two blocks from the Ultrasonic list. Make sure it is set to &quot;ultrasonic&quot;, Trig to &quot;11&quot;, Echo to &quot;10&quot;, and get distance every &quot;500&quot; ms (1/1000s). We suggest you set detect distance at least over 200 ms (1/1000s).</p>
-<p><img src="../../img/tutorials/tutorial-05-06.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
+<p><img src="../../img/tutorials/en/tutorial-05-06.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
 <p>Finally, add the last block by connecting the &quot;Show&quot; block from the &quot;Web Demo&quot; drop-down menu and the distance mesurment block from &quot;Ultra Sonic&quot; menu. Once you run the clocks, you will see the value of result show on web demo area.</p>
-<p><img src="../../img/tutorials/tutorial-05-07.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
+<p><img src="../../img/tutorials/en/tutorial-05-07.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
 <p>Of course you can make the setup more complex. Using the &quot;If/Do&quot; logic block you can make the results to show in red if the ultra sonic burst bounces off and object from a distance further than 30 centimeters away. To do this, you can create the stack as seen below.</p>
-<p><img src="../../img/tutorials/tutorial-05-08.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
+<p><img src="../../img/tutorials/en/tutorial-05-08.jpg" alt="Project Example 5: Use An Ultrasonic Sensor"></p>
 <p>After you finish creating the block stack, check your &quot;<a href="https://webduino.io/device.html">device&#39;s status</a>&quot; before you &quot;Run&quot; all the blocks. Then you can start checking the results of your ultrasonic sensor on web demo area!
-(If you have more questions, visit answer page here: <a href="https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem">https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem</a> )</p>
+Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KTOCRJoAlOAcckHodj1">https://blockly.webduino.io/?lang=en#-KTOCRJoAlOAcckHodj1</a></p>
 <h2>Code Explanation (<a href="http://bin.webduino.io/sane/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
-<p>Include <code>webduino-all.min.js</code> in the header ofyour html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code>。</p>
+<p>Include <code>webduino-all.min.js</code> in the header ofyour html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>We simply use a span tag to display the sensing result in text.</p>
@@ -106,13 +105,12 @@ boardReady(&#39;Webduino Board Name&#39;, function (board) {
     }
   }, 500);
 });
-</code></pre><p>So this is the example of how to use an ultrasonic sensor to detect the distance of objects, we hope you enjoy it!<br>Webduino Bin: <a href="http://bin.webduino.io/sane/edit?html,css,js,output">http://bin.webduino.io/sane/edit?html,css,js,output</a><br>Answer Page: <a href="https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem">https://blockly.webduino.io/#-K4x-T2x2FErHgjUUTem</a></p>
-<h2>超音波傳感器的延伸教學：</h2>
-<p><a href="https://blockly.webduino.io/?lang=zh-hant&amp;page=tutorials/ultrasonic-1#-JvS-HS4kdS5Mn9tlXmD">Webduino Blockly 課程 3-1：超音波傳感器</a> </p>
-<div class="buy-this">
+</code></pre><p>This was the example of how to use an ultrasonic sensor to detect the distance of objects, we hope you enjoyed it!<br>Webduino Bin: <a href="http://bin.webduino.io/sane/edit?html,css,js,output">http://bin.webduino.io/sane/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KTOOaAzodA1tSGy0riB">https://blockly.webduino.io/?lang=en#-KTOOaAzodA1tSGy0riB</a></p>
+<!-- ## Tutorial Extension of Ultrasonic Sensor:
+
+[Webduino Blockly Chapter 3-1: UltraSonic](https://blockly.webduino.io/?lang=en&page=tutorials/ultrasonic-1#-KTOH8GVCpXt1STgTB2h) --> 
+<!-- <div class="buy-this">
     <span>超音波傳感器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
-</div>
-
-
+</div> -->
 <!-- @@close-->
