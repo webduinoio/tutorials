@@ -12,7 +12,6 @@ $(function() {
     if (!$filterTag) {
       $filterTag = 'new';
     }
-    console.log($filterTag);
     $btn.removeClass('click');
     $('.btn-' + $filterTag).addClass('click');
     if ($filterTag == 'all') {
