@@ -147,7 +147,7 @@ Never worry about losing your files. No matter if you are finished or not, just 
 
 Practice these steps with your Webduino  and it will help you develop your knowledge of the Internet of Things!
 
-Tutorials on Webduino's Official Website: https://webduino.io/tutorials.html  
+Tutorials on Webduino's Official Website: https://webduino.io/en/tutorials.html 
 Project Examples for the Webduino Blockly: https://blockly.webduino.io/index-tutorials.html
 
 

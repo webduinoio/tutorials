@@ -80,7 +80,7 @@ After you have a successfully competed Steps 1 & 2 and Wi-Fi is setup, remove th
 
 ## Step 4: Test Webduino Blockly
 
-Open the page [http://webduino.io](http://webduino.io) to access Webduino Blockly. Drag a board block onto the workspace, choose "WebSocket" in the drop down list, and type in your IP. WebSocket has some limitions when using "https"; therefore, **you have to link to "http" instead**. 
+Open the page [https://blockly.webduino.io/?lang=en](https://blockly.webduino.io/?lang=en) to access Webduino Blockly. Drag a board block onto the workspace, choose "WebSocket" in the drop down list, and type in your IP. WebSocket has some limitions when using "https"; therefore, **you have to link to "http" instead**. 
 
 ![](../../img/tutorials/en/smart-02-07.jpg)
 
