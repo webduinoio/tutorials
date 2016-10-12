@@ -318,7 +318,7 @@ gulp.task('watch',function(){
     'app/_activity.html',
     'app/_about.html'],['include']);
   gulp.watch(['app/en/_tutorials.html'],['include-en']);
-	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include'],['include-en']);
+	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include','include-en']);
   gulp.watch('app/en/_layout.html',['indexEN']);
 });
 
