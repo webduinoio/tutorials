@@ -88,7 +88,7 @@ date: 20150601
 
 ![](../img/tutorials/tutorial-10-07.jpg)
 
-口了缺口後，在缺口內填入對應的文字以及偵測到的溫濕度。
+增加了缺口後，在缺口內填入對應的文字以及偵測到的溫濕度。
 
 ![](../img/tutorials/tutorial-10-08.jpg)
 

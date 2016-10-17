@@ -102,7 +102,7 @@ Webduino Blockly 擁有各式各樣功能的程式積木，這些積木也都預
 
 ## 控制 Webduino 開發板
 
-從以上幾個例子大概就能了解 Webduino Blockly 的運作原理，接著要來控制開發板，這裏我們把開發板的積木拉到畫面中，可以選擇開發板要使用「Wi-Fi」、「序列埠」還是「藍芽」進行控制，如果選擇「Wi-Fi」則要和 Webduino 的開發板搭配 ( 馬克 1 號或 Webduino Fly )，如果「序列埠」和「藍芽」則必須在安裝 Chrome Proxy API ( 參考「[Chrome API Proxy 使用說明](https://webduino.io/tutorials/info-05-chrome-api-proxy.html)」和「[Arduino 韌體下載與燒錄](https://webduino.io/tutorials/info-07-arduino-ino.html)」 )
+從以上幾個例子大概就能了解 Webduino Blockly 的運作原理，接著要來控制開發板，這裏我們把開發板的積木拉到畫面中，可以選擇開發板要使用「Wi-Fi」、「序列埠」還是「藍芽」進行控制，如果選擇「Wi-Fi」則要和 Webduino 的開發板搭配 ( 馬克 1 號或 Webduino Fly )，如果「序列埠」和「藍芽」則必須再安裝 Chrome Proxy API ( 參考「[Chrome API Proxy 使用說明](https://webduino.io/tutorials/info-05-chrome-api-proxy.html)」和「[Arduino 韌體下載與燒錄](https://webduino.io/tutorials/info-07-arduino-ino.html)」 )
 
 ![Webduino Blockly 線上編輯工具教學](../img/tutorials/info-08-10.jpg)
 
@@ -110,7 +110,7 @@ Webduino Blockly 擁有各式各樣功能的程式積木，這些積木也都預
 
 ![Webduino Blockly 線上編輯工具教學](../img/tutorials/info-08-11.jpg)
 
-再來我們就可以把要控制的電子元件或傳感器，放到開發板的缺口內，就類似我們把實體的電子零件或傳感器接到實體的開發板上頭，街上去的腳位都可以從電子零件或傳感器的積木選擇，接著就可以開始控制這些元件了。( 詳細教學請見官網的[教學文章](https://webduino.io/tutorials.html) )
+再來我們就可以把要控制的電子元件或傳感器，放到開發板的缺口內，就類似我們把實體的電子零件或傳感器接到實體的開發板上頭，接上去的腳位都可以從電子零件或傳感器的積木選擇，接著就可以開始控制這些元件了。( 詳細教學請見官網的[教學文章](https://webduino.io/tutorials.html) )
 
 ![Webduino Blockly 線上編輯工具教學](../img/tutorials/info-08-12.jpg)
 

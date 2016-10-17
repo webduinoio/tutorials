@@ -46,7 +46,7 @@ Before you start using your Webduino Smart, you must set up your WiFi. The main 
 
 ## Step 1: Plug In, and Enter the SSID & Password
 
-Like the Webduino Mark 1 & Webduino Fly, Webduino Smart has to connect to Wi-Fi by setting up a SSID & password. However, Webduino Smart can be used in both Internet Protocol and WebSocket Protocol, which means that the devices can be used with LAN.
+Like the Webduino Mark 1 & Webduino Fly, Webduino Smart has to connect to Wi-Fi by setting up an SSID & password. However, Webduino Smart can be used in both Internet Protocol and WebSocket Protocol, which means that the devices can be used with LAN.
 
 Provide power to your Webduino Smart so the board can be found on your PC, laptop, or mobile device. (At first the red light on the board will blink, then it will stay on once it is ready.)
 
@@ -84,7 +84,7 @@ Open the page [https://blockly.webduino.io/?lang=en](https://blockly.webduino.io
 
 ![](../../img/tutorials/en/smart-02-07.jpg)
 
-Next, combine a RGB LED **(CATHODE)** block, located under "Components", set the red pin to 15, the green pin to 12, and blue pin to 13. Finally, set the RGB LED color to "Red".
+Next, combine an RGB LED **(CATHODE)** block, located under "Components", set the red pin to 15, the green pin to 12, and blue pin to 13. Finally, set the RGB LED color to "Red".
 
 ![](../../img/tutorials/en/smart-02-08.jpg)
 

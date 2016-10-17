@@ -128,7 +128,7 @@ Include `webduino-all.min.js` in the header of your html files in order to suppo
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-The code is mainly for using the keyboard. Every key on the keyboard generates a corresponding `keyCode` when it is pressed. **We use a switch statement to do different things according to the keyCodes.** In most cases, keyCodes remain consistent for all alphabets, however, they may vary for keyboards with or without a numeric pad, or on Mac operating systems.
+The code is mainly for using the keyboard. Every key on the keyboard generates a corresponding `keyCode` when it is pressed. **We use a switch statement to do different things according to the keyCodes.** In most cases, keyCodes remain consistent for all alphabets, however, they may vary for keyboards with or without a numeric pad, or on a Mac operating systems.
 
 	var car;
 

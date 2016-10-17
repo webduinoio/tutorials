@@ -76,7 +76,7 @@ Open Webduino Blockly by typing the address: [https://blockly.webduino.io/?lang=
 
 ![](../../img/tutorials/en/tutorial-20-04.jpg)
 
-Drag a "Board" block in the workspace, and fill in the name of your Webduino board. Add a "RFID" block, which is under "Sensors", and set the name "RFID", SDA to 10, SCK to 13, MOSI to 11, and MISO to 12. Note that all of the pins are set to their default values, which are not able to be changed. Finally, add a "RFID starts detecting..." block, and combine a "Show Text" block and a "RFID's UID" block to place inside.
+Drag a "Board" block in the workspace, and fill in the name of your Webduino board. Add an "RFID" block, which is under "Sensors", and set the name "RFID", SDA to 10, SCK to 13, MOSI to 11, and MISO to 12. Note that all of the pins are set to their default values, which are not able to be changed. Finally, add an "RFID starts detecting..." block, and combine a "Show Text" block and an "RFID's UID" block to place inside.
 
 ![](../../img/tutorials/en/tutorial-20-05.jpg)
 

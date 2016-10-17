@@ -66,7 +66,7 @@ Reference with AA & AAA batteries:
 
 ## On-board Components and Pins
 
-Webduino Smart has a photocell sensor, a RGB LED, and a micro switch button onboard. The photocell is connected to the AD pin, and the RGB (Red, Geen, Blue) LED is connected to pins 15, 12, and 13 respectively **(The LED is a common cathode, whereas most of the examples on this site use common anode RGB LED.)** And the micro switch button is connected to pin 4. Please take note when you use these pins.
+Webduino Smart has a photocell sensor, an RGB LED, and a micro switch button onboard. The photocell is connected to the AD pin, and the RGB (Red, Geen, Blue) LED is connected to pins 15, 12, and 13 respectively **(The LED is a common cathode, whereas most of the examples on this site use common anode RGB LED.)** And the micro switch button is connected to pin 4. Please take note when you use these pins.
 
 ![](../../img/tutorials/en/smart-01-05.jpg)
 

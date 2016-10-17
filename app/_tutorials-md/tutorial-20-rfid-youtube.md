@@ -54,7 +54,7 @@ date: 20160113
 
 ## 接線與實作
 
-接線方式和上一篇範例一模一樣，將 SDA 接 10，SCK 接 13，MOSI 接 11，MISO 接 12，GND 接在 GND，VCC 接在 3.3V 的位置，此外因為腳位限制，所以在這個範例**必須使用 Arudino UNO 和 Webduino UNO 雲端擴充板搭配進行**。
+接線方式和上一篇範例一模一樣，將 SDA 接 10，SCK 接 13，MOSI 接 11，MISO 接 12，GND 接在 GND，VCC 接在 3.3V 的位置，此外因為腳位限制，所以在這個範例**必須使用 Arudino UNO 和 Webduino FLY 雲端擴充板搭配進行**。
 
 ![](../img/tutorials/tutorial-20-02.jpg)
 

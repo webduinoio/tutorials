@@ -79,7 +79,7 @@ Webduino is different from traditional sensors which control Arduino with C or C
 
 ##What is Webduino Development Kit?
 
-The Webduino Development Kit is an easy-to-use and easy-to-learn IoT development kit. Tackling Webduino, whether you are a beginner, an advanced developer, or a senior researcher can let you control the Arduino-compatible components. It's clearly indicated on the below diagram so that any front-end RD engineer can immediately configure LED arrays via HTML and JavaScript.
+The Webduino Development Kit is an easy-to-use and easy-to-learn IoT development kit. Tackling Webduino, whether you are a beginner, an advanced developer, or a senior researcher can let you control the Arduino-compatible components. It's clearly indicated on the below diagram so that any front-end RD engineer can immediately configure the LED arrays via HTML and JavaScript.
 
 <br/>
 
@@ -88,6 +88,6 @@ The Webduino Development Kit is an easy-to-use and easy-to-learn IoT development
 
 ##Webduino's Development Trend in the market of the "Internet of Things".
 
-The future market for the IoT provides an amazing opportunity for the IT industry. Webduino was created based on the concept that many users are from diverse backgrounds and only an simple, cross-platform development module will satisfy them. Consequently, Webduino will become a must have tool for all HTML and JavaScript front-end developers.
+The future market for the IoT provides an amazing opportunity for the IT industry. Webduino was created based on the concept that many users are from diverse backgrounds and only a simple, cross-platform development module will satisfy them. Consequently, Webduino will become a must have tool for all HTML and JavaScript front-end developers.
 
 <!-- @@close-->

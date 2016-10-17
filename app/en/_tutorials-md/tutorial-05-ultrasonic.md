@@ -111,7 +111,7 @@ We simply use a span tag to display the sensing result in text.
 
 	<span id="demo-area-01-show">distance to display</span>
 
-Here we use the JavaScript method `ping()`. Ping() takes one parameter, which points to the callback function that will be called when sensing the distance. (The result will also be stored in the `.distance` property.) Then we use a **if else** statement to display text in different colors, at different levels of distance.
+Here we use the JavaScript method `ping()`. Ping() takes one parameter, which points to the callback function that will be called when sensing the distance. (The result will also be stored in the `.distance` property.) Then we use an **if else** statement to display text in different colors, at different levels of distance.
 
 	var ultrasonic;
 

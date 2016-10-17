@@ -128,7 +128,7 @@ Then we use the JavaScript method `read()` for measuring temperature and humidit
 	  }, 1000);
 	});
 
-This was the example of how to use an DHT sensor to detect the humidity and temperature, we hope you enjoyed it!  
+This was the example of how to use DHT sensor to detect the humidity and temperature, we hope you enjoyed it!  
 Webduino Bin: [http://bin.webduino.io/qagoz/edit?html,css,js,output](http://bin.webduino.io/qagoz/edit?html,css,js,output)  
 Stack setup: [https://blockly.webduino.io/?lang=en#-KTqnuEmMqhLVNMvGY5h](https://blockly.webduino.io/?lang=en#-KTqnuEmMqhLVNMvGY5h)
 
