@@ -1,21 +1,21 @@
 <hr>
 <p>tag: tutorial
 src: tutorial-13-buzzer.html
-title: 蜂鳴器播放自製音樂
+title: Make Music with a Buzzer
 banner: tutorial-13-01.jpg
 img: tutorial-13-01s.jpg</p>
 <h2>date: 20150604</h2>
 <!-- @@master  = ../../_layout.html-->
 <!-- @@block  =  meta-->
-<title>Project Example 13: 蜂鳴器播放自製音樂 :::: Webduino = Web × Arduino</title>
+<title>Project Example 13: Make Music with a Buzzer :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="蜂鳴器是一個可以產生聲音信號的裝置，使用直流電供電，接通訊號源之後，音訊信號電流通過電磁線圈，使電磁線圈產生磁場，造成 振動膜片週期性地振動發聲，而 Webduino 更可以藉由 HTML5 Attribute 來填入音符代碼，每個代碼都會對應到一個數值，這個數值相對應蜂鳴器聲音的頻率，因此藉由純粹的 HTML5 或 javascript 就可以編輯音樂，透過蜂鳴器發聲。">
+<meta name="description" content="The buzzer is an audio singalling device that can be applied to many fields. It works based on the principle of electromechanical theory. When a DC voltage is applied, the audio signal current goes through a solenoid coil, creating a magnetic field and then causes the vibration of a diaphragm that in turn generates sounds. You can only use HTML attributes to make a piece of music on the Webduino Blockly to make the buzzer play music for you.">
 
-<meta itemprop="description" content="蜂鳴器是一個可以產生聲音信號的裝置，使用直流電供電，接通訊號源之後，音訊信號電流通過電磁線圈，使電磁線圈產生磁場，造成 振動膜片週期性地振動發聲，而 Webduino 更可以藉由 HTML5 Attribute 來填入音符代碼，每個代碼都會對應到一個數值，這個數值相對應蜂鳴器聲音的頻率，因此藉由純粹的 HTML5 或 javascript 就可以編輯音樂，透過蜂鳴器發聲。">
+<meta itemprop="description" content="The buzzer is an audio singalling device that can be applied to many fields. It works based on the principle of electromechanical theory. When a DC voltage is applied, the audio signal current goes through a solenoid coil, creating a magnetic field and then causes the vibration of a diaphragm that in turn generates sounds. You can only use HTML attributes to make a piece of music on the Webduino Blockly to make the buzzer play music for you.">
 
-<meta property="og:description" content="蜂鳴器是一個可以產生聲音信號的裝置，使用直流電供電，接通訊號源之後，音訊信號電流通過電磁線圈，使電磁線圈產生磁場，造成 振動膜片週期性地振動發聲，而 Webduino 更可以藉由 HTML5 Attribute 來填入音符代碼，每個代碼都會對應到一個數值，這個數值相對應蜂鳴器聲音的頻率，因此藉由純粹的 HTML5 或 javascript 就可以編輯音樂，透過蜂鳴器發聲。">
+<meta property="og:description" content="The buzzer is an audio singalling device that can be applied to many fields. It works based on the principle of electromechanical theory. When a DC voltage is applied, the audio signal current goes through a solenoid coil, creating a magnetic field and then causes the vibration of a diaphragm that in turn generates sounds. You can only use HTML attributes to make a piece of music on the Webduino Blockly to make the buzzer play music for you.">
 
-<meta property="og:title" content="Project Example 13: 蜂鳴器播放自製音樂" >
+<meta property="og:title" content="Project Example 13: Make Music with a Buzzer" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-13-buzzer.html">
 
@@ -31,8 +31,9 @@ img: tutorial-13-01s.jpg</p>
 
 <!-- @@close-->
 <!-- @@block  =  tutorials-->
-<h1>Project Example 13: 蜂鳴器播放自製音樂</h1>
-<p>蜂鳴器是一個可以產生聲音信號的裝置，使用直流電供電，接通訊號源之後，音訊信號電流通過電磁線圈，使電磁線圈產生磁場，造成 振動膜片週期性地振動發聲，而 Webduino 更可以藉由 HTML5 Attribute 來填入音符代碼，每個代碼都會對應到一個數值，這個數值相對應蜂鳴器聲音的頻率，因此藉由純粹的 HTML5 或 javascript 就可以編輯音樂，透過蜂鳴器發聲。</p>
+<h1>Project Example 13: Make Music with a Buzzer</h1>
+<p>The buzzer is an audio singalling device that can be applied to many fields. It works based on the principle of electromechanical theory. When a DC voltage is applied, the audio signal current goes through a solenoid coil, creating a magnetic field and then causes the vibration of a diaphragm that in turn generates sounds. 
+You can only use HTML attributes to make a piece of music on the Webduino Blockly to make the buzzer play music for you.</p>
 <!-- <div class="buy-this">
     <span>蜂鳴器相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
@@ -42,7 +43,7 @@ img: tutorial-13-01s.jpg</p>
 <p>Check the video tutorial here:
 <iframe class="youtube" src="https://www.youtube.com/embed/StNG2NHS240" frameborder="0" allowfullscreen></iframe></p>
 <h2>The Circuit</h2>
-<p>蜂鳴器在電路板的附近，有標示「+」和「-」的符號，「-」接在開發板的 GND，「+」接在 11 的腳位 ( 其實接反也沒關係 )，可以用杜邦線接出來，如果是馬克 1 號，也可以直接安插在上面。</p>
+<p>There are negative [-] and positive [+] connectors on the buzzer. You have to connect the negative line to GND on the board, and positive line to 1 on board.</p>
 <p><img src="../../img/tutorials/tutorial-13-02.jpg" alt=""></p>
 <p>Reference image:</p>
 <p><img src="../../img/tutorials/tutorial-13-03.jpg" alt=""></p>
@@ -52,35 +53,34 @@ img: tutorial-13-01s.jpg</p>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div> -->
 <h2>Instruction of Webduino Blockly</h2>
-<p>Open the page: <a href="https://blockly.webduino.io/?lang=en">https://blockly.webduino.io/?lang=en</a>，因為這個範例會用網頁「網頁按鈕」來點選不同按鈕播放不同音樂，所以要先點選右上方「網頁互動測試」的按鈕，打開內嵌測試的網頁，用下拉選單選擇「按鈕行為」，這邊的按鈕跟實體的按鈕開關是不一樣的，這邊的按鈕指的是網頁上面的按鈕。</p>
+<p>Open the page: <a href="https://blockly.webduino.io/?lang=en">https://blockly.webduino.io/?lang=en</a> to acces Webduino Blockly. First, you will need to use the &quot;Web Demo Area&quot; to click buttons to play music. Click &quot;Web Demo Area&quot; and choose &quot;Click Button&quot; in the drop-down list. Note that, the button here is referring to the virtual button on &quot;Web Demo Area&quot;, not the real button switch.</p>
 <p><img src="../../img/tutorials/en/tutorial-13-05.jpg" alt=""></p>
-<p>把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，開發板內放入蜂鳴器積木，名稱設定為 buzzer，腳位設定為 11。</p>
+<p>Drag a &quot;board&quot; block into the workspace, and type in the name of your Webduino board. Combine a &quot;Buzzer&quot; block, from the &quot;Buzzer&quot; list located under the &quot;Components&quot; dropdown menu. Set the name as buzzer, and set the &quot;pin&quot; to 11. </p>
 <p><img src="../../img/tutorials/en/tutorial-13-06.jpg" alt=""></p>
-<p>再來建立我們的第一首音樂，放入「建立音樂」的積木，名稱命名為 m1，裏頭擺入音符與節奏，「音符」第一個下拉選單有「無聲、C、CS、D、DS、E、F、FS、G、GS、A、AS、B」，可以想像成鋼琴的黑鍵與白鍵，有 S 的就是黑鍵，第二個下拉選單就是有幾個八度音，這裏可以設定七個八度音，數字越大聲越高，「節奏」就是幾分之一秒，最少可以到 1/10 秒。</p>
+<p>Add an &quot;Add music&quot; block from under &quot;Buzzer&quot; to the stack, name this piece of music &quot;M1&quot;. Now connect the &quot;Note &amp; Tempo&quot; block to that. The musical scale of notes are C, CS(C sharp), D, DS(D sharp), E, ES(E sharp), F, FS(F sharp), G, GS(G sharp), A, AS(A sharp), and B. The numbers after the notes represent the octaves. The tempos are represented by a specified fraction of second. For example, setting 3 means that the amount of time between successive beats is ⅓ second.</p>
 <p><img src="../../img/tutorials/en/tutorial-13-07.jpg" alt=""></p>
-<p>建立了音樂，接著就設定按下按鈕 1 的事件，當按下按鈕 1，就用 buzzer 播放 m1。</p>
+<p>After setting the notes and tempos, drag a block from the &quot;Web Demo&quot; menu under &quot;Click Button&quot; to the workspace. When clicked the button, run music &quot;M1&quot; with the buzzer.</p>
 <p><img src="../../img/tutorials/en/tutorial-13-08.jpg" alt=""></p>
-<p>除了一個個放入音符和節奏外，也可以直接用輸入的方式，這裏就只是把剛剛的音符與節奏，合併成兩個欄位，如果節奏沒有按照音符數量填寫 ( 如果節奏比較少 )，則多出來的音符就會用最後一個節奏的時間去播放，用這種方式做的第二首音樂 m2，點選按鈕 2 來播放。</p>
+<p>You can also compose in the same tempo with the similar steps mentioned above. Drag another &quot;Add music&quot; block to the stack and name this piece of music &quot;M2&quot;. Then add another &quot;Notes &amp; Tempo&quot; block to the stack, add the notes and tempo. Finally, use &quot;Button 2&quot; from the &quot;Web Demo Area&quot; to play this piece of music.</p>
 <p><img src="../../img/tutorials/en/tutorial-13-09.jpg" alt=""></p>
-<p>接著按下按鈕 3 的事件，這裏就用同樣做音樂的方法作首 m3 的音樂，內容就直接選一首資料庫的音樂放入。</p>
+<p>The buzzer can also play selected music. Just replace the &quot;Notes &amp; Tempo&quot; block with a &quot;Choose Music&quot; block, and selecting a song from the database. If you want to stop music with a button, combine a &quot;Let Buzzer Stop...&quot; block with the &quot;Click Button, Do&quot; block.</p>
 <p><img src="../../img/tutorials/en/tutorial-13-10.jpg" alt=""></p>
-<p>按鈕 4 綁定停止播放的行為。</p>
 <p><img src="../../img/tutorials/en/tutorial-13-11.jpg" alt=""></p>
-<p>到這邊大致上已經完成了一個點選按鈕控制播放的蜂鳴器程式積木，但最後一步我們要在按鈕 1 到 3 多加一段停止播放的行為，避免按下按鈕的時候，如果前一首還沒播完，就會重疊在一起播放。</p>
+<p>By repeating the last step, you can make a button play and pause every piece of music.</p>
 <p><img src="../../img/tutorials/en/tutorial-13-12.jpg" alt=""></p>
-<p>After you finish creating the block stack, check your &quot;<a href="https://webduino.io/device.html">device&#39;s status</a>&quot; before you &quot;Run&quot; all of the blocks. 就會聽到蜂鳴器播放出不同的音樂。 
+<p>After you finish creating the block stack, check your &quot;<a href="https://webduino.io/device.html">device&#39;s status</a>&quot; before you &quot;Run&quot; all of the blocks. Then you can hear the buzzer play music for you! 
 Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KTOLSVERLP8SHXKg4Gh">https://blockly.webduino.io/#-KDEaW-S-kRRaEkkyRGH</a></p>
 <h2>Code Explanation (<a href="https://bin.webduino.io/lihov/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
 <p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
-</code></pre><p>HTML 裡有五個按鈕，分別有各自的 id，屆時就可以由 id 來判斷按下哪顆按鈕。</p>
+</code></pre><p>There are five buttons in the html with their repective IDs, by which we can determine which one is pressed.</p>
 <pre><code>&lt;button id=&quot;demo-area-05-btn1&quot; class=&quot;db5&quot;&gt;按鈕 1&lt;/button&gt;
 &lt;button id=&quot;demo-area-05-btn2&quot; class=&quot;db5&quot;&gt;按鈕 2&lt;/button&gt;
 &lt;button id=&quot;demo-area-05-btn3&quot; class=&quot;db5&quot;&gt;按鈕 3&lt;/button&gt;
 &lt;button id=&quot;demo-area-05-btn4&quot; class=&quot;db5&quot;&gt;按鈕 4&lt;/button&gt;
 &lt;button id=&quot;demo-area-05-btn5&quot; class=&quot;db5&quot;&gt;按鈕 5&lt;/button&gt;
-</code></pre><p>JavaScript 看起來很多，但實際上很單純，先看到 m1 這首歌，其實就是建立兩個陣列 ( notes 和 tempos )，然後把音符和節奏分別拋到這兩個陣列裡，一開始的程式就是音樂播放的主程式，可以清楚地看到裡面放入了兩個物件，分別是 notes 和 tempos，而這兩個物件內容都是陣列。</p>
+</code></pre><p>The code looks lengthy but simple. The main function &quot;buzzer_music&quot; is used to create the music. First we create an object &quot;musicNotes&quot; to represent the whole melody. Then we create two arrays, &quot;notes&quot; and &quot;tempos&quot;, for storing the notes and tempos.</p>
 <pre><code>var buzzer;
 var m1;
 var m2;
@@ -111,7 +111,7 @@ function buzzer_music(m) {
   }
   return musicNotes;
 }
-</code></pre><p>接著看到開發板的程式，可以看到我們建立的音樂，就是把一串陣列丟給這首音樂的 notes 和 tempos 物件，如此一來蜂鳴器就會按照這些音符節奏播放。</p>
+</code></pre><p>Finally, we use play() to play the notes we have created. With this, the buzzer will play the melody accordingly.</p>
 <pre><code>boardReady(&#39;&#39;, function (board) {
   board.samplingInterval = 20;
   buzzer = getBuzzer(board, 11);
@@ -134,7 +134,8 @@ function buzzer_music(m) {
     buzzer.stop();
   });
 });
-</code></pre><p>以上就是利用蜂鳴器和網頁的按鈕，來製作與播放音樂。<br>Webduino Bin: <a href="https://bin.webduino.io/lihov/edit?html,css,js,output">https://bin.webduino.io/lihov/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KTOK67llD96tMoi2Qmz">https://blockly.webduino.io/?lang=en#-KTOK67llD96tMoi2Qmz</a></p>
+</code></pre><p>This was the example of how to use a buzzer to make a piece of music, we hope you enjoyed it! 
+Webduino Bin: <a href="https://bin.webduino.io/lihov/edit?html,css,js,output">https://bin.webduino.io/lihov/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KTOK67llD96tMoi2Qmz">https://blockly.webduino.io/?lang=en#-KTOK67llD96tMoi2Qmz</a></p>
 <!-- ## Tutorial Extension of Buzzer:
 
 [Webduino Blockly Chapter 9-2: Buzzer](http://blockly.webduino.io/?lang=en&page=tutorials/buzzer-2#-KTOJaNA6gOTn6N3nkKj)  
