@@ -49,7 +49,7 @@ The Webduino Smart development board has a built-in micro RGB (red, green and bl
 	<span>Webduino development board: <a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino Mark 1</a>, <a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>, <a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
 </div>
 
-## Operation of the Webduino Blockly 
+## Instruction of Webduino Blockly 
 
 First, add a "Smart" block from the "Board" menu and select "WebSocket". ( **the web address of the webduino blockly must begin with http and not https** )Then, key in the IP address of development board. (please refer to [Webduino Smart WiFi Setup](smart-02-setup.html) for the IP address) 
 
