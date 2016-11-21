@@ -10,7 +10,7 @@
   text-align: center;
   border-top: #aaa dashed 1px;
   border-bottom: #aaa dashed 1px;
-  background-image: -webkit-linear-gradient(0deg, #ffffff, #f5f5f5, #ffffff);
+  background-image: -webkit-linear-gradient(0deg, #fff, #f5f5f5, #fff);
 }
 .content > div {
   width: 100%;
