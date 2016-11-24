@@ -1,7 +1,7 @@
 ---
 tag: info
 src: info-11-feature.html
-title: Webduino Blockly 的十個操作密技
+title: Webduino Blockly 的十一個操作密技
 banner: info-11-01.jpg
 img: info-11-01s.jpg
 date: 20160427
@@ -11,7 +11,7 @@ date: 20160427
 
 <!-- @@block  =  meta-->
 
-<title>Webduino Blockly 的十個操作密技 :::: Webduino = Web × Arduino</title>
+<title>Webduino Blockly 的十一個操作密技 :::: Webduino = Web × Arduino</title>
 
 <meta name="description" content="自從 Webduino Blockly 推出以來，受到許多使用者的喜愛，不少熱情的使用者提供了相當實用的改善建議，這篇集合了十個 Webduino Blockly 密技，幫助大家在操作上可以更加得心應手！">
 
@@ -19,7 +19,7 @@ date: 20160427
 
 <meta property="og:description" content="自從 Webduino Blockly 推出以來，受到許多使用者的喜愛，不少熱情的使用者提供了相當實用的改善建議，這篇集合了十個 Webduino Blockly 密技，幫助大家在操作上可以更加得心應手！">
 
-<meta property="og:title" content="Webduino Blockly 的十個操作密技" >
+<meta property="og:title" content="Webduino Blockly 的十一個操作密技" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/info-11-feature.html">
 
@@ -40,9 +40,9 @@ date: 20160427
 
 
 <!-- @@block  =  tutorials-->
-# Webduino Blockly 的十個操作密技
+# Webduino Blockly 的十一個操作密技
 
-自從 Webduino Blockly 推出以來，受到許多使用者的喜愛，加上不少的熱情使用者，提供了我們很多寶貴又實用的改善建議，因此，這篇集合了十個 Webduino Blockly 密技，除了展示一些過去所沒有的功能，更提供了一些大家所不知道但又超好用的技巧，幫助大家在操作上可以更加得心應手！
+自從 Webduino Blockly 推出以來，受到許多使用者的喜愛，加上不少的熱情使用者，提供了我們很多寶貴又實用的改善建議，因此，這篇集合了十一個 Webduino Blockly 密技，除了展示一些過去所沒有的功能，更提供了一些大家所不知道但又超好用的技巧，幫助大家在操作上可以更加得心應手！
 
 ## 1. 熱鍵 ( 還原、重試、剪下、複製、貼上 )
 
