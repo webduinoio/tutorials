@@ -94,8 +94,10 @@
 <h2>接線與實作</h2>
 <p>要控制三色 LED 燈，我們必須要使用 PWM 的腳位 ( Pulse Width Modulation，脈衝寬度調變 )，這是一種將類比信號轉換為波段並且輸出的腳位，可以改變輸出的信號大小，透過輸出信號的強弱，我們就可以做出各種不同顏色的混合，然而在 Webduino 裏，可以用的 PWM 腳位是 3、5、6、9、10、11 這幾個腳位，但因為開發板的不同，我們可以選擇對應的腳位來使用 ( 基本上在 Arduino 的開發板，有「~」記號的就是 PWM 腳位 )。</p>
 <p>接線的方式就是將三色 LED 燈接上杜邦線 ( 一公一母 ) ，把 v 接在 3.3v 的位置 ( 避免電壓過高，造成三色 LED 燈會發出微弱的光線 )，R ( 紅色 ) 接在 10，B ( 藍色 ) 接在 6，G ( 綠色 ) 接在 9，如果沒有這些腳位，可以選擇其他有 PWM 的腳位來接 ( 3、5、11 )。</p>
-<p>接線示意圖：</p>
+<p>馬克一號接線示意圖：</p>
 <p><img src="../img/tutorials/tutorial-03-02.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>Fly 接線示意圖：</p>
+<p><img src="../img/tutorials/tutorial-03-02-fly.jpg" alt="教學範例 3：控制三色 LED"></p>
 <p>實際接線照片：</p>
 <p><img src="../img/tutorials/tutorial-03-04.jpg" alt="教學範例 3：控制三色 LED"></p>
 <p><img src="../img/tutorials/tutorial-03-03.jpg" alt="教學範例 3：控制三色 LED"></p>

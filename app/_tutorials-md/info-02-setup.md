@@ -58,7 +58,7 @@ Webduino 開發板 ( 馬克一號 )：
 
 	將「Arduino Pro Mini 晶片」與「ESP8266 Wi-Fi 晶片」組合至底板，就成為「Webduino 開發板」。
 
-	![Webduino - 組合 Webduino 開發板](../img/tutorials/info-02-02.jpg)
+	![Webduino - 組合 Webduino 開發板](../img/tutorials/info-02-02-new.jpg)
 
 - ###2. 開始進行初始化
 
@@ -99,7 +99,7 @@ Webduino 開發板 ( 馬克一號 )：
 
 	進行到此步驟，表示 Webduino 開發板已經可以自行連上家裡、公司場所或行動裝置分享的網路基地台，並自動連結上雲端的伺服器，我們就可以開始透過 Wi-Fi 去控制 Webduino 開發板囉！ (  立刻用第 [第一個範例](tutorial-01-led.html) 體驗看看吧 )
 
-	![Webduino - Webduino 開發板已經可以連線網路基地台](../img/tutorials/info-02-05.jpg)
+	![Webduino - Webduino 開發板已經可以連線網路基地台](../img/tutorials/info-02-05-new.jpg)
 
 
 <!-- @@close-->

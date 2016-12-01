@@ -64,7 +64,13 @@ The DHT sensor has 4 pins, and the connections are simple. Connect the first pin
 
 You can connect the DHT sensor to either the Webduino Mark 1 or to a breadboard.
 
+Webduino Mark 1 Circuit diagram:
+
 ![](../../img/tutorials/tutorial-10-03.jpg)
+
+Webduino Fly Circuit diagram:
+
+![](../../img/tutorials/tutorial-10-03-fly.jpg)
 
 Reference image:
 

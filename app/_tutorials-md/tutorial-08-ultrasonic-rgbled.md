@@ -59,9 +59,13 @@ date: 20150425
 
 雖然超音波傳感器與三色 LED 可以分別用 webduino 的兩個排插來接，因為三色 LED 燈需要用到 PWM 腳位 ( 不能接在 7 和 8 )，所以我們必須要用到麵包板或杜邦線，用電線引出腳位，把超音波傳感器的 VCC 接在 VCC，Trig 接在 7，Echo 接在 8，GND 就接在 GND 的腳位，三色 LED 的 VCC 接在 3.3v 的腳位，紅色 R 接 10，藍色 B 接 6，綠色 G 接 9。
 
-接線示意圖：
+馬克一號接線示意圖：
 
 ![教學範例 8：超音波傳感器控制三色 LED 燈](../img/tutorials/tutorial-08-02.jpg)
+
+Fly 接線示意圖：
+
+![教學範例 8：超音波傳感器控制三色 LED 燈](../img/tutorials/tutorial-08-02-fly.jpg)
 
 實際接線照片：
 

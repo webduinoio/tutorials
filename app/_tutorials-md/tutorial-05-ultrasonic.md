@@ -59,9 +59,13 @@ date: 20150425
 
 我們使用的超音波傳感器的型號為 HC-SR04，接線的方式只要將 VCC 接在 3.3v 或 VCC 的位置，GND 接在 GND 的位置，Trig 和 Echo 接在數字腳位上即可。( 在這篇我們將 Trig 接在 11，Echo 接在 10 )
 
-接線示意圖：
+馬克一號接線示意圖：
 
 ![教學範例 5：控制超音波傳感器](../img/tutorials/tutorial-05-02.jpg)
+
+Fly 接線示意圖：
+
+![教學範例 5：控制超音波傳感器](../img/tutorials/tutorial-05-02-fly.jpg)
 
 實際接線照片：
 

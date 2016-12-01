@@ -56,9 +56,13 @@ Watch the video tutorial here:
 
 There are long and short legs on an LED. The long leg should be connected to a "high potential" (a position with a number) and the short leg should be connect to a "low potential" (the GND or Ground). The only setup needed is to plug the LED legs into their positions on the Webduino board or with a breadboard or breadline. **Here the long leg goes into 10 and the short leg goes into GND.**
 
-Circuit diagram:
+Webduino Mark 1 Circuit diagram:
 
 ![](../../img/tutorials/tutorial-01-02.jpg)
+
+Webduino Fly Circuit diagram:
+
+![](../../img/tutorials/tutorial-01-02-fly.jpg)
 
 Reference image:
 

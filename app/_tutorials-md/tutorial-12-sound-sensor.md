@@ -60,7 +60,13 @@ date: 20150603
 
 首先把聲音偵測傳感器和 LED 燈接在麵包板上，聲音偵測傳感器的 +5V 接在開發板的 VCC，GND 接在 GND，Out 則接在 10 的腳位，然後再用電線將 GND 引出給 LED 的短腳使用，LED 的長腳接在 9 的腳位。
 
+馬克一號接線示意圖：
+
 ![](../img/tutorials/tutorial-12-02.jpg)
+
+Fly 接線示意圖：
+
+![](../img/tutorials/tutorial-12-02-fly.jpg)
 
 實際接線照片：
 

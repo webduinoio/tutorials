@@ -60,7 +60,13 @@ Check the video tutorial here:
 
 There are negative [-] and positive [+] connectors on the buzzer. You have to connect the negative line to GND on the board, and positive line to 1 on board.
 
+Webduino Mark 1 Circuit diagram:
+
 ![](../../img/tutorials/tutorial-13-02.jpg)
+
+Webduino Fly Circuit diagram:
+
+![](../../img/tutorials/tutorial-13-02-fly.jpg)
 
 Reference image:
 

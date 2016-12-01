@@ -57,9 +57,13 @@ date: 20150425
 
 因為超音波傳感器與 LED 都必須用到 GND 的腳位，所以我們必須要用到麵包板和電線，同樣用電線引出腳位，把超音波傳感器的 VCC 接在 3.3v，Trig 接在 11，Echo 接在 10，GND 就接在 GND 的腳位，然後再用另外的電線將 LED 接在 9 的腳位上。( 因為超音波傳感器在實際的接線會朝外，所以實際的照片電線會有反轉的情形，不要接錯了。 )
 
-接線示意圖：
+馬克一號接線示意圖：
 
-![](../img/tutorials/tutorial-07-02.jpg)
+![](../img/tutorials/tutorial-07-02-new.jpg)
+
+Fly 接線示意圖：
+
+![](../img/tutorials/tutorial-07-02-fly.jpg)
 
 實際接線照片：
 

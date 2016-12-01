@@ -86,6 +86,6 @@ The most important thing before you begin using the Webduino is setting up the W
 
 	Webduino can now connect to a shared Wi-Fi router or to a portable device. It will also connect to cloud servers automatically. Now, let's try to control the Webduino via Wi-Fi. (Let's try our [First Tutorial](tutorial-01-led.html))
 
-	![Webduino - Connect the Webduino Development Kit to Wi-Fi Router](../../img/tutorials/info-02-05.jpg)	
+	![Webduino - Connect the Webduino Development Kit to Wi-Fi Router](../../img/tutorials/info-02-05-new.jpg)	
 
 <!-- @@close-->

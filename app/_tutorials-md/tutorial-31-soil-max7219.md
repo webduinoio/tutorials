@@ -57,7 +57,13 @@ date: 20160623
 
 「土壤濕度偵測模組」有三支針腳，分別是訊號腳、GND 和 VCC，由於我們還要利用 LED 點矩陣來顯示數值，LED 點矩陣也需要用到 GND 與 VCC，所以我們利用麵包板外接出來，VCC 接在開發板的 VCC，GND 接 GND，土壤濕度偵測模組的訊號腳接在 A3，LED 點矩陣的 DIN 接 7，CS 接 8，CLK 接 9。
 
+馬克一號接線示意圖：
+
 ![](../img/tutorials/tutorial-31-02.jpg)
+
+Fly 接線示意圖：
+
+![](../img/tutorials/tutorial-31-02-fly.jpg)
 
 實際接線照片：
 

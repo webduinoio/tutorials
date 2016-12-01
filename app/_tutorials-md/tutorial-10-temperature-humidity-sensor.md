@@ -1,4 +1,4 @@
----
+	---
 tag: tutorial
 src: tutorial-10-temperature-humidity-sensor.html
 title: 溫濕度傳感器
@@ -63,7 +63,13 @@ date: 20150601
 
 可以直接將溫濕度傳感器接在馬克 1 號上，或利用麵包板接線出來。
 
+馬克一號接線示意圖：
+
 ![](../img/tutorials/tutorial-10-03.jpg)
+
+Fly 接線示意圖：
+
+![](../img/tutorials/tutorial-10-03-fly.jpg)
 
 實際接線照片：
 

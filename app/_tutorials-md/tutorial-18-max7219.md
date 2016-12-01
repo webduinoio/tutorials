@@ -56,7 +56,13 @@ LED 點矩陣顧名思義，就是用許多 LED 燈所組成的元件，最常�
 
 MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS ( 晶片選擇 ) 和 CLK ( 時脈 )，在這裡把 D in 接 7、CS 接 8，CLK 接 9，VCC 要接 VCC 的位置 ( 不要接 3.3V 怕電壓不夠 )。
 
+馬克一號接線示意圖：
+
 ![](../img/tutorials/tutorial-18-02.jpg)
+
+Fly 接線示意圖：
+
+![](../img/tutorials/tutorial-18-02-fly.jpg)
 
 實際接線照片：
 

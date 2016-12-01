@@ -2,8 +2,8 @@
 tag: info
 src: info-01-introduction.html
 title: Introduction of Webduino
-banner: info-01-01.jpg
-img: info-01-01s.jpg
+banner: info-01-01-new.jpg
+img: info-01-01s-new.jpg
 date: 20150425
 ---
 
@@ -83,7 +83,7 @@ The Webduino Development Kit is an easy-to-use and easy-to-learn IoT development
 
 <br/>
 
-![What is Webduino Development Kit?](../../img/tutorials/info-02-02.jpg)
+![What is Webduino Development Kit?](../../img/tutorials/info-02-02-new.jpg)
 
 
 ##Webduino's Development Trend in the market of the "Internet of Things".

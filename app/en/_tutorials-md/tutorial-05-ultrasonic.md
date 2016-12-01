@@ -61,9 +61,13 @@ Watch the video tutorial here:
 
 The HC-SR04 Ultrasonic Module has 4 pins, GND, VCC, Trig and Echo. The VCC pin needs to be connected to the 3.3v or VCC pins on the Webduino board.The GND pin needs to be connected to its corresponding postition. The Tri and Echo pins can be connected to any I/O on the Webduino board. (Here we connect Trig and Echo pins to 11 and 10 respectively.)
 
-Circuit diagram:
+Webduino Mark 1 Circuit diagram:
 
 ![Project Example 5: Use An Ultrasonic Sensor](../../img/tutorials/tutorial-05-02.jpg)
+
+Webduino Fly Circuit diagram:
+
+![Project Example 5: Use An Ultrasonic Sensor](../../img/tutorials/tutorial-05-02-fly.jpg)
 
 Reference image:
 
