@@ -1,0 +1,112 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-03-rgbled.html
+title: Controlling an RGB LED
+banner: tutorial-03-01.jpg
+img: tutorial-03-01s.jpg</p>
+<h2>date: 20150425</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Project Example 3: Controlling an RGB LED :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="RGB LEDs are made of three LEDs, one red, one green and one blue, so they can produce at least three colors. Within the three LED lights of an RGB LED, there are 4 pins; VCC, R(red), G(green), and B(blue). We can control the strength of each of these colors, allowing for a wide range of colors. This tutorial will walk you through how to set up and use a RGB LED, and the next chapter will expand on ways to use the RGB LED as a palette to create any color you wish.">
+
+<meta itemprop="description" content="RGB LEDs are made of three LEDs, one red, one green and one blue, so they can produce at least three colors. Within the three LED lights of an RGB LED, there are 4 pins; VCC, R(red), G(green), and B(blue). We can control the strength of each of these colors, allowing for a wide range of colors. This tutorial will walk you through how to set up and use a RGB LED, and the next chapter will expand on ways to use the RGB LED as a palette to create any color you wish.">
+
+<meta property="og:description" content="RGB LEDs are made of three LEDs, one red, one green and one blue, so they can produce at least three colors. Within the three LED lights of an RGB LED, there are 4 pins; VCC, R(red), G(green), and B(blue). We can control the strength of each of these colors, allowing for a wide range of colors. This tutorial will walk you through how to set up and use a RGB LED, and the next chapter will expand on ways to use the RGB LED as a palette to create any color you wish.">
+
+<meta property="og:title" content="Project Example 3: Controlling an RGB LED " >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-03-rgbled.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-03-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-03-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Project Example 3: Controlling an RGB LED</h1>
+<p>RGB LEDs are made of three LEDs, one red, one green and one blue, so they can produce at least three colors. Within the three LED lights of an RGB LED, there are 4 pins; VCC, R(red), G(green), and B(blue). We can control the strength of each of these colors, allowing for a wide range of colors. This tutorial will walk you through how to set up and use a RGB LED, and the next chapter will expand on ways to use the RGB LED as a palette to create any color you wish.</p>
+<!-- <div class="buy-this">
+    <span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video Tutorial</h2>
+<!-- 影片對應範例：[https://blockly.webduino.io/?page=tutorials/rgbled-2](https://blockly.webduino.io/?page=tutorials/rgbled-2)  --> 
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/VN4sKngbiGI" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>We use the PWM (Pulse Width Modulation) pin to control the RGB LED. This gives us analog results from digital means, thus allowing us to control the output of the signal, resulting in different color combinations. The PWM pins on the Webduino are 3, 5, 6, 9, 10, 11, but since you might be using a different development board, always remember to check first. (Most Arduino boards will have a &quot;~&quot; sign to show where the PWM pins are.)</p>
+<p>We use jumper wires, or Dupont lines (male to female), to connect the LEDs, connecting V to 3.3v (thus preventing high voltage and causing the RGB LED to emit a dim light), R connects to 10, B connects to 6, and G to 9. If these pins are already in use, you can also use the other PWM pins (3, 5, 11).</p>
+<p>Webduino Mark 1 Circuit diagram: </p>
+<p><img src="../../img/tutorials/tutorial-03-02.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>Webduino Fly Circuit diagram: </p>
+<p><img src="../../img/tutorials/tutorial-03-02-fly.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-03-04.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p><img src="../../img/tutorials/tutorial-03-03.jpg" alt="教學範例 3：控制三色 LED"></p>
+<!-- <div class="buy-this">
+    <span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Begin by opening the Webduino Blockly editor. ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> ) We will be using the &quot;Click button&quot; for control. Click on the &quot;Web Demo Area&quot; button on the top right, and click the &quot;Click Button&quot; from the pull-down menu. You will see 5 buttons that we will be clicking to create 5 different colors.</p>
+<p><img src="../../img/tutorials/en/tutorial-03-05.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>To control these buttons, use the &quot;Click button do&quot; block from &quot;Web Demo&quot; on the left side menu.</p>
+<p><img src="../../img/tutorials/en/tutorial-03-06.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>First we place a &quot;Board&quot; into the workspace, choose the correct Board name, place an &quot;RGB LED&quot; block into the stack, set the name to rgbled, and set the Red pin to 10, Green to 9, and Blue to 6. (RGB LED blocks only allow PWM pins to be chosen)</p>
+<p><img src="../../img/tutorials/en/tutorial-03-07.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>Then you can set which color maps to which button, by adding multiple &quot;Click button do&quot; blocks with a &quot;rgbled set color&quot; block connected to each. If you set the color to &quot;black&quot;, the RGB LED will not produce a color, basically turning it off.</p>
+<p><img src="../../img/tutorials/en/tutorial-03-08.jpg" alt="教學範例 3：控制三色 LED"></p>
+<p>After you&#39;ve finished these steps, check your <a href="https://webduino.io/device.html">device&#39;s status</a> to see that the board is online. To do this, you can click the &quot;Check Device Status&quot; button on the upper-right. When you click on the red &quot;Run Blocks&quot; button, you can click the different buttons on the screen and you will see the RGB LED produce different colors. You can also click on the JavaScript tab, and see the full code. Copy and paste the code to your own editor and you&#39;ll be able to control RGBLEDs!  </p>
+<p>Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KYD5Dnd5-rEY7UAcvkn">https://blockly.webduino.io/?lang=en#-KYD5Dnd5-rEY7UAcvkn</a> </p>
+<h2>Code Explanation (<a href="http://bin.webduino.io/hugos/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>There are five different buttons inside the body of the HTML file, the names of the buttons are 1 to 5, each button is set to a unique ID, allowing us to control the button class with each ID in JavaScript. If you&#39;re using the default settings, then you won&#39;t need to spend time on CSS.</p>
+<pre><code>&lt;button id=&quot;demo-area-05-btn1&quot; class=&quot;db5&quot;&gt;按鈕 1&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn2&quot; class=&quot;db5&quot;&gt;按鈕 2&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn3&quot; class=&quot;db5&quot;&gt;按鈕 3&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn4&quot; class=&quot;db5&quot;&gt;按鈕 4&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn5&quot; class=&quot;db5&quot;&gt;按鈕 5&lt;/button&gt;
+</code></pre><p>We use <code>addEventListener</code> in Javascript to listen (and respond) to <code>click</code>, and using <code>setColor</code> to set the RGB LED. Inside we use 16 bit color (decimals are also supported), this way we can create colors easily.</p>
+<pre><code>var rgbled;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  rgbled = getRGBLed(board, 10, 9, 6);
+  document.getElementById(&quot;demo-area-05-btn1&quot;).addEventListener(&quot;click&quot;,function(){
+    rgbled.setColor(&#39;#ff0000&#39;);
+  });
+  document.getElementById(&quot;demo-area-05-btn2&quot;).addEventListener(&quot;click&quot;,function(){
+    rgbled.setColor(&#39;#3333ff&#39;);
+  });
+  document.getElementById(&quot;demo-area-05-btn3&quot;).addEventListener(&quot;click&quot;,function(){
+    rgbled.setColor(&#39;#009900&#39;);
+  });
+  document.getElementById(&quot;demo-area-05-btn4&quot;).addEventListener(&quot;click&quot;,function(){
+    rgbled.setColor(&#39;#ffcc66&#39;);
+  });
+  document.getElementById(&quot;demo-area-05-btn5&quot;).addEventListener(&quot;click&quot;,function(){
+    rgbled.setColor(&#39;#000000&#39;);
+  });
+});
+</code></pre><p>Now you know how to control a RGB LED when you click on different buttons! 
+Webduino Bin: <a href="http://bin.webduino.io/cibit/edit?html,css,js,output">http://bin.webduino.io/cibit/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KYD7W3h54sepEzzQUFA">https://blockly.webduino.io/?lang=en#-KYD7W3h54sepEzzQUFA</a></p>
+<!-- ## 三色 LED 的延伸教學：
+
+[Webduino Blockly 課程 2-1：三色 LED 燈](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-1#-JvMrEKwwqW2P607oFz2)  
+[Webduino Blockly 課程 2-2：三色 LED 燈切換顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/rgbled-2#-JvMroBFx1XYaMemJmOm)
+
+<div class="buy-this">
+    <span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<!-- @@close-->

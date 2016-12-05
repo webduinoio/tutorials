@@ -51,7 +51,7 @@ date: 20150425
 
 - ###1. Webduino 和 Webduino 開發板有差別嗎？
 
-	> Webduino 是我們正進行的服務，字面意思即是 Web x Arduino，而 Webduino 開發板是服務內的硬體產品，目前有 Webduino 馬克 1 號、Webduino Fly 兩種型號。
+	> Webduino 是我們正進行的服務，字面意思即是 Web x Arduino，而 Webduino 開發板是服務內的硬體產品，目前有 Webduino 馬克 1 號、Webduino Fly 以及 Webduino Smart 三種型號。
 
 - ###2. 馬克 1 號和 Fly 的差別在哪裡？
 
@@ -85,6 +85,7 @@ date: 20150425
 
 	>- (1) 報名 Webduino 課程，部分課程會附贈有基本的開發材料包。
 	>- (2) 我們使用露天購物平台，可以直接在 [https://webduino.io/buy.html](https://webduino.io/buy.html) 找到我們所有的商品。
+	>- (3)  Webduino 海外通路即將在 2017 推出了，海外的朋友敬請期待喔～
 
 - ###2. Webduino 教育暨企業合作方案
 
@@ -100,7 +101,7 @@ date: 20150425
 
 - ###2. 我的網路需要認證，可以使用 Webduino 嗎？
 
-	>Webduino 開發板目前僅支援 WPA 認證 ( 只需 SSID 與 Password )，不支援其他認證模式 ( 身分證、教職員證...等 )。
+	>Webduino 開發板目前僅支援 WPA/WPA2 認證 ( 只需 SSID 與 Password )，不支援其他認證模式 ( 身分證、教職員證...等 )。
 
 - ###3. Webduino 的 SSID 與家裡 Wi-Fi 的 SSID 差異？
 
