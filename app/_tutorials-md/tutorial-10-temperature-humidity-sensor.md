@@ -1,4 +1,4 @@
-	---
+---
 tag: tutorial
 src: tutorial-10-temperature-humidity-sensor.html
 title: 溫濕度傳感器
