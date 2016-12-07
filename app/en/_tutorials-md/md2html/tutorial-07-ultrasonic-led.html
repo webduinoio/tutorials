@@ -1,0 +1,117 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-07-ultrasonic-led.html
+title: Controlling LEDs with an Ultrasonic sensor
+banner: tutorial-07-01.jpg
+img: tutorial-07-01s.jpg</p>
+<h2>date: 20150425</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Project Example 7: Controlling LEDs with an Ultrasonic sensor :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="For anyone writing C/C++ on Arduino, controlling an LED with an Ultrasonic sensor would be a no brainer, but connecting it to web? That's another story!If you've followed through the previous tutorials and have a good grasp on how the sensors work, you should be able to manipulate an LED with an Ultrasonic sensor pretty easily. Since everything is connected through the internet, whenever there is an action, the webpage you are interacting with will react such as changing the size of an image. This creates many possibilities  for future projects!">
+
+<meta itemprop="description" content="For anyone writing C/C++ on Arduino, controlling an LED with an Ultrasonic sensor would be a no brainer, but connecting it to web? That's another story!If you've followed through the previous tutorials and have a good grasp on how the sensors work, you should be able to manipulate an LED with an Ultrasonic sensor pretty easily. Since everything is connected through the internet, whenever there is an action, the webpage you are interacting with will react such as changing the size of an image. This creates many possibilities  for future projects!">
+
+<meta property="og:description" content="For anyone writing C/C++ on Arduino, controlling an LED with an Ultrasonic sensor would be a no brainer, but connecting it to web? That's another story!If you've followed through the previous tutorials and have a good grasp on how the sensors work, you should be able to manipulate an LED with an Ultrasonic sensor pretty easily. Since everything is connected through the internet, whenever there is an action, the webpage you are interacting with will react such as changing the size of an image. This creates many possibilities  for future projects!">
+
+<meta property="og:title" content="Project Example 7: Controlling LEDs with an Ultrasonic sensor" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-07-ultrasonic-led.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-07-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-07-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Project Example 7: Controlling LEDs with an Ultrasonic sensor</h1>
+<p>For anyone writing C/C++ on Arduino, controlling an LED with an Ultrasonic sensor would be a no brainer, but connecting it to web? That&#39;s another story!</p>
+<p>If you&#39;ve followed through the previous tutorials and have a good grasp on how the sensors work, you should be able to manipulate an LED with an Ultrasonic sensor pretty easily. Since everything is connected through the internet, whenever there is an action, the webpage you are interacting with will react such as changing the size of an image. This creates many possibilities  for future projects!</p>
+<!-- <div class="buy-this">
+    <span>超音波傳感器與 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video Tutorial</h2>
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/pRMjbzPXWvw" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>We will be using the GND pin for both the Ultrasonic sensor and an LED, so grab a breadboard and some wires! Connect the VCC pin from the Ultrasonic sensor to 3.3v, Trig to 11, Echo to 10, GND to GND. Take another wire and connect the long leg of the LED to pin 9 and the short leg to GND. (Be very careful with this step and check your pins, since your Ultrasonic sensor may look different from the schematic shown here.)</p>
+<p>Webduino Mark 1 Circuit diagram:</p>
+<p><img src="../../img/tutorials/en/tutorial-07-02-new.jpg" alt=""></p>
+<p>Webduino Fly Circuit diagram:</p>
+<p><img src="../../img/tutorials/en/tutorial-07-02-fly.jpg" alt=""></p>
+<p>Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-07-03.jpg" alt=""></p>
+<p><img src="../../img/tutorials/tutorial-07-04.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>超音波傳感器與 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>We will be using &quot;Click Bulb&quot;, so that when the LED on the webpage lights up the actual LED will also light up. Open the <a href="https://blockly.webduino.io/?lang=en">Webduino Blockly editor</a> and click the &quot;Web Demo Area&quot; button on the top-right, then choose &quot;Click Bulb&quot; from the drop-down menu and you will see an image of a light bulb. We will be manipulating this photo with the distance measured from the Ultrasonic sensor.</p>
+<p><img src="../../img/tutorials/en/tutorial-07-05.jpg" alt=""></p>
+<p>Place a &quot;Board&quot; block into the workspace, and select you Webduino board&#39;s name. Place a &quot;Set Ultrasonic&quot; block into the stack and set the name to ultrasonic, set Trig to 11 and Echo to 10. Then place a &quot;Set LED&quot; block under that, and set it to &quot;led&quot; and pin to 9.</p>
+<p><img src="../../img/tutorials/en/tutorial-07-06.jpg" alt=""></p>
+<p>Add an &quot;Ultrasonic get distance&quot; block to calculate the distance every 500 ms (milliseconds). Now add the &quot;If do&quot; &quot;Logic&quot; block and set it to &quot;If do, else&quot;. Attach a &quot;Logic&quot; equation block to that and put in an &quot;Ultrasonic&#39;s distance&quot; block and  a number block set to 15. Make sure to set the logic equation to &quot;Less than&quot;. Last, add &quot;LED set state&quot; blocks and &quot;Set bulb&#39;s state&quot; blocks to the &quot;Do&quot; and &quot;Else&quot; sections of the logic block. Set each block to &quot;On&quot; and &quot;Off&quot; respectively. This will make it so that when the distance measured is less than 15 cm the LED will light up, as will the light bulb photo on the screen.</p>
+<p><img src="../../img/tutorials/en/tutorial-07-07.jpg" alt=""></p>
+<p>After you&#39;re done building the stack make sure the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;), then click on the red execute button &quot;Run Blocks&quot;, wave your hands in front of the Ultrasonic sensor and you&#39;ll see the LED light up!
+Solution: <a href="https://blockly.webduino.io/?lang=en#-KYIQsWOluLmCzc7Mr7Q">https://blockly.webduino.io/?lang=en#-KYIQsWOluLmCzc7Mr7Q</a> </p>
+<h2>Code Explanation (<a href="http://bin.webduino.io/jezuh/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>Inside the HTML code you will find two light bulb images, one on and one off, we will control them with CSS. </p>
+<pre><code>&lt;div id=&quot;demo-area-02-light&quot; class=&quot;off&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
+&lt;/div&gt;
+</code></pre><p>CSS sets the light bulb to light up when we set on, and vice versa.</p>
+<pre><code>#demo-area-02-light img {
+  height: 200px;
+  display: none;
+}
+
+#demo-area-02-light.on #demo-area-02-on {
+  display: inline-block;
+}
+
+#demo-area-02-light.off #demo-area-02-off {
+  display: inline-block;
+}
+</code></pre><p>With JavaScript we have an <code>if-else</code> statement inside the main function <code>ping</code>, which sets <code>led.on()</code> when &lt; 15.</p>
+<pre><code>var ultrasonic;
+var led;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  ultrasonic = getUltrasonic(board, 11, 10);
+  led = getLed(board, 9);
+  ultrasonic.ping(function(cm){
+    console.log(ultrasonic.distance);
+    if (ultrasonic.distance &lt; 15) {
+      led.on();
+      document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;on&quot;;
+    } else {
+      led.off();
+      document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;off&quot;;
+    }
+  }, 500);
+});
+</code></pre><p>There you have it, using Ultrasonic sensor to control LEDs to light up when a certain distance is sensed.<br>Webduino Bin: <a href="http://bin.webduino.io/suyey/edit?html,css,js,output">http://bin.webduino.io/suyey/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KYITizP-S9nNVnCOudj">https://blockly.webduino.io/?lang=en#-KYITizP-S9nNVnCOudj</a></p>
+<!-- ## 超音波傳感器的延伸教學：
+
+[Webduino Blockly 課程 3-2：超音波傳感器改變圖片大小](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-2#-JvS-qZVOxcFtjlMhYlP)  
+[Webduino Blockly 課程 3-3：超音波傳感器改變音量大小](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-3#-JvS09LhPCGEY4M1-juO) 
+
+<div class="buy-this">
+    <span>超音波傳感器與 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<!-- @@close-->

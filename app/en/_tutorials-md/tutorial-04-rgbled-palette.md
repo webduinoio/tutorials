@@ -122,8 +122,8 @@ As for JavaScript, we use "oninput" to send the color value to area color and th
 	});
 
 Now you know how to create colors with an RGB LED and set a webpage to show the same color!
-Webduino Bin: [http://bin.webduino.io/xajar/edit?html,css,js,output](http://bin.webduino.io/xajar/edit?html,css,js,output)  
-Stack setup: [https://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn](https://blockly.webduino.io/#-K4wrsITVd2C5wsXOLCn)
+Webduino Bin: [http://bin.webduino.io/yuje/edit?html,css,js,output](http://bin.webduino.io/yuje/edit?html,css,js,output)  
+Stack setup: [https://blockly.webduino.io/?lang=en#-KYIF4mKW6zCYQHOMmsm](https://blockly.webduino.io/?lang=en#-KYIF4mKW6zCYQHOMmsm)
 
 <!-- ## 三色 LED 的延伸教學：
 

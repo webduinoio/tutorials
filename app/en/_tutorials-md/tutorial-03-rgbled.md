@@ -83,7 +83,7 @@ Reference image:
 
 ## Instructions for using the Webduino Blockly
 
-Begin by opening the Webduino Blockly editor. ( [https://blockly.webduino.io](https://blockly.webduino.io) ) We will be using the "Click button" for control. Click on the "Web Demo Area" button on the top right, and click the "Click Button" from the pull-down menu. You will see 5 buttons that we will be clicking to create 5 different colors.
+Begin by opening the [Webduino Blockly editor](https://blockly.webduino.io/?lang=en). We will be using the "Click button" for control. Click on the "Web Demo Area" button on the top right, and click the "Click Button" from the pull-down menu. You will see 5 buttons that we will be clicking to create 5 different colors.
 
 ![教學範例 3：控制三色 LED](../../img/tutorials/en/tutorial-03-05.jpg)
 

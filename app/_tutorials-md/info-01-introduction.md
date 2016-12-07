@@ -2,7 +2,7 @@
 tag: info
 src: info-01-introduction.html
 title: Webduino 的基本介紹
-banner: info-01-01-new.jpg
+banner: info-01-01-new2.jpg
 img: info-01-01s-new.jpg
 date: 20150425
 ---

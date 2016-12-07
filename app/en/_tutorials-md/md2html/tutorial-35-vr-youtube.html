@@ -1,0 +1,146 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-35-vr-youtube.html
+title: Controlling YouTube volume with a Potentiometer
+banner: tutorial-35-01.jpg
+img: tutorial-35-01s.jpg</p>
+<h2>date: 20160704</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Project Example 35: Controlling YouTube volume with a Potentiometer :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="In our last tutorial “Project Example 34: Changing image position with a Potentiometer” we showed you how to use a Potentiometer to move an image on your screen. In this tutorial, we will learn how to use a Potentiometer to control the volume of a YouTube video, in the same way that you would use the volume control on a physical stereo speaker.">
+
+<meta itemprop="description" content="In our last tutorial “Project Example 34: Changing image position with a Potentiometer” we showed you how to use a Potentiometer to move an image on your screen. In this tutorial, we will learn how to use a Potentiometer to control the volume of a YouTube video, in the same way that you would use the volume control on a physical stereo speaker.">
+
+<meta property="og:description" content="In our last tutorial “Project Example 34: Changing image position with a Potentiometer” we showed you how to use a Potentiometer to move an image on your screen. In this tutorial, we will learn how to use a Potentiometer to control the volume of a YouTube video, in the same way that you would use the volume control on a physical stereo speaker.">
+
+<meta property="og:title" content="Project Example 35: Controlling YouTube volume with a Potentiometer" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-35-vr-youtube.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-35-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-35-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Project Example 35: Controlling YouTube volume with a Potentiometer</h1>
+<p>In our last tutorial &quot;<a href="tutorial-34-vr-image.html">Project Example 34: Changing image position with a Potentiometer</a>&quot; we showed you how to use a Potentiometer to move an image on your screen. In this tutorial, we will learn how to use a Potentiometer to control the volume of a YouTube video, in the same way that you would use the volume control on a physical stereo speaker.</p>
+<!-- <div class="buy-this">
+    <span>可變電阻旋鈕：<a href="https://webduino.io/buy/webduino-expansion-m.html" target="_blank">Webduino 擴充套件 M ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video tutorial</h2>
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/hA0rx5uK_qw" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>A Potentiometer has three pins. The left pin should be connected to 3.3V and the right pin connected to GND. Remember to use a resistor in your GND connection to prevent a short circuit, which happens when you have very low resistance. For more information on this google Ohm&#39;s law. The middle pin is an analog signal pin，which should be connected to A3. If your 3.3V and GND are connected in reverse, the values produced will also be reversed when you turn the knob on the Potentiometer.</p>
+<p>Webduino Mark 1 Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-34-02.jpg" alt=""></p>
+<p>Webduino Fly Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-34-02-fly.jpg" alt=""></p>
+<p>Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-34-03.jpg" alt=""></p>
+<p><img src="../../img/tutorials/tutorial-34-04.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>可變電阻旋鈕：<a href="https://webduino.io/buy/webduino-expansion-m.html" target="_blank">Webduino 擴充套件 M ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Begin by opening the <a href="https://blockly.webduino.io/?lang=en">Webduino Blockly</a>, and placing a &quot;Board&quot; block inside the workspace. Select your Webduino board&#39;s name, place a &quot;Photocell / Potentiometer&quot; block in the stack, and set the pin to A3.</p>
+<p><img src="../../img/tutorials/en/tutorial-35-02.jpg" alt=""></p>
+<p>Place a &quot;YouTube&quot; block (located in the &quot;Web Demo&quot; menu) and a &quot;detects / do&quot; block (under the &quot;photocell / potentiometer&quot; menu) into the stack. Then fill in the YouTube ID number for the video you want to control.</p>
+<p><img src="../../img/tutorials/en/tutorial-35-03.jpg" alt=""></p>
+<p>To find the YouTube ID, go to the video page you want to use.  Everything after <code>v=</code> of the web address is the ID.</p>
+<p><img src="../../img/tutorials/en/tutorial-35-04.jpg" alt=""></p>
+<p>To detect the input of the sensor, we must add a &quot;Set item to&quot; block from under the &quot;Variable&quot; menu. (Since we will use this multiple times, it will reduce the work needed to be done by setting it once) Because the Potentiometer has a floating point number of 0 to 1, and YouTube has the volume integers of 0 to 100, we will need to round the numbers using the &quot;round to decimal point&quot; and &quot;scale conversion&quot; blocks found under the &quot;Advanced&quot; / &quot;Math Conversion&quot; menu.</p>
+<p>At the very bottom of the stack add a &quot;Console&quot; block from under the &quot;Advanced&quot; menu along with a &quot;Youtube volume&quot; block. Connect &quot;Variable&quot; &quot;Item&quot; blocks to each of these and set them to &quot;a&quot;.</p>
+<p>Then we can use the console in Chrome&#39;s developer tools to receive values. To do this just right click on the webpage in Chrome and choose &quot;Inspect&quot;, other browsers have similar tools.</p>
+<p><img src="../../img/tutorials/en/tutorial-35-05.jpg" alt=""></p>
+<p>Confirm the board is online, by clicking <a href="https://webduino.io/device.html">Check Device Status</a>. Open your Youtube video and click on the top right red button &quot;Run Blocks&quot; to execute the stack. Then try turning the Potentiometer knob and you&#39;ll see the volume change.</p>
+<p>Solution: <a href="http://blockly.webduino.io/?lang=en#-KYM6mGIrb1A4NStOp4R">http://blockly.webduino.io/?lang=en#-KYM6mGIrb1A4NStOp4R</a> </p>
+<p>If you&#39;d like the volume to change in reverse (originally turning the volume up by turning the Potentiometer clock-wise but you’d like to turn the volume up by turning the Potentiometer counterclockwise), all you have to do is change the values in the &quot;Scale conversion&quot; block, change 0 to 1 and 1 to 0. Or if you prefer to play with hardware, you could change the 3.3V pin to GND and GND to 3.3V, the values should change as well.</p>
+<p><img src="../../img/tutorials/en/tutorial-35-06.jpg" alt=""></p>
+<h2>Code Explanation (<a href="https://bin.webduino.io/qazu/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>We will place an YouTube video inside a div in the HTML file.</p>
+<pre><code>&lt;div id=&quot;player&quot;&gt;&lt;/div&gt;
+</code></pre><p>The image changes because we set the position for our image to &quot;absolute&quot; in our CSS file. </p>
+<pre><code>#demo-area-03-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+#demo-area-03-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transform-origin: 75px 75px;
+  -webkit-transform-origin: 75px 75px;
+  -moz-transform-origin: 75px 75px;
+}
+</code></pre><p>The main program starts by importing a YouTube module, then using the <code>on</code> from the Potentiometer to receive signals. The value will be returned to val, and we will use round and &quot;Scale conversion&quot; to acquire the correct values. When we send the values to YouTube volume, to prevent an error of setting the volume higher than 100, we have a function to limit the volume to 100.    </p>
+<pre><code>var photocell;
+var youtube;
+var a;
+
+boardReady(&#39;&#39;, async function (board) {
+  board.systemReset();
+  board.samplingInterval = 250;
+  photocell = getPhotocell(board, 3);
+  await new Promise(function (resolve) {
+    var tag = document.createElement(&quot;script&quot;);
+    tag.src = &quot;https://www.youtube.com/iframe_api&quot;;
+    var scptTag = document.getElementsByTagName(&quot;script&quot;)[0];
+    scptTag.parentNode.insertBefore(tag, scptTag);
+    window.onYouTubeIframeAPIReady = function () {
+      youtube = new YT.Player(&quot;player&quot;, {
+        height: &quot;240&quot;,
+        width: &quot;96%&quot;,
+        videoId: &quot;h18K_JnUi4Q&quot;,
+        playerVars: {
+          autoplay: 1,
+          controls: 1
+        },
+        events: {
+          onReady: function (evt) {
+            resolve();
+          }
+        }
+      });
+    };
+  });
+  photocell.on(async function(val){
+    photocell.detectedVal = val;
+    a = Math.round(((photocell.detectedVal - (0)) * (1/((1)-(0)))) * ((100)-(0)) + (0));
+    console.log(a);
+    var varA = a;
+    if (varA &gt;= 100) {
+      varA = 100;
+    }
+    youtube.setVolume(varA);
+  });
+});
+</code></pre><p>Now, you can change the volume of any YouTube video with a Potentiometer! 
+Webduino Bin: <a href="https://bin.webduino.io/qazu/edit?html,css,js,output">https://bin.webduino.io/qazu/edit?html,css,js,output</a><br>Stack setup: <a href="http://blockly.webduino.io/?lang=en#-KYM6xamvdA--Km37Li4">http://blockly.webduino.io/?lang=en#-KYM6xamvdA--Km37Li4</a></p>
+<!-- <div class="buy-this">
+    <span>可變電阻旋鈕：<a href="https://webduino.io/buy/webduino-expansion-m.html" target="_blank">Webduino 擴充套件 M ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>
+ -->
+<!-- @@close-->
