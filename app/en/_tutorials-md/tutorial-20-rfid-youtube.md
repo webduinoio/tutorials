@@ -41,7 +41,7 @@ date: 20160113
 
 # Project Example 20: Switch Youtube Videos with RFID Keys
 
-In the previous project tutorial, we introduced the basic theory of RFIDs. In this tutorial, we will demonstrate an advaced use for the RFID sensor - switching Youtube videos with RFID keys.
+In the previous project tutorial, we introduced the basic theory of RFIDs. In this tutorial, we will demonstrate an advanced use for the RFID sensor - switching Youtube videos with RFID keys.
 
 <!-- <div class="buy-this">
 	<span>RFID 相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
