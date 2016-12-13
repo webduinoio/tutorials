@@ -44,9 +44,9 @@ date: 20151210
 
 因為 Webduino 要走 Arduino Firmata 的通訊協定，所以必須「**要燒錄具有 Firmata 通訊協定的韌體**」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。
 
-如果對於 Webduino UNO 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：
+如果對於 Webduino FLY 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：
 
-(1) [Webduino UNO 雲端擴充板初始化設定](https://webduino.io/tutorials/info-04-uno-setup.html)  
+(1) [Webduino Fly 初始化設定](https://webduino.io/tutorials/info-04-uno-setup.html)  
 (2) [Chrome API Proxy 使用說明](https://webduino.io/tutorials/info-05-chrome-api-proxy.html)
 
 ## 燒錄注意事項
@@ -109,7 +109,7 @@ Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://
 
 ## 韌體清單簡介
 
-這是目前 Webduino 已經公開釋出的 Arduino 韌體 ( 只要檔名有包含，就是具有這個傳感器或電子零件，舉例來說：buzzer_ultrasonic 就包含蜂鳴器和超音波傳感器 )，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！
+目前 Webduino 公開釋出的 Arduino 韌體裡面包含了下列傳感器與電子元件 ( 只要檔名有包含，就是具有這個傳感器或電子零件，舉例來說：buzzer_ultrasonic 就包含蜂鳴器和超音波傳感器 )，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！
 
 (1) buzzer：蜂鳴器  
 (2) ultrasonic：超音波傳感器  

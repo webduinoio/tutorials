@@ -33,8 +33,8 @@ img: info-07-01s.jpg</p>
 <!-- @@block  =  tutorials-->
 <h1>Arduino 韌體下載與燒錄</h1>
 <p>因為 Webduino 要走 Arduino Firmata 的通訊協定，所以必須「<strong>要燒錄具有 Firmata 通訊協定的韌體</strong>」，這篇文章將敘述基本的 Arduino 燒錄韌體教學，也會提供目前 Webduino 已經支援所有傳感器元件的韌體程式讓大家下載燒錄。</p>
-<p>如果對於 Webduino UNO 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：</p>
-<p>(1) <a href="https://webduino.io/tutorials/info-04-uno-setup.html">Webduino UNO 雲端擴充板初始化設定</a><br>(2) <a href="https://webduino.io/tutorials/info-05-chrome-api-proxy.html">Chrome API Proxy 使用說明</a></p>
+<p>如果對於 Webduino FLY 雲端擴充板、序列埠或是藍芽有興趣的，可以參考這兩篇文章：</p>
+<p>(1) <a href="https://webduino.io/tutorials/info-04-uno-setup.html">Webduino Fly 初始化設定</a><br>(2) <a href="https://webduino.io/tutorials/info-05-chrome-api-proxy.html">Chrome API Proxy 使用說明</a></p>
 <h2>燒錄注意事項</h2>
 <p>如果您燒錄時，UNO 上面有和 Webduino Fly 結合，<strong>請務必將 Webduino Fly 切換至 STA 模式</strong>，避免燒錄時出現無法燒錄的錯誤，如果您只有使用 Arduino UNO，直接透過 USB 現燒錄即可。</p>
 <p><img src="../img/tutorials/info-04-04.jpg" alt="Webduino Fly 初始化設定"></p>
@@ -63,7 +63,7 @@ img: info-07-01s.jpg</p>
 <p>等待下方訊息出現「上傳完畢」，就表示已經燒錄完成，恭喜你，你已經可以開始使用 Webduino 的所有開發模式囉！</p>
 <p><img src="../img/tutorials/info-07-09.jpg" alt="Webduino UNO 雲端擴充板初始化設定"></p>
 <h2>韌體清單簡介</h2>
-<p>這是目前 Webduino 已經公開釋出的 Arduino 韌體 ( 只要檔名有包含，就是具有這個傳感器或電子零件，舉例來說：buzzer_ultrasonic 就包含蜂鳴器和超音波傳感器 )，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！</p>
+<p>目前 Webduino 公開釋出的 Arduino 韌體裡面包含了下列傳感器與電子元件 ( 只要檔名有包含，就是具有這個傳感器或電子零件，舉例來說：buzzer_ultrasonic 就包含蜂鳴器和超音波傳感器 )，之後會再陸續增加，也歡迎大家 Fork 我們的開源專案，一起來將 Webduino 的技術發揚光大！</p>
 <p>(1) buzzer：蜂鳴器<br>(2) ultrasonic：超音波傳感器<br>(3) MaxMatrix：LED 點矩陣<br>(4) dht：溫濕度傳感器<br>(5) MFRC522：RFID<br>(6) Joypad：搖桿<br>(7) IR：紅外線發射/接收
 (8) GPS：GPS
 (9) GY291：三軸偵測
