@@ -57,12 +57,12 @@ date: 20151210
 
 ## 下載韌體與程式庫
 
-我們已經把要燒錄在 Arduino 裡的韌體程式碼以及要引入的程式庫，公開於 Github 上頭，你可以直接 clone ，或是 fork 我們的這個開源專案，對於不會使用 Github 的朋友，可以直接點選右邊的「Download Zip」的按鈕，或直接由這個下面的網址下載。
+我們已經把要燒錄在 Arduino 裡的韌體程式碼以及要引入的程式庫，公開於 Github 上頭，你可以直接 clone ，或是 fork 我們的這個開源專案，對於不會使用 Github 的朋友，可以直接點選「Clone or download」右邊的「Download Zip」的按鈕，或直接由這個下面的網址下載。
 
 Github：[https://github.com/webduinoio/wafirmata](https://github.com/webduinoio/wafirmata)  
 Download：[https://github.com/webduinoio/wafirmata/archive/master.zip](https://github.com/webduinoio/wafirmata/archive/master.zip)
 
-![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-07-02.jpg)
+![Webduino UNO 雲端擴充板初始化設定](../img/tutorials/info-07-02-new.jpg)
 
 下載之後解壓縮檔案，就會看到待會會引入的程式庫和要燒錄的韌體檔。
 
