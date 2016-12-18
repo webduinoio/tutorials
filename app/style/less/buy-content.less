@@ -53,7 +53,7 @@ header{
       text-decoration:underline;
     }
   }
-  h1,h2,h3,p,ul,.ruten,.need-more,.need-know{
+  h1,h2,h3,p,ul,.ruten,.need-more,.need-know, .buy-this{
     display:block;
     width:60%;
     margin:0 auto;
@@ -165,6 +165,33 @@ header{
       ._bg-top-linear-gradient(#fd0,#fe0);
       text-decoration:none;
     }
+  } 
+  .buy-this{
+    font-size:17px;
+    background:#fed;
+    padding:20px 20px 10px;
+    line-height:24px;
+    border-radius:5px;
+    transition:.3s;
+    &:hover{
+      background:#ffe8d7;
+    border-radius:25px;
+    }
+    i{
+      margin-right:5px;
+    }
+    span{
+      display:block;
+      margin-bottom:10px;
+      font-weight:bold;
+    }
+    a{
+      color:#840;
+      text-decoration:underline;
+    }
+    a:hover{
+      color:#d50;
+    }
   }
 }
 /* disqus */
@@ -189,7 +216,7 @@ footer{
 /* RWD */
 @media (max-width: 1000px){
   .content{
-    h1,h2,h3,p,ul,div,.ruten,.need-more,.need-know{
+    h1,h2,h3,p,ul,div,.ruten,.need-more,.need-know, .buy-this{
       width:70%;
     }
   }
@@ -215,7 +242,7 @@ footer{
   }
   .content{
     margin-top:40px;
-    h1,h2,h3,p,ul,.ruten,.need-more,.need-know{
+    h1,h2,h3,p,ul,.ruten,.need-more,.need-know, .buy-this{
       width:80%;
     }
   }
@@ -225,7 +252,7 @@ footer{
 }
 @media (max-width: 600px){
   .content{
-    h1,h2,h3,p,ul,.ruten,.need-more,.need-know{
+    h1,h2,h3,p,ul,.ruten,.need-more,.need-know, .buy-this{
       width:85%;
     }
     h1,h2,h3,h4{

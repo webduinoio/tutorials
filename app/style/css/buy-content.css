@@ -41,7 +41,8 @@ header.path-1 {
 .content ul,
 .content .ruten,
 .content .need-more,
-.content .need-know {
+.content .need-know,
+.content .buy-this {
   display: block;
   width: 60%;
   margin: 0 auto;
@@ -150,9 +151,9 @@ header.path-1 {
   border-radius: 15px;
   font-size: 24px;
   padding: 15px 50px;
-  background-image: linear-gradient(top, #fc0, #fd0);
-  background-image: -webkit-linear-gradient(top, #fc0, #fd0);
-  background-image: -moz-linear-gradient(top, #fc0, #fd0);
+  background-image: linear-gradient(top, #ffcc00, #ffdd00);
+  background-image: -webkit-linear-gradient(top, #ffcc00, #ffdd00);
+  background-image: -moz-linear-gradient(top, #ffcc00, #ffdd00);
   cursor: pointer;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -161,10 +162,37 @@ header.path-1 {
 }
 .content .ruten a:hover {
   color: #000;
-  background-image: linear-gradient(top, #fd0, #fe0);
-  background-image: -webkit-linear-gradient(top, #fd0, #fe0);
-  background-image: -moz-linear-gradient(top, #fd0, #fe0);
+  background-image: linear-gradient(top, #ffdd00, #ffee00);
+  background-image: -webkit-linear-gradient(top, #ffdd00, #ffee00);
+  background-image: -moz-linear-gradient(top, #ffdd00, #ffee00);
   text-decoration: none;
+}
+.content .buy-this {
+  font-size: 17px;
+  background: #fed;
+  padding: 20px 20px 10px;
+  line-height: 24px;
+  border-radius: 5px;
+  transition: .3s;
+}
+.content .buy-this:hover {
+  background: #ffe8d7;
+  border-radius: 25px;
+}
+.content .buy-this i {
+  margin-right: 5px;
+}
+.content .buy-this span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.content .buy-this a {
+  color: #840;
+  text-decoration: underline;
+}
+.content .buy-this a:hover {
+  color: #d50;
 }
 /* disqus */
 .disqus {
@@ -189,7 +217,8 @@ footer .logo a:last-child {
   .content div,
   .content .ruten,
   .content .need-more,
-  .content .need-know {
+  .content .need-know,
+  .content .buy-this {
     width: 70%;
   }
   .disqus {
@@ -219,7 +248,8 @@ footer .logo a:last-child {
   .content ul,
   .content .ruten,
   .content .need-more,
-  .content .need-know {
+  .content .need-know,
+  .content .buy-this {
     width: 80%;
   }
   .disqus {
@@ -234,7 +264,8 @@ footer .logo a:last-child {
   .content ul,
   .content .ruten,
   .content .need-more,
-  .content .need-know {
+  .content .need-know,
+  .content .buy-this {
     width: 85%;
   }
   .content h1,
