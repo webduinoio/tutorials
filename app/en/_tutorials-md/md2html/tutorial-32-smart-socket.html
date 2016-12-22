@@ -1,0 +1,104 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-32-smart-socket.html
+title: DIY Smart Electrical Socket
+banner: tutorial-32-01.jpg
+img: tutorial-32-01s.jpg</p>
+<h2>date: 20160627</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Project Example 32: DIY Smart Electrical Socket :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="We've talked about some applications for relays in the Project Example 14, if we take that and combine it with a simple electrical socket, we can control it over Wi-Fi. Or even transform it into a smart, light and voice sensing, remote controlled electrical socket!
+">
+
+<meta itemprop="description" content="We've talked about some applications for relays in the Project Example 14, if we take that and combine it with a simple electrical socket, we can control it over Wi-Fi. Or even transform it into a smart, light and voice sensing, remote controlled electrical socket!">
+
+<meta property="og:description" content="We've talked about some applications for relays in the Project Example 14, if we take that and combine it with a simple electrical socket, we can control it over Wi-Fi. Or even transform it into a smart, light and voice sensing, remote controlled electrical socket!">
+
+<meta property="og:title" content="Project Example 32: DIY Smart Electrical Socket" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-32-smart-socket.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-32-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-32-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Project Example 32: DIY Smart Electrical Socket</h1>
+<p>We&#39;ve talked about some applications for relays in the <a href="tutorial-14-relay.html">Project Example 14</a>, if we take that and combine it with a simple electrical socket, we can control it over Wi-Fi. Or even transform it into a smart, light and voice sensing, remote controlled electrical socket! </p>
+<!-- <div class="buy-this">
+    <span>智慧插座套件：<a href="https://webduino.io/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video Tutorial</h2>
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/nFEY_k_2zxQ" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>The electrical sockets we use in this demo have two sockets, one is connected to AC power, which will also provide power for the Webduino board. The current of the other socket is controlled through a relay. We will be using solid wires to connect the socket to COM (Common Connection) and NO (Normally Open) of the relay. Then connect the VCC from the relay to the 5V or 3.3V on the board, GND to GND and Vin from to 2 to 13.</p>
+<p><img src="../../img/tutorials/en/tutorial-32-02.jpg" alt=""></p>
+<p>List of components:</p>
+<p><img src="../../img/tutorials/tutorial-32-03.jpg" alt=""></p>
+<p>We start by combining the electrical socket and the socket backplane, they should fit together easily.</p>
+<p><img src="../../img/tutorials/tutorial-32-04.jpg" alt=""></p>
+<p>The space between the two sockets is just big enough to place the relay, you can slide it in or fix it in place with a hot glue gun. Then insert 5 solid wires directly into the holes on the backs of the sockets. They should just stay in place once they are in the holes.</p>
+<p><img src="../../img/tutorials/tutorial-32-05.jpg" alt=""></p>
+<p>Connect the electric wires to the plug by removing the top of the wire coating and screwing them directly onto the plugs.</p>
+<p><img src="../../img/tutorials/tutorial-32-07.jpg" alt=""></p>
+<p>Use wire splicers to connect the solid wires to the electric wires. Then connect solid wires to the relay <strong>(both COM and NO)</strong>.</p>
+<p><img src="../../img/tutorials/tutorial-32-06.jpg" alt=""></p>
+<p>Connect the other side of the Relay with jumper wires.</p>
+<p><img src="../../img/tutorials/tutorial-32-08.jpg" alt=""></p>
+<p>Connect the outlet to it&#39;s outer shell.</p>
+<p><img src="../../img/tutorials/tutorial-32-09.jpg" alt=""></p>
+<p>Screw on the plate cover. If the screws are too small, use washers and nuts.</p>
+<p><img src="../../img/tutorials/tutorial-32-09a.jpg" alt=""></p>
+<p>All that&#39;s left is to connect the socket to the Webduino board and you&#39;re all set! There are two sockets on the module, one acts as the power supply for your board to control the other through Wi-Fi.</p>
+<p><img src="../../img/tutorials/tutorial-32-10.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>智慧插座套件：<a href="https://webduino.io/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instruction of Webduino Blockly</h2>
+<p>Open the <a href="https://blockly.webduino.io/?lang=en">Webduino Blockly Editor</a>. Place a &quot;Board&quot; block onto the workspace and fill in the name of your Webduino board. Place a &quot;set LED to&quot; block into the stack. Using the circuit diagram, set the pin to 10.</p>
+<p><img src="../../img/tutorials/en/tutorial-32-11.jpg" alt=""></p>
+<p>We use blocks from &quot;Click Bulb&quot; in &quot;Web Demo Area&quot; and other &quot;LED&quot; blocks to control the outlet. Start by adding &quot;LED set state&quot; and &quot;Set bulb&#39;s state&quot; blocks to the stack. Set both to &quot;on&quot;, Then place a &quot;Click Bulb, do&quot; block next in the stack and place &quot;Light toggle&quot; and &quot;LED toggle&quot; blocks inside. So the outlet will switch between off and on with every click.</p>
+<p><img src="../../img/tutorials/en/tutorial-32-12.jpg" alt=""></p>
+<p>Check to see if your board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;) and click on the red execution button &quot;Run Blocks&quot; Plug a light bulb or electric fan to the smart socket, making sure that it is switched on. There shouldn&#39;t be any power at this point. Now click on the light bulb image in the web demo area and you will see that you have control of the socket through WiFi! (Solution: <a href="https://blockly.webduino.io/?lang=en#-KZ_N6wBL8hccd55f6DA">https://blockly.webduino.io/?lang=en#-KZ_N6wBL8hccd55f6DA</a>)</p>
+<p>We&#39;ve just shown that we can use Wi-Fi to control a power outlet. You can also make it voice controlled by using &quot;Voice Control&quot; blocks, then you would have a voice controlled DIY smart electrical socket!</p>
+<p><img src="../../img/tutorials/en/tutorial-32-13.jpg" alt=""></p>
+<h2>Code Explanation (<a href="https://bin.webduino.io/basop/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>JavaScript is mostly for LED control, if you want to learn more, click here: <a href="tutorial-01-led.html">Project Example 1: Control a Single LED</a>.</p>
+<pre><code>var led;
+
+boardReady(&#39;&#39;, function (board) {
+  board.systemReset();
+  board.samplingInterval = 250;
+  led = getLed(board, 10);
+  document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;off&quot;;
+  led.off();
+  document.getElementById(&quot;demo-area-02-light&quot;).addEventListener(&quot;click&quot;, function(){
+    if (document.getElementById(&quot;demo-area-02-light&quot;).className == &quot;on&quot;) {
+       document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;off&quot;;
+    } else {
+      document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;on&quot;;
+    }
+    led.toggle();
+  });
+});
+</code></pre><p>That&#39;s how you build a DIY Smart Electrical Socket!<br>Webduino Bin: <a href="https://bin.webduino.io/basop/edit?html,css,js,output">https://bin.webduino.io/basop/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KZ_VTN7SWdw8Z39q5aX">https://blockly.webduino.io/?lang=en#-KZ_VTN7SWdw8Z39q5aX</a></p>
+<!-- <div class="buy-this">
+    <span>智慧插座套件：<a href="https://webduino.io/buy/webduino-package-socket.html" target="_blank">Webduino 智慧插座套件 ( 電子材料包 )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<!-- @@close-->

@@ -47,7 +47,7 @@ In this tutorial, you will learn how to burn firmware on your development boards
 If you are interested in Webduino Fly Wi-Fi extension, serial port, or Bluetooth, please check out the tutorials as follow.
 
 (1) [Webduino Fly Wi-Fi Setup](info-04-uno-setup.html)  
-(2) [Chrome API Proxy Setup](info-05-chrome-api-proxy.html)
+(2) [Chrome API Proxy Installation Guide](info-05-chrome-api-proxy.html)
 
 ## Notice
 

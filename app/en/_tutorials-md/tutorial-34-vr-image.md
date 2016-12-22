@@ -13,11 +13,11 @@ date: 20160701
 
 <title>Project Example 34: Changing image position with a Potentiometer :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="In “教學範例 17：光敏電阻獲取亮度數值” we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer.">
+<meta name="description" content="In “Project Example 17: Determine light levels with a photocell” we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer.">
 
-<meta itemprop="description" content="In “教學範例 17：光敏電阻獲取亮度數值” we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer.">
+<meta itemprop="description" content="In “Project Example 17: Determine light levels with a photocell” we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer.">
 
-<meta property="og:description" content="In “教學範例 17：光敏電阻獲取亮度數值” we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer.">
+<meta property="og:description" content="In “Project Example 17: Determine light levels with a photocell” we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer.">
 
 <meta property="og:title" content="Project Example 34: Changing image position with a Potentiometer" >
 
@@ -41,7 +41,7 @@ date: 20160701
 
 # Project Example 34: Changing image position with a Potentiometer
 
-In [教學範例 17：光敏電阻獲取亮度數值](tutorial-17-photocell.html) we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer. 
+In [Project Example 17: Determine light levels with a photocell](tutorial-17-photocell.html) we introduced how to use a photocell. The Potentiometer block uses a similar method, in this tutorial we change the position of an image by turning a knob on a Potentiometer. 
 
 <!-- <div class="buy-this">
 	<span>可變電阻旋鈕：<a href="https://webduino.io/buy/webduino-expansion-m.html" target="_blank">Webduino 擴充套件 M ( 支援馬克 1 號、Fly )</a></span>

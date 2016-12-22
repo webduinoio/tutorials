@@ -63,7 +63,7 @@ You might face some problems while using Webduino, so here are answers to some o
 
 - ###4. Is it still necessary to burn Arduino firmware?
 
-	>Since the Webduino Fly is based on the Arduino UNO, it is **necessary** to follow  Firmata Protocol to burn firmware to your Webduino Fly (In the tutorial [Arduino firmware download and buning](info-07-arduino-ino.html), we give you detailed instructions on how to do this). However, it is not necessary to burn the firmware to the Webduino Mark 1 because the default firmware has already been implemented.
+	>Since the Webduino Fly is based on the Arduino UNO, it is **necessary** to follow  Firmata Protocol to burn firmware to your Webduino Fly (In the tutorial [Arduino Firmware Download / Burn](info-07-arduino-ino.html), we give you detailed instructions on how to do this). However, it is not necessary to burn the firmware to the Webduino Mark 1 because the default firmware has already been implemented.
 
 - ###5. Can Webduino run while my browser is closed?
 
@@ -136,11 +136,11 @@ You might face some problems while using Webduino, so here are answers to some o
 
 	>- (1) Please check the I/O pins, they might be mis-connected.
 	>- (2) Please check the console, there might be errors.
-	>- (3) **Please burn the correct firmware**, check the tutorial: [Arduino Firmware Download/Burn for further instructions](info-07-arduino-ino.html)。
+	>- (3) **Please burn the correct firmware**, check the tutorial: [Arduino Firmware Download / Burn](info-07-arduino-ino.html)。
 
 - ###2. Can the Webduino developmet board be controlled by bluetooth or serial port?
 
-	>Yes! You can choose "Wi-Fi", "Bluetooth", or "Serial Port" on the Board block in Webduino Blockly. You just need to install 1 app and 1 extension on Google Chrome. Check the tutorial: [Instructions for Chrome API Proxy Settings for further instructions.](info-05-chrome-api-proxy.html)
+	>Yes! You can choose "Wi-Fi", "Bluetooth", or "Serial Port" on the Board block in Webduino Blockly. You just need to install 1 app and 1 extension on Google Chrome. Check the tutorial: [Chrome API Proxy Installation Guide](info-05-chrome-api-proxy.html)
 
 <br/>
 

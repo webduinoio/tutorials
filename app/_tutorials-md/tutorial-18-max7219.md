@@ -54,7 +54,7 @@ LED 點矩陣顧名思義，就是用許多 LED 燈所組成的元件，最常�
 
 ## 接線與實作
 
-MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS ( 晶片選擇 ) 和 CLK ( 時脈 )，在這裡把 D in 接 7、CS 接 8，CLK 接 9，VCC 要接 VCC 的位置 ( 不要接 3.3V 怕電壓不夠 )。
+MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS ( 晶片選擇 ) 和 CLK ( 時脈 )，在這裡把 D in 接 7、CS 接 8，CLK 接 9，VCC 接 VCC ( 不要接 3.3V 怕電壓不夠 )，然後GND接GND的位置。
 
 馬克一號接線示意圖：
 
@@ -89,7 +89,7 @@ Fly 接線示意圖：
 
 ![](../img/tutorials/tutorial-18-07.jpg)
 
-在代碼產生網頁裡，我們可以直接用滑鼠點選畫圖，或直接用下拉選單產生預設文字、數字或圖形，完成後點選「複製」，就可以將代碼複製起來，再貼回 Blockly 編輯工具即可，此外，代碼產生網頁還可以直接和你的裝置互動，在最上方 Board 的地方輸入裝置的 device ID，你畫的圖形就會直接出現在 LED 點矩陣裡。( 可以參考這段影片：[https://www.youtube.com/watch?v=U3jEqpWve8I](https://www.youtube.com/watch?v=U3jEqpWve8I) )
+在代碼產生網頁裡，我們可以直接用滑鼠點選畫圖，或直接用下拉選單產生預設文字、數字或圖形，完成後點選「複製」，就可以將代碼複製起來，再貼回 Blockly 編輯工具即可。此外，代碼產生網頁還可以直接和你的裝置互動，在最上方 Board 的地方輸入裝置的 device ID，你畫的圖形就會直接出現在 LED 點矩陣裡。( 可以參考這段影片：[https://www.youtube.com/watch?v=U3jEqpWve8I](https://www.youtube.com/watch?v=U3jEqpWve8I) )
 
 ![](../img/tutorials/tutorial-18-08.jpg)
 

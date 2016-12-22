@@ -91,7 +91,7 @@ If this is the first time you are using the Bluetooth module, you will need to *
 
 ## Step 4. Using Chrome Proxy API 
 
-We are going to connect bluetooth modules and manipulate development boards through Webduino Blockly. These are delivered via Chrome Browser, so we will need to convert programming commands by means of Chrome Proxy API. Refer to the previous tutorial for setup: [Instructions for Chrome API Proxy Settings](info-05-chrome-api-proxy.html)
+We are going to connect bluetooth modules and manipulate development boards through Webduino Blockly. These are delivered via Chrome Browser, so we will need to convert programming commands by means of Chrome Proxy API. Refer to the previous tutorial for setup: [Chrome API Proxy Installation Guide](info-05-chrome-api-proxy.html)
 
 After finishing the setup, you'll see two activated programs in your Chrome Extensions.
 

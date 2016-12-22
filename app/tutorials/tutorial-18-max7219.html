@@ -91,7 +91,7 @@
 <h2>範例影片展示</h2>
 <p><iframe class="youtube" src="https://www.youtube.com/embed/nY5zBP7BLdo" frameborder="0" allowfullscreen></iframe></p>
 <h2>接線與實作</h2>
-<p>MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS ( 晶片選擇 ) 和 CLK ( 時脈 )，在這裡把 D in 接 7、CS 接 8，CLK 接 9，VCC 要接 VCC 的位置 ( 不要接 3.3V 怕電壓不夠 )。</p>
+<p>MAX7219 LED 點矩陣有五支接腳，分別是 VCC、GND、D in ( Dout )、CS ( 晶片選擇 ) 和 CLK ( 時脈 )，在這裡把 D in 接 7、CS 接 8，CLK 接 9，VCC 接 VCC ( 不要接 3.3V 怕電壓不夠 )，然後GND接GND的位置。</p>
 <p>馬克一號接線示意圖：</p>
 <p><img src="../img/tutorials/tutorial-18-02.jpg" alt=""></p>
 <p>Fly 接線示意圖：</p>
@@ -111,7 +111,7 @@
 <p><img src="../img/tutorials/tutorial-18-06.jpg" alt=""></p>
 <p>放入點擊按鈕 1 的積木，讓點擊按鈕 1 的時候，matrix 會顯示圖形，在 LED 點矩陣裡顯示的圖形是由「<strong>八組兩兩成對十六進位代碼組成 ( 共十六碼，可以更多，但須兩兩字母或數字成對 )</strong>」，如果要由圖形產生代碼，可以<strong>在積木上按「右鍵」，選擇「說明」</strong>，就會開啟代碼產生器網頁 ( <a href="http://webduinoio.github.io/demo/max7219/">http://webduinoio.github.io/demo/max7219/</a> )。</p>
 <p><img src="../img/tutorials/tutorial-18-07.jpg" alt=""></p>
-<p>在代碼產生網頁裡，我們可以直接用滑鼠點選畫圖，或直接用下拉選單產生預設文字、數字或圖形，完成後點選「複製」，就可以將代碼複製起來，再貼回 Blockly 編輯工具即可，此外，代碼產生網頁還可以直接和你的裝置互動，在最上方 Board 的地方輸入裝置的 device ID，你畫的圖形就會直接出現在 LED 點矩陣裡。( 可以參考這段影片：<a href="https://www.youtube.com/watch?v=U3jEqpWve8I">https://www.youtube.com/watch?v=U3jEqpWve8I</a> )</p>
+<p>在代碼產生網頁裡，我們可以直接用滑鼠點選畫圖，或直接用下拉選單產生預設文字、數字或圖形，完成後點選「複製」，就可以將代碼複製起來，再貼回 Blockly 編輯工具即可。此外，代碼產生網頁還可以直接和你的裝置互動，在最上方 Board 的地方輸入裝置的 device ID，你畫的圖形就會直接出現在 LED 點矩陣裡。( 可以參考這段影片：<a href="https://www.youtube.com/watch?v=U3jEqpWve8I">https://www.youtube.com/watch?v=U3jEqpWve8I</a> )</p>
 <p><img src="../img/tutorials/tutorial-18-08.jpg" alt=""></p>
 <p>再來設定按鈕 2 的動作，這裏使用「跑馬燈」的積木，可以讓我們設定的圖案往左跑或是往右跑，比較特別的是，對於 LED 點矩陣來說，因為代碼是可以超過十六個字母或數字 ( <strong>須符合十六進位，並兩兩成對</strong> )，所以我們可以畫出很長的一串圖形，透過 LED 點矩陣實現跑馬燈。( 例如可以複製這段代碼，貼到 Blockly 裡執行看看會如何：「0c1e3e7c3e1e0c000c12224422120c00」 )</p>
 <p><img src="../img/tutorials/tutorial-18-09.jpg" alt=""></p>

@@ -1,3 +1,9 @@
 .tutorials-content p {
   text-align: left;
 }
+.tutorials-content ul li blockquote ul li {
+	text-align:left;
+	word-wrap:normal;
+	word-break: normal;
+	white-space: normal;
+}

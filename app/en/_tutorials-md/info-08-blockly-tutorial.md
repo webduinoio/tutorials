@@ -101,7 +101,7 @@ Click "Run Blocks", and a window of text will pop-up on screen.
 
 ## Control the Webduino Board
 
-Finally, we get to use the Webduino board. Drag a "Board" block to the workspace. You can choose to connect by WiFi, serial port, or Bluetooth. Note that, if you wish to connect by serial port or Bluetooth, you must first install the Chrome Proxy API. (Check the "[Chrome API Proxy Guide](https://webduino.io/tutorials/info-05-chrome-api-proxy.html)" and "[Download & Burn Arduino Firmware](https://webduino.io/tutorials/info-07-arduino-ino.html)")
+Finally, we get to use the Webduino board. Drag a "Board" block to the workspace. You can choose to connect by WiFi, serial port, or Bluetooth. Note that, if you wish to connect by serial port or Bluetooth, you must first install the Chrome Proxy API. (Check the "[Chrome API Proxy Installation Guide](info-05-chrome-api-proxy.html)" and "[Arduino Firmware Download / Burn](info-07-arduino-ino.html)")
 
 ![Webduino Blockly Basic Guide](../../img/tutorials/en/info-08-10.jpg)
 

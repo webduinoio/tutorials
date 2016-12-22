@@ -24,19 +24,19 @@ $(function() {
       if (array[i].src == file) {
         $banner.append('<img src="../../img/tutorials/' + array[i].banner + '">');
         if (i > 0 && i < (l - 1)) {
-          $('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[i - 1].src + '">' + array[i - 1].title + '</a>');
-          $('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[i + 1].src + '">' + array[i + 1].title + '</a>');
-          $ar.attr('href', array[i + 1].src).attr('title', '下一篇：' + array[i + 1].title);
-          $al.attr('href', array[i - 1].src).attr('title', '上一篇：' + array[i - 1].title);
+          $('.pre').append('<i class="fa fa-hand-o-left"></i> Previous<br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[i - 1].src + '">' + array[i - 1].title + '</a>');
+          $('.next').append('Next <i class="fa fa-hand-o-right"></i><br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[i + 1].src + '">' + array[i + 1].title + '</a>');
+          $ar.attr('href', array[i + 1].src).attr('title', 'Next: ' + array[i + 1].title);
+          $al.attr('href', array[i - 1].src).attr('title', 'Previous: ' + array[i - 1].title);
         } else if (i == 0) {
-          $('.next').append('下一篇 <i class="fa fa-hand-o-right"></i><br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[1].src + '">' + array[1].title + '</a>');
+          $('.next').append('Next <i class="fa fa-hand-o-right"></i><br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[1].src + '">' + array[1].title + '</a>');
           $al.css({
             'left': '-100px'
           });
-          $ar.attr('href', array[1].src).attr('title', '下一篇：' + array[i + 1].title);
+          $ar.attr('href', array[1].src).attr('title', 'Next: ' + array[i + 1].title);
         } else {
-          $('.pre').append('<i class="fa fa-hand-o-left"></i> 上一篇<br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[i - 1].src + '">' + array[i - 1].title + '</a>');
-          $al.attr('href', array[i - 1].src).attr('title', '上一篇：' + array[i - 1].title);
+          $('.pre').append('<i class="fa fa-hand-o-left"></i> Previous<br/><a class="pre-next-button" data-name="pre-next-button" href="' + array[i - 1].src + '">' + array[i - 1].title + '</a>');
+          $al.attr('href', array[i - 1].src).attr('title', 'Previous: ' + array[i - 1].title);
           $ar.css({
             'right': '-100px'
           });
