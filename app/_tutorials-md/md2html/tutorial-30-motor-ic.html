@@ -70,7 +70,7 @@ img: tutorial-30-01s.jpg</p>
 <h2>Webduino Blockly 操作解析</h2>
 <p>打開 Webduino Blockly 編輯工具 ( <a href="https://blockly.webduino.io">https://blockly.webduino.io</a> )，把開發板放到編輯畫面裡，填入對應的 Webduino 開發板名稱，因為這裡純粹要控制腳位 1 或 0，最簡單的方法就是用 LED 的積木來實作，因為兩顆馬達總共有四條線，所以要放入四個 LED 的積木。</p>
 <p><img src="../img/tutorials/tutorial-30-12.jpg" alt=""></p>
-<p>再來我們使用「偵測鍵盤按下」的積木，把上下左右的事件對應進去積木裡，按下「上」的時候就讓 a 的狀態為 on，按下「上」的時候就讓 b 的狀態為 on，依此類推。</p>
+<p>再來我們使用「偵測鍵盤按下」的積木，把上下左右的事件對應進去積木裡，按下「上」的時候就讓 a 的狀態為 on，按下「下」的時候就讓 b 的狀態為 on，依此類推。</p>
 <p><img src="../img/tutorials/tutorial-30-13.jpg" alt=""></p>
 <p>接著放入「偵測鍵盤放開」的積木，把上下左右的事件對應進去積木裡，這裏就再放開的時候，把狀態設為 off 即可。為什麼要這麼做呢？因為當第一顆馬達一條線為 on，一條線為 off，就可以當作我們把電池正極接在 on 的地方，負極接在 off 的地方，馬達會正轉，如果反接，馬達就會反轉，透過正轉反轉的原理，我們就可以控制車子左右轉或是前後跑。</p>
 <p><img src="../img/tutorials/tutorial-30-14.jpg" alt=""></p>

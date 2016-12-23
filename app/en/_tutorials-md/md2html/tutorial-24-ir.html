@@ -1,0 +1,127 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-24-ir.html
+title: Sending and receiving signals with an infrared sensor
+banner: tutorial-24-01.jpg
+img: tutorial-24-01s.jpg</p>
+<h2>date: 20160221</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Project Example 24: Sending and receiving signals with an infrared sensor :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="We can find infrared sensors in the many electrical appliances in our daily life, such as TVs, air conditioners, remote controlled fans, toys… etc. Anything that is remote controlled, there's a pretty good chance that it is sending and receiving signals with an infrared sensor. This project example will show how to use the Webduino to send and receive information with an infrared sensor.">
+
+<meta itemprop="description" content="We can find infrared sensors in the many electrical appliances in our daily life, such as TVs, air conditioners, remote controlled fans, toys… etc. Anything that is remote controlled, there's a pretty good chance that it is sending and receiving signals with an infrared sensor. This project example will show how to use the Webduino to send and receive information with an infrared sensor.">
+
+<meta property="og:description" content="We can find infrared sensors in the many electrical appliances in our daily life, such as TVs, air conditioners, remote controlled fans, toys… etc. Anything that is remote controlled, there's a pretty good chance that it is sending and receiving signals with an infrared sensor. This project example will show how to use the Webduino to send and receive information with an infrared sensor.">
+
+<meta property="og:title" content="Project Example 24: Sending and receiving signals with an infrared sensor" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-24-ir.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-24-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-24-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Project Example 24: Sending and receiving signals with an infrared sensor</h1>
+<p>We can find infrared sensors in the many electrical appliances in our daily life, such as TVs, air conditioners, remote controlled fans, toys… etc. Anything that is remote controlled, there&#39;s a pretty good chance that it is sending and receiving signals with an infrared sensor. This project example will show how to use the Webduino to send and receive information with an infrared sensor.</p>
+<!-- <div class="buy-this">
+    <span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> 
+ -->
+<h2>Video Tutorial</h2>
+<!-- 影片對應範例：[https://blockly.webduino.io/?&page=tutorials/irrecv-1](https://blockly.webduino.io/?&page=tutorials/irrecv-1) -->  
+<p>Check the video tutorial here: 
+<iframe class="youtube" src="https://www.youtube.com/embed/lfN0D4198CM" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>Connect the leg nearest to the &quot;-&quot;&quot; on the infrared sensor to GND, the middle leg to 3.3V, and the leg closest to S connects to pin 10. Since we only have one oscillator on the Arduino, <strong>we cannot simultaneously send and receive an infrared signal on the same board</strong>. If we need to test sending a signal we could use an infrared receiver to receive a signal from a TV remote control and then use the infrared transmitter to send a signal to the TV.</p>
+<p>infrared receive sensor Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-24-02.jpg" alt=""></p>
+<p>infrared receive sensor Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-24-03.jpg" alt=""></p>
+<p><img src="../../img/tutorials/tutorial-24-04.jpg" alt=""></p>
+<p>The infrared transmitter looks like a large LED, if you&#39;re not paying attention you might even connect to the wrong pins. <strong>We have to use pin number 9, which accesses to the oscillator, to send a square wave with the infrared transmitter</strong>. So connecting the infrared transmitter to other pins will not work. Here we connect the longer leg to pin 9 and the shorter one to GND.</p>
+<p>infrared transmitter Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-24-05.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>  -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Open the <a href="https://blockly.webduino.io/?lang=en">Webduino Blocky editor</a>, click on the &quot;Web Demo Area&quot; on the upper right hand side, and click on &quot;Show Text&quot; in the drop down menu. Don&#39;t forget, you need to burn the firmware for the infrared transmitter before you can proceed. (Check out the tutorial: <a href="info-07-arduino-ino.html">Ardiuno Firmware Download / Burn</a> and choose the file name with IR)</p>
+<p><img src="../../img/tutorials/en/tutorial-24-06.jpg" alt=""></p>
+<p>First, place a &quot;Board&quot; block into the workspace, fill in the name of your Webduino board, and place an &quot;IR&quot; block inside the stack. Then set the name to &quot;irrecv&quot; and the pin to 10.</p>
+<p><img src="../../img/tutorials/en/tutorial-24-07.jpg" alt=""></p>
+<p>Place a &quot;start receiving / do&quot;, a &quot;show&quot;, and a &quot;receive code&quot; block, so we can show the values on screen.</p>
+<p><img src="../../img/tutorials/en/tutorial-24-08.jpg" alt=""></p>
+<p>If we are sending an infrared signal, use the &quot;IR send&quot; block, set to &quot;irled&quot;, and the pin to 9.</p>
+<p><img src="../../img/tutorials/en/tutorial-24-09.jpg" alt=""></p>
+<p>We can also use different buttons on screen to send different infrared signals. Using this method we could potentially create a webpage that works as a virtual remote control.</p>
+<p><img src="../../img/tutorials/en/tutorial-24-10.jpg" alt=""></p>
+<p>Check if the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;) and click on the red execution button &quot;Run Blocks&quot;. Then you can start to receive or send infrared signals! (Solution: <a href="https://blockly.webduino.io/?lang=en#-KZdeUiX6sp1qxVxHt4V">https://blockly.webduino.io/?lang=en#-KZdeUiX6sp1qxVxHt4V</a>)</p>
+<h2>Code Explanation (<a href="http://bin.webduino.io/jiguh/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>If we are using an infrared transmitter, there will only be a span inside the HTML code, to show the 3-axis accelerometer, and only because there is a span, we will need to use &quot;Create List&quot; block. (If you know how to write code, you could easily use 5 spans instead)</p>
+<pre><code>&lt;span id=&quot;demo-area-01-show&quot;&gt;123&lt;/span&gt;
+</code></pre><p>If you&#39;re using an infrared transmitter, HTML will just be the buttons.</p>
+<pre><code>&lt;button id=&quot;demo-area-05-btn1&quot; class=&quot;db5&quot;&gt;按鈕 1&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn2&quot; class=&quot;db5&quot;&gt;按鈕 2&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn3&quot; class=&quot;db5&quot;&gt;按鈕 3&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn4&quot; class=&quot;db5&quot;&gt;按鈕 4&lt;/button&gt;
+&lt;button id=&quot;demo-area-05-btn5&quot; class=&quot;db5&quot;&gt;按鈕 5&lt;/button&gt;
+</code></pre><p>The IR Recv used <code>on</code> in JavaScript, there&#39;s a function with a parameter, used to receive the signal value and by using <code>innerHTML</code> to sum with strings, we can use this value to display inside the span.</p>
+<pre><code>var irrecv;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  irrecv = getIRRecv(board, 10);
+  irrecv.on(function(val){
+    irrecv.onVal = val;
+    document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = irrecv.onVal;
+  },function(){});
+});
+</code></pre><p>As for the IR Send, it uses <code>send</code> to send signals, type in the message behind this and you can send them out.</p>
+<pre><code>var irled;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  irled = getIRLed(board, &quot;ffffffff&quot;);
+  document.getElementById(&quot;demo-area-05-btn1&quot;).addEventListener(&quot;click&quot;,function(){
+    irled.send(&quot;ffffffff&quot;);
+  });
+  document.getElementById(&quot;demo-area-05-btn2&quot;).addEventListener(&quot;click&quot;,function(){
+    irled.send(&quot;ffffffff&quot;);
+  });
+  document.getElementById(&quot;demo-area-05-btn3&quot;).addEventListener(&quot;click&quot;,function(){
+    irled.send(&quot;ffffffff&quot;);
+  });
+  document.getElementById(&quot;demo-area-05-btn4&quot;).addEventListener(&quot;click&quot;,function(){
+    irled.send(&quot;ffffffff&quot;);
+  });
+  document.getElementById(&quot;demo-area-05-btn5&quot;).addEventListener(&quot;click&quot;,function(){
+    irled.send(&quot;ffffffff&quot;);
+  });
+});
+</code></pre><p>This is how we control an infrared sensor to send and receive information.<br>Webduino Bin: <a href="http://bin.webduino.io/jiguh/edit?html,css,js,output">http://bin.webduino.io/jiguh/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KZdfQS23mis7qSo0vzQ">https://blockly.webduino.io/?lang=en#-KZdfQS23mis7qSo0vzQ</a></p>
+<!-- ## 紅外線發射與接收的延伸教學：
+
+[Webduino Blockly 課程 15-1：接收紅外線訊號](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-1#-K0qf8JH7bENOyJgc25r)  
+[Webduino Blockly 課程 15-2：接收紅外線訊號改變區域顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-2#-K0qhamTHkjMc9nZg4rc)  
+[Webduino Blockly 課程 15-3：紅外線遙控 youtube 播放](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/irrecv-3#-K0qllY_jNznqTDWliZ4) 
+
+<div class="buy-this">
+    <span>紅外線發射與接收相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div>  -->
+<!-- @@close-->
