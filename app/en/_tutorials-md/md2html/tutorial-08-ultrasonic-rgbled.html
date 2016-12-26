@@ -1,0 +1,118 @@
+<hr>
+<p>tag: tutorial
+src: tutorial-08-ultrasonic-rgbled.html
+title: Controlling RGB LEDs with an Ultrasonic Sensor
+banner: tutorial-08-01.jpg
+img: tutorial-08-01s.jpg</p>
+<h2>date: 20150425</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Project Example 8: Controlling RGB LEDs with an Ultrasonic Sensor :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="This project example should be a piece of cake after we learned how to control an LED with an Ultrasonic sensor in project example #7. This project uses an RGB LED to show different colors to represent the distance measured by the Ultrasonic sensor.">
+
+<meta itemprop="description" content="This project example should be a piece of cake after we learned how to control an LED with an Ultrasonic sensor in project example #7. This project uses an RGB LED to show different colors to represent the distance measured by the Ultrasonic sensor.">
+
+<meta property="og:description" content="This project example should be a piece of cake after we learned how to control an LED with an Ultrasonic sensor in project example #7. This project uses an RGB LED to show different colors to represent the distance measured by the Ultrasonic sensor.">
+
+<meta property="og:title" content="Project Example 8: Controlling RGB LEDs with an Ultrasonic Sensor" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-08-ultrasonic-rgbled.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-08-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-08-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Project Example 8: Controlling RGB LEDs with an Ultrasonic Sensor</h1>
+<p>This project example should be a piece of cake after we learned how to control an LED with an Ultrasonic sensor in project example #7. This project uses an RGB LED to show different colors to represent the distance measured by the Ultrasonic sensor.</p>
+<!-- <div class="buy-this">
+    <span>超音波傳感器與三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video Tutorial</h2>
+<!-- 影片對應範例：[https://blockly.webduino.io/?page=tutorials/ultrasonic-4](https://blockly.webduino.io/?page=tutorials/ultrasonic-4)  -->
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/8lDL6_2io1Y" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>It seems as if we could plug the Ultrasonic sensor and RGB LED directly into the Webduino board, but the RGB LED needs to use the PWM pin, so it cannot connect to pin 7 or 8. Therefore, we will use a breadboard and jumper wires to connect our components. Connect the VCC pin on the Ultrasonic sensor to VCC, Trig to pin 7, Echo to pin8, and GND to GND. As for the RGB LED, connect the VCC to 3.3v, R(red) to pin 10, B(blue) to pin 6, and G(green) to pin 9.</p>
+<p>Webduino Mark 1 Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-08-02.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>Webduino Fly Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-08-02-fly.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-08-03.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p><img src="../../img/tutorials/tutorial-08-04.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p><img src="../../img/tutorials/tutorial-08-05.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<!-- <div class="buy-this">
+    <span>超音波傳感器與三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Open the <a href="https://blockly.webduino.io/?lang=en">Webduino Blockly editor</a>. Click on &quot;Web Demo Area&quot; on the upper right hand corner and click &quot;Area Color&quot; from the drop-down menu. So later, when the Ultrasonic sensor measures different distances a color will show on screen and the RGB LED will also show the same color.</p>
+<p><img src="../../img/tutorials/en/tutorial-08-06.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>Place the &quot;Board&quot; block inside the editor and fill in the name of your Webduino board. Place an &quot;UltraSonic&quot; board in the stack and set the name to &quot;ultrasonic&quot;, set the Trig pin to 7, and Echo to 8. Then place an &quot;RGB LED&quot; block in the stack and set the name to rgbled, red to 10, green to 9 and blue to 6.</p>
+<p><img src="../../img/tutorials/en/tutorial-08-07.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>Place a &quot;get distance over every / do&quot; block in the stack and set to take measurements every 500 milliseconds, and place an &quot;if/do&quot; block from the &quot;Logic&quot; menu inside that. Since we will have many conditional statements when different distances are measured, place a couple of &quot;else if&quot; and &quot;else&quot; blocks inside that stack.</p>
+<p><img src="../../img/tutorials/en/tutorial-08-08.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>We will use another 2 &quot;logic&quot; blocks, the &quot;and&quot; block, which will only run when both conditions are met.</p>
+<p><img src="../../img/tutorials/en/tutorial-08-09.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>This way we can make four different combinations of ranges; &quot;0 to 10&quot;, &quot;10 to 20&quot;, &quot;20 to 30&quot;, and &quot;greater than 30&quot;.</p>
+<p><img src="../../img/tutorials/en/tutorial-08-10.jpg" alt="教學範例 8：超音波傳感器控制三色 LED 燈"></p>
+<p>After you are done setting up the stack, check if the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;), then click on the red execute button &quot;Run Blocks&quot;, wave your hand in front of the Ultrasonic sensor and you&#39;ll see the the Web Demo area and the RGB LED show different colors that correspond with the different distances of your hand! (Solution: <a href="https://blockly.webduino.io/?lang=en#-KZuAa5uJJaJa6y_0rrD">https://blockly.webduino.io/?lang=en#-KZuAa5uJJaJa6y_0rrD</a>)</p>
+<h2>Code Explanation (<a href="http://bin.webduino.io/noje/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a> )</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>The div inside of the HTML file displays the color on screen.</p>
+<pre><code>&lt;div id=&quot;demo-area-04-area&quot;&gt;&lt;/div&gt;
+</code></pre><p>The CSS code controls the size and default color of the div.</p>
+<pre><code>#demo-area-04-area {
+  width: 90%;
+  height: 150px;
+  background: #ccc;
+}
+</code></pre><p>Our JavaScript code uses a lot of <code>if</code>, <code>elseif</code>, and <code>else</code>, with &quot;and&quot; represented as <code>&amp;&amp;</code>. Using these conditional statements we show different colors at different distances.</p>
+<pre><code>var ultrasonic;
+var rgbled;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  ultrasonic = getUltrasonic(board, 7, 8);
+  rgbled = getRGBLed(board, 10, 9, 6);
+  ultrasonic.ping(function(cm){
+    console.log(ultrasonic.distance);
+    if (ultrasonic.distance &gt; 0 &amp;&amp; ultrasonic.distance &lt;= 10) {
+      rgbled.setColor(&#39;#ff0000&#39;);
+      document.getElementById(&quot;demo-area-04-area&quot;).style.background = &#39;#ff0000&#39;;
+    } else if (ultrasonic.distance &gt; 10 &amp;&amp; ultrasonic.distance &lt;= 20) {
+      rgbled.setColor(&#39;#3333ff&#39;);
+      document.getElementById(&quot;demo-area-04-area&quot;).style.background = &#39;#3333ff&#39;;
+    } else if (ultrasonic.distance &gt; 20 &amp;&amp; ultrasonic.distance &lt;= 30) {
+      rgbled.setColor(&#39;#ffcc33&#39;);
+      document.getElementById(&quot;demo-area-04-area&quot;).style.background = &#39;#ffcc33&#39;;
+    } else {
+      rgbled.setColor(&#39;#000000&#39;);
+      document.getElementById(&quot;demo-area-04-area&quot;).style.background = &#39;#000000&#39;;
+    }
+  }, 500);
+});
+</code></pre><p>Now you&#39;ve learned how to use an Ultrasonic sensor to measure the distance and to display a color on your screen and with an RGB LED.<br>Webduino Bin: <a href="http://bin.webduino.io/noje/edit?html,css,js,output">http://bin.webduino.io/noje/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KZuAa5uJJaJa6y_0rrD">https://blockly.webduino.io/?lang=en#-KZuAa5uJJaJa6y_0rrD</a></p>
+<!-- ## 超音波傳感器的延伸教學：
+
+[Webduino Blockly 課程 3-4：超音波傳感器控制三色 LED 燈顏色](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-4#-JvS1HjBSLU7wbtmLxKB)  
+[Webduino Blockly 課程 3-6：超音波傳感器控制 Youtube 播放速度](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-6#-JxEs_Z0dmBi0nu3Pylw)  
+[Webduino Blockly 課程 3-5：超音波傳感器控制 youtube 的音量](https://blockly.webduino.io/?lang=zh-hant&page=tutorials/ultrasonic-5#-JwgqGd0PtGFPC8GNcfY) 
+
+<div class="buy-this">
+    <span>超音波傳感器與三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<!-- @@close-->

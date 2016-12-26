@@ -57,7 +57,7 @@ Check the video tutorial here:
 
 The L9110S Dual Channel Motor Driver Module has two sides. One side has four ports where you can connect wires with a screwdriver. They are labeled "MOTOR A" and "MOTOR B" on top, and each is connected to a motor. The other side has 6 pins, you will need some jumper wires (female to male) to connect them to the Webduino board. GND connects to GND, VCC to VCC (or 5V), MOTOR A to A-B and A-IA, and MOTOR B to B-B and B-IA.
 
-![](../../img/tutorials/tutorial-30-02.jpg)
+![](../../img/tutorials/en/tutorial-30-02.jpg)
 
 ## Reference image
 

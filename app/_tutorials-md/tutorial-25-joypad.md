@@ -116,7 +116,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-如果是用紅外線接收器，HTML 裏頭只有一個 span，用來顯示三軸加速度計的數值，也因為只有一個 span，我們才需要使用「建立字串」的積木 ( 如果會寫程式，這部分也可以用五個 span 來取代 )。
+我們使用一個 span 來顯示搖桿回傳的數值。
 
 	<span id="demo-area-01-show">123</span>
 

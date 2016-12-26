@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../../img/layout/favicon.ico" type="image/x-icon">
+
+<title>Project Example 25: Detecting a joystick :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="A joystick is an integral part of many video games. It sends three signals, left / right, front / back, and when it is pressed. We can use the Webduino to detect signals coming from a joystick and use it to control cars, robots, or other devices, creating many interesting applications.">
+
+<meta itemprop="description" content="A joystick is an integral part of many video games. It sends three signals, left / right, front / back, and when it is pressed. We can use the Webduino to detect signals coming from a joystick and use it to control cars, robots, or other devices, creating many interesting applications.">
+
+<meta property="og:description" content="A joystick is an integral part of many video games. It sends three signals, left / right, front / back, and when it is pressed. We can use the Webduino to detect signals coming from a joystick and use it to control cars, robots, or other devices, creating many interesting applications.">
+
+<meta property="og:title" content="Project Example 25: Detecting a joystick" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/tutorial-25-joypad.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-25-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-25-01s.jpg">
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="../../js/lib/jquery.lazyload.min.js"></script>
+<script src="../../js/lib/run_prettify.js"></script>
+<script src="../../js/layout.js"></script>
+<script src="../../js/tutorials-en.js"></script>
+<script src="../../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../../style/css/layout.css">
+<link rel="stylesheet" href="../../style/css/sub-header.css">
+<link rel="stylesheet" href="../../style/css/tutorials-content.css">
+<link rel="stylesheet" href="../../style/css/tutorials-en-content.css">
+<link rel="stylesheet" href="../../style/css/lib/font-awesome.css">
+<style>
+.tutorials-content p{
+	word-wrap:normal;
+	word-break:normal;
+}
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html" data-name="layout-header-logo"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index" data-name="layout-mobile-menu">Home</a>
+			<a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-mobile-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+			<a href="../index.html" class="about" data-name="layout-mobile-men">中文</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index" data-name="layout-menu">Home</a>
+			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+			<a href="../../index.html" class="about" data-name="layout-mobile-men">中文</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>Project Example 25: Detecting a joystick</h1>
+<p>A joystick is an integral part of many video games. It sends three signals, left / right, front / back, and when it is pressed. We can use the Webduino to detect signals coming from a joystick and use it to control cars, robots, or other devices, creating many interesting applications.</p>
+<!-- <div class="buy-this">
+    <span>搖桿相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Video Tutorial</h2>
+<p>Check the video tutorial here:
+<iframe class="youtube" src="https://www.youtube.com/embed/CwWwQmuvL28" frameborder="0" allowfullscreen></iframe></p>
+<h2>Wiring and Practice</h2>
+<p>A joystick has 5 pins, GND, 5V, VRx, VRy, and SW. VRx and VRy are analog pins, connect them to A4 and A5. Think of SW as a button. So, when it&#39;s connected to GND and 5V it will need a resistor to prevent shorting the circuit when the joystick is pressed. We are restricted to the circuit design of the joystick itself, so we need to use a pull-up resistor. Connect both the resistor and the signal source to 5V.</p>
+<p>Circuit diagram:</p>
+<p><img src="../../img/tutorials/tutorial-25-02.jpg" alt=""></p>
+<p>Reference image:</p>
+<p><img src="../../img/tutorials/tutorial-25-03.jpg" alt=""></p>
+<p><img src="../../img/tutorials/tutorial-25-04.jpg" alt=""></p>
+<p><img src="../../img/tutorials/tutorial-25-05.jpg" alt=""></p>
+<p><img src="../../img/tutorials/tutorial-25-06.jpg" alt=""></p>
+<!-- <div class="buy-this">
+    <span>搖桿相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Open the <a href="https://blockly.webduino.io/index.html?lang=en">Webduino Blockly editor</a>, click on &quot;Web Demo Area&quot; button on the upper-right hand side, and choose &quot;Show Text&quot; from the drop-down menu. Don’t forget to burn the firmware for the joystick first! ( Check out the tutorial: <a href="info-07-arduino-ino.html">Arduino Firmware Download / Burn</a> and choose the file with &quot;joypad&quot; )</p>
+<p><img src="../../img/tutorials/en/tutorial-25-07.jpg" alt=""></p>
+<p>Place a &quot;Board&quot; inside the workspace and fill in the name of your Webduino board. Place a &quot;Set Joystick to&quot; block inside the stack and set the name to joystick, pin X to A4, Y to A5, and SW to 10.</p>
+<p><img src="../../img/tutorials/en/tutorial-25-08.jpg" alt=""></p>
+<p>Place &quot;Start detecting&quot; and &quot;Show&quot; blocks in the stack, so when we are using the joystick, the values will show in the window.</p>
+<p><img src="../../img/tutorials/en/tutorial-25-09.jpg" alt=""></p>
+<p>Because the joystick returns 3 values (X, Y, SW) but there is only one slot for &quot;Show&quot;, <strong>use a &quot;Create List&quot; block</strong>. Click on the blue gear icon and create 3 slots, so we can show all 3 values at once.</p>
+<p><img src="../../img/tutorials/en/tutorial-25-10.jpg" alt=""></p>
+<p>We also need to show what the values mean, so create a second level of &quot;Create List&quot; blocks set into the first. Add the names of the Joystick values, and choose what values will be received from the drop-down menu.You can also set the text size by adding &quot;Text Size&quot;, we will set it to 20 in this example.</p>
+<p><img src="../../img/tutorials/en/tutorial-25-11.jpg" alt=""></p>
+<p>After you are done setting up the stack, check if the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;) and click on the red execution button &quot;Run Blocks&quot;, move or press the joystick and you will see the values change.
+(Solution: <a href="https://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8">https://blockly.webduino.io/#-KB6z6vqt9sXTYqd7CN8</a> )</p>
+<p><img src="../../img/tutorials/en/tutorial-25-12.jpg" alt=""></p>
+<p>If you don&#39;t like having a lot of numbers after the decimal point, we can also use the &quot;Math Conversion&quot; block in &quot;Advanced&quot; menu, so the numbers will round up to the first decimal point.</p>
+<p><img src="../../img/tutorials/en/tutorial-25-13.jpg" alt=""></p>
+<p>After you are done setting up the stack, check if the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;) and also click on &quot;Run Blocks&quot;, turn or press the joystick and you will see the values change. (Solution: <a href="https://blockly.webduino.io/?lang=en#-KZu4LTKyfrsNVBeMwsG">https://blockly.webduino.io/?lang=en#-KZu4LTKyfrsNVBeMwsG</a>)</p>
+<h2>Code Explanation (<a href="http://bin.webduino.io/wifak/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>We use a span to display the values returned from the joystick.</p>
+<pre><code>&lt;span id=&quot;demo-area-01-show&quot;&gt;123&lt;/span&gt;
+</code></pre><p>The Joystick in JavaScript uses <code>on</code> where there is a function with three parameters, these three parameters are the joystick’s X, Y and SW values, using <code>innerHTML</code> to add with the strings, we can use these values to display inside the span.</p>
+<pre><code>var joystick;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  joystick = getJoystick(board, 4, 5, 10);
+  document.getElementById(&quot;demo-area-01-show&quot;).style.fontSize = 20+&quot;px&quot;;
+  joystick.on(&quot;message&quot;,_read_);
+  function _read_(_x, _y, _z){
+    joystick._x = _x;
+    joystick._y = _y;
+    joystick._z = _z;
+    document.getElementById(&quot;demo-area-01-show&quot;).innerHTML = ([String(&#39;X=&#39;) + String((Math.round((joystick._x)*10))/10),String(&#39;, Y=&#39;) + String((Math.round((joystick._y)*10))/10),String(&#39;, SW=&#39;) + String((Math.round((joystick._z)*10))/10)].join(&#39;&#39;));
+  }
+});
+</code></pre><p>Now you know how to detecting a joystick!<br>Webduino Bin: <a href="http://bin.webduino.io/wifak/edit?html,css,js,output">http://bin.webduino.io/wifak/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KZu4LTKyfrsNVBeMwsG">https://blockly.webduino.io/?lang=en#-KZu4LTKyfrsNVBeMwsG</a></p>
+<!-- <div class="buy-this">
+    <span>搖桿相關套件：<a href="https://webduino.io/buy/webduino-expansion-p.html" target="_blank">Webduino 擴充套件 P ( 支援 Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+
+
+<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
+<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>
+<div class="pre-next">
+  <div>
+    <div class="pre"></div>
+    <div class="next"></div>
+  </div>
+</div>
+<div class="note-chicken"></div>
+<div class="others">
+  <i class="fa fa-times note-close-btn"></i>
+  <h5>More information : </h5>
+  <div class="others-link otehrs-read">
+    1. Tutorials : <a href="https://webduino.io/en/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a>
+    <br/> 2. Blockly : <a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>
+    <br/> 3. Products : <a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a>
+    <br/> 4. Store : <a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html" data-name="layout-footer-logo"><i></i></a>
+			<a href="../index.html" data-name="layout-footer-logo"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>1F., No.20, Fuxing 4th Rd., Qianzhen Dist., Kaohsiung City 806, Taiwan (R.O.C.) / 886-7-3388511</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<hr>
+<p>tag: info
+src: info-09-multi-webduino-board.html
+title: Interaction with Multiple Webduino Boards
+banner: info-09-01.jpg
+img: info-09-01s.jpg</p>
+<h2>date: 20160120</h2>
+<!-- @@master  = ../../_layout.html-->
+<!-- @@block  =  meta-->
+<title>Interaction with Multiple Webduino Boards :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="It is really simple to interact with multiple Webduino boards. In the Web programming logic, Webduino boards can be seen as “functions”, and the components or sensors can be seen as “variables”. So when the boards go online, all the functions will be executed,
+You will need to use Webduino Blockly to do the exercises:">
+
+<meta itemprop="description" content="It is really simple to interact with multiple Webduino boards. In the Web programming logic, Webduino boards can be seen as “functions”, and the components or sensors can be seen as “variables”. So when the boards go online, all the functions will be executed,
+You will need to use Webduino Blockly to do the exercises:">
+
+<meta property="og:description" content="It is really simple to interact with multiple Webduino boards. In the Web programming logic, Webduino boards can be seen as “functions”, and the components or sensors can be seen as “variables”. So when the boards go online, all the functions will be executed,
+You will need to use Webduino Blockly to do the exercises:">
+
+<meta property="og:title" content="Interaction with Multiple Webduino Boards" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/info-09-multi-webduino-board.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/info-09-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/info-09-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  preAndNext-->
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+<!-- @@block  =  tutorials-->
+<h1>Interaction with Multiple Webduino Boards</h1>
+<p>It is really simple to interact with multiple Webduino boards. In the Web programming logic, Webduino boards can be seen as &quot;functions&quot;, and the components or sensors can be seen as &quot;variables&quot;. So when the boards go online, all the functions will be executed,
+You will need to use <a href="https://blockly.webduino.io/?lang=en">Webduino Blockly Editor</a> to do the exercises.</p>
+<p>In this tutorial, you will be using an LED and an Ultrasonic sensor. If you want to learn more about their applications, check out the tutorials:</p>
+<p>1) <a href="tutorial-01-led.html">Project Example 1: Project Example 1: Control a Single LED</a><br>2) <a href="tutorial-05-ultrasonic.html">Project Example 5: Project Example 5: Use An Ultrasonic Sensor</a></p>
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>First, place the &quot;Board&quot; blocks in the workspace, and mark the &quot;<strong>Series</strong>&quot; checkboxes  on the boards that you want to be connected.</p>
+<p><img src="../../img/tutorials/en/info-09-02.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>Place LED blocks in each stack, and rename them. Make sure to differentiate their names, since they are different items.</p>
+<p><img src="../../img/tutorials/en/info-09-03.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>Add a &quot;<strong>When in a series circuit, do</strong>&quot; block to the workspace. Place all of the events within the slot of this block. This is to make sure that all of the events execute after the boards go online.</p>
+<p><img src="../../img/tutorials/en/info-09-04.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>To make the LEDs blink add &quot;LED set state&quot; blocks and &quot;Delay # seconds&quot; blocks to the stack.</p>
+<p><img src="../../img/tutorials/en/info-09-05.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>When you&#39;ve done all the previous steps, check if the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;) and click on the red execution button &quot;Run Blocks&quot;. You will see the two LEDs blinking. (Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KZuPowxRuAFQd9EmjeR">https://blockly.webduino.io/?lang=en#-KZuPowxRuAFQd9EmjeR</a>).</p>
+<p><img src="../../img/tutorials/en/info-09-06.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>You can also make LED interact with ultrasonic sensor, just connect one of the boards to an ultrasonic sensor. Here we connect board B to an ultrasonic sensor. The distance detected by the ultrasonic sensor on board B will control the LED on board A.</p>
+<p><img src="../../img/tutorials/en/info-09-07.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>Then create an event within a &quot;When in a series circuit, do&quot; board. Set up a stack so that when the sensor detects a distance less than 10 centimeters the LED will turn off.</p>
+<p><img src="../../img/tutorials/en/info-09-08.jpg" alt="連動多塊 Webduino 開發板"></p>
+<p>Again, check if the board is online (click &quot;<a href="https://webduino.io/device.html">Check Device Status</a>&quot;) and click on the red execution button &quot;Run Blocks&quot;. You will see the LED light up when there is an obstacle in front of ultrasonic sensor! (Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KZuJMsjp5KPXiJBlG6m">https://blockly.webduino.io/?lang=en#-KZuJMsjp5KPXiJBlG6m</a>).</p>
+<!-- @@close-->

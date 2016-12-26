@@ -63,7 +63,7 @@ date: 20161005
 
 ![](../img/tutorials/smart-04-04.jpg) 
 
-點選右上方紅色按鈕執行，如此一來我們在網頁互動測試區裡點選不同的按鈕，就會出現不同的顏色。
+點選右上方紅色按鈕執行，如此一來我們的三色LED燈就會不停地切換顏色，如躍動一般。
 ( 解答：[http://blockly.webduino.io/#-KTJIVWlkFrf9b_bGdmI](http://blockly.webduino.io/#-KTJIVWlkFrf9b_bGdmI) )
 
 ![](../img/tutorials/smart-03-05.gif)

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../../img/layout/favicon.ico" type="image/x-icon">
+
+<title>Using a Button Switch for Playing Youtube Videos :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="In the previous tutorial, we learned the basic functions of the button switch with Webduino Smart. In this tutorial, we are going to learn an advanced application for the button switch, playing Youtube videos.">
+
+<meta itemprop="description" content="In the previous tutorial, we learned the basic functions of the button switch with Webduino Smart. In this tutorial, we are going to learn an advanced application for the button switch, playing Youtube videos.">
+
+<meta property="og:description" content="In the previous tutorial, we learned the basic functions of the button switch with Webduino Smart. In this tutorial, we are going to learn an advanced application for the button switch, playing Youtube videos.">
+
+<meta property="og:title" content="Using a Button Switch for Playing Youtube Videos" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/smart-07-button-youtube.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/smart-07-button-youtube-s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/smart-07-button-youtube-s.jpg">
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="../../js/lib/jquery.lazyload.min.js"></script>
+<script src="../../js/lib/run_prettify.js"></script>
+<script src="../../js/layout.js"></script>
+<script src="../../js/tutorials-en.js"></script>
+<script src="../../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../../style/css/layout.css">
+<link rel="stylesheet" href="../../style/css/sub-header.css">
+<link rel="stylesheet" href="../../style/css/tutorials-content.css">
+<link rel="stylesheet" href="../../style/css/tutorials-en-content.css">
+<link rel="stylesheet" href="../../style/css/lib/font-awesome.css">
+<style>
+.tutorials-content p{
+	word-wrap:normal;
+	word-break:normal;
+}
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html" data-name="layout-header-logo"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index" data-name="layout-mobile-menu">Home</a>
+			<a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-mobile-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+			<a href="../index.html" class="about" data-name="layout-mobile-men">中文</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index" data-name="layout-menu">Home</a>
+			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">Tutorials</a>
+			<a href="https://webduino.io/buy.html" target="_blank" class="buy" data-name="layout-menu">Buy</a>
+			<a data-name="layout-mobile-menu" href="https://www.facebook.com/webduino/info?tab=overview" target="_blank">Facebook</a>
+			<a href="../../index.html" class="about" data-name="layout-mobile-men">中文</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>Using a Button Switch for Playing Youtube Videos</h1>
+<p>In the previous tutorial, we learned the basic functions of the button switch with Webduino Smart. In this tutorial, we are going to learn an advanced application for the button switch, playing Youtube videos.</p>
+<!-- <div class="buy-this">
+    <span>按鈕開關相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Open the <a href="https://blockly.webduino.io/index.html?lang=en">Webduino Blockly editor</a>. First, place a &quot;Board&quot; block onto the workspace, choose WebSocket in the drop-down list, and fill in the IP address of your board. <strong>Remember to use the &quot;http&quot; protocol when you are using WebSocket, not &quot;https&quot;.</strong></p>
+<p>Add a &quot;Button switch&quot; block to the stack and set the pin to 4. Because the button switch on the Smart is a &quot;pull-up&quot; button switch, use the &quot;Pull-up button switch&quot; block.</p>
+<p><img src="../../img/tutorials/en/smart-07-02.jpg" alt=""></p>
+<p>Since we will need to import a Youtube video, add the &quot;Set youtube&quot; block from the &quot;Web Demo&quot; menu into the stack.  </p>
+<p><img src="../../img/tutorials/en/smart-07-03.jpg" alt=""></p>
+<p>To import the video, we need to know its ID. Open a Youtube video, and copy the text after &quot;?v=&quot;, this is the video&#39;s ID. The &quot;?v=&quot; should not be included in the ID.</p>
+<p><img src="../../img/tutorials/smart-07-04.jpg" alt=""> </p>
+<p>Paste the ID into the ID box in the Youtube block.</p>
+<p><img src="../../img/tutorials/en/smart-07-05.jpg" alt=""></p>
+<p>Add two &quot;When button&quot; blocks in the stack. We only need to set up two different situations, one is for when the button is &quot;pressed&quot;, and the other is when it is &quot;long pressed&quot;.</p>
+<p><img src="../../img/tutorials/en/smart-07-06.jpg" alt=""></p>
+<p>To create a logic process, add &quot;Set youtube status&quot; and &quot;Youtube status&quot; blocks to the stack.</p>
+<p><img src="../../img/tutorials/en/smart-07-07.jpg" alt=""></p>
+<p>It is a simple logic process; when the button is pressed, the video will play if it is not playing. And it will pause if the video if it is playing.</p>
+<p><img src="../../img/tutorials/en/smart-07-08.jpg" alt=""></p>
+<p>Open the Web Demo Area, and choose Youtube in the drop-down list. Click the red &quot;Run Blocks&quot; button to run the stack, and you will see the Youtube video imported and start to play. Then you can control the video by pressing the button. (Check your stack setup with this example here: <a href="http://blockly.webduino.io/?lang=en&amp;tags=smart#-KZtiB8OL4LxIj6wSLoP">http://blockly.webduino.io/?lang=en&amp;tags=smart#-KZtiB8OL4LxIj6wSLoP</a>)</p>
+<p><img src="../../img/tutorials/en/smart-07-09.jpg" alt="">
+<img src="../../img/tutorials/en/smart-07-10.jpg" alt=""></p>
+<p><br/></p>
+<h2>Instructions for using the Webduino Blockly</h2>
+<p>Include <code>webduino-all.min.js</code> in the header of HTML. The purpose is to allow the browser to support all the components of Web Components and Webduino. If the JavaScript is created by Blockly editing tools, <code>webduino-blockly.js</code> should be included.</p>
+<pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>First of all, in HTML, we use a div with id=&quot;youtube&quot; as the placeholder for the video that we will embed later on.</p>
+<pre><code>&lt;div id=&quot;player&quot;&gt;&lt;/div&gt;
+</code></pre><p>JavaScript codes starting with <code>boardReady</code> are basically the same, so we will start with the key parts that can be divided into sections.</p>
+<p>In the first section, we load the Youtube module with the official JavaScript API, including parameters for width, height, autoPlay, and player control. The <code>events</code> object handles which video to play when the module is ready (with function <code>onReady()</code>), or what we want to do when the player&#39;s state is changed. (with function <code>onPlayerStateChange()</code>)</p>
+<pre><code>var youtubePlay, youtubeStop, youtubePause;
+await new Promise(function (resolve) {
+  var tag = document.createElement(&quot;script&quot;);
+  tag.src = &quot;https://www.youtube.com/iframe_api&quot;;
+  var scptTag = document.getElementsByTagName(&quot;script&quot;)[0];
+  scptTag.parentNode.insertBefore(tag, scptTag);
+  window.onYouTubeIframeAPIReady = function () {
+    youtube = new YT.Player(&quot;player&quot;, {
+      height: &quot;240&quot;,
+      width: &quot;96%&quot;,
+      playerVars: {
+        autoplay: 1,
+        controls: 1
+      },
+      events: {
+        onReady: function (evt) {
+          youtube.loadVideoById({
+            videoId:&quot;UKcTJeXjOmw&quot;
+          });
+          resolve();
+        },
+        onStateChange: onPlayerStateChange
+      }
+    });
+  };
+});
+
+function onPlayerStateChange(event) {
+  if(event.data == youtubeStop) {
+    youtubeStopCallback();
+  }else if(event.data == youtubePlay){
+    youtubePlayCallback();
+  }else if(event.data == youtubePause){
+    youtubePauseCallback();
+  }
+};
+</code></pre><p>When a button is pressed, video will react the corresponding event, which is set in the <code>youtube.getPlayerState()</code>.</p>
+<pre><code>button.on(&quot;pressed&quot;, async function(){
+  console.log(&quot;pressed&quot;);
+    if (youtube.getPlayerState() == 1) {
+    youtube.pauseVideo();
+  } else {
+    youtube.playVideo();
+  }
+
+});
+button.on(&quot;longPress&quot;, async function(){
+  console.log(&quot;longPress&quot;);
+    youtube.seekTo(0);
+  youtube.stopVideo();
+
+});
+</code></pre><p>This is for playing Youtube video with a micro button switch of Webduino Smart. 
+Webduino Bin: <a href="http://bin.webduino.io/cute/edit?html,js,output">http://bin.webduino.io/cute/edit?html,js,output</a>
+Stack Setup: <a href="http://blockly.webduino.io/?lang=en&amp;tags=smart#-KZtjXkX58sVSg4PhI9Q">http://blockly.webduino.io/?lang=en&amp;tags=smart#-KZtjXkX58sVSg4PhI9Q</a></p>
+<!-- <div class="buy-this">
+    <span>按鈕開關相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+</div> -->
+
+
+<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
+<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>
+<div class="pre-next">
+  <div>
+    <div class="pre"></div>
+    <div class="next"></div>
+  </div>
+</div>
+<div class="note-chicken"></div>
+<div class="others">
+  <i class="fa fa-times note-close-btn"></i>
+  <h5>More information : </h5>
+  <div class="others-link otehrs-read">
+    1. Tutorials : <a href="https://webduino.io/en/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a>
+    <br/> 2. Blockly : <a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>
+    <br/> 3. Products : <a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a>
+    <br/> 4. Store : <a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html" data-name="layout-footer-logo"><i></i></a>
+			<a href="../index.html" data-name="layout-footer-logo"><i></i></a>
+  	</div>
+  	<h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>1F., No.20, Fuxing 4th Rd., Qianzhen Dist., Kaohsiung City 806, Taiwan (R.O.C.) / 886-7-3388511</h4>
+	</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

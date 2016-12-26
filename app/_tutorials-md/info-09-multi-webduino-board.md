@@ -13,11 +13,11 @@ date: 20160120
 
 <title>連動多塊 Webduino 開發板 :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。">
+<meta name="description" content="Webduino 的開發板，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。">
 
-<meta itemprop="description" content="Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。">
+<meta itemprop="description" content="Webduino 的開發板，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。">
 
-<meta property="og:description" content="Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。">
+<meta property="og:description" content="Webduino 的開發板，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。">
 
 <meta property="og:title" content="連動多塊 Webduino 開發板" >
 
@@ -42,7 +42,7 @@ date: 20160120
 <!-- @@block  =  tutorials-->
 # 連動多塊 Webduino 開發板
 
-Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。
+Webduino 的開發板，以 Web 的思維來看的話，可看作是一段函式，當開發板上線之後就會進行 ready 的行為，而各個電子零件或是傳感器在程式碼內也都化作「變數」，所以我們就可以透過很簡單的判斷與控制，確認各個開發板是否上線，並進一步讓各個開發板與電子零組件彼此連動。
 
 以下將會使用 Webduino Blockly 來進行操作，操作網址：[https://blockly.webduino.io/](https://blockly.webduino.io/)。
 
@@ -67,11 +67,11 @@ Webduino 的開發板 ( 馬克 1 號或 Webduino Fly )，以 Web 的思維來看
 
 ![連動多塊 Webduino 開發板](../img/tutorials/info-09-04.jpg)
 
-這裏我們使用「狀態切換」的積木，就可以控制兩塊板子上面的 LED 燈閃爍，這個閃爍會遵照我們的設定進行。
+這裏我們使用「等待」的積木，就可以控制兩塊板子上面的 LED 燈閃爍，這個閃爍會遵照我們的設定進行。
 
 ![連動多塊 Webduino 開發板](../img/tutorials/info-09-05.jpg)
 
-完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到兩塊板子的 LED 開始閃爍 ( 解答：[https://blockly.webduino.io/#-K8T4D5zQG4k89bumBM6](https://blockly.webduino.io/#-K8T4D5zQG4k89bumBM6) )。
+完成後，確認開發板上線 ( 點選「[檢查連線狀態](https://webduino.io/device.html)」查詢 )，點選紅色的執行按鈕，就可以看到兩塊板子的 LED 開始閃爍 ( 解答：[https://blockly.webduino.io/?lang=zh-hant#-KZuPXpI9OQ8M_hlJPxM](https://blockly.webduino.io/?lang=zh-hant#-KZuPXpI9OQ8M_hlJPxM) )。
 
 ![連動多塊 Webduino 開發板](../img/tutorials/info-09-06.jpg)
 
