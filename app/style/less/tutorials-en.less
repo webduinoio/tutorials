@@ -233,51 +233,50 @@
 }
 
 @media (max-width: 800px) {
-	.filter{
-		top:50px;
-		border:none;
-		padding-top:10px;
+	.filter {
+    position: relative;
+    top: 50px;
+    border: none;
+    padding-top: 10px;
     box-shadow: rgba(0, 0, 0, .2) 0 2px 20px;
-  	height: 100px;
-		div{
-			margin:0 -3px;
-			border:none;
-			width:30%;
-			font-size:16px;
-		}
-		&.scroll{
- 			 height: 100px;
-			top:50px;
-			border:none;
-			padding-top:10px;
-			div{
-    		height: 40px;
-    		line-height: 40px;
-				margin:0 -3px;
-				border:none;
-				font-size:16px;
-			}
-		}
-	}
+    height: 140px;
+    a {
+      margin: 0 -3px;
+      border: none;
+      width: 30%;
+      font-size: 16px;
+    }
+    &.scroll {
+      height: 140px;
+      top: 50px;
+      a {
+        padding: 0 20px;
+        margin: 0 -3px;
+        border: none;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
   .content {
-    margin-top: 180px;
+    margin-top: 60px;
   }
 }
 
 @media (max-width: 500px) {
-	.filter{
-  	height: 140px;
-  	position:absolute;
-  	&.scroll{
-  		height: 140px;
-  	}
-		a{
-			padding:0;
-			width:40%;
-		}
-	}
+	.filter {
+    height: 180px;
+    position: absolute;
+    a{
+      width: 45%;
+    }
+    &.scroll {
+      height: 180px;
+    }
+  }
   .content {
-    margin-top: 210px;
+    margin-top: 240px;
     >div {
       width: 100%;
     }
