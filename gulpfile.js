@@ -110,7 +110,14 @@ gulp.task('extendEN',function () {
               path.basename = "about";
           }))
           .pipe(gulp.dest('app/en'));
+  var b3 = gulp.src('app/en/_buy.html')
+          .pipe(extender({annotations:false,verbose:false}))
+          .pipe(rename(function (path) {
+              path.basename = "buy";
+          }))
+          .pipe(gulp.dest('app/en'));
   return merge(b1, b2);
+
 });
 
 
@@ -146,7 +153,8 @@ gulp.task('include-final',['extend','copy-css'],function(){
 
 var contentInjectENHtml = [
   'app/en/tutorials.html',
-  'app/en/about.html'
+  'app/en/about.html',
+  'app/en/buy.html'
 ];
 gulp.task('include-en',['extendEN'],function(){
   return gulp.src(contentInjectENHtml)
@@ -330,7 +338,7 @@ gulp.task('watch',function(){
     'app/_tutorials.html',
     'app/_activity.html',
     'app/_about.html'],['include']);
-  gulp.watch(['app/en/_tutorials.html','app/en/_about.html'],['include-en']);
+  gulp.watch(['app/en/_tutorials.html','app/en/_about.html','app/en/_buy.html'],['include-en']);
 	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include']);
   gulp.watch('app/en/_layout.html',['indexEN','include-en']);
 });
@@ -396,7 +404,8 @@ gulp.task('move',['build-clean'],function(){
       b3 = gulp.src([
               'app/en/index.html',
               'app/en/tutorials.html',
-              'app/en/about.html'])
+              'app/en/about.html',
+              'app/en/buy.html'])
             .pipe(minifyHTML(opts))
             .pipe(gulp.dest('build/en'));
   return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, b1, b2, b3);
