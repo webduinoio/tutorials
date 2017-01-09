@@ -290,18 +290,18 @@ gulp.task('buy-clean',function(){
 });
 
 gulp.task('buy-include',['buy-clean'], function () {
-  return gulp.src(['app/_buy-content/*.html','!app/en/_buy-content/_public.html'])
+  return gulp.src(['app/_buy-content/*.html','!app/_buy-content/_public.html'])
   .pipe(extender({annotations:false,verbose:false}))
   .pipe(include())
   .pipe(gulp.dest('app/buy'));
 });
 
 /*en-buy*/
-gulp.task('buy-clean',function(){ 
+gulp.task('buy-en-clean',function(){ 
   return gulp.src(['app/en/buy/**/*'], {read: true}).pipe(clean());
 });
 
-gulp.task('buy-include',['buy-clean'], function () {
+gulp.task('buy-en-include',['buy-en-clean'], function () {
   return gulp.src(['app/en/_buy-content/*.html','!app/en/_buy-content/_public.html'])
   .pipe(extender({annotations:false,verbose:false}))
   .pipe(include())
@@ -350,7 +350,7 @@ gulp.task('watch',function(){
     'app/_tutorials.html',
     'app/_activity.html',
     'app/_about.html'],['include']);
-  gulp.watch(['app/en/_buy-content/*.html','en/_include-buy.html'],['buy-include']);
+  gulp.watch(['app/en/_buy-content/*.html','en/_include-buy.html'],['buy-en-include']);
   gulp.watch(['app/en/_tutorials.html','app/en/_about.html','app/en/_buy.html'],['include-en']);
 	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include']);
   gulp.watch('app/en/_layout.html',['indexEN','include-en']);
