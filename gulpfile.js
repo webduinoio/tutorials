@@ -116,7 +116,7 @@ gulp.task('extendEN',function () {
               path.basename = "buy";
           }))
           .pipe(gulp.dest('app/en'));
-  return merge(b1, b2);
+  return merge(b1, b2, b3);
 
 });
 
@@ -290,10 +290,22 @@ gulp.task('buy-clean',function(){
 });
 
 gulp.task('buy-include',['buy-clean'], function () {
-  return gulp.src(['app/_buy-content/*.html','!app/_buy-content/_public.html'])
+  return gulp.src(['app/_buy-content/*.html','!app/en/_buy-content/_public.html'])
   .pipe(extender({annotations:false,verbose:false}))
   .pipe(include())
   .pipe(gulp.dest('app/buy'));
+});
+
+/*en-buy*/
+gulp.task('buy-clean',function(){ 
+  return gulp.src(['app/en/buy/**/*'], {read: true}).pipe(clean());
+});
+
+gulp.task('buy-include',['buy-clean'], function () {
+  return gulp.src(['app/en/_buy-content/*.html','!app/en/_buy-content/_public.html'])
+  .pipe(extender({annotations:false,verbose:false}))
+  .pipe(include())
+  .pipe(gulp.dest('app/en/buy'));
 });
 
 /*                               o8o      .             
@@ -338,6 +350,7 @@ gulp.task('watch',function(){
     'app/_tutorials.html',
     'app/_activity.html',
     'app/_about.html'],['include']);
+  gulp.watch(['app/en/_buy-content/*.html','en/_include-buy.html'],['buy-include']);
   gulp.watch(['app/en/_tutorials.html','app/en/_about.html','app/en/_buy.html'],['include-en']);
 	gulp.watch('app/_layout.html',['index','include','tutorials-include','buy-include']);
   gulp.watch('app/en/_layout.html',['indexEN','include-en']);
@@ -401,14 +414,17 @@ gulp.task('move',['build-clean'],function(){
       b2 = gulp.src('app/en/tutorials/*.html')
             .pipe(minifyHTML(opts))
             .pipe(gulp.dest('build/en/tutorials')),
-      b3 = gulp.src([
+      b3 = gulp.src('app/en/buy/*')
+            .pipe(minifyHTML(opts))
+            .pipe(gulp.dest('build/en/buy')),
+      b4 = gulp.src([
               'app/en/index.html',
               'app/en/tutorials.html',
               'app/en/about.html',
               'app/en/buy.html'])
             .pipe(minifyHTML(opts))
             .pipe(gulp.dest('build/en'));
-  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, b1, b2, b3);
+  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, b1, b2, b3, b4);
 });
 
 gulp.task('build',['move'], function () {
