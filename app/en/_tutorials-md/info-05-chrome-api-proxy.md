@@ -49,69 +49,63 @@ Wi-Fi is not the only connection that can control your Arduino UNO. If you insta
 
 First, combine the Webduino Fly with the Arduino UNO.
 
-<br/>
+<br>
 
-![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/en/info-05-02.jpg)
-
-<br/>
-
-Click "Applications" on your Google Chrome, and then search for "API Proxy" in the Chrome Web Store. Then you have to install "API Proxy for Google Chrome" and "API  Proxy Agent for Google Chrome".
-
-<br/>
+In order to use Bluetooth and Serial, we developed two Chrome extensions [API Proxy for Google Chrome](https://chrome.google.com/webstore/detail/api-proxy-for-google-chro/pddlkidaibpbhpkfbhkbeolbagpmkhhn?hl=en) and [API Proxy Agent for Google Chrome](https://chrome.google.com/webstore/detail/api-proxy-agent-for-googl/kdhdgaemffmpfmceolgbfpnfiafbjdkp?hl=en).
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/en/info-05-03.jpg)
 
-<br/>
+<br>
 
 ## Enable the Applications
 
 After they are both installed, you can check the extensions through the link: ( chrome://extensions/ ) Make sure you enable both of them.
 
-<br/>
+<br>
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/en/info-05-04.jpg)
 
-<br/>
+<br>
 
 Back in "Applications" in Chrome, you will find an app named "API Proxy for Google Chrome". A popup window will show up once you click it. 
 
-<br/>
+<br>
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/info-05-05.jpg)
 
-<br/>
+<br>
 
 ## How to Use
 
 If you are using a serial port, you will see the "Path" on the pop-up window. (In Windows, it usually includes "COM" in the path. And on a MAC, it usually includes "/dev".) If you are using Bluetooth, you have to pair your board with the computer, so you will see the Bluetooth address after you succeed in pairing your devices.
 
-<br/>
+<br>
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/info-05-06.jpg)
 
-<br/>
+<br>
 
 Lastly, if you are using a serial port, remember to choose "Serial port" or "Bluetooth" when using [Webduino Blockly](https://blockly.webduino.io/?lang=en).
 
-<br/>
+<br>
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/en/info-05-07.jpg)
 
-<br/>
+<br>
 
 Now, every time your press the "Run Blocks" button, the board will be re-connected. (The board will be re-connected when LED stops flashing.) Now, you can use your board with a serial port or through a Bluetooth connection!!
 
-<br/>
+<br>
 
 ## Burn Firmware
 
 All Webduino boards follow the Arduino Firmata protocol, so you will have to burn the standard firmware on them. We suggest you to burn the firmware on Arduino IDE. (Go to Arduino IDE > Examples > Firmata > StandardFirmata)
 
-<br/>
+<br>
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/en/info-05-08.jpg)
 
-<br/>
+<br>
 
 ## Notice
 
