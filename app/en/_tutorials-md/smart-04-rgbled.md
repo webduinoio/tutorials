@@ -78,7 +78,7 @@ Include `webduino-all.min.js` in the header of HTML. The purpose is to allow the
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-JavaScript follows WebSocket mode: `{transport: 'websocket', url: '192.168.8.115'}` and we use `awit` to implement delay.
+JavaScript follows WebSocket mode: `{transport: 'websocket', url: '192.168.8.115'}` and we use `await` to implement delay.
 
 	(async function () {
 

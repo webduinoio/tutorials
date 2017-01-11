@@ -77,7 +77,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-程式碼的部分可以看到是走 WebSocket 的模式：`{transport: 'websocket', url: '192.168.8.115'}`，等待的部分我們使用了`awit`來實作。
+程式碼的部分可以看到是走 WebSocket 的模式：`{transport: 'websocket', url: '192.168.8.115'}`，等待的部分我們使用了`await`來實作。
 
 	(async function () {
 
