@@ -70,14 +70,16 @@
           ._transition(.3s);
           span{
             color:#09b;
-            ._transition(.3s);
+            transition:color .3s;
+            -webkit-transition:color .3s;
+            -moz-transition:color .3s;
           }
         }
         .price{
           text-decoration:line-through; 
           font-size:12px;
         }
-        .price-sale{
+        .onsale{
           color:#f00;
         }
         .description{

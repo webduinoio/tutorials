@@ -10,7 +10,7 @@
   text-align: center;
   border-top: #aaa dashed 1px;
   border-bottom: #aaa dashed 1px;
-  background-image: -webkit-linear-gradient(0deg, #fff, #f5f5f5, #fff);
+  background-image: -webkit-linear-gradient(0deg, #ffffff, #f5f5f5, #ffffff);
 }
 .content > div {
   width: 100%;
@@ -56,15 +56,15 @@
 }
 .content > div > div a h3 span {
   color: #09b;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
+  transition: color .3s;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
 }
 .content > div > div a .price {
   text-decoration: line-through;
   font-size: 12px;
 }
-.content > div > div a .price-sale {
+.content > div > div a .onsale {
   color: #f00;
 }
 .content > div > div a .description {
