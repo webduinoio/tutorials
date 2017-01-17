@@ -1,0 +1,1 @@
+$(function(){var t=$(".list"),e=new Date,a=e.getFullYear(),i=e.getMonth()+1,n=e.getDate(),l=e.getHours()+1,s=Date.UTC(a,i,n,l);t.each(function(){var t=$(this).find(".time").text().split(" "),e=t[0].split("."),a=t[1].split(":"),i=Date.UTC(e[0],e[1],e[2],a[0]);s>i&&$(this).detach().appendTo(".old")})});

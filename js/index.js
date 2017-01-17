@@ -1,0 +1,1 @@
+$(function(){var i=$(".tutorials-menu .menu-content div"),t=$(window);i.css({height:i.width()/1.5+"px"}),t.resize(function(){i.css({height:i.width()/1.5+"px"})})});

@@ -1,0 +1,1 @@
+header{background:#fff;color:#000;border-bottom:1px solid #eee}header .menu a{color:#000;text-shadow:none}header .menu a.none,header .menu a.none:hover{color:#aaa}header .menu a.actived,header .menu a.actived:hover{color:#f90}@media (max-width:800px){header .menu{top:-355px}header .menu a{color:#fff}header .menu a.none,header .menu a.none:hover{color:#666}}

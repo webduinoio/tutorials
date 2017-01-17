@@ -1,0 +1,63 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="pragma" content="no-cache"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <meta name="author" content="webduino.io"> <meta name="copyright" content="webduino.io"> <meta itemprop="name" content="webduino.io"> <link rel="icon" href="../../img/layout/favicon.ico" type="image/x-icon"> <title>Project Example 1: Control a Single LED :::: Webduino = Web × Arduino</title> <meta name="description" content="Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial."> <meta itemprop="description" content="Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial."> <meta property="og:description" content="Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial."> <meta property="og:title" content="Project Example 1: Control a Single LED"> <meta property="og:url" content="https://webduino.io/tutorials/tutorial-01-led.html"> <meta property="og:image" content="https://webduino.io/img/tutorials/tutorial-01-01s.jpg"> <meta itemprop="image" content="https://webduino.io/img/tutorials/tutorial-01-01s.jpg"> <script src="../../js/lib/jquery.min.js"></script> <script src="../../js/lib/jquery.lazyload.min.js"></script> <script src="../../js/lib/run_prettify.js"></script> <script src="../../js/layout.js"></script> <script src="../../js/tutorials-en.js"></script> <script src="../../js/lib/disqus.js"></script> <link rel="stylesheet" href="../../style/css/lib/tomorrow.css"> <link rel="stylesheet" href="../../style/css/layout.css"> <link rel="stylesheet" href="../../style/css/sub-header.css"> <link rel="stylesheet" href="../../style/css/tutorials-content.css"> <link rel="stylesheet" href="../../style/css/tutorials-en-content.css"> <link rel="stylesheet" href="../../style/css/lib/font-awesome.css"> <style>
+.tutorials-content p{
+	word-wrap:normal;
+	word-break:normal;
+}
+</style> </head> <body> <header class="path-0"> <a class="logo" href="index.html" data-name="layout-header-logo"></a> <div class="mobile-menu"></div> <div class="menu"> <a href="index.html" class="index" data-name="layout-mobile-menu">Home</a> <a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">Tutorials</a> <a href="buy.html" class="buy" data-name="layout-mobile-men">Buy</a> <a href="about.html" class="about" data-name="layout-mobile-men">About us</a> <a href="../index.html" class="about" data-name="layout-mobile-men">中文</a> </div> </header> <header class="path-1"> <a class="logo" href="../index.html"></a> <div class="mobile-menu"></div> <div class="menu"> <a href="../index.html" class="index" data-name="layout-menu">Home</a> <a href="../tutorials.html" class="tutorials" data-name="layout-menu">Tutorials</a> <a href="../buy.html" class="buy" data-name="layout-menu">Buy</a> <a href="../about.html" class="about" data-name="layout-menu">About us</a> <a href="../../index.html" class="about" data-name="layout-mobile-men">中文</a> </div> </header> <div class="tutorials-content"> <div class="banner"> </div> <h1>Project Example 1: Control a Single LED</h1> <p>Controlling a single LED is easy and also useful for observing any programming mistakes. Therefore, we use the LED as our first Webduino tutorial. </p> <h2>Video Tutorial</h2>  <p>Watch the video tutorial here: <iframe class="youtube" src="https://www.youtube.com/embed/8k6Lqu-aqVM" frameborder="0" allowfullscreen=""></iframe></p> <h2>Wiring and Practice</h2> <p>There are long and short legs on an LED. The long leg should be connected to a &quot;high potential&quot; (a position with a number) and the short leg should be connect to a &quot;low potential&quot; (the GND or Ground). The only setup needed is to plug the LED legs into their positions on the Webduino board or with a breadboard or breadline. <strong>Here the long leg goes into 10 and the short leg goes into GND.</strong></p> <p>Webduino Mark 1 Circuit diagram:</p> <p><img src="../../img/tutorials/tutorial-01-02.jpg"></p> <p>Webduino Fly Circuit diagram:</p> <p><img src="../../img/tutorials/tutorial-01-02-fly.jpg"></p> <p>Reference image:</p> <p><img src="../../img/tutorials/tutorial-01-03.jpg"></p> <h2>Instructions for using the Webduino Blockly</h2> <p>Open Webdunio Blockly: <a href="https://blockly.webduino.io/?lang=en">https://blockly.webduino.io/?lang=en</a> For this tutorial, we will use a picture of a light bulb to control the LED. First, click the &quot;Web Demo Area&quot; button on the upper right side of the workspace. Then, select &quot;Click Bulb&quot; from the drop-down menu. A webpage with choices of light bulbs will appear.</p> <p><img src="../../img/tutorials/en/tutorial-01-04.jpg"></p> <p>Drag a &quot;Board&quot; block from the side menu into the workspace. Then type in the name of your Webduino board. Next, find the &quot;Set LED&quot; block under the &quot;Components&quot; menu and drop the block into the blank connection of &quot;Board&quot; block. Then set the &quot;pin&quot; to 10 (because the LED&#39;s long leg was connected to pin 10) </p> <p><img src="../../img/tutorials/en/tutorial-01-05.jpg"></p> <p>The LED has to interact with a web page, so select &quot;Click Bulb&quot; under the &quot;Web Demo Area&quot; menu in the sidebar and drag the &quot;Click Bulb&quot;, do block to the workspace. This is so you can switch the LED light on and off when you click the picture of the light bulb.</p> <p><img src="../../img/tutorials/en/tutorial-01-06.jpg"></p> <p><img src="../../img/tutorials/en/tutorial-01-07.jpg"></p> <p>Now, find an &quot;If / Do&quot; logic block under the &quot;Standard&quot; menu and add it to the stack. This will create an &quot;If / then&quot; action for when the &quot;Light Bulb&quot; is clicked. You can edit the &quot;Logic&quot; options clicking the blue gear on the &quot;If / Do&quot; logic block.</p> <p><img src="../../img/tutorials/en/tutorial-01-08.jpg"></p> <p>If you use the setup shown below, when the &quot;Bulb&quot; is &quot;on&quot;, the &quot;Click Bulb&quot; will turn off. When the &quot;Bulb&quot; is off, the &quot;Click Bulb&quot; will turn on. </p> <p><img src="../../img/tutorials/en/tutorial-01-09.jpg"></p> <p>After you finish creating the block stack, check your device&#39;s status (Check <a href="https://webduino.io/device.html">device&#39;s Status</a>) before you press the button &quot;Run Blocks&quot; on the upper right hand side.</p> <p><img src="../../img/tutorials/tutorial-01-10.jpg"></p> <p>You can easily control the intensity of the LED by clicking the picture of the light bulb in the &quot;Web Demo Area&quot;. You can also select the &quot;JavaScript&quot; tab to review the original codes. Copy the codes and paste them to your own code editor and you can do the same exercise. Check your stack setup with this example here: <a href="https://blockly.webduino.io/?lang=en#-KTONX73Xz695wEu03DI">https://blockly.webduino.io/?lang=en#-KTONX73Xz695wEu03DI</a></p> <h2>Code Explanation (<a href="http://bin.webduino.io/nixad/edit?html,css,js,output">Check Webduino Bin</a>, <a href="https://webduino.io/device.html">Check Device Status</a>)</h2> <p>Include <code>webduino-all.min.js</code> in the header of your html files in order to support all of the Webduino&#39;s components. If the codes are generated by Webduino Blockly, you also have to include <code>webduino-blockly.js</code> in your files.</p> <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>In the body of HTML, insert a div for placing images with the ID: &quot;demo-area-02-light&quot;. In order to show the light bulb changing, there are 2 images of light bulbs; one with the light on and the other on with the light off.</p> <pre><code>&lt;div id=&quot;demo-area-02-light&quot; class=&quot;off&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/off.png&quot; id=&quot;demo-area-02-off&quot;&gt;
+  &lt;img src=&quot;https://blockly.webduino.io/media/on.png&quot; id=&quot;demo-area-02-on&quot;&gt;
+&lt;/div&gt;
+</code></pre><p>We use the CSS rule <code>display:none</code> to control the light-on and light-off images. Below are the CSS codes.</p> <pre><code>#demo-area-02-light img{
+  height:200px;
+  display:none;
+}
+#demo-area-02-light.on #demo-area-02-on{
+  display:inline-block;
+}
+#demo-area-02-light.off #demo-area-02-off{
+  display:inline-block;
+}
+</code></pre><p>For the most critical JavaScript step we start by using <code>boardReady()</code>. The callback function will be executed when the board goes on-line. Then, you must set up a variable named led and use <code>getLed()</code> to set the pin number to 10. Finally, bind the event by clicking the images to control the LED with its API.</p> <pre><code>var led;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  led = getLed(board, 10);
+  document.getElementById(&quot;demo-area-02-light&quot;).addEventListener(&quot;click&quot;,function(){
+    if (document.getElementById(&quot;demo-area-02-light&quot;).className == &quot;on&quot;) {
+      document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;off&quot;;
+      led.off();
+    } else {
+      document.getElementById(&quot;demo-area-02-light&quot;).className = &quot;on&quot;;
+      led.on();
+    }
+  });
+});
+</code></pre><p>Because codes are automatically generated by Webduino Blockly, there might be some duplicated and superfluous codes. To simplify the codes, we replaced <code>document.getElementById(&quot;demo­area­02­light&quot;)</code> with one single variable: light.</p> <pre><code>var led;
+var light;
+
+boardReady(&#39;&#39;, function (board) {
+  board.samplingInterval = 20;
+  led = getLed(board, 10);
+    light = document.getElementById(&quot;demo-area-02-light&quot;);
+  light.addEventListener(&quot;click&quot;,function(){
+    if (light.className == &quot;on&quot;) {
+      light.className = &quot;off&quot;;
+      led.off();
+    } else {
+      light.className = &quot;on&quot;;
+      led.on();
+    }
+  });
+});
+</code></pre><p>This was the example of how to control an LED by clicking the picture of a light bulb. We hope you enjoyed it! Webduino Bin: <a href="http://bin.webduino.io/nixad/edit?html,css,js,output">http://bin.webduino.io/nixad/edit?html,css,js,output</a><br>Stack setup: <a href="https://blockly.webduino.io/?lang=en#-KTOMwa9xRlCNapn4VUe">https://blockly.webduino.io/?lang=en#-KTOMwa9xRlCNapn4VUe</a></p>  <a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a> <a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a> <div class="pre-next"> <div> <div class="pre"></div> <div class="next"></div> </div> </div> <div class="note-chicken"></div> <div class="others"> <i class="fa fa-times note-close-btn"></i> <h5>More information : </h5> <div class="others-link otehrs-read"> 1. Tutorials : <a href="https://webduino.io/en/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a> <br> 2. Blockly : <a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a> <br> 3. Products : <a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a> <br> 4. Store : <a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a> </div> </div> </div> <div class="disqus"> <div id="disqus_thread"></div> </div> <footer> <div class="logo"> <a href="index.html" data-name="layout-footer-logo"><i></i></a> <a href="../index.html" data-name="layout-footer-logo"><i></i></a> </div> <h4>Copyright 2015 | All Rights Reserved. Power by Webduino.io</h4> <h4>1F., No.20, Fuxing 4th Rd., Qianzhen Dist., Kaohsiung City 806, Taiwan (R.O.C.) / 886-7-3388511</h4> </footer> <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62202920-1', 'auto');
+  ga('send', 'pageview');
+
+</script> </body> </html>
