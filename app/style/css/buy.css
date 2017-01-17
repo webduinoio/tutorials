@@ -32,6 +32,7 @@
   background-image: url(../../img/buy/icon-new.png);
   background-size: cover;
   z-index: 2;
+  display: none;
 }
 .content > div > div a h2 {
   text-align: center;

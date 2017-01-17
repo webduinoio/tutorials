@@ -1,17 +1,22 @@
 $(function() {
-  var $a = $('.content div div a').toArray();
-  $.getJSON('js/config-pricing.json', function(c) {
+  var $d = $('.content div>div').toArray();
+  $.getJSON('config/config-pricing.json', function(c) {
     c.forEach(function(d) {
-      $a.forEach(function(e) {
-        if (e.getAttribute('href') == 'buy/' + d.url) {
+      $d.forEach(function(e) {
+      	var a = e.querySelector('a');
+      	var i = e.querySelector('i');
+        if (a.getAttribute('href') == 'buy/' + d.url) {
           if (d.pricing != d.onSale) {
-            e.querySelector('.price').innerText = 'NT$ '+d.pricing;
-            e.querySelector('.onsale').innerText = 'NT$ '+d.onSale;
+            a.querySelector('.price').innerText = 'NT$ '+d.pricing;
+            a.querySelector('.onsale').innerText = 'NT$ '+d.onSale;
           } else {
-            e.querySelector('.price').innerText = 'NT$ '+d.pricing;
-            e.querySelector('.price').style.textDecoration = 'none';
-            e.querySelector('.price').style.fontSize = '18px';
+            a.querySelector('.price').innerText = 'NT$ '+d.pricing;
+            a.querySelector('.price').style.textDecoration = 'none';
+            a.querySelector('.price').style.fontSize = '18px';
           }
+	        if(d.new){
+	        	i.style.display = 'inline-block';
+	        }
         }
       });
     });

@@ -1,4 +1,5 @@
 [{
+  "new":false,
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
@@ -7,6 +8,7 @@
   "banner": "../img/buy/webduino-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
 }, {
+  "new":false,
   "name": "Webduino 馬克 1 號",
   "url": "component-webduino-v1.html",
   "pricing": "840",
@@ -15,6 +17,7 @@
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
 }, {
+  "new":true,
   "name": "Webduino Smart ( 雲端開發板 )",
   "url": "component-webduino-smart.html",
   "pricing": "180",
@@ -23,6 +26,7 @@
   "banner": "../img/buy/webduino-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
 }, {
+  "new":false,
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
@@ -31,6 +35,7 @@
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
 }, {
+  "new":false,
   "name": "Webduino 開發者套件 - 基本包",
   "url": "webduino-developer-a.html",
   "pricing": "1,365",
@@ -39,6 +44,7 @@
   "banner": "../img/buy/webduino-developerA-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500230488"
 }, {
+  "new":false,
   "name": "Webduino 開發者套件 - 威力加強包",
   "url": "webduino-developer-b.html",
   "pricing": "1,890",
@@ -47,6 +53,7 @@
   "banner": "../img/buy/webduino-developerB-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500257353"
 }, {
+  "new":false,
   "name": "Webduino 擴充套件 M ( 支援馬克 1 號、Fly )",
   "url": "webduino-expansion-m.html",
   "pricing": "250",
@@ -55,6 +62,7 @@
   "banner": "../img/buy/webduino-expansion-m-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898553441"
 }, {
+  "new":false,
   "name": "Webduino 擴充套件 P ( 支援 Fly )",
   "url": "webduino-expansion-p.html",
   "pricing": "630",
@@ -63,6 +71,7 @@
   "banner": "../img/buy/webduino-expansion-p-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898647221"
 }, {
+  "new":false,
   "name": "Webduino 擴充套件 S ( 支援馬克 1 號、Fly )",
   "url": "webduino-expansion-s.html",
   "pricing": "420",
@@ -71,6 +80,7 @@
   "banner": "../img/buy/webduino-expansion-s-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898537555"
 }, {
+  "new":false,
   "name": "Webduino Package A ( 電子材料包 )",
   "url": "webduino-package-a.html",
   "pricing": "525",
@@ -79,6 +89,7 @@
   "banner": "../img/buy/webduino-packageA-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553490385005"
 }, {
+  "new":false,
   "name": "Webduino Package A + B ( 電子材料包 )",
   "url": "webduino-package-ab.html",
   "pricing": "1,050",
@@ -87,6 +98,7 @@
   "banner": "../img/buy/webduino-packageAB-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553492413234"
 }, {
+  "new":false,
   "name": "Webduino 豪華套件包",
   "url": "webduino-package-all.html",
   "pricing": "1,680",
@@ -95,6 +107,7 @@
   "banner": "../img/buy/package-all-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898515922"
 }, {
+  "new":false,
   "name": "Webduino Package B ( 電子材料包 )",
   "url": "webduino-package-b.html",
   "pricing": "630",
@@ -103,6 +116,7 @@
   "banner": "../img/buy/webduino-packageB-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553490453236"
 }, {
+  "new":false,
   "name": "Webduino Package C ( 電子材料包 )",
   "url": "webduino-package-c.html",
   "pricing": "525",
@@ -111,6 +125,7 @@
   "banner": "../img/buy/webduino-packageC-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553491097860"
 }, {
+  "new":false,
   "name": "Webduino Package D ( 電子材料包 )",
   "url": "webduino-package-d.html",
   "pricing": "525",
@@ -119,6 +134,7 @@
   "banner": "../img/buy/webduino-packageD-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21607787116017"
 }, {
+  "new":false,
   "name": "Webduino 智慧植栽套件 ( 電子材料包 )",
   "url": "webduino-package-plant.html",
   "pricing": "630",
@@ -127,6 +143,7 @@
   "banner": "../img/buy/webduino-package-plant-01b.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21651860887664"
 }, {
+  "new":false,
   "name": "Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )",
   "url": "webduino-package-plus.html",
   "pricing": "630",
@@ -135,6 +152,7 @@
   "banner": "../img/buy/package-plus-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898472935"
 }, {
+  "new":false,
   "name": "Webduino 智慧插座套件 ( 電子材料包 )",
   "url": "webduino-package-socket.html",
   "pricing": "840",
@@ -143,6 +161,7 @@
   "banner": "../img/buy/webduino-package-socket-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898592501"
 }, {
+  "new":false,
   "name": "Webduino 公仔自走車 ( 電子材料包 )",
   "url": "webduino-package-toycar.html",
   "pricing": "1,575",
@@ -151,6 +170,7 @@
   "banner": "../img/buy/webduino-package-toycar-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
 }, {
+  "new":false,
   "name": "Webduino 聖誕特餐 ( 2016/12/19 ~ 2017/1/8 限定 )",
   "url": "webduino-xmas1225.html",
   "pricing": "1,225",
@@ -159,6 +179,7 @@
   "banner": "../img/buy/webduino-xmas.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21650796805010"
 }, {
+  "new":false,
   "name": "Webduino 幸福快遞 ( 2016/12/19 ~ 2017/1/8 限定 )",
   "url": "webduino-xmas2017.html",
   "pricing": "2,017",
@@ -167,6 +188,7 @@
   "banner": "../img/buy/webduino-xmas.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21650796917362"
 }, {
+  "new":true,
   "name": "Webduino 新年一路發開發套組 ( 2017/2/28 前限定 )",
   "url": "webduino-package-newyear-1680.html",
   "pricing": "1,680",
@@ -175,6 +197,7 @@
   "banner": "../img/buy/webduino-newyear.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21650796917362"
 }, {
+  "new":true,
   "name": "Webduino 好運發發發 開發板組合 ( 2017/2/28 前限定 )",
   "url": "webduino-package-newyear-888.html",
   "pricing": "888",

@@ -390,6 +390,7 @@ gulp.task('move',['build-clean'],function(){
       a8 = gulp.src('app/robots.txt').pipe(gulp.dest('build')),
       a9 = gulp.src('app/json/**/*').pipe(gulp.dest('build/json')),
       a10 = gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga')),
+      a10 = gulp.src('app/config/*').pipe(gulp.dest('build/config')),
 	    a11 = gulp.src('app/js/*.js')
           .pipe(uglify())
           .pipe(gulp.dest('build/js')),
