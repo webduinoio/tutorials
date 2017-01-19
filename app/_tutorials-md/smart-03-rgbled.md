@@ -46,7 +46,7 @@ Webduino Smart 開發板有內建了一個微型三色 LED 燈 ( 共陰 )，預�
 
 <div class="buy-this">
 	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
-	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
 </div>
 
 ## Webduino Blockly 操作解析
@@ -77,22 +77,23 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-程式碼的部分可以看到是走 WebSocket 的模式：`{transport: 'websocket', url: '192.168.8.115'}`，其他的程式碼就只是純粹點選按鈕控制顏色的程式碼而已。
+程式碼的部分可以看到是走 WebSocket 的模式：`{board: 'Smart', url: '192.168.0.230'}`，其他的程式碼就只是純粹點選按鈕控制顏色的程式碼而已。
 
 	var rgbled;
 
-	boardReady({transport: 'websocket', url: '192.168.8.115'}, function (board) {
+
+	boardReady({board: 'Smart', url: '192.168.0.230'}, function (board) {
 	  board.systemReset();
-	  board.samplingInterval = 250;
+	  board.samplingInterval = 50;
 	  rgbled = getRGBLedCathode(board, 15, 12, 13);
 	  document.getElementById("demo-area-05-btn1").addEventListener("click",function(){
 	    rgbled.setColor('#ff0000');
 	  });
 	  document.getElementById("demo-area-05-btn2").addEventListener("click",function(){
-	    rgbled.setColor('#009900');
+	    rgbled.setColor('#3333ff');
 	  });
 	  document.getElementById("demo-area-05-btn3").addEventListener("click",function(){
-	    rgbled.setColor('#3333ff');
+	    rgbled.setColor('#009900');
 	  });
 	  document.getElementById("demo-area-05-btn4").addEventListener("click",function(){
 	    rgbled.setColor('#ffcc33');
@@ -103,12 +104,12 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	});
 
 以上就是 Smart 三色燈初體驗。
-完整程式碼：[http://bin.webduino.io/nibux/edit?html,css,js,output](http://bin.webduino.io/nibux/edit?html,css,js,output)
-解答：[http://blockly.webduino.io/#-KTIefMEx09ltd5y1xkr](http://blockly.webduino.io/#-KTIefMEx09ltd5y1xkr)
+完整程式碼：[http://bin.webduino.io/ruyed/1/edit?html,js,output](http://bin.webduino.io/ruyed/1/edit?html,js,output)
+解答：[http://blockly.webduino.io/#-KaonOs_7w8tal1VJoTK](http://blockly.webduino.io/#-KaonOs_7w8tal1VJoTK)
 
 <div class="buy-this">
 	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
-	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
 </div>
 
 
