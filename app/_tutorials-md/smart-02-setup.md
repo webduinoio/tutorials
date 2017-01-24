@@ -44,6 +44,18 @@ date: 20161001
 
 使用 Webduino Smart 之前，最重要的就是進行初始化設定，初始化設定的目的在於讓 Webduino 開發板可以自動上網 ( Internet )，或是在區域網路透過 WebSocket 連線，有了初始化設定，我們也能夠自訂開發板的顯示名稱和密碼，更可以連上 internet 進行遠端更新。
 
+## Webduino Smart 影片介紹
+
+初始化設定步驟：
+
+<iframe class="youtube" src="https://www.youtube.com/embed/b-7B5fljwG4" frameborder="0" allowfullscreen></iframe>
+
+第一次雲端更新 + 取得 Device ID：
+
+<iframe class="youtube" src="https://www.youtube.com/embed/UtY4O5T7JgE" frameborder="0" allowfullscreen></iframe>
+
+<br/>
+
 ## 步驟一、接上電源，輸入 Wi-Fi 帳號密碼連線
 
 和馬克一號與 Fly 同樣的第一步驟，就是設定 Wi-Fi 的帳號密碼，不過不同的是，設定完帳號密碼後，我們就可以讓 Smart 純粹透過 WebSocket 走區域網路連線，不需要連到外部的網路環境也能運作，如果想要連線到外部網路環境 ( Internet )，也因為設定了 Wi-Fi 帳密，就可以順利連接到網際網路了。
