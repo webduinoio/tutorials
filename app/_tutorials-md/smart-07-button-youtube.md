@@ -80,7 +80,7 @@ date: 20161120
 ![](../img/tutorials/smart-07-08.jpg)
 
 網頁互動區選擇 Youtube，點選右上方紅色按鈕執行，就可以看到 Youtube 影片載入並開始播放，這時候我們就可以按壓按鈕，控制 Youtube 的影片播放了。( ip 記得換成自己的開發板 ip )
-( 解答：[http://blockly.webduino.io/#-KapEa64Z_GyF1BrKg6o](http://blockly.webduino.io/#-KapEa64Z_GyF1BrKg6o) )
+( 解答：[http://blockly.webduino.io/#-KbJYhqQUV_jUUCJRhMp](http://blockly.webduino.io/#-KbJYhqQUV_jUUCJRhMp) )
 
 ![](../img/tutorials/smart-07-09.jpg)
 
@@ -156,7 +156,7 @@ JavaScript 的程式碼比較多一點，不過`boardReady`開頭的程式碼基
 
 以上就是使用 Smart 的微型按鈕開關，控制 Youtube 的操作介紹。
 完整程式碼：[http://bin.webduino.io/fopag/1/edit?html,js,output](http://bin.webduino.io/fopag/1/edit?html,js,output)
-解答：[http://blockly.webduino.io/#-KapEa64Z_GyF1BrKg6o](http://blockly.webduino.io/#-KapEa64Z_GyF1BrKg6o)
+解答：[http://blockly.webduino.io/#-KbJYhqQUV_jUUCJRhMp](http://blockly.webduino.io/#-KbJYhqQUV_jUUCJRhMp)
 
 <div class="buy-this">
 	<span>按鈕開關相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>

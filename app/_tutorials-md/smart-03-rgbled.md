@@ -64,7 +64,7 @@ Webduino Smart 開發板有內建了一個微型三色 LED 燈 ( 共陰 )，預�
 ![](../img/tutorials/smart-03-04.jpg)
 
 點選右上方紅色按鈕執行，如此一來我們在網頁互動測試區裡點選不同的按鈕，就會出現不同的顏色。
-( 解答：[http://blockly.webduino.io/#-KTIefMEx09ltd5y1xkr](http://blockly.webduino.io/#-KTIefMEx09ltd5y1xkr) )
+( 解答：[http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX](http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX) )
 
 ![](../img/tutorials/smart-03-05.gif)
 
@@ -80,7 +80,6 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 程式碼的部分可以看到是走 WebSocket 的模式：`{board: 'Smart', url: '192.168.0.230'}`，其他的程式碼就只是純粹點選按鈕控制顏色的程式碼而已。
 
 	var rgbled;
-
 
 	boardReady({board: 'Smart', url: '192.168.0.230'}, function (board) {
 	  board.systemReset();
@@ -105,7 +104,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是 Smart 三色燈初體驗。
 完整程式碼：[http://bin.webduino.io/ruyed/1/edit?html,js,output](http://bin.webduino.io/ruyed/1/edit?html,js,output)
-解答：[http://blockly.webduino.io/#-KaonOs_7w8tal1VJoTK](http://blockly.webduino.io/#-KaonOs_7w8tal1VJoTK)
+解答：[http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX](http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX)
 
 <div class="buy-this">
 	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>

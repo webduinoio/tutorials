@@ -96,7 +96,7 @@ date: 20161001
 
 ![](../img/tutorials/smart-02-07.jpg)
 
-點選執行，就可以看到 Smart 開發板上頭的三色燈發出紅色光了。( 解答：[http://blockly.webduino.io/#-KakpX0SGynCkVVmT57z](http://blockly.webduino.io/#-KakpX0SGynCkVVmT57z) )
+點選執行，就可以看到 Smart 開發板上頭的三色燈發出紅色光了。( 解答：[http://blockly.webduino.io/#-KbJUDpxOP4DtqhWwR82](http://blockly.webduino.io/#-KbJUDpxOP4DtqhWwR82) )
 
 ![](../img/tutorials/smart-02-09.gif)
 

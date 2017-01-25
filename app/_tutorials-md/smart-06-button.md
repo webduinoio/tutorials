@@ -64,7 +64,7 @@ Webduino Smart 開發板的 USB 電源接孔附近有一個微型按鈕開關 ( 
 ![](../img/tutorials/smart-06-04.jpg)
 
 點選右上方紅色按鈕執行，用手指按壓按鈕開關，就會發現網頁的顯示文字也會跟著變化囉。( 記得要填入 WebSocket 的 ip )
-( 解答：[http://blockly.webduino.io/#-KapC5MJLQ3bsD3HDlee](http://blockly.webduino.io/#-KapC5MJLQ3bsD3HDlee) )
+( 解答：[http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb](http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb) )
 
 <br/>
 
@@ -102,7 +102,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是 Smart 的按鈕開關操作介紹。
 完整程式碼：[http://bin.webduino.io/yeyez/edit?html,js,output](http://bin.webduino.io/yeyez/edit?html,js,output)
-解答：[http://blockly.webduino.io/#-KapC5MJLQ3bsD3HDlee](http://blockly.webduino.io/#-KapC5MJLQ3bsD3HDlee)
+解答：[http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb](http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb)
 
 <div class="buy-this">
 	<span>按鈕開關相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>

@@ -56,12 +56,12 @@ Webduino Smart 開發板的右上角內建了一顆光敏電阻 ( 腳位為 A0�
 ![](../img/tutorials/smart-05-02.jpg)
 
 放入光敏電阻開始偵測的積木，並讓偵測的數值顯示在網頁互動測試區域裡，點選右上方紅色按鈕執行，就會看到光的數值轉換為小數點呈現出來了。   
-( 解答：[http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc](http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc) )
+( 解答：[http://blockly.webduino.io/#-KbJWK4xVaxi0BEUct-U](http://blockly.webduino.io/#-KbJWK4xVaxi0BEUct-U) )
 
 ![](../img/tutorials/smart-05-03.jpg)
 
 如果覺得直接類比訊號讀入的浮點數不是自己想要的數值，我們可以透過「四捨五入」和「尺度轉換」兩種積木，將光敏電阻的數值，轉換成 0 到 100 之間，小數點兩位的數值顯示。  
-( 解答：[http://blockly.webduino.io/#-Kap8OE3730K7xMS8KGR](http://blockly.webduino.io/#-Kap8OE3730K7xMS8KGR) )
+( 解答：[http://blockly.webduino.io/#-KbJWUprpSwvmWuBjfcU](http://blockly.webduino.io/#-KbJWUprpSwvmWuBjfcU) )
 
 ![](../img/tutorials/smart-05-04.jpg) 
 
@@ -72,7 +72,7 @@ Webduino Smart 開發板的右上角內建了一顆光敏電阻 ( 腳位為 A0�
 ![](../img/tutorials/smart-05-06.jpg)
 
 點選右上方紅色按鈕執行，用手去遮住光敏電阻，或是用燈去照光敏電阻，就會看見 Smart 的三色燈出現不同的顏色。
-( 解答：[http://blockly.webduino.io/#-Kap81bRnfsbPls7Cyk0](http://blockly.webduino.io/#-Kap81bRnfsbPls7Cyk0) )
+( 解答：[http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud](http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud) )
 
 ![](../img/tutorials/smart-05-07.gif)
 
@@ -101,7 +101,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是 Smart 的光敏電阻操作介紹。
 完整程式碼：[http://bin.webduino.io/kuwun/edit?html,js,output](http://bin.webduino.io/kuwun/edit?html,js,output)
-解答：[http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc](http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc)
+解答：[http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud](http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud)
 
 <div class="buy-this">
 	<span>光敏電阻相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>

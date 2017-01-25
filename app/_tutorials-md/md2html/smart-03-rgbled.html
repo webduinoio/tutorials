@@ -46,7 +46,7 @@ img: smart-03-rgbled-s.jpg</p>
 <p>打開網頁互動的積木清單，使用按鈕 1 ~ 5 的積木，裏頭擺入不同的顏色。 </p>
 <p><img src="../img/tutorials/smart-03-04.jpg" alt=""></p>
 <p>點選右上方紅色按鈕執行，如此一來我們在網頁互動測試區裡點選不同的按鈕，就會出現不同的顏色。
-( 解答：<a href="http://blockly.webduino.io/#-KTIefMEx09ltd5y1xkr">http://blockly.webduino.io/#-KTIefMEx09ltd5y1xkr</a> )</p>
+( 解答：<a href="http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX">http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX</a> )</p>
 <p><img src="../img/tutorials/smart-03-05.gif" alt=""></p>
 <p><br/></p>
 <h2>範例解析</h2>
@@ -55,7 +55,6 @@ img: smart-03-rgbled-s.jpg</p>
 &lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
 </code></pre><p>程式碼的部分可以看到是走 WebSocket 的模式：<code>{board: &#39;Smart&#39;, url: &#39;192.168.0.230&#39;}</code>，其他的程式碼就只是純粹點選按鈕控制顏色的程式碼而已。</p>
 <pre><code>var rgbled;
-
 
 boardReady({board: &#39;Smart&#39;, url: &#39;192.168.0.230&#39;}, function (board) {
   board.systemReset();
@@ -79,7 +78,7 @@ boardReady({board: &#39;Smart&#39;, url: &#39;192.168.0.230&#39;}, function (boa
 });
 </code></pre><p>以上就是 Smart 三色燈初體驗。
 完整程式碼：<a href="http://bin.webduino.io/ruyed/1/edit?html,js,output">http://bin.webduino.io/ruyed/1/edit?html,js,output</a>
-解答：<a href="http://blockly.webduino.io/#-KaonOs_7w8tal1VJoTK">http://blockly.webduino.io/#-KaonOs_7w8tal1VJoTK</a></p>
+解答：<a href="http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX">http://blockly.webduino.io/#-KbJUkHomagX2_bcXNKX</a></p>
 <div class="buy-this">
     <span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>

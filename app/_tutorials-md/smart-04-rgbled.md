@@ -64,7 +64,7 @@ date: 20161005
 ![](../img/tutorials/smart-04-04.jpg) 
 
 點選右上方紅色按鈕執行，如此一來我們的三色LED燈就會不停地切換顏色，如躍動一般。
-( 解答：[http://blockly.webduino.io/#-KaopuCjlEu4k73ZhbXd](http://blockly.webduino.io/#-KaopuCjlEu4k73ZhbXd) )
+( 解答：[http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs](http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs) )
 
 ![](../img/tutorials/smart-03-05.gif)
 
@@ -104,7 +104,7 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是躍動的 Smart 三色燈 ( 顏色輪播切換 )。
 完整程式碼：[http://bin.webduino.io/zudar/1/edit?html,js,output](http://bin.webduino.io/zudar/1/edit?html,js,output)
-解答：[http://blockly.webduino.io/#-KaopuCjlEu4k73ZhbXd](http://blockly.webduino.io/#-KaopuCjlEu4k73ZhbXd)
+解答：[http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs](http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs)
 
 <div class="buy-this">
 	<span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>

@@ -91,15 +91,15 @@
 <h2>Webduino Blockly 操作解析</h2>
 <p>首先我們放入開發板的積木，下拉選單選擇 WebSocket ( <strong>注意，使用 WebSocket 的工具網址必須是 http 開頭</strong> )，填入開發板的 ip 位址，放入光敏電阻的積木，類比腳位選擇 A0。 </p>
 <p><img src="../img/tutorials/smart-05-02.jpg" alt=""></p>
-<p>放入光敏電阻開始偵測的積木，並讓偵測的數值顯示在網頁互動測試區域裡，點選右上方紅色按鈕執行，就會看到光的數值轉換為小數點呈現出來了。<br>( 解答：<a href="http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc">http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc</a> )</p>
+<p>放入光敏電阻開始偵測的積木，並讓偵測的數值顯示在網頁互動測試區域裡，點選右上方紅色按鈕執行，就會看到光的數值轉換為小數點呈現出來了。<br>( 解答：<a href="http://blockly.webduino.io/#-KbJWK4xVaxi0BEUct-U">http://blockly.webduino.io/#-KbJWK4xVaxi0BEUct-U</a> )</p>
 <p><img src="../img/tutorials/smart-05-03.jpg" alt=""></p>
-<p>如果覺得直接類比訊號讀入的浮點數不是自己想要的數值，我們可以透過「四捨五入」和「尺度轉換」兩種積木，將光敏電阻的數值，轉換成 0 到 100 之間，小數點兩位的數值顯示。<br>( 解答：<a href="http://blockly.webduino.io/#-Kap8OE3730K7xMS8KGR">http://blockly.webduino.io/#-Kap8OE3730K7xMS8KGR</a> )</p>
+<p>如果覺得直接類比訊號讀入的浮點數不是自己想要的數值，我們可以透過「四捨五入」和「尺度轉換」兩種積木，將光敏電阻的數值，轉換成 0 到 100 之間，小數點兩位的數值顯示。<br>( 解答：<a href="http://blockly.webduino.io/#-KbJWUprpSwvmWuBjfcU">http://blockly.webduino.io/#-KbJWUprpSwvmWuBjfcU</a> )</p>
 <p><img src="../img/tutorials/smart-05-04.jpg" alt=""> </p>
 <p><img src="../img/tutorials/smart-05-05.jpg" alt=""></p>
 <p>還記得之前才提過的 <a href="smart-03-rgbled.html">Smart 三色燈初體驗</a> 嗎？我們也可以透過簡單的邏輯判斷，讓數值 0~0.2 顯示紅色，0.2~0.4 顯示綠色，0.4~0.6 顯示藍色，大於 0.6 就，三色燈元件和光敏電阻的搭配，只需要一塊小小的 Smart 開發板就能搞定。</p>
 <p><img src="../img/tutorials/smart-05-06.jpg" alt=""></p>
 <p>點選右上方紅色按鈕執行，用手去遮住光敏電阻，或是用燈去照光敏電阻，就會看見 Smart 的三色燈出現不同的顏色。
-( 解答：<a href="http://blockly.webduino.io/#-Kap81bRnfsbPls7Cyk0">http://blockly.webduino.io/#-Kap81bRnfsbPls7Cyk0</a> )</p>
+( 解答：<a href="http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud">http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud</a> )</p>
 <p><img src="../img/tutorials/smart-05-07.gif" alt=""></p>
 <p><br/></p>
 <h2>範例解析</h2>
@@ -120,7 +120,7 @@ boardReady({board: &#39;Smart&#39;, url: &#39;192.168.0.230&#39;}, function (boa
 });
 </code></pre><p>以上就是 Smart 的光敏電阻操作介紹。
 完整程式碼：<a href="http://bin.webduino.io/kuwun/edit?html,js,output">http://bin.webduino.io/kuwun/edit?html,js,output</a>
-解答：<a href="http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc">http://blockly.webduino.io/#-Kap8S6pcrY4Lqm1T7oc</a></p>
+解答：<a href="http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud">http://blockly.webduino.io/#-KbJXCjhMYgmr6Pm7Gud</a></p>
 <div class="buy-this">
     <span>光敏電阻相關套件：<a href="https://webduino.io/buy/webduino-expansion-s.html" target="_blank">Webduino 擴充套件 S ( 支援馬克 1 號、Fly )</a></span>
     <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
