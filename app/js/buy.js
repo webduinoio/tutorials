@@ -15,18 +15,14 @@ $(function() {
   $.getJSON('../config/config-pricing.json', function(c) {
     c.forEach(function(e) {
       if (e.url == file) {
-        $pricingNote.html(e.pricingNote);
-        //$banner.attr('src', e.banner);
-        $banner.attr('src', '../img/buy/webduino-newyear.jpg');
+        //$pricingNote.html(e.pricingNote);
+        $banner.attr('src', e.banner);
+        //$banner.attr('src', '../img/buy/webduino-newyear.jpg');
         $ruten.attr('href', e.rutenUrl);
-        if (e.pricing == e.onSale) {
-          $pricing.html(e.pricing);
-        } else {
-          $pricing.html(e.onSale);
-          if (e.pricingNote == '') {
-            $pricingNote.html('，原價 ' + e.pricing + ' 元，即日起至 2/28 限時優惠');
-          }
-        }
+        $pricing.html(e.pricing);
+        // if (e.pricingNote == '') {
+        //   $pricingNote.html('，原價 ' + e.pricing + ' 元，即日起至 2/28 限時優惠');
+        // }
       }
     });
   });
