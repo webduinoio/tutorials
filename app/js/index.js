@@ -12,4 +12,5 @@ $(function(){
 		});
 	});
 
+  $('#copyrirght-year').val(new Date().getFullYear());
 });
