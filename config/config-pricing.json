@@ -171,6 +171,15 @@
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
 }, {
   "new":false,
+  "name": "Webduino 自走車循跡升級套件 ( 電子材料包 )",
+  "url": "webduino-package-line-following.html",
+  "pricing": "735",
+  "onSale": "630",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-line-following-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
+}, {
+  "new":false,
   "name": "Webduino 聖誕特餐 ( 2016/12/19 ~ 2017/1/8 限定 )",
   "url": "webduino-xmas1225.html",
   "pricing": "1,225",
