@@ -170,7 +170,7 @@
   "banner": "../img/buy/webduino-package-toycar-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
 }, {
-  "new":false,
+  "new":true,
   "name": "Webduino 自走車循跡升級套件 ( 電子材料包 )",
   "url": "webduino-package-line-following.html",
   "pricing": "735",
