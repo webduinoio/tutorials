@@ -64,6 +64,9 @@
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
+.content > div > div a div.promote:after {
+  content: '了解活動詳情';
+}
 .content > div > div a:hover img {
   margin-top: -10px;
   margin-bottom: 10px;
