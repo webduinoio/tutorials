@@ -83,9 +83,9 @@
   color: #fff;
   outline: none;
   font-size: 22px;
-  background-image: linear-gradient(top, #f30, #f90);
-  background-image: -moz-linear-gradient(top, #f30, #f90);
-  background-image: -webkit-linear-gradient(top, #f30, #f90);
+  background-image: linear-gradient(top, #ff3300, #ff9900);
+  background-image: -moz-linear-gradient(top, #ff3300, #ff9900);
+  background-image: -webkit-linear-gradient(top, #ff3300, #ff9900);
   border: none;
   width: 200px;
   height: 50px;
@@ -109,9 +109,9 @@
 }
 .blockly a.button.b2 {
   margin-left: 10px;
-  background-image: -webkit-linear-gradient(#09c, #0cf);
-  background-image: -o-linear-gradient(#09c, #0cf);
-  background-image: linear-gradient(#09c, #0cf);
+  background-image: -webkit-linear-gradient(#0099cc, #00ccff);
+  background-image: -o-linear-gradient(#0099cc, #00ccff);
+  background-image: linear-gradient(#0099cc, #00ccff);
   text-shadow: #036 0 0 10px;
   box-shadow: inset #069 0 0 10px;
 }
