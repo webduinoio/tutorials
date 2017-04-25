@@ -158,9 +158,9 @@ header.path-1 {
   border-radius: 15px;
   font-size: 24px;
   padding: 15px 50px;
-  background-image: linear-gradient(top, #ffcc00, #ffdd00);
-  background-image: -webkit-linear-gradient(top, #ffcc00, #ffdd00);
-  background-image: -moz-linear-gradient(top, #ffcc00, #ffdd00);
+  background-image: linear-gradient(top, #fc0, #fd0);
+  background-image: -webkit-linear-gradient(top, #fc0, #fd0);
+  background-image: -moz-linear-gradient(top, #fc0, #fd0);
   cursor: pointer;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -169,9 +169,9 @@ header.path-1 {
 }
 .content .ruten a:hover {
   color: #000;
-  background-image: linear-gradient(top, #ffdd00, #ffee00);
-  background-image: -webkit-linear-gradient(top, #ffdd00, #ffee00);
-  background-image: -moz-linear-gradient(top, #ffdd00, #ffee00);
+  background-image: linear-gradient(top, #fd0, #fe0);
+  background-image: -webkit-linear-gradient(top, #fd0, #fe0);
+  background-image: -moz-linear-gradient(top, #fd0, #fe0);
   text-decoration: none;
 }
 .content .buy-this {
