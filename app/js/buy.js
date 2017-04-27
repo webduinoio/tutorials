@@ -17,8 +17,8 @@ $(function() {
       if (e.url == file) {
         $pricingNote.html(e.pricingNote);
         $banner.attr('src', e.banner);
-        $banner.attr('src', '../img/buy/promote-20170320-20170421.jpg');
-        $banner.wrap('<a href="../activity/promote-20170320-20170421.html" title="立馬參加 Webduino 公仔自走車設計大賞"></a>');
+        //$banner.attr('src', '../img/buy/promote-20170320-20170421.jpg');
+        //$banner.wrap('<a href="../activity/promote-20170320-20170421.html" title="立馬參加 Webduino 公仔自走車設計大賞"></a>');
         $ruten.attr('href', e.rutenUrl);
         $pricing.html(e.onSale);
         if (e.pricingNote == '') {
