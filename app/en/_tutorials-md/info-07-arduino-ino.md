@@ -78,7 +78,7 @@ Include the .ZIP files from the folder "Library", which you just decompressed.
 
 ![Webduino UNO 雲端擴充板初始化設定](../../img/tutorials/info-07-05.jpg)
 
-Check if the following .ZIP files are inclued:
+Check if the following .ZIP files are include:
 
 (1) DHT.zip: DHT Sensor
 (2) Joypad.zip: Joystick
