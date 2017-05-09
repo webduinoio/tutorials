@@ -20,11 +20,11 @@ $(function() {
         //$banner.attr('src', '../img/buy/promote-20170320-20170421.jpg');
         //$banner.wrap('<a href="../activity/promote-20170320-20170421.html" title="立馬參加 Webduino 公仔自走車設計大賞"></a>');
         $ruten.attr('href', e.rutenUrl);
-        $pricing.html(e.pricing);
-        // $pricing.html(e.onSale);
-        // if (e.pricingNote == '') {
-        //   $pricingNote.html('，原價 ' + e.pricing + ' 元，即日起至 4/30 限時優惠');
-        // }
+        //$pricing.html(e.pricing);
+        $pricing.html(e.onSale);
+        if (e.pricing != e.onSale) {
+          $pricingNote.html('，原價 ' + e.pricing + ' 元，即日起至 6/4 限時優惠');
+        }
       }
     });
   });
