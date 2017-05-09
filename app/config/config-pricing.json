@@ -52,6 +52,15 @@
   "pricingNote": "",
   "banner": "../img/buy/webduino-developerB-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500257353"
+},{
+  "new":true,
+  "name": "Webduino 開發者套件 - Dr. Smart",
+  "url": "webduino-developer-DrSmart.html",
+  "pricing": "760",
+  "onSale": "668",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-developer-drsmart-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21651860887664"
 }, {
   "new":false,
   "name": "Webduino 擴充套件 M ( 支援馬克 1 號、Fly )",
@@ -138,7 +147,7 @@
   "name": "Webduino 智慧植栽套件 ( 電子材料包 )",
   "url": "webduino-package-plant.html",
   "pricing": "630",
-  "onSale": "565",
+  "onSale": "558",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-plant-01b.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21651860887664"
