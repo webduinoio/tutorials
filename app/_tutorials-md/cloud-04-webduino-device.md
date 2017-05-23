@@ -47,19 +47,19 @@ date: 20170511
 
 有別於傳統物聯網的開發板，Webduino 可以在雲端平台上將裝置與帳號綁定，近一步提高物聯網操控的安全性與便利性，如果需要綁定裝置，首先在雲端平台的首頁，點選 Webduino Device 裝置管理進入管理畫面。 
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-01.jpg)
+![](../img/tutorials/cloud-04-02.jpg)
 
 畫面的左側除了列出目前支援 Webduino 雲端平台的開發板類型，當我們新增該類型的開發板，該分類就會以數字表示該類型開發板的數量，同時，選單也是一個簡單的「篩選器」，點選不同的類型，就只會列出該類型的開發板。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-02.jpg)
+![](../img/tutorials/cloud-04-03.jpg)
 
 新增開發板很簡單，只要點選右上方的「+」號即可新增，一開始會詢問開發板的類型，如果選錯了，則必須刪除該開發板再重新新增。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-03.jpg)
+![](../img/tutorials/cloud-04-04.jpg)
 
 新增完成後，就會在畫面中看到裝置的名稱、類型與版本，如果開發板處在「上線狀態」，則狀態會變成綠色閃電圖示，如果開發板處於「離線狀態」，則狀態會是斷線的紅色閃電圖示。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-04.jpg)
+![](../img/tutorials/cloud-04-05.jpg)
 
 ## 裝置認證
 
@@ -69,13 +69,13 @@ date: 20170511
 
 新增裝置後，在每個裝置後方都會有一個「認證」的連結，點選就會開始進行認證。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-05.jpg)
+![](../img/tutorials/cloud-04-06.jpg)
 
 ### 2.將開發板上線
 
 一開始會先要求將開發板連線，目的在於確認開發板可以透過網路下載對應的更新檔案，若開發板一直處於上線狀態，則會直接進入下一個步驟。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-06.jpg)
+![](../img/tutorials/cloud-04-07.jpg)
 
 ### 3. 將開發板離線
 
@@ -83,17 +83,17 @@ date: 20170511
 
 > 目的在於確認裝置在平台用戶的手邊，如果裝置不在手邊，便無法在短時間內完成一系列認證步驟。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-07.jpg)
+![](../img/tutorials/cloud-04-08.jpg)
 
 ### 4. 按下「認證」按鈕後，15 秒內將開發板上線
 
 點選下一步之後，保持開發板離線的狀態，接著按下「認證」按鈕，按完後將開發板接上電源連上網路，當平台確認開發板上線之後，確認開發板認證成功。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-08.jpg)
+![](../img/tutorials/cloud-04-09.jpg)
 
 認證成功之後，原本的認證連結，就換更換為一個綠色的勾勾圖示，若移除了此塊開發板，再次添加同一塊開發板，仍必須重新認證。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-09.jpg)
+![](../img/tutorials/cloud-04-10.jpg)
 
 ## 技術支援
 

@@ -47,26 +47,26 @@ date: 20170511
 
 註冊的方式有兩種，一種是「使用 Google 帳號登入」，第二種方式可以點選右下角的「馬上註冊一個」連結註冊新帳號。
 
-![](/images/zh-tw/docs/cloud/basic/cloud-register-01.jpg)
+![](../img/tutorials/cloud-02-02.jpg)
 
 註冊新帳號只需要填入「電子信箱」與「密碼」( 此處的密碼不是電子信箱的密碼，是登入 Webduino 雲端平台的密碼 )，接著勾選點選下方「我不是機器人」，最後按下「註冊」按鈕。
 
-![](/images/zh-tw/docs/cloud/basic/cloud-register-02.jpg)
+![](../img/tutorials/cloud-02-03.jpg)
 
 按完「註冊」按鈕之後，會寄送一封認證信到註冊的電子信箱，前往電子信箱收信並且點選認證按鈕之後，就可以完成註冊。
 
-![](/images/zh-tw/docs/cloud/basic/cloud-register-03.jpg)
+![](../img/tutorials/cloud-02-04.jpg)
 
 
 ## 登入雲端平台
 
 註冊完成後回到登入畫面，輸入電子信箱與密碼，就能登入雲端平台，若發生忘記密碼的情況，可點選「忘記密碼」按鈕重新取得密碼登入。
 
-![](/images/zh-tw/docs/cloud/basic/cloud-register-04.jpg)
+![](../img/tutorials/cloud-02-05.jpg)
 
 登入平台後可以看到 Webduino 目前提供的兩個主要服務「Webduino Blockly 程式積木」與「Webduino Device 裝置管理」，未來推出的新功能，也會陸續呈現於這個頁面。
 
-![](/images/zh-tw/docs/cloud/basic/cloud-register-05.jpg)
+![](../img/tutorials/cloud-02-06.jpg)
 
 
 ## 技術支援

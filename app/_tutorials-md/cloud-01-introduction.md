@@ -45,7 +45,7 @@ date: 20170511
 
 > 開始使用：[https://cloud.webduino.io](https://cloud.webduino.io#_blank)
 
-![](/images/zh-tw/docs/cloud/index-01.jpg)
+![](../img/tutorials/cloud-01-02.jpg)
 
 ## Webduino 雲端平台的四大服務
 
@@ -57,7 +57,7 @@ Webduino 雲端平台將會包含以下四大服務功能，透過這四大服�
 
 未來，雲端平台的 Webduino Blockly 更會整合線上模擬器與關卡體驗教學，實現最完整的物聯網開發流程。
 
-![](/images/zh-tw/docs/cloud/index-02.jpg)
+![](../img/tutorials/cloud-01-03.jpg)
 
 ### 2. Webduino Device 裝置管理 ( 正式推出 )
 
@@ -65,7 +65,7 @@ Webduino 雲端平台將會包含以下四大服務功能，透過這四大服�
 
 如今擁有 Webduino Device 裝置管理之後，裝置的操控安全性與穩定性更會大幅提升，使用者將會感受到最方便物聯網裝置管理體驗。
 
-![](/images/zh-tw/docs/cloud/index-03.jpg)
+![](../img/tutorials/cloud-01-04.jpg)
 
 ### 3. Webduino HyProto APP 開發 ( 預計 2017 年底推出 )
 
@@ -73,11 +73,11 @@ Webduino HyProto 將會滿足所有物聯網與網頁開發者的願望：「快
 
 透過 Webduino HyProto 的輔助，任何人都能搖身一變成為 APP 大師，都能輕鬆掌握網頁、APP 和物聯網的開發精髓。
 
-![](/images/zh-tw/docs/cloud/index-04.jpg)
+![](../img/tutorials/cloud-01-05.jpg)
 
 ### 4. Webduino 流程開發工具 ( 預計 2018 年推出 )
 
 Webduino 流程開發工具是一個擁有強大功能的後端服務，就算是完全不會網頁後端的技術，都可以透過簡單的流程圖組合，輕鬆部署程式到伺服器運作，不論寄送 Eamil、發送 Twitter 都可以輕鬆達成。
 
-![](/images/zh-tw/docs/cloud/index-05.jpg)
+![](../img/tutorials/cloud-01-06.jpg)
 <!-- @@close-->

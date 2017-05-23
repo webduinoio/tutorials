@@ -49,27 +49,27 @@ date: 20170511
 
 > 雲端更新可以進行單選或是多選，但所選取的裝置必須為**同一種類型且經過認證**，如果發現多選之後無法點選更新按鈕，可能是包含了不同類型的裝置，或有某些裝置尚未經過認證。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-10.jpg)
+![](../img/tutorials/cloud-05-02.jpg)
 
 點選更新韌體按鈕之後，可以從下拉選單選擇需要更新的韌體。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-11.jpg)
+![](../img/tutorials/cloud-05-03.jpg)
 
 選擇完成後就會開始進行更新，更新完成，開發板就會變成相對應的韌體了。
 
 > 注意，更新的時候**切勿移除開發板電源或中斷網路連線**，避免更新失敗。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-12.jpg)
+![](../img/tutorials/cloud-05-04.jpg)
 
 使用 Webduino 雲端平台更新的好處，只要裝置都經過認證，就可以一次勾選多台裝置同時更新。
 
 > 同時更新必須為同一種類型的開發板。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-13.jpg)
+![](../img/tutorials/cloud-05-05.jpg)
 
 在燒錄完成的訊息提示裡，也會標註每一個裝置的燒錄狀態，燒錄成功會用綠色表示，燒錄失敗會用紅色表示。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-14.jpg)
+![](../img/tutorials/cloud-05-06.jpg)
 
 
 
@@ -79,7 +79,7 @@ date: 20170511
 
 > 注意，更新的時候**切勿移除開發板電源或中斷網路連線**，避免更新失敗。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-device-15.jpg)
+![](../img/tutorials/cloud-05-07.jpg)
 
 ## 技術支援
 

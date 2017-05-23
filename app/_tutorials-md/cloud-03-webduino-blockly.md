@@ -47,25 +47,25 @@ date: 20170511
 
 進入雲端平台首頁，點選 Webduino Blockly 程式積木，即可進入檔案管理畫面。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-01.jpg)
+![](../img/tutorials/cloud-03-02.jpg)
 
 點選上方的「+」號，輸入檔名之後就可以建立新的編輯檔案。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-02.jpg)
+![](../img/tutorials/cloud-03-03.jpg)
 
 新檔案建立完成後，點選檔案名稱，便可開始編輯檔案。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-03.jpg)
+![](../img/tutorials/cloud-03-04.jpg)
 
 檔案編輯均會**自動儲存**，若尚未儲存完成，關閉檔案的時候會出現「尚未儲存完成」的提示訊息。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-04.jpg)
+![](../img/tutorials/cloud-03-05.jpg)
 
 ## 分享檔案
 
 點選每個檔案後方的「分享」圖示，會打開檔案分享的設定。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-05.jpg)
+![](../img/tutorials/cloud-03-06.jpg)
 
 分享功能有以下四個選項，透過這四種分享方式，不論是個人開發、團隊開發，甚至是應用在課程教學，都相當方便實用。
 
@@ -78,11 +78,11 @@ date: 20170511
 
 基本上 Webduino 雲端平台的 Blockly 和「免註冊」Webduino Blockly 在介面上大同小異，左邊是積木功能區，右上方則是所一些好用的輔助工具，而雲端平台 Blockly 因為具備了註冊和檔案管理的功能，因此在右上方額外多了「登出」和「檔案管理」的按鈕。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-06.jpg)
+![](../img/tutorials/cloud-03-07.jpg)
 
 左側的積木功能也額外新增了「OLED 螢幕」、「LCD 螢幕」、「細懸浮微粒」、「Google 試算表」...等好用的積木模組。
 
-![](/images/zh-tw/docs/cloud/basic/webduino-blockly-07.jpg)
+![](../img/tutorials/cloud-03-08.jpg)
 
 ## 技術支援
 
