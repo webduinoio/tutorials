@@ -30,6 +30,7 @@ header.path-1 {
 }
 .tutorials-content h1,
 .tutorials-content h2,
+.tutorials-content h3,
 .tutorials-content p,
 .tutorials-content ul,
 .tutorials-content table,
@@ -59,8 +60,8 @@ header.path-1 {
   font-size: 22px;
   margin-bottom: 10px;
   line-height: 26px;
-  margin-left: 19px;
   text-indent: -19px;
+  padding-left: 17px;
 }
 .tutorials-content a:link,
 .tutorials-content a:active,

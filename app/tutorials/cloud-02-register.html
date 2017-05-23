@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>  
+	<meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="webduino.io">
+  <meta name="copyright" content="webduino.io">
+  <meta itemprop="name" content="webduino.io">
+  <link rel="icon" href="../img/layout/favicon.ico" type="image/x-icon">
+
+<title>雲端平台 - 註冊與登入 :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。">
+
+<meta itemprop="description" content="使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。">
+
+<meta property="og:description" content="使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。">
+
+<meta property="og:title" content="雲端平台 - 註冊與登入" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/cloud-02-register.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/cloud-02-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/cloud-02-01s.jpg">
+
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/jquery.lazyload.min.js"></script>
+<script src="../js/lib/run_prettify.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/tutorials.js"></script>
+<script src="../js/lib/disqus.js"></script>
+
+<link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+<link rel="stylesheet" href="../style/css/layout.css">
+<link rel="stylesheet" href="../style/css/sub-header.css">
+<link rel="stylesheet" href="../style/css/tutorials-content.css">
+<link rel="stylesheet" href="../style/css/lib/font-awesome.css">
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<header class="path-0">
+		<a class="logo" href="index.html" data-name="layout-header-logo"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="index.html" class="index" data-name="layout-mobile-menu">首頁</a>
+			<a href="tutorials.html" class="tutorials" data-name="layout-mobile-menu">教學範例</a>
+			<a href="buy.html" class="buy" data-name="layout-mobile-menu">產品總覽</a>
+			<a href="activity.html" class="activity" data-name="layout-mobile-menu">課程活動</a>
+			<a href="about.html" class="about" data-name="layout-mobile-men">關於我們</a>
+			<a href="en/index.html" class="about" data-name="layout-mobile-men">English</a>
+		</div>
+	</header>
+	<header class="path-1">
+		<a class="logo" href="../index.html"></a>
+		<div class="mobile-menu"></div>
+		<div class="menu">
+			<a href="../index.html" class="index" data-name="layout-menu">首頁</a>
+			<a href="../tutorials.html" class="tutorials" data-name="layout-menu">教學範例</a>
+			<a href="../buy.html" class="buy" data-name="layout-menu">產品總覽</a>
+			<a href="../activity.html" class="activity" data-name="layout-menu">課程活動</a>
+			<a href="../about.html" class="about" data-name="layout-menu">關於我們</a>
+			<a href="../en/index.html" class="about" data-name="layout-menu">English</a>
+		</div>
+	</header>
+	  
+
+
+
+
+	<div class="tutorials-content">
+		<div class="banner">
+		</div> 
+
+<h1>雲端平台 - 註冊與登入</h1>
+<p>使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。</p>
+<h2>註冊新帳號</h2>
+<p>註冊的方式有兩種，一種是「使用 Google 帳號登入」，第二種方式可以點選右下角的「馬上註冊一個」連結註冊新帳號。</p>
+<p><img src="/images/zh-tw/docs/cloud/basic/cloud-register-01.jpg" alt=""></p>
+<p>註冊新帳號只需要填入「電子信箱」與「密碼」( 此處的密碼不是電子信箱的密碼，是登入 Webduino 雲端平台的密碼 )，接著勾選點選下方「我不是機器人」，最後按下「註冊」按鈕。</p>
+<p><img src="/images/zh-tw/docs/cloud/basic/cloud-register-02.jpg" alt=""></p>
+<p>按完「註冊」按鈕之後，會寄送一封認證信到註冊的電子信箱，前往電子信箱收信並且點選認證按鈕之後，就可以完成註冊。</p>
+<p><img src="/images/zh-tw/docs/cloud/basic/cloud-register-03.jpg" alt=""></p>
+<h2>登入雲端平台</h2>
+<p>註冊完成後回到登入畫面，輸入電子信箱與密碼，就能登入雲端平台，若發生忘記密碼的情況，可點選「忘記密碼」按鈕重新取得密碼登入。</p>
+<p><img src="/images/zh-tw/docs/cloud/basic/cloud-register-04.jpg" alt=""></p>
+<p>登入平台後可以看到 Webduino 目前提供的兩個主要服務「Webduino Blockly 程式積木」與「Webduino Device 裝置管理」，未來推出的新功能，也會陸續呈現於這個頁面。</p>
+<p><img src="/images/zh-tw/docs/cloud/basic/cloud-register-05.jpg" alt=""></p>
+<h2>技術支援</h2>
+<p>若在註冊或登入上遇到任何問題，可透過以下幾種方式聯繫技術人員，尋求技術協助：</p>
+<ul>
+<li>Webduino 粉絲團：<a href="https://www.facebook.com/webduino#_blank">https://www.facebook.com/webduino</a></li>
+<li>技術討論社團：<a href="https://www.facebook.com/groups/webduino#_blank">https://www.facebook.com/groups/webduino</a></li>
+<li>客服信箱：<a href="mailto:webduino.io@gmail.com#_blank">webduino.io@gmail.com</a></li>
+<li>客服電話：886-7-3388511</li>
+</ul>
+
+
+<a class="arrow arrow-r pre-next-button" data-name="pre-next-arrow"></a>
+<a class="arrow arrow-l pre-next-button" data-name="pre-next-arrow"></a>
+<div class="pre-next">
+  <div>
+    <div class="pre"></div>
+    <div class="next"></div>
+  </div>
+</div>
+<div class="note-chicken"></div>
+<div class="others">
+  <i class="fa fa-times note-close-btn"></i>
+  <h5>如果您還想了解更多，可以參考：</h5>
+  <div class="others-link otehrs-read">
+    1. 完整教學範例：<a href="https://webduino.io/tutorials.html" data-name="noteLink">https://webduino.io/tutorials.html</a>
+    <br/> 2. Blockly 教學：<a href="https://goo.gl/Y8sRkl" data-name="noteLink">https://goo.gl/Y8sRkl</a>
+    <br/> 3. 產品總覽：<a href="https://webduino.io/buy.html" target="_blank" data-name="noteLink">https://webduino.io/buy.html <i class="fa fa-share-square-o"></i></a>
+    <br/> 4. 露天賣場：<a href="http://goo.gl/0Dj9ip" target="_blank" data-name="noteLink">http://goo.gl/0Dj9ip <i class="fa fa-share-square-o"></i></a>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
+	<footer>
+  	<div class="logo">
+			<a href="index.html" data-name="layout-footer-logo"><i></i></a>
+			<a href="../index.html" data-name="layout-footer-logo"><i></i></a>
+  	</div>
+  	<h4>Copyright 2017 | All Rights Reserved. Power by Webduino.io</h4>
+  	<h4>80661 高雄市前鎮區復興四路 12 號 2 樓之 6 / 886-7-3388511</h4>
+	</footer>
+<script>
+	window.onload = function(){
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62202920-1', 'auto');
+	  ga('send', 'pageview');
+	};
+
+</script>
+</body>
+</html>

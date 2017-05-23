@@ -1,0 +1,81 @@
+---
+tag: cloud
+src: cloud-02-register.html
+title: 雲端平台 - 註冊與登入
+banner: cloud-02-01.jpg
+img: cloud-02-01s.jpg
+date: 20170511
+---
+
+<!-- @@master  = ../../_layout.html-->
+
+<!-- @@block  =  meta-->
+
+<title>雲端平台 - 註冊與登入 :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。">
+
+<meta itemprop="description" content="使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。">
+
+<meta property="og:description" content="使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。">
+
+<meta property="og:title" content="雲端平台 - 註冊與登入" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/cloud-02-register.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/cloud-02-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/cloud-02-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+
+<!-- @@block  =  preAndNext-->
+
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+
+
+<!-- @@block  =  tutorials-->
+# 雲端平台 - 註冊與登入
+
+使用 Webduino 雲端平台的第一步就是註冊，註冊後便能儲存開發中的專案，並且進行物聯網裝置與個人帳號的綁定，大幅提高開發與學習的完整性。
+
+## 註冊新帳號
+
+註冊的方式有兩種，一種是「使用 Google 帳號登入」，第二種方式可以點選右下角的「馬上註冊一個」連結註冊新帳號。
+
+![](/images/zh-tw/docs/cloud/basic/cloud-register-01.jpg)
+
+註冊新帳號只需要填入「電子信箱」與「密碼」( 此處的密碼不是電子信箱的密碼，是登入 Webduino 雲端平台的密碼 )，接著勾選點選下方「我不是機器人」，最後按下「註冊」按鈕。
+
+![](/images/zh-tw/docs/cloud/basic/cloud-register-02.jpg)
+
+按完「註冊」按鈕之後，會寄送一封認證信到註冊的電子信箱，前往電子信箱收信並且點選認證按鈕之後，就可以完成註冊。
+
+![](/images/zh-tw/docs/cloud/basic/cloud-register-03.jpg)
+
+
+## 登入雲端平台
+
+註冊完成後回到登入畫面，輸入電子信箱與密碼，就能登入雲端平台，若發生忘記密碼的情況，可點選「忘記密碼」按鈕重新取得密碼登入。
+
+![](/images/zh-tw/docs/cloud/basic/cloud-register-04.jpg)
+
+登入平台後可以看到 Webduino 目前提供的兩個主要服務「Webduino Blockly 程式積木」與「Webduino Device 裝置管理」，未來推出的新功能，也會陸續呈現於這個頁面。
+
+![](/images/zh-tw/docs/cloud/basic/cloud-register-05.jpg)
+
+
+## 技術支援
+
+若在註冊或登入上遇到任何問題，可透過以下幾種方式聯繫技術人員，尋求技術協助：
+
+- Webduino 粉絲團：[https://www.facebook.com/webduino](https://www.facebook.com/webduino#_blank)
+- 技術討論社團：[https://www.facebook.com/groups/webduino](https://www.facebook.com/groups/webduino#_blank)
+- 客服信箱：[webduino.io@gmail.com](mailto:webduino.io@gmail.com#_blank)
+- 客服電話：886-7-3388511
+
+<!-- @@close-->

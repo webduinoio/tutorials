@@ -1,0 +1,95 @@
+---
+tag: cloud
+src: cloud-05-webduino-device-update.html
+title: Device 裝置管理 ( 雲端更新 )
+banner: cloud-05-01.jpg
+img: cloud-05-01s.jpg
+date: 20170511
+---
+
+<!-- @@master  = ../../_layout.html-->
+
+<!-- @@block  =  meta-->
+
+<title>Device 裝置管理 ( 雲端更新 ) :::: Webduino = Web × Arduino</title>
+
+<meta name="description" content="如果已經透過 Webduino Device 裝置管理新增與認證裝置，下一步就可以開始進行雲端更新，不論裝置是否在身邊，只要裝置處於上線狀態，就能透過雲端更新的方式也可輕鬆進行遠端更新，甚至多台裝置可以同時更新、同時設定。">
+
+<meta itemprop="description" content="如果已經透過 Webduino Device 裝置管理新增與認證裝置，下一步就可以開始進行雲端更新，不論裝置是否在身邊，只要裝置處於上線狀態，就能透過雲端更新的方式也可輕鬆進行遠端更新，甚至多台裝置可以同時更新、同時設定。">
+
+<meta property="og:description" content="如果已經透過 Webduino Device 裝置管理新增與認證裝置，下一步就可以開始進行雲端更新，不論裝置是否在身邊，只要裝置處於上線狀態，就能透過雲端更新的方式也可輕鬆進行遠端更新，甚至多台裝置可以同時更新、同時設定。">
+
+<meta property="og:title" content="Device 裝置管理 ( 雲端更新 )" >
+
+<meta property="og:url" content="https://webduino.io/tutorials/cloud-05-webduino-device-update.html">
+
+<meta property="og:image" content="https://webduino.io/img/tutorials/cloud-05-01s.jpg">
+
+<meta itemprop="image" content="https://webduino.io/img/tutorials/cloud-05-01s.jpg">
+
+<include src="../_include-tutorials.html"></include>
+
+<!-- @@close-->
+
+<!-- @@block  =  preAndNext-->
+
+<include src="../_include-tutorials-content.html"></include>
+
+<!-- @@close-->
+
+
+<!-- @@block  =  tutorials-->
+# Device 裝置管理 ( 雲端更新 )
+
+如果已經透過 Webduino Device 裝置管理新增與認證裝置，下一步就可以開始進行雲端更新，不論裝置是否在身邊，只要裝置處於上線狀態，就能透過雲端更新的方式也可輕鬆進行遠端更新，甚至多台裝置可以同時更新、同時設定。
+
+## 雲端更新韌體
+
+雲端更新的方式很簡單，一開始先勾選需要雲端更新的裝置，點選左上方的「更新韌體」按鈕。( 更新版本請參考下方「雲端更新版本」 )
+
+> 雲端更新可以進行單選或是多選，但所選取的裝置必須為**同一種類型且經過認證**，如果發現多選之後無法點選更新按鈕，可能是包含了不同類型的裝置，或有某些裝置尚未經過認證。
+
+![](/images/zh-tw/docs/cloud/basic/webduino-device-10.jpg)
+
+點選更新韌體按鈕之後，可以從下拉選單選擇需要更新的韌體。
+
+![](/images/zh-tw/docs/cloud/basic/webduino-device-11.jpg)
+
+選擇完成後就會開始進行更新，更新完成，開發板就會變成相對應的韌體了。
+
+> 注意，更新的時候**切勿移除開發板電源或中斷網路連線**，避免更新失敗。
+
+![](/images/zh-tw/docs/cloud/basic/webduino-device-12.jpg)
+
+使用 Webduino 雲端平台更新的好處，只要裝置都經過認證，就可以一次勾選多台裝置同時更新。
+
+> 同時更新必須為同一種類型的開發板。
+
+![](/images/zh-tw/docs/cloud/basic/webduino-device-13.jpg)
+
+在燒錄完成的訊息提示裡，也會標註每一個裝置的燒錄狀態，燒錄成功會用綠色表示，燒錄失敗會用紅色表示。
+
+![](/images/zh-tw/docs/cloud/basic/webduino-device-14.jpg)
+
+
+
+## 雲端更新版本
+
+除了更新操控元件的韌體外，亦可透過「更新版本」的按鈕，將開發板核心程式更新，近一步取得更穩定的開發板核心程式。
+
+> 注意，更新的時候**切勿移除開發板電源或中斷網路連線**，避免更新失敗。
+
+![](/images/zh-tw/docs/cloud/basic/webduino-device-15.jpg)
+
+## 技術支援
+
+若雲端更新或添加裝置有遇到任何問題，可透過以下幾種方式聯繫技術人員，尋求技術協助：
+
+- Webduino 粉絲團：[https://www.facebook.com/webduino](https://www.facebook.com/webduino#_blank)
+- 技術討論社團：[https://www.facebook.com/groups/webduino](https://www.facebook.com/groups/webduino#_blank)
+- 客服信箱：[webduino.io@gmail.com](mailto:webduino.io@gmail.com#_blank)
+- 客服電話：886-7-3388511
+
+
+
+<!-- @@close-->
