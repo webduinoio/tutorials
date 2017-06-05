@@ -3,7 +3,7 @@
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
-  "onSale": "760",
+  "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
@@ -12,7 +12,7 @@
   "name": "Webduino 馬克 1 號",
   "url": "component-webduino-v1.html",
   "pricing": "840",
-  "onSale": "760",
+  "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
@@ -30,7 +30,7 @@
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
-  "onSale": "1,250",
+  "onSale": "1,365",
   "pricingNote": "",
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
@@ -57,7 +57,7 @@
   "name": "Webduino 開發者套件 - Dr. Smart",
   "url": "webduino-developer-drsmart.html",
   "pricing": "760",
-  "onSale": "668",
+  "onSale": "760",
   "pricingNote": "",
   "banner": "../img/buy/webduino-developer-drsmart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21719210149456"
@@ -147,7 +147,7 @@
   "name": "Webduino 智慧植栽套件 ( 電子材料包 )",
   "url": "webduino-package-plant.html",
   "pricing": "630",
-  "onSale": "558",
+  "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-plant-01b.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21651860887664"
@@ -187,6 +187,22 @@
   "pricingNote": "",
   "banner": "../img/buy/webduino-line-following-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21711510509507"
+}, {
+  "new":false,
+  "name": "(碁峰) 實戰 Webduino",
+  "url": "book-webduino-20160122.html",
+  "pricing": "450",
+  "onSale": "450",
+  "pricingNote": "",
+  "banner": "../img/buy/book-webduino-20160122-01.jpg"
+}, {
+  "new":true,
+  "name": "(碁峰) 實戰家電物聯網",
+  "url": "book-webduino-20170531.html",
+  "pricing": "380",
+  "onSale": "380",
+  "pricingNote": "",
+  "banner": "../img/buy/book-webduino-20170531-01.jpg"
 }, {
   "new":false,
   "name": "Webduino 聖誕特餐 ( 2016/12/19 ~ 2017/1/8 限定 )",

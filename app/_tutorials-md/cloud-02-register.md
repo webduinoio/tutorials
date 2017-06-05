@@ -23,7 +23,7 @@ date: 20170511
 
 <meta property="og:url" content="https://webduino.io/tutorials/cloud-02-register.html">
 
-<meta property="og:image" content="https://webduino.io/img/tutorials/cloud-02-01s.jpg">
+<meta property="og:image" content="https://webduino.io/img/tutorials/cloud-02-fb.jpg">
 
 <meta itemprop="image" content="https://webduino.io/img/tutorials/cloud-02-01s.jpg">
 
