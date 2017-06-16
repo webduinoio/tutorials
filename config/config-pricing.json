@@ -17,7 +17,7 @@
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino Smart ( 雲端開發板 )",
   "url": "component-webduino-smart.html",
   "pricing": "180",
@@ -143,7 +143,7 @@
   "banner": "../img/buy/webduino-packageD-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21607787116017"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 智慧植栽套件 ( 電子材料包 )",
   "url": "webduino-package-plant.html",
   "pricing": "630",
@@ -169,6 +169,15 @@
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898592501"
+}, {
+  "new":true,
+  "name": "Webduino 智慧插座擴充套件",
+  "url": "webduino-package-socketExtension.html",
+  "pricing": "760",
+  "onSale": "760",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-package-socketExtension-01.jpg",
+  "rutenUrl": ""
 }, {
   "new":false,
   "name": "Webduino 公仔自走車 ( 電子材料包 )",
@@ -239,4 +248,31 @@
   "pricingNote": "，即日起至 2/28 限時優惠中",
   "banner": "../img/buy/webduino-newyear.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147785689"
+}, {
+  "new":true,
+  "name": "Webduino 智慧插座 - 嚐鮮體驗套組 ( 2017/06/19 ~ 2017/06/30 期間限定 )",
+  "url": "webduino-package-SmartSocket1.html",
+  "pricing": "998",
+  "onSale": "998",
+  "pricingNote": "，即日起至 6/30 限時優惠中",
+  "banner": "../img/buy/webduino-smartSocket-promote.jpg",
+  "rutenUrl": ""
+}, {  
+  "new":true,
+  "name": "Webduino 智慧插座 - 經濟實惠套件 ( 2017/06/19 ~ 2017/06/30 期間限定 )",
+  "url": "webduino-package-SmartSocket2.html",
+  "pricing": "1680",
+  "onSale": "1680",
+  "pricingNote": "，即日起至 6/30 限時優惠中",
+  "banner": "../img/buy/webduino-smartSocket-promote.jpg",
+  "rutenUrl": ""
+}, {
+  "new":true,
+  "name": "Webduino 智慧插座 - 實戰開發套件 ( 2017/06/19 ~ 2017/06/30 期間限定 )",
+  "url": "webduino-package-SmartSocket3.html",
+  "pricing": "3360",
+  "onSale": "3360",
+  "pricingNote": "，即日起至 6/30 限時優惠中",
+  "banner": "../img/buy/webduino-smartSocket-promote.jpg",
+  "rutenUrl": ""
 }]
