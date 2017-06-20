@@ -23,7 +23,7 @@ $(function() {
         //$pricing.html(e.pricing);
         $pricing.html(e.onSale);
         if (e.pricing != e.onSale) {
-          $pricingNote.html('，原價 ' + e.pricing + ' 元，即日起至 6/4 限時優惠');
+          $pricingNote.html('，原價 ' + e.pricing + ' 元，即日起至 7/9 限時優惠');
         }
       }
     });
