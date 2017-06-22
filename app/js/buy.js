@@ -67,5 +67,9 @@ $(function() {
     ga('send', 'event', 'AirPay Btn', 'Button Click', linkToAirpay, 4);
   });
 
+  $('.buy-fun').on('click',function(){
+    ga('send','event','2017fun','click');
+  });
+
 
 });

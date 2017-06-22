@@ -172,12 +172,12 @@
 }, {
   "new":true,
   "name": "Webduino 智慧插座擴充套件",
-  "url": "webduino-package-socketExtension.html",
+  "url": "webduino-package-socket-extension.html",
   "pricing": "760",
   "onSale": "680",
-  "pricingNote": "，即日起至 7/9 限時優惠中",
-  "banner": "../img/buy/webduino-package-socketExtension-01.jpg",
-  "rutenUrl": ""
+  "pricingNote": "，即日起至 7/31 限時優惠中",
+  "banner": "../img/buy/webduino-package-socket-extension-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21725543213746"
 }, {
   "new":false,
   "name": "Webduino 公仔自走車 ( 電子材料包 )",
