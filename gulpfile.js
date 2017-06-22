@@ -410,6 +410,7 @@ gulp.task('move',['build-clean'],function(){
       a9 = gulp.src('app/json/**/*').pipe(gulp.dest('build/json')),
       a10 = gulp.src('app/ga/**/*').pipe(gulp.dest('build/ga')),
       a11 = gulp.src('app/config/*').pipe(gulp.dest('build/config')),
+      s = gulp.src('app/onsale/**/*').pipe(gulp.dest('build/onsale')),
 	    a12 = gulp.src('app/js/*.js')
           .pipe(uglify())
           .pipe(gulp.dest('build/js')),
@@ -447,7 +448,7 @@ gulp.task('move',['build-clean'],function(){
               'app/en/buy.html'])
             .pipe(minifyHTML(opts))
             .pipe(gulp.dest('build/en'));
-  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, b1, b2, b3, b4);
+  return merge(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, b1, b2, b3, b4,s);
 });
 
 gulp.task('build',['move'], function () {
