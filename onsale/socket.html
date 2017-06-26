@@ -293,6 +293,15 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '463217813871245'); // Insert your pixel ID here.
 fbq('track', 'PageView');
+$('#shop').on('click',function(){    
+    fbq('track', 'InitiateCheckout');
+});
+$('#more').on('click',function(){    
+    fbq('track', 'moreClick');
+});
+
+</script>
+
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=463217813871245&ev=PageView&noscript=1"
