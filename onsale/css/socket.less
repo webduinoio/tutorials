@@ -1,199 +1,291 @@
 body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-family: "蘋方-繁", "微軟繁黑體-標準", "微軟繁黑體-粗體", "微軟正黑體", "sans-serif";
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "蘋方-繁", "微軟繁黑體-標準", "微軟繁黑體-粗體", "微軟正黑體", "sans-serif";
 }
 
 @yellow: #F7C700;
 @gray: #F4F7F6;
 .transition(@duration: 0.3s, @ease: ease-in-out) {
-    -webkit-transition: all @duration @ease;
-    -moz-transition: all @duration @ease;
-    transition: all @duration @ease;
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  transition: all @duration @ease;
 }
 
 .jumbotron {
-    background-size: cover;
-    .banner {
-        padding: 20px;
+  position: relative;
+  background-size: cover;
+  margin-top: 20px;
+  .banner {
+    padding: 20px;
+  }
+  .countdown-top {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: -20px;
+    left: 0;
+    text-align: center;
+    line-height: 40px;
+    background: #e33;
+    color: #fff;
+    box-shadow: #033 0 0 10px;
+    font-size: 16px;
+    span {
+      display: none;
     }
+    @media (max-width: 540px) {
+      height: 50px;
+      padding-top: 5px;
+      line-height: 20px;
+      span {
+        display: inline;
+      }
+    }
+  }
 }
 
 .section {
-		padding-bottom: 2.5em;
-    h2 {
-        text-align: center;
-        line-height: 1.5;
-        padding-bottom: 10px;
-        img {
-            width: 20px;
-        }
-        @media (max-width: 750px) {
-  				font-size: 26px;
-  			}
+  padding-bottom: 2.5em;
+  h2 {
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    span {
+      display: inline;
     }
+    i {
+      display: none;
+    }
+    img {
+      width: 20px;
+    }
+    @media (max-width: 750px) {
+      font-size: 26px;
+      span {
+        display: none;
+      }
+      i {
+        display: inline;
+      }
+      .last-img {
+        display: none;
+      }
+    }
+    @media (max-width: 450px) {
+      font-size: 22px;
+    }
+  }
+  h2.note-h2 {
+    margin-top: 0;
+    font-size: 22px;
+    div {
+      display: inline-table;
+      margin: 0 auto;
+      border-bottom: 5px solid #fc0;
+    }
+    &.countdown-bottom {
+      margin-top: -10px;
+      span {
+        display: none;
+      }
+      @media (max-width: 540px) {
+        span {
+          display: inline;
+        }
+      }
+    }
+    @media (max-width: 450px) {
+      font-size: 20px;
+    }
+    @media (max-width: 360px) {
+      font-size: 16px;
+    }
+  }
 }
 
 .product-socket {
-    h3 {
-        text-align: center;
+  h3 {
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    color: #FF0422;
+    span {
+      color: #000000;
+      text-decoration: line-through;
+      font-size: 80%;
     }
-    h4 {
-        text-align: center;
-        color: #FF0422;
-        span {
-            color: #000000;
-            text-decoration: line-through;
-            font-size: 80%;
-        }
-    }
-    .line {
-        width: 100px;
-        height: 4px;
-        margin: 20px auto;
-        background-color: @yellow;
-    }
-    p {
-        font-size: 15px;
-        line-height: 1.6;
-        padding: 0 10px;
-    }
+  }
+  .line {
+    width: 100px;
+    height: 4px;
+    margin: 20px auto;
+    background-color: @yellow;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
   @media (max-width: 750px) {
-  		padding-top: 20px;
+    padding-top: 20px;
   }
 }
 
 .power {
-	padding: 20px 40px;
-	h3 {
-		padding-bottom: 8px;
-	}
-	a {
-			border-color: darken(@gray, 10%);
-			background-color: lighen(@gray, 5%);
-			color: #343434;
-			margin-top: 10px;
-			&:hover {
-				.transition;
-				background-color: lighten(@gray, 20%);
-				border-color: darken(@gray, 10%);
-				color: darken(@gray, 50%);
-			}
-		}
-	img {
-		border: 2px solid darken(@gray, 5%);
-		border-radius: 10px;
-		margin: 15px 0;
-		@media (max-width: 750px) {
-  		margin-top: 0px;
-  	}
-	}
-	p {
-		font-size: 16px;
-		padding-top: 5px;
-		margin-bottom: 5px;
-	}
-	.progress {
-		background-color: darken(@gray, 5%);
-		margin-bottom: 10px;
-	}
-	.progress-bar {
-		background-color: @yellow;
-	}
-	.product-list {
-		line-height: 1.6;
-	}
-}
-.power-section {
-	@media (max-width: 750px) {
-  		display: none;
+  padding: 20px 40px;
+  h3 {
+    padding-bottom: 8px;
+  }
+  a {
+    border-color: darken(@gray, 10%);
+    background-color: lighen(@gray, 5%);
+    color: #343434;
+    margin-top: 10px;
+    &:hover {
+      .transition;
+      background-color: lighten(@gray, 20%);
+      border-color: darken(@gray, 10%);
+      color: darken(@gray, 50%);
+    }
+  }
+  img {
+    border: 2px solid darken(@gray, 5%);
+    border-radius: 10px;
+    margin: 15px 0;
+    @media (max-width: 750px) {
+      margin-top: 0px;
+    }
+  }
+  p {
+    font-size: 16px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+  .progress {
+    background-color: darken(@gray, 5%);
+    margin-bottom: 10px;
+  }
+  .progress-bar {
+    background-color: @yellow;
+  }
+  .product-list {
+    line-height: 1.6;
   }
 }
+
+.power-section {
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
+
 .power-mobile {
-	background-color: @gray;
-	@media (min-width: 750px) {
-  		display: none;
+  background-color: @gray;
+  @media (min-width: 750px) {
+    display: none;
   }
   .power {
-  	padding: 20px 10px 10px 10px;
-  	.power-title {
-  		padding-bottom: 10px;
-  	}
-  	p {
-  		font-size: 15px;
-  		line-height: 1;
-  		padding: 0;
-  	}
+    padding: 20px 10px 10px 10px;
+    .power-title {
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1;
+      padding: 0;
+    }
   }
 }
 
 .book {
-		padding: 0 50px 50px 50px;
-		@media (max-width: 750px) {
-  		padding: 0 20px 50px 20px;
-  	}
-		.col-sm-6 img {
-			padding: 0 80px;
-			@media (max-width: 750px) {
-  		padding: 0;
+  padding: 0 50px 50px 50px;
+  @media (max-width: 750px) {
+    padding: 0 20px 50px 20px;
   }
-		}
-		h3 {
-			padding: 20px 0;
-			line-height: 1.5;
-		}
-		p {
-			font-size: 15px;
-			line-height: 2;
-			span {
-				font-weight: bold;
-			}
-		}
+  .book-img {
+    padding: 30px;
+    @media (max-width: 360px) {
+      padding: 0 10px;
+    }
+  }
+  h3 {
+    padding: 20px 0;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 15px;
+    line-height: 2;
+    span {
+      font-weight: bold;
+    }
+  }
 }
+
 .buy {
-	p {
-		text-align: center;
-		padding: 20px;
-		a {
-			padding: 20px 50px;
-			font-size: 40px;
-			font-weight: bold;
-			border-radius: 50px;
-			border: 2px solid @yellow;
-			text-decoration: none;
-			@media (max-width: 750px) {
-  		font-size: 17px;
-  		padding: 15px 35px;
-  		}
-		}
-		a.shop {
-			color: #fff;
-			background-color: @yellow;
-			&:hover {
-				text-decoration: none;
-				background-color: lighten(@yellow, 10%);
-				border-color: lighten(@yellow, 10%);
-				.transition;
-			}
-		}
-		a.more {
-			color: @yellow;
-			background-color: @gray;
-			&:hover {
-				text-decoration: none;
-				background-color: lighten(@gray, 10%);
-				border-color: lighten(@yellow, 10%);
-				color: lighten(@yellow, 10%);
-				.transition;
-			}
-		}
-	}
+  text-align: center;
+  padding: 20px;
+  a {
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid @yellow;
+    text-decoration: none;
+    margin:0 auto;
+    @media (max-width: 750px) {
+      font-size: 17px;
+      padding: 15px 35px;
+    }
+  }
+  a.shop {
+    color: #fff;
+    background-color: @yellow;
+    &:hover {
+      text-decoration: none;
+      background-color: lighten(@yellow, 10%);
+      border-color: lighten(@yellow, 10%);
+      .transition;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      margin: 0;
+      font-size:26px;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+      font-size:22px;
+    }
+  }
+  a.more {
+    color: @yellow;
+    background-color: @gray;
+    &:hover {
+      text-decoration: none;
+      background-color: lighten(@gray, 10%);
+      border-color: lighten(@yellow, 10%);
+      color: lighten(@yellow, 10%);
+      .transition;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      margin: 0;
+      font-size:26px;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+      font-size:22px;
+    }
+  }
 }
+
 footer {
-	padding: 30px;
-	background-color: #343434;
-	img {
-		margin: 0 auto;
-		width: 200px;
-	}
+  padding: 30px;
+  background-color: #343434;
+  img {
+    margin: 0 auto;
+    width: 200px;
+  }
 }
