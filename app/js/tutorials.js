@@ -5,9 +5,23 @@ $(function() {
     $pre = $('pre'),
     $youtubeIframe = $('.youtube'),
     $tutorials = $('.tutorials-content'),
+    $h1 = $('.tutorials-content h1'),
     $a = $('.tutorials-content a').not('.pre-next a, .arrow'),
     $banner = $('.tutorials-content .banner'),
     sh;
+
+  $h1.prepend('<div>Webduino 教學網站即將上線，本篇文章也有新的版本供您參考，趕快點選「<a class="new-article" target="_blank"></a>」閱讀吧！如果您想知道我們還提供了哪些新教材，可以前往：<a href="http://tutorials.webduino.io" target="_blank">Webduino 學習手冊</a> 了解更多資訊。</div>');
+  $('.pre-next').prepend('<div>Webduino 教學網站即將上線，本篇文章也有新的版本供您參考，趕快點選「<a class="new-article" target="_blank"></a>」閱讀吧！如果您想知道我們還提供了哪些新教材，可以前往：<a href="http://tutorials.webduino.io" target="_blank">Webduino 學習手冊</a> 了解更多資訊。</div>');
+
+  $.getJSON('../config/new-articles.json',function(data){
+    data.forEach(function(e){
+      if(e.old==file){
+        $('.new-article').text(e.name).attr('href','http://tutorials.webduino.io/zh-tw/docs/'+e.new);
+      }
+    });
+  });
+  //var $newArticle
+
 
   $('a.tutorials').addClass('actived');
 

@@ -57,6 +57,46 @@ header{
 		margin-bottom:20px;
 		font-size:32px;
 		line-height:40px;
+		div{
+			position:relative;
+			display:table;
+			width:100%;
+			background:#ffe566;
+			border-radius:15px;
+			padding:18px 20px 18px 135px;
+			font-size:17px;
+			line-height: 30px;
+			box-shadow:#c90 0 5px 0;
+			color:#000;
+			margin-bottom:50px;
+			a{
+				color:#f70;
+				&:link{
+					color:#f70;
+					text-decoration: underline;
+				}
+				&:hover{
+					color:#d00;
+				}
+			}
+			&:before{
+				position:absolute;
+				z-index:2;
+				content:'';
+				width:100px;
+				height:100px;
+				left:20px;
+				top:20px;
+				background-image:url(/img/tutorials/owl.png);
+				background-size:cover;
+			}
+			@media (max-width: 540px){
+				padding:18px 20px 18px;
+				&:before{
+					display:none;
+				}
+			}
+		}
 	}
 	h2{
 		border-top:1px dashed #aaa;

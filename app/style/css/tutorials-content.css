@@ -46,6 +46,48 @@ header.path-1 {
   font-size: 32px;
   line-height: 40px;
 }
+.tutorials-content h1 div {
+  position: relative;
+  display: table;
+  width: 100%;
+  background: #ffe566;
+  border-radius: 15px;
+  padding: 18px 20px 18px 135px;
+  font-size: 17px;
+  line-height: 30px;
+  box-shadow: #c90 0 5px 0;
+  color: #000;
+  margin-bottom: 50px;
+}
+.tutorials-content h1 div a {
+  color: #f70;
+}
+.tutorials-content h1 div a:link {
+  color: #f70;
+  text-decoration: underline;
+}
+.tutorials-content h1 div a:hover {
+  color: #d00;
+}
+.tutorials-content h1 div:before {
+  position: absolute;
+  z-index: 2;
+  content: '';
+  width: 100px;
+  height: 100px;
+  left: 20px;
+  top: 20px;
+  background-image: url(/img/tutorials/owl.png);
+  background-size: cover;
+}
+@media (max-width: 540px) {
+  .tutorials-content h1 div {
+    padding: 18px 20px 18px;
+  }
+  .tutorials-content h1 div:before {
+    display: none;
+  }
+}
 .tutorials-content h2 {
   border-top: 1px dashed #aaa;
   margin-top: 30px;
