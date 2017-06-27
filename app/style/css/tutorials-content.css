@@ -308,6 +308,14 @@ header.path-1 {
   display: table;
   padding-bottom: 30px;
 }
+.tutorials-content .pre-next > div:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 40px 0 30px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #ddd;
+  line-height: 30px;
+}
 .tutorials-content .pre-next .pre,
 .tutorials-content .pre-next .next {
   padding: 20px 0;
