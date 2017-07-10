@@ -28,6 +28,17 @@
 </head>
 
 <body>
+    <div class="end">
+        <div>
+            <img src="img/man.jpg">
+            <h4>預購活動圓滿結束囉！</h4>
+            <span>如果您沒有跟上這次的預購優惠，您還可以參考我們其他優惠商品，或是加入我們的粉絲團，獲得第一手優惠和課程資訊喔！</span>
+            <br/>
+            <strong>連結：<a href="https://goo.gl/R15vM1" target="_blank">其他優惠商品</a>
+            <br/>
+            連結：<a href="https://goo.gl/wY5EyT" target="_blank">Webduino 粉絲團</a></strong>
+        </div>
+    </div>
     <div class="jumbotron" style="background-image: url('img/bg.png'); background-color: #02979D;">
         <div class="countdown-top"></div>
         <div class="container">
@@ -310,23 +321,42 @@ src="https://www.facebook.com/tr?id=1817385685257238&ev=PageView&noscript=1"
 src="https://www.facebook.com/tr?id=463217813871245&ev=PageView&noscript=1"
 /></noscript>
 <script>
+
+var nowTime = new Date().getTime();
+var dateTime = new Date('2017/07/10 00:00').getTime();
+console.log(dateTime-nowTime);
+if((dateTime - nowTime) <= 0){
+    setInterval(function(){
+        $('.end').show();
+        $('.countdown-top').html('預購優惠已經截止囉！');
+        $('.countdown-bottom').html('預購優惠已經截止囉！');
+    },1000);
+}else{
+    setInterval(countDown,1000);
+}
+
 function countDown(){
     var now = new Date().getTime();
     var date = new Date('2017/07/10 00:00').getTime();
-    var time = (date - now) / 1000;
+    console.log(date - now);
 
-    var day = Math.floor(time/(24*3600));
-    var hour =  Math.floor((time%86400)/3600);
-    var min =  Math.floor((time%3600)/60);
-    var sec =  Math.floor(time%60);
+    if((date - now)<=0){
+        $('.countdown-top').html('預購優惠已經截止囉！');
+        $('.countdown-bottom').html('預購優惠已經截止囉！');
+        $('.end').show();
+    }else{
+        var time = (date - now) / 1000;
 
-    var s = day+' 天 '+hour+' 小時 '+min+' 分 '+sec+' 秒';
-    return s;
+        var day = Math.floor(time/(24*3600));
+        var hour =  Math.floor((time%86400)/3600);
+        var min =  Math.floor((time%3600)/60);
+        var sec =  Math.floor(time%60);
+
+        var s = day+' 天 '+hour+' 小時 '+min+' 分 '+sec+' 秒';
+        $('.countdown-top').html('預購優惠截止還有<span><br/></span> ' + s);
+        $('.countdown-bottom').html('預購優惠截止還有<span><br/></span> ' + s);
+    }
 }
-setInterval(function(){
-    $('.countdown-top').html('預購優惠截止還有<span><br/></span> '+countDown());
-    $('.countdown-bottom').html('預購優惠截止還有<span><br/></span> '+countDown());
-},1000);
 </script>
 
 </body>
