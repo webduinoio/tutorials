@@ -3,7 +3,7 @@
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
-  "onSale": "760",
+  "onSale": "840",
   "pricingNote": "，即日起至 7/31 限時優惠中",
   "banner": "../img/buy/webduino-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
@@ -12,7 +12,7 @@
   "name": "Webduino 馬克 1 號",
   "url": "component-webduino-v1.html",
   "pricing": "840",
-  "onSale": "760",
+  "onSale": "840",
   "pricingNote": "，即日起至 7/31 限時優惠中",
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
@@ -30,7 +30,7 @@
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
-  "onSale": "1,250",
+  "onSale": "1,365",
   "pricingNote": "，即日起至 7/31 限時優惠中",
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
@@ -165,8 +165,8 @@
   "name": "Webduino 智慧插座套件 ( 電子材料包 )",
   "url": "webduino-package-socket.html",
   "pricing": "840",
-  "onSale": "760",
-  "pricingNote": "，即日起至 7/31 限時優惠中",
+  "onSale": "840",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898592501"
 }, {
@@ -174,8 +174,8 @@
   "name": "Webduino 智慧插座擴充套件",
   "url": "webduino-package-socket-extension.html",
   "pricing": "760",
-  "onSale": "680",
-  "pricingNote": "，即日起至 7/31 限時優惠中",
+  "onSale": "760",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-extension-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21725543213746"
 }, {
@@ -271,8 +271,8 @@
   "name": "Webduino 智慧插座 - 實戰開發套件",
   "url": "webduino-package-SmartSocket3.html",
   "pricing": "4,025",
-  "onSale": "3,360",
-  "pricingNote": "，即日起至 7/31 限時優惠中",
-  "banner": "../img/buy/webduino-smartSocket-promote-2.jpg",
+  "onSale": "4,025",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-smartSocket-all-package.jpg",
   "rutenUrl": "http://goods.ruten.com.tw/item/show?21728687888678"
 }]
