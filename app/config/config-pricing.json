@@ -53,7 +53,7 @@
   "banner": "../img/buy/webduino-developerB-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500257353"
 },{
-  "new":true,
+  "new":false,
   "name": "Webduino 開發者套件 - Dr. Smart",
   "url": "webduino-developer-drsmart.html",
   "pricing": "760",
@@ -61,6 +61,15 @@
   "pricingNote": "",
   "banner": "../img/buy/webduino-developer-drsmart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21719210149456"
+},{
+  "new":true,
+  "name": "Webduino 智慧插座 - 實戰智慧套件",
+  "url": "webduino-developer-smart-socket.html",
+  "pricing": "4,025",
+  "onSale": "4,025",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-smartSocket-all-package.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21728687888678"
 }, {
   "new":false,
   "name": "Webduino 擴充套件 M ( 支援馬克 1 號、Fly )",
@@ -115,6 +124,33 @@
   "pricingNote": "",
   "banner": "../img/buy/package-all-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898515922"
+}, {
+  "new":true,
+  "name": "Webduino 基礎套件",
+  "url": "webduino-components-facile-package.html",
+  "pricing": "630",
+  "onSale": "630",
+  "pricingNote": "",
+  "banner": "../img/buy/package-all-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+}, {
+  "new":true,
+  "name": "Webduino 進階套件",
+  "url": "webduino-components-standard-package.html",
+  "pricing": "630",
+  "onSale": "630",
+  "pricingNote": "",
+  "banner": "../img/buy/package-all-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+}, {
+  "new":true,
+  "name": "Webduino 高階套件",
+  "url": "webduino-components-excellent-package.html",
+  "pricing": "630",
+  "onSale": "630",
+  "pricingNote": "",
+  "banner": "../img/buy/package-all-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }, {
   "new":false,
   "name": "Webduino Package B ( 電子材料包 )",
@@ -188,7 +224,7 @@
   "banner": "../img/buy/webduino-package-toycar-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 自走車循跡升級套件 ( 電子材料包 )",
   "url": "webduino-package-line-following.html",
   "pricing": "735",
