@@ -65,8 +65,8 @@
   "new":true,
   "name": "Webduino 智慧插座 - 實戰智慧套件",
   "url": "webduino-developer-smart-socket.html",
-  "pricing": "4,025",
-  "onSale": "4,025",
+  "pricing": "3,900",
+  "onSale": "3,900",
   "pricingNote": "",
   "banner": "../img/buy/webduino-smartSocket-all-package.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21728687888678"
@@ -126,31 +126,31 @@
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898515922"
 }, {
   "new":true,
-  "name": "Webduino 基礎套件",
+  "name": "Webduino 基礎套件包",
   "url": "webduino-components-facile-package.html",
   "pricing": "630",
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-components-facile-package-01.jpg",
-  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895425693"
 }, {
   "new":true,
-  "name": "Webduino 進階套件",
+  "name": "Webduino 進階套件包",
   "url": "webduino-components-standard-package.html",
   "pricing": "630",
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-components-standard-package-01.jpg",
-  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895437595"
 }, {
   "new":true,
-  "name": "Webduino 高階套件",
+  "name": "Webduino 高階套件包",
   "url": "webduino-components-excellent-package.html",
   "pricing": "630",
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-components-excellent-package-01.jpg",
-  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895464247"
 }, {
   "new":false,
   "name": "Webduino Package B ( 電子材料包 )",
