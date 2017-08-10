@@ -131,7 +131,7 @@
   "pricing": "630",
   "onSale": "630",
   "pricingNote": "",
-  "banner": "../img/buy/package-all-01.jpg",
+  "banner": "../img/buy/webduino-components-facile-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }, {
   "new":true,
@@ -140,7 +140,7 @@
   "pricing": "630",
   "onSale": "630",
   "pricingNote": "",
-  "banner": "../img/buy/package-all-01.jpg",
+  "banner": "../img/buy/webduino-components-standard-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }, {
   "new":true,
@@ -149,7 +149,7 @@
   "pricing": "630",
   "onSale": "630",
   "pricingNote": "",
-  "banner": "../img/buy/package-all-01.jpg",
+  "banner": "../img/buy/webduino-components-excellent-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }, {
   "new":false,
