@@ -473,6 +473,79 @@ header.path-1 {
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+.popup {
+  width: 100%;
+  z-index: 9999;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+.popup .whitebox {
+  display: table;
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  margin: 120px auto 0;
+  background: #fff;
+  box-shadow: #000 0 0 20px;
+  border-radius: 20px;
+  padding: 30px 0;
+  text-align: center;
+}
+.popup .whitebox .popup-close {
+  color: #000000;
+  position: absolute;
+  z-index: 999;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+.popup .whitebox .popup-close:hover {
+  color: #7F7F7F;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+.popup .whitebox img {
+  width: 130px;
+  display: block;
+  margin: auto;
+}
+.popup .whitebox h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.popup .whitebox p {
+  text-align: center;
+  line-height: 2;
+  width: 85% !important;
+  padding-bottom: 5px;
+}
+.popup .whitebox .go {
+  width: 50%;
+  min-width: 150px;
+  padding: 15px 40px;
+  background-color: #FFAF00;
+  margin: 30px;
+  border-radius: 100px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+.popup .whitebox .go:hover {
+  background-color: #E59C00;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
 @-webkit-keyframes closenote {
   0% {
     bottom: 15px;
