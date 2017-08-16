@@ -484,13 +484,18 @@ header.path-1 {
   background: rgba(0, 0, 0, 0.8);
   overflow: scroll;
   padding-bottom: 50px;
-  margin: 0;
-  padding-right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media (max-width: 800px) {
+  .popup {
+    overflow-y: scroll;
+  }
 }
 .popup .whitebox {
   display: table;
   position: relative;
-  width: 70%;
+  width: 40%;
   max-width: 600px;
   margin: 120px auto 0;
   background: #fff;
@@ -498,6 +503,11 @@ header.path-1 {
   border-radius: 20px;
   padding: 30px 0;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .popup .whitebox {
+    width: 70%;
+  }
 }
 .popup .whitebox .popup-close {
   color: #000000;
@@ -520,22 +530,17 @@ header.path-1 {
   display: block;
   margin: auto;
 }
-.popup .whitebox h3 {
-  padding-top: 22px;
-  padding-bottom: 5px;
-  line-height: 1.5;
-  text-align: center;
-}
 .popup .whitebox p {
   text-align: center;
   line-height: 2;
   width: 85% !important;
   color: #000000;
+  padding-top: 20px;
 }
 .popup .whitebox .go {
   width: 60%;
   min-width: 150px;
-  padding: 20px 30px;
+  padding: 20px 20px;
   display: inline-block;
   background-color: #FFAF00;
   margin: 5px 0px;
@@ -547,14 +552,15 @@ header.path-1 {
   line-height: 1.5;
 }
 .popup .whitebox .go:hover {
-  background-color: #E59C00;
+  background-color: #FFBD00;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .popup .whitebox .go {
     width: 80%;
+    border-radius: 20px;
   }
 }
 .popup .whitebox .space {
