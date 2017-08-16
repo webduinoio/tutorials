@@ -538,7 +538,7 @@ header.path-1 {
   padding-top: 20px;
 }
 .popup .whitebox .go {
-  width: 60%;
+  width: 40%;
   min-width: 150px;
   padding: 20px 20px;
   display: inline-block;
@@ -556,12 +556,6 @@ header.path-1 {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-}
-@media (max-width: 800px) {
-  .popup .whitebox .go {
-    width: 80%;
-    border-radius: 20px;
-  }
 }
 .popup .whitebox .space {
   padding: 10px;

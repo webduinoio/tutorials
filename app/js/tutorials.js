@@ -24,6 +24,14 @@ $(function() {
             }
         });
     });
+
+    $.getJSON('../config/new-articles.json', function(data) {
+        data.forEach(function(e) {
+            if (e.old == file) {
+                $('.popup-new-article').attr('href', 'http://tutorials.webduino.io/zh-tw/docs/' + e.new);
+            }
+        });
+    });
     //var $newArticle
 
     $(function() {
