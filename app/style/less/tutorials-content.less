@@ -519,6 +519,7 @@ header {
     background: rgba(0, 0, 0, .8);
     overflow: scroll;
     padding-bottom: 50px;
+    overflow: hidden;
     .whitebox {
         display: table;
         position: relative;
@@ -547,37 +548,47 @@ header {
             }
         }
         img {
-            width: 130px;
+            width: 125px;
             display: block;
             margin: auto;
         }
         h3 {
-            padding-top: 20px;
-            padding-bottom: 10px;
+            padding-top: 22px;
+            padding-bottom: 5px;
+            line-height: 1.5;
+            text-align: center;
         }
         p {
             text-align: center;
             line-height: 2;
             width: 85% !important;
-            padding-bottom: 5px;
+            color: #000000;
         }
         .go {
-            width: 50%;
+            width: 60%;
             min-width: 150px;
-            padding: 15px 40px;
+            padding: 20px 30px;
+            display: inline-block;
             background-color: #FFAF00;
-            margin: 30px;
-            border-radius: 100px;
+            margin: 5px 0px;
+            border-radius: 50px;
             color: #ffffff;
             font-weight: bold;
             font-size: 20px;
             text-decoration: none;
+            line-height: 1.5;
             &:hover {
                 background-color: #E59C00;
                 transition: all 0.3s ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
                 -moz-transition: all 0.3s ease-in-out;
             }
+            @media (max-width: 600px) {
+                width: 80%;    
+            }
+        }
+        .space {
+            padding: 10px;
         }
     }
 }
