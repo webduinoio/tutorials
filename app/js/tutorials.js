@@ -38,11 +38,15 @@ $(function() {
         $(window).load(function() {
             if (window.localStorage && !localStorage['faded']) {
                 localStorage['faded'] = true;
-                $(".popup").fadeIn('slow')
+                $(".popup").fadeIn('slow');
             }
         });
         $(".popup-close").click(function() {
-            $(".popup").fadeOut('fast')
+            $(".popup").fadeOut('fast');
+            ga('send', 'event', 'close-popup-btn', 'click');
+        })
+        $(".go").click(function() {
+            ga('send', 'event', 'read-popup-btn', 'click');
         })
     });
 
