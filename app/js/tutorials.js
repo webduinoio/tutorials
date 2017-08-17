@@ -20,7 +20,7 @@ $(function() {
     $.getJSON('../config/new-articles.json', function(data) {
         data.forEach(function(e) {
             if (e.old == file) {
-                $('.new-article').text(e.name).attr('href', 'http://tutorials.webduino.io/zh-tw/docs/' + e.new);
+                $('.new-article').text(e.name).attr('href', 'https://tutorials.webduino.io/zh-tw/docs/' + e.new);
             }
         });
     });
@@ -28,7 +28,7 @@ $(function() {
     $.getJSON('../config/new-articles.json', function(data) {
         data.forEach(function(e) {
             if (e.old == file) {
-                $('.popup-new-article').attr('href', 'http://tutorials.webduino.io/zh-tw/docs/' + e.new);
+                $('.popup-new-article').attr('href', 'https://tutorials.webduino.io/zh-tw/docs/' + e.new);
             }
         });
     });

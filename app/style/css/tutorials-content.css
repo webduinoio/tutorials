@@ -495,8 +495,8 @@ header.path-1 {
 .popup .whitebox {
   display: table;
   position: relative;
-  width: 60%;
-  max-width: 600px;
+  width: 50%;
+  max-width: 550px;
   margin: 120px auto 0;
   background: #fff;
   box-shadow: #000 0 0 20px;
@@ -516,7 +516,7 @@ header.path-1 {
   top: 5%;
   right: 5%;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 }
 .popup .whitebox .popup-close:hover {
@@ -533,12 +533,12 @@ header.path-1 {
 .popup .whitebox h3 {
   padding-top: 22px;
   padding-bottom: 5px;
-  line-height: 1.3;
+  line-height: 1;
   text-align: center;
 }
 .popup .whitebox p {
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
   width: 85% !important;
   color: #000000;
 }
@@ -548,7 +548,7 @@ header.path-1 {
   padding: 20px 20px;
   display: inline-block;
   background-color: #FFAF00;
-  margin: 5px 0px;
+  margin: 0;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
