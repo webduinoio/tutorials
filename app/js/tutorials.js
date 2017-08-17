@@ -28,7 +28,7 @@ $(function() {
     $.getJSON('../config/new-articles.json', function(data) {
         data.forEach(function(e) {
             if (e.old == file) {
-                $('.popup-new-article').attr('href', 'https://tutorials.webduino.io/zh-tw/docs/' + e.new);
+                $('.popup-new-article').attr('href', 'https://tutorials.webduino.io/zh-tw/docs/' + e.new + '?utm_source=webduino_io&utm_medium=clickgo&utm_campaign=popup_information');
             }
         });
     });
