@@ -19,6 +19,8 @@ date: 20161005
 
 <meta property="og:description" content="Webduino Smart 開發板有內建了一個微型三色 LED 燈 ( 共陰 )，預設的接腳為紅 15，綠 12，藍 13，這表示我們可以直接透過 Smart 發出各種顏色。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/smart/smart-rgbled.html">
+
 <meta property="og:title" content="Smart 三色燈初體驗" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/smart-03-rgbled.html">

@@ -19,6 +19,8 @@ date: 20161120
 
 <meta property="og:description" content="上一篇認識了 Webduino Smart 的按鈕開關，但如果只是按個按鈕顯示一下文字，功能實在是太陽春了，因此這一篇將介紹如何透過開關的行為，操控 Youtube 的影片播放，如此一來只要動動手指，就可以控制影片囉。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/smart/basic/button-youtube.html">
+
 <meta property="og:title" content="Smart 按鈕開關控制 Youtube" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/smart-07-button-youtube.html">

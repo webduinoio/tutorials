@@ -19,6 +19,8 @@ date: 20160330
 
 <meta property="og:description" content="在程式邏輯的世界裡，「迴圈」是很重要也是必備的程式之一，在這個範例中，我們將會用迴圈的方式，讓 12 顆 LED 燈交互閃爍，同時也可以控制交互閃爍的速度，實際做出一個超酷的霹靂燈效果。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/useful/component/led-dancing.html">
+
 <meta property="og:title" content="教學範例 28：霹靂燈 ( 12 顆 LED + 迴圈 )" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-28-dancing-leds.html">

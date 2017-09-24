@@ -19,6 +19,8 @@ date: 20160704
 
 <meta property="og:description" content="上一篇「教學範例 34：可變電阻改變圖片位置」介紹了利用可變電阻改變圖片位置，這篇我們將功能再升級，透過可變電阻來改變 Youtube 影片的音量大小，實作出來就像是實際的旋鈕控制音響喇叭音量一樣。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/useful/sensor/pot-youtube.html">
+
 <meta property="og:title" content="教學範例 35：可變電阻改變 Youtube 音量大小" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-35-vr-youtube.html">

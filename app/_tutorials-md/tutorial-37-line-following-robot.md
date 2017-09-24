@@ -19,6 +19,8 @@ date: 20170313
 
 <meta property="og:description" content="這篇範例將為自走車加上「循跡」的功能，使自走車在一般操作之外，也能透過「循跡控制板」，輕鬆跟隨地上的軌跡移動，最後甚至可藉由雲端資料庫的輔助，實現紀錄路徑軌跡並重複播放的功能。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/useful/example/toycar-line-following.html">
+
 <meta property="og:title" content="教學範例 37：循跡自走車" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-37-line-following-robot.html">

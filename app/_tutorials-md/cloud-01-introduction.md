@@ -21,6 +21,8 @@ date: 20170511
 
 <meta property="og:title" content="Webduino 雲端平台" >
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/cloud/index.html">
+
 <meta property="og:url" content="https://webduino.io/tutorials/cloud-01-introduction.html">
 
 <meta property="og:image" content="https://webduino.io/img/tutorials/cloud-01-fb.jpg">

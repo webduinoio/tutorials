@@ -19,6 +19,8 @@ date: 20150425
 
 <meta property="og:description" content="在接觸 Webduino 的初期，每個人都會遭遇到大大小小不同的問題，這個頁面裡頭會列出許多常見的問題，以及各種問題對應的解決方法，如果有其他的問題，也可以直接 email 給我們。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/faq/index.html">
+
 <meta property="og:title" content="Webduino 常見問題與處理" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/info-03-faq.html">

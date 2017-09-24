@@ -19,6 +19,8 @@ date: 20150425
 
 <meta property="og:description" content="超音波傳感器顧名思義就是會發送超音波，藉由超音波碰撞到物體之後反射回來的時間差，就可以計算超音波傳感器與相對應物體之間的距離，在這個 Webduino 的範例裡頭使用的超音波傳感器 HC-SR04 上頭有兩個類似喇叭的裝置，其中一個是 Trig，負責發送超音波，另外一個是 Echo，負責接收反射回來的超音波，最後會得到一個單位為「公分」的數值，就是超音波傳感器與待測物體之間的距離。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/sensor/ultrasonic.html">
+
 <meta property="og:title" content="教學範例 5：控制超音波傳感器" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-05-ultrasonic.html">

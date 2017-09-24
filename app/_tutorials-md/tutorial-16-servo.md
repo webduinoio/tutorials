@@ -19,6 +19,8 @@ date: 20150625
 
 <meta property="og:description" content="人體紅外線偵測傳感器 ( PIR ) 可以偵測紅外線的反應變化，當接收到人體發射的紅外線，就會觸發相對應的動作，這個範例利用 Webduino，在人體紅外線傳感器接收到訊號時，觸發網頁的燈泡亮起，同時也讓 LED 燈發光。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/component/servo.html">
+
 <meta property="og:title" content="教學範例 16：控制伺服馬達轉動角度" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-16-servo.html">

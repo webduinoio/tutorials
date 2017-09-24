@@ -21,6 +21,8 @@ date: 20170511
 
 <meta property="og:title" content="Blockly 程式積木" >
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/cloud/basic/webduino-blockly.html">
+
 <meta property="og:url" content="https://webduino.io/tutorials/cloud-03-webduino-blockly.html">
 
 <meta property="og:image" content="https://webduino.io/img/tutorials/cloud-03-fb.jpg">

@@ -21,6 +21,8 @@ date: 20170511
 
 <meta property="og:title" content="雲端平台 - 註冊與登入" >
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/cloud/basic/cloud-register.html">
+
 <meta property="og:url" content="https://webduino.io/tutorials/cloud-02-register.html">
 
 <meta property="og:image" content="https://webduino.io/img/tutorials/cloud-02-fb.jpg">

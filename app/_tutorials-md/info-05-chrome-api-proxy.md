@@ -19,6 +19,8 @@ date: 20151124
 
 <meta property="og:description" content="透過由 Webduino 開發的 Chrome 的 API Proxy 程式，可以讓 Arduino UNO 在沒有 Wifi 的情況下，藉由序列埠或藍芽的方式，操控各種電子零件與傳感器，感受方便美好的 Webduino 開發體驗。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/setting/chrome-api-proxy.html">
+
 <meta property="og:title" content="Chrome API Proxy 安裝設定" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/info-05-chrome-api-proxy.html">
