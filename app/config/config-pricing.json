@@ -3,8 +3,8 @@
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
-  "onSale": "756",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "840",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
 }, {
@@ -12,8 +12,8 @@
   "name": "Webduino 馬克 1 號",
   "url": "component-webduino-v1.html",
   "pricing": "840",
-  "onSale": "756",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "840",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
 }, {
@@ -30,8 +30,8 @@
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
-  "onSale": "1,220",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "1,365",
+  "pricingNote": "，",
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
 }, {
@@ -39,8 +39,8 @@
   "name": "Webduino 開發者套件 - 基本包",
   "url": "webduino-developer-a.html",
   "pricing": "1,365",
-  "onSale": "1,220",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "1,365",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-developerA-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500230488"
 }, {
@@ -48,8 +48,8 @@
   "name": "Webduino 開發者套件 - 威力加強包",
   "url": "webduino-developer-b.html",
   "pricing": "1,890",
-  "onSale": "1,700",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "1,890",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-developerB-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500257353"
 },{
@@ -57,8 +57,8 @@
   "name": "Webduino 開發者套件 - Dr. Smart",
   "url": "webduino-developer-drsmart.html",
   "pricing": "760",
-  "onSale": "680",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "760",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-developer-drsmart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21719210149456"
 },{
@@ -66,8 +66,8 @@
   "name": "Webduino 智慧插座 - 實戰智慧套件",
   "url": "webduino-developer-smart-socket.html",
   "pricing": "3,900",
-  "onSale": "3,510",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "3,900",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-smartSocket-all-package.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21728687888678"
 }, {
@@ -120,8 +120,8 @@
   "name": "Webduino 豪華套件包",
   "url": "webduino-package-all.html",
   "pricing": "1,680",
-  "onSale": "1,500",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "1,680",
+  "pricingNote": "",
   "banner": "../img/buy/package-all-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898515922"
 }, {
@@ -129,8 +129,8 @@
   "name": "Webduino 基礎套件包",
   "url": "webduino-components-facile-package.html",
   "pricing": "630",
-  "onSale": "567",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "630",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-components-facile-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895425693"
 }, {
@@ -138,8 +138,8 @@
   "name": "Webduino 進階套件包",
   "url": "webduino-components-standard-package.html",
   "pricing": "630",
-  "onSale": "567",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "630",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-components-standard-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895437595"
 }, {
@@ -147,8 +147,8 @@
   "name": "Webduino 高階套件包",
   "url": "webduino-components-excellent-package.html",
   "pricing": "630",
-  "onSale": "567",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "630",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-components-excellent-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895464247"
 }, {
@@ -183,8 +183,8 @@
   "name": "Webduino 智慧植栽套件 ( 電子材料包 )",
   "url": "webduino-package-plant.html",
   "pricing": "630",
-  "onSale": "567",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "630",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-package-plant-01b.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21651860887664"
 }, {
@@ -201,8 +201,8 @@
   "name": "Webduino 智慧插座套件 ( 電子材料包 )",
   "url": "webduino-package-socket.html",
   "pricing": "840",
-  "onSale": "756",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "840",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898592501"
 }, {
@@ -210,8 +210,8 @@
   "name": "Webduino 智慧插座擴充套件",
   "url": "webduino-package-socket-extension.html",
   "pricing": "760",
-  "onSale": "680",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "760",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-extension-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21725543213746"
 }, {
@@ -219,8 +219,8 @@
   "name": "Webduino 公仔自走車 ( 電子材料包 )",
   "url": "webduino-package-toycar.html",
   "pricing": "1,575",
-  "onSale": "1,420",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "1,575",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-package-toycar-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
 }, {
@@ -228,8 +228,8 @@
   "name": "Webduino 自走車循跡升級套件 ( 電子材料包 )",
   "url": "webduino-package-line-following.html",
   "pricing": "735",
-  "onSale": "670",
-  "pricingNote": "，即日起至 9/30 限時優惠中",
+  "onSale": "735",
+  "pricingNote": "",
   "banner": "../img/buy/webduino-line-following-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21711510509507"
 }, {
