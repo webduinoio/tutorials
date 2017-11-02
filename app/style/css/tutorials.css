@@ -200,7 +200,7 @@
     width: 49%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .filter {
     position: relative;
     top: 50px;

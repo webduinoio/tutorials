@@ -1,0 +1,13 @@
+p {
+  word-break: normal !important;
+  text-align: left !important;
+}
+.content ul > li > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.content ul > li > ul > li {
+  margin: 10px 1em;
+  padding: 0;
+}

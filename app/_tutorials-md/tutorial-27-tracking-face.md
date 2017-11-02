@@ -19,6 +19,8 @@ date: 20160308
 
 <meta property="og:description" content="隨著瀏覽器的效能越來越強大，我們開始可以透過許多的網頁技術，實現我們長久以來的想像，在這個範例中，將會使用網路攝影機，進行人臉追蹤，根據人臉的位置，來點亮 LED 燈。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/useful/component/led-tracking-face.html">
+
 <meta property="og:title" content="教學範例 27：人臉追蹤點亮 LED 燈" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-27-tracking-face.html">

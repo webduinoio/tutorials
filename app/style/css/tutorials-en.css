@@ -202,49 +202,48 @@
 }
 @media (max-width: 800px) {
   .filter {
+    position: relative;
     top: 50px;
     border: none;
     padding-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 2px 20px;
-    height: 100px;
+    height: 140px;
   }
-  .filter div {
+  .filter a {
     margin: 0 -3px;
     border: none;
     width: 30%;
     font-size: 16px;
   }
   .filter.scroll {
-    height: 100px;
+    height: 140px;
     top: 50px;
-    border: none;
-    padding-top: 10px;
   }
-  .filter.scroll div {
-    height: 40px;
-    line-height: 40px;
+  .filter.scroll a {
+    padding: 0 20px;
     margin: 0 -3px;
     border: none;
     font-size: 16px;
+    height: 40px;
+    line-height: 40px;
   }
   .content {
-    margin-top: 180px;
+    margin-top: 60px;
   }
 }
 @media (max-width: 500px) {
   .filter {
-    height: 140px;
+    height: 180px;
     position: absolute;
   }
-  .filter.scroll {
-    height: 140px;
-  }
   .filter a {
-    padding: 0;
-    width: 40%;
+    width: 45%;
+  }
+  .filter.scroll {
+    height: 180px;
   }
   .content {
-    margin-top: 210px;
+    margin-top: 240px;
   }
   .content > div {
     width: 100%;

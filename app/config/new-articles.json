@@ -1,0 +1,237 @@
+[{
+  "name": "Webduino 雲端平台",
+  "old": "cloud-01-introduction.html",
+  "new": "cloud/index.html"
+}, {
+  "name": "註冊與登入",
+  "old": "cloud-02-register.html",
+  "new": "cloud/basic/cloud-register.html"
+}, {
+  "name": "Blockly 程式積木",
+  "old": "cloud-03-webduino-blockly.html",
+  "new": "cloud/basic/webduino-blockly.html"
+}, {
+  "name": "Device 裝置管理 ( 裝置認證 )",
+  "old": "cloud-04-webduino-device.html",
+  "new": "cloud/basic/webduino-device.html"
+}, {
+  "name": "Device 裝置管理 ( 雲端更新 )",
+  "old": "cloud-05-webduino-device-update.html",
+  "new": "cloud/basic/webduino-device-update.html"
+}, {
+  "name": "Webduino 基礎教學",
+  "old": "info-01-introduction.html",
+  "new": "basic/index.html"
+}, {
+  "name": "馬克一號 ( 初始化設定 )",
+  "old": "info-02-setup.html",
+  "new": "basic/board/mark1-setup.html"
+}, {
+  "name": "常見問題",
+  "old": "info-03-faq.html",
+  "new": "faq/index.html"
+}, {
+  "name": "Webduino Fly ( 初始化設定 )",
+  "old": "info-04-uno-setup.html",
+  "new": "basic/board/fly-setup.html"
+}, {
+  "name": "Arduino 韌體下載與燒錄",
+  "old": "info-07-arduino-ino.html",
+  "new": "basic/setting/arduino-ino.html"
+}, {
+  "name": "Chrome API Proxy 安裝",
+  "old": "info-05-chrome-api-proxy.html",
+  "new": "basic/setting/chrome-api-proxy.html"
+}, {
+  "name": "認識 Webduino Blockly",
+  "old": "info-08-blockly-tutorial.html",
+  "new": "basic/blockly/blockly-information.html"
+}, {
+  "name": "連動多塊開發板",
+  "old": "info-09-multi-webduino-board.html",
+  "new": "basic/blockly/multi-board.html"
+}, {
+  "name": "腳位偵測設定",
+  "old": "info-10-pin.html",
+  "new": "basic/blockly/board-pin.html"
+}, {
+  "name": "Webduino Blockly 特殊功能",
+  "old": "info-11-feature.html",
+  "new": "basic/blockly/blockly-tutorial-02.html"
+}, {
+  "name": "使用藍芽操控",
+  "old": "info-12-bluetooth.html",
+  "new": "basic/setting/bluetooth.html"
+}, {
+  "name": "Webduino Smart ( 介紹 )",
+  "old": "smart-01-information.html",
+  "new": "basic/board/smart-information.html"
+}, {
+  "name": "Webduino Smart ( 初始化設定 )",
+  "old": "smart-02-setup.html",
+  "new": "basic/board/smart-setup.html"
+}, {
+  "name": "Smart ( 三色 LED )",
+  "old": "smart-03-rgbled.html",
+  "new": "basic/smart/smart-rgbled.html"
+}, {
+  "name": "三色 LED (色彩輪播 )",
+  "old": "smart-04-rgbled.html",
+  "new": "smart/basic/rgbled-colorful.html"
+}, {
+  "name": "Smart ( 光敏電阻 )",
+  "old": "smart-05-photocell.html",
+  "new": "basic/smart/smart-photocell.html"
+}, {
+  "name": "Smart ( 按鈕開關 )",
+  "old": "smart-06-button.html",
+  "new": "basic/smart/smart-button.html"
+}, {
+  "name": "按鈕開關 ( 控制 Youtube )",
+  "old": "smart-07-button-youtube.html",
+  "new": "smart/basic/button-youtube.html"
+}, {
+  "name": "LED",
+  "old": "tutorial-01-led.html",
+  "new": "basic/component/led.html"
+}, {
+  "name": "三色 LED",
+  "old": "tutorial-03-rgbled.html",
+  "new": "basic/component/rgbled.html"
+}, {
+  "name": "三色 LED ( 調色盤 )",
+  "old": "tutorial-04-rgbled-palette.html",
+  "new": "useful/component/rgbled-palette.html"
+}, {
+  "name": "超音波偵測",
+  "old": "tutorial-05-ultrasonic.html",
+  "new": "basic/sensor/ultrasonic.html"
+}, {
+  "name": "超音波 ( 改變圖片大小 )",
+  "old": "tutorial-06-ultrasonic-imagesize.html",
+  "new": "useful/sensor/ultrasonic-imagesize.html"
+}, {
+  "name": "超音波 ( 控制 LED )",
+  "old": "tutorial-07-ultrasonic-led.html",
+  "new": "useful/sensor/ultrasonic-led.html"
+}, {
+  "name": "超音波 ( 控制三色 LED )",
+  "old": "tutorial-08-ultrasonic-rgbled.html",
+  "new": "useful/sensor/ultrasonic-rgbled.html"
+}, {
+  "name": "按鈕開關",
+  "old": "tutorial-09-button-led.html",
+  "new": "basic/component/button.html"
+}, {
+  "name": "溫濕度偵測",
+  "old": "tutorial-10-temperature-humidity-sensor.html",
+  "new": "basic/sensor/dht.html"
+}, {
+  "name": "震動開關",
+  "old": "tutorial-11-shock-button.html",
+  "new": "basic/component/shake-button.html"
+}, {
+  "name": "聲音偵測",
+  "old": "tutorial-12-sound-sensor.html",
+  "new": "basic/sensor/sound.html"
+}, {
+  "name": "蜂鳴器",
+  "old": "tutorial-13-buzzer.html",
+  "new": "basic/component/buzzer.html"
+}, {
+  "name": "繼電器",
+  "old": "tutorial-14-relay.html",
+  "new": "basic/component/relay.html"
+}, {
+  "name": "人體紅外線偵測",
+  "old": "tutorial-15-pir-led.html",
+  "new": "basic/sensor/pir.html"
+}, {
+  "name": "伺服馬達",
+  "old": "tutorial-16-servo.html",
+  "new": "basic/component/servo.html"
+}, {
+  "name": "光敏電阻",
+  "old": "tutorial-17-photocell.html",
+  "new": "basic/sensor/photocell.html"
+}, {
+  "name": "LED 點矩陣",
+  "old": "tutorial-18-max7219.html",
+  "new": "basic/component/maxmatrix.html"
+}, {
+  "name": "RFID",
+  "old": "tutorial-19-rfid.html",
+  "new": "basic/sensor/rfid.html"
+}, {
+  "name": "RFID ( 控制 Youtube )",
+  "old": "tutorial-20-rfid-youtube.html",
+  "new": "useful/sensor/rfid-youtube.html"
+}, {
+  "name": "自走車 ( 鍵盤操控 )",
+  "old": "tutorial-21-toycar.html",
+  "new": "useful/example/toycar-keyboard.html"
+}, {
+  "name": "LED ( 語音聲控 )",
+  "old": "tutorial-22-speech-led.html",
+  "new": "useful/component/led-speech.html"
+}, {
+  "name": "三軸加速度計",
+  "old": "tutorial-23-adxl345.html",
+  "new": "basic/sensor/adxl345.html"
+}, {
+  "name": "紅外線發射接收",
+  "old": "tutorial-24-ir.html",
+  "new": "basic/component/ir.html"
+}, {
+  "name": "搖桿",
+  "old": "tutorial-25-joypad.html",
+  "new": "basic/component/joypad.html"
+}, {
+  "name": "LED ( Google 表單操控 )",
+  "old": "tutorial-26-google-sheet.html",
+  "new": "useful/component/led-google-form.html"
+}, {
+  "name": "LED ( 人臉追蹤 )",
+  "old": "tutorial-27-tracking-face.html",
+  "new": "useful/component/led-tracking-face.html"
+}, {
+  "name": "LED ( 霹靂燈 )",
+  "old": "tutorial-28-dancing-leds.html",
+  "new": "useful/component/led-dancing.html"
+}, {
+  "name": "溫濕度 ( Firebase 紀錄 )",
+  "old": "tutorial-29-firebase-dht.html",
+  "new": "useful/sensor/dht-firebase.html"
+}, {
+  "name": "百元玩具車大改造",
+  "old": "tutorial-30-motor-ic.html",
+  "new": "useful/example/toycar-motor-ic.html"
+}, {
+  "name": "土壤濕度偵測",
+  "old": "tutorial-31-soil-max7219.html",
+  "new": "basic/sensor/soil.html"
+}, {
+  "name": "智慧插座 ( 組裝與操控 )",
+  "old": "tutorial-32-smart-socket.html",
+  "new": "useful/example/smart-socket.html"
+}, {
+  "name": "蜂鳴器 ( 會說話的鬧鐘 )",
+  "old": "tutorial-33-clock.html",
+  "new": "useful/component/buzzer-clock.html"
+}, {
+  "name": "可變電阻",
+  "old": "tutorial-34-vr-image.html",
+  "new": "basic/sensor/pot.html"
+}, {
+  "name": "可變電阻 ( 改變 Youtube 音量 )",
+  "old": "tutorial-35-vr-youtube.html",
+  "new": "useful/sensor/pot-youtube.html"
+}, {
+  "name": "智慧植栽 ( 水泵 )",
+  "old": "tutorial-36-pump.html",
+  "new": "useful/example/smart-plant-pump.html"
+}, {
+  "name": "自走車 ( 循跡功能 )",
+  "old": "tutorial-37-line-following-robot.html",
+  "new": "useful/example/toycar-line-following.html"
+}]

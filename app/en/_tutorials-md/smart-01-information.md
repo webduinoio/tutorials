@@ -13,11 +13,11 @@ date: 20161001
 
 <title>Introduction to Webduino Smart :::: Webduino = Web × Arduino</title>
 
-<meta name="description" content="Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independantly. It will be a path to lead an efficient and effective development of IoT.">
+<meta name="description" content="Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independently. It will be a path to lead an efficient and effective development of IoT.">
 
-<meta itemprop="description" content="Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independantly. It will be a path to lead an efficient and effective development of IoT.">
+<meta itemprop="description" content="Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independently. It will be a path to lead an efficient and effective development of IoT.">
 
-<meta property="og:description" content="Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independantly. It will be a path to lead an efficient and effective development of IoT.">
+<meta property="og:description" content="Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independently. It will be a path to lead an efficient and effective development of IoT.">
 
 <meta property="og:title" content="Introduction to Webduino Smart" >
 
@@ -42,7 +42,15 @@ date: 20161001
 <!-- @@block  =  tutorials-->
 # Introduction to Webduino Smart
 
-Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independantly. It will be a path to lead an efficient and effective development of IoT.
+Webduino Smart is a ground-breaking development board. Unlike Webduino Mark 1 and Webduino Fly, which need to combine with Arduino boards, Webduino Smart can function with the Internet and WebSocket independently. It will be a path to lead an efficient and effective development of IoT.
+
+## On-board Components and Pins
+
+Webduino Smart has a photocell sensor, an RGB LED, and a micro switch button onboard. The photocell is connected to the AD pin, and the RGB (Red, Geen, Blue) LED is connected to pins 15, 12, and 13 respectively **(The LED is a common cathode, whereas most of the examples on this site use common anode RGB LED.)** And the micro switch button is connected to pin 4. Please take note when you use these pins.
+
+![](../../img/tutorials/en/smart-01-05.jpg)
+
+<br/>
 
 ## The Appearence
 
@@ -60,17 +68,20 @@ The front and back images:
 
 Reference with AA & AAA batteries:
 
-![](../../img/tutorials/smart-01-04.jpg)
+![](../../img/tutorials/en/smart-01-04.jpg)
 
 <br/>
 
-## On-board Components and Pins
+## Replace the stickers
 
-Webduino Smart has a photocell sensor, an RGB LED, and a micro switch button onboard. The photocell is connected to the AD pin, and the RGB (Red, Geen, Blue) LED is connected to pins 15, 12, and 13 respectively **(The LED is a common cathode, whereas most of the examples on this site use common anode RGB LED.)** And the micro switch button is connected to pin 4. Please take note when you use these pins.
+You can replace the original stickers on the board. Just cut the stickers that included in the package, and paste it on both sides. Please note that there are 4 stickers, **L-out(outside on the left)**, **L-in(inside on the left)**, **R-out(outside on the right)**, and **R-in(inside on the right)** each.
 
-![](../../img/tutorials/en/smart-01-05.jpg)
+![](../../img/tutorials/en/smart-01-09.jpg)
 
-<br/>
+You could refer to the 360 degree overview for pasting them correctly.
+
+![](../../img/tutorials/en/smart-01-10.jpg)
+
 
 ## Webduino Series
 

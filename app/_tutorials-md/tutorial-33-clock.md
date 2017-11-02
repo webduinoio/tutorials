@@ -19,6 +19,8 @@ date: 20160629
 
 <meta property="og:description" content="過去的範例分別有介紹過按鈕開關和蜂鳴器的用法，在這個範例裡面，我們會把按鈕開關和蜂鳴器結合，實際做出一個具備貪睡功能的鬧鐘，也就是按下按鈕開關之後，會過個幾分鐘再叫，同時，按下開關的時候電腦還會發音報時喔！">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/useful/component/buzzer-clock.html">
+
 <meta property="og:title" content="教學範例 33：會說話的鬧鐘 ( 貪睡、蜂鳴器 )" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-33-clock.html">

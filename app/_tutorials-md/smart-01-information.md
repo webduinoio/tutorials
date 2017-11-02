@@ -19,6 +19,8 @@ date: 20161001
 
 <meta property="og:description" content="Webduino Smart 是 2016 年推出的物聯網開發板，有別於過去馬克 1 號和 Fly 需要搭配 Arduino 才能運作，Smart 可以自行獨立運作，同時也具備連上網際網路 (Internet) 和透過區域網路 ( WebSocket ) 操控的能力，相信更能有效地應用在物聯網的開發和各種創意上！">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/board/smart-information.html">
+
 <meta property="og:title" content="認識 Webduino Smart" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/smart-01-information.html">
@@ -44,29 +46,38 @@ date: 20161001
 
 Webduino Smart 是 2016 年推出的物聯網開發板，有別於過去馬克 1 號和 Fly 需要搭配 Arduino 才能運作，Smart 可以自行獨立運作，同時也具備連上網際網路 ( Internet ) 和透過區域網路 ( WebSocket ) 操控的能力，相信更能有效地應用在物聯網的開發和各種創意上！
 
-## 外觀介紹
+<br/>
+
+## 預設元件和腳位介紹
 
 Webduino Smart 是一塊長 3 公分寬 2.5 公分的開發板，重量約 85 公克，腳位有數位腳 0、2、4、5、14、16，PWM 腳位 12、13、15，類比腳 AD ( A0 )，其他腳位 TX、RX、3.3V、VCC、RST 和 GND 各 1 個。
 
-正面與背面：
+開發板內建一個光敏電阻、一個三色燈和一個微型按鈕開關，其中 AD 腳位預設供給光敏電阻使用，三色 LED 燈的紅色使用 15 號腳、綠色使用 12 號腳、藍色使用 13 號腳 ( **三色 LED 燈為「共陰」，在官網其他範例外接的三色 LED 為「共陽」** )，而一個微型按鈕開關則使用了 4 號腳位，使用的時候要特別注意。
 
-![](../img/tutorials/smart-01-02.jpg)
+![](../img/tutorials/smart-01-05.jpg)
 
-360 度照片：
-
-![](../img/tutorials/smart-01-03.gif)
+## 外觀介紹
 
 大小對照 ( 左邊是四號電池和三號電池 )：
 
 ![](../img/tutorials/smart-01-04.jpg)
 
+360 度照片：
+
+![](../img/tutorials/smart-01-03.gif)
+
 <br/>
 
-## 預設元件和腳位介紹
+## 更換 Smart 腳位貼紙
 
-開發板內建一個光敏電阻、一個三色燈和一個微型按鈕開關，其中 AD 腳位預設供給光敏電阻使用，三色 LED 燈的紅色使用 15 號腳、綠色使用 12 號腳、藍色使用 13 號腳 ( **三色 LED 燈為「共陰」，在官網其他範例外接的三色 LED 為「共陽」** )，而一個微型按鈕開關則使用了 4 號腳位，使用的時候要特別注意。
+若覺得原本貼在 Smart 開發板上的貼紙比較不好看，可更換包裝內的腳位貼紙，腳位貼紙分為**「左邊外側 L in」、「左邊內側 L out」、「右邊內側 R in」和「右邊外側 R out」**，左右邊的識別**以 Smart 的 Webduino Logo 朝上做左右邊區分**，使用者可自行用剪刀剪開後黏貼。
 
-![](../img/tutorials/smart-01-05.jpg)
+![](../img/tutorials/smart-01-09.jpg)
+
+若要更換貼紙，只需撕下原本的白色腳位貼紙，再將新的黑色貼紙貼上即可，**數字與英文字對齊的邊緣朝上貼**，可參考上方 360 度照片，千萬要注意左右邊、內外側不要貼錯了！
+
+![](../img/tutorials/smart-01-10.jpg)
+
 
 <br/>
 
@@ -177,12 +188,12 @@ Arduino UNO</td>
     <tr>
       <td>WebSocket</td>
       <td>O</td>
-      <td>遠端更新後支援</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
   </tr>
     <tr>
       <td>藍芽</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
       <td>O</td>
       <td>O</td>
   </tr>
@@ -203,7 +214,7 @@ Arduino UNO</td>
       <td>三色 LED ( 共陰 )<br/>
 光敏電阻<br/>
 微型按鈕開關</td>
-      <td>X</td>
+      <td>蜂鳴器</td>
       <td>X</td>
   </tr>
     <tr>
@@ -225,22 +236,22 @@ LED 點矩陣<br/>
 聲音偵測<br/>
 超音波距離偵測<br/>
 蜂鳴器</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
       <td>O</td>
       <td>O</td>
   </tr>
     <tr>
       <td>紅外線發射接收</td>
-      <td>遠端更新後支援</td>
-      <td>遠端更新後支援</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
   </tr>
     <tr>
       <td>RFID<br/>
 三軸加速度計</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
       <td>X</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
   </tr>
     <tr>
       <td>土壤偵測<br/>
@@ -253,7 +264,7 @@ LED 點矩陣<br/>
       <td>搖桿</td>
       <td>X</td>
       <td>X</td>
-      <td>遠端更新後支援</td>
+      <td>遠端更新後支援<br/>( 需註冊雲端平台帳號 )</td>
   </tr>
   </table>
 

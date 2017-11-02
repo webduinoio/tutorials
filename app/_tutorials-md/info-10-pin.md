@@ -19,6 +19,8 @@ date: 20160331
 
 <meta property="og:description" content="「腳位偵測與設定」，是一塊開發板必須要有的功能，同樣的在 Webduino 也有提供這些設定方法，在 Webduino 開發板裡，如果使用「腳位」的積木，所有的數位腳 ( 2 ~ 13 ) 預設都是「數位輸出」，而所有的類比腳 ( A0 ~ A5 ) 預設都是「類比輸入」。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/blockly/board-pin.html">
+
 <meta property="og:title" content="Webduino 腳位偵測與設定" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/info-10-pin.html">
@@ -62,7 +64,7 @@ date: 20160331
 
 ## 腳位設定應用
 
-由於我們可以透過腳位的數位輸出，設定高電位 1 和低電位 0，所以我們就可以用低電位來表示 GND 或是用高電位 1 來表示 5V 的輸出，舉例來說，剛剛我們把 LED 接在 11 和 GND，讓 11 的數位輸出數值為 1，所以 LED 就會亮起來，在這裡我們可以把 LED 長腳接 11，短腳接 12，然後把 12 的數位輸出設為 0，11 的數位輸出一樣設為 1，待開發板上線之後，點選右上方紅色執行按鈕，就會看到 LED 燈還是亮起來了。
+由於我們可以透過腳位的數位輸出，設定高電位 1 和低電位 0，所以我們就可以用低電位來表示 GND 或是用高電位 1 來表示 5V 的輸出，舉例來說，剛剛我們把 LED 接在 11 和 GND，讓 11 的數位輸出數值為 1，所以 LED 就會亮起來，接著我們可以把 LED 長腳接 11，短腳接 12，然後把 12 的數位輸出設為 0，11 的數位輸出一樣設為 1，待開發板上線之後，點選右上方紅色執行按鈕，就會看到 LED 燈還是亮起來了。
 
 ![](../img/tutorials/info-10-05.jpg)
 

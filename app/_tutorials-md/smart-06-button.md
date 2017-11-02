@@ -19,6 +19,8 @@ date: 20161120
 
 <meta property="og:description" content="Webduino Smart 開發板的 USB 電源接孔附近有一個微型按鈕開關 ( 腳位為 4 )，我們可以透過這個按鈕開關，執行「按下」、「放開」或「長按」等動作，進一步操控網頁元素或電子零件。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/smart/smart-button.html">
+
 <meta property="og:title" content="Smart 的按鈕開關" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/smart-06-button.html">
@@ -50,7 +52,7 @@ Webduino Smart 開發板的 USB 電源接孔附近有一個微型按鈕開關 ( 
 
 <div class="buy-this">
 	<span>按鈕開關相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
-	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
 </div>
 
 ## Webduino Blockly 操作解析
@@ -64,7 +66,7 @@ Webduino Smart 開發板的 USB 電源接孔附近有一個微型按鈕開關 ( 
 ![](../img/tutorials/smart-06-04.jpg)
 
 點選右上方紅色按鈕執行，用手指按壓按鈕開關，就會發現網頁的顯示文字也會跟著變化囉。( 記得要填入 WebSocket 的 ip )
-( 解答：[http://blockly.webduino.io/?tags=smart#-KWx4e7tej4wFY8amv5v](http://blockly.webduino.io/?tags=smart#-KWx4e7tej4wFY8amv5v) )
+( 解答：[http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb](http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb) )
 
 <br/>
 
@@ -75,11 +77,11 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 	<script src="https://webduino.io/components/webduino-js/dist/webduino-all.min.js"></script>
 	<script src="https://webduinoio.github.io/webduino-blockly/webduino-blockly.js"></script>
 
-程式碼的部分可以看到是走 WebSocket 的模式：`{transport: 'websocket', url: '192.168.8.115'}`，接著看到按鈕開關的程式碼，透過`.on`來操控，設定值如果是`pressed`表示按下，`released`表示放開，`longPress`則表示長按，後面接續的 function 就是要執行的動作。
+程式碼的部分可以看到是走 WebSocket 的模式：`{board: 'Smart', url: '192.168.0.230'}`，接著看到按鈕開關的程式碼，透過`.on`來操控，設定值如果是`pressed`表示按下，`released`表示放開，`longPress`則表示長按，後面接續的 function 就是要執行的動作。
 
 	var button;
 
-	boardReady({board: 'Smart', transport: 'websocket', url: '192.168.8.115'}, function (board) {
+	boardReady({board: 'Smart', url: '192.168.0.230'}, function (board) {
 	  board.systemReset();
 	  board.samplingInterval = 50;
 	  button = getPullupButton(board, 4);
@@ -102,11 +104,11 @@ HTML 的 header 引入 `webduino-all.min.js`，目的在讓瀏覽器可以支援
 
 以上就是 Smart 的按鈕開關操作介紹。
 完整程式碼：[http://bin.webduino.io/yeyez/edit?html,js,output](http://bin.webduino.io/yeyez/edit?html,js,output)
-解答：[http://blockly.webduino.io/?tags=smart#-KWx4e7tej4wFY8amv5v](http://blockly.webduino.io/?tags=smart#-KWx4e7tej4wFY8amv5v)
+解答：[http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb](http://blockly.webduino.io/#-KbJXzxrSLtDh9m6ITVb)
 
 <div class="buy-this">
 	<span>按鈕開關相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
-	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+	<span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
 </div>
 
 

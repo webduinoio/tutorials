@@ -19,6 +19,8 @@ date: 20160113
 
 <meta property="og:description" content="RFID 是 Radio Frequency IDentification 的縮寫，中文翻譯為「無線射頻辨識」，是一種常見的無線通訊技術，透過 RFID 識別裝置 ( 讀卡器 ) 所產生的「電磁場」，能讓附著在物品上的「電子標籤」獲得能量進而發送無線電頻率的訊號，RFID 在今日相當的普及，常見於庫存、資產、人員等的追蹤與管理，甚至許多的防偽、畜產管理也都有 RFID 的身影存在。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/sensor/rfid.html">
+
 <meta property="og:title" content="教學範例 19：RFID" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-19-rfid.html">

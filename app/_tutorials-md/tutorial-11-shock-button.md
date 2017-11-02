@@ -19,6 +19,8 @@ date: 20150602
 
 <meta property="og:description" content="震動開關裡頭有一個金屬導電彈簧以及金屬導電腳，金屬彈簧延伸到塑膠外殼外部是一條比較細的金屬線，因此在晃動的時候，內部互相接觸進而短路導電，原理和之前所提到的按鈕類似，只是震動開關利用震動的方式，控制電路的開或關。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/component/shake-button.html">
+
 <meta property="og:title" content="教學範例 11：震動開關改變網頁數值" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/ttutorial-11-shock-button.html">

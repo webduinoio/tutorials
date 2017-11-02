@@ -32,6 +32,7 @@
   background-image: url(../../img/buy/icon-new.png);
   background-size: cover;
   z-index: 2;
+  display: none;
 }
 .content > div > div a h2 {
   text-align: center;
@@ -56,15 +57,15 @@
 }
 .content > div > div a h3 span {
   color: #09b;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
+  transition: color .3s;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
 }
 .content > div > div a .price {
   text-decoration: line-through;
   font-size: 12px;
 }
-.content > div > div a .price-sale {
+.content > div > div a .onsale {
   color: #f00;
 }
 .content > div > div a .description {

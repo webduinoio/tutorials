@@ -136,6 +136,13 @@ header.path-1 {
 .content .need-more {
   padding-bottom: 50px;
 }
+.content .need-more div {
+  font-weight: bold;
+}
+.content .need-more .need-more-list {
+  font-weight: normal;
+  margin-left: 20px;
+}
 .content .readmore {
   display: block;
   color: #098;
@@ -214,7 +221,6 @@ footer .logo a:last-child {
   .content h3,
   .content p,
   .content ul,
-  .content div,
   .content .ruten,
   .content .need-more,
   .content .need-know,

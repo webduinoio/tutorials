@@ -19,6 +19,8 @@ date: 20160114
 
 <meta property="og:description" content="Webduino 公仔自走車是 Webduino 自主研發的產品，使用 Webduino 馬克 1 號開發板控制，不僅可以設定行進的模式，更可以接上超音波傳感器讓車子自動閃避障礙物，在這個範例我們會實作設定電腦的鍵盤行為，透過敲打鍵盤讓車子移動。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/useful/example/toycar-keyboard.html">
+
 <meta property="og:title" content="教學範例 21：鍵盤操控自走車" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/tutorial-21-toycar.html">

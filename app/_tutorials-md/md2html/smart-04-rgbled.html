@@ -15,6 +15,8 @@ img: smart-04-rgbled-s.jpg</p>
 
 <meta property="og:description" content="在 Smart 三色燈初體驗 裡我們已經對操控 Smart 的三色燈有了基本的認識，這篇將透過「等待」與「迴圈」積木，實作出一個躍動的三色燈。">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/smart/basic/rgbled-colorful.html">
+
 <meta property="og:title" content="躍動的 Smart 三色燈" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/smart-04-rgbled.html">
@@ -35,7 +37,7 @@ img: smart-04-rgbled-s.jpg</p>
 <p>在 <a href="smart-03-rgbled.html">Smart 三色燈初體驗</a> 裡我們已經對操控 Smart 的三色燈有了基本的認識，這篇將透過「等待」與「迴圈」積木，實作出一個躍動的三色燈。</p>
 <div class="buy-this">
     <span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
-    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
 </div>
 
 <h2>Webduino Blockly 操作解析</h2>
@@ -46,30 +48,30 @@ img: smart-04-rgbled-s.jpg</p>
 <p>在迴圈裡放入「等待」的積木，設定等待時間為 0.5 秒，就可以每 0.5 秒切換顏色，因為是放在重複的積木內，所以當動作執行十次之後，就會把三色燈關起來 ( 設定為黑色 )。</p>
 <p><img src="../img/tutorials/smart-04-04.jpg" alt=""> </p>
 <p>點選右上方紅色按鈕執行，如此一來我們的三色LED燈就會不停地切換顏色，如躍動一般。
-( 解答：<a href="http://blockly.webduino.io/#-KTJIVWlkFrf9b_bGdmI">http://blockly.webduino.io/#-KTJIVWlkFrf9b_bGdmI</a> )</p>
+( 解答：<a href="http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs">http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs</a> )</p>
 <p><img src="../img/tutorials/smart-03-05.gif" alt=""></p>
 <p><br/></p>
 <h2>範例解析</h2>
 <p>HTML 的 header 引入 <code>webduino-all.min.js</code>，目的在讓瀏覽器可以支援 WebComponents 以及 Webduino 所有的元件，如果是用 Blockly 編輯工具產生的程式碼，則要額外引入 <code>webduino-blockly.js</code>。</p>
 <pre><code>&lt;script src=&quot;https://webduino.io/components/webduino-js/dist/webduino-all.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;https://webduinoio.github.io/webduino-blockly/webduino-blockly.js&quot;&gt;&lt;/script&gt;
-</code></pre><p>程式碼的部分可以看到是走 WebSocket 的模式：<code>{transport: &#39;websocket&#39;, url: &#39;192.168.8.115&#39;}</code>，等待的部分我們使用了<code>awit</code>來實作。</p>
+</code></pre><p>程式碼的部分可以看到是走 WebSocket 的模式：<code>{board: &#39;Smart&#39;, url: &#39;192.168.0.230&#39;}</code>，等待的部分我們使用了<code>awit</code>來實作。</p>
 <pre><code>(async function () {
 
 var rgbled;
 
-boardReady({transport: &#39;websocket&#39;, url: &#39;192.168.8.115&#39;}, async function (board) {
+boardReady({board: &#39;Smart&#39;, url: &#39;192.168.0.230&#39;}, async function (board) {
   board.systemReset();
-  board.samplingInterval = 250;
+  board.samplingInterval = 50;
   rgbled = getRGBLedCathode(board, 15, 12, 13);
   for (var count = 0; count &lt; 10; count++) {
-    rgbled.setColor(&#39;#ffcc33&#39;);
-    await delay(0.5);
     rgbled.setColor(&#39;#ff0000&#39;);
     await delay(0.5);
-    rgbled.setColor(&#39;#3333ff&#39;);
+    rgbled.setColor(&#39;#3366ff&#39;);
     await delay(0.5);
     rgbled.setColor(&#39;#009900&#39;);
+    await delay(0.5);
+    rgbled.setColor(&#39;#ffcc33&#39;);
     await delay(0.5);
   }
   rgbled.setColor(&#39;#000000&#39;);
@@ -77,11 +79,11 @@ boardReady({transport: &#39;websocket&#39;, url: &#39;192.168.8.115&#39;}, async
 
 }());
 </code></pre><p>以上就是躍動的 Smart 三色燈 ( 顏色輪播切換 )。
-完整程式碼：<a href="http://bin.webduino.io/qivuj/edit?html,css,js,output">http://bin.webduino.io/qivuj/edit?html,css,js,output</a>
-解答：<a href="http://blockly.webduino.io/#-KTJIVWlkFrf9b_bGdmI">http://blockly.webduino.io/#-KTJIVWlkFrf9b_bGdmI</a></p>
+完整程式碼：<a href="http://bin.webduino.io/zudar/1/edit?html,js,output">http://bin.webduino.io/zudar/1/edit?html,js,output</a>
+解答：<a href="http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs">http://blockly.webduino.io/#-KbJVKgji5-EvGxORPDs</a></p>
 <div class="buy-this">
     <span>三色 LED 燈相關套件：<a href="https://webduino.io/buy/webduino-package-plus.html" target="_blank">Webduino 基本套件 Plus ( 支援馬克 1 號、Fly )</a></span>
-    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a>、<a href="https://webduino.io/buy/component-webduino-uno-fly.html" target="_blank">Webduino Fly + Arduino UNO</a></span>
+    <span>Webduino 開發板：<a href="https://webduino.io/buy/component-webduino-smart.html" target="_blank">Webduino Smart</a>、<a href="https://webduino.io/buy/component-webduino-v1.html" target="_blank">Webduino 馬克一號</a>、<a href="https://webduino.io/buy/component-webduino-fly.html" target="_blank">Webduino Fly</a></span>
 </div>
 
 

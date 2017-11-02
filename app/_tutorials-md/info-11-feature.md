@@ -19,6 +19,8 @@ date: 20160427
 
 <meta property="og:description" content="自從 Webduino Blockly 推出以來，受到許多使用者的喜愛，不少熱情的使用者提供了相當實用的改善建議，這篇集合了十個 Webduino Blockly 密技，幫助大家在操作上可以更加得心應手！">
 
+<link rel="canonical" href="https://tutorials.webduino.io/zh-tw/docs/basic/blockly/blockly-tutorial-01.html">
+
 <meta property="og:title" content="Webduino Blockly 的十一個操作密技" >
 
 <meta property="og:url" content="https://webduino.io/tutorials/info-11-feature.html">
