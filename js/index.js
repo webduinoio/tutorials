@@ -1,1 +1,1 @@
-$(function(){var i=$(".tutorials-menu .menu-content div"),t=$(window);i.css({height:i.width()/1.5+"px"}),t.resize(function(){i.css({height:i.width()/1.5+"px"})})});
+$(function(){var t=$(".tutorials-menu .menu-content div"),e=$(window);t.css({height:t.width()/1.5+"px"}),e.resize(function(){t.css({height:t.width()/1.5+"px"})}),$("#copyrirght-year").val((new Date).getFullYear())});
