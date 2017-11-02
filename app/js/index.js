@@ -11,6 +11,4 @@ $(function(){
 			'height':$box.width()/1.5+'px'
 		});
 	});
-
-  $('#copyrirght-year').val(new Date().getFullYear());
 });
