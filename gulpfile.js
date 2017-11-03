@@ -459,4 +459,6 @@ gulp.task('build',['move'], function () {
         .pipe(gulp.dest('build'));
 });
 
-gulp.task('default',['index','indexEN','include-final','buy-include','promote-include','tutorials-include-final','md2json','include-en-final','tutorials-en-include-final','md2json-en','less','watch']);
+gulp.task('default',['index','indexEN','include-final','buy-include','promote-include','tutorials-include-final','md2json','include-en-final','tutorials-en-include-final','md2json-en','less','watch'],function(){
+  process.exit();
+});
