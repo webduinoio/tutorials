@@ -218,7 +218,7 @@
   width: 100%;
   margin: 0.5em 0 2em 0;
   padding-left: 2em;
-  padding-right: 2em;
+  /*padding-right: 2em;*/
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
