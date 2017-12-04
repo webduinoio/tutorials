@@ -311,4 +311,31 @@
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-SmartSocket-banner3.jpg",
   "rutenUrl": "http://shopping.gotop.com.tw/product/a8470381-558f-11e7-a6dd-c74f89653481"
+}, {
+  "new":true,
+  "name": "Webduino 空氣偵測材料包",
+  "url": "webduino-package-air-monitoring.html",
+  "pricing": "1,260",
+  "onSale": "1,100",
+  "pricingNote": "2017/12/11~2018/1/14 限時優惠",
+  "banner": "../img/buy/webduino-2017xmas.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+}, {
+  "new":true,
+  "name": "Webduino Dr. Air 空氣偵測套件",
+  "url": "webduino-2017xmas-package2.html",
+  "pricing": "2,020",
+  "onSale": "1,800",
+  "pricingNote": "2017/12/11~2018/1/14 限時優惠",
+  "banner": "../img/buy/webduino-2017xmas.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+}, {
+  "new":true,
+  "name": "Webduino 豪華空氣偵測套件",
+  "url": "webduino-2017xmas-package3.html",
+  "pricing": "4,125",
+  "onSale": "3,800",
+  "pricingNote": "2017/12/11~2018/1/14 限時優惠",
+  "banner": "../img/buy/webduino-2017xmas.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }]
