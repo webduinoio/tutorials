@@ -3,7 +3,7 @@
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
-  "onSale": "840",
+  "onSale": "760",
   "pricingNote": "",
   "banner": "../img/buy/webduino-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
@@ -12,7 +12,7 @@
   "name": "Webduino 馬克 1 號",
   "url": "component-webduino-v1.html",
   "pricing": "840",
-  "onSale": "840",
+  "onSale": "760",
   "pricingNote": "",
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
@@ -20,7 +20,7 @@
   "new":false,
   "name": "Webduino Smart ( 雲端開發板 )",
   "url": "component-webduino-smart.html",
-  "pricing": "180",
+  "pricing": "250",
   "onSale": "180",
   "pricingNote": "",
   "banner": "../img/buy/webduino-smart-01.jpg",
@@ -30,7 +30,7 @@
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
-  "onSale": "1,365",
+  "onSale": "1,260",
   "pricingNote": "，",
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
@@ -313,7 +313,7 @@
   "rutenUrl": "http://shopping.gotop.com.tw/product/a8470381-558f-11e7-a6dd-c74f89653481"
 }, {
   "new":true,
-  "name": "Webduino 空氣偵測材料包",
+  "name": "Webduino 空氣偵測套件",
   "url": "webduino-package-air-monitoring.html",
   "pricing": "1,260",
   "onSale": "1,100",
@@ -322,7 +322,7 @@
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }, {
   "new":true,
-  "name": "Webduino Dr. Air 空氣偵測套件",
+  "name": "Webduino 空氣偵測 - 聰明樂活套件",
   "url": "webduino-2017xmas-package2.html",
   "pricing": "2,020",
   "onSale": "1,800",
@@ -331,7 +331,7 @@
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
 }, {
   "new":true,
-  "name": "Webduino 豪華空氣偵測套件",
+  "name": "Webduino 空氣偵測 - 聖誕嘉年華套件",
   "url": "webduino-2017xmas-package3.html",
   "pricing": "4,125",
   "onSale": "3,800",
