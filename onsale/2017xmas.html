@@ -8,15 +8,13 @@
   <meta name="author" content="Webduino">
   <meta name="copyright" content="Webduino">
   <meta itemprop="name" content="Webduino">
-
   <meta name="description" content="歡慶 Webduino 雲端平台上線，即日起至 2018.01.14，Webduino 2017 聖誕好禮三重送，除了開發板與空氣偵測套件等限時優惠，更提供許多聖誕好禮供大家抽獎，心動就快來 Webduino 玩玩吧！">
   <meta itemprop="description" content="歡慶 Webduino 雲端平台上線，即日起至 2018.01.14，Webduino 2017 聖誕好禮三重送，除了開發板與空氣偵測套件等限時優惠，更提供許多聖誕好禮供大家抽獎，心動就快來 Webduino 玩玩吧！">
   <meta itemprop="image" content="http://tutorials.webduino.io/images/zh-tw/docs/basic/index.jpg">
   <meta property="og:description" content="歡慶 Webduino 雲端平台上線，即日起至 2018.01.14，Webduino 2017 聖誕好禮三重送，除了開發板與空氣偵測套件等限時優惠，更提供許多聖誕好禮供大家抽獎，心動就快來 Webduino 玩玩吧！">
   <meta property="og:title" content="Webduino 2017 聖誕好禮三重送">
-  <meta property="og:url" content="https://webduino.io/onsale/2017xmas.html">  <meta property="og:image" content="https://webduino.io/onsale/img/2017xmas-fb.jpg">
-
-
+  <meta property="og:url" content="https://webduino.io/onsale/2017xmas.html">
+  <meta property="og:image" content="https://webduino.io/onsale/img/2017xmas-fb.jpg">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Webduino 2017 聖誕好禮三重送</title>
   <link href="css/2017xmas.css" rel="stylesheet">
@@ -37,19 +35,19 @@
       <img src="img/2017xmas-package-01.jpg" />
       <h4>空氣偵測套件</h4>
       <span>NT$ 1,100<i>NT$ 1,260</i></span>
-      <a href="https://goo.gl/Xb1aoX" target="_blank">立刻購買</a>
+      <a href="https://goo.gl/Xb1aoX" target="_blank" id="buy1">立刻購買</a>
     </div>
     <div href="#" target="_blank">
       <img src="img/2017xmas-package-02.jpg" />
       <h4>空氣偵測 - 聰明樂活套件</h4>
       <span>NT$ 1,800<i>NT$ 2,020</i></span>
-      <a href="https://goo.gl/pnkquB" target="_blank">立刻購買</a>
+      <a href="https://goo.gl/pnkquB" target="_blank" id="buy2">立刻購買</a>
     </div>
     <div href="#" target="_blank">
       <img src="img/2017xmas-package-03.jpg" />
       <h4>空氣偵測 - 聖誕嘉年華套件</h4>
       <span>NT$ 3,800<i>NT$ 4,125</i></span>
-      <a href="https://goo.gl/FnuKnR" target="_blank">立刻購買</a>
+      <a href="https://goo.gl/FnuKnR" target="_blank" id="buy3">立刻購買</a>
     </div>
   </div>
   <div class="part2">
@@ -73,12 +71,12 @@
       <div>
         <h3>抽獎活動步驟</h3>
         <ul>
-          <li>登入 Webduino 雲端平台：<a href="https://goo.gl/2C1VCj" target="_blank">https://cloud.webduino.io</a></li>
+          <li>登入 Webduino 雲端平台：<a href="https://goo.gl/2C1VCj" target="_blank" id="cloud">https://cloud.webduino.io</a></li>
           <li>建立 Blockly 專案</li>
           <li>將專案命名為<b>「2017 Webduino 聖誕快樂」</b></li>
           <li>將專案設定為<b>「公開分享」</b></li>
           <li>2018.01.15 從公開分享的 email 進行抽獎</li>
-          <li>雲端平台教學請參考：<a href="https://goo.gl/AMQLfU" target="_blank">https://goo.gl/AMQLfU</a> </li>
+          <li>雲端平台教學請參考：<a href="https://goo.gl/AMQLfU" target="_blank" id="tutorials">https://goo.gl/AMQLfU</a> </li>
         </ul>
       </div>
     </div>
@@ -106,9 +104,9 @@
   </div>
   <div class="part4">
     <h2>想了解更多 Webduino 的資訊嗎？</h2>
-    <a href="https://goo.gl/aTvuwm" target="_blank">官方網站</a>
-    <a href="https://goo.gl/yjzNbB" target="_blank">系列商品</a>
-    <a href="https://goo.gl/SB5W68" target="_blank">粉絲團</a>
+    <a href="https://goo.gl/aTvuwm" target="_blank" id="website">官方網站</a>
+    <a href="https://goo.gl/yjzNbB" target="_blank" id="store">系列商品</a>
+    <a href="https://goo.gl/SB5W68" target="_blank" id="facebook">粉絲團</a>
     <h3>就從 Webduino 開始，讓你的世界 hen 與眾不同！</h3>
   </div>
 </body>
@@ -132,6 +130,13 @@ window.onscroll = function(e) {
   var scrollNum = Math.floor(scrollTop / 1000);
   ga('send', 'event', 'onsale', 'scroll', scrollNum);
 };
+var a = document.querySelectorAll('a');
+for (var i = 0; i < a.length; i++) {
+  a[i].addEventListener('click', function() {
+    var thisId = this.getAttribute('id');
+  	ga('send', 'event', 'onsale', 'click', thisId);
+  });
+}
 </script>
 <script>
 ! function(f, b, e, v, n, t, s) {
