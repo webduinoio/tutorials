@@ -3,7 +3,7 @@
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
-  "onSale": "760",
+  "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
@@ -12,7 +12,7 @@
   "name": "Webduino 馬克 1 號",
   "url": "component-webduino-v1.html",
   "pricing": "840",
-  "onSale": "760",
+  "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
@@ -21,7 +21,7 @@
   "name": "Webduino Smart ( 雲端開發板 )",
   "url": "component-webduino-smart.html",
   "pricing": "250",
-  "onSale": "180",
+  "onSale": "250",
   "pricingNote": "",
   "banner": "../img/buy/webduino-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147727416"
@@ -30,7 +30,7 @@
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
-  "onSale": "1,260",
+  "onSale": "1,365",
   "pricingNote": "，",
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
@@ -57,13 +57,13 @@
   "name": "Webduino 開發者套件 - Dr. Smart",
   "url": "webduino-developer-drsmart.html",
   "pricing": "800",
-  "onSale": "760",
+  "onSale": "800",
   "pricingNote": "",
   "banner": "../img/buy/webduino-developer-drsmart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21719210149456"
 },{
-  "new":true,
-  "name": "Webduino 智慧插座 - 實戰智慧套件",
+  "new":false,
+  "name": "Webduino 開發者套件 - 實戰智慧插座",
   "url": "webduino-developer-smart-socket.html",
   "pricing": "3,900",
   "onSale": "3,900",
@@ -241,7 +241,7 @@
   "pricingNote": "",
   "banner": "../img/buy/book-webduino-20160122-01.jpg"
 }, {
-  "new":true,
+  "new":false,
   "name": "(碁峰) 實戰家電物聯網",
   "url": "book-webduino-20170531.html",
   "pricing": "380",
@@ -316,9 +316,9 @@
   "name": "Webduino 空氣偵測套件",
   "url": "webduino-package-air-monitoring.html",
   "pricing": "1,260",
-  "onSale": "1,100",
-  "pricingNote": "2017/12/11~2018/1/14 限時優惠",
-  "banner": "../img/buy/webduino-2017xmas.jpg",
+  "onSale": "1,260",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-package-air-monitoring-01b.jpg",
   "rutenUrl": "https://goo.gl/K8Jnq5"
 }, {
   "new":true,
