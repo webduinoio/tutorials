@@ -125,7 +125,7 @@
   "banner": "../img/buy/package-all-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898515922"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 基礎套件包",
   "url": "webduino-components-facile-package.html",
   "pricing": "630",
@@ -134,7 +134,7 @@
   "banner": "../img/buy/webduino-components-facile-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895425693"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 進階套件包",
   "url": "webduino-components-standard-package.html",
   "pricing": "630",
@@ -143,7 +143,7 @@
   "banner": "../img/buy/webduino-components-standard-package-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895437595"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 高階套件包",
   "url": "webduino-components-excellent-package.html",
   "pricing": "630",
@@ -338,4 +338,31 @@
   "pricingNote": "2017/12/11~2018/1/14 限時優惠",
   "banner": "../img/buy/webduino-2017xmas.jpg",
   "rutenUrl": "https://goo.gl/NMBeQW"
+}, {
+  "new":true,
+  "name": "Webduino 智慧家庭套件",
+  "url": "webduino-package-smart-home.html",
+  "pricing": "1,470",
+  "onSale": "1,470",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-package-smart-home-01.jpg",
+  "rutenUrl": ""
+}, {
+  "new":true,
+  "name": "Webduino 空氣偵測福袋",
+  "url": "webduino-package-luckybag1.html",
+  "pricing": "1,510",
+  "onSale": "1,288",
+  "pricingNote": "2018/2/5~2/25 限時優惠",
+  "banner": "../img/buy/webduino-package-luckybag.jpg",
+  "rutenUrl": ""
+}, {
+  "new":true,
+  "name": "Webduino 智慧家庭福袋",
+  "url": "webduino-package-luckybag2.html",
+  "pricing": "3,085",
+  "onSale": "2,788",
+  "pricingNote": "2018/2/5~2/25 限時優惠",
+  "banner": "../img/buy/webduino-package-luckybag.jpg",
+  "rutenUrl": ""
 }]
