@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     font-family: "蘋方-繁", "微軟繁黑體-標準", "微軟繁黑體-粗體", "微軟正黑體", "sans-serif";
+    background: url('../img/lucky-bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
 }
 
 .transition(@duration: 0.3s, @ease: ease-in-out) {
@@ -64,11 +68,20 @@ body {
         padding-left: 10%;
         padding-right: 10%;
     }
-    h2 {
-        text-align: center;
-        img {
-            height: 50px;
-        }
+    .title1 {
+      width: 50%;
+      margin: auto;
+      @media (max-width: 600px) {
+        width: 80%;
+      }
+    }
+    .title2 {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 15px;
+      @media (max-width: 600px) {
+        width: 95%;
+      }
     }
     .col-sm-6,
     .col-sm-4 {
@@ -85,14 +98,22 @@ body {
             font-size: 20px;
             font-weight: bold;
             background-color: #fed430;
+            box-shadow: 0 4px 0 darken(#fed430, 10%);
             padding: 10px;
             line-height: 2;
             border-radius: 40px;
             text-decoration: none;
             &:hover {
+                color: #000;
                 background-color: darken(#fed430, 10%);
+                box-shadow: 0 4px 0 darken(#fed430, 20%);
                 .transition;
             }
+        }
+        img {
+          padding: 15px;
+          border-radius: 25px;
+          margin-top: 0;
         }
     }
     .col-sm-4 {}
@@ -110,8 +131,8 @@ body {
     }
     .line {
         width: 100%;
-        height: 6px;
-        background-color: #fee9d5;
+        height: 2px;
+        background-color: #d1d1d1;
         margin-top: 10px;
         display: block;
     }
@@ -131,13 +152,16 @@ body {
         font-weight: bold;
         text-decoration: none;
         background-color: #fee9d5;
+        box-shadow: 0 4px 0 darken(#fee9d5, 10%);
         width: 300px;
         border-radius: 40px;
         @media (max-width: 600px) {
             width: 90%;
         }
         &:hover {
+            color: darken(#c98426, 10%);
             background-color: darken(#fee9d5, 5%);
+            box-shadow: 0 4px 0 darken(#fee9d5, 20%);
             .transition;
         }
     }
@@ -156,10 +180,10 @@ footer {
         }
     }
     .line {
-        width: 200px;
-        height: 3px;
-        background-color: #fee9d5;
-        margin: 15px auto 10px auto;
+        width: 60px;
+        height: 1px;
+        background-color: #fff;
+        margin: 18px auto 10px auto;
         display: block;
     }
     img {
