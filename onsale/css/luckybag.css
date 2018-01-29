@@ -358,18 +358,20 @@ p {
 .luckybag-content .colsm4 p.price {
     text-align: center;
     margin-bottom: -6px;
-    font-size: 90%
+    font-size: 95%
 }
 
 .luckybag-content .colsm6 a,
 .luckybag-content .colsm4 a {
     display: block;
-    width: 70%;
+    width: 75%;
     color: #000;
     font-size: 20px;
     font-weight: bold;
-    background-color: #fed430;
-    box-shadow: 0 4px 0 #e0b301;
+    background-color: #FFB656;
+    box-shadow: 0 4px 0 #FF8F19;
+    background-color: #FFDD30;
+    box-shadow: 0 4px 0 #EDBD00;
     padding: 10px;
     line-height: 2;
     border-radius: 40px;
@@ -379,8 +381,8 @@ p {
 .luckybag-content .colsm6 a:hover,
 .luckybag-content .colsm4 a:hover {
     color: #000;
-    background-color: #fedb54;
-    box-shadow: 0 4px 0 #fecf17;
+    background-color: #FCF363;
+    box-shadow: 0 4px 0 #fed430;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
@@ -408,9 +410,17 @@ p {
     text-align: center
 }
 
+.luckybag-content .colsm4 h4 {
+    margin-top: 0;
+}
+
+.luckybag-content .colsm4 p {
+    padding-bottom: 10px;
+}
+
 .luckybag-content .line {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #d1d1d1;
     margin-top: 10px;
     display: block
@@ -420,7 +430,15 @@ p {
     font-size: 15px;
     line-height: 1.7;
     text-align: justify;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+}
+
+.luckybag-content .board-gift {
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: -5px;
+    color: #343434;
+    font-weight: bold;
 }
 
 .luckybag-content a {
@@ -429,11 +447,11 @@ p {
     margin: 15px auto 25px auto;
     text-align: center;
     line-height: 3.5;
-    color: #c98426;
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
-    background-color: #fee9d5;
-    box-shadow: 0 4px 0 #fdcfa3;
+    background-color: #E54E50;
+    box-shadow: 0 4px 0 #CC4547;
     width: 300px;
     border-radius: 40px
 }
@@ -445,16 +463,16 @@ p {
 }
 
 .luckybag-content a:hover {
-    color: #EF9E2D;
-    background-color: #feeedf;
-    box-shadow: 0 4px 0 #fcc28a;
+    color: #fff;
+    background-color: #FF5664;
+    box-shadow: 0 4px 0 #E54E50;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
 
 footer {
-    background-color: #343434
+    margin-top: 15px;
 }
 
 footer .container-fluid {
