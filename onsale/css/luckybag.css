@@ -1,0 +1,230 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "蘋方-繁", "微軟繁黑體-標準", "微軟繁黑體-粗體", "微軟正黑體", "sans-serif";
+    background: url('../img/lucky-bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%
+}
+
+.banner img {
+    display: none
+}
+
+@media (min-width:801px) {
+    .banner .screen {
+        display: block
+    }
+}
+
+@media (max-width:800px) {
+    .banner .mobile {
+        display: block
+    }
+}
+
+.banner .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #fee9d5 transparent transparent transparent;
+    margin: auto
+}
+
+.banner .countdown-top {
+    width: 100%;
+    height: 40px;
+    top: -20px;
+    left: 0;
+    text-align: center;
+    line-height: 40px;
+    background: #e33;
+    color: #fff;
+    box-shadow: #033 0 0 10px;
+    font-size: 16px
+}
+
+.banner .countdown-top span {
+    display: none
+}
+
+@media (max-width:540px) {
+    .banner .countdown-top {
+        height: 50px;
+        padding-top: 5px;
+        line-height: 20px
+    }
+    .banner .countdown-top span {
+        display: inline
+    }
+}
+
+.luckybag-content {
+    padding-top: 20px
+}
+
+@media (min-width:1000px) {
+    .luckybag-content {
+        padding-left: 10%;
+        padding-right: 10%
+    }
+}
+
+.luckybag-content .title1 {
+    width: 50%;
+    margin: auto
+}
+
+@media (max-width:600px) {
+    .luckybag-content .title1 {
+        width: 80%
+    }
+}
+
+.luckybag-content .title2 {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px
+}
+
+@media (max-width:600px) {
+    .luckybag-content .title2 {
+        width: 95%
+    }
+}
+
+.luckybag-content .col-sm-6,
+.luckybag-content .col-sm-4 {
+    padding: 5px 10px
+}
+
+.luckybag-content .col-sm-6 p.price,
+.luckybag-content .col-sm-4 p.price {
+    text-align: center;
+    margin-bottom: -6px;
+    font-size: 90%
+}
+
+.luckybag-content .col-sm-6 a,
+.luckybag-content .col-sm-4 a {
+    display: block;
+    width: 70%;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fed430;
+    box-shadow: 0 4px 0 #e0b301;
+    padding: 10px;
+    line-height: 2;
+    border-radius: 40px;
+    text-decoration: none
+}
+
+.luckybag-content .col-sm-6 a:hover,
+.luckybag-content .col-sm-4 a:hover {
+    color: #000;
+    background-color: #fedb54;
+    box-shadow: 0 4px 0 #fecf17;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.luckybag-content .col-sm-6 img,
+.luckybag-content .col-sm-4 img {
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 0
+}
+
+.luckybag-content h3 {
+    text-align: center;
+    padding-bottom: 7px
+}
+
+.luckybag-content img {
+    border-radius: 10px
+}
+
+.luckybag-content h4 {
+    color: #ff0422;
+    font-size: 22px;
+    text-align: center
+}
+
+.luckybag-content .line {
+    width: 100%;
+    height: 2px;
+    background-color: #d1d1d1;
+    margin-top: 10px;
+    display: block
+}
+
+.luckybag-content .introduction {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    padding-bottom: 30px
+}
+
+.luckybag-content a {
+    display: block;
+    font-size: 20px;
+    margin: 15px auto 25px auto;
+    text-align: center;
+    line-height: 3.5;
+    color: #c98426;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fee9d5;
+    box-shadow: 0 4px 0 #fdcfa3;
+    width: 300px;
+    border-radius: 40px
+}
+
+@media (max-width:600px) {
+    .luckybag-content a {
+        width: 90%
+    }
+}
+
+.luckybag-content a:hover {
+    color: #EF9E2D;
+    background-color: #feeedf;
+    box-shadow: 0 4px 0 #fcc28a;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+footer {
+    background-color: #343434
+}
+
+footer .container-fluid {
+    background-color: #de3829
+}
+
+footer .container-fluid h2 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff
+}
+
+footer .line {
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    margin: 18px auto 10px auto;
+    display: block
+}
+
+footer img {
+    margin: auto;
+    padding: 20px;
+    width: 300px
+}

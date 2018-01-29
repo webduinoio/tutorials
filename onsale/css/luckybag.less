@@ -14,6 +14,78 @@ body {
     transition: all @duration @ease;
 }
 
+/*bootstrap*/
+.bt-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.bt-row:before,
+.bt-row:after {
+  display: table;
+  content: " ";
+}
+.bt-row:after {
+  clear: both;
+}
+.bt-colsm12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .bt-colsm12 {
+        float: left;
+    }
+    .bt-colsm12 {
+        width: 100%;
+    }
+}
+.bt-img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bt-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .bt-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .bt-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .bt-container {
+    width: 1170px;
+  }
+}
+.bt-container:before,
+.bt-container:after,
+.bt-container-fluid:before,
+.bt-container-fluid:after, {
+  display: table;
+  content: " ";
+}
+.bt-container:after,
+.bt-container-fluid:after {
+  clear: both;
+}
+.bt-container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*bootstrap*/
+
 .banner {
     img {
         display: none;
@@ -98,15 +170,15 @@ body {
             font-size: 20px;
             font-weight: bold;
             background-color: #fed430;
-            box-shadow: 0 4px 0 darken(#fed430, 10%);
+            box-shadow: 0 4px 0 darken(#fed430, 15%);
             padding: 10px;
             line-height: 2;
             border-radius: 40px;
             text-decoration: none;
             &:hover {
                 color: #000;
-                background-color: darken(#fed430, 10%);
-                box-shadow: 0 4px 0 darken(#fed430, 20%);
+                background-color: lighten(#fed430, 7%);
+                box-shadow: 0 4px 0 darken(#fed430, 5%);
                 .transition;
             }
         }
@@ -159,9 +231,9 @@ body {
             width: 90%;
         }
         &:hover {
-            color: darken(#c98426, 10%);
-            background-color: darken(#fee9d5, 5%);
-            box-shadow: 0 4px 0 darken(#fee9d5, 20%);
+            color: #EF9E2D;
+            background-color: lighten(#fee9d5, 2%);
+            box-shadow: 0 4px 0 darken(#fee9d5, 15%);
             .transition;
         }
     }
@@ -169,7 +241,7 @@ body {
 
 footer {
     background-color: #343434;
-    .container-fluid {
+    .bt-container-fluid {
         background-color: #de3829;
 
         h2 {
