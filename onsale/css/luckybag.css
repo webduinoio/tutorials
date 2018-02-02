@@ -229,7 +229,19 @@ p {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:850px) {
+    .container {
+        width: 850px
+    }
+}
+
+@media (min-width:900px) {
+    .container {
+        width: 900px
+    }
+}
+
+@media (min-width:950px) {
     .container {
         width: 970px
     }
@@ -319,10 +331,10 @@ p {
     padding-top: 20px
 }
 
-@media (min-width:1000px) {
+@media (min-width:850px) {
     .luckybag-content {
-        padding-left: 10%;
-        padding-right: 10%
+        padding-left: 8%;
+        padding-right: 8%;
     }
 }
 
