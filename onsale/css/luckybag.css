@@ -511,3 +511,47 @@ footer img {
     padding: 20px;
     width: 300px
 }
+.end{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.6);
+}
+.end div {
+    display:table;
+    width:calc(100% - 10px);
+    max-width:600px;
+    margin:100px auto 0;
+    background:#fff;
+    box-shadow:#000 0 0 50px;
+    border-radius:5px;
+    padding:30px;
+}
+.end h4{
+    font-size:30px;
+    margin:10px 0 15px;
+}
+.end span, strong{
+    font-size:18px;
+    line-height: 28px;
+}
+.end strong{
+    display:inline-block;
+    margin:20px 0 0;
+}
+.end img{
+    width:150px;
+    margin:0 15px 0 0;
+    float:left;
+}
+@media (max-width: 450px) {
+    .end img{
+        width: 100%;
+        font-size:22px;
+        display:none;
+    }
+}
