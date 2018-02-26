@@ -1,5 +1,5 @@
 [{
-  "new":true,
+  "new":false,
   "name": "Webduino Fly ( Arduino UNO 雲端擴充板 )",
   "url": "component-webduino-fly.html",
   "pricing": "840",
@@ -17,7 +17,7 @@
   "banner": "../img/buy/webduino-mark1-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino Smart ( 雲端開發板 )",
   "url": "component-webduino-smart.html",
   "pricing": "250",
@@ -26,7 +26,7 @@
   "banner": "../img/buy/webduino-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147727416"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
   "pricing": "1,365",
