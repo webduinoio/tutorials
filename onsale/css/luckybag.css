@@ -532,7 +532,7 @@ footer img {
     padding:30px;
 }
 .end h4{
-    font-size:30px;
+    font-size:26px;
     margin:10px 0 15px;
 }
 .end span, strong{
@@ -547,6 +547,12 @@ footer img {
     width:150px;
     margin:0 15px 0 0;
     float:left;
+}
+.end a {
+    color: #FF5664;
+}
+.end a:hover {
+    color: #E54E50;
 }
 @media (max-width: 450px) {
     .end img{
