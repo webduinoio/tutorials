@@ -383,4 +383,13 @@
   "pricingNote": "",
   "banner": "../img/buy/webduino-block-of-smart-01.jpg",
   "rutenUrl": "https://goo.gl/kv4dxC"
+}, {
+  "new":true,
+  "name": "Webduino Smart 自走車 ( 材料包 )",
+  "url": "webduino-smart-robot-car.html",
+  "pricing": "1,250",
+  "onSale": "1,250",
+  "pricingNote": "",
+  "banner": "",
+  "rutenUrl": ""
 }]
