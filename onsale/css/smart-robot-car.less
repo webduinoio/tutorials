@@ -618,10 +618,16 @@ ul {
 				}
 			}
 		}
+    button.bird-button {
+      &:hover {
+        border: 1px solid #d8d8d8;
+        cursor: auto;
+      }
+    }
 		.small-buy {
 			padding: 10px 0;
 			.bird {
-					background-color: #F35B5B;
+					background-color: #d8d8d8;
 					color: #fff;
 					margin: -1px -7px 10px -7px;
 					padding: 10px 0;
@@ -634,11 +640,19 @@ ul {
 					padding: 10px 0;
 					font-weight: normal;
 			}
+      .bird-over {
+        pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+      }
 			h6 {
 				text-align: center;
 				font-size: 1em;
 				line-height: 1.3;
 			}
+      h6.bird-title {
+        color: #8e8e8e;
+      }
 			img {
 				padding: 5px 0;
 				border-top: 1px solid #ebebeb;
@@ -654,6 +668,12 @@ ul {
       		font-size: 80%;
     		}
 			}
+      p.price-soldout {
+        color: #8e8e8e;
+        span {
+          color: #5e5e5e;
+        }
+      }
 		}
 		.mobile-hidden {
 			@media (max-width: 768px) {
@@ -726,7 +746,7 @@ ul {
       span {
         display: block;
         font-weight: bold;
-        color: #FD6D55;
+        color: #8e8e8e;
       }
 		}
 		.price {
@@ -739,6 +759,12 @@ ul {
       	font-size: 80%;
     	}
 		}
+    .big-price-soldout {
+      color: #8e8e8e;
+      span {
+        color: #5e5e5e;
+      }
+    }
     a {
       padding: 15px;
       display: block;
@@ -758,6 +784,9 @@ ul {
         -o-transition: all ease-in-out .4s;
         transition: all ease-in-out .4s;
       }
+    }
+    a.big-over {
+      
     }
 	}
 	ul {
