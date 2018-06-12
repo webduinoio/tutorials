@@ -26,6 +26,15 @@
   "banner": "../img/buy/webduino-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147727416"
 }, {
+  "new":true,
+  "name": "Webduino Bit",
+  "url": "component-webduino-bit.html",
+  "pricing": "630",
+  "onSale": "630",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-bit-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#"
+}, {
   "new":false,
   "name": "Webduino Fly + Arduino UNO",
   "url": "component-webduino-uno-fly.html",
