@@ -259,6 +259,14 @@
   "banner": "../img/buy/book-webduino-20170531-01.jpg"
 }, {
   "new":false,
+  "name": "(台科大圖書) 輕課程 IoT 物聯網初體驗",
+  "url": "http://www.tiked.com.tw/PT137",
+  "pricing": "175",
+  "onSale": "175",
+  "pricingNote": "",
+  "banner": "../img/buy/book-webduino-201808-01s.jpg"
+}, {
+  "new":false,
   "name": "Webduino 聖誕特餐 ( 2016/12/19 ~ 2017/1/8 限定 )",
   "url": "webduino-xmas1225.html",
   "pricing": "1,225",
