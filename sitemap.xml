@@ -2,762 +2,762 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://webduino.io/about.html</loc>
-        <lastmod>2018-10-04T09:24:48.329Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.834Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/activity.html</loc>
-        <lastmod>2018-10-04T09:24:48.734Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.877Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy.html</loc>
-        <lastmod>2018-10-04T09:24:48.014Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.429Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/</loc>
-        <lastmod>2018-10-04T09:24:47.116Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.021Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/partner.html</loc>
-        <lastmod>2018-10-04T09:24:48.406Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.849Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/training.html</loc>
-        <lastmod>2018-10-04T09:24:48.568Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.868Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials.html</loc>
-        <lastmod>2018-10-04T09:24:47.909Z</lastmod>
-    </url>
-    <url>
-        <loc>https://webduino.io/activity/promote-20170320-20170421.html</loc>
-        <lastmod>2018-10-04T09:24:47.150Z</lastmod>
-    </url>
-    <url>
-        <loc>https://webduino.io/activity/promote-20170428.html</loc>
-        <lastmod>2018-10-04T09:24:47.401Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.011Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/_line.html</loc>
-        <lastmod>2018-10-04T09:24:46.022Z</lastmod>
+        <lastmod>2018-10-04T09:32:13.514Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/_pricing.html</loc>
-        <lastmod>2018-10-04T09:24:46.089Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.168Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/_promote.html</loc>
-        <lastmod>2018-10-04T09:24:46.324Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.441Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/book-webduino-20160122.html</loc>
-        <lastmod>2018-10-04T09:24:47.206Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.108Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/book-webduino-20170531.html</loc>
-        <lastmod>2018-10-04T09:24:47.491Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.346Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/component-webduino-bit.html</loc>
-        <lastmod>2018-10-04T09:24:47.678Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.630Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/component-webduino-fly.html</loc>
-        <lastmod>2018-10-04T09:24:47.974Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.162Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/component-webduino-smart.html</loc>
-        <lastmod>2018-10-04T09:24:47.985Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.355Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/component-webduino-uno-fly.html</loc>
-        <lastmod>2018-10-04T09:24:48.099Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.479Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/component-webduino-v1.html</loc>
-        <lastmod>2018-10-04T09:24:48.315Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.833Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-2017xmas-package2.html</loc>
-        <lastmod>2018-10-04T09:24:48.499Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.848Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-2017xmas-package3.html</loc>
-        <lastmod>2018-10-04T09:24:48.610Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.868Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-block-of-UNO.html</loc>
-        <lastmod>2018-10-04T09:24:48.640Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.877Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-block-of-smart.html</loc>
-        <lastmod>2018-10-04T09:24:48.722Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.886Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-components-excellent-package.html</loc>
-        <lastmod>2018-10-04T09:24:48.762Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.896Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-components-facile-package.html</loc>
-        <lastmod>2018-10-04T09:24:48.806Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.907Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-components-standard-package.html</loc>
-        <lastmod>2018-10-04T09:24:48.857Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.004Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-developer-DrSmart.html</loc>
-        <lastmod>2018-10-04T09:24:48.926Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.148Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-developer-a.html</loc>
-        <lastmod>2018-10-04T09:24:49.001Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.335Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-developer-b.html</loc>
-        <lastmod>2018-10-04T09:24:49.079Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.389Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-developer-smart-socket.html</loc>
-        <lastmod>2018-10-04T09:24:49.165Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.538Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-expansion-m.html</loc>
-        <lastmod>2018-10-04T09:24:49.206Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.589Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-expansion-p.html</loc>
-        <lastmod>2018-10-04T09:24:49.253Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.659Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-expansion-s.html</loc>
-        <lastmod>2018-10-04T09:24:49.308Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.778Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-SmartSocket1.html</loc>
-        <lastmod>2018-10-04T09:24:49.336Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.809Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-SmartSocket2.html</loc>
-        <lastmod>2018-10-04T09:24:49.372Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.857Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-SmartSocket3.html</loc>
-        <lastmod>2018-10-04T09:24:49.428Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.928Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-a.html</loc>
-        <lastmod>2018-10-04T09:24:49.481Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.003Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-ab.html</loc>
-        <lastmod>2018-10-04T09:24:49.520Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.078Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-air-monitoring.html</loc>
-        <lastmod>2018-10-04T09:24:49.547Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.165Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-all.html</loc>
-        <lastmod>2018-10-04T09:24:49.577Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.320Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-b.html</loc>
-        <lastmod>2018-10-04T09:24:49.603Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.554Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-c.html</loc>
-        <lastmod>2018-10-04T09:24:49.634Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.612Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-d.html</loc>
-        <lastmod>2018-10-04T09:24:49.669Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.661Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-line-following.html</loc>
-        <lastmod>2018-10-04T09:24:49.694Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.803Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-luckybag1.html</loc>
-        <lastmod>2018-10-04T09:24:49.705Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.855Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-luckybag2.html</loc>
-        <lastmod>2018-10-04T09:24:49.724Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.888Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-newyear-1680.html</loc>
-        <lastmod>2018-10-04T09:24:49.749Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.951Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-newyear-888.html</loc>
-        <lastmod>2018-10-04T09:24:49.762Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.967Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-plant.html</loc>
-        <lastmod>2018-10-04T09:24:49.781Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.990Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-plus.html</loc>
-        <lastmod>2018-10-04T09:24:49.802Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.105Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-smart-home.html</loc>
-        <lastmod>2018-10-04T09:24:49.811Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.123Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-socket-extension.html</loc>
-        <lastmod>2018-10-04T09:24:49.825Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.137Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-socket.html</loc>
-        <lastmod>2018-10-04T09:24:49.846Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.186Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-toycar.html</loc>
-        <lastmod>2018-10-04T09:24:49.860Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.191Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-xmas1225.html</loc>
-        <lastmod>2018-10-04T09:24:49.877Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.235Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-package-xmas2017.html</loc>
-        <lastmod>2018-10-04T09:24:49.899Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.415Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/buy/webduino-smart-robot-car.html</loc>
-        <lastmod>2018-10-04T09:24:49.907Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.487Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/about.html</loc>
-        <lastmod>2018-10-04T09:24:47.709Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.706Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy.html</loc>
-        <lastmod>2018-10-04T09:24:47.908Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.964Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/</loc>
-        <lastmod>2018-10-04T09:24:46.895Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.890Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials.html</loc>
-        <lastmod>2018-10-04T09:24:47.568Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.579Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/2017xmas-gotofb.html</loc>
-        <lastmod>2018-10-04T09:24:45.389Z</lastmod>
+        <lastmod>2018-10-04T09:32:12.582Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/2017xmas.html</loc>
-        <lastmod>2018-10-04T09:24:45.810Z</lastmod>
+        <lastmod>2018-10-04T09:32:12.940Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/201805-hexapod.html</loc>
-        <lastmod>2018-10-04T09:24:45.960Z</lastmod>
+        <lastmod>2018-10-04T09:32:13.057Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/certificate-l1.html</loc>
-        <lastmod>2018-10-04T09:24:46.254Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.039Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/luckybag.html</loc>
-        <lastmod>2018-10-04T09:24:46.880Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.611Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/smart-robot-car.html</loc>
-        <lastmod>2018-10-04T09:24:46.942Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.634Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/socket.html</loc>
-        <lastmod>2018-10-04T09:24:47.090Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.719Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/space-mission.html</loc>
-        <lastmod>2018-10-04T09:24:47.135Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.744Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/cloud-01-introduction.html</loc>
-        <lastmod>2018-10-04T09:24:46.900Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.967Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/cloud-02-register.html</loc>
-        <lastmod>2018-10-04T09:24:47.440Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.261Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/cloud-03-webduino-blockly.html</loc>
-        <lastmod>2018-10-04T09:24:47.564Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.579Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/cloud-04-webduino-device.html</loc>
-        <lastmod>2018-10-04T09:24:47.732Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.740Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/cloud-05-webduino-device-update.html</loc>
-        <lastmod>2018-10-04T09:24:47.975Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.244Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-01-introduction.html</loc>
-        <lastmod>2018-10-04T09:24:47.985Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.352Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-02-setup.html</loc>
-        <lastmod>2018-10-04T09:24:48.093Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.446Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-03-faq.html</loc>
-        <lastmod>2018-10-04T09:24:48.325Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.833Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-04-uno-setup.html</loc>
-        <lastmod>2018-10-04T09:24:48.451Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.849Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-05-chrome-api-proxy.html</loc>
-        <lastmod>2018-10-04T09:24:48.569Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.868Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-07-arduino-ino.html</loc>
-        <lastmod>2018-10-04T09:24:48.629Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.877Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-08-blockly-tutorial.html</loc>
-        <lastmod>2018-10-04T09:24:48.706Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.886Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-09-multi-webduino-board.html</loc>
-        <lastmod>2018-10-04T09:24:48.750Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.896Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-10-pin.html</loc>
-        <lastmod>2018-10-04T09:24:48.780Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.908Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-11-feature.html</loc>
-        <lastmod>2018-10-04T09:24:48.821Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.913Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/info-12-bluetooth.html</loc>
-        <lastmod>2018-10-04T09:24:48.856Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.980Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-01-information.html</loc>
-        <lastmod>2018-10-04T09:24:48.956Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.166Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-02-setup.html</loc>
-        <lastmod>2018-10-04T09:24:49.016Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.348Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-03-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:49.062Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.381Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-04-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:49.127Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.418Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-05-photocell.html</loc>
-        <lastmod>2018-10-04T09:24:49.176Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.555Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-06-button.html</loc>
-        <lastmod>2018-10-04T09:24:49.212Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.596Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/smart-07-button-youtube.html</loc>
-        <lastmod>2018-10-04T09:24:49.252Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.657Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-01-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.311Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.777Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-02-2led.html</loc>
-        <lastmod>2018-10-04T09:24:49.351Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.808Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-03-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:49.403Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.900Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-04-rgbled-palette.html</loc>
-        <lastmod>2018-10-04T09:24:49.456Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.963Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-05-ultrasonic.html</loc>
-        <lastmod>2018-10-04T09:24:49.508Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.047Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-06-ultrasonic-imagesize.html</loc>
-        <lastmod>2018-10-04T09:24:49.533Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.134Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-07-ultrasonic-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.562Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.256Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-08-ultrasonic-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:49.589Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.438Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-09-button-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.624Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.588Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-10-temperature-humidity-sensor.html</loc>
-        <lastmod>2018-10-04T09:24:49.659Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.639Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-11-shock-button.html</loc>
-        <lastmod>2018-10-04T09:24:49.679Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.760Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-12-sound-sensor.html</loc>
-        <lastmod>2018-10-04T09:24:49.704Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.826Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-13-buzzer.html</loc>
-        <lastmod>2018-10-04T09:24:49.712Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.877Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-14-relay.html</loc>
-        <lastmod>2018-10-04T09:24:49.738Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.904Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-15-pir-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.754Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.951Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-16-servo.html</loc>
-        <lastmod>2018-10-04T09:24:49.768Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.975Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-17-photocell.html</loc>
-        <lastmod>2018-10-04T09:24:49.786Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.998Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-18-max7219.html</loc>
-        <lastmod>2018-10-04T09:24:49.802Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.105Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-19-rfid.html</loc>
-        <lastmod>2018-10-04T09:24:49.814Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.123Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-20-rfid-youtube.html</loc>
-        <lastmod>2018-10-04T09:24:49.829Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.186Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-21-toycar.html</loc>
-        <lastmod>2018-10-04T09:24:49.849Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.192Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-22-speech-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.865Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.203Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-23-adxl345.html</loc>
-        <lastmod>2018-10-04T09:24:49.879Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.248Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-24-ir.html</loc>
-        <lastmod>2018-10-04T09:24:49.898Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.395Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-25-joypad.html</loc>
-        <lastmod>2018-10-04T09:24:49.906Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.471Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-26-google-sheet.html</loc>
-        <lastmod>2018-10-04T09:24:49.914Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.518Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-27-tracking-face.html</loc>
-        <lastmod>2018-10-04T09:24:49.923Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.552Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-28-dancing-leds.html</loc>
-        <lastmod>2018-10-04T09:24:49.929Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.565Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-29-firebase-dht.html</loc>
-        <lastmod>2018-10-04T09:24:49.938Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.587Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-30-motor-ic.html</loc>
-        <lastmod>2018-10-04T09:24:49.946Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.609Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-31-soil-max7219.html</loc>
-        <lastmod>2018-10-04T09:24:49.959Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.622Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-32-smart-socket.html</loc>
-        <lastmod>2018-10-04T09:24:49.969Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.634Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-33-clock.html</loc>
-        <lastmod>2018-10-04T09:24:49.979Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.645Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-34-vr-image.html</loc>
-        <lastmod>2018-10-04T09:24:49.999Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.655Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-35-vr-youtube.html</loc>
-        <lastmod>2018-10-04T09:24:50.009Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.668Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-36-pump.html</loc>
-        <lastmod>2018-10-04T09:24:50.018Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.690Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/tutorials/tutorial-37-line-following-robot.html</loc>
-        <lastmod>2018-10-04T09:24:50.025Z</lastmod>
+        <lastmod>2018-10-04T09:32:19.708Z</lastmod>
+    </url>
+    <url>
+        <loc>https://webduino.io/activity/promote-20170320-20170421.html</loc>
+        <lastmod>2018-10-04T09:32:15.046Z</lastmod>
+    </url>
+    <url>
+        <loc>https://webduino.io/activity/promote-20170428.html</loc>
+        <lastmod>2018-10-04T09:32:15.228Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/component-webduino-fly.html</loc>
-        <lastmod>2018-10-04T09:24:46.297Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.743Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/component-webduino-smart.html</loc>
-        <lastmod>2018-10-04T09:24:47.187Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.060Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/component-webduino-uno-fly.html</loc>
-        <lastmod>2018-10-04T09:24:47.401Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.238Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/component-webduino-v1.html</loc>
-        <lastmod>2018-10-04T09:24:47.499Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.351Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/webduino-developer-a.html</loc>
-        <lastmod>2018-10-04T09:24:47.547Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.559Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/webduino-developer-b.html</loc>
-        <lastmod>2018-10-04T09:24:47.637Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.619Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/webduino-package-all.html</loc>
-        <lastmod>2018-10-04T09:24:47.724Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.735Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/buy/webduino-package-toycar.html</loc>
-        <lastmod>2018-10-04T09:24:47.917Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.075Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-01-introduction.html</loc>
-        <lastmod>2018-10-04T09:24:46.888Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.872Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-02-setup.html</loc>
-        <lastmod>2018-10-04T09:24:47.236Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.182Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-03-faq.html</loc>
-        <lastmod>2018-10-04T09:24:47.553Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.560Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-04-uno-setup.html</loc>
-        <lastmod>2018-10-04T09:24:47.701Z</lastmod>
+        <lastmod>2018-10-04T09:32:15.661Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-05-chrome-api-proxy.html</loc>
-        <lastmod>2018-10-04T09:24:47.916Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.097Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-07-arduino-ino.html</loc>
-        <lastmod>2018-10-04T09:24:47.974Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.333Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-08-blockly-tutorial.html</loc>
-        <lastmod>2018-10-04T09:24:47.982Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.417Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-09-multi-webduino-board.html</loc>
-        <lastmod>2018-10-04T09:24:48.037Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.435Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-10-pin.html</loc>
-        <lastmod>2018-10-04T09:24:48.100Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.481Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-11-feature.html</loc>
-        <lastmod>2018-10-04T09:24:48.245Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.826Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/info-12-bluetooth.html</loc>
-        <lastmod>2018-10-04T09:24:48.344Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.840Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-01-information.html</loc>
-        <lastmod>2018-10-04T09:24:48.426Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.866Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-02-setup.html</loc>
-        <lastmod>2018-10-04T09:24:48.553Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.876Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-03-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:48.595Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.882Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-04-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:48.629Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.895Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-05-photocell.html</loc>
-        <lastmod>2018-10-04T09:24:48.650Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.906Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-06-button.html</loc>
-        <lastmod>2018-10-04T09:24:48.698Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.913Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/smart-07-button-youtube.html</loc>
-        <lastmod>2018-10-04T09:24:48.723Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.922Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-01-led.html</loc>
-        <lastmod>2018-10-04T09:24:48.761Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.930Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-03-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:48.787Z</lastmod>
+        <lastmod>2018-10-04T09:32:16.982Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-04-rgbled-palette.html</loc>
-        <lastmod>2018-10-04T09:24:48.812Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.003Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-05-ultrasonic.html</loc>
-        <lastmod>2018-10-04T09:24:48.844Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.013Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-06-ultrasonic-imagesize.html</loc>
-        <lastmod>2018-10-04T09:24:48.882Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.088Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-07-ultrasonic-led.html</loc>
-        <lastmod>2018-10-04T09:24:48.917Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.130Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-08-ultrasonic-rgbled.html</loc>
-        <lastmod>2018-10-04T09:24:48.965Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.194Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-09-button-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.016Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.338Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-10-temperature-humidity-sensor.html</loc>
-        <lastmod>2018-10-04T09:24:49.043Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.372Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-11-shock-button.html</loc>
-        <lastmod>2018-10-04T09:24:49.106Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.397Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-12-sound-sensor.html</loc>
-        <lastmod>2018-10-04T09:24:49.141Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.517Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-13-buzzer.html</loc>
-        <lastmod>2018-10-04T09:24:49.179Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.556Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-14-relay.html</loc>
-        <lastmod>2018-10-04T09:24:49.205Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.583Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-15-pir-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.227Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.632Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-16-servo.html</loc>
-        <lastmod>2018-10-04T09:24:49.281Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.736Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-17-photocell.html</loc>
-        <lastmod>2018-10-04T09:24:49.302Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.808Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-18-max7219.html</loc>
-        <lastmod>2018-10-04T09:24:49.330Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.855Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-19-rfid.html</loc>
-        <lastmod>2018-10-04T09:24:49.361Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.860Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-20-rfid-youtube.html</loc>
-        <lastmod>2018-10-04T09:24:49.396Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.887Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-21-toycar.html</loc>
-        <lastmod>2018-10-04T09:24:49.439Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.941Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-22-speech-led.html</loc>
-        <lastmod>2018-10-04T09:24:49.476Z</lastmod>
+        <lastmod>2018-10-04T09:32:17.993Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-23-adxl345.html</loc>
-        <lastmod>2018-10-04T09:24:49.504Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.034Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-24-ir.html</loc>
-        <lastmod>2018-10-04T09:24:49.525Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.104Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-25-joypad.html</loc>
-        <lastmod>2018-10-04T09:24:49.542Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.157Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-26-google-sheet.html</loc>
-        <lastmod>2018-10-04T09:24:49.558Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.234Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-27-tracking-face.html</loc>
-        <lastmod>2018-10-04T09:24:49.578Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.412Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-28-dancing-leds.html</loc>
-        <lastmod>2018-10-04T09:24:49.594Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.453Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-29-firebase-dht.html</loc>
-        <lastmod>2018-10-04T09:24:49.625Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.588Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-30-motor-ic.html</loc>
-        <lastmod>2018-10-04T09:24:49.650Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.620Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-31-soil-max7219.html</loc>
-        <lastmod>2018-10-04T09:24:49.666Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.649Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-32-smart-socket.html</loc>
-        <lastmod>2018-10-04T09:24:49.679Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.759Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-33-clock.html</loc>
-        <lastmod>2018-10-04T09:24:49.694Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.808Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-34-vr-image.html</loc>
-        <lastmod>2018-10-04T09:24:49.705Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.838Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/en/tutorials/tutorial-35-vr-youtube.html</loc>
-        <lastmod>2018-10-04T09:24:49.712Z</lastmod>
+        <lastmod>2018-10-04T09:32:18.866Z</lastmod>
     </url>
     <url>
         <loc>https://webduino.io/onsale/201810/</loc>
-        <lastmod>2018-10-04T09:24:47.184Z</lastmod>
+        <lastmod>2018-10-04T09:32:14.850Z</lastmod>
     </url>
 </urlset>
