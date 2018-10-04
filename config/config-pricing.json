@@ -26,7 +26,7 @@
   "banner": "../img/buy/webduino-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147727416"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino Bit",
   "url": "component-webduino-bit.html",
   "pricing": "630",
@@ -284,7 +284,7 @@
   "banner": "../img/buy/webduino-xmas.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21650796917362"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 雞祥富貴 ( 2017/2/28 前限定 )",
   "url": "webduino-package-newyear-1680.html",
   "pricing": "1,680",
@@ -293,7 +293,7 @@
   "banner": "../img/buy/webduino-newyear.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147809710"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 金雞報喜 ( 2017/2/28 前限定 )",
   "url": "webduino-package-newyear-888.html",
   "pricing": "888",
@@ -302,7 +302,7 @@
   "banner": "../img/buy/webduino-newyear.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147785689"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 智慧插座 - 嚐鮮體驗套組",
   "url": "webduino-package-SmartSocket1.html",
   "pricing": "1060",
@@ -311,7 +311,7 @@
   "banner": "../img/buy/webduino-package-SmartSocket-banner1.jpg",
   "rutenUrl": "http://shopping.gotop.com.tw/product/16f2b571-55a1-11e7-84f7-f950a4237a9f"
 }, {  
-  "new":true,
+  "new":false,
   "name": "Webduino 智慧插座 - 經濟實惠套件",
   "url": "webduino-package-SmartSocket2.html",
   "pricing": "1900",
@@ -320,7 +320,7 @@
   "banner": "../img/buy/webduino-package-SmartSocket-banner2.jpg",
   "rutenUrl": "http://shopping.gotop.com.tw/product/a5308c01-55a0-11e7-84f7-f950a4237a9f"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 智慧插座 - 實戰開發套件",
   "url": "webduino-package-SmartSocket3.html",
   "pricing": "3,900",
@@ -329,7 +329,7 @@
   "banner": "../img/buy/webduino-package-SmartSocket-banner3.jpg",
   "rutenUrl": "http://shopping.gotop.com.tw/product/a8470381-558f-11e7-a6dd-c74f89653481"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 空氣偵測套件",
   "url": "webduino-package-air-monitoring.html",
   "pricing": "1,260",
@@ -338,7 +338,7 @@
   "banner": "../img/buy/webduino-package-air-monitoring-01b.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21749409129569"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 空氣偵測 - 聰明樂活套件",
   "url": "webduino-2017xmas-package2.html",
   "pricing": "2,020",
@@ -347,7 +347,7 @@
   "banner": "../img/buy/webduino-2017xmas.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21749409154231"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 空氣偵測 - 聖誕嘉年華套件",
   "url": "webduino-2017xmas-package3.html",
   "pricing": "4,125",
@@ -356,7 +356,7 @@
   "banner": "../img/buy/webduino-2017xmas.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21749409170262"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 智慧家庭套件",
   "url": "webduino-package-smart-home.html",
   "pricing": "1,470",
@@ -365,7 +365,7 @@
   "banner": "../img/buy/webduino-package-smart-home-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21809705828099"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 空氣偵測福袋",
   "url": "webduino-package-luckybag1.html",
   "pricing": "1,585",
@@ -374,7 +374,7 @@
   "banner": "../img/buy/webduino-package-luckybag.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21805662872669"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino 智慧家庭福袋",
   "url": "webduino-package-luckybag2.html",
   "pricing": "3,415",
@@ -383,7 +383,7 @@
   "banner": "../img/buy/webduino-package-luckybag.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21805662883694"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino Smart 樂高相容積木",
   "url": "webduino-block-of-smart.html",
   "pricing": "50",
@@ -392,7 +392,7 @@
   "banner": "../img/buy/webduino-block-of-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21809719885244"
 }, {
-  "new":true,
+  "new":false,
   "name": "Arduino UNO 樂高相容積木",
   "url": "webduino-block-of-UNO.html",
   "pricing": "70",
@@ -401,9 +401,18 @@
   "banner": "../img/buy/webduino-block-of-smart-01.jpg",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21809719898934"
 }, {
-  "new":true,
+  "new":false,
   "name": "Webduino Smart 自走車 ( 材料包 )",
   "url": "webduino-smart-robot-car.html",
+  "pricing": "1,250",
+  "onSale": "1,250",
+  "pricingNote": "",
+  "banner": "../img/buy/webduino-smart-robot-car-01.jpg",
+  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21812785308599"
+}, {
+  "new":false,
+  "name": "Webduino Smart 自走車 ( 材料包 )",
+  "url": "https://123.p11",
   "pricing": "1,250",
   "onSale": "1,250",
   "pricingNote": "",
