@@ -234,6 +234,11 @@ h2 i{
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
+.voucher i{
+    font-size: 1.5rem;
+    display:block;
+    margin:-10px auto 20px;
+}
 
 .voucher img {
     width: 80%;
@@ -372,6 +377,11 @@ footer img{
     .voucher h3{
         font-size:1.5rem;
     }
+    .voucher i{
+        font-size: 1.3rem;
+        display:block;
+        margin:-10px auto 0;
+    }
 }
 
 @media(max-width:480px) {
@@ -408,6 +418,11 @@ footer img{
     .voucher h3{
        font-size:1.3rem;
        padding:0 20px;
+    }
+    .voucher i{
+        font-size: 1rem;
+        display:block;
+        margin:-10px auto 0;
     }
     .voucher a{
        font-size:1.3rem;
