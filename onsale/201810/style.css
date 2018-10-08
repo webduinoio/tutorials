@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, "Heiti TC", "Microsoft JhengHei", sans-serif;
-    font-size: 100%;
+    font-size: 16px;
 }
 
 body::-webkit-scrollbar,
@@ -22,6 +22,10 @@ body * {
     font-family: inherit;
     font-size: inherit;
     line-height: 1.5;
+}
+
+.note{
+    display:none;
 }
 
 .banner {
@@ -49,6 +53,10 @@ h2 {
     text-align: center;
     font-size: 2.3rem;
     font-weight: normal;
+}
+h2 b{
+    color:#f77;
+    text-decoration: underline;
 }
 h2 i{
     font-size:1.6rem;
@@ -148,6 +156,7 @@ h2 i{
     padding: 10px 0 0;
     border-top: 1px dashed #ddd;
     color: #f60;
+    font-size:1.2em;
 }
 
 .section .right .buy a i {
@@ -385,6 +394,20 @@ footer img{
 }
 
 @media(max-width:480px) {
+    .note{
+        display:block;
+        background:#c00;
+        color:#fff;
+        font-size:1.1rem;
+        text-align: center;
+        width:100%;
+        padding:10px 0;
+        line-height:1;
+    }
+    .note br{
+        margin:0;
+        line-height:1;
+    }
     h1 {
         font-size: 1.5rem;
         font-weight: normal;
