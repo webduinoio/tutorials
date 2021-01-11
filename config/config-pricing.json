@@ -6,6 +6,7 @@
   "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-fly-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-fly",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552445375744"
 }, {
   "new":false,
@@ -15,6 +16,7 @@
   "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-mark1-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-mark1",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21552439583164"
 }, {
   "new":false,
@@ -24,6 +26,7 @@
   "onSale": "250",
   "pricingNote": "",
   "banner": "../img/buy/webduino-smart-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-smart",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21703147727416"
 }, {
   "new":false,
@@ -33,6 +36,7 @@
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-bit-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-bit",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21825220349569"
 }, {
   "new":false,
@@ -42,6 +46,7 @@
   "onSale": "1,365",
   "pricingNote": "，",
   "banner": "../img/buy/webduino-uno-fly-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-fly-uno",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553502054473"
 }, {
   "new":false,
@@ -51,6 +56,7 @@
   "onSale": "1,365",
   "pricingNote": "",
   "banner": "../img/buy/webduino-developerA-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-developer-basic",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500230488"
 }, {
   "new":false,
@@ -60,6 +66,7 @@
   "onSale": "1,890",
   "pricingNote": "",
   "banner": "../img/buy/webduino-developerB-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-developer-advance",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21553500257353"
 },{
   "new":false,
@@ -69,6 +76,7 @@
   "onSale": "800",
   "pricingNote": "",
   "banner": "../img/buy/webduino-developer-drsmart-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-developer-drsmart",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21719210149456"
 },{
   "new":false,
@@ -78,6 +86,7 @@
   "onSale": "3,900",
   "pricingNote": "",
   "banner": "../img/buy/webduino-smartSocket-all-package.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-developer-smartsocket",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21728687888678"
 }, {
   "new":false,
@@ -132,6 +141,7 @@
   "onSale": "1,680",
   "pricingNote": "",
   "banner": "../img/buy/package-all-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-all",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898515922"
 }, {
   "new":false,
@@ -141,6 +151,7 @@
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-components-facile-package-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-basic",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895425693"
 }, {
   "new":false,
@@ -150,6 +161,7 @@
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-components-standard-package-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-advance",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895437595"
 }, {
   "new":false,
@@ -159,6 +171,7 @@
   "onSale": "630",
   "pricingNote": "",
   "banner": "../img/buy/webduino-components-excellent-package-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-excellent",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21732895464247"
 }, {
   "new":false,
@@ -195,6 +208,7 @@
   "onSale": "700",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-plant-01b.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-plant",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21651860887664"
 }, {
   "new":false,
@@ -213,6 +227,7 @@
   "onSale": "840",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-socket",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21624898592501"
 }, {
   "new":false,
@@ -222,6 +237,7 @@
   "onSale": "760",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-socket-extension-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-socket-extension",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21725543213746"
 }, {
   "new":false,
@@ -231,6 +247,7 @@
   "onSale": "1,575",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-toycar-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-toycar",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21601562799615"
 }, {
   "new":false,
@@ -240,6 +257,7 @@
   "onSale": "735",
   "pricingNote": "",
   "banner": "../img/buy/webduino-line-following-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-toycar-following",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21711510509507"
 }, {
   "new":false,
@@ -327,6 +345,7 @@
   "onSale": "3,360",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-SmartSocket-banner3.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-developer-smartsocket",
   "rutenUrl": "http://shopping.gotop.com.tw/product/a8470381-558f-11e7-a6dd-c74f89653481"
 }, {
   "new":false,
@@ -336,6 +355,7 @@
   "onSale": "1,260",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-air-monitoring-01b.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-developer-smartsocket",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21749409129569"
 }, {
   "new":false,
@@ -363,6 +383,7 @@
   "onSale": "1,470",
   "pricingNote": "",
   "banner": "../img/buy/webduino-package-smart-home-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-smarthome",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21809705828099"
 }, {
   "new":false,
@@ -390,6 +411,7 @@
   "onSale": "50",
   "pricingNote": "",
   "banner": "../img/buy/webduino-block-of-smart-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-lego-block-smart",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21809719885244"
 }, {
   "new":false,
@@ -399,6 +421,7 @@
   "onSale": "70",
   "pricingNote": "",
   "banner": "../img/buy/webduino-block-of-smart-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-lego-block-uno",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21809719898934"
 }, {
   "new":false,
@@ -408,14 +431,6 @@
   "onSale": "1,250",
   "pricingNote": "",
   "banner": "../img/buy/webduino-smart-robot-car-01.jpg",
-  "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21812785308599"
-}, {
-  "new":false,
-  "name": "Webduino Smart 自走車 ( 材料包 )",
-  "url": "https://123.p11",
-  "pricing": "1,250",
-  "onSale": "1,250",
-  "pricingNote": "",
-  "banner": "../img/buy/webduino-smart-robot-car-01.jpg",
+  "storeUrl":"https://store.webduino.io/products/webduino-package-smart-car",
   "rutenUrl": "http://webduinoio.github.io/ruten/ruten.html#21812785308599"
 }]
